@@ -1,6 +1,5 @@
 = Projektplan: {project-name}
-Tim Würzburg (SE I) <email@domain.org> - Tobias Karsch (SE I) <s79375@htw-dresden.de> - Gregor Müller (SE II) <email3@domain.org>
-
+Tim Würzburg <tim.wuerzburg@htw-dresden.de>; Tobias Karsch <tobias.karsch@htw-dresden.de>; Gregor Müller <gregor.mueller@htw-dresden.de>;
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
