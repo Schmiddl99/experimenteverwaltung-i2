@@ -1,17 +1,15 @@
 = Glossar: Experimenteverwaltung I2
 Alena Bischoff <alena.bischoff@htw-dresden.de>; Gregor Müller <gregor.mueller@htw-dresden.de>; Julius Schmidt <juliusheiko.schmidt@htw-dresden.de>; Richard Böhme <richard.boehme@htw-dresden.de>; Taejun Kim <taejun.kim@htw-dresden.de>; Tim Würzburg <tim.wuerzburg@htw-dresden.de>; Tobias Karsch <tobias.karsch@htw-dresden.de>; William Elsner <william.elsner@htw-dresden.de>;
-
 {localdatetime}
-
-include::../_includes/default-attributes.inc.adoc[]
+include::_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
 
 == Einführung
-In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fachdomäne) der *<Projektthema-Systems>* definiert. Zur besseren Übersichtlichkeit sind Begriffe, Abkürzungen und Datendefinitionen gesondert aufgeführt.
+In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fachdomäne) des EMS definiert. Zur besseren Übersichtlichkeit sind Begriffe, Abkürzungen und Datendefinitionen gesondert aufgeführt.
 
 
 === Begriffe
-[%autowidth.stretch]
+[cols="20,~,~"]
 |===
 |Term|Definition/ Bedeutung |Synonym
 
@@ -74,19 +72,28 @@ a|* Testbereich des Systems
 
 |===
 
-=== Abkürzungen und Akronyme
-[%autowidth.stretch]
-|=== 
-|Abkürzung |Bedeutung |Erläuterung
 
-|VM | Virtuelle Maschine| siehe Virtuelle Maschine in Begriffe
+=== Abkürzungen und Akronyme
+[cols="20,~,~"]
+|===
+|Abkürzung|Bedeutung|Erläuterung
+
+|VM
+|Virtuelle Maschine
+|siehe Virtuelle Maschine in Begriffe
 
 |===
 
+
 === Verzeichnis der Datenstrukturen
-[%autowidth.stretch]
+[cols="20,30,10,30,10"]
 |=== 
 |Bezeichnung |Defninition |Format| Gültigkeitsregeln | Aliase
 
-|Anmeldedaten |Zusammensetztung von Benutzername und Passwort| String| E-Mail-Adresse muss `@`-Zeichen und Punkt enthalten| Login
+|Anmeldedaten 
+|Zusammensetztung von Benutzername und Passwort
+|String
+|E-Mail-Adresse muss `@`-Zeichen und Punkt enthalten
+|Login
+
 |===
