@@ -1,0 +1,19 @@
+// Meta
+:project-name: <Verwaltung von Physikexperimenten (TI2)>
+// Settings:
+:toc:
+:toc-title: Inhaltsverzeichnis
+:toclevels: 2
+:sectnums:
+:icons: font
+//:source-highlighter: highlightjs
+:source-highlighter: rouge
+:xrefstyle: full
+:figure-caption: Abbildung
+:table-caption: Tabelle
+:!example-caption:
+// folders
+:imagesdir: images
+// Hyphenation for PDF dokumente
+:lang: DE
+:hyphens:
