@@ -11,6 +11,7 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 
 
 === Begriffe
+[%autowidth.stretch]
 |===
 |Term|Definition/ Bedeutung |Synonym
 
@@ -74,7 +75,7 @@ a|* Testbereich des Systems
 |===
 
 === Abkürzungen und Akronyme
-
+[%autowidth.stretch]
 |=== 
 |Abkürzung |Bedeutung |Erläuterung
 
@@ -83,7 +84,7 @@ a|* Testbereich des Systems
 |===
 
 === Verzeichnis der Datenstrukturen
-
+[%autowidth.stretch]
 |=== 
 |Bezeichnung |Defninition |Format| Gültigkeitsregeln | Aliase
 
