@@ -1,0 +1,791 @@
+= Einführung in Ruby
+Richard Böhme <richard.boehme@htw-dresden.de>
+{localdatetime}
+include::../_includes/default-attributes.inc.adoc[]
+
+== Einführung - Was ist Ruby?
+
+[quote, ruby-lang.org]
+____
+"Ruby is a dynamic, open source programming language with a focus on *simplicity* and *productivity*. It has an elegant syntax that is natural to read and easy to write.
+____
+
+=== Philosophie & Prinzipien
+
+* Fokus auf "Developer Happiness"
+* einfache Syntax: wer Englisch kann, kann auch Ruby Code lesen
+* objektorientiert - _"Everything is an object"_
+** z.B. `true` ist eine Instanz der Klasse `TrueClass`
+
+=== Eigenschaften
+
+* wird zur Laufzeit interpretiert => kein Compiler notwendig
+* dynamische Typisierung => keine feste Zuordnung zu Datentypen (siehe Variablen)
+* automatische Speicherbereinigung
+
+== Language-Features - Wie nutzt man Ruby?
+
+=== Variablen
+
+==== dynamische Typisierung
+
+Wie bereits erwähnt ist Ruby dynamisch typisiert. Deshalb ist z.B. folgender Code möglich und gewollt:
+
+```ruby
+x = 5
+# => 5
+x = 'foo'
+# => "foo"
+```
+
+Dies erlaubt eine sehr hohe Flexibilität, ist aber ggf. auch fehleranfällig.
+
+==== nil
+
+`nil` repräsentiert einen leeren Wert (ähnlich wie z.B. `NULL` Pointer in C).
+Jede Variable die nicht definiert ist, ist zunächst nil. (z.B. als Rückgabewert von Funktionen, Arrayzugriff auf Index welcher zu groß ist,...)
+
+```ruby
+x = []
+x[1]
+# => nil
+```
+
+==== Strings
+
+===== String Interpolation
+
+```ruby
+x = 5
+"Max ist #{x} Jahre alt"
+# => Max ist 5 Jahre alt
+```
+
+===== Verschiedene Varianten Strings zu erzeugen
+
+Strings in Ruby können entweder mit einfachen oder doppelten Anführungszeichen definiert werden.
+
+```ruby
+'foo' == "foo"
+# => true
+```
+
+Der Unterschied liegt darin, dass man mit in einfachen Anführungszeichen definierten Strings keine Variablen einfügen kann. 
+
+```ruby
+x = 5
+puts 'Max ist #{5} Jahre alt'
+# => "Max ist #{5} Jahre alt"
+```
+
+Dafür ist diese Art Strings zu definieren etwas effizienter. 
+
+Die Ruby Community ist etwas gespalten, ob man standardmäßig alle Strings in einfachen oder doppelten Anführungszeichen schreiben sollte.
+
+==== Symbole
+
+Symbole sind ähnlich wie wiederverwendbare Strings. Sie sind *nicht* dafür da tatsächlichen Textinhalt zu symbolisieren und unterscheiden sich dahingehend stark von Strings. Ihr eigentlicher Nutzen ist ein Bezeichner für einen Wert darzustellen. 
+
+Ein Beispiel könnte eine Unterscheidung von verschiedenen Anwendungsfällen sein. Der Vorteil gegenüber Strings ist, dass nicht jedesmal ein neues Objekt im Speicher erstellt wird. Jedes gleiches Symbol ist das selbe Objekt im Speicher.
+
+
+```ruby
+x = :foo
+
+# Symbol -> String
+:foo.to_s
+# => "foo"
+
+# String -> Symbol
+"foo".to_sym
+# => :foo
+```
+
+Für ein Beispiel zum Nutzen siehe <<Bedingte Anweisungen>>.
+
+==== Booleans (Unterschied truthy, falsy)
+
+Zusätzlich zu einfachen Booleans (`true`, `false`) wertet Ruby auch alle anderen Werte als _truthy_ oder _falsy_. Dies erlaubt z.B. folgende if-Anweisungen:
+
+```ruby
+x = "foo"
+if x 
+  puts x
+end
+
+x = nil
+if x
+  puts x
+end
+
+# => x würde nur einmal ausgegeben werden
+```
+
+Die einzigen Werte die als `falsy` gelten sind `false` und `nil`. Alle anderen Objekte sind `truthy`.
+
+=== wichtige Datenstrukturen
+
+==== Array
+
+Arrays können einfach mittels `[]` initialisiert werden. Sie haben, anders als in anderen Sprachen, keine feste Größe und können beliebige Daten von verschiedenen Datentypen enthalten.
+
+```ruby
+array = [1, "foo", false]
+# => [1, "foo", false]
+```
+
+Interessante Methoden:
+
+```ruby
+array.index("foo")
+# => 1
+
+array.map(&:to_s)
+# => ["1", "foo", "false"]
+
+array.each do |value|
+  puts value
+end
+# => 1
+#    "foo"
+#    false
+
+array.select { |value| value.is_a? Integer }
+# => [1]
+
+array << 'bar'
+# => [1, "foo", false, "bar"]
+```
+
+Mehr Infos link:https://rubyapi.org/3.0/o/array[hier].
+
+==== Hash
+
+Hashes bilden einfache Wertepaare (Key/Value-Pairs). Typischweise sind die Keys Symbole oder Strings. Es können allerdings alle Werte zugeordnet werden. Es gibt dabei für Symbole eine extra Schreibweise, welche etwas eleganter ist. Zugriff auf den Wert erhält man über den jeweiligen Key.
+
+```ruby
+# für Symbole:
+hash = { foo: "bar", bar: 1 }
+hash[:bar]
+# => 1
+
+# generelle Syntax
+hash = { "foo" => "bar", "bar" => 1 }
+hash["bar"]
+# => 1
+
+hash["bar"] = 2
+# => 2 (Hash: { "foo" => "bar", "bar" => 2 })
+```
+
+Interessante Methoden:
+```ruby
+hash.values
+# => ["bar", 1]
+
+hash.keys
+# => ["foo", "bar"]
+
+hash.except("foo")
+# => { "bar" => 1 }
+
+hash.slice("foo")
+# => { "foo" => "bar" }
+
+hash.each do |key, value|
+  puts "Key: #{key}, Value: #{value}"
+end
+# => Key: foo, Value: bar
+#    Key: bar, Value: 1
+```
+
+Mehr Infos link:https://rubyapi.org/3.0/o/hash[hier].
+
+=== Bedingte Anweisungen
+
+Um bedingte Anweisungen zu schreiben braucht man in Ruby standardmäßig keine Klammern (weder geschweifte, noch runde).
+
+```ruby
+if x
+# do something
+elsif y
+# do something else
+else
+# do something different
+end 
+```
+
+Für Verknüpfungen stehen `&&` für UND- und `||` für ODER-Verknüpfung zur Verfügung. Wobei `&&` als erstes ausgeführt wird, wenn keine Klammern verwendet werden.
+
+If-Anweisungen geben immer den letzten Wert zurück. Wird die Bedingung nicht erfüllt wird `nil` zurückgegeben.
+
+```ruby
+x =
+  if 2 == 1
+    "bar"
+  end
+# => x = nil
+```
+
+==== unless
+
+`unless` führt den Code genau dann aus, wenn die Bedingung nicht `truthy` ist bzw. wenn sie `falsy` ist.
+
+```ruby
+x = true
+unless x 
+  puts "x is false"
+end
+# => nothing is printed
+
+# equal to:
+if !x
+  puts "x is false"
+end
+```
+
+`unless` kann schwer zu verstehen sein, weshalb man es vor allem dann nicht nutzen sollte, wenn es einen `else` Block gibt.
+
+==== if-Modifier
+
+Einzeilige Operationen können durch eine Bedingung am Ende auf eine Zeile geschrieben werden. Auch hier sollte darauf geachtet werden, dass der Code übersichtlich bleibt.
+
+```ruby
+some_method if x == 5
+
+# equal to:
+if x == 5
+  some_method
+end
+```
+
+==== Tenary Operator
+
+Wie z.B. C hat auch Ruby einen Tenary-Operator:
+
+```ruby
+age = 14
+cost = (age > 18) ? 25 : 15
+# (Klammern dienen nur zur Übersicht und können theoretisch weg gelassen werden)
+```
+
+=== Schleifen
+
+Es gibt in Ruby zwar klassische for und while-Schleifen. Allerdings sieht man diese recht selten. Wenn man über eine Liste/Array iterieren will nutzt man die `each`-Methode. Zur Ausführung eines Codes x-mal nutzt man die `times`-Methode:
+
+```ruby
+x = ["foo", "bar", 1, 3]
+x.each do |value|
+  puts value
+end
+# => "foo"
+#    "bar"
+#    1
+#    3
+
+# Mit laufendem Index
+x.each_with_index do |value, i|
+  puts "i: #{i}, value: #{value}"
+end
+# => i: 0, value: foo
+#    i: 1, value: bar
+#    i: 2, value: 1
+#    i: 3, value: 3
+
+5.times do |n|
+  puts n
+end
+# => 0
+#    1
+#    2
+#    3
+#    4
+
+# oder: 
+for n in ["foo", "bar", 1, 3]
+  puts n
+end
+
+while true do
+  puts "infinite loop"
+end
+# equally to 
+loop do
+  puts "infinite loop"
+end
+```
+
+=== Methoden
+
+Methoden werden in Ruby mit dem Keyword `def` eingeleitet. Danach folgt der Name der Methode und eine Argumentenliste. Aufgerufen werden Methoden mit ihrem Namen und einer Liste der zu übergebenden Argumente. 
+
+```ruby
+def my_wonderful_method_name(x, y, z)
+  puts "#{x}, #{y}, #{z}"
+end
+
+my_wonderful_method_name(1, 2, 3)
+# => "1, 2, 3"
+```
+
+Hat die Methode keine Argumente, kann man die Klammern beim Funktionsaufruf und der Definition weglassen.
+
+```ruby
+def print_hello
+  puts "Hello world!"
+end
+
+print_hello
+# => "Hello world!"
+```
+
+==== Rückgabewerte
+
+Der Rückgabewert ist immer das letzte Statement in einer Funktion.
+
+```ruby
+def print_and_return(x)
+  puts x
+  x
+end
+  
+puts print_and_return(5)
+# => 5
+#    5
+```
+
+Es ist trotzdem möglich `return` zu nutzen um z.B. eine Funktion bedingt abzubrechen.
+
+```ruby
+def foo(x)
+  return if x == 5
+  return 4 if x == 4
+  x / 2
+end
+
+foo(5)
+# => nil
+
+foo(4)
+# => 4
+
+foo(6)
+# => 3
+```
+
+==== Standardargumente
+
+Man kann Argumenten Standardwerte zuweisen (wie z.B. in C++)
+
+```ruby
+def transform_name(name, action = :upcase)
+  if action == :upcase
+    name.upcase
+  elsif action == :downcase
+    name.downcase
+  end
+end
+
+puts transform_name("Max")
+# => "MAX"
+
+puts transform_name("Max", :downcase)
+# => "max"
+
+puts transform_name("Max", :kebabcase)
+# => nil
+```
+
+==== Keyword Argumente
+
+Man kann Keyword Argumente nutzen, um Argumente hinzuzufügen, welche beim Aufruf mit dem Namen spezifiziert werden müssen.
+
+```ruby
+def foo(bar:)
+  puts bar
+end
+foo(bar: 'test')
+# => "test"
+foo
+# => missing keyword :bar
+
+# Mit Standardargumenten:
+def foo(bar: 'test')
+  puts bar
+end
+foo
+# => "test"
+
+# Gemischt mit normalen Argumenten
+# => Keyword Argumente müssen immer am Ende der Argumentliste stehen
+def foo(x, bar: 2)
+  puts x + bar
+end
+foo(2)
+# => 4
+
+foo(2, bar: 5)
+# => 7
+```
+
+==== Splat(*)- und Double-Splat(**)-Operator
+
+In Ruby ist die Argumentliste immer ein Array. Man kann ein Array mit dem Splat(*)-Operator zu einer Argumentliste konvertieren
+
+```ruby
+def foo(x, y, z)
+  puts x, y, z
+end
+
+foo(*[1, "foo", false])
+# => 1
+#    "foo"
+#    false
+```
+
+Der Splat Operator kann aber auch genutzt werden um die gesamte Argumentliste in einer Funktion zu repräsentieren.
+
+```ruby
+def foo(*args)
+  puts args
+end
+
+foo(1, 2, 3)
+# => 1
+#    2
+#    3
+
+foo("bar", false, 3, 5, 7)
+# => "bar"
+#    false
+#    3
+#    5
+#    7
+```
+
+Aus diesen Argumente kann man auch einzelne "herausziehen":
+
+```ruby
+def foo(a, *args)
+  puts "special a: #{a}"
+  puts "everything else: #{args.join(", ")}"
+end
+
+foo(1, "foo", "bar")
+# => special a: 1
+#    everything else: foo, bar 
+```
+
+Dasselbe gilt für den Double-Splat Operator, Keyword Argumente und Hashes.
+
+```ruby
+def foo(a:, b: "test", **options)
+  puts "a: #{a}"
+  puts "b: #{b}"
+  puts "options: #{options}"
+end
+
+foo(a: "foobar", c: false)
+# => a: "foobar"
+#    b: "test"
+#    options: {c=>false}
+```
+
+Keine Sorge: Das kann schnell recht kompliziert werden und dient hier vorallem der Information.
+
+=== Blocks, Procs & Lambdas
+
+Ein spezielles Sprachfeature was aber sehr häufig genutzt wird sind Blocks, Procs und Lambdas. Einfach gesagt sind alle drei verschiedene Arten von "anonymen Funktionen". Die Bezeichnung ist nicht ganz korrekt und es gibt logischerweise Unterschiede zwischen den drei Arten, aber die sollen hier nicht weiter besprochen werden.
+
+Blocks werden oft genutzt um Codestücke an bestimmte andere Funktionen weiterzureichen.
+Diese Funktionen können mit dem Keyword `yield` den übergebenen Block aufrufen.
+Dabei können auch Werte an den Block übergeben werden.
+
+```ruby
+def foo
+  puts "before yield"
+  yield 3
+  puts "after yield"
+end
+
+foo do |value|
+  puts value * 2
+end
+# => before yield
+#    6
+#    after yield
+
+# Alternative Syntax (vorallem besser für Einzeiler):
+foo { |value| value * 2 }
+```
+
+Das ganze wird auch häufig in Funktionen verwendet die Ruby selbst liefert:
+
+```ruby
+array = [1, 2, 3, 4, 5]
+array.map { |value| value * 2 }
+# => [2, 4, 6, 8, 10]
+```
+
+Wenn nur eine Methode genutzt wird gibt es noch einen schicken Shortcut:
+
+```ruby
+array = ["foo", "bar"]
+array.map(&:upcase)
+# => ["FOO", "BAR"]
+```
+
+Mehr Informationen dazu gibt es z.B. link:https://blog.appsignal.com/2018/09/04/ruby-magic-closures-in-ruby-blocks-procs-and-lambdas.html[hier].
+
+=== Klassen
+
+Da Ruby objektorientiert ist gibt es natürlich auch Klassen, Vererbung usw.
+Hier ein Beispiel für eine Klassenstruktur
+
+```ruby
+class Vehicle
+end
+
+class Train < Vehicle
+end
+
+class Car < Vehicle
+end
+```
+
+Mittels `<` kann man also Vererbung abbilden.
+
+Die Konstruktormethode heißt in Ruby `initialize` und ein Objekt einer Klasse kann mit `<Klasse>.new` erzeugt werden:
+
+```ruby
+class Vehicle
+  def initialize(name, type)
+    puts name, type
+  end
+end
+
+class Car < Vehicle
+  def initialize(name)
+    super(name, "Car")
+  end
+end
+
+Car.new("Audi")
+# => Audi
+#    Car
+```
+
+Mit `super` wird die Methode des Elternobjektes ausgeführt. Es kann dabei überall in der Methode stehen.
+
+Instanzvariablen werden mit den Methoden `attr_reader` (für lesende Methode), `attr_writer` (für schreibende Methode) und `attr_accessor` (für beide) angelegt. Das bedeutet:
+
+```ruby
+class Vehicle
+  attr_reader :type 
+  attr_accessor :name
+  attr_writer :date
+end
+
+# erzeugt / ist gleich wie
+class Vehicle
+  def type
+    @type
+  end
+  def name 
+    @name
+  end
+  def name=(value)
+    @name = value
+  end
+  def date=(value)
+    @date = value
+  end
+end
+```
+
+Die Variablen welche mit `@` beginnen sind dabei Instanzvariablen. So kann das obere Beispiel z.B. folgendermaßen umgeformt werden:
+
+```ruby
+class Vehicle
+  attr_accessor :name, :type
+  def initialize(name, type)
+    @name = name
+    @type = type
+  end
+end
+v = Vehicle.new("Airbus", "Flugzeug")
+v.name 
+# => "Airbus"
+v.type
+# => "Flugzeug"
+```
+
+Folgendermaßen definiert man Instanz- oder Klassenmethoden:
+
+```ruby
+class Vehicle
+  attr_accessor :name, :type
+  PRICES = { "Audi" => 120_000, "VW" => 50_000 } # hier eine Konstante
+  def initialize(name, type)
+    @name = name
+    @type = type
+  end
+
+  # Klassenmethode
+  def self.prices
+    PRICES
+  end
+
+  # Instanzmethode
+  def calculate_price
+    PRICES[name]
+  end 
+end
+
+v = Vehicle.new("Audi", "Car")
+v.calculate_price
+# => 120000
+v.name = "VW"
+v.calculate_price
+# => 50000
+
+Vehicle.prices
+# => {"Audi"=>120000, "VW"=>50000}
+```
+
+`self` referenziert immer das aktuelle Objekt.
+
+=== Module
+
+Module sind quasi "Funktionensammlungen", welche man zu Klassen hinzufügen kann.
+Man nutzt sie folgendermaßen:
+
+```ruby
+module Utils
+  def sum(x, y)
+    x + y
+  end
+end
+
+class Vehicle
+  include Utils
+
+  attr_accessor :price
+
+  def initialize(price)
+    @price = price
+  end
+
+  def add_to_price(x)
+    sum(x, price)
+  end
+end
+
+v = Vehicle.new(3000)
+v.add_to_price(2)
+# => 3002
+```
+
+== Konventionen
+
+* Variablen, Methoden, Symbole, Dateinamen und Ordnernamen in Snakecase (`my_wonderful_variable`)
+* Klassen in CapitalCase (`MyWonderfulClass`)
+* Nutze keine for/while-Loops (stattdessen `[].each` oder `3.times`)
+* Methoden die Booleans zurückgeben mit `?` enden lassen (z.B. `object.printable?`)
+* Methoden die Objekte verändern mit `!` am Ende (Bang Methods)
+```ruby
+array = [1, 2, 3]
+array.map(&:to_s)
+
+array
+[1, 2, 3]
+
+array.map!(&:to_s)
+
+array
+["1", "2", "3"]
+```
+
+* Nutze Symbole statt Strings wenn möglich und sinnvoll (z.B. in Hashes)
+* Zwei Leerzeichen als Einrückung
+* Keine Leerzeichen o.Ä. (Whitespace) am Ende einer Zeile
+
+* Styleguide: https://github.com/rubocop/ruby-style-guide
+
+== Dokumentation
+
+Ein häufiges Tool zur Dokumentation von Ruby Code ist link:https://yardoc.org[Yard]. Es erlaubt die Dokumentation von Code über Kommentare sowie das Generieren von Entwicklerdokumentation aus diesen. 
+
+Beispiel:
+
+```ruby
+# Reverses the contents of a String or IO object.            <----- Description 
+# 
+# @param [String, #read] contents the contents to reverse    <----- Argumente der Funktion
+# @return [String] the contents reversed lexically           <----- Returnwert
+def reverse(contents) 
+  contents = contents.read if respond_to? :read 
+  contents.reverse 
+end
+```
+
+Dafür werden sogennante Tags genutzt (wie `@param` oder `@return`). Dokumentation zu den Tags findet man link:https://rubydoc.info/gems/yard/file/docs/Tags.md[hier].
+
+Integrationen finden sich für link:https://www.jetbrains.com/de-de/ruby/[RubyMine] (Ruby IDE von JetBrains) oder auch Visual Studio Code (link:https://marketplace.visualstudio.com/items?itemName=castwide.solargraph[Ruby Solargraph Extension]).
+
+== Einrichtung
+
+Generell ist es zu empfehlen Ruby in einem Unix-Betriebssystem zu entwickeln. Alternativ kann auch die Entwicklung mit dem link:https://docs.microsoft.com/de-de/windows/wsl/install-win10[Windows Subsystem] erfolgen.
+
+Ruby installieren geht am besten mit einem Versions-Manager. Ein Beispiel dafür ist RVM. So könnt ihr einfach Ruby Versionen installieren und zwischen ihnen wechseln.
+
+```
+gpg --keyserver hkp://pool.sks-keyservers.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+
+\curl -sSL https://get.rvm.io | bash -s stable --ruby
+```
+
+link:https://rvm.io/rvm/install[Hier] geht es zu der Installationsanleitung für weitere Informationen.
+
+Installierte Ruby Versionen ansehen:
+```
+rvm list
+```
+
+Ruby Version wechseln:
+```
+rvm use <version>
+```
+
+Ruby Version installieren:
+```
+rvm install <version>
+```
+
+Alternativen:
+
+* link:https://github.com/postmodern/ruby-install[Ruby Install]
+* link:https://asdf-vm.com/[asdf Version Manager mit dem Ruby Plugin]
+* link:https://github.com/rbenv/rbenv[rbenv]
+* link:https://github.com/postmodern/chruby[chruby] 
+
+== Tipps und Tricks
+
+Man kann jederzeit eine Ruby Konsole mit dem Command `irb` öffnen. Damit können dann alle möglichen Code-Snippets ausprobiert werden.
+
+```ruby
+# Zeige Methoden eines Objektes an:
+obj.methods.sort
+# Entferne die des Standard-Objektes:
+obj.methods.sort - Object.methods
+
+# Erhalte die Klasse eines Objektes
+obj.class
+```
+
+== Hilfreiche Links 
+
+* https://rubyapi.org
+* https://ruby-doc.org
+* https://www.ruby-lang.org/en/
+* https://github.com/ruby/ruby
