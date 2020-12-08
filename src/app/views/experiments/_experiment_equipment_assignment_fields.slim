@@ -1,0 +1,13 @@
+.card
+  .card-body.nested-fields
+    .row
+      .col-sm-8
+        = f.association :equipment, collection: Equipment.collection(@experiment), input_html: {class: "nested-input-trigger equipment-select", "data-add-type" => "experiment_equipment_assignment"}
+      .col-sm-2
+        = f.input :number
+      .col-sm-1.edit-button-equipment
+        - if f.object.equipment.present?
+          button.btn.btn-link.times-nested-forms.equipment-modal(type="button" data-id=f.object.equipment.id data-name=f.object.equipment.name data-location=f.object.equipment.location data-inventory_nr=f.object.equipment.inventory_nr data-adhoc=f.object.equipment.adhoc)
+            = icon("edit")
+      .col-sm-1
+        = link_to_remove_association icon("trash"), f, class: "btn btn-link times-nested-forms"

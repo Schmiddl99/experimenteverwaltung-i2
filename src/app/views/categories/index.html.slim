@@ -1,0 +1,14 @@
+.page-header
+  h1 Kategorie
+br
+.card
+  .card-header Kategorien
+  .card-body
+    .list-group
+      - @categories.reverse_each do | category |
+        .list-group-item
+          = link_to category, class:"stretched-link"
+            = "#{category.label} - #{category.name}"
+            
+br
+= will_paginate @categories, renderer: WillPaginate::ActionView::BootstrapLinkRenderer

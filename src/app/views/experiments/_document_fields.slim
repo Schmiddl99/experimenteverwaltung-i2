@@ -1,0 +1,15 @@
+.card
+  .card-body.nested-fields
+    .row
+      .col-sm-11
+        .input-group.mb-3
+          .custom-file
+            - unless f.object.try(:file).present?
+              = f.input :file, label: false, input_html: {class: "nested-input-trigger custom-file-input", "data-add-type" => "doc", "data-preview" => "#doc-preview-#{f.index}"}
+              label.custom-file-label.doc-label aria-describedby="inputGroupFileAddon" for="experiment_documents_attributes_#{f.index}_file" id="doc-preview-#{f.index}-label"
+                | Keine Datei ausgewählt
+            - else
+              = f.object.file_file_name
+
+      .col-sm-1
+        = link_to_remove_association icon("trash"), f, class: "btn btn-link times-nested-forms", style: "top: 0px;"

@@ -1,0 +1,18 @@
+.page-header
+  = link_to equipment_index_path, class: 'btn btn-secondary pull-right' do
+    = raw "#{icon("angle-left")} #{t('activerecord.models.equipment', default: "Equipment")} #{t('interface.index')}"
+  = link_to edit_equipment_path(@equipment), class: 'btn btn-primary pull-right' do
+    = raw "#{icon("angle-left")} #{t('activerecord.models.equipment', default: "#{icon("edit")} Equipment")} #{t('interface.edit')}"
+dl.dl-horizontal
+  dt
+    | Name:
+  dd
+    = @equipment.name
+  dt
+    | Location:
+  dd
+    = @equipment.location
+  dt
+    | Inventory nr:
+  dd
+    = @equipment.inventory_nr

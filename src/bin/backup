@@ -1,0 +1,62 @@
+#!/bin/bash
+max_number_of_backups=5
+#Pfad zum localen testen /Pfad muss dann für einen jeweils angepasst 
+#root_path="/home/laurens/gitlab/rails-projekt"
+root_path="/var/www/app/current"
+upload_folder="$root_path/public/uploads/"
+production_file="/var/www/app/shared/db/production.sqlite3"
+backup_readme="$root_path/vendor/backup_readme.md"
+backup_folder="$root_path/tmp/backup/"
+
+function copy_files() {
+  mkdir $backup_folder
+  ret=$?
+  if [ -d $upload_folder ] && [ -f $production_file ] && [ -f $backup_readme ] && [ $ret == 0 ]
+  then
+    cp -r $upload_folder $backup_folder
+    cp $production_file $backup_folder 
+    cp $backup_readme $backup_folder 
+  else
+    exit 1
+  fi
+
+  return 0
+}
+
+function set_file_name() {
+  date=$(date +%d-%m-%Y)
+  filename="$date.zip"
+  return 0 
+}
+
+function zip_files_and_folder() {
+  cd $backup_folder
+  zip -r $filename uploads/ production.sqlite3 backup_readme.md > /dev/null
+
+  return 0
+}
+
+function check_number_of_backups () {
+  cd $root_path/backups
+  count=$(ls | wc -l)
+  if [ $count == $max_number_of_backups ]
+  then
+    redundant_backup=$(ls -tr | head -1)
+    rm $redundant_backup
+  fi
+
+  return 0
+}
+
+function move_zip() {
+  cp $backup_folder$filename $root_path/backups/
+  rm -r $backup_folder
+
+  return 0
+}
+
+copy_files
+set_file_name
+zip_files_and_folder
+check_number_of_backups
+move_zip

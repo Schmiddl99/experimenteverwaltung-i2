@@ -1,0 +1,42 @@
+br
+.page-header
+  = link_to new_user_path, class: ' pull-right btn btn-secondary btn-hover--jade' do
+    = raw "#{icon("plus")} #{t('activerecord.models.user', default: "User")} #{t('interface.new')}"
+  h1 = "#{t('activerecord.models.user', default: "Benutzer")} #{t('interface.index')}"
+  br
+  br
+br
+.table-responsive
+  table.table.table-striped.table-bordered.table-hover
+    thead.thead-light
+      tr
+        th = t("simple_form.labels.user.name", default: t("simple_form.labels.defaults.name", default: 'name'))
+        th = t("simple_form.labels.user.username", default: t("simple_form.labels.defaults.username", default: 'Username'))
+        th = t("simple_form.labels.user.role", default: t("simple_form.labels.defaults.role", default: 'Role'))
+        th = t("simple_form.labels.user.active", default: t("simple_form.labels.defaults.active", default: 'Active'))
+        th Option
+    tbody
+      - @users.each do | user |
+        tr
+          td
+            -if "#{current_user.id}".to_i == user.id.to_i || "#{current_user.role}" == 'admin'
+              =link_to user_path(user), class:""
+                = user.name
+            -else
+              = user.name
+          td
+            = user.username
+          td
+            = t("activerecord.user.#{user.role}")
+          td
+            -if user.active == true
+              | Aktiv
+            -else
+              | Inaktiv 
+          td.text-center
+            -if "#{current_user.id}".to_i == user.id.to_i || "#{current_user.role}" == 'admin'
+              = link_to icon("pencil").html_safe, edit_user_path(user), class: " btn btn-secondary btn-hover--jade"
+              =" "
+              -if (@admin == false && user.role == "admin") || user.role != "admin"
+                = link_to icon("trash").html_safe, user, method: :delete, data: { confirm: t('interface.confirm') }, data: { confirm: t('interface.confirm') }, class: "btn btn-danger"
+= will_paginate @users, renderer: WillPaginate::ActionView::BootstrapLinkRenderer

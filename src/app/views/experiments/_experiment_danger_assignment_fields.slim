@@ -1,0 +1,11 @@
+.card
+  .card-body.nested-fields
+    .row
+      .col-sm-10
+        = f.association :danger, collection: Danger.collection(@experiment), input_html: {class: "nested-input-trigger danger-select", "data-add-type" => "experiment_danger_assignment"}
+      .col-sm-1.edit-button-danger
+        - if f.object.danger.present?
+          button.btn.btn-link.times-nested-forms.danger-modal(type="button" data-id=f.object.danger.id data-name=f.object.danger.name data-label=f.object.danger.label data-adhoc=f.object.danger.adhoc)
+            = icon("edit")
+      .col-sm-1
+        = link_to_remove_association icon("trash"), f, class: "btn btn-link times-nested-forms"

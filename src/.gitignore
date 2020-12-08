@@ -1,0 +1,28 @@
+.rspec
+/db/*.sqlite3
+/db/*.sqlite3-journal
+/db/*.sqlite3-[0-9]*
+/public/system
+/coverage/
+/spec/tmp
+
+# Ignore all logfiles and tempfiles.
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+config/master.key
+
+
+## Environment normalization:
+/.bundle
+/vendor/bundle
+
+# Ignore precompiled assets
+/public/assets
+
+# Ignore uploaded files in development
+/storage/*
+!/storage/.keep
+/public/uploads

@@ -1,0 +1,38 @@
+roles:
+  guest: &guest
+    categories:
+      - index
+      - show
+    sub_categories:
+      -index
+      -show
+    experiments: 
+      - index
+      - show
+    home:
+      - landing_page
+    users:
+      - show
+    media: 
+      - show
+  lecturer: &lecturer
+    <<: *guest
+    experiments:
+      - index
+      - show
+      - pdf
+  assistant: &assistant
+    <<: *lecturer
+    categories: all
+    sub_categories: all
+    documents: all
+    equipment: all
+    experiments: all
+    dangers: all
+    links: all
+    media: all
+  admin: &admin
+    <<: *assistant
+    users: all
+    backups: all
+    cover_pictures: all

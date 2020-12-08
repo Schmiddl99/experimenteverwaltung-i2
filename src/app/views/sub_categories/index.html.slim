@@ -1,0 +1,29 @@
+.page-header
+  = link_to new_sub_category_path, class: 'btn btn-success pull-right' do
+    = raw "#{icon("plus")} #{t('activerecord.models.sub_category', default: "Sub category")} #{t('interface.new')}"
+  h1 = "#{t('activerecord.models.sub_category', default: "Sub category")} #{t('interface.index')}"
+
+.table-responsive
+  table.table.table-striped.table-bordered.table-hover
+    thead
+      tr
+        th = t("simple_form.labels.sub_category.name", default: t("simple_form.labels.defaults.name", default: 'Name'))
+        th = t("simple_form.labels.sub_category.label", default: t("simple_form.labels.defaults.label", default: 'Label'))
+        th = t("simple_form.labels.sub_category.category", default: t("simple_form.labels.defaults.category", default: 'Category'))
+        th
+    tbody
+      - @sub_categories.each do | sub_category |
+        tr
+          td
+            = sub_category.name
+          td
+            = sub_category.label
+          td
+            = sub_category.category.name if sub_category.category
+          td.pull-right
+            = link_to icon("eye").html_safe, sub_category, class: "btn btn-primary"
+            = " "
+            = link_to icon("pencil").html_safe, edit_sub_category_path(sub_category), class: "btn btn-primary"
+            = " "
+            = link_to icon("trash").html_safe, sub_category, method: :delete, data: { confirm: t('interface.confirm') }, class: "btn btn-danger"
+= will_paginate @sub_categories, renderer: WillPaginate::ActionView::BootstrapLinkRenderer

@@ -1,0 +1,14 @@
+= simple_form_for(@user) do |f|
+  = f.error_notification
+  = f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present?
+
+  .form-inputs
+    = f.input :name
+    = f.input :username
+    = f.input :password, as: :password
+    = f.input :role, collection: User.roles.symbolize_keys.keys
+    = f.input :active
+
+  = footer do
+    - f.button :submit
+br

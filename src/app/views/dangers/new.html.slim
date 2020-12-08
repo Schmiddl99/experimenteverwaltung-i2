@@ -1,0 +1,5 @@
+.page-header
+  = link_to dangers_path, class: 'btn btn-secondary pull-right' do
+    = raw "#{icon("angle-left")} #{t('activerecord.models.danger', default: "Danger")} #{t('interface.index')}"
+  h1 = "#{t('activerecord.models.danger', default: "Danger")} #{t('interface.new')}"
+= render 'form'

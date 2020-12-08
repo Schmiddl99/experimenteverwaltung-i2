@@ -1,0 +1,16 @@
+.page-header
+  
+  = link_to new_cover_picture_path, class: 'btn btn-secondary btn-hover--jade pull-right' do
+    = raw "#{icon("plus")} #{t('activerecord.models.cover_picture', default: "Titelbild")} #{t('interface.new')}"
+  h1 = "#{t('activerecord.models.cover_picture', default: "Cover picture")} #{t('interface.index')}"
+br
+br
+.row
+  - @cover_pictures.each do |cover_picture|
+    .col
+      = link_to edit_cover_picture_path(cover_picture) do   
+        = image_tag(cover_picture.file.url(:thumb), class: "img-fluid img-thumb image-opacity rounded")
+
+.row
+  .col
+    = will_paginate @cover_pictures, renderer: WillPaginate::ActionView::BootstrapLinkRenderer

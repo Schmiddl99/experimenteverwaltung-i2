@@ -1,0 +1,21 @@
+h1.text-center Versuchsdatenbank des Bereichs Physik der HTW Dresden
+br
+br
+.row
+  .col-3
+    .card
+      .card-header
+        strong Themenbereiche
+      ul.list-group.list-group-flush
+        - Category.sorted.each do |category|
+          li.list-group-item
+            = link_to category.name, category
+  .col-9
+    .row.justify-content-center
+      - if @cover_picture.present?
+        = image_tag(@cover_picture, class: "img-fluid center")
+br
+-if current_user.admin?
+  .text-center
+	  = link_to "Titelbild ändern", cover_pictures_path, class: "btn btn-secondary btn-hover--jade"
+br
