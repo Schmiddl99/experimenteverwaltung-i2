@@ -1,0 +1,16 @@
+.modal#danger-modal role="dialog" tabindex="-1" 
+  .modal-dialog role="document" 
+    .modal-content
+      = simple_form_for(Danger.new) do |f|
+        .modal-header
+          h5.modal-title Gefahren Verwaltung
+          button.close aria-label="Close" data-dismiss="modal" type="button" 
+            span aria-hidden="true"  &times;
+        .modal-body
+          .form-inputs
+            = f.input :name
+            = f.input :label
+            = f.input :adhoc
+        .modal-footer
+          button.btn.btn-secondary data-dismiss="modal" type="button"  Abbrechen
+          = f.button :submit, data: { disable_with: false }

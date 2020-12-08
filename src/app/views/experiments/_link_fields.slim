@@ -1,0 +1,7 @@
+.card
+  .card-body.nested-fields
+    .row
+      .col-sm-11
+        = f.input :url, input_html: {class: "nested-input-trigger", "data-add-type" => "link"}
+      .col-sm-1
+        = link_to_remove_association icon("trash"), f, class: "btn btn-link times-nested-forms"

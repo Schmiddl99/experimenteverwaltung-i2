@@ -1,0 +1,8 @@
+#!/bin/bash
+source /usr/local/rvm/scripts/rvm
+set -o xtrace
+
+rvm use `cat .ruby-version`
+gem install bundler --no-ri --no-rdoc
+bundle 
+bundle exec cap production deploy

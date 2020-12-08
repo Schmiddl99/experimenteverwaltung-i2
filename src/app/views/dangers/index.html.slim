@@ -1,0 +1,28 @@
+.page-header
+  = link_to new_danger_path, class: 'btn btn-secondary btn-hover--jade pull-right' do
+    = raw "#{icon("plus")} #{t('activerecord.models.danger', default: "Danger")} #{t('interface.new')}"
+  h1 = "#{t('activerecord.models.danger', default: "Danger")} #{t('interface.index')}"
+
+.table-responsive
+  table.table.table-striped.table-bordered.table-hover
+    thead
+      tr
+        th = t("simple_form.labels.danger.name", default: t("simple_form.labels.defaults.name", default: 'Name'))
+        th = t("simple_form.labels.danger.label", default: t("simple_form.labels.defaults.label", default: 'Label'))
+        th Bild
+        th
+    tbody
+      - @dangers.each do | danger |
+        tr
+          td
+            = danger.name
+          td
+            = danger.label
+          td.w-25
+            .text-center
+              = link_to image_tag(danger.file.url, class:"img-fluid img-thumb w-75"), danger_path(danger)
+          td.text-center
+            = link_to icon("pencil").html_safe, edit_danger_path(danger), class: "btn btn-secondary btn-hover--jade"
+            = " "
+            = link_to icon("trash").html_safe, danger, method: :delete, data: { confirm: t('interface.confirm') }, class: "btn btn-danger"
+= will_paginate @dangers, renderer: WillPaginate::ActionView::BootstrapLinkRenderer

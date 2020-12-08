@@ -1,0 +1,29 @@
+.page-header
+  = link_to new_equipment_path, class: 'btn btn-secondary btn-hover--jade pull-right' do
+    = raw "#{icon("plus")} #{t('activerecord.models.equipment', default: "Equipment")} #{t('interface.new')}"
+  h1 = "#{t('activerecord.model.equipment', default: "Equipment")} #{t('interface.index')}"
+  br
+.table-responsive
+  table.table.table-striped.table-bordered.table-hover
+    thead
+      tr
+        th = t("simple_form.labels.equipment.name", default: t("simple_form.labels.defaults.name", default: 'Name'))
+        th = t("simple_form.labels.equipment.location", default: t("simple_form.labels.defaults.location", default: 'Location'))
+        th = t("simple_form.labels.equipment.inventory_nr", default: t("simple_form.labels.defaults.inventory_nr", default: 'Inventory nr'))
+        th
+    tbody
+      - @equipment.each do | equipment |
+        tr
+          td
+            = equipment.name
+          td
+            = equipment.location
+          td
+            = equipment.inventory_nr
+          td.text-center
+            = link_to "#{icon("refresh")} austauschen".html_safe, edit_equipment_path(equipment, exchange: true), class: "btn btn-sm btn-primary btn-hover--jade"
+            = " "
+            = link_to "#{icon("pencil")} bearbeiten".html_safe, edit_equipment_path(equipment), class: "btn btn-sm btn-secondary btn-hover--jade"
+            = " "
+            = link_to "#{icon("trash")} löschen".html_safe, equipment, method: :delete, data: { confirm: t('interface.confirm') }, class: "btn btn-sm btn-danger"
+= will_paginate @equipment, renderer: WillPaginate::ActionView::BootstrapLinkRenderer

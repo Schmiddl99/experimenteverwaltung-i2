@@ -1,0 +1,12 @@
+.page-header
+  = link_to <%= index_helper %>_path, class: 'btn btn-secondary pull-right' do
+    = raw "#{icon("angle-left")} #{t('activerecord.models.<%= singular_table_name %>', default: "<%= singular_table_name.humanize %>")} #{t('interface.index')}"
+  = link_to edit_<%= singular_table_name %>_path(@<%= singular_table_name %>), class: 'btn btn-primary pull-right' do
+    = raw "#{icon("angle-left")} #{t('activerecord.models.<%= singular_table_name %>', default: "#{icon("edit")} <%= singular_table_name.humanize %>")} #{t('interface.edit')}"
+dl.dl-horizontal
+<%- for attribute in attributes -%>
+  dt
+    | <%= attribute.human_name %>:
+  dd
+    = @<%= singular_table_name %>.<%= attribute.name %>
+<%- end -%>

@@ -1,0 +1,88 @@
+$secondary: #8B8B89 !default
+$primary: #0DAD6D !default
+$brand-primary: $primary !default
+$brand-secondary: $secondary !default 
+$info: #7BD2AF !default
+$link-color: #494947 !default
+$link-hover-color: $brand-primary !default
+
+@import "bootstrap"
+@import "bootswatch/lumen/variables"
+@import "bootswatch/lumen/bootswatch"
+@import "font-awesome-sprockets"
+@import "font-awesome"
+@import "layouts"
+
+body 
+  padding-top: 3.5rem
+  padding-bottom: 4rem
+
+.nested-fields
+  padding: 1rem
+
+.nav-item
+  font-size: 14px
+
+.form-actions-bar
+  padding-top: 15px
+  padding-bottom: 15px
+  border-style: solid
+  border-width: 4px 1px 0px 1px
+  border-color: #f2f2f2
+
+.btn-hover--jade:hover
+  background-color: $brand-primary
+  color: white
+  border-color: $brand-primary
+  
+.hover--jade:hover
+  background-color: $brand-primary
+  color: white
+
+main
+  min-height: 90vh
+  margin-top: 20px
+
+.border--red
+  border: 2px red solid
+  border-radius: 8px
+.image-opacity:hover
+  opacity: 0.7
+
+.times-nested-forms
+  position: relative
+  top: 30px
+  right: 15px
+.icon-nested-forms
+  position: relative
+  top: 30px
+  left: 15px
+  font-size: 22px
+  cursor: grab
+
+.zoom
+  cursor: zoom-in
+  -webkit-user-select: none /* Safari 3.1+ */
+  -moz-user-select: none /* Firefox 2+ */
+  -ms-user-select: none /* IE 10+ */
+  user-select: none /* Standard syntax */
+
+.tool_tip_text
+  display: none
+  opacity: 0.8
+  z-index: 1
+  white-space: nowrap
+  margin-left: 65%
+  position: absolute
+  background-color: $secondary
+  
+.tool_tip:hover > span
+  display: inline-block
+
+.custom-file-label.img-label::after
+  content: "Bild auswählen"
+.custom-file-label.doc-label::after
+  content: "Datei auswählen"
+.img-preview:not(.hidden)
+  height: 100px
+  margin-bottom: 20px

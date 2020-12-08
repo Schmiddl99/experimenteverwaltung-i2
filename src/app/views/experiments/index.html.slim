@@ -1,0 +1,40 @@
+.page-header
+  i class ="pull-right fa fa-angle-down"
+  a data-toggle="collapse" href="#collapseFilter" aria-expanded="false" aria-controls="collapseFilter" class="pull-right" Filteroptionen
+  h1 = "Suchergebnisse"
+br 
+.collapse id="collapseFilter"
+  .card
+    .card-body
+      = form_tag(experiments_path(q: params[:q], c: params[:c]), method: :get, class:"form form-inline my-3 my-lg-0") do
+        .row.w-100.text-center
+          .col
+            = hidden_field_tag :q, params[:q] 
+            = select_tag :c, options_from_collection_for_select(SubCategory.all, "id", "name"), class: "form-control select", include_blank: "--Unterkategorie wählen--"
+            = " "
+            button.btn.btn-secondary.btn-hover--jade.my-1.my-sm-0 type="submit"  Filtern
+  br
+.card
+  .card-header
+    .pull-left = "#{@experiments.count} gefundene Experimente"
+    .pull-right
+      b
+        = "Filterung: "
+      - if params[:c].present?
+        = "Unterkategorie - "
+        = SubCategory.find(params[:c]).name
+      - else
+        = " Alle"
+  .card-body
+      .list-group
+        - if @experiments.present?
+          - @experiments.each do | experiment |
+            .list-group-item
+              = link_to experiment_path(experiment), class: "stretched-link" do
+                = "#{experiment.label} - #{experiment.name}"
+          br
+          br
+          = will_paginate @experiments, renderer: WillPaginate::ActionView::BootstrapLinkRenderer
+        -else
+          .list-group-item
+            = "Keine Ergebnisse"

@@ -1,0 +1,37 @@
+br
+.page-header
+  .row
+    .col
+      - if @category.prev.present?
+        = link_to category_path(@category.prev), class: "btn btn-secondary btn-block btn-hover--jade"
+          i.fa.fs.fa-arrow-left>
+          = @category.prev.name
+      - else
+        .btn.btn-secondary.btn-block.disabled
+          i.fa.fs.fa-arrow-left
+    .col
+      -if @category.next.present?
+        = link_to category_path(@category.next), class: "btn btn-secondary btn-block btn-hover--jade pull-right"
+          = @category.next.name
+          i.fa.fs.fa-arrow-right<
+      -else
+        .btn.btn-secondary.btn-block.disabled.pull-right
+          i.fa.fs.fa-arrow-right
+  br
+  h1
+    = "#{@category.label} - #{@category.name}"
+  br
+br  
+.card
+  .card-header 
+    b
+      =@category.name    
+
+  .card-body
+    .list-group
+      - @category.sub_categories.each do | sub_category |
+        .list-group-item
+          = link_to sub_category_path(sub_category), class: "stretched-link"
+            = "#{sub_category.label} - #{sub_category.name}"
+
+br

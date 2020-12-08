@@ -1,0 +1,11 @@
+= simple_form_for(@danger) do |f|
+  = f.error_notification
+  = f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present?
+
+  .form-inputs
+    = f.input :name
+    = f.input :label
+    = f.input :file
+
+  = footer do
+    - f.button :submit

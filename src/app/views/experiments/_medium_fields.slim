@@ -1,0 +1,22 @@
+.card(id="experiment_media_attributes_#{f.index}")
+  .card-body.nested-fields
+    .row
+      .col-sm-1
+        = icon "bars icon-nested-forms"
+      .col-sm-10
+        - if f.object.try(:file).present?
+          img.img-preview.img-fluid src=f.object.file.url(:thumb) id="preview-#{f.index}"
+        - else
+          img.img-preview.img-fluid.hidden id="preview-#{f.index}"
+        .input-group.mb-3
+          .custom-file
+            = f.input :file, label: false, input_html: {class: "nested-input-trigger custom-file-input", "data-add-type" => "media", "data-preview" => "#preview-#{f.index}"}
+            label.custom-file-label.img-label aria-describedby="inputGroupFileAddon" for="experiment_media_attributes_#{f.index}_file" id="preview-#{f.index}-label"
+              - if f.object.try(:file).present?
+                = f.object.file_file_name
+              -else
+                = "Keine Bild ausgewählt"
+
+        = f.input :sort, as: :hidden, input_html: {class: "sort-input"} 
+      .col-sm-1
+        = link_to_remove_association icon("trash"), f, class: "btn btn-link times-nested-forms"

@@ -1,0 +1,11 @@
+br
+br
+= simple_form_for(@cover_picture) do |f|
+  = f.error_notification
+  = f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present?
+  .form-inputs
+    .row.justify-content-center
+    	= f.input :file, label: false
+    br
+  = footer do
+    - f.button :submit

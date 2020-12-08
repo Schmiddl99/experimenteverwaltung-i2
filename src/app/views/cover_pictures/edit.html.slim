@@ -1,0 +1,21 @@
+.page-header
+  = link_to cover_pictures_path, class: 'btn btn-secondary btn-hover--jade pull-right' do
+    = raw "#{icon("angle-left")} #{t('activerecord.models.cover_picture', default: "Cover picture")} #{t('interface.index')}"
+  h1 = "#{t('activerecord.models.cover_picture', default: "Cover picture")} #{t('interface.edit')}"
+  br
+
+- unless @cover_picture.current?
+  .row
+    .col
+      = simple_form_for(@cover_picture) do |f|
+        = f.input :current, :input_html => { :checked => true, class:"invisible" }, label: false
+        = f.submit "Als Standard setzen", class: "btn btn-primary btn-block"
+  br
+.row
+  .col
+    = link_to "#{icon("trash")} löschen".html_safe, @cover_picture, method: :delete, data: { confirm: t('interface.confirm') }, class: "btn btn-danger btn-block"
+br
+br
+strong Vorschau:
+br
+= image_tag(@cover_picture.file.url(:original))

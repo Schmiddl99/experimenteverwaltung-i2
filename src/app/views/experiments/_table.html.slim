@@ -1,0 +1,24 @@
+.table-responsive
+  table.table.table-striped.table-bordered.table-hover
+    thead
+      tr
+        th = t("simple_form.labels.experiment.name", default: t("simple_form.labels.defaults.name", default: 'Name'))
+        th = t("simple_form.labels.experiment.label", default: t("simple_form.labels.defaults.label", default: 'Label'))
+        th = t("simple_form.labels.experiment.sub_category", default: t("simple_form.labels.defaults.sub_category", default: 'Subcategory'))
+        th.text-center
+          = " Optionen "
+    tbody
+      - @experiments.each do | experiment |
+        tr
+          td
+            = experiment.name
+          td
+            = experiment.label
+          td
+            = experiment.sub_category.name if experiment.sub_category
+          td.text-center
+            = link_to icon("eye").html_safe, experiment, class: "btn btn-primary"
+            = link_to icon("trash").html_safe, experiment, method: :delete, data: { confirm: t('interface.confirm') }, class: "btn btn-danger"
+            - if experiment.deleted?
+              = link_to icon("undo").html_safe, restore_experiment_path(experiment), method: :post, data: { confirm: "Wirklich wiederherstellen ?" }, class: "btn btn-secondary btn-hover--jade"           
+= will_paginate @experiments, renderer: WillPaginate::ActionView::BootstrapLinkRenderer
