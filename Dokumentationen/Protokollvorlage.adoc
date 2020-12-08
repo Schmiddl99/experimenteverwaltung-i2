@@ -1,0 +1,71 @@
+= Protokollvorlage
+ HTW Dresden, Software Engineering I WS 2020/2021
+Projekt I2_Erweiterung_Experimenteverwaltung
+
+
+|===
+2+| *_Thema des Meetings_*
+
+ Testmeeting 1
+ 
+| *_Datum/Zeit_*
+
+04.11.2020, 18:00-20:00 Uhr
+| *_Ort/Raum_*
+
+ Discord-Call / jitsi-Meeting / Telefonat in XYZ
+ 
+| *_Anwesende_*
+
+Alena Bischoff (AB)
+
+Richard Böhme (RB)
+
+William Elsner (WE)
+
+Tobias Karsch (TKa)
+
+Taejun Kim (TKi)
+
+Gregor Müller (GM)
+
+Julius Heiko Schmidt (JS)
+
+Tim Würzburg (TW)
+
+| *_Protokollführung_*
+
+ Person XYZ
+|===
+
+=== Agenda
+. Tagesordnungspunkt 1
+. Tagesordnungspunkt 2
+
+=== Sonstige Anmerkungen
+
+* Ein Punkt
+* Noch ein Punkt
+** Ein Unterpunkt
+
+=== Besprechungsprotokoll/Ergebnisse
+|===
+|*_Tagesordnungspunkt_* 3+|*_Ergebnisse_*
+|Top 1 
+3+|Alles toll
+|Top 2
+3+|noch besser
+|===
+
+=== Aufgaben
+|===
+|*_Nr._* 3+|*_Inhalt_* |*_erldigen bis_* |*_zuständig_*
+|1
+3+| Kekse backen
+|32.13.2222
+|(AC)
+|2
+3+| Geschenke verpacken
+|33.14.3333
+|(DC)
+|===

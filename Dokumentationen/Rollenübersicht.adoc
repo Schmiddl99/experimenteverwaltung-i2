@@ -1,0 +1,117 @@
+= Verantwortlichkeiten
+ HTW Dresden, Software Engineering I WS 2020/2021
+Projekt I2_Erweiterung_Experimenteverwaltung
+
+|===
+|*Name* |*Rolle* |*Anmerkung* |*Letze Änderung*
+|Tobias Karsch
+
+Ausscheidend nach SE I
+|Project Manager (SE I)
+
+Analyst (zus.)
+|Standardmäßig Protkoll-verantw.
+|01.12.2020
+
+|Tim Würzburg
+
+Ausscheidend nach SE I
+|Project Manager (SE I)
+
+Analyst (zus.)
+|Standardmäßig Protkoll-verantw.
+|01.12.2020
+
+|Gregor Müller 
+|Tester
+
+Project Manager (SE II)
+
+Developer (zus.)
+|Übernimmt PM in SE II
+|01.12.2020
+
+|Julius Schmidt
+
+Ausscheidend nach SE I
+|Analyst
+|Terminplaner (Doodle)
+|01.12.2020
+
+|Richard Böhme
+|Developer
+
+Tester (zus.)
+|Deployment (virtuelle Maschine)
+|01.12.2020
+
+|Alena Bischoff
+|Developer (zus.)
+
+Tester (zus.)
+|
+|01.12.2020
+
+|Taejun Kim
+|Developer (zus.)
+
+Architect (zus.)
+|
+|01.12.2020
+
+|William Elsner
+|Architect 
+
+Tester (zus.)
+|
+|01.12.2020
+
+|Matthias Heisig
+|Stakeholder
+|Themenersteller
+
+Admin
+
+Webanwendung
+|01.12.2020
+
+|Christoph Zirkelbach
+|Stakeholder
+|Coach
+
+Ansprechpartner
+
+Git+AsciiDoc
+|01.12.2020
+
+|Jürgen Anke
+|Stakeholder
+|Professor
+
+Ansprechpartner
+
+Visual Paradigm
+|01.12.2020
+
+|Herr Hornoff
+
+hornoff@htw-dresden.de
+|Stakeholder
+|Ansprechpartner
+
+virtuelle Maschine
+
+Admin
+
+Fak. MaschBau
+|01.12.2020
+
+|Vincent Thelang
+
+vincent@vincent-thelang.de
+|Ehemaliges Teammitglied
+|-Steht zur Seite bei Fragen
+
+-bietet Einführung zu Ruby on Rails an
+|02.12.2020
+|===
