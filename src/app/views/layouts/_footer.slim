@@ -1,0 +1,16 @@
+.form-actions-bar.bg-light.fixed-bottom
+  .container
+    .row
+      .col
+        - if user_signed_in?
+          = link_to 'javascript:history.back()', class: "btn btn-secondary pull-left"
+            | Zurück
+      .col
+        .text-center
+          = link_to 'Kontakt', contact_path
+          br
+          a(href="https://www.htw-dresden.de/") 
+            small Hochschule für Technik und Wirtschaft Dresden
+      .col
+        .pull-right
+          = button if defined? button

@@ -1,0 +1,9 @@
+= simple_form_for(@medium) do |f|
+  = f.error_notification
+  = f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present?
+
+  .form-inputs
+  	.form-group.select.optional
+    	= f.association :experiment, label_method: :name_with_label, collection: Experiment.order("label")
+  = footer do
+    - f.button :submit

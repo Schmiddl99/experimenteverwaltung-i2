@@ -1,0 +1,19 @@
+br
+.page-header
+  h1 Backups
+  br
+  br
+br
+.table-responsive
+  table.table.table-striped.table-bordered.table-hover
+    thead.thead-light
+      tr
+        th Datum
+        th Dateigröße
+        th Herunterladen
+    tbody
+      - @backups.each do | backup |
+        tr
+          td = l(backup.created_at)
+          td = number_to_human_size(backup.file_size)
+          td = link_to "#{icon("download")} Herunterladen".html_safe, backup_path(backup.file_name, format: "zip"), class: "btn btn-block btn-download btn-hover--jade"

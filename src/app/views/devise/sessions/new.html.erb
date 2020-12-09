@@ -1,0 +1,26 @@
+<h2>Anmelden</h2>
+<br>
+<%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <div class="form-inputs">
+    <%- if User.has_attribute?(:email) %>
+      <%= f.input :email,
+                  required: false,
+                  autofocus: true,
+                  input_html: { autocomplete: "email" }%>
+    <%- elsif User.has_attribute?(:username) %>
+      <%= f.input :username,
+                  required: false,
+                  autofocus: true%>
+    <%- end %>
+
+    <%= f.input :password,
+                required: false,
+                input_html: { autocomplete: "current-password"} %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit, "Anmelden", class: "btn btn-primary" %>
+  </div>
+<% end %>
+
+<%= render "devise/shared/links" %>

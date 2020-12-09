@@ -1,0 +1,17 @@
+.page-header
+  small#zoom-label Zoom: +150x
+  br
+  input type="range" min="50" max="300" step="25" value="150" id="zoom_range"
+  br
+  br
+.text-center
+  .zoom
+    = image_tag(@medium.file.url, class: "img-fluid", style: "max-width:850px")
+- if @medium.experiment.present?
+  br
+  .row
+    - @medium.experiment.media.order(:sort).each do |medium|
+      .col-sm-2
+        = link_to image_tag(medium.file.url(:medium), class: "img-fluid"), medium
+  br
+  br

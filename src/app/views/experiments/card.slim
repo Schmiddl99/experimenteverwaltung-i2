@@ -1,0 +1,55 @@
+.page
+  .front
+    .header
+      .name
+        b =@experiment.name.truncate(60, separator: "...")
+      .label 
+        b =@experiment.label
+    .content
+      div#wrapper
+        .left-part
+          .description
+            b Versuchsbeschreibung:
+            br
+            br
+            div = simple_format @experiment.description
+          .equpiment
+            table
+              thead
+                tr
+                  th style="min-width: 450px;" Name
+                  th style="min-width: 150px;" Anzahl
+                  th Schranknummer
+              tbody
+                - @experiment.experiment_equipment_assignments.each do | assignment |
+                  tr
+                    td = assignment.equipment.name
+                    td = assignment.number
+                    td = assignment.equipment.location
+        .right-part
+          .first-picture
+            - if @experiment.media.first.present?
+              = wicked_pdf_image_tag @experiment.media.first.file.url(:medium), width: 400 
+      br
+      br
+      .message
+        b = "Hinweise: #{@experiment.message}"
+  .page-break  
+    .back  
+      .content
+        .danger
+          b Gefahren:
+          br
+          br
+          ul
+            - @experiment.dangers.each do |danger|
+              = danger.name
+              / = wicked_pdf_image_tag danger.file.url(:thumb), width: 100
+        br
+        br
+        .pictures-wrapper
+          -if @experiment.media.present?
+            - @experiment.media.where.not(id: @experiment.media.first.id).first(3).each do |medium|
+              .picture
+                = wicked_pdf_image_tag medium.file.url(:medium), width: 400
+

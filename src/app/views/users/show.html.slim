@@ -1,0 +1,41 @@
+br
+.page-header
+  h1
+    | Benutzer - 
+    b
+      ="#{current_user.name}"
+  br
+  br
+br
+.card
+  .card-header
+    | Account Informationen
+    - if "#{current_user.role}" == "admin"  
+      .pull-right 
+        = link_to icon("pencil").html_safe, edit_user_path("#{current_user.id}"), class: " btn btn-secondary btn-hover--jade"
+  .card-body
+    .list-group
+      .list-group-item
+        b.pull-left
+          | Name:
+        .text-center
+          ="#{current_user.name}"
+      .list-group-item
+        b.pull-left
+          | Username:
+        .text-center
+          ="#{current_user.username}"
+      .list-group-item
+        b.pull-left
+          | Role:
+        .text-center
+          = t("activerecord.user.#{current_user.role}")
+      .list-group-item
+        b.pull-left
+          | Active:
+        .text-center
+          -if current_user.active == true
+            = "Aktiv"
+          -else
+            = "Inaktiv"
+br

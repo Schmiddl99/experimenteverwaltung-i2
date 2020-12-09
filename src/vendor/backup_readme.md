@@ -1,0 +1,3 @@
+# Backup - Readme
+
+In diesem Verzeichnis findet sie zum einen alle Bilder die zum Zeitpunkt der Erstellung des Backups in der Datenbank vorhanden waren und eineVie production.sqlite3 Datei. Diese können sie auf verwendet um den Stand der Datenbank wieder herzustellen. Kopieren sie diese Datei auf dem Server ins Verzeichnis 'var/www/app/shared/db/'. Die Datenbank sollte danach wieder funktionsfähig sein.

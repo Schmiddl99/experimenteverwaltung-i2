@@ -1,0 +1,112 @@
+= render "equipment_management"
+= render "danger_management"
+= simple_form_for(@experiment) do |f|
+  = f.error_notification
+  = f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present?
+  - if f.object.try(:errors).try(:details).try(:keys).try(:include?, :sub_category)
+    strong.text-danger Automatische über Erkennung nicht möglich. Bitte manuell auswählen:
+    br
+    br
+    = f.association :sub_category, collection: SubCategory.order('label'), label_method: lambda { |c| "#{c.category.name} > #{c.name}" }
+    br
+    br
+    br
+
+  .form-inputs.px-5
+    .row
+      .col-sm-3
+        = f.input :label
+      .col-sm-9
+        = f.input :name
+    br
+    .row
+      .col-sm-12
+        .card
+          .card-body
+            strong Bilder
+            button.btn.btn-link.btn-sm.add_association.pull-right type="button" data-type="media" 
+              = icon("plus fa-fw")
+              | Weiteres Bild hinzufügen
+            br
+            br
+            .sortable.nested-form 
+              = f.fields_for :media, @experiment.media.sort_by{|x| (x.sort||99)} do |medium|
+                = render 'medium_fields', f: medium
+              = link_to_add_association "", f, :media, class: "hidden", id: "nested-new-media", "data-association-insertion-method" => "append"
+    br
+    hr.bg-primary
+    = f.input :description, input_html: {rows: 10}
+    hr.bg-primary
+    .row
+      .col-sm-12
+        .card
+          .card-body
+            strong Geräte
+            button.btn.btn-link.btn-sm.add_association.pull-right type="button" data-type="experiment_equipment_assignment"
+              = icon("plus fa-fw")
+            br
+            br
+            .nested-form
+              = f.simple_fields_for :experiment_equipment_assignments do |experiment_equipment_assignment|
+                = render 'experiment_equipment_assignment_fields', f: experiment_equipment_assignment
+              = link_to_add_association "", f, :experiment_equipment_assignments, class: "hidden", id: "nested-new-experiment_equipment_assignment", "data-association-insertion-method" => "append"
+    br
+    .row
+      .col-sm-6
+        .card
+          .card-body
+            strong Gefahren
+            button.btn.btn-link.btn-sm.add_association.pull-right type="button" data-type="experiment_danger_assignment"
+              = icon("plus fa-fw")
+            br
+            br
+            .nested-form
+              = f.simple_fields_for :experiment_danger_assignments do |experiment_danger_assignment|
+                = render 'experiment_danger_assignment_fields', f: experiment_danger_assignment
+              = link_to_add_association "", f, :experiment_danger_assignments, class: "hidden", id: "nested-new-experiment_danger_assignment", "data-association-insertion-method" => "append"
+      .col-sm-6
+        .card
+          .card-body
+            strong Videos
+            button.btn.btn-link.btn-sm.add_association.pull-right type="button" data-type="video"
+              = icon("plus fa-fw")
+            br
+            br
+            .nested-form
+              = f.simple_fields_for :videos do |video|
+                = render 'video_fields', f: video
+              = link_to_add_association "", f, :documents, class: "hidden", id: "nested-new-video", "data-association-insertion-method" => "append"
+    br
+    .row
+      .col-sm-6
+        .card
+          .card-body
+            strong Links
+            button.btn.btn-link.btn-sm.add_association.pull-right type="button" data-type="link"
+              = icon("plus fa-fw")
+            br
+            br
+            .nested-form
+              = f.simple_fields_for :links do |link|
+                = render 'link_fields', f: link
+              = link_to_add_association "", f, :links, class: "hidden", id: "nested-new-link", "data-association-insertion-method" => "append"
+      .col-sm-6
+        .card
+          .card-body
+            strong Instruktionen
+            button.btn.btn-link.btn-sm.add_association.pull-right type="button" data-type="document"
+              = icon("plus fa-fw")
+            br
+            br
+            .nested-form
+              = f.simple_fields_for :documents do |document|
+                = render 'document_fields', f: document
+              = link_to_add_association "", f, :documents, class: "hidden", id: "nested-new-document", "data-association-insertion-method" => "append"
+    hr.bg-primary
+    strong Anmerkung
+    = f.input :message, input_html: {rows: 10}, label: false
+    = footer do
+      - f.button :submit, id: "experiment-save"
+    br
+    br
+    br

@@ -1,0 +1,42 @@
+br
+.page-header
+  .row
+    .col
+      - if @sub_category.prev.present?
+        = link_to sub_category_path(@sub_category.prev), class: 'btn btn-secondary btn-block btn-hover--jade'
+          i.fa.fs.fa-arrow-left>
+          = @sub_category.prev.name
+      - else
+        .btn.btn-secondary.btn-block.disabled
+          i.fa.fs.fa-arrow-left
+    .col
+      = link_to category_path(@sub_category.category), class: 'btn btn-secondary btn-block btn-hover--jade btn-block'
+        i.fa.fs.fa-arrow-up>
+        = @sub_category.category.name
+    .col
+      -if @sub_category.next.present?
+        = link_to sub_category_path(@sub_category.next), class: "btn btn-secondary btn-block btn-hover--jade pull-right"
+          = @sub_category.next.name
+          i.fa.fs.fa-arrow-right<
+      -else
+        .btn.btn-secondary.btn-block.disabled.pull-right
+          i.fa.fs.fa-arrow-right
+  br
+  h1
+    = "#{@sub_category.label} - #{@sub_category.name}"
+  br
+br 
+.card
+  .card-header 
+    = link_to @sub_category.category.name, category_path(@sub_category.category)
+    = " > "
+    b
+      = @sub_category.name    
+
+  .card-body
+    .list-group
+      - @sub_category.experiments.sorted.active.each do | sub_category |
+        .list-group-item
+          = link_to experiment_path(sub_category), class: "stretched-link"
+            = "#{sub_category.label} - #{sub_category.name}"
+br

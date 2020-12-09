@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    title EMS
+    = csrf_meta_tags
+    = csp_meta_tag
+    meta content="width=device-width,initial-scale=1" name="viewport"
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' 
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+  body
+      - if user_signed_in?
+        = render "layouts/header"
+      .container
+        main
+          - if notice
+            p.alert.alert-primary = notice.html_safe
+          - if alert
+            p.alert.alert-danger = alert.html_safe
+          = yield
+      - unless @disabel_footer
+        = render "layouts/footer"
+

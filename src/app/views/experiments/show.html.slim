@@ -1,0 +1,164 @@
+br
+.page-header
+  .row
+    .col
+      -if @experiment.prev.present? 
+        = link_to experiment_path(@experiment.prev), class: "btn btn-secondary btn-block btn-hover--jade"
+          i.fa.fs.fa-arrow-left>
+          = @experiment.prev.name
+      -else
+        .btn.btn-secondary.btn-block.disabled
+          i.fa.fs.fa-arrow-left
+        
+    .col
+        = link_to sub_category_path(@experiment.sub_category_id), class: 'btn btn-secondary btn-hover--jade btn-block'
+          i.fa.fs.fa-arrow-up>
+          = @experiment.sub_category.name
+    .col
+      -if @experiment.next.present?
+        = link_to experiment_path(@experiment.next), class: "btn btn-secondary btn-block btn-hover--jade pull-right"
+          = @experiment.next.name
+          i.fa.fs.fa-arrow-right<
+      -else
+        .btn.btn-secondary.btn-block.disabled.pull-right
+          i.fa.fs.fa-arrow-right
+  br  
+h1 
+  =@experiment.label 
+  | -
+  = @experiment.name
+
+.row
+  .col
+    .pull-right
+      -if current_user.admin? || current_user.assistant?
+        =link_to "Experiment bearbeiten", edit_experiment_path(@experiment), class: 'btn btn-sm btn-hover--jade btn-secondary mr-1'
+      -if !current_user.guest? 
+        =link_to "Karteikarte öffnen",  experiment_path(@experiment, format: :pdf), class: "btn btn-sm btn-secondary btn-hover--jade mr-1", target: "_blank"
+      -if current_user.admin? || current_user.assistant?
+        =link_to icon("trash").html_safe, params[:id], method: :delete, data: { confirm: t('interface.confirm') }, class: "dropdown-bin--red btn btn-sm btn-danger pull-right"
+
+br
+br
+.row
+  .col-sm-9
+    .card
+      .card-header
+        = link_to category_path(@experiment.sub_category.category_id)
+          = @experiment.sub_category.category.name
+        = " > "
+        = link_to sub_category_path(@experiment.sub_category_id)
+          = @experiment.sub_category.name
+        = " > "
+        b
+          = @experiment.name
+      .card-body
+        = simple_format @experiment.description
+    br
+    .row.justify-content-center
+      .col-sm.12
+        .list-group
+          .list-group-item.bg-info 
+            b  
+              .pull-left
+                | Gerät
+          .list-group-item
+            -if @experiment.equipment.any?
+              table.table.table-striped.table-bordered.table-hover
+                thead
+                  tr
+                    th Name
+                    th Anzahl
+                    th Schranknummer
+                tbody
+                  - @experiment.experiment_equipment_assignments.each do | assignment |
+                    tr
+                      td = assignment.equipment.name
+                      td = assignment.number
+                      td = assignment.equipment.location
+            -else
+              .list-group-item.text-center
+                = "Keine Geräte vorhanden"
+    br
+    .row
+      .col
+        .list-group
+          .list-group-item.bg-info 
+            b Instruktionen
+          -if @experiment.documents.any?
+            - @experiment.documents.each do | document |
+              .list-group-item
+                = link_to document.file.original_filename, download_path(document: document.id)
+          -else
+            .list-group-item
+              = "Keine Einträge"
+      .col-sm
+        .list-group
+          .list-group-item.bg-info 
+            b Anmerkungen
+          .list-group-item
+            -if @experiment.message.present?
+              = simple_format @experiment.message
+            -else
+              = "Keine Anmerkungen vorhanden"      
+    br
+    .row.justify-content-center
+      .col-sm
+        .list-group
+          .list-group-item.bg-info 
+            b Links
+          -if @experiment.links.any?
+            - @experiment.links.each do | link |
+              .list-group-item
+                a title=link.url href=link.url  = link.url.truncate(27)
+          -else
+            .list-group-item
+              = "Keine Einträge"
+      .col-sm
+        .list-group
+          .list-group-item.bg-info 
+            b Gefahren
+          - if @experiment.dangers.present?
+            .list-group-item
+              .row
+                  - @experiment.dangers.each_with_index do |danger, i|
+                    .col-sm-4
+                      - if danger.file.exists?
+                        = image_tag(danger.file.url(:medium), class: "d-block w-100")
+                      - else
+                        = danger.name                 
+          - else
+           .list-group-item
+            | Keine Gefahren verfügbar
+
+    br
+    .row
+      .col-6
+        .list-group
+          .list-group-item.bg-info 
+            b Videos
+          .list-group-item
+            - if @experiment.videos.present?
+              ul
+                - @experiment.videos.each do |video|
+                  li = link_to video.file.original_filename, video.file.url, download: video.file.original_filename
+            - else
+              | Keine Videos verfügbar
+  .col-sm-3
+    .text-center
+      h4 Bilder
+    - if @experiment.media.present?
+      - @experiment.media.order(:sort).each do |medium|
+        = link_to image_tag(medium.file.url(:medium), class: "d-block w-100"), medium
+        .text-center  
+          = medium.file_name
+        br
+    - else
+      | Keine Bilder verfügbar
+
+
+
+br
+br
+br
+br
