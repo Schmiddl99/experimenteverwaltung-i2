@@ -96,7 +96,7 @@ Visual Paradigm
 |Herr Hornoff
 
 hornoff@htw-dresden.de
-|Stakeholder
+|Technischer Ansprechpartner
 |Ansprechpartner
 
 virtuelle Maschine
