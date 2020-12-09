@@ -1,0 +1,206 @@
+= Vision: {project-name}
+Alena Bischoff <alena.bischoff@htw-dresden.de>; Tobias Karsch <tobias.karsch@htw-dresden.de>; Vorname3 Nachname3 <email3@domain.org>
+{localdatetime}
+include::../_includes/default-attributes.inc.adoc[]
+// Platzhalter für weitere Dokumenten-Attribute
+
+
+== Einführung
+Ziel dieses Dokumentes ist es, einen genaueren Überblick über die wesentlichen Bestandteile der Änderung an der Web-App “Experimente Verwaltung” aufzuzeigen und Informationen zu sammeln, zu analysieren und genauer zu definieren. Wir werfen einen Blick auf die einzelnen Stakeholder der Anwendung, deren Wünsche und Bedingungen. Die genaueren Details, wie die angegeben Bedürfnisse realisiert werden, finden sich in [xyz]. 
+
+ 
+
+[.underline]#Stakeholder:#
+
+* Kunde: Hr. Heisig [fortan mit “Kunde” bezeichnet] 
+* Dozenten (=Nutzer des Buchungssystems) 
+* Technischer Ansprechpartner für Virtuelle Maschine (TAVM): Herr Hornoff 
+
+=== Zweck
+
+Der Zweck dieses Dokuments ist es, die wesentlichen Anforderungen an das System aus Sicht und mit den Begriffen der künftigen Anwender zu beschreiben.
+
+=== Gültigkeitsbereich (Scope)
+Dieses Visions-Dokument bezieht sich auf das Experimente-Verwaltungs-System, das von Team I2 entwickelt wird. Das System wird es dem Admin erlauben, ein Buchungssystem zu betreiben, um damit das umständliche Bestellen per E-Mail abzulösen.
+
+=== Definitionen, Akronyme und Abkürzungen
+siehe  <<Glossar.adoc#requirements,Glossar>>
+
+=== Referenzen
+based on: https://www2.htw-dresden.de/~anke/openup/core.tech.common.extend_supp/guidances/templates/resources/vision_tpl.dot [EPL V1.0]
+
+== Positioning
+=== Fachliche Motivation
+//Erläutern Sie kurz den Hintergrund, in dem das Projekt angesiedelt ist. Welches Problem soll gelöst werden, wie ist es entstanden? Welche Verbesserung wird angestrebt. Achten Sie darauf, eine fachliche (organisatorische, betriebswirtschaftliche) Perspektive einzunehmen.
+Unser Kunde besitzt bereits eine Web-Anwendung, welche es ihm und seinen Kollegen (Dozenten) möglich macht, physikalische Experimente in passenden Kategorien zu betrachten, deren Details und Bestandteile anzusehen sowie eine Karteikarte zu generieren, welche genau diese Informationen druckbar macht, um diese physisch vorliegen zu haben.
+Für die Dozenten ist es wichtig, bei unserem Kunden ihre Wahl an aufzubauenden Experimenten für die kommende Woche zu beauftragen. Dies geschieht bisher formlos per Mail an den Kunden. 
+
+Diese Methode ist sehr unübersichtlich, da die einzelnen Mails der Dozenten ausgewertet werden müssen und nicht alle dieselbe Bestell-Vorlage verwenden. Die Mails müssen händisch nach Wochentag und Dozent sortiert werden, was einen Mehraufwand darstellt. 
+
+Um diesen Mehraufwand zu umgehen, möchte der Kunde eine Möglichkeit der Hinzufügung von Experimenten in einen “Warenkorb”. In diesem soll je Experiment ein Datum hinterlegt werden und als Auftrag bestellt werden können. Am Ende der Woche sollen dann automatisiert diese Daten abrufbar gemacht werden, aufbereitet zur einfachen Planung der Bestellungen je Wochentag. 
+
+Ebenfalls soll die Möglichkeit einer Auswertung der vergangenen Bestellungen ermöglicht werden. Dies ist wichtig, um herauszufinden welche Experimente besonders oft gebucht werden, um bspw. Verschleiß der Geräte vorauszusagen und in Folge dessen mehr Geräte oder Instrumente einzukaufen.  
+
+Als Zusatzziel ist die Verwaltung der in den Experimenten enthaltenen Bilder. Bei Anschaffung von neuen Instrumenten für die Experimente müssen auch die Bilder von diesen erneuert werden. Dabei soll, um eine Konsistenz zu bewahren, die Bezeichnung der Bilder gleich bleiben, das Bild aber in Datei und Reihenfolge anpassbar gemacht werden. 
+
+=== Problem Statement
+//Stellen Sie zusammenfassend das Problem dar, das mit diesem Projekt gelöst werden soll. Das folgende Format kann dazu verwendet werden:
+
+
+[cols="1,3"]
+|===
+|Das Problem 
+a|
+
+* Dozent muss für Folgewoche eine Mail verfassen, welche seine gewünschten Experimente-Auswahl enthält
+* Kunde muss händisch Emails der Dozenten auswerten und sortieren; sich selbst einen Plan der benötigten Experimente je Wochentag erarbeiten 
+
+
+|betrifft 
+a|	
+
+* Kunde
+* Dozenten
+
+|die Auswirkung davon ist 
+a|
+
+* Dozenten haben verschiedene “Templates” für das Versenden ihre Wünsche per Mail → kein normales “Kopieren” möglich 
+* Keine automatische Sortierung pro Tag; muss händisch durch Kunden in richtige Reihenfolge gebracht werden. 
+* Unnötiges Aufkommen von vielen Emails 
+* Es ist nicht ersichtlich, wer noch nicht seinen Wochenplan aufgegeben hat 	
+
+
+|eine erfolgreiche Lösung wäre 
+a|
+
+* Warenkorb/Wochenplan-System: Experimente können über Button in Warenkorb gelegt werden 
+* Im Warenkorb kann benötigtes Datum des Experiments hinterlegt werden 
+* Bereitstellung einer Buchungs-Einsicht  mit bspw. einer Excel Datei; in welcher die Buchungen mit Sortierung je Wochentag; einfache und Übersichtliche Gliederung 
+
+|===
+
+
+=== Product Position Statement 
+//Ein Positionierung des Produkts beschreibt das Einsatzziel der Anwendung und die Bedeutung das Projekts an alle beteiligten Mitarbeiter.
+
+//Geben Sie in knapper Form übersichtsartig die Positionierung der angestrebten Lösung im Vergleich zu verfügbaren Alternativen dar. Das folgende Format kann dazu verwendet werden:
+
+[cols="1,3"]
+|===
+|Für
+
+|Dozenten,
+Admin [Kunde] 
+
+|der / die
+
+a|
+
+* Dozenten:  
+** … Experimente für die kommende Woche bestellen wollen 
+* Admin: 
+** ... einsehen will; welche Experimente bestellt wurden. 
+** … einsehen will, in welchem Umfang die Experimente in der Vergangenheit gebucht wurden sind. 
+
+|Das Produkt / die Lösung ist ein | … Erweiterung der Web-Anwendung “Physik Experimente Verwaltung” 
+
+|die / das	|… welche die Buchung von Experimenten und Einsicht der Buchungen sowie deren Historie ermöglicht 
+
+|im Gegensatz zu	|… der Buchung über Email und manuelle Historie und Aufbereitung.
+|Unser Produkt|	… ermöglicht die einfache Bestellung von Experimenten und Generierung eines Wochenplans der Buchungen dieser sowie eine Übersicht der bisherigen Buchungen.
+|===
+
+
+
+==	Stakeholder Beschreibungen
+===	Zusammenfassung der Stakeholder
+
+[%header, cols="1,3,3"]
+|===
+|Name|	Beschreibung	| Verantwortlichkeiten
+
+|Admin	a|
+
+* Mitarbeiter im Bereich Energietechnik/Physik der HTW 
+* Versorgt Dozenten mit Experimenten (“Interner Dienstleister”) 
+* Möchte seine wöchentliche Arbeit optimieren 	a|
+
+* stellt Experimente nach Bestellung bereit 
+* “Verwalter” des Webtools – stellt Informationen zu den Experimenten bereit 
+* führt sie durch 
+* kümmert sich um Instandhaltung der Geräte 
+
+|Dozent a|
+
+* Mitarbeiter im Bereich Energietechnik/Physik der HTW 
+* Hat Interesse an Experimenten für seine Vorlesung 
+* Interesse an vereinfachter Buchung für bestimmten Zeitslot 
+* Ist Frontend-Benutzer des Systems a|
+
+* Pünktlich Experimente buchen 
+* Ort und Zeit muss gewährleistet werden 
+
+|TAVM (Herr Hornoff)
+// Bezeichnung Stakeholder?
+|Betreuer der VM |Gewährleistung eines Arbeitsumfeldes für uns
+|===
+
+=== Benutzerumgebung
+//Beschreiben Sie die Arbeitsumgebung des Nutzers. Hier sind einige Anregungen:
+
+//Zutreffendes angeben, nicht zutreffendes streichen oder auskommentieren
+//. Wie lange dauert die Bearbeitung der Aufgabe? Wie viel Zeit wird für jeden Arbeitsschritt benötigt? Ändert sich das?
+//. Gibt es besondere Umgebungsbedingungen, z.B. mobil, offline, Außeneinsatz, Touchbedienung, Nutzung durch seh- oder hörbeeinträchtigte Personen?
+//. Welche Systemplattformen werden heute eingesetzt? Welche sind es ggf. zukünftig?
+//. Welche anderen Anwendungen sind im Einsatz? Muss ihre Anwendung mit diesen integriert werden?
+
+//Hier können zudem bei Bedarf Teile des Unternehmensmodells (Prozesse, Organigramme, IT-Landschaft, ...) eingefügt werden, um die beteiligten Aufgaben und Rollen zu skizzieren.
+
+[.underline]#Für Admin:# 
+
+* bisherige Webanwendung soll verwendet werden (bekannt und etabliert) 
+* soll Bestellungen komfortabel einsehen können 
+* einfache Handhabung (Kunde ist kein Power-User) 
+* muss Bestellhistorie (“komprimiert”) einsehen können
+
+[.underline]#Für Dozent:# 
+
+* bisherige Webanwendung soll verwendet werden (bekannt und etabliert) 
+* einfache Bestellung; intuitiv & schnell
+* Bestellung erfolgt nur über Webanwendung (keine Mails mehr) 
+* Anzahl der Dozenten kann sich ändern 
+
+
+
+== Produkt-/Lösungsüberblick
+=== Bedarfe und Hauptfunktionen
+//Vermeiden Sie Angaben zum Entwurf. Nennen wesentliche Features (Produktmerkmale) auf allgemeiner Ebene. Fokussieren Sie sich auf die benötigten Fähigkeiten des Systems und warum (nicht wie!) diese realisiert werden sollen. Geben Sie die von den Stakeholdern vorgegebenen Prioritäten und das geplante Release für die Veröffentlichung der Features an.
+
+
+[%header, cols="4,1,4,1"]
+|===
+|Bedarf|	Priorität|	Features|	Geplantes Release
+|Warenkorb |hoch |Experiment in Warenkorb legen; datieren; bereitstellen |xx
+|Bestellliste ansehen |hoch |Experimente-Wochenplan für Folgewoche einsehen  |xx
+|Statistik ansehen |mittel |Statistik (z.B. als Top 10) der (bestellten) Experimente einsehen |xx
+|Verwaltung der Bilder |niedrig |Bilder in Experimenten können ersetzt werden, Reihenfolge wird einbehalten. |xx
+|===
+
+
+== Zusätzliche Produktanforderungen
+//Zutreffendes angeben, nicht zutreffendes streichen oder auskommentieren
+
+//Hinweise:
+//. Führen Sie die wesentlichen anzuwendenden Standards, Hardware oder andere Plattformanforderungen, Leistungsanforderungen und Umgebungsanforderungen auf
+//. Definieren Sie grob die Qualitätsanforderungen für Leistung, Robustheit, Ausfalltoleranz, Benutzbarkeit und ähnliche Merkmale, die nicht von den genannten Features erfasst werden.
+//. Notieren Sie alle Entwurfseinschränkungen, externe Einschränkungen, Annahmen oder andere Abhängigkeiten, die wenn Sie geändert werden, das Visions-Dokument beeinflussen. Ein Beispiel wäre die Annahme, dass ein bestimmtes Betriebssystem für die vom System erforderliche Hardware verfügbar ist. Ist das Betriebssystem nicht verfügbar, muss das Visions-Dokument angepasst werden.
+//. Definieren Sie alle Dokumentationsanforderugen, inkl. Benutzerhandbücher, Onlinehilfe, Installations-, Kennzeichnungs- und Auslieferungsanforderungen-
+//. Definieren Sie die Priorität für diese zusätzlichen Produktanforderungen. Ergänzen Sie, falls sinnvoll, Angaben zu Stabilität, Nutzen, Aufwand und Risiko für diese Anforderungen.
+
+[%header, cols="4,1,1"]
+|===
+|Anforderung|	Priorität|	Geplantes Release
+|einfache Bedienbarkeit |hoch |xx|
+|Hilfestellung / Kundenfreundliche  Dokumentation |niedrig |xx
+|===

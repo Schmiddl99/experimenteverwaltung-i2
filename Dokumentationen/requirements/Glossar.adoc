@@ -69,6 +69,7 @@ a| * Versuchsübersicht
 a|* Softwaretechnische Kapselung eines Rechnersystems innerhalb eines lauffähigen Rechnersystems
 a|* Testbereich des Systems
 * Abkürzung:  VM
+* Betreuung durch TAVM
 
 |===
 
@@ -81,6 +82,10 @@ a|* Testbereich des Systems
 |VM
 |Virtuelle Maschine
 |siehe Virtuelle Maschine in Begriffe
+
+|TAVM
+|Technischer Ansprechpartner für VM
+|hornoff@htw-dresden.de Kontaktverantwortlicher: Richard Böhme
 
 |===
 
