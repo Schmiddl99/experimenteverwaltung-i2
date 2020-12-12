@@ -82,6 +82,14 @@ a|* Testbereich des Systems
 |Virtuelle Maschine
 |siehe Virtuelle Maschine in Begriffe
 
+|QM
+|Qualitätsmanagement
+|Interne Sicherung der Qualität in Zusammenarbeit und im Ergebnis
+
+|AQM
+|Ansprechpartner QM
+|=Alena Bischoff
+
 |===
 
 
