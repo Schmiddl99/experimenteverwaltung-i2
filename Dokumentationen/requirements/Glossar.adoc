@@ -71,6 +71,13 @@ a|* Testbereich des Systems
 * Abkürzung:  VM
 * Betreuung durch TAVM
 
+|Open Unified Process
+a|* Vorgehensmodell
+* siehe https://www2.htw-dresden.de/~anke/openup/index.htm
+* _OpenUP is a lean Unified Process that applies iterative and incremental approaches within a structured lifecycle_
+a|* Vorgehendmodell
+* OpenUP
+
 |===
 
 
@@ -81,11 +88,27 @@ a|* Testbereich des Systems
 
 |VM
 |Virtuelle Maschine
-|siehe Virtuelle Maschine in Begriffe
+|siehe Term _Virtuelle Maschine_ in _Begriffe_
 
 |TAVM
 |Technischer Ansprechpartner für VM
 |hornoff@htw-dresden.de Kontaktverantwortlicher: Richard Böhme
+
+|OpenUP
+|Open Unified Process
+|siehe Term _Open Unified Process_
+
+|LCO
+|Life Cycle Objective Milestone
+|siehe project_plan _4. Meilensteine und Ziele_
+
+|TS
+|Themensteller
+|Siehe Term _Kunde_
+
+|TS-Mx
+|Themensteller-Meeting Nr. x
+|Bezeichnung für ein Treffen mit dem Themensteller, fortlaufende Nummerierung
 
 |===
 

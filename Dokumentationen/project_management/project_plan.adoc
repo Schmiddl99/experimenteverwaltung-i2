@@ -6,7 +6,8 @@ include::../_includes/default-attributes.inc.adoc[]
 
 == Einführung
 //Briefly describe the content of the project plan.
-Der Projektplan umfasst die vier Phasen:
+Wir (Team I2) legen unserem Projekt das Vorgehensmodell Open Unified Process (OpenUP) zugrunde.
+Das Projekt umfasst die vier Phasen:
 
 * Inception
 * Elaboration

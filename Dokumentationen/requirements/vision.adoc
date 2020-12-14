@@ -12,7 +12,7 @@ Ziel dieses Dokumentes ist es, einen genaueren Überblick über die wesentlichen
 
 [.underline]#Stakeholder:#
 
-* Kunde: Hr. Heisig [fortan mit “Kunde” bezeichnet] 
+* Kunde: Herr Matthias Heisig (fortan mit “Kunde” bezeichnet)
 * Dozenten (=Nutzer des Buchungssystems) 
 * Technischer Ansprechpartner für Virtuelle Maschine (TAVM): Herr Hornoff 
 
@@ -144,6 +144,9 @@ a|
 |TAVM (Herr Hornoff)
 // Bezeichnung Stakeholder?
 |Betreuer der VM |Gewährleistung eines Arbeitsumfeldes für uns
+
+|Rechenzentrum der HTW |? |Ist "Standort" der Nutzeranwendung und Datenbank
+
 |===
 
 === Benutzerumgebung
@@ -201,6 +204,6 @@ a|
 [%header, cols="4,1,1"]
 |===
 |Anforderung|	Priorität|	Geplantes Release
-|einfache Bedienbarkeit |hoch |xx|
+|einfache Bedienbarkeit |hoch |xx
 |Hilfestellung / Kundenfreundliche  Dokumentation |niedrig |xx
 |===
