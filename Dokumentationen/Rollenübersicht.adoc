@@ -18,6 +18,8 @@ Analyst (zus.)
 Ausscheidend nach SE I
 |Project Manager (SE I)
 
+Risk-List (zus.)
+
 Analyst (zus.)
 |Standardmäßig Protkoll-verantw.
 |01.12.2020
@@ -46,14 +48,18 @@ Tester (zus.)
 |01.12.2020
 
 |Alena Bischoff
-|Developer (zus.)
+|QM-Beauftragte
+
+Developer (zus.)
 
 Tester (zus.)
 |
 |01.12.2020
 
 |Taejun Kim
-|Developer (zus.)
+|Git-Hup-Verantwortlicher
+
+Developer (zus.)
 
 Architect (zus.)
 |
