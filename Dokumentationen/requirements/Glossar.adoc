@@ -110,6 +110,14 @@ a|* Vorgehendmodell
 |Themensteller-Meeting Nr. x
 |Bezeichnung für ein Treffen mit dem Themensteller, fortlaufende Nummerierung
 
+|QM
+|Qualitätsmanagement
+|Interne Sicherung der Qualität in Zusammenarbeit und im Ergebnis
+
+|AQM
+|Ansprechpartner QM
+|=Alena Bischoff
+
 |===
 
 
