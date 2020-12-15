@@ -1,5 +1,5 @@
 // Meta
-:project-name: <Projektname (T00)>
+:project-name: Experimenteverwaltung: Erweiterung Buchungssystem (I2)
 // Settings:
 :toc:
 :toc-title: Inhaltsverzeichnis
