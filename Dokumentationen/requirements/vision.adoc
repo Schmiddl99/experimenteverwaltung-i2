@@ -37,7 +37,7 @@ Für die Dozenten ist es wichtig, bei unserem Kunden ihre Wahl an aufzubauenden 
 
 Diese Methode ist sehr unübersichtlich, da die einzelnen Mails der Dozenten ausgewertet werden müssen und nicht alle dieselbe Bestell-Vorlage verwenden. Die Mails müssen händisch nach Wochentag und Dozent sortiert werden, was einen Mehraufwand darstellt. 
 
-Um diesen Mehraufwand zu umgehen, möchte der Kunde eine Möglichkeit der Hinzufügung von Experimenten in einen “Warenkorb”. In diesem soll je Experiment ein Datum hinterlegt werden und als Auftrag bestellt werden können. Auch Abänderungen oder sogar Stonierungen der eigenen Bestellungen sollte für die Dozenten in einem Journal möglich sein. Am Ende der Woche sollen dann automatisiert diese Daten abrufbar gemacht werden, aufbereitet zur einfachen Planung der Bestellungen je Wochentag. 
+Um diesen Mehraufwand zu umgehen, möchte der Kunde eine Möglichkeit der Hinzufügung von Experimenten in einen “Warenkorb”. In diesem soll je Experiment ein Datum hinterlegt werden und als Auftrag bestellt werden können. Auch Abänderungen oder sogar Stornierungen der eigenen Bestellungen sollte für die Dozenten in einem Journal möglich sein. Am Ende der Woche sollen dann automatisiert diese Daten abrufbar gemacht werden, aufbereitet zur einfachen Planung der Bestellungen je Wochentag. 
 
 Ebenfalls soll die Möglichkeit einer Auswertung der vergangenen Bestellungen ermöglicht werden. Dies ist wichtig, um herauszufinden welche Experimente besonders oft gebucht werden, um bspw. Verschleiß der Geräte vorauszusagen und in Folge dessen mehr Geräte oder Instrumente einzukaufen.  
 
