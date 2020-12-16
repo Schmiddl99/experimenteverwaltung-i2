@@ -44,11 +44,16 @@ a|* Englisch für Vorlage/ Schablone
 |Wochenplan
 a|* Übersicht aller Bestellungen und der Termine der Bereitstellung und Durchführung für die Folgewoche
 a|* Wochenübersicht
+* Buchungseinsicht 
 
-|Buchungseinsicht
-a|* Übersichtliche Dokumentation zur EInsicht der Bestelldetails
-* Ergänzund zum Wochenplan
+|Journal
+a|* Übersicht der eigenen Buchungen mit Anpassungsmöglichkeiten für Dozenten
 |
+
+|Deadline 
+a|* Englisch für Grenze/Frist 
+* Datum, bis zu dem Buchungen geändert/stoniert werden können
+| 
 
 |Historie
 a|* Häufigkeit der vergangenen Buchungen pro Experiment
