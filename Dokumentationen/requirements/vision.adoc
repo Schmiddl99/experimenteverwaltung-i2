@@ -120,11 +120,13 @@ a|
 |===
 |Name|	Beschreibung	| Verantwortlichkeiten
 
-|Admin	a|
+|Admin/Kunde	a|
 
-* Mitarbeiter im Bereich Energietechnik/Physik der HTW 
+* Mitarbeiter der HTW
+* Vorlesungsassistent im Bereich Energietechnik/Physik
 * Versorgt Dozenten mit Experimenten (“Interner Dienstleister”) 
-* Möchte seine wöchentliche Arbeit optimieren 	a|
+* Möchte seine wöchentliche Arbeit optimieren
+* Hat als oberste Ziel seinen Auftrag, den Dozenten die Arbeit zu erleichtern a|
 
 * stellt Experimente nach Bestellung bereit 
 * “Verwalter” des Webtools – stellt Informationen zu den Experimenten bereit 
