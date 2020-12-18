@@ -1,5 +1,17 @@
 // Meta
 :project-name: Experimenteverwaltung: Erweiterung Buchungssystem (I2)
+:GM: gregor.mueller@htw-dresden.de
+:RB: richard.boehme@htw-dresden.de
+:AB: alena.bischoff@htw-dresden.de
+:WE: william.elsner@htw-dresden.de
+:TW: tim.wuerzburg@htw-dresden.de
+:JS: juliusheiko.schmidt@htw-dresden.de
+:TKi: taejun.kim@htw-dresden.de
+:TKa: tobias.karsch@htw-dresden.de
+
+:CZ: Coach (christoph.zirkelbach@htw-dresden.de)
+:MH: Kunde (matthias.heisig@htw-dresden.de)
+:TAVM: hornoff@htw-dresden.de
 // Settings:
 :toc:
 :toc-title: Inhaltsverzeichnis

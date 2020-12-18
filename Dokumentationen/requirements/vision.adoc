@@ -207,3 +207,6 @@ a|
 |einfache Bedienbarkeit |hoch |xx
 |Hilfestellung / Kundenfreundliche  Dokumentation |niedrig |xx
 |===
+
+== Aussicht für zukünftige Projekte
+//Einige Ideen des Teams wurden vom Themensteller abgelehnt. Da das Team I2 dennoch von der Notwendigkeit und dem Nutzen dieser skizzierten Funktionen für die Vorlesungsassistenz überzeugt ist, wollen wir sie nicht in in Vergessenheit geraten lassen. Zukünftige (studentische) Projektteams sollen davon profitieren können. Hier ist der Platz, sie festzuhalten.
