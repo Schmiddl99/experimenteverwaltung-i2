@@ -16,7 +16,7 @@ include::../_includes/default-attributes.inc.adoc[]
 | Beginn der Iteration | 17.12.2020
 | TS-M2 | 17.12.2020?
 |Git-Workshop für Teammitglieder
-|21.12.2020?
+|21.12.2020
 | Ende der Iteration 
 | 31.12.2020
 | LCO    |-
@@ -31,6 +31,7 @@ include::../_includes/default-attributes.inc.adoc[]
 * Use Case Model
 * Risikoliste
 * Wireframes für jeden essentiellen Funktionsschritt nach aktuellem Anforderungskatalog
+* **Wissensaustausch:** Interessierte Mitglieder sollen ein GitHub-Tutorial erhalten, was einerseits die Arbeit im Team fördert als auch einen weiteren Mehrwert innerhalb dieses Moduls schafft.
 
 
 == Aufgabenzuordnung
@@ -74,6 +75,8 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 
 |Wireframe: Header-Menü (Drop-Down) für Studiengang (siehe Anforderungen) und Uhrzeitauswahl (VL-Zeit) |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51434260[#44] |C |2 |DUE: 28.12.? |{GM} {AB} 
 
+|Iteration Plan Pflegen |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51666243[#54] |x |x |Fortlaufende Aufgabe |{TKa}
+
 |END: Iteration: Review |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51307331[#48] |B |3 |DUE: 31.12. |ALL
 
 |END: Iteration: Retrospective |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51307321[#49] |B |3 |DUE: 31.12. |ALL
@@ -87,7 +90,10 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 [%header, cols="2,1,3"]
 |===
 | Problem | Status | Notizen
-| x | x | x
+| Feature Creep | unverändert 
+a|* Nach dem Entwurf der ersten Wireframes wurden diese teilweise wieder verworfen, da von TS-Seite veränderte Anforderungen gestellt wurden.
+* Verworfen werden mussten u.a. die Deadline, die Benachrichtigung von Dozenten, die Pop-Up-Buchungseingabe.
+* Eine Konsultation des Coaches sowie eine Bestätigung der überarbeiteten Vision durch TS sind angedacht. (Stand:22.12.20)
 |===
 
 
@@ -99,6 +105,7 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 * 6 Use Cases wurden dokumentiert und in einem Modell zusammengefasst (Doku liegt als adoc vor)
 * 5 Risiken und entsprechende Gegenmaßnahmen wurden identifiziert. Die Dokumentation liegt als .csv vor.
 * Für jeden dokumentierten Use Case existiert ein Wireframe. Jede dokumentierte Anforderung lässt sich anhand mindestens eines Wireframes erläutern.
+* Der GitHub-Workshop wurde durchgeführt und aufgezeichnet.
 
 == Assessment
 //In diesem Abschnitt werden die Ergebnisse und Maßnahmen der Bewertung erfasst und kommunziert. Die Bewertung wird üblicherweise am Ende jeder Iteration durchgeführt. Wenn Sie diese Bewertungen nicht machen, ist das Team möglicherweise nicht in der Lage, die eigene Arbeitsweise ("Way of Working") zu verbessern.
