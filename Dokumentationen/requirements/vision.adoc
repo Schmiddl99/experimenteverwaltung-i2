@@ -131,7 +131,8 @@ a|
 * stellt Experimente nach Bestellung bereit 
 * “Verwalter” des Webtools – stellt Informationen zu den Experimenten bereit 
 * führt sie durch 
-* kümmert sich um Instandhaltung der Geräte 
+* kümmert sich um Instandhaltung der Geräte
+* Verantwortlicher für Datenschutzaufgaben (Datenschutzerklärung verfassen & herausgeben)
 
 |Dozent a|
 
