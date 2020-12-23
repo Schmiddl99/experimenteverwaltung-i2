@@ -63,12 +63,23 @@ a|* Übersichtliche Dokumentation zur Einsicht der Bestelldetails
 a|* Übersicht aller Bestellungen und der Termine der Bereitstellung und Durchführung für die Folgewoche
 * Information für den Admin
 a|* Wochenübersicht
+* Buchungseinsicht 
+
+
+|Journal
+a|* Übersicht der eigenen Buchungen mit Anpassungsmöglichkeiten für Dozenten
 
 |Dozentenwoche
 a|* Darstellung aller für eine Woche durch einen bestimmten Dozenten gebuchten Experimente
 * "Wochenplan pro Dozent"
 * Information für den Dozenten (buchenden Nutzer)
+
 |
+
+|Deadline 
+a|* Englisch für Grenze/Frist 
+* Datum, bis zu dem Buchungen geändert/stoniert werden können
+| 
 
 |Historie
 a|* Häufigkeit der vergangenen Buchungen pro Experiment
