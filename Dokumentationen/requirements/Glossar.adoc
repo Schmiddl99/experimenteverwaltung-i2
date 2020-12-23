@@ -1,7 +1,8 @@
 = Glossar: Experimenteverwaltung I2
 Alena Bischoff <alena.bischoff@htw-dresden.de>; Gregor Müller <gregor.mueller@htw-dresden.de>; Julius Schmidt <juliusheiko.schmidt@htw-dresden.de>; Richard Böhme <richard.boehme@htw-dresden.de>; Taejun Kim <taejun.kim@htw-dresden.de>; Tim Würzburg <tim.wuerzburg@htw-dresden.de>; Tobias Karsch <tobias.karsch@htw-dresden.de>; William Elsner <william.elsner@htw-dresden.de>;
 {localdatetime}
-include::_includes/default-attributes.inc.adoc[]
+
+include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
 
 == Einführung
@@ -28,26 +29,51 @@ a|* User
 a|* Gleichzusetzten mit "Kunde"
 |
 
-|Bestellung
-a|* Anforderung eines Versuchsaufbaus mit Durchführung zur einer festgelegten Zeit
-|
-
-|Warenkorb
-a|* Temporärer Sammelspeicher für bestellte Experimente pro Dozent
-* Bestellübersicht mit Datums- und Zeitauswahl
-a|* Bestellzusammenfassung
-
 |Template
 a|* Englisch für Vorlage/ Schablone
 |
 
+|Bestellung
+a|* Anforderung eines Versuchsaufbaus mit Durchführung zur einer festgelegten Zeit
+|
+
+|Checkout
+a|* Temporärer Sammelspeicher für bestellte Experimente pro Dozent
+* Bestellübersicht mit Datums- und Zeitauswahl
+a|* Bestellzusammenfassung
+* Warenkorb
+
+|Buchungsschaltfläche
+a|* Schaltfläche, die dem Nutzer per Klick die Buchung eines Experiments ermöglicht
+* Dargestellt durch Warenkorb-Symbol
+a|* Warenkorbicon
+* Warenkorbsymbol 
+
+|Bestelldetails
+a|* Bei Buchung eines konkreten Experimentes anzugebende Informationen
+* enthält: Anmeldedaten (siehe 1.3 Datenstrukturen)
+|
+
+|Buchungseinsicht
+a|* Übersichtliche Dokumentation zur Einsicht der Bestelldetails
+* Ergänzund zum Wochenplan
+|
+
 |Wochenplan
 a|* Übersicht aller Bestellungen und der Termine der Bereitstellung und Durchführung für die Folgewoche
+* Information für den Admin
 a|* Wochenübersicht
 * Buchungseinsicht 
 
+
 |Journal
 a|* Übersicht der eigenen Buchungen mit Anpassungsmöglichkeiten für Dozenten
+
+|Dozentenwoche
+a|* Darstellung aller für eine Woche durch einen bestimmten Dozenten gebuchten Experimente
+* "Wochenplan pro Dozent"
+* Information für den Dozenten (buchenden Nutzer)
+
 |
 
 |Deadline 
@@ -121,7 +147,7 @@ a|* Vorgehendmodell
 
 |AQM
 |Ansprechpartner QM
-|=Alena Bischoff
+|{AB}
 
 |===
 
