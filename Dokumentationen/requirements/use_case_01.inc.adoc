@@ -1,50 +1,47 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
-== Use-Case: <use-case name>
+== Use-Case: Experiment buchen
 ===	Kurzbeschreibung
-//<Kurze Beschreibung des Use Case>
+Buchungsablauf von Exp.. Vom Buchungsstart bis fertigem Eintrag in der DB.
 
 ===	Kurzbeschreibung der Akteure
-==== <Akteur 1 Name>
+* Dozenten
 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
-<Vorbedingung 1>
+* Dozent muss eingelogt sein
+* Dozent muss sich an einer beliebigen stelle im EMS befinden
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
-. Der Use Case beginnt, wenn <akteur> <macht>…
-. <Standardablauf Schritt 1>
-. 	…
-. <Standardablauf Schritt n>
-. Der Use Case ist abgeschlossen.
+. Der Use Case beginnt, wenn Dozent auf "Buchung starten" klickt
+. Neue Seite mit Formular (Uhrzeit, Datum, Studiengang) --> Vorauswahl für aktuellen Buchungsvorgang
+. Exp.-Übersicht wird geöffnet
+. Exp. können über Warenkorbsymbol zum aktuellen Buchnugsvorgang hinzugefügt werden
+. wird auf "Buchung abschließen" geklickt, wird man zum Checkout (neue Seite) weitergeleitet
+. Im Checkout werden fie aktuellen Buchungen aufgezählt, mit Möglichkeit zur Löschung und Kommentierung jeder Buchung
+. Use Case endet damit, dass der User auf "Buchung speichern" klickt
 
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
-==== <Alternativer Ablauf 1>
-Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann
-. <Ablauf beschreiben>
-. Der Use Case wird im Schritt <y> fortgesetzt.
+==== Abbruch des Buchungsvorgangs
+Wenn der Dozent ab Schritt 3 des Standardablaufes die Buchung abbricht, dann wird der Use Case beendet. Es wird keinen Eintrag in der DB geben. Selbiges ist im Chekout unter Schritt 6 möglich.
 
 === Unterabläufe (subflows)
 //Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
 
-==== <Unterablauf 1>
-. <Unterablauf 1, Schritt 1>
-. …
-. <Unterablauf 1, Schritt n>
+--- keine Vorhanden ---
 
 === Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
-==== <Szenario 1>
-. <Szenario 1, Schritt 1>
-. 	…
-. <Szenario 1, Schritt n>
+--- keine abweichenden Szenarios vom Standardablauf ---
 
 ===	Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
-==== <Nachbedingung 1>
+==== DB-Eintrag
+* DB-Eintrag muss initial angelegt werden
 
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
-==== <Besondere Anforderung 1>
+* Buchungen müssen jederzeit möglich sein
+* Datumseingabe für Exp. darf nicht in der Vergangenheit liegen
