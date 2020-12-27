@@ -1,7 +1,8 @@
 = System-Wide Requirements: {project-name}
-Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
+Alena Bischoff <alena.bischoff@htw-dresden.de>; Gregor Müller <gregor.mueller@htw-dresden.de>; Julius Schmidt <juliusheiko.schmidt@htw-dresden.de>; Richard Böhme <richard.boehme@htw-dresden.de>; Taejun Kim <taejun.kim@htw-dresden.de>; Tim Würzburg <tim.wuerzburg@htw-dresden.de>; Tobias Karsch <tobias.karsch@htw-dresden.de>; William Elsner <william.elsner@htw-dresden.de>;
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
+ 
 // Platzhalter für weitere Dokumenten-Attribute
 
 
@@ -14,8 +15,63 @@ In diesem Dokument werden die systemweiten Anforderungen für das Projekt <Thema
 
 NOTE: Die funktionalen Anforderungen, die sich aus der Interaktion von Nutzern mit dem System ergeben, sind als Use Cases in einem separaten Dokument festgehalten. [hier ggf. Verweis einfügen]
 
+NOTE: "To write a good requirement, you must write it as a complete sentence, with a subject and a predicate (usually a verb). The subject is an Actor, a stakeholder, the system under development, or a design entity that is related to the requirement. The predicate specifies a condition, action, or intended result that is done for, by, with, or to the subject."
+- (OpenUP; siehe https://www2.htw-dresden.de/~anke/openup) 
+
+NOTE: Unsere Anforderungen sollen den Projekterfolg garantieren. Je gewissenhafter wir sie ausarbeiten und pflegen, desto besser wird das Endprodukt. 
+
+NOTE: Aussagen des ESSENCE Kernel: 
+Opportunity focuses on Requirements. 
+Requirements set scopes & constraints for work. 
+
+NOTE: Anforderungsanalyse ist Teil der Solution, damit essentieller Teil der Lösung. 
+Stakeholder haben Anforderungen. Ziele der Stakeholder sind Teil der Anforderungsspezifikation! 
+
 == Systemweite funktionale Anforderungen
 //Angabe von system-weiten funktionalen Anforderungen, die nicht als Use Cases ausgedrückt werden können. Beispiele sind Drucken, Berichte, Authentifizierung, Änderungsverfolgung (Auditing), zeitgesteuerte Aktivitäten (Scheduling), Sicherheit / Maßnahmen zum Datenschutz
+
+* *SWFA-1*: Das System muss dem Dozenten die Möglichkeit bieten, vorgefertigte Experimente mit Datum, Zeit, Studiengang -für eine konkrete Vorlesung- buchen zu können. 
+
+** *SWFA-1.1*: Das System darf eingeloggten Gästen sowie Admins Buchungen NICHT ermöglichen. 
+
+** *SWFA-1.2*: Kommentare zur Buchung müssen über das System ermöglicht werden. 
+
+* *SWFA-2*: Das System muss die bereits gebuchten Experimente (Journal) für die Dozenten einsehbar, editierbar und löschbar machen. 
+
+** *SWFA-2.1*: Das System darf einem bestimmten Dozenten A nur die Einsicht und Bearbeitung seiner eigenen Buchungen ermöglichen. Die Einsicht in Buchungen eines anderen Dozenten B darf keineswegs möglich sein. 
+
+** *SWFA-2.2*: Dies geschieht über die Vergabe einzelner Accounts für die Dozenten. 
+
+** *SWFA-2.2*: Das individuelle Journal (gebuchte Experimente) darf nur eingeloggten Dozenten zugänglich sein; den eingeloggten Gästen und auch dem Admin NICHT. 
+
+* *SWFA-3*: Das System muss in der Vergangenheit gebuchte Experimente für den Admin als Statistik darstellen und somit auswertbar machen. 
+
+** *SWFA-3.1*: Die ausgegebenen Daten müssen der Materialplanung dienlich sein. 
+
+* *SWFA-4*: Das System muss dem Admin die gebuchten Experimente als Wochenplan pro Dozent zur Verfügung stellen. 
+
+* *SWFA-5*: Das System muss einen Ausdruck der Dozentenwoche ermöglichen. 
+
+** *SWFA-5.1*: Das System muss sichergehen, dass der Administrator der einzige mit Rechten zum Einsehen der Dozentenwoche und Statistiken ist. 
+
+** *SWFA-5.2*: Der Administrator erhält Zugriff über seinen Account. 
+
+* *SWFA-6*: Das System/die Statistik soll den Dozenten die Einsicht in Ihre Buchungen vergangener Semester ermöglichen. Die Buchungshistorie eines abgeschlossenen Semesters soll reproduzierbar sein.  
+
+* *SWFA-6.1*: Daraus ergibt sich die Notwendigkeit einer “Journal-Ansicht”, welche die Datumsanpassung ermöglicht, bevor die Buchung abgeschlossen wird. 
+
+* *SWFA-7*: Das System muss die eingegeben Experimente-Buchungen persistent speichern. (Datenverlust muss ausgeschlossen werden.) 
+
+** *SWFA-7.1*: Das System muss die Daten auf eine (existierende) Datenbank schreiben. 
+
+* *SWFA-8*: Das System muss sicherstellen, dass nur valide Angaben bei Uhrzeit und Datum getätigt werden können. 
+
+** *SWFA-8.1*: Dies kann über Datums-Widgets und Drop-Down Menüs sichergestellt werden. 
+
+** *SWFA-8.2*: Die Daten müssen zusätzlich von der Anwendung validiert werden. 
+
+** *SWFA-8.2*: Rückwärtsbuchungen dürfen nicht ermöglicht werden. 
+
 
 == Qualitätsanforderungen für das Gesamtsystem
 //Qualitätsanforderungen repräsentieren das "URPS" im FURPS+ zu Klassifikation von Anforderungen
@@ -23,30 +79,83 @@ NOTE: Die funktionalen Anforderungen, die sich aus der Interaktion von Nutzern m
 === Benutzbarkeit (Usability)
 //Beschreiben Sie Anforderungen für Eigenschaften wie einfache Bedienung, einfaches Erlernen, Standards für die Benutzerfreundlichkeit, Lokalisierung (landesspezifische Anpassungen von Sprache, Datumsformaten, Währungen usw.)
 
+* *NFAU-1*: Buchung, Journalverwaltung und Dozentenwochenausgabe müssen übersichtlich, eindeutig und verständlich sein.  
+
+** *NFAU-1.1*: Die Anzahl an Buttons und Interaktionselementen soll gering und komprimiert sein.  
+
+*** Es soll jeweils nur einen Button pro Aktion geben (Bsp.: Warenkorb-Icon zum Buchen, “Buchungen kopieren” zur Direktübernahme vergangener Buchungsverläufe). 
+
+** *NFAU-1.2*: Die Auswahlmenüs zur Detailfestlegung müssen verständlich und inhaltlich komprimiert sein.  
+
+*** Es soll vorgefertigte Drop-Down Menüs und Widgets zur Auswahl des Studiengangs, des Datums, der Vorlesungszeit geben. Die Auswahlmöglichkeiten sollen dabei schon feststehen. Zur Überprüfung wird getestet, ob invalide Eingaben möglich sind. 
+
+** *NFAU-1.3*: Ein Buchungs- und Druckdurchlauf (inkl. Änderung) muss einfach erfassbar und anwendbar sein.  
+
+*** Es soll auf Anglizismen und Fachterminologie verzichtet werden. Große informatische und technische Kenntnisse dürfen nicht zur Bedienung erforderlich sein. Zur Überprüfung wird eine themenfremde Testperson die Abläufe durchgehen. 
+
+** *NFAU-1.4*: Die Möglichkeiten für Fehlentscheidungen oder Orientierungslosigkeit sollen minimiert werden. 
+
+*** Die Dozenten sollen für eine Buchung maximal 10 Klicks (von Anmeldung bis „Buchungsabschluss“) benötigen. Temporär nicht verfügbare Interaktionsmöglichkeiten sollen ausgegraut werden. Fehlermeldungen sollen eindeutig, ohne Interpretationsspielraum und minimal sein.  
+
+* *NFAU-2*: Texte und Schaltflächen sollen auf ca. 50cm Entfernung leicht lesbar und erkennbar sein. 
+
+*** Text muss eine passende Größe und schonende, sowie leserliche Farbe aufweisen.  
+
+*** Schaltflächen und Symbole müssen von guter grafischer Qualität und scharf sein.  
+
+* *NFAU-3*: Die Eingabemöglichkeit der Buchungsdetails soll nicht als Pop-up-Eingaben erscheinen. 
+
+*** Die Buchungsdetails (Studiengang, Vorlesungszeit) sollen vor der eigentlichen Experimentauswahl einmalig eingegeben werden. Zur Überprüfung wird die Anwendung auf das Vorhandensein von Pop-up-Fenstern getestet.  
+
 === Zuverlässigkeit (Reliability)
 // Zuverlässigkeit beinhaltet die Fähigkeit des Produkts und/oder des Systems unter Stress und ungünstigen Bedingungen am laufen zu bleiben. Spezifizieren Sie Anforderungen für zuverlässige Akzeptanzstufen, und wie diese gemessen und evaluiert werden. Vorgeschlagene Themen sind Verfügbarkeit, Häufigkeit und Schwere von Fehlern und Wiederherstellbarkeit.
+
+* *NFAR-1*: Beim Verbindungsabbruch muss die Buchung nach Wiederherstellung der Verbindung fortführbar sein. Dies wird durch ein Session-Token sichergestellt. 
+** Test: Verbindungsabbruch erzwingen beim Buchen 
+
+* *NFAR-2*: Die Nutzbarkeit muss gewährleistet sein, wenn alle derzeitigen Nutzer gleichzeitig arbeiten wollen 
 
 === Effizienz (Performance)
 // Die Performanz Charakteristiken des Systems sollten in diesem Bereich ausgeführt werden. Beispiele sind Antwortzeit, Durchsatz, Kapazität und Zeiten zum Starten oder Beenden.
 
+* *NFAP-1*: Höchstmögliche Optimierung von Laufzeit und Speichernutzung durch Systemarchitektur 
+
+* *NFAP-2*: Kurze Antwortzeiten/ kurze Ladezeiten bei guter Verbindung  
+
 === Wartbarkeit (Supportability)
 // Dieser Bereich beschreibt sämtliche Anforderungen welche die Supportfähigkeit oder Wartbarkeit des zu entwickelnden Systems verbessern, einschließlich Anpassungsfähigkeit und Erweiterbarkeit, Kompatibilität, Skalierbarkeit und Anforderungen bezüglich der System Installation sowie Maß an Support und Wartbarkeit.
 
+* *NFAS-1*: Das Entwicklerteam muss ein (fortgeführtes) Handbuch zum System bereitstellen. 
+
+* *NFAS-2*: Das System soll jeder Zeit wartbar sein. 
+** Dies wird dadurch ermöglicht, dass es auf dem Fakultätsserver der nutzenden fakultät liegt. 
+
 == Zusätzliche Anforderungen
 === Einschränkungen
-//Angaben ergänzen, nicht relevante Unterpunkte streichen oder auskommentieren
-* Ressourcenbegrenzungen
-* zu nutzende Komponenten / Bibliotheken / Frameworks
-* Vorgaben für die Programmiersprache
-* zu unterstützende Plattformen / Betriebssysteme
-* Physische Begrenzungen für Hardware, auf der das System betrieben werden soll
 
-=== Organisatorische Randbedingungen
-//Angaben ergänzen, nicht relevante Unterpunkte streichen oder auskommentieren
-* Anforderungen an Betrieb, Management und Wartung der Anwendung
-* zu beachtende Standards, Normen und Regeln
+* Die Verwaltung des Sourcecodes und der Dokumentation muss mittels *GitHub*  erfolgen. 
+* *Ruby On Rails* stellt den hauptsächlich zu nutzenden Framework da. 
+* Folgende Programmiersprachen sind weiterhin vorgegeben: 
+** *Ruby*   
+** HTML/ Slim
+** Sass 
+** JavaScript 
+* Die Software muss durch folgende Browser unterstützt werden: 
+** Edge 
+** Internet Explorer (Version 11) 
+** Chrome
+** Firefox 
+* Die Softwarelösung soll nur einen handelsüblichen Computer benötigen, auf dem ein entsprechender Browser in der aktuellsten Version installiert ist. 
+
+=== Interface Requirements 
+* Die Benutzeroberfläche soll gängige Symbole wie einen Einkaufswagen für den Warenkorb verwenden. 
+* Deutsche Bezeichnungen sollen reichen (siehe Usability) 
+
+* Eine Offene Menüführung muss gewährleistet sein. Interaktionselemente und Links sollen nicht unnötig in Menüs versteckt sein. 
+
 
 === Rechtliche Anforderungen
 //Angaben ergänzen, nicht relevante Unterpunkte streichen oder auskommentieren
-* Lizensierung der Anwendung
-* Datenschutz
+* Der Kunde muss über eine mögliche Speicherung von Nutzungsdaten informiert werden.
+* Eine etwaige Datenschutzerklärung muss beim Login vorliegen und vor der Nutzung durch Dozenten anerkannt werden. Der Verantwortliche hierbei sollte der Admin sein. 
+* Keine fremden Werke dürfen fälschlicherweise als eigene ausgewiesen werden. Urheberrecht ist zu beachten, gegebenenfalls müssen eigene Grafiken erstellt werden. 
