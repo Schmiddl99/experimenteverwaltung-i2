@@ -151,7 +151,7 @@ Stakeholder haben Anforderungen. Ziele der Stakeholder sind Teil der Anforderung
 * Die Benutzeroberfläche soll gängige Symbole wie einen Einkaufswagen für den Warenkorb verwenden. 
 * Deutsche Bezeichnungen sollen reichen (siehe Usability) 
 
-* Eine Offene Menüführung muss gewährleistet sein. Interaktionselemente und Links sollen nicht unnötig in Menüs versteckt sein. 
+* Eine offene Menüführung muss gewährleistet sein. Interaktionselemente und Links sollen nicht unnötig in Menüs versteckt sein. 
 
 
 === Rechtliche Anforderungen
