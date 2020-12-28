@@ -125,7 +125,7 @@ Stakeholder haben Anforderungen. Ziele der Stakeholder sind Teil der Anforderung
 === Wartbarkeit (Supportability)
 // Dieser Bereich beschreibt sämtliche Anforderungen welche die Supportfähigkeit oder Wartbarkeit des zu entwickelnden Systems verbessern, einschließlich Anpassungsfähigkeit und Erweiterbarkeit, Kompatibilität, Skalierbarkeit und Anforderungen bezüglich der System Installation sowie Maß an Support und Wartbarkeit.
 
-* *NFAS-1*: Das Entwicklerteam muss ein (fortgeführtes) Handbuch zum System bereitstellen. 
+* *NFAS-1*: Das Entwicklerteam muss ein (bis zum Projektende fortgeführtes) Handbuch zum System bereitstellen, welches den Stakeholdern bekannt sein muss. 
 
 * *NFAS-2*: Das System soll jeder Zeit wartbar sein. 
 ** Dies wird dadurch ermöglicht, dass es auf dem Fakultätsserver der nutzenden fakultät liegt. 
@@ -149,8 +149,8 @@ Stakeholder haben Anforderungen. Ziele der Stakeholder sind Teil der Anforderung
 
 === Interface Requirements 
 * Die Benutzeroberfläche soll gängige Symbole wie einen Einkaufswagen für den Warenkorb verwenden. 
-* Deutsche Bezeichnungen sollen reichen (siehe Usability) 
-
+* Deutsche Bezeichnungen sollen reichen (siehe Usability).
+* Das Design soll an der bereits bestehenden Anwendung orientiert sein. 
 * Eine offene Menüführung muss gewährleistet sein. Interaktionselemente und Links sollen nicht unnötig in Menüs versteckt sein. 
 
 
@@ -158,4 +158,4 @@ Stakeholder haben Anforderungen. Ziele der Stakeholder sind Teil der Anforderung
 //Angaben ergänzen, nicht relevante Unterpunkte streichen oder auskommentieren
 * Der Kunde muss über eine mögliche Speicherung von Nutzungsdaten informiert werden.
 * Eine etwaige Datenschutzerklärung muss beim Login vorliegen und vor der Nutzung durch Dozenten anerkannt werden. Der Verantwortliche hierbei sollte der Admin sein. 
-* Keine fremden Werke dürfen fälschlicherweise als eigene ausgewiesen werden. Urheberrecht ist zu beachten, gegebenenfalls müssen eigene Grafiken erstellt werden. 
+* Keine fremden Werke dürfen fälschlicherweise als Eigene ausgewiesen werden. Urheberrecht ist zu beachten, gegebenenfalls müssen eigene Grafiken erstellt werden. 
