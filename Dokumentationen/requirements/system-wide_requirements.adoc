@@ -134,7 +134,7 @@ Stakeholder haben Anforderungen. Ziele der Stakeholder sind Teil der Anforderung
 === Einschränkungen
 
 * Die Verwaltung des Sourcecodes und der Dokumentation muss mittels *GitHub*  erfolgen. 
-* *Ruby On Rails* stellt den hauptsächlich zu nutzenden Framework da. 
+* *Ruby on Rails* stellt das hauptsächlich zu nutzende Framework dar. 
 * Folgende Programmiersprachen sind weiterhin vorgegeben: 
 ** *Ruby*   
 ** HTML/ Slim
