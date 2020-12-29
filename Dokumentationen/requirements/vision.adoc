@@ -53,6 +53,7 @@ Als Zusatzziel ist die Verwaltung der in den Experimenten enthaltenen Bilder. Be
 a|
 
 * Dozent muss für Folgewoche eine Mail verfassen, welche seine gewünschten Experimente-Auswahl enthält
+* Jede Änderung erfordert das erneute Senden einer Mail
 * Kunde muss händisch Emails der Dozenten auswerten und sortieren; sich selbst einen Plan der benötigten Experimente je Wochentag erarbeiten 
 
 
@@ -109,6 +110,7 @@ a|
 
 |im Gegensatz zu	|… der Buchung über Email und manuelle Historie und Aufbereitung.
 |Unser Produkt|	… ermöglicht die einfache Bestellung von Experimenten und Generierung eines für den Anwender optimierten Buchungsplans, sowie eine Übersicht der bisherigen Buchungen.
+
 |===
 
 
@@ -120,9 +122,10 @@ a|
 |===
 |Name|	Beschreibung	| Verantwortlichkeiten
 
-|Admin	a|
+|Admin/Kunde	a|
 
-* Mitarbeiter im Bereich Energietechnik/Physik der HTW 
+* Mitarbeiter der HTW
+* Vorlesungsassistent im Bereich Energietechnik/Physik
 * Versorgt Dozenten mit Experimenten (“Interner Dienstleister”) 
 * Möchte seine wöchentliche Arbeit optimieren 
 * Möchte, dass die Dozenten möglichst minimalen Aufwand haben	a|
@@ -130,7 +133,8 @@ a|
 * stellt Experimente nach Bestellung bereit 
 * “Verwalter” des Webtools – stellt Informationen zu den Experimenten bereit 
 * führt sie durch 
-* kümmert sich um Instandhaltung der Geräte 
+* kümmert sich um Instandhaltung der Geräte
+* Verantwortlicher für Datenschutzaufgaben (Datenschutzerklärung verfassen & herausgeben)
 
 |Dozent a|
 
@@ -171,7 +175,7 @@ a|
 [.underline]#Für Dozent:# 
 
 * bisherige Webanwendung soll verwendet werden (bekannt und etabliert) 
-* einfache Bestellung; intuitiv & schnell
+* einfache Bestellung; intuitiv & schnell und anpassbar 
 * Bestellung erfolgt nur über Webanwendung (keine Mails mehr) 
 * Anzahl der Dozenten kann sich ändern 
 
@@ -185,6 +189,7 @@ a|
 [%header, cols="4,1,4,1"]
 |===
 |Bedarf|	Priorität|	Features|	Geplantes Release
+
 |Voreinstellungen | hoch| Festlegung der Buchungsdetails vor Buchungsbeginn| xx
 |Warenkorb |hoch |Experiment in Warenkorb legen und evtl. anpassen |xx
 |Journal ansehen |hoch |Einsehen vergangener und Bearbeiten aktueller Buchungen durch den Dozenten   |xx
@@ -211,3 +216,6 @@ a|
 |einfache Bedienbarkeit |hoch |xx
 |Hilfestellung / Kundenfreundliche  Dokumentation |niedrig |xx
 |===
+
+== Aussicht für zukünftige Projekte
+//Einige Ideen des Teams wurden vom Themensteller abgelehnt. Da das Team I2 dennoch von der Notwendigkeit und dem Nutzen dieser skizzierten Funktionen für die Vorlesungsassistenz überzeugt ist, wollen wir sie nicht in in Vergessenheit geraten lassen. Zukünftige (studentische) Projektteams sollen davon profitieren können. Hier ist der Platz, sie festzuhalten.
