@@ -68,12 +68,12 @@ a|* Wochenübersicht
 
 |Journal
 a|* Übersicht der eigenen Buchungen mit Anpassungsmöglichkeiten für Dozenten
+|
 
 |Dozentenwoche
 a|* Darstellung aller für eine Woche durch einen bestimmten Dozenten gebuchten Experimente
 * "Wochenplan pro Dozent"
 * Information für den Dozenten (buchenden Nutzer)
-
 |
 
 |Deadline 
@@ -109,6 +109,14 @@ a|* Vorgehensmodell
 a|* Vorgehendmodell
 * OpenUP
 
+|Vorauswahl
+a|Die vor einer Buchung zutreffende Parametereinstellung:
+
+* Zeit
+* Datum
+* Studiengang
+a|* Buchungseinstellungen
+* Buchungsparameter
 |===
 
 
@@ -149,6 +157,18 @@ a|* Vorgehendmodell
 |Ansprechpartner QM
 |{AB}
 
+|DB
+|Datenbank
+|Gemeint ist die Datenbank, in welche Buchungseinträge geschrieben werden.
+
+|Exp.
+|Experiment
+|
+
+|EMS
+|Das weiterzuentwickelnde Projekt
+|https://mphyda.mw.htw-dresden.de/
+
 |===
 
 
@@ -160,7 +180,7 @@ a|* Vorgehendmodell
 |Anmeldedaten 
 |Zusammensetztung von Benutzername und Passwort
 |String
-|E-Mail-Adresse muss `@`-Zeichen und Punkt enthalten
+|E-Mail-Adresse muss `@`-Zeichen, Punkt und "htw-dresden"-Domaine enthalten
 |Login
 
 |===
