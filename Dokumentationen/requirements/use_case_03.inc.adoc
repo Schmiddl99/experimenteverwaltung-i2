@@ -1,0 +1,43 @@
+//Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
+== Use-Case: Dozentenwoche ansehen und drucken
+===	Kurzbeschreibung
+Admin möchte sich Wochenplan(Übersicht von allen Exp. inkl. Details) für bestimmte KW anzeigen lassen
+
+===	Kurzbeschreibung der Akteure
+* Admin
+
+=== Vorbedingungen
+//Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
+* Admin muss eingeloggt sein
+* Admin muss Wochenplanansicht aufgerufen haben
+
+=== Standardablauf (Basic Flow)
+//Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
+
+. Der Use Case beginnt, wenn Admin die Wochenplanansicht aufruft
+. Wochenplanansicht wird dargestellt
+. KW muss ausgewählt werden
+. Filter (Dozent) kann angewendet werden
+. Use Case endet damit, dass die Ansicht generiert wird
+
+=== Alternative Abläufe
+//Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
+==== Wochenplanansicht drucken
+Wenn nach Schritt 4 des Standardablaufes drucken geklickt wird, öffnet sich eine neue Seite mit dem (vorgefilterten) Wochenplan. Drucken wird über die Druckfunktion des Browsers realisiert. Use Case endet
+
+=== Unterabläufe (subflows)
+//Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
+
+--- keine Unterabläufe ---
+
+=== Wesentliche Szenarios
+//Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
+--- keine Szenarios ---
+
+===	Nachbedingungen
+//Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
+--- keine Nachbedingungen ---
+
+=== Besondere Anforderungen
+//Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
+--- keine Nachbedingungen ---
