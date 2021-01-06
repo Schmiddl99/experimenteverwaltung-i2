@@ -1,0 +1,130 @@
+= Iteration Plan 01: {project-name}
+Tobias Karsch <tobias.karsch@htw-dresden.de>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
+{localdatetime}
+include::../_includes/default-attributes.inc.adoc[]
+// Platzhalter für weitere Dokumenten-Attribute
+
+
+== Meilensteine
+//Meilensteine zeigen den Ablauf der Iteration, wie z.B. den Beginn und das Ende, Zwischen-Meilensteine, Synchronisation mit anderen Teams, Demos usw.
+
+[%header, cols="3,1"]
+|===
+| Meilenstein
+| Datum
+
+| Beginn der Iteration | 07.01.2020
+| TS-M3 | 07.01.2021
+|XXX
+|XXX
+| Ende der Iteration 
+| 21.01.2021
+| LCO    |-
+|===
+
+
+== Wesentliche Ziele
+//Nennen Sie 1-5 wesentliche Ziele für die Iteration.
+
+* Erreichen der Zustimmung des Auftraggebers in Bezug auf die vorgelegten Wireframes.
+*Übereinstimmung mit dem Auftraggeber in Bezug auf die grundlegende Vorgehensweise der Buchung.
+*Übereinstimmung mit dem Auftraggeber in Bezug auf das Journal.
+* Ausarbeitung eines Architektur-Konzeptes
+* Ausarbeitung von Text Cases
+* Risikoliste weiterführen und pflegen
+
+* **Wissensaustausch:** Interessierte Mitglieder sollen ein GitHub-Tutorial erhalten, was einerseits die Arbeit im Team fördert als auch einen weiteren Mehrwert innerhalb dieses Moduls schafft.
+
+
+== Aufgabenzuordnung
+//Dieser Abschnitt sollte einen Verweis auf die Work Items List enthalten, die die für diese Iteration vorgesehenen Aufgaben dokumentiert sowie die Zuordnung dieser Aufgaben zu Teammitgliedern. Alternativ können die Aufgaben für die Iteration und die Zuordnung zu Teammitgliedern in nachfolgender Tabelle dokumentiert werden - je nach dem, was einfacher für die Projektbeteiligten einfacher zu finden ist.
+
+Aufgaben werden in der Work Item List (https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#column-11862065) geordnet und priorisiert.
+
+Die in **dieser** Iteration geplanten Aufgaben wurden in der To-Do-List dargestellt: https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#column-11861913. Die To-Do-List verhält sich dynamisch. Deswegen sind nachfolgend die Work Items der Iteration I aufgeführt.
+
+//Übernommen aus dem Board Iteration Planning auf Github. Referenz von Issues: Link[#Issue_ID]; link durch klick auf drei Punkte der Aufgabe->Copy card link
+
+Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
+[%header]
+|===
+| Aufgabe bzw. Beschreibung |#Github-Issue |Schätzung der Größe (Skala A-C; A=höchster Aufwand) | Priorität (Skala 1-3; 1=höchste Prio) |Status | Zugewiesen (Name) 
+
+|Architektur- Notizbuch fortführen |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51159540[#26] | X | X | DUE: OPEN |{WE}
+
+|Ergänzen von Kleinigkeiten in SWRs |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-52283972[#71]|B |1 |DUE: 10.01.21 |{tka} {GM}
+
+|Architektur-Konzept|https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-52286316[#81] |B |1 |DUE:21.01.21 |{RB} {WE} {tka} {JS}
+
+|Coach Meeting: SWFAs+ MH-Thematik |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51434318[#43] |B |1 | DUE: 14.01.21 |{tka}
+
+|Risk-List: Exel in CSV |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51300929[#36] |B |3 |DUE:21.01.21 |{TW}
+ 
+|Test Cases: Fälle überlegen |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-52286350[#75] |C |1 |DUE: 2110.01.21.12. |{RB} {GM} {JS} {WE}
+
+|Test Cases: dokument anlegen |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-52286328[#76] |C |1 |DUE:10.01.21 |{GM}
+
+|Architektur Notitzbuch anlegen |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-52286292[#80] |C |1 |DUE: 10.01.21 |{we}
+
+|Screenshot Essence Iteration 2 |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-52283809[#70]|C 
+|1 |DUE:07.01.21 |{TKa}
+
+|Iterationplan 3 erstellen |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-52284228[#74] |C |1 |DUE: 07.01.21 |{TW}
+
+|Iterationsplan 2 |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-52283639[#69] |C |2 |DUE: 10.01.21 |{TKa}
+
+|QM: Git-Konvention|https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51299110[#34] |C |3 |DUE:21.01.21 |{AB}
+
+|QM: Belegabgabe |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-52286661[#77] |C |3 |DUE: XX |{AB}
+
+|Rollenverteilung überarbeiten |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51434289[#41] |C |3 |DUE: 21.01.21 |{GM} {TK}
+
+|===
+
+
+== Probleme (optional)
+//Optional: Führen Sie alle Probleme auf, die in dieser Iteration adressiert werden sollen. Aktualisieren Sie den Status, wenn neue Probleme bei den täglichen / regelmäßigen Abstimmungen berichtet werden.
+
+[%header, cols="2,1,3"]
+|===
+| Problem | Status | Notizen
+| Feature Creep | unverändert 
+a|* Nach dem Entwurf der ersten Wireframes wurden diese teilweise wieder verworfen, da von TS-Seite veränderte Anforderungen gestellt wurden.
+* Verworfen werden mussten u.a. die Deadline, die Benachrichtigung von Dozenten, die Pop-Up-Buchungseingabe.
+* Eine Konsultation des Coaches sowie eine Bestätigung der überarbeiteten Vision durch TS sind angedacht. (Stand:06.01.21)
+|===
+
+
+== Bewertungskriterien
+//Eine kurze Beschreibung, wie Erfüllung die o.g. Ziele bewertet werden sollen.
+
+* Der Kunde hat die überarbeitete Version per Mail (schriftlich) bestätigt. 
+* Jedes Element der Vision findet sich in den _system wide requirements_ abgedeckt.
+* 6 Use Cases wurden dokumentiert und in einem Modell zusammengefasst (Doku liegt als adoc vor)
+* 5 Risiken und entsprechende Gegenmaßnahmen wurden identifiziert. Die Dokumentation liegt als .csv vor.
+* Für jeden dokumentierten Use Case existiert ein Wireframe. Jede dokumentierte Anforderung lässt sich anhand mindestens eines Wireframes erläutern.
+* Der GitHub-Workshop wurde durchgeführt und aufgezeichnet.
+
+== Assessment
+//In diesem Abschnitt werden die Ergebnisse und Maßnahmen der Bewertung erfasst und kommunziert. Die Bewertung wird üblicherweise am Ende jeder Iteration durchgeführt. Wenn Sie diese Bewertungen nicht machen, ist das Team möglicherweise nicht in der Lage, die eigene Arbeitsweise ("Way of Working") zu verbessern.
+
+[%header, cols="1,3"]
+|===
+| Assessment Ziel | Das kann die gesamte Iteration oder eine spezifische Komponente sein
+| Assessment Datum | ...
+| Teilnehmer | ...
+| Projektstatus	| Zum Beispiel ausgedrückt als rot, gelb oder grün.
+|===
+
+* Beurteilung im Vergleich zu den Zielen
+//Dokumentieren Sie, ob die angestrebten Ziele des Iterationsplans erreicht wurden.
+
+* Geplante vs. erledigte Aufgaben
+//Zusammenfassung, ob alle für die Iteration geplanten Aufgaben bearbeitet wurden und welche Aufgaben verschoben oder hinzugefügt wurden.
+
+* Beurteilung im Vergleich zu den Bewertungskriterien
+//Document whether you met the evaluation criteria as specified in the Iteration Plan.
+//Geben Sie an, ob Sie die o.g. Bewertungskriterien erfüllt haben. Das kann z.B. folgende Informationen enthalten: “Demo for Department X was well-received, with some concerns raised around usability,” or “495 test cases were automated with a 98% pass rate. 9 test cases were deferred because the corresponding Work Items were postponed.”
+
+* Andere Belange und Abweichungen
+//Führen Sie weitere Themen auf, für die eine Bewertung durchgeführt wurde. Beispiele sind Finanzen, Zeitabweichungen oder Feedback von Stakeholdern, die nicht bereits an anderer Stelle dokumentiert wurden.
