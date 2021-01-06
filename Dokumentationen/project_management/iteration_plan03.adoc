@@ -1,5 +1,5 @@
 = Iteration Plan 03: {project-name}
-Tobias Karsch <tobias.karsch@htw-dresden.de>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
+Tobias Karsch <tobias.karsch@htw-dresden.de>; Tim Würzburg <tim.wuerzburg@htw-dresden.de>; Gregor Müller <mueller.gregor@htw-dresden.de>
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
@@ -77,7 +77,7 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 
 |QM: Belegabgabe |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-52286661[#77] |C |3 |DUE: XX |{AB}
 
-|Rollenverteilung überarbeiten |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51434289[#41] |C |3 |DUE: 21.01.21 |{GM} {TK}
+|Rollenverteilung überarbeiten |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51434289[#41] |C |3 |DUE: 21.01.21 |{GM} {TKi}
 
 |===
 
