@@ -55,8 +55,12 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 |GitHub-Workshop vorbereiten |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51307222[#35] |A |1 |DUE:19.12.20 |{RB} {GM}
 
 |Existierende Use Cases vervollständigen |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51308341[#39] |A |1 | DUE: 23.12 |siehe Issue
+
+|TS-M3 | https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51720237[#56] |A |2 |DUE:29.12. |{TW}
  
 |Git-Workshop |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51222488[#31] |B |1 |DUE: 21.12. |{RB} {GM}
+
+|System Wide Requirements: adoc anlegen mit aktuellem Stand |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51719987[#60] |B |1 |DUE:27.12. |{WE}
 
 |Projektplan erstellen |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-50190577[#4] |B |3 |DUE: 31.12 |PM 
 
@@ -73,7 +77,13 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 
 |Wireframe: Druckansicht Dozentenwoche |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51434289[#41] |C |2 |DUE: 28.12.? |{GM} {AB}
 
-|Wireframe: Header-Menü (Drop-Down) für Studiengang (siehe Anforderungen) und Uhrzeitauswahl (VL-Zeit) |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51434260[#44] |C |2 |DUE: 28.12.? |{GM} {AB} 
+|Wireframe: Header-Menü (Drop-Down) für Studiengang (siehe Anforderungen) und Uhrzeitauswahl (VL-Zeit) |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51434260[#44] |C |2 |DUE: 28.12.? |{GM} {AB}
+
+|Wireframe: [Dozentenwoche] für Admin |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51720183[#58] |C |2 |DUE: 28.12. |{AB} {GM}
+
+|Wireframe: [Journalansicht] für Dozenten |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51720164[#59] |C |2 |DUE: 28.12. |{AB} {GM}
+
+|Dok: Zugänge (Anwendung, VM...) in Teams anlegen |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51720214[#57] |C |3 |DUE:31.12. |{RB}
 
 |Iteration Plan Pflegen |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51666243[#54] |x |x |Fortlaufende Aufgabe |{TKa}
 

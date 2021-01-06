@@ -1,5 +1,5 @@
-= Use-Case Model: {project-name}
-Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
+= Use-Case Model: Experimenteverwaltung I2
+Alena Bischoff <alena.bischoff@htw-dresden.de>; Gregor Müller <gregor.mueller@htw-dresden.de>; Julius Schmidt <juliusheiko.schmidt@htw-dresden.de>; Richard Böhme <richard.boehme@htw-dresden.de>; Taejun Kim <taejun.kim@htw-dresden.de>; Tim Würzburg <tim.wuerzburg@htw-dresden.de>; Tobias Karsch <tobias.karsch@htw-dresden.de>; William Elsner <william.elsner@htw-dresden.de>;
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
@@ -7,17 +7,21 @@ include::../_includes/default-attributes.inc.adoc[]
 
 == Allgemeine Informationen
 // ...
+--- fehlen noch ---
 
 //Fügen Sie nachfolgend eine Liste aller Use-Cases per Include ein.
 //Dafür sollten Sie pro Use-Case eine Datei anlegen, die auf dem usecase_spec.adoc Template basiert.
 <<<
 include::use_case_01.inc.adoc[]
-//<<<
-//include::use_case_02.inc.adoc[]
-//<<<
-//include::use_case_03.inc.adoc[]
-//<<<
-//include::use_case_04.inc.adoc[]
+
+<<<
+include::use_case_02.inc.adoc[]
+
+<<<
+include::use_case_03.inc.adoc[]
+
+<<<
+include::use_case_04.inc.adoc[]
 //<<<
 //include::use_case_05.inc.adoc[]
 //<<<

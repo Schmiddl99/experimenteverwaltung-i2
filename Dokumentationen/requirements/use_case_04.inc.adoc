@@ -1,0 +1,46 @@
+//Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
+== Use-Case: Statistik anzeigen
+===	Kurzbeschreibung
+Admin möchte sich eine Statistik über gebuchte Experimente anzeigen lassen
+
+===	Kurzbeschreibung der Akteure
+* Admin
+
+=== Vorbedingungen
+//Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
+* Admin muss eingelogt sein
+* Admin muss sich auf Statistik-Seite befinden
+
+=== Standardablauf (Basic Flow)
+//Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
+
+. Der Use Case beginnt, dass der Admin auf "Statistik" klickt.
+. Zeitraum begranzen (Standard: Beginn des aktuellen Semesters bis heute)
+. Auflistung der Exp., welche in dem angegeben Zeitraum genutzt wurden (Standardansicht: Anzahl absteigend) --> siehe Unterablauf 1
+. Use Case endet
+
+=== Alternative Abläufe
+//Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
+==== Filtern
+Nach Schritt 3 des Standardablaufes gibt es die Möglichkeit, die aktuelle Ansicht zu filtern (Anzahl oder Alphabet, auf- wie auch absteigend).
+
+=== Unterabläufe (subflows)
+//Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
+
+==== Filtern
+. Filtern
+[arabic]
+.. Filter auswählen
+.. Filter anwenden
+
+=== Wesentliche Szenarios
+//Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
+--- keine Szenarios ---
+
+===	Nachbedingungen
+//Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
+--- keine Nachbedingungen ---
+
+=== Besondere Anforderungen
+//Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
+--- keine besonderen Anforderungen ---
