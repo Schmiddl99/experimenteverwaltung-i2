@@ -1,4 +1,4 @@
-= Iteration Plan 01: {project-name}
+= Iteration Plan 02: {project-name}
 Tobias Karsch <tobias.karsch@htw-dresden.de>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
@@ -39,7 +39,7 @@ include::../_includes/default-attributes.inc.adoc[]
 
 Aufgaben werden in der Work Item List (https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#column-11862065) geordnet und priorisiert.
 
-Die in **dieser** Iteration geplanten Aufgaben wurden in der To-Do-List dargestellt: https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#column-11861913. Die To-Do-List verhält sich dynamisch. Deswegen sind nachfolgend die Work Items der Iteration I aufgeführt.
+Die in dieser Iteration geplanten Aufgaben wurden in der To-Do-List dargestellt: https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#column-11861913. Die To-Do-List verhält sich dynamisch. Deswegen sind nachfolgend die Work Items der Iteration I aufgeführt.
 
 //Übernommen aus dem Board Iteration Planning auf Github. Referenz von Issues: Link[#Issue_ID]; link durch klick auf drei Punkte der Aufgabe->Copy card link
 
@@ -100,10 +100,12 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 [%header, cols="2,1,3"]
 |===
 | Problem | Status | Notizen
-| Feature Creep | unverändert 
+| Feature Creep | entgegengewirkt 
 a|* Nach dem Entwurf der ersten Wireframes wurden diese teilweise wieder verworfen, da von TS-Seite veränderte Anforderungen gestellt wurden.
 * Verworfen werden mussten u.a. die Deadline, die Benachrichtigung von Dozenten, die Pop-Up-Buchungseingabe.
+* Größte Sorgen bereitet uns die "Kopierfunktion für ein ganzes Semester". Diese ist in unseren Augen unpraktisch, stark fehleranfällig - und steht im Gegensatz zu einem "Buchungssystem", da hier im Grunde eine stetig zu replizierende Vorlage gefordert wird (Zielkonflikt).
 * Eine Konsultation des Coaches sowie eine Bestätigung der überarbeiteten Vision durch TS sind angedacht. (Stand:22.12.20)
+* Update 07.01.21: Im TS-M3 legten wir die Problematik offen. Alle Beteiligten erkannten die Schwierigkeit. Wir konnten uns darauf einigen, die Kopierfunktion in einer _Zukunftsvision_ vorerst nur zu beschreiben. Die Arbeit des Teams fokussiert sich primär auf das funktionierende Buchungssystem.
 |===
 
 
@@ -122,21 +124,52 @@ a|* Nach dem Entwurf der ersten Wireframes wurden diese teilweise wieder verworf
 
 [%header, cols="1,3"]
 |===
-| Assessment Ziel | Das kann die gesamte Iteration oder eine spezifische Komponente sein
-| Assessment Datum | ...
-| Teilnehmer | ...
-| Projektstatus	| Zum Beispiel ausgedrückt als rot, gelb oder grün.
+| Review | Gesamte Iteration 2
+| Assessment Datum | 05.01.2021
+| Teilnehmer | gesamtes Team
+| Projektstatus: *gelbgrün*	a| 
+* Ziel: Erreichung LCO-Meilenstein - Inception Phase. Nicht erreicht.
+** **Understand what to build:** Grundsätzlich verstanden. *Erfolgskriterien* sind noch nicht zu 100% klar - z.B. Ablaufplan des Buchens. Journal wurde angenommen, *Konfliktpunkt* ist die Kopierfunktion. Grenzen wurden gesetzt: Aussprache gegen mobile Version. Oberstes Erfolgskriterium: Leichte Verständlichkeit (In Design und Sprache anwendergerecht) 
+** **Identify key system functionality:** Die kritischsten Anforderungen wurden identifiziert: *Buchungen durchführen*, *Buchungen anzeigen* (-> Dozentenwoche), Historie (als Sahnehäubchen?)  
+
+** *Determine at least one possible solution:* Ja, die Vision ist technisch umsetzbar.
+
+** *Understand:* 
+*** Risiken sind verstanden 
+*** Wir bekommen kein Geld (-> nur "Zeitkosten" fallen an)
+*** Zeitplan: wurde *nicht* abgestimmt. (Orientierung an Empfelung aus Vorlesung)
+
+* *Überprüfung selbst gesteckter Iterationsziele: Y/N (4/2)*
+** Der Kunde hat die überarbeitete Version per Mail (schriftlich) bestätigt. *Y* 
+** Jedes Element der Vision findet sich in den system wide requirements abgedeckt. *Y*
+** 6 Use Cases wurden dokumentiert und in einem Modell zusammengefasst (Doku liegt als adoc vor) *N* 
+
+Nein –4 Use Cases ausgearbeitet, Rest nur erfasst, adocs liegen vor 
+
+** 5 Risiken und entsprechende Gegenmaßnahmen wurden identifiziert. Die Dokumentation liegt als .csv vor. *N* 
+
+5 Risiken liegen vor, aber nicht als .csv 
+
+** Für jeden dokumentierten Use Case existiert ein Wireframe. Jede dokumentierte Anforderung lässt sich anhand mindestens eines Wireframes erläutern. *Y*
+
+-> Drucken-Funktion fehlt noch (Brauchen wir auch nicht?) 
+
+-> Kopierfunktion nicht 
+
+** Der GitHub-Workshop wurde durchgeführt und aufgezeichnet. *Y*
 |===
 
-* Beurteilung im Vergleich zu den Zielen
-//Dokumentieren Sie, ob die angestrebten Ziele des Iterationsplans erreicht wurden.
+[%header, cols="1,3"]
+|===
+| Retrospective | Gesamte Iteration 2
+| Assessment Datum | 05.01.2021
+| Teilnehmer | gesamtes Team
+| Projektstatus: *grün*	a| 
+Wie gut waren unsere Schätzungen? Welche Hindernisse gab es? Wie können wir besser werden? 
 
-* Geplante vs. erledigte Aufgaben
-//Zusammenfassung, ob alle für die Iteration geplanten Aufgaben bearbeitet wurden und welche Aufgaben verschoben oder hinzugefügt wurden.
+* Zu viele Leute – ineffektiv? Drei Leute pro TS-Meeting sind am effizientesten! 
+* Schätzungen im Iteration Board (Aufwand/Prio im GitHub) trafen zu, funktioniert auch mit weniger “Schätzern” 
+* Ausgesprochene Zufriedenheit mit eigenem Teamwork 
+* Teamwork und Gemeinschafts-Gedanke spiegelte sich z.B. im GitHub-Workshop wider 
 
-* Beurteilung im Vergleich zu den Bewertungskriterien
-//Document whether you met the evaluation criteria as specified in the Iteration Plan.
-//Geben Sie an, ob Sie die o.g. Bewertungskriterien erfüllt haben. Das kann z.B. folgende Informationen enthalten: “Demo for Department X was well-received, with some concerns raised around usability,” or “495 test cases were automated with a 98% pass rate. 9 test cases were deferred because the corresponding Work Items were postponed.”
-
-* Andere Belange und Abweichungen
-//Führen Sie weitere Themen auf, für die eine Bewertung durchgeführt wurde. Beispiele sind Finanzen, Zeitabweichungen oder Feedback von Stakeholdern, die nicht bereits an anderer Stelle dokumentiert wurden.
+|===
