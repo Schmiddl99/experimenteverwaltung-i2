@@ -30,48 +30,23 @@ Stakeholder haben Anforderungen. Ziele der Stakeholder sind Teil der Anforderung
 == Systemweite funktionale Anforderungen
 //Angabe von system-weiten funktionalen Anforderungen, die nicht als Use Cases ausgedrückt werden können. Beispiele sind Drucken, Berichte, Authentifizierung, Änderungsverfolgung (Auditing), zeitgesteuerte Aktivitäten (Scheduling), Sicherheit / Maßnahmen zum Datenschutz
 
-* *SWFA-1*: Das System muss dem Dozenten die Möglichkeit bieten, vorgefertigte Experimente mit Datum, Zeit, Studiengang -für eine konkrete Vorlesung- buchen zu können. 
+* *SWFA-1*: Das System muss dem Dozenten die Möglichkeit bieten, vorgefertigte Experimente mit Datum, Zeit, Studiengang und Kommentar für eine konkrete Vorlesung buchen zu können.
 
-** *SWFA-1.1*: Das System darf eingeloggten Gästen sowie Admins Buchungen NICHT ermöglichen. 
+* *SWFA-2*: Das System muss durch Rollenzugehörigkeit sicherstellen, dass die Anwender nur auf entsprechende Bereiche und Funktionalitäten Zugriff haben. 
 
-** *SWFA-1.2*: Kommentare zur Buchung müssen über das System ermöglicht werden. 
+* *SWFA-3*: Das System muss die bereits gebuchten Experimente aus Vergangeneheit und Gegenwart für sämtliche Rollen spezifisch darstellen können. 
 
-* *SWFA-2*: Das System muss die bereits gebuchten Experimente (Journal) für die Dozenten einsehbar, editierbar und löschbar machen. 
+* *SWFA-4*: Das System muss gewährleisten, dass jeder Anwender nur auf den eigenen Bereich Zugriff hat. Realisiert wird dies durch seperate Log-In-Zugänge.  
 
-** *SWFA-2.1*: Das System darf einem bestimmten Dozenten A nur die Einsicht und Bearbeitung seiner eigenen Buchungen ermöglichen. Die Einsicht in Buchungen eines anderen Dozenten B darf keineswegs möglich sein. 
+* *SWFA-5*: Das System muss die Auswertungen von Buchungszahlen in Form von Statistiken ermöglichen. Dies muss der Materialplanung dienlich sein. 
 
-** *SWFA-2.2*: Dies geschieht über die Vergabe einzelner Accounts für die Dozenten. 
+* *SWFA-7*: Das System muss die eingegeben Experimente-Buchungen persistent auf eine (existierende) Datenbank speichern. (Datenverlust muss ausgeschlossen werden.) 
 
-** *SWFA-2.2*: Das individuelle Journal (gebuchte Experimente) darf nur eingeloggten Dozenten zugänglich sein; den eingeloggten Gästen und auch dem Admin NICHT. 
+* *SWFA-8*: Das System muss sicherstellen, dass nur valide Angaben getätigt werden können. 
 
-* *SWFA-3*: Das System muss in der Vergangenheit gebuchte Experimente für den Admin als Statistik darstellen und somit auswertbar machen. 
+* *SWFA-9*: Das System muss Buchungsfortführungen nach Verbindungsabbrüchen gewährlesiten. Dies wird durch ein Session-Token sichergestellt. 
 
-** *SWFA-3.1*: Die ausgegebenen Daten müssen der Materialplanung dienlich sein. 
-
-* *SWFA-4*: Das System muss dem Admin die gebuchten Experimente als Wochenplan pro Dozent zur Verfügung stellen. 
-
-* *SWFA-5*: Das System muss einen Ausdruck der Dozentenwoche ermöglichen. 
-
-** *SWFA-5.1*: Das System muss sichergehen, dass der Administrator der einzige mit Rechten zum Einsehen der Dozentenwoche und Statistiken ist. 
-
-** *SWFA-5.2*: Der Administrator erhält Zugriff über seinen Account. 
-
-* *SWFA-6*: Das System/die Statistik soll den Dozenten die Einsicht in Ihre Buchungen vergangener Semester ermöglichen. Die Buchungshistorie eines abgeschlossenen Semesters soll reproduzierbar sein.  
-
-* *SWFA-6.1*: Daraus ergibt sich die Notwendigkeit einer “Journal-Ansicht”, welche die Datumsanpassung ermöglicht, bevor die Buchung abgeschlossen wird. 
-
-* *SWFA-7*: Das System muss die eingegeben Experimente-Buchungen persistent speichern. (Datenverlust muss ausgeschlossen werden.) 
-
-** *SWFA-7.1*: Das System muss die Daten auf eine (existierende) Datenbank schreiben. 
-
-* *SWFA-8*: Das System muss sicherstellen, dass nur valide Angaben bei Uhrzeit und Datum getätigt werden können. 
-
-** *SWFA-8.1*: Dies kann über Datums-Widgets und Drop-Down Menüs sichergestellt werden. 
-
-** *SWFA-8.2*: Die Daten müssen zusätzlich von der Anwendung validiert werden. 
-
-** *SWFA-8.2*: Rückwärtsbuchungen dürfen nicht ermöglicht werden. 
-
+* *SWFA-10*: Das System muss das Erstellen von Anwenderzugängen durch den Admin gewährleisten. 
 
 == Qualitätsanforderungen für das Gesamtsystem
 //Qualitätsanforderungen repräsentieren das "URPS" im FURPS+ zu Klassifikation von Anforderungen
@@ -110,25 +85,18 @@ Stakeholder haben Anforderungen. Ziele der Stakeholder sind Teil der Anforderung
 === Zuverlässigkeit (Reliability)
 // Zuverlässigkeit beinhaltet die Fähigkeit des Produkts und/oder des Systems unter Stress und ungünstigen Bedingungen am laufen zu bleiben. Spezifizieren Sie Anforderungen für zuverlässige Akzeptanzstufen, und wie diese gemessen und evaluiert werden. Vorgeschlagene Themen sind Verfügbarkeit, Häufigkeit und Schwere von Fehlern und Wiederherstellbarkeit.
 
-* *NFAR-1*: Beim Verbindungsabbruch muss die Buchung nach Wiederherstellung der Verbindung fortführbar sein. Dies wird durch ein Session-Token sichergestellt. 
+* *NFAR-1*: Das System darf aufgrund von Netzwerkausfällen keinen Schaden nehmen. 
 ** Test: Verbindungsabbruch erzwingen beim Buchen 
-
-* *NFAR-2*: Die Nutzbarkeit muss gewährleistet sein, wenn alle derzeitigen Nutzer gleichzeitig arbeiten wollen 
 
 === Effizienz (Performance)
 // Die Performanz Charakteristiken des Systems sollten in diesem Bereich ausgeführt werden. Beispiele sind Antwortzeit, Durchsatz, Kapazität und Zeiten zum Starten oder Beenden.
 
-* *NFAP-1*: Höchstmögliche Optimierung von Laufzeit und Speichernutzung durch Systemarchitektur 
-
-* *NFAP-2*: Kurze Antwortzeiten/ kurze Ladezeiten bei guter Verbindung  
+* *NFAR-2*: Die Nutzbarkeit muss gewährleistet sein, wenn alle derzeitigen Anwender gleichzeitig arbeiten wollen. Es darf diesbezüglich keine Begrenzung an parallelen Log-Ins geben.  
 
 === Wartbarkeit (Supportability)
 // Dieser Bereich beschreibt sämtliche Anforderungen welche die Supportfähigkeit oder Wartbarkeit des zu entwickelnden Systems verbessern, einschließlich Anpassungsfähigkeit und Erweiterbarkeit, Kompatibilität, Skalierbarkeit und Anforderungen bezüglich der System Installation sowie Maß an Support und Wartbarkeit.
 
-* *NFAS-1*: Das Entwicklerteam muss ein (bis zum Projektende fortgeführtes) Handbuch zum System bereitstellen, welches den Stakeholdern bekannt sein muss. 
-
-* *NFAS-2*: Das System soll jeder Zeit wartbar sein. 
-** Dies wird dadurch ermöglicht, dass es auf dem Fakultätsserver der nutzenden fakultät liegt. 
+* *NFAS-1*: Das Entwicklerteam muss eine (fortgeführte) Entwicklerdokumentation bereitstellen, welche Wartungg und Weiterentwicklung des Systems ermöglicht. 
 
 == Zusätzliche Anforderungen
 === Einschränkungen
