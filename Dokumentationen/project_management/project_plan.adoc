@@ -6,7 +6,7 @@ include::../_includes/default-attributes.inc.adoc[]
 
 == Einführung
 //Briefly describe the content of the project plan.
-Wir (Team I2) legen unserem Projekt das Vorgehensmodell Open Unified Process (OpenUP) zugrunde.
+Wir (Team I2) orientieren uns bei unserem Projekt am Vorgehensmodell Open Unified Process (OpenUP).
 Das Projekt umfasst die vier Phasen:
 
 * Inception
@@ -19,8 +19,41 @@ Der Projektplan wird fortlaufend ergänzt und verfeinert. Verantwortlich zeichne
 == Projektorganisation
 //Introduce the project team, team members, and roles that they play during this project. If applicable, introduce work areas, domains, or technical work packages that are assigned to team members. Introduce neighboring projects, relationships, and communication channels. If the project is introduced somewhere else, reference that location with a link.
 
+//Rollenübersicht verlinken!
+
+<<Dokumentationen\project_management\Rollenübersicht.adoc, Rollenübersicht>> Link haut noch nicht hin?
+
 == Praktiken und Bewertung
 //Describe or reference which management and technical practices will be used in the project, such as iterative development, continuous integration, independent testing and list any changes or particular configuration to the project. Specify how you will track progress in each practice. As an example, for iterative development the team may decide to use iteration assessments and iteration burndown reports and collect metrics such as velocity (completed work item points/ iteration).
+
+=== Management practices
+
+https://www2.htw-dresden.de/~anke/openup/publish.openup.base/customcategories/management_practice_list_8D917129.html?nodeId=770581c6[Management Practices OpenUP]
+
+* *Iterative Development:* Plan Iteration - Manage Iteration - Assess Results
+
+Das Team führt 14-tägige Iterationen durch. Wir nutzen ein modifiziertes https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3[Scrum-Board] auf GitHub für Planung und Steuerung der Iteration. Regeln zum Umgang mit den Aufgaben (Issues) sind im https://github.com/Schmiddl99/experimenteverwaltung-i2/wiki/Iteration-Planning[Wiki] festgehalten.
+Der Fortschritt einer jeden Iteration bildet sich durch das "Wandern" der Aufgaben von der Spalte "Work Item List" in die Spalte "DONE" ab. Zu Beginn einer jeden Iteration wird die Work Item List wieder gefüllt. Der globale Projektfortschritt wird außerdem mithilfe des ESSENCE Navigator Tools sowie durch die Definition errecihter OpenUP-Meilensteine veranschaulicht.
+
+** Wöchentliche Besprechungen [Weekly] sind obligatorisch.
+*** Dabei hat sich die Moderation durch einen zuvor bestimmten Redeführer etabliert
+*** Die Agenda wird im Voraus von den PMs entworfen und der Gruppe zugesandt
+** Ein "Weekly Scrum" wird zu Beginn eines jeden Weekly durchgeführt. 
+*** Dauer insgesamt max. 10 min
+*** Jedes Teammitglied erläutert knapp woran er/sie gerade arbeitet bzw. gearbeitet hat
+*** Jedes Teammitglied berichtet, was sie/ihn aktuell an der Arbeit behindert
+*** Äußerungen werden nicht kommentiert
+
+//Formatierung??
+
+* *Risk-Value Life Cycle:*
+* *Whole Team:*
+
+** Workshops für Teaminternen Wissensaustausch werden ad-hoc durchgeführt (z.B. für die Arbeit in GitHub und Ruby). Alle Teammitglieder sollen vom Wissen der anderen profitieren können.
+** Konventionen und Anleitungen werden im GitHub-Wiki geteilt: https://github.com/Schmiddl99/experimenteverwaltung-i2/wiki[Wiki]
+* Das Qualitätsmanagement wird durch die Verantwortliche {AB} gestaltet und durchgeführt
+
+=== Technical Practices
 
 == Meilesteine und Ziele
 //Define and describe the high-level objectives for the iterations and define milestones. For example, use the following table to lay out the schedule. If needed you may group the iterations into phases and use a separate table for each phase
@@ -32,21 +65,32 @@ Der Projektplan wird fortlaufend ergänzt und verfeinert. Verantwortlich zeichne
 | Primary objectives +
 (risks and use case scenarios)
 | Scheduled start or milestone
-| Target velocity
+| [.line-through]#Target velocity#
 
 | I1
 |
-* Mitigate Risk1
-* Develop Use Case 3, Scenario 2
-| Date from/Date to
-| 15
+* Gruppenfindung, Team kennenlernen
+* Rollenverteilung, Projektmanager übermitteln
+* Aufgabe kennen lernen
+* Kontakt zu Themensteller aufnehmen
+* TS-M1
+* Kontakt zu Coach
+| 16.11.-16.12.
+| -
 
 | I2
 |
-* Mitigate Risk 2
-* Develop Use Case 1, Scenario 2
-| Date from/Date to
-| 16
+<<Dokumentationen\project_management\iteration_plan_02.adoc, Iterationsplan 02>> Link testen!!
+| 16.12.2020-31.12.2020
+| -
+
+| I3
+|
+* Mitigate Risk1
+* Develop Use Case 3, Scenario 2
+| 07.01.2021-21.01.2021
+| -
+
 |===
 
 == Deployment
@@ -54,3 +98,7 @@ Der Projektplan wird fortlaufend ergänzt und verfeinert. Verantwortlich zeichne
 
 == Erkenntnisse (Lessons learned)
 //List lessons learned from the retrospective, with special emphasis on actions to be taken to improve, for example: the development environment, the process, or team collaboration.
+
+* Kommunikation mit den Stakeholdern ist der Knackpunkt für die Anforderungsanalyse, das tiefrgündige gegenseitige Verständnis initial der wichtigste Faktor.
+* Bestimmung eines Redeführers und Vorbereitung der Tagesordnung machen Meetings deutlich zeiteffizienter.
+* Wissensweitergabe im Team lässt sich über selbstorganisierte Workshops sehr gut realisieren - von der Erfahrung einzelner Teammitglieder können so alle profitieren.

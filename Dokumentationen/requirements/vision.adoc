@@ -37,9 +37,9 @@ Für die Dozenten ist es wichtig, bei unserem Kunden ihre Wahl an aufzubauenden 
 
 Diese Methode ist sehr unübersichtlich, da die einzelnen Mails der Dozenten ausgewertet werden müssen und nicht alle dieselbe Bestell-Vorlage verwenden. Die Mails müssen händisch nach Wochentag und Dozent sortiert werden, was einen Mehraufwand darstellt. 
 
-Um diesen Mehraufwand zu umgehen, möchte der Kunde eine Möglichkeit der Hinzufügung von Experimenten in einen “Warenkorb”. In diesem soll je Experiment ein Datum hinterlegt werden und als Auftrag bestellt werden können. Auch Abänderungen oder sogar Stornierungen der eigenen Bestellungen sollte für die Dozenten in einem Journal möglich sein. Am Ende der Woche sollen dann automatisiert diese Daten abrufbar gemacht werden, aufbereitet zur einfachen Planung der Bestellungen je Wochentag. 
+Um diesen Mehraufwand zu umgehen, möchte der Kunde eine Möglichkeit der Hinzufügung von Experimenten in einen “Warenkorb”. In diesem soll je Experiment ein Datum hinterlegt werden und als Auftrag bestellt werden können. Am Ende der Woche sollen diese Daten dann automatisiert abrufbar gemacht werden, aufbereitet zur einfachen Planung der Bestellungen als in Tage gegliederte Wochen pro Dozent. 
 
-Ebenfalls soll die Möglichkeit einer Auswertung der vergangenen Bestellungen ermöglicht werden. Dies ist wichtig, um herauszufinden welche Experimente besonders oft gebucht werden, um bspw. Verschleiß der Geräte vorauszusagen und in Folge dessen mehr Geräte oder Instrumente einzukaufen.  
+Ebenfalls soll die Möglichkeit einer Auswertung der vergangenen Bestellungen ermöglicht werden. Dies ist wichtig, um herauszufinden welche Experimente besonders oft gebucht werden, um bspw. Verschleiß der Geräte vorauszusagen und in Folge dessen mehr Geräte oder Instrumente einzukaufen. Diese Historie dient außerdem der Ermöglichung des Kopierens von wiederauftretenden  Buchungsabfolgen in Folgesemestern. 
 
 Als Zusatzziel ist die Verwaltung der in den Experimenten enthaltenen Bilder. Bei Anschaffung von neuen Instrumenten für die Experimente müssen auch die Bilder von diesen erneuert werden. Dabei soll, um eine Konsistenz zu bewahren, die Bezeichnung der Bilder gleich bleiben, das Bild aber in Datei und Reihenfolge anpassbar gemacht werden. 
 
@@ -75,10 +75,9 @@ a|
 |eine erfolgreiche Lösung wäre 
 a|
 
-* Warenkorb-System: Experimente können über Button in Warenkorb gelegt werden 
-* Im Warenkorb kann benötigtes Datum des Experiments hinterlegt werden 
-* Journal-System: Dozenten können bis ihre Buchungen einsehen und bis zu einer bestimmten Deadline Änderungen/Stonierungen vornehmen 
-* Wochenplan-System: Bereitstellung einer Buchungs-Einsicht  mit bspw. einer Excel Datei, in welcher die Buchungen mit Sortierung je Wochentag aufgelistet, einfache und Übersichtliche Gliederung 
+* Warenkorb-System: Experimente können nach Festlegung der Voreinstellungen über Button in Warenkorb gelegt werden, wo sie angepasst und ins Journal geschickt werden können
+* Journal-System: Buchungsübersicht des Dozenten, wo er alle vergangenen Buchungen einsehen, die aktuellen anpassen und Buchungen kopieren kann  
+* Dozentenwochen-System: Buchungsübersicht des Admins, wo er alle Buchungen pro Dozent und sortiert je Wochentag einsehen kann 
 
 |===
 
@@ -100,9 +99,9 @@ Admin [Kunde]
 a|
 
 * Dozenten:  
-** … Experimente für die kommende Woche bestellen wollen 
+** … Experimente für die kommenden Vorlesungen bestellen wollen 
 * Admin: 
-** ... einsehen will; welche Experimente bestellt wurden. 
+** ... einsehen will, welche Experimente bestellt wurden. 
 ** … einsehen will, in welchem Umfang die Experimente in der Vergangenheit gebucht wurden sind. 
 
 |Das Produkt / die Lösung ist ein | … Erweiterung der Web-Anwendung “Physik Experimente Verwaltung” 
@@ -110,7 +109,8 @@ a|
 |die / das	|… welche die Buchung von Experimenten und Einsicht der Buchungen sowie deren Historie ermöglicht 
 
 |im Gegensatz zu	|… der Buchung über Email und manuelle Historie und Aufbereitung.
-|Unser Produkt|	… ermöglicht die einfache Bestellung und Bestellanpassung von Experimenten und Generierung eines Wochenplans der Buchungen dieser sowie eine Übersicht der bisherigen Buchungen.
+|Unser Produkt|	… ermöglicht die einfache Bestellung von Experimenten und Generierung eines für den Anwender optimierten Buchungsplans, sowie eine Übersicht der bisherigen Buchungen.
+
 |===
 
 
@@ -127,8 +127,8 @@ a|
 * Mitarbeiter der HTW
 * Vorlesungsassistent im Bereich Energietechnik/Physik
 * Versorgt Dozenten mit Experimenten (“Interner Dienstleister”) 
-* Möchte seine wöchentliche Arbeit optimieren
-* Hat als oberste Ziel seinen Auftrag, den Dozenten die Arbeit zu erleichtern a|
+* Möchte seine wöchentliche Arbeit optimieren 
+* Möchte, dass die Dozenten möglichst minimalen Aufwand haben	a|
 
 * stellt Experimente nach Bestellung bereit 
 * “Verwalter” des Webtools – stellt Informationen zu den Experimenten bereit 
@@ -189,9 +189,12 @@ a|
 [%header, cols="4,1,4,1"]
 |===
 |Bedarf|	Priorität|	Features|	Geplantes Release
-|Warenkorb |hoch |Experiment in Warenkorb legen; datieren; bereitstellen |xx
-|Bestellliste ansehen |hoch |Experimente-Wochenplan für Folgewoche einsehen  |xx
-|Journal einsehen |hoch |eigene Buchungen einsehen und u.U. Anpassungen vornhemen  |xx
+
+|Voreinstellungen | hoch| Festlegung der Buchungsdetails vor Buchungsbeginn| xx
+|Warenkorb |hoch |Experiment in Warenkorb legen und evtl. anpassen |xx
+|Journal ansehen |hoch |Einsehen vergangener und Bearbeiten aktueller Buchungen durch den Dozenten   |xx
+|Dozentenwoche |hoch | Einsehen der Buchungen je Wochentag und pro Dozent durch den Admin; DEinleitung des Druckprozesses| xx
+|Kopierung |hoch |Übernahme von Buchungssätzen in Folgesemester| xx 
 |Statistik ansehen |mittel |Statistik (z.B. als Top 10) der (bestellten) Experimente einsehen |xx
 |Verwaltung der Bilder |niedrig |Bilder in Experimenten können ersetzt werden, Reihenfolge wird einbehalten. |xx
 |===

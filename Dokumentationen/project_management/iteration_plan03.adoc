@@ -1,5 +1,5 @@
-= Iteration Plan 01: {project-name}
-Tobias Karsch <tobias.karsch@htw-dresden.de>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
+= Iteration Plan 03: {project-name}
+Tobias Karsch <tobias.karsch@htw-dresden.de>; Tim Würzburg <tim.wuerzburg@htw-dresden.de>; Gregor Müller <mueller.gregor@htw-dresden.de>
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
@@ -13,12 +13,12 @@ include::../_includes/default-attributes.inc.adoc[]
 | Meilenstein
 | Datum
 
-| Beginn der Iteration | 17.12.2020
-| TS-M2 | 17.12.2020?
-|Git-Workshop für Teammitglieder
-|21.12.2020
+| Beginn der Iteration | 07.01.2020
+| TS-M3 | 07.01.2021
+|XXX
+|XXX
 | Ende der Iteration 
-| 31.12.2020
+| 21.01.2021
 | LCO    |-
 |===
 
@@ -26,11 +26,13 @@ include::../_includes/default-attributes.inc.adoc[]
 == Wesentliche Ziele
 //Nennen Sie 1-5 wesentliche Ziele für die Iteration.
 
-* Erreichen Bestätigung der Vision durch Kunden, Über die Initialen Anforderungen herrscht Einigkeit.
-* Erhebung der Systemweiten Anforderungen
-* Use Case Model
-* Risikoliste
-* Wireframes für jeden essentiellen Funktionsschritt nach aktuellem Anforderungskatalog
+* Erreichen der Zustimmung des Auftraggebers in Bezug auf die vorgelegten Wireframes.
+*Übereinstimmung mit dem Auftraggeber in Bezug auf die grundlegende Vorgehensweise der Buchung.
+*Übereinstimmung mit dem Auftraggeber in Bezug auf das Journal.
+* Ausarbeitung eines Architektur-Konzeptes
+* Ausarbeitung von Text Cases
+* Risikoliste weiterführen und pflegen
+
 * **Wissensaustausch:** Interessierte Mitglieder sollen ein GitHub-Tutorial erhalten, was einerseits die Arbeit im Team fördert als auch einen weiteren Mehrwert innerhalb dieses Moduls schafft.
 
 
@@ -48,38 +50,34 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 |===
 | Aufgabe bzw. Beschreibung |#Github-Issue |Schätzung der Größe (Skala A-C; A=höchster Aufwand) | Priorität (Skala 1-3; 1=höchste Prio) |Status | Zugewiesen (Name) 
 
-|Erarbeitung "System wide requirements" nach TS-M2 |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51185141[#28] | A | 1 | DUE: 18.12.20 |siehe Issue
+|Architektur- Notizbuch fortführen |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51159540[#26] | X | X | DUE: OPEN |{WE}
 
-|Meeting Coach Anforderungsproblematik |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51434318[#43] |A |1 |DUE: nach Ferien?? |{tka}
+|Ergänzen von Kleinigkeiten in SWRs |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-52283972[#71]|B |1 |DUE: 10.01.21 |{tka} {GM}
 
-|GitHub-Workshop vorbereiten |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51307222[#35] |A |1 |DUE:19.12.20 |{RB} {GM}
+|Architektur-Konzept|https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-52286316[#81] |B |1 |DUE:21.01.21 |{RB} {WE} {tka} {JS}
 
-|Existierende Use Cases vervollständigen |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51308341[#39] |A |1 | DUE: 23.12 |siehe Issue
+|Coach Meeting: SWFAs+ MH-Thematik |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51434318[#43] |B |1 | DUE: 14.01.21 |{tka}
+
+|Risk-List: Exel in CSV |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51300929[#36] |B |3 |DUE:21.01.21 |{TW}
  
-|Git-Workshop |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51222488[#31] |B |1 |DUE: 21.12. |{RB} {GM}
+|Test Cases: Fälle überlegen |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-52286350[#75] |C |1 |DUE: 2110.01.21.12. |{RB} {GM} {JS} {WE}
 
-|Projektplan erstellen |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-50190577[#4] |B |3 |DUE: 31.12 |PM 
+|Test Cases: dokument anlegen |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-52286328[#76] |C |1 |DUE:10.01.21 |{GM}
 
-|ESSENCE: Projekt updaten |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51439792[#51]|C 
-|3 |DUE:31.12. |{TKa}
+|Architektur Notitzbuch anlegen |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-52286292[#80] |C |1 |DUE: 10.01.21 |{we}
 
-|Vision überarbeiten: Neue Stakeholderziele + Zukunftsaussichten für kommendes Projekt |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51433798[#47] |C |2 |DUE: 23.12. |{TKa}
+|Screenshot Essence Iteration 2 |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-52283809[#70]|C 
+|1 |DUE:07.01.21 |{TKa}
 
-|Vision 2.0 zur Bestätigung MH vorlegen |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51434366[#42] |C |3 |DUE:31.12 |{TW}
+|Iterationplan 3 erstellen |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-52284228[#74] |C |1 |DUE: 07.01.21 |{TW}
 
-|Risk List: Datenschutz |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51433827[#46] |C |2 |DUE: 22.12.20 |{TW}
+|Iterationsplan 2 |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-52283639[#69] |C |2 |DUE: 10.01.21 |{TKa}
 
-|Glossarupdate |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51307087[#50] |C |3 |DUE: 31.12. |{Js} {WE}
+|QM: Git-Konvention|https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51299110[#34] |C |3 |DUE:21.01.21 |{AB}
 
-|Wireframe: Druckansicht Dozentenwoche |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51434289[#41] |C |2 |DUE: 28.12.? |{GM} {AB}
+|QM: Belegabgabe |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-52286661[#77] |C |3 |DUE: XX |{AB}
 
-|Wireframe: Header-Menü (Drop-Down) für Studiengang (siehe Anforderungen) und Uhrzeitauswahl (VL-Zeit) |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51434260[#44] |C |2 |DUE: 28.12.? |{GM} {AB} 
-
-|Iteration Plan Pflegen |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51666243[#54] |x |x |Fortlaufende Aufgabe |{TKa}
-
-|END: Iteration: Review |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51307331[#48] |B |3 |DUE: 31.12. |ALL
-
-|END: Iteration: Retrospective |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51307321[#49] |B |3 |DUE: 31.12. |ALL
+|Rollenverteilung überarbeiten |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51434289[#41] |C |3 |DUE: 21.01.21 |{GM} {TKi}
 
 |===
 
@@ -93,7 +91,7 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 | Feature Creep | unverändert 
 a|* Nach dem Entwurf der ersten Wireframes wurden diese teilweise wieder verworfen, da von TS-Seite veränderte Anforderungen gestellt wurden.
 * Verworfen werden mussten u.a. die Deadline, die Benachrichtigung von Dozenten, die Pop-Up-Buchungseingabe.
-* Eine Konsultation des Coaches sowie eine Bestätigung der überarbeiteten Vision durch TS sind angedacht. (Stand:22.12.20)
+* Eine Konsultation des Coaches sowie eine Bestätigung der überarbeiteten Vision durch TS sind angedacht. (Stand:06.01.21)
 |===
 
 
