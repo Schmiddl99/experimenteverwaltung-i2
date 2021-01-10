@@ -1,0 +1,14 @@
+= Test Cases: {project-name}
+Gregor Müller <gregor.mueller@htw-dresden.de>;
+{localdatetime}
+include::../_includes/default-attributes.inc.adoc[]
+// Platzhalter für weitere Dokumenten-Attribute
+
+
+== Allgemeine Informationen
+
+== Test Cases
+
+=== Test Case 01
+
+=== Test Case 02
