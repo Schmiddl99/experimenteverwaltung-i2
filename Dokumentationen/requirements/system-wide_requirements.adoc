@@ -36,7 +36,7 @@ Stakeholder haben Anforderungen. Ziele der Stakeholder sind Teil der Anforderung
 
 * *SWFA-3*: Das System muss die bereits gebuchten Experimente aus Vergangeneheit und Gegenwart für sämtliche Rollen spezifisch darstellen können. 
 
-* *SWFA-4*: Das System muss gewährleisten, dass jeder Anwender nur auf den eigenen Bereich Zugriff hat. Realisiert wird dies durch seperate Log-In-Zugänge.  
+* *SWFA-4*: Das System muss gewährleisten, dass jeder Anwender nur auf den persönlichen Bereich Zugriff hat. Realisiert wird dies durch separate Log-In-Zugänge.  
 
 * *SWFA-5*: Das System muss die Auswertungen von Buchungszahlen in Form von Statistiken ermöglichen. Dies muss der Materialplanung dienlich sein. 
 
@@ -46,7 +46,7 @@ Stakeholder haben Anforderungen. Ziele der Stakeholder sind Teil der Anforderung
 
 * *SWFA-9*: Das System muss Buchungsfortführungen nach Verbindungsabbrüchen gewährlesiten. Dies wird durch ein Session-Token sichergestellt. 
 
-* *SWFA-10*: Das System muss das Erstellen von Anwenderzugängen durch den Admin gewährleisten. 
+* *SWFA-10*: Das System muss das Erstellen und Verwalten von Anwenderzugängen durch den Admin gewährleisten. 
 
 == Qualitätsanforderungen für das Gesamtsystem
 //Qualitätsanforderungen repräsentieren das "URPS" im FURPS+ zu Klassifikation von Anforderungen
