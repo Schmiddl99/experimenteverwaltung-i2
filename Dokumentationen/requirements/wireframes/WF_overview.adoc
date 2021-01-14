@@ -5,6 +5,7 @@ Alena Bischoff alena.bischoff@htw-dresden.de
 :toc-title: Inhaltsverzeichnis
 // Platzhalter für weitere Dokumenten-Attribute 
 :source-highlighter: highlightjs
+:imagesdir: wf_pictures
 
 
 == Wireframes
@@ -16,7 +17,7 @@ Anbei nun eine Zusammenstellung der einzelnen Wireframes.
 
 === WF0: Buchung starten
 
-image::wf_pictures/WF_0_BuchungStarten.png[Buchung starten]
+image::WF_0_BuchungStarten.PNG[Buchung starten]
 
 .Erklärung:
 Hier wird die eigentliche Buchung gestartet. Dies geschiet mit einen einfachen Klick auf den "Buchung starten" Knopf.
@@ -24,21 +25,21 @@ Hier wird die eigentliche Buchung gestartet. Dies geschiet mit einen einfachen K
 
 === WF1: Voreinstellungen
 
-image::wf_pictures/WF_1_Voreinstellungen.png[Voreinstellungen]
+image::WF_1_Voreinstellungen.PNG[Voreinstellungen]
 
 .Erklärung:
 Nun müssen die Voreinstellungen für die Buchung festgelegt werden. Dabei handelt es sich um Studiengang, Datum und Uhrzeit, welche für die gesamte Buchung benutzt werden sollen. Es kann weiter zu der Experimenteübersicht navigiert werden oder die Buchung abgebrochen werden.
 
 === WF2: Experimente wählen
 
-image::wf_pictures/WF_2_ExperimentWaehlen.png[Experiment wählen]
+image::WF_2_ExperimentWaehlen.PNG[Experiment wählen]
 
 .Erklärung:
 Mit einem Klick auf die Warenkorb Symbole werden diese eingefärbt (d.h. sie befinden sich im Warenkorb; Rückgängig machen mit erneutem Klick). Sind alle gewünschten Experimente ausgewählt, kann die Buchung abgeschlossen oder abgebrochen werden
 
 === WF3: Checkout
 
-image::wf_pictures/WF_3_Checkout.png[Checkout]
+image::WF_3_Checkout.PNG[Checkout]
 
 .Erklärung:
 Die Voreinstellungen und gewählten Experimente werden erneut aufgelistet. Hier kann die Reihenfolge der Durchführung dieser geändert werden (per Drag&Drop), das Experiment entfernt werden und ein Kommentar für die Buchung hinterlassen werden.
@@ -46,7 +47,7 @@ Die Buchung kann dann abgeschlossen werden, Abgebrochen werden oder zurück zur 
 
 === WF4: Buchung bestätigen
 
-image::wf_pictures/WF_4_BuchungBestaetigt.png[Buchung wird bestätigt]
+image::WF_4_BuchungBestaetigt.PNG[Buchung wird bestätigt]
 
 .Erklärung:
 
@@ -54,28 +55,28 @@ Bestätigung, das die Buchung erfolgreich war.
 
 === WF5: Statistik
 
-image::wf_pictures/WF_5_Statistik.png[Statistik Anzeige]
+image::WF_5_Statistik.PNG[Statistik Anzeige]
 
 .Erklärung:
 Anzeigen einer passenden Statistik für die Nutzung der einzelnen Experimente, aufgegliedert nach Sommer- und Wintersemester und der Gesamtnutzung. Eine Sortierung nach Alphabet, Nutzung und Zeitraum kann vorgenommen werden.
 
 === WF6: Journal
 
-image::wf_pictures/WF_6_Journal.png[Journal Anzeige]
+image::WF_6_Journal.PNG[Journal Anzeige]
 
 .Erklärung:
 Im Journal können die getätigten Buchungen eingesehen werden. Auch hier sind verschiedene Sortierungen möglich (z.B. nach Studiengang, Tag, ...). Die Möglichkeit einer Löschung und Änderung besteht hier ebenfalls.
 
 === WF7: Dozentenwoche aufrufen
 
-image::wf_pictures/WF_7_Dozentenwoche.png[Dozentenwoche Anzeige]
+image::WF_7_Dozentenwoche.PNG[Dozentenwoche Anzeige]
 
 .Erklärung:
 Über die Dozentenwoche kann der gesamte Wocheplan vom Admin (oder Dozent für sich selber) abgerufen werden. Mit der Einstellung des Gewünschten Dozents und dem Zeitraum lassen sich Einschränkungen vornehmen.
 
 === WF8: Dozentenwoche
 
-image::wf_pictures/Dozentenwoche.jpg[Dozentenwoche Druckansicht]
+image::Dozentenwoche.jpg[Dozentenwoche Druckansicht]
 
 .Erklärung:
 Ansicht des beispielhaften Wochenplans.
