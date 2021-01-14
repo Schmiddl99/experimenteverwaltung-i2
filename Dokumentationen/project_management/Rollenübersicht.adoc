@@ -38,14 +38,18 @@ Developer (zus.)
 Ausscheidend nach SE I
 |Analyst
 |Terminplaner (Doodle)
-|01.12.2020
+
+Microsoft-Teams Verantwortlicher
+|14.01.2021
 
 |Richard Böhme
 |Developer
 
+GitHup Verantwortlicher (zus.)
+
 Tester (zus.)
 |Deployment (virtuelle Maschine)
-|01.12.2020
+|14.01.2021
 
 |Alena Bischoff
 |QM-Beauftragte
@@ -53,51 +57,40 @@ Tester (zus.)
 Developer (zus.)
 
 Tester (zus.)
-|
-|01.12.2020
+|Erstellt Wireframes und UML-Diagramme
+|14.01.2021
 
 |Taejun Kim
-|Git-Hup-Verantwortlicher
+|GitHup-Verantwortlicher
 
 Developer (zus.)
 
 Architect (zus.)
-|
-|01.12.2020
+|GitHup-Kontrolleur
+|14.01.2021
 
 |William Elsner
 |Architect 
 
 Tester (zus.)
-|
-|01.12.2020
+|Glossar Betreuung
+|14.01.2021
 
 |Matthias Heisig
 |Stakeholder
 |Themenersteller
 
-Admin
+Admin / Anwender
 
 Webanwendung
-|01.12.2020
+|14.01.2021
 
-|Christoph Zirkelbach
+|Prof. Dr.-Ing. Rhena Krawietz
 |Stakeholder
-|Coach
+|Dozent / Anwender
+|14.01.2021
 
-Ansprechpartner
 
-Git+AsciiDoc
-|01.12.2020
-
-|Jürgen Anke
-|Stakeholder
-|Professor
-
-Ansprechpartner
-
-Visual Paradigm
-|01.12.2020
 
 |Herr Hornoff
 
