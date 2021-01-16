@@ -15,7 +15,7 @@ Dozent möchte seinen (vorgefilterten) Wochenplan (Übersicht von allen eigenen 
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
 . Der Use Case beginnt, wenn Dozent die Wochenplanansicht drucken möchte
-. (im Browser integrierte) Druckvorschau öffnet sich
+. (im Browser integrierte) Druckvorschau öffnet sich (weitere Funktionen sind vom Browser abhängig und deshalb nicht Teil unseres Systems)
 . Nach der Bestätigung wird der Druckauftrag erteilt
 . Use Case endet
 
