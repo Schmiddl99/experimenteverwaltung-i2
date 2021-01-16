@@ -78,6 +78,27 @@ a| * Valides Datum, valide Uhrzeit und valider Studiengang
 
 ==== TC04 - Keine Mehrfachauswahl eines Experiments pro Buchung möglich
 
+|===
+
+|*Beschreibung* |Der Dozent versucht das selbe Experiment mehrmals in den Warenkorb mitaufzunehmen.
+
+|*Vorbedingungen*
+a| * Dozent ist angemeldet  
+* Es wurde auf den Button "Buchung starten" geklickt
+* Es wurde valide Daten in die Voreinstellungen eingegeben 
+* Es wurde mindestens ein Expermint ausgewählt
+
+
+|*Nachbedingung*
+a| * Es ist nicht möglich das selbe Experiment mehrmals auszuwählen
+
+|*Benötigte Daten*
+a| * Valides Datum, valide Uhrzeit und valider Studiengang
+* es muss ein Dozentenkonto geben 
+* es muss mindestens ein Experiment geben
+
+|===
+
 ==== TC05 - Abbruch muss möglich sein
 
 === Test Cases für Use Case "Buchungsjournal verwalten"
