@@ -1,7 +1,7 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
-== Use-Case: Dozentenwoche ansehen und drucken
+== Use-Case: Dozentenwoche drucken
 ===	Kurzbeschreibung
-Admin möchte sich Wochenplan (Übersicht von allen Exp. inkl. Details) für bestimmte KW anzeigen lassen
+Admin möchte den (vorgefilterten) Wochenplan (Übersicht von allen Exp. inkl. Details) für eine bestimmte KW ausdrucken
 
 ===	Kurzbeschreibung der Akteure
 * Admin
@@ -14,14 +14,14 @@ Admin möchte sich Wochenplan (Übersicht von allen Exp. inkl. Details) für bes
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
-. Der Use Case beginnt, wenn Admin die Wochenplanansicht aufruft
-. Wochenplanansicht wird dargestellt
-. KW muss ausgewählt werden
-. Filter (Dozent) kann angewendet werden
-. Use Case endet damit, dass die Ansicht generiert wird
+. Der Use Case beginnt, wenn Admin die Wochenplanansicht drucken möchte
+. (im Browser integrierte) Druckvorschau öffnet sich
+. Nach der Bestätigung wird der Druckauftrag erteilt
+. Use Case endet
 
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
+==== Wochenplanansicht drucken
 --- keine alternativen Abläufe möglich ---
 
 === Unterabläufe (subflows)

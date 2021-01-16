@@ -1,7 +1,7 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
 == Use-Case: *eigene* Dozentenwoche ansehen und drucken
 ===	Kurzbeschreibung
-Dozent möchte sich Wochenplan (Übersicht von allen eigenen Exp. inkl. Details) für bestimmte KW anzeigen lassen
+Dozent möchte sich seinen Wochenplan (Übersicht von allen eigenen Exp. inkl. Details) für bestimmte KW anzeigen lassen
 
 ===	Kurzbeschreibung der Akteure
 * Dozent
@@ -21,9 +21,7 @@ Dozent möchte sich Wochenplan (Übersicht von allen eigenen Exp. inkl. Details)
 
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
-==== Wochenplanansicht drucken
-Wenn nach Schritt 4 des Standardablaufes drucken geklickt wird, öffnet sich eine neue Seite mit dem (vorgefilterten) Wochenplan. Drucken wird über die Druckfunktion des Browsers realisiert. Use Case endet
-
+--- keine alternativen Abläufe möglich ---
 === Unterabläufe (subflows)
 //Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
 
