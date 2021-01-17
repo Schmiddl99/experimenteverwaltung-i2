@@ -80,7 +80,8 @@ a|* Englisch für Grenze/Frist
 |Historie
 a|* Häufigkeit der vergangenen Buchungen pro Experiment
 a|* Anzahl der Buchungen pro Experiment
-* Statistik* Auswertung
+* Statistik
+* Auswertung
 
 |Frontend-Benutzer
 a|* Nutzer der  öffentlich erreichbaren Weboberfläche
