@@ -39,13 +39,57 @@ a| * Datum und Uhrzeit, Studiengang
 ==== TC04 - Keine Mehrfachauswahl eines Experiments pro Buchung möglich
 
 ==== TC05 - Abbruch muss möglich sein
+|===
+
+|*Beschreibung* |Der Dozent beginnt einen Buchungsprozess, entscheidet sich aber zu einem beliebigen Zeitpunkt vor Buchungsabschluss dazu, diesen abzubrechen. Erwartet wird, dass ein Buchungsabbruch jederzeit fehlerfrei möglich ist.  
+
+
+|*Vorbedingungen*
+a| * Dozent ist angemeldet  
+* Buchung wurde gestartet 
+
+|*Nachbedingung*
+a| * Buchung wurde abgebrochen und es kam zu keinem Datenbankeintrag 
+* Dozent befindet sich auf der Seite, auf der er die Buchung begonnen hat 
+
+|*Benötigte Daten*
+a| * Zugangsdaten eines Dozentenkontos  
+
+|===
 
 === Test Cases für Use Case "Buchungsjournal verwalten"
 
 ==== TC06 - Journal enthält chronologisch geordnete Buchungen
+|===
 
+|*Beschreibung* |Der Dozent will seine Buchungen im Journal einsehen. Erwartet wird, dass die Buchungsauflistung chronologisch geordnet (bezüglich der Datums- und Zeitangaben (und der Reihenfolge bei mehreren Buchungen pro Vorlesung)) und inhaltlich richtig ist. 
+
+
+|*Vorbedingungen*
+a| * Dozent ist angemeldet  
+* Buchungen wurden erfolgreich getätigt
+|*Nachbedingung*
+a| * Dozent befindet sich auf der Journalseite 
+
+|*Benötigte Daten*
+a| * Zugangsdaten eines Dozentenkontos  
+* vollständige und valide Buchungseinträge in der Datenbank 
+|===
 ==== TC07 - Leeres Journal anzeigen
+|===
 
+|*Beschreibung* |Der Dozent will das Journal einsehen. Erwartet wird, dass diese leer ist und keine Einträge angezeigt werden, wenn dieser Dozent noch nichts gebucht hat.
+
+
+|*Vorbedingungen*
+a| * Dozent ist angemeldet  
+* keine Buchungen für diesen Dozenten 
+|*Nachbedingung*
+a| * Dozent befindet sich auf der (leeren) Journalseite 
+
+|*Benötigte Daten*
+a| * Zugangsdaten eines Dozentenkontos  
+|===
 ==== TC08 - Buchung im Journal bearbeitet werden
 
 ==== TC09 - Buchung kann im Journal gelöscht werden
