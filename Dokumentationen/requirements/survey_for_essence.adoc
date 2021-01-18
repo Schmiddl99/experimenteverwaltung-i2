@@ -1,5 +1,7 @@
 = Umfrage zur Zufriedenheit der Gruppe in Bezug der Projektarbeit
 
+Die Umfrage wurde im Zeitraum der 3. Iteration, zwischen dem 12.01.21 und dem 18.01.21 durchgeführt und am 18.01.21 ausgewertet. Der Anlass zur Umfrage war eine Übersicht der Gruppenzufriedenheit, in Bezug der Projektarbeit, für das Essence Dokument zu erlangen.   
+
 Die Merkmale der einzelnen Fragen waren teilweise Smileys oder vordefinierte Textantworten. Für die Übersicht werden diesen Elementen Zahlenrangfolgen zugeordnet. 
 
 |===
@@ -10,7 +12,7 @@ Die Merkmale der einzelnen Fragen waren teilweise Smileys oder vordefinierte Tex
 
 |===
 
-|*Frage* |*Auswertung der Merkmale* |*Aremetisches Mittel* 
+|*Frage* |*Auswertung der Merkmale* |*Arithmetisches Mittel* 
 
 |Wenn du an das Projekt denkst, wie glücklich bist du? a|* 😀x4
 * 🙂x4 |1,5
@@ -67,4 +69,4 @@ Die Merkmale der einzelnen Fragen waren teilweise Smileys oder vordefinierte Tex
 
 Durch diese Umfrage konnte bestätigt werden, dass das allgemein "Gute Gefühl" das sich durch die wöchentlichen Meetings und die Gruppenarbeiten ergeben hat zutrifft. Auch konnten einzelne Problemfelder einzelner Gruppenmitglieder identifiziert werden und nun gezielt an ihrer Verbesserung gearbeitet werden.
 
-Diese Umfrage war für alle Gruppenmitglieder verpflichtend und anonym, sie wurde mit Hilfe von Microsoft Teams durchgeführt.
+Diese Umfrage war für alle Gruppenmitglieder verpflichtend und anonym, sie wurde mit Hilfe von Microsoft Teams -Polly- durchgeführt.
