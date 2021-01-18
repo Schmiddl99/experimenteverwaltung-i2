@@ -48,9 +48,69 @@ a| * Datum und Uhrzeit, Studiengang
 
 ==== TC08 - Buchung im Journal bearbeitet werden
 
+|===
+
+|*Beschreibung* |Ein Dozent bearbeitet eine Buchung im Journal indem er ein Experiment hinzufügt, eines entfernt und den Kommentar zur Buchung ändert. Es wird erwartet, dass alle geänderten Daten übernommen werden.
+
+
+|*Vorbedingungen*
+a| * Dozent ist angemeldet
+* Dozent befindet sich im Journal
+
+|*Nachbedingung*
+a| * Datenbankeintrag für die Buchung wurde aktualisiert
+* Dozent befindet sich wieder im Journal, wobei die aktualisierte Buchung angezeigt wird
+
+|*Benötigte Daten*
+a| * es muss ein Dozentenkonto geben
+* mindestens drei Experimente, sodass eins zur Buchung hinzugefügt werden kann
+* Buchung von dem Dozenten mit mindestens zwei Experimenten und einem Kommentar
+
+|===
+
 ==== TC09 - Buchung kann im Journal gelöscht werden
+
+|===
+
+|*Beschreibung* |Ein Dozent entfernt eine Buchung im Journal. Es wird erwartet, dass diese Buchung nicht mehr im Journal angezeigt wird.
+
+
+|*Vorbedingungen*
+a| * Dozent ist angemeldet
+* Dozent befindet sich im Journal
+
+|*Nachbedingung*
+a| * Datenbankeintrag für die Buchung wurde entfernt
+* Dozent befindet sich wieder im Journal, wobei das Experiment nicht mehr angezeigt wird
+
+|*Benötigte Daten*
+a| * es muss ein Dozentenkonto geben
+* mindestens ein Experiment
+* Buchung von dem Dozenten
+
+|===
 
 === Test Cases für Use Case "Statisik anzeigen"
 
 ==== TC10 - Statistik wird richtig angezeigt 
+
+|===
+
+|*Beschreibung* |Ein Admin betrachtet die Statistik. Es wird erwartet, dass alle Buchungen aus den letzten zwei Semestern in die Statistik einbezogen werden.
+
+
+|*Vorbedingungen*
+a| * Admin ist angemeldet
+* Admin befindet sich auf der Statistik-Seite
+
+|*Nachbedingung*
+a| * Anzahl der Buchungen der letzten beiden Semester sowie die Gesamtzahl ist richtig berechnet
+* die aufgelisteten Experimente sind nach der Gesamtnutzung sortiert
+
+|*Benötigte Daten*
+a| * es muss ein Admin- sowie ein Dozentenkonto geben
+* mindestens drei Experimente, um die Sortierung zu testen
+* mehrere Buchungen der vorhandenen Experimente innerhalb sowie außerhalb der beiden Semester
+
+|===
 
