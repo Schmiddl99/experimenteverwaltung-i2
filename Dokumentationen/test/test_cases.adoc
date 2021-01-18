@@ -78,7 +78,7 @@ a| * Zugangsdaten eines Dozentenkontos
 ==== TC07 - Leeres Journal anzeigen
 |===
 
-|*Beschreibung* |Der Dozent will das Journal einsehen. Erwartet wird, dass diese leer ist und keine Einträge angezeigt werden, wenn dieser Dozent noch nichts gebucht hat.
+|*Beschreibung* |Der Dozent will das Journal einsehen. Erwartet wird, dass dieses leer ist und keine Einträge angezeigt werden, wenn dieser Dozent noch nichts gebucht hat.
 
 
 |*Vorbedingungen*
@@ -97,4 +97,3 @@ a| * Zugangsdaten eines Dozentenkontos
 === Test Cases für Use Case "Statisik anzeigen"
 
 ==== TC10 - Statistik wird richtig angezeigt 
-
