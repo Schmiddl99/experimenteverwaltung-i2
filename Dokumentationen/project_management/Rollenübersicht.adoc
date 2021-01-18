@@ -11,7 +11,9 @@ Ausscheidend nach SE I
 
 Analyst (zus.)
 |Standardmäßig Protkoll-verantw.
-|01.12.2020
+
+ESSENCE-Navigator
+|18.01.2021
 
 |Tim Würzburg
 
@@ -31,7 +33,9 @@ Project Manager (SE II)
 
 Developer (zus.)
 |Übernimmt PM in SE II
-|01.12.2020
+
+Redeführer in Meetings (SEI)
+|18.01.2021
 
 |Julius Schmidt
 
@@ -45,7 +49,7 @@ Microsoft-Teams Verantwortlicher
 |Richard Böhme
 |Developer
 
-GitHup Verantwortlicher (zus.)
+GitHub Verantwortlicher (zus.)
 
 Tester (zus.)
 |Deployment (virtuelle Maschine)
@@ -61,12 +65,12 @@ Tester (zus.)
 |14.01.2021
 
 |Taejun Kim
-|GitHup-Verantwortlicher
+|GitHub-Verantwortlicher
 
 Developer (zus.)
 
 Architect (zus.)
-|GitHup-Kontrolleur
+|GitHub-Kontrolleur
 |14.01.2021
 
 |William Elsner
@@ -87,8 +91,12 @@ Webanwendung
 
 |Prof. Dr.-Ing. Rhena Krawietz
 |Stakeholder
-|Dozent / Anwender
-|14.01.2021
+|Dozent / Anwenderin
+
+Physik-Professorin
+
+Vorlesungen für WIng und BauIng
+|18.01.2021
 
 
 
@@ -109,8 +117,8 @@ Fak. MaschBau
 
 vincent@vincent-thelang.de
 |Ehemaliges Teammitglied
-|-Steht zur Seite bei Fragen
+|Steht zur Seite bei Fragen
 
--bietet Einführung zu Ruby on Rails an
+bietet Einführung zu Ruby on Rails an
 |02.12.2020
 |===
