@@ -15,7 +15,7 @@ Admin möchte sich eine Statistik über gebuchte Experimente anzeigen lassen
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
 . Der Use Case beginnt, dass der Admin auf "Statistik" klickt.
-. Zeitraum begranzen (Standard: Beginn des aktuellen Semesters bis heute)
+. Zeitraum begrenzen (Standard: Beginn des aktuellen Semesters bis heute)
 . Auflistung der Exp., welche in dem angegeben Zeitraum genutzt wurden (Standardansicht: Anzahl absteigend) --> siehe Unterablauf 1
 . Use Case endet
 
