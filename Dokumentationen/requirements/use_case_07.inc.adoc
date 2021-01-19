@@ -39,4 +39,4 @@ Admin möchte den (vorgefilterten) Wochenplan (Übersicht von allen Exp. inkl. D
 
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
---- keine Nachbedingungen ---
+--- keine besonderen Anforderungen ---
