@@ -1,5 +1,5 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
-== Use-Case: *eigene* Dozentenwoche ansehen und drucken
+== Use-Case: *eigene* Dozentenwoche ansehen
 ===	Kurzbeschreibung
 Dozent möchte sich seinen Wochenplan (Übersicht von allen eigenen Exp. inkl. Details) für bestimmte KW anzeigen lassen
 
@@ -8,13 +8,13 @@ Dozent möchte sich seinen Wochenplan (Übersicht von allen eigenen Exp. inkl. D
 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
-* Dozent muss eingeloggt sein
-* Dozent muss Wochenplanansicht aufgerufen haben
+* User muss eingeloggt sein
+* User muss Wochenplanansicht aufgerufen haben
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
-. Der Use Case beginnt, wenn Dozent die Wochenplanansicht aufruft
+. Der Use Case beginnt, wenn User die Wochenplanansicht aufruft
 . Wochenplanansicht wird dargestellt
 . KW muss ausgewählt werden
 . Use Case endet damit, dass die Ansicht generiert wird

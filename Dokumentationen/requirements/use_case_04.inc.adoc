@@ -8,14 +8,15 @@ Admin möchte sich eine Statistik über gebuchte Experimente anzeigen lassen
 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
-* Admin muss eingelogt sein
-* Admin muss sich auf Statistik-Seite befinden
+* User muss eingelogt sein
+* User muss sich auf Statistik-Seite befinden
+* Es müssen gebuchte Exp. vorhanden sein - ansonsten Informationsmeldung
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
-. Der Use Case beginnt, dass der Admin auf "Statistik" klickt.
-. Zeitraum begrenzen (Standard: Beginn des aktuellen Semesters bis heute)
+. Der Use Case beginnt, dass der User auf "Statistik" klickt.
+. Zeitraum begrenzen (Optionen: Sommersemster, Wintersemester, Gesamt)
 . Auflistung der Exp., welche in dem angegeben Zeitraum genutzt wurden (Standardansicht: Anzahl absteigend) --> siehe Unterablauf 1
 . Use Case endet
 
@@ -43,4 +44,4 @@ Nach Schritt 3 des Standardablaufes gibt es die Möglichkeit, die aktuelle Ansic
 
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
---- keine besonderen Anforderungen ---
+* nur der Admin darf die Statistik einsehen

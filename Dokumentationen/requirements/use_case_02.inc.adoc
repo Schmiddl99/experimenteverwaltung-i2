@@ -4,7 +4,7 @@
 Gebuchte Exp. im Buchungsjournal ansehen, bearbeiten und löschen.
 
 ===	Kurzbeschreibung der Akteure
-* Dozenten
+* Dozent
 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
@@ -14,18 +14,18 @@ Gebuchte Exp. im Buchungsjournal ansehen, bearbeiten und löschen.
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
-. Der Use Case beginnt, wenn Dozent Buchungsjournalseite aufruft
+. Der Use Case beginnt, wenn User Buchungsjournalseite aufruft
 . Möglichkeit die Ansicht zu filtern (Vorführungsdatum + Studiengang, Studiengang, Kalenerwoche) --> siehe Unterablauf 1
 . Auflistung aller bisher getätigten Buchungen nach Studiengang und Vorführungsdatum
-. Dozent ruft Bearbeitungsformular auf
-. Dozent kann Kommentar ändern
-. Dozent bestätigt Änderung
+. User ruft Bearbeitungsformular auf
+. User kann Kommentar ändern
+. User bestätigt Änderung
 . Use Case endet damit, dass die Seite neu geladen wird
 
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
 ==== Löschen
-Wenn der Dozent im Schritt 3 des Standardablaufes die Löschfunktion betätigt, dann wird er nach einer Bestätigung gefragt. Der Use Case ist mit der Bestätigung der Löschung und dem Neuladen der Seite beendet. Das Löschen kann im Bestätigungsfenster noch abgebrochen werden.
+Wenn der User im Schritt 3 des Standardablaufes die Löschfunktion betätigt, dann wird er nach einer Bestätigung gefragt. Der Use Case ist mit der Bestätigung der Löschung und dem Neuladen der Seite beendet. Das Löschen kann im Bestätigungsfenster noch abgebrochen werden.
 
 === Unterabläufe (subflows)
 //Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
@@ -51,5 +51,6 @@ DB-Eintrag wird aktualisiert und nicht neu angelegt oder gelöscht
 
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
-==== Datumsbegranzung
-Nur präsente und zukünftige Exp. dürfen gelöscht werden.
+* Datumsbegrenzung: Nur präsente und zukünftige Exp. dürfen gelöscht werden
+* Der User darf nur selbst gebuchte Exp. einsehen, editieren und löschen
+* Gäste und der Admin darf keine Einsicht in die jeweiligen Journale haben
