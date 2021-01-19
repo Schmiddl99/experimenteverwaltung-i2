@@ -128,7 +128,7 @@ a| * Admin ist angemeldet
 * Admin befindet sich auf der Website für die Dozentenwoche
 
 |*Nachbedingung*
-a| * Die entsprechend gefilterte Dozentenwoche wird angezeigt
+a| * Die entsprechend gefilterte Dozentenwoche, inkl. aller gebuchten Experimente, wird angezeigt
 
 |*Benötigte Daten*
 a| * Valide KW, valider Dozentenname
@@ -137,51 +137,31 @@ a| * Valide KW, valider Dozentenname
 |===
 
 
-==== TC12 - Dozentenwoche für mehrere Dozenten wird korrekt angezeigt
-
-|===
-
-|*Beschreibung* |Der Admin möchte sich die Dozentenwoche für eine bestimmte KW und mehrere bestimmte Dozenten ausgeben lassen.
-
-|*Vorbedingungen*
-a| * Admin ist angemeldet  
-* Admin befindet sich auf der Website für die Dozentenwoche
-
-|*Nachbedingung*
-a| * Die entsprechend gefilterte Dozentenwoche wird angezeigt
-
-|*Benötigte Daten*
-a| * Valide KW, valide Dozentennamen
-* die von den Dozenten gebuchten Experimente mit dem jeweiligen Datum, Uhrzeit und Studiengang
-
-|===
-
-
 === Test Cases für Use Case "Dozentenwoche drucken"
 
-==== TC13 - Dozentenwoche für mehrere Dozenten wird korrekt angezeigt
+==== TC12 - Dozentenwoche wird korrekt gedruckt
 
 |===
 
-|*Beschreibung* |Der Admin möchte sich seine entsprechend gefilterte Dozentenwoche drucken lassen.
+|*Beschreibung* |Der Admin möchte sich seine entsprechend gefilterte, inkl. aller gebuchten Experimente, Dozentenwoche drucken lassen.
 
 |*Vorbedingungen*
 a| * Admin ist angemeldet  
 * Admin befindet sich auf der Website für die Dozentenwoche
-* gefilterte Dozentenwoche wird angezeigt
+* gefilterte Dozentenwoche, inkl. aller gebuchten Experimente, wird angezeigt
 
 |*Nachbedingung*
-a| * Die entsprechend gefilterte Dozentenwoche wird gedruckt
+a| * Die entsprechend gefilterte, inkl. aller gebuchten Experimente, Dozentenwoche wird in der gewünschen Darstellung gedruckt
 
 |*Benötigte Daten*
-a| * gefilterte Dozentenwoche
+a| * gefilterte, inkl. aller gebuchten Experimente, Dozentenwoche
 
 |===
 
 
-=== Test Cases für Use Case "eigene Dozenetenwoche anzeigen"
+=== Test Cases für Use Case "eigene Dozentenwoche anzeigen"
 
-==== TC14 - Dozentenwoche für einen Dozenten wird korrekt angezeigt
+==== TC13 - Dozentenwoche für einen Dozenten wird korrekt angezeigt
 
 |===
 
@@ -192,7 +172,7 @@ a| * Dozent ist angemeldet
 * Dozent befindet sich auf der Website für die Dozentenwoche
 
 |*Nachbedingung*
-a| * Die entsprechend gefilterte Dozentenwoche wird angezeigt
+a| * Die entsprechend gefilterte, inkl. aller gebuchten Experimente, Dozentenwoche wird angezeigt
 
 |*Benötigte Daten*
 a| * Valide KW, valider Dozentenname
@@ -201,24 +181,24 @@ a| * Valide KW, valider Dozentenname
 |===
 
 
-=== Test Cases für Use Case "eigene Dozentenwoche durcken"
+=== Test Cases für Use Case "eigene Dozentenwoche drucken"
 
-==== TC15 - Dozentenwoche für mehrere Dozenten wird korrekt angezeigt
+==== TC14 - eigene Dozentenwoche wird korrekt gedruckt
 
 |===
 
-|*Beschreibung* |Der Dozent möchte sich seine entsprechend gefilterte Dozentenwoche drucken lassen.
+|*Beschreibung* |Der Dozent möchte sich seine entsprechend gefilterte, inkl. aller gebuchten Experimente, Dozentenwoche drucken lassen.
 
 |*Vorbedingungen*
 a| * Dozent ist angemeldet  
 * Dozent befindet sich auf der Website für die Dozentenwoche
-* gefilterte Dozentenwoche wird angezeigt
+* gefilterte, inkl. aller gebuchten Experimente, Dozentenwoche wird angezeigt
 
 |*Nachbedingung*
-a| * Die entsprechend gefilterte Dozentenwoche wird gedruckt
+a| * Die entsprechend gefilterte, inkl. aller gebuchten Experimente, Dozentenwoche wird in der gewünschen Darstellung gedruckt
 
 |*Benötigte Daten*
-a| * gefilterte Dozentenwoche
+a| * gefilterte, inkl. aller gebuchten Experimente, Dozentenwoche
 
 |===
 
