@@ -1,7 +1,7 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
 == Use-Case: Buchungsjournal verwalten
 ===	Kurzbeschreibung
-Dozent will seine gebuchten Exp. im Buchungsjournal ansehen.
+Dozent will seine gebuchten Exp. im Buchungsjournal löschen.
 
 ===	Kurzbeschreibung der Akteure
 * Dozent
@@ -14,9 +14,9 @@ Dozent will seine gebuchten Exp. im Buchungsjournal ansehen.
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
-. Der Use Case beginnt, wenn User Buchungsjournalseite aufruft
-. Möglichkeit die Ansicht zu filtern (Vorführungsdatum + Studiengang, Studiengang, Kalenerwoche) --> siehe Unterablauf 1
-. Use Case endet mit Auflistung aller bisher getätigten Buchungen nach Studiengang und Vorführungsdatum
+. Der Use Case beginnt, wenn User eine Buchung löschen will
+. User wird nach Bestätigung gefragt
+. Use Case endet damit, dass die Seite neu geladen und die Löschung aktiv wird
 
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
@@ -24,21 +24,21 @@ Dozent will seine gebuchten Exp. im Buchungsjournal ansehen.
 
 === Unterabläufe (subflows)
 //Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
-==== Filtern
-. Filtern
-[arabic]
-.. Filter auswählen
-.. Filter anwenden und die Seite wird automatisch neu geladen
+--- keine Unterabläufe ---
 
 === Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
---- keine wesentliche Szenarios ---
+==== falsche Buchung gelöscht
+Neue Buchung gemäß Use Case "Experiment buchen"
 
 ===	Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
---- keine Nachbedingungen ---
+==== DB-Eintrag
+DB-Eintrag wird aktualisiert und nicht neu angelegt oder gelöscht
 
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
-* Der User darf nur selbst gebuchte Exp. einsehen
+* Datumsbegrenzung: Nur zukünftige Exp. dürfen gelöscht werden
+* Der User darf nur selbst gebuchte Exp. einsehen, editieren und löschen
 * Gäste und der Admin darf keine Einsicht in die jeweiligen Journale haben
+* Buchnungsänderungen müssen temporär gespeichert werden (um ungewollten Datenverlust zu vermeiden, bspw. durch Verbindungsabbruch)

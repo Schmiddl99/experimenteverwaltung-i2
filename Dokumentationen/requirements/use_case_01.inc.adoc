@@ -1,7 +1,7 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
 == Use-Case: Experiment buchen
 ===	Kurzbeschreibung
-Buchungsablauf von Exp.. Vom Buchungsstart bis fertigem Eintrag in der DB.
+Buchungsablauf von Exp. Vom Buchungsstart bis fertigem Eintrag in der DB.
 
 ===	Kurzbeschreibung der Akteure
 * Dozent
