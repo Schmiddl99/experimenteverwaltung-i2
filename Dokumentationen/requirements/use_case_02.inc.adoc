@@ -54,3 +54,4 @@ DB-Eintrag wird aktualisiert und nicht neu angelegt oder gelöscht
 * Datumsbegrenzung: Nur präsente und zukünftige Exp. dürfen gelöscht werden
 * Der User darf nur selbst gebuchte Exp. einsehen, editieren und löschen
 * Gäste und der Admin darf keine Einsicht in die jeweiligen Journale haben
+* Buchnungsänderungen müssen temporär gespeichert werden (um ungewollten Datenverlust zu vermeiden, bspw. durch Verbindungsabbruch)

@@ -30,7 +30,6 @@ Wenn der User ab Schritt 2 des Standardablaufes die Buchung abbricht, dann wird 
 
 === Unterabläufe (subflows)
 //Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
-
 --- keine Vorhanden ---
 
 === Wesentliche Szenarios
@@ -47,3 +46,4 @@ Wenn der User ab Schritt 2 des Standardablaufes die Buchung abbricht, dann wird 
 * Daten müssen valide sein (Bspw.: Datumseingabe für Exp. darf nicht in der Vergangenheit liegen; Studiengang muss existieren)
 * Gäste und der Admin darf keine Buchungen tätigen
 * Buchungen müssen persistent gespeichert werden; Datenverlust muss ausgeschlossen werden
+* Buchnungseingaben müssen temporär gespeichert werden (um ungewollten Datenverlust zu vermeiden, bspw. durch Verbindungsabbruch)
