@@ -8,13 +8,13 @@ Admin möchte den (vorgefilterten) Wochenplan (Übersicht von allen Exp. inkl. D
 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
-* Admin muss eingeloggt sein
-* Admin muss Wochenplanansicht aufgerufen haben
+* User muss eingeloggt sein
+* User muss Wochenplanansicht aufgerufen haben
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
-. Der Use Case beginnt, wenn Admin die Wochenplanansicht drucken möchte
+. Der Use Case beginnt, wenn User die Wochenplanansicht drucken möchte
 . (im Browser integrierte) Druckvorschau öffnet sich (weitere Funktionen sind vom Browser abhängig und deshalb nicht Teil unseres Systems)
 . Nach der Bestätigung wird der Druckauftrag erteilt
 . Use Case endet

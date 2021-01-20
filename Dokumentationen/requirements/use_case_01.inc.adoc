@@ -1,23 +1,23 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
 == Use-Case: Experiment buchen
 ===	Kurzbeschreibung
-Buchungsablauf von Exp.. Vom Buchungsstart bis fertigem Eintrag in der DB.
+Buchungsablauf von Exp. vom Buchungsstart bis zum fertigen Eintrag in der DB.
 
 ===	Kurzbeschreibung der Akteure
-* Dozenten
+* Dozent
 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
-* Dozent muss eingelogt sein
-* Dozent muss sich an einer beliebigen stelle im EMS befinden
+* User muss eingeloggt sein
+* User muss sich an einer beliebigen stelle im EMS befinden
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
-. Der Use Case beginnt, wenn Dozent auf "Buchung starten" klickt
+. Der Use Case beginnt, wenn User auf "Buchung starten" klickt
 . Neue Seite mit Formular (Uhrzeit, Datum, Studiengang) --> Vorauswahl für aktuellen Buchungsvorgang
 . Exp.-Übersicht wird geöffnet
-. Exp. können über Warenkorbsymbol zum aktuellen Buchnugsvorgang hinzugefügt werden
+. Exp. können über Warenkorbsymbol zum aktuellen Buchungsvorgang hinzugefügt werden
 . wird auf "Buchung abschließen" geklickt, wird man zum Checkout (neue Seite) weitergeleitet
 . Im Checkout werden die aktuellen Buchungen aufgezählt, mit Möglichkeit zur Löschung und Kommentierung jeder Buchung
 . Nach klicken des Users auf "Buchung speichern", wir der User auf eine Buchungsbestätigungsseite geleitet
@@ -26,11 +26,10 @@ Buchungsablauf von Exp.. Vom Buchungsstart bis fertigem Eintrag in der DB.
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
 ==== Abbruch des Buchungsvorgangs
-Wenn der Dozent ab Schritt 2 des Standardablaufes die Buchung abbricht, dann wird der Use Case beendet. Es wird keinen Eintrag in der DB geben. Selbiges ist im Chekout unter Schritt 6 möglich.
+Wenn der User ab Schritt 2 des Standardablaufes die Buchung abbricht, dann wird der Use Case beendet. Es wird keinen Eintrag in der DB geben. Selbiges ist im Chekout unter Schritt 6 möglich.
 
 === Unterabläufe (subflows)
 //Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
-
 --- keine Vorhanden ---
 
 === Wesentliche Szenarios
@@ -39,10 +38,12 @@ Wenn der Dozent ab Schritt 2 des Standardablaufes die Buchung abbricht, dann wir
 
 ===	Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
-==== DB-Eintrag
 * DB-Eintrag muss initial angelegt werden
 
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
 * Buchungen müssen jederzeit möglich sein
-* Datumseingabe für Exp. darf nicht in der Vergangenheit liegen
+* Daten müssen valide sein (Bspw.: Datumseingabe für Exp. darf nicht in der Vergangenheit liegen; Studiengang muss existieren)
+* Gäste und der Admin dürfen keine Buchungen tätigen
+* Buchungen müssen persistent gespeichert werden; Datenverlust muss ausgeschlossen werden
+* Buchnungseingaben müssen temporär gespeichert werden (um ungewollten Datenverlust zu vermeiden, bspw. durch Verbindungsabbruch)
