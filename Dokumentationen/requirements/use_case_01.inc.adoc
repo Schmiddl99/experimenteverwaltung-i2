@@ -8,7 +8,7 @@ Buchungsablauf von Exp. vom Buchungsstart bis zum fertigen Eintrag in der DB.
 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
-* User eingeloggt sein
+* User muss eingeloggt sein
 * User muss sich an einer beliebigen stelle im EMS befinden
 
 === Standardablauf (Basic Flow)
@@ -17,7 +17,7 @@ Buchungsablauf von Exp. vom Buchungsstart bis zum fertigen Eintrag in der DB.
 . Der Use Case beginnt, wenn User auf "Buchung starten" klickt
 . Neue Seite mit Formular (Uhrzeit, Datum, Studiengang) --> Vorauswahl für aktuellen Buchungsvorgang
 . Exp.-Übersicht wird geöffnet
-. Exp. können über Warenkorbsymbol zum aktuellen Buchnugsvorgang hinzugefügt werden
+. Exp. können über Warenkorbsymbol zum aktuellen Buchungsvorgang hinzugefügt werden
 . wird auf "Buchung abschließen" geklickt, wird man zum Checkout (neue Seite) weitergeleitet
 . Im Checkout werden die aktuellen Buchungen aufgezählt, mit Möglichkeit zur Löschung und Kommentierung jeder Buchung
 . Nach klicken des Users auf "Buchung speichern", wir der User auf eine Buchungsbestätigungsseite geleitet
