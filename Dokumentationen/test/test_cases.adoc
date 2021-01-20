@@ -27,16 +27,77 @@ a| * Datenbankeintrag für die Bestellung ist angelegt
 * Dozent befindet sich auf der Buchungsbestätigungseite
 
 |*Benötigte Daten*
-a| * Datum und Uhrzeit, Studiengang
+a| * Valides Datum, valide Uhrzeit und valider Studiengang
 * es muss ein Dozentenkonto geben 
 
 |===
 
 ==== TC02 - Dozent kann keine invaliden Voreinstellungen auswählen 
 
+|===
+
+|*Beschreibung* |Der Dozent versucht bewusst falsche Eingaben in den Voreinstellungen zu treffen. Damit sind keine menschlichen Fehler gemeint, wie z.B. ein falsches Datum ausgewählt zu haben sondern ein Datum in der Vergangenheit zu wählen. 
+
+
+|*Vorbedingungen*
+a| * Dozent ist angemeldet  
+* Es wurde eine Buchung begonnen
+
+|*Nachbedingung*
+a| * Es können nur verfügbare Studiengänge über ein Dropdown Menü ausgewählt werden 
+* Es kann nur ein zeitlich korrektes Datum aus dem Pick Menü ausgewählt werden
+* Es kann nur eine korrekte Uhrzeit in Verbindung der Unterrichtszeiten eingeben werden
+
+|*Benötigte Daten*
+a| * Invalides Datum, invalide Uhrzeit und invalider Studiengang
+* es muss ein Dozentenkonto geben 
+
+|===
+
 ==== TC03 - Leerer Warenkorb darf nicht zur Buchung führen
 
+|===
+
+|*Beschreibung* |Der Dozent hat die Voreinstellungen getroffen und versucht ohne ein Experiment ausgewählt zu haben die Buchung abzuschließen.
+
+
+|*Vorbedingungen*
+a| * Dozent ist angemeldet  
+* Es wurde eine Buchung begonnen
+* Es wurde valide Daten in die Voreinstellungen eingegeben  
+
+|*Nachbedingung*
+a| * Der Button "Buchung abschließen" ist bis zur Auswahl mindestens eines Experiments ausgegraut und kann nicht geklickt werden. 
+* Dozent bleibt auf der Seite Experimentenübersicht 
+
+|*Benötigte Daten*
+a| * Valides Datum, valide Uhrzeit und valider Studiengang
+* es muss ein Dozentenkonto geben 
+
+|===
+
 ==== TC04 - Keine Mehrfachauswahl eines Experiments pro Buchung möglich
+
+|===
+
+|*Beschreibung* |Der Dozent versucht das selbe Experiment mehrmals in den Warenkorb mitaufzunehmen.
+
+|*Vorbedingungen*
+a| * Dozent ist angemeldet  
+* Es wurde eine Buchung begonnen
+* Es wurde valide Daten in die Voreinstellungen eingegeben 
+* Es wurde mindestens ein Experiment ausgewählt
+
+
+|*Nachbedingung*
+a| * Es ist nicht möglich das selbe Experiment mehrmals auszuwählen
+
+|*Benötigte Daten*
+a| * Valides Datum, valide Uhrzeit und valider Studiengang
+* es muss ein Dozentenkonto geben 
+* es muss mindestens ein Experiment geben
+
+|===
 
 ==== TC05 - Abbruch muss möglich sein
 
