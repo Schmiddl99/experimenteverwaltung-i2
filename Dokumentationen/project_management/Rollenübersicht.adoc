@@ -11,7 +11,9 @@ Ausscheidend nach SE I
 
 Analyst (zus.)
 |Standardmäßig Protkoll-verantw.
-|01.12.2020
+
+ESSENCE-Navigator
+|18.01.2021
 
 |Tim Würzburg
 
@@ -31,21 +33,27 @@ Project Manager (SE II)
 
 Developer (zus.)
 |Übernimmt PM in SE II
-|01.12.2020
+
+Redeführer in Meetings (SEI)
+|18.01.2021
 
 |Julius Schmidt
 
 Ausscheidend nach SE I
 |Analyst
 |Terminplaner (Doodle)
-|01.12.2020
+
+Microsoft-Teams Verantwortlicher
+|14.01.2021
 
 |Richard Böhme
 |Developer
 
+GitHub Verantwortlicher (zus.)
+
 Tester (zus.)
 |Deployment (virtuelle Maschine)
-|01.12.2020
+|14.01.2021
 
 |Alena Bischoff
 |QM-Beauftragte
@@ -53,51 +61,44 @@ Tester (zus.)
 Developer (zus.)
 
 Tester (zus.)
-|
-|01.12.2020
+|Erstellt Wireframes und UML-Diagramme
+|14.01.2021
 
 |Taejun Kim
-|Git-Hup-Verantwortlicher
+|GitHub-Verantwortlicher
 
 Developer (zus.)
 
 Architect (zus.)
-|
-|01.12.2020
+|GitHub-Kontrolleur
+|14.01.2021
 
 |William Elsner
 |Architect 
 
 Tester (zus.)
-|
-|01.12.2020
+|Glossar Betreuung
+|14.01.2021
 
 |Matthias Heisig
 |Stakeholder
 |Themenersteller
 
-Admin
+Admin / Anwender
 
 Webanwendung
-|01.12.2020
+|14.01.2021
 
-|Christoph Zirkelbach
+|Prof. Dr.-Ing. Rhena Krawietz
 |Stakeholder
-|Coach
+|Dozent / Anwenderin
 
-Ansprechpartner
+Physik-Professorin
 
-Git+AsciiDoc
-|01.12.2020
+Vorlesungen für WIng und BauIng
+|18.01.2021
 
-|Jürgen Anke
-|Stakeholder
-|Professor
 
-Ansprechpartner
-
-Visual Paradigm
-|01.12.2020
 
 |Herr Hornoff
 
@@ -116,8 +117,8 @@ Fak. MaschBau
 
 vincent@vincent-thelang.de
 |Ehemaliges Teammitglied
-|-Steht zur Seite bei Fragen
+|Steht zur Seite bei Fragen
 
--bietet Einführung zu Ruby on Rails an
+bietet Einführung zu Ruby on Rails an
 |02.12.2020
 |===
