@@ -12,7 +12,6 @@
 :CZ: Coach (christoph.zirkelbach@htw-dresden.de)
 :MH: Kunde (matthias.heisig@htw-dresden.de)
 :TAVM: hornoff@htw-dresden.de
-:imagesdir: images
 // Settings:
 :toc:
 :toc-title: Inhaltsverzeichnis
