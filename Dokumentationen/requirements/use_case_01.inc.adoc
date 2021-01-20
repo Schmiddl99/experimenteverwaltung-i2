@@ -1,7 +1,7 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
 == Use-Case: Experiment buchen
 ===	Kurzbeschreibung
-Buchungsablauf von Exp. Vom Buchungsstart bis fertigem Eintrag in der DB.
+Buchungsablauf von Exp. vom Buchungsstart bis zum fertigen Eintrag in der DB.
 
 ===	Kurzbeschreibung der Akteure
 * Dozent
@@ -44,6 +44,6 @@ Wenn der User ab Schritt 2 des Standardablaufes die Buchung abbricht, dann wird 
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
 * Buchungen müssen jederzeit möglich sein
 * Daten müssen valide sein (Bspw.: Datumseingabe für Exp. darf nicht in der Vergangenheit liegen; Studiengang muss existieren)
-* Gäste und der Admin darf keine Buchungen tätigen
+* Gäste und der Admin dürfen keine Buchungen tätigen
 * Buchungen müssen persistent gespeichert werden; Datenverlust muss ausgeschlossen werden
 * Buchnungseingaben müssen temporär gespeichert werden (um ungewollten Datenverlust zu vermeiden, bspw. durch Verbindungsabbruch)
