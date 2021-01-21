@@ -170,6 +170,11 @@ Wie gut waren unsere Schätzungen? Welche Hindernisse gab es? Wie können wir be
 * Zu viele Leute – ineffektiv? Drei Leute pro TS-Meeting sind am effizientesten! 
 * Schätzungen im Iteration Board (Aufwand/Prio im GitHub) trafen zu, funktioniert auch mit weniger “Schätzern” 
 * Ausgesprochene Zufriedenheit mit eigenem Teamwork 
-* Teamwork und Gemeinschafts-Gedanke spiegelte sich z.B. im GitHub-Workshop wider 
-
+* Teamwork und Gemeinschafts-Gedanke spiegelte sich z.B. im GitHub-Workshop wider
 |===
+
+=== ALPHA States
+
+image::31.12.20_END_I2.png[ALPHA states 05.01.2020]
+
+

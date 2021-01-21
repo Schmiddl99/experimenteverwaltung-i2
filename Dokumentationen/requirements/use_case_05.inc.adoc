@@ -1,38 +1,31 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
-== Use-Case: Statistik anzeigen
+== Use-Case: *eigene* Dozentenwoche ansehen
 ===	Kurzbeschreibung
-Admin möchte sich eine Statistik über gebuchte Experimente anzeigen lassen
+Dozent möchte sich seinen Wochenplan (Übersicht von allen eigenen Exp. inkl. Details) für bestimmte KW anzeigen lassen
 
 ===	Kurzbeschreibung der Akteure
-* Admin
+* Dozent
 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
-* User muss eingelogt sein
-* User muss sich auf Statistik-Seite befinden
-* Es müssen gebuchte Exp. vorhanden sein - ansonsten Informationsmeldung
+* User muss eingeloggt sein
+* User muss Wochenplanansicht aufgerufen haben
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
-. Der Use Case beginnt, dass der User auf "Statistik" klickt.
-. Zeitraum begrenzen (Optionen: Sommersemster, Wintersemester, Gesamt)
-. Auflistung der Exp., welche in dem angegeben Zeitraum genutzt wurden (Standardansicht: Anzahl absteigend) --> siehe Unterablauf 1
-. Use Case endet
+. Der Use Case beginnt, wenn User die Wochenplanansicht aufruft
+. Wochenplanansicht wird dargestellt
+. KW muss ausgewählt werden
+. Use Case endet damit, dass die Ansicht generiert wird
 
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
-==== Filtern
-Nach Schritt 3 des Standardablaufes gibt es die Möglichkeit, die aktuelle Ansicht zu filtern (Anzahl oder Alphabet, auf- wie auch absteigend).
-
+--- keine alternativen Abläufe möglich ---
 === Unterabläufe (subflows)
 //Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
 
-==== Filtern
-. Filtern
-[arabic]
-.. Filter auswählen
-.. Filter anwenden
+--- keine Unterabläufe ---
 
 === Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
@@ -44,4 +37,4 @@ Nach Schritt 3 des Standardablaufes gibt es die Möglichkeit, die aktuelle Ansic
 
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
-* nur der Admin darf die Statistik einsehen
+--- keine Nachbedingungen ---

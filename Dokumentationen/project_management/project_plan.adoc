@@ -23,6 +23,8 @@ Der Projektplan wird fortlaufend ergänzt und verfeinert. Verantwortlich zeichne
 
 <<Dokumentationen\project_management\Rollenübersicht.adoc, Rollenübersicht>> Link haut noch nicht hin?
 
+xref:Rollenübersicht.adoc#Verantwortlichkeiten[Rollenübersicht]
+
 == Praktiken und Bewertung
 //Describe or reference which management and technical practices will be used in the project, such as iterative development, continuous integration, independent testing and list any changes or particular configuration to the project. Specify how you will track progress in each practice. As an example, for iterative development the team may decide to use iteration assessments and iteration burndown reports and collect metrics such as velocity (completed work item points/ iteration).
 
@@ -95,6 +97,7 @@ Der Fortschritt einer jeden Iteration bildet sich durch das "Wandern" der Aufgab
 
 == Deployment
 //Outline the strategy for deploying the software (and its updates) into the production environment.
+* Übertragung des Systems von der VM auf den regulären Fakultätsserver durch TAVM
 
 == Erkenntnisse (Lessons learned)
 //List lessons learned from the retrospective, with special emphasis on actions to be taken to improve, for example: the development environment, the process, or team collaboration.

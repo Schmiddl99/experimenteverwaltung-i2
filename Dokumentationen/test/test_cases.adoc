@@ -100,16 +100,104 @@ a| * Valides Datum, valide Uhrzeit und valider Studiengang
 |===
 
 ==== TC05 - Abbruch muss möglich sein
+|===
+
+|*Beschreibung* |Der Dozent beginnt einen Buchungsprozess, entscheidet sich aber zu einem beliebigen Zeitpunkt vor Buchungsabschluss dazu, diesen abzubrechen. Erwartet wird, dass ein Buchungsabbruch jederzeit fehlerfrei möglich ist.  
+
+
+|*Vorbedingungen*
+a| * Dozent ist angemeldet  
+* Buchung wurde gestartet 
+* Es existiert mind. ein Experiment 
+
+|*Nachbedingung*
+a| * Buchung wurde abgebrochen und es kam zu keinem Datenbankeintrag 
+* Dozent befindet sich auf der Startseite der Webanwendung 
+
+|*Benötigte Daten*
+a| * Zugangsdaten eines Dozentenkontos  
+* ein Experiment 
+
+|===
 
 === Test Cases für Use Case "Buchungsjournal verwalten"
 
 ==== TC06 - Journal enthält chronologisch geordnete Buchungen
+|===
+
+|*Beschreibung* |Der Dozent will seine Buchungen im Journal einsehen. Erwartet wird, dass die Buchungsauflistung chronologisch geordnet inhaltlich richtig ist. 
+
+
+|*Vorbedingungen*
+a| * Dozent ist angemeldet  
+* Buchungen wurden erfolgreich getätigt
+|*Nachbedingung*
+a| * Dozent befindet sich auf der Journalseite 
+* Buchungsauflistung wird chronologisch geordnet (bezüglich der Datums- und Zeitangaben (und der Reihenfolge bei mehreren Buchungen pro Vorlesung)) und inhaltlich richtig angezeigt  
+
+|*Benötigte Daten*
+a| * Zugangsdaten eines Dozentenkontos  
+* Buchungseinträge (mind. 4) in der Datenbank 
+|===
 
 ==== TC07 - Leeres Journal anzeigen
+|===
 
+|*Beschreibung* |Der Dozent will das Journal einsehen. Erwartet wird, dass dieses leer ist und keine Einträge angezeigt werden, wenn dieser Dozent noch nichts gebucht hat.
+
+
+|*Vorbedingungen*
+a| * Dozent ist angemeldet  
+* keine Buchungen für diesen Dozenten 
+|*Nachbedingung*
+a| * Dozent befindet sich auf der (leeren) Journalseite 
+
+|*Benötigte Daten*
+a| * Zugangsdaten eines Dozentenkontos  
+|===
 ==== TC08 - Buchung im Journal bearbeitet werden
 
+|===
+
+|*Beschreibung* |Ein Dozent bearbeitet eine Buchung im Journal indem er ein Experiment hinzufügt, eines entfernt und den Kommentar zur Buchung ändert. Es wird erwartet, dass alle geänderten Daten übernommen werden.
+
+
+|*Vorbedingungen*
+a| * Dozent ist angemeldet
+* Dozent befindet sich im Journal
+
+|*Nachbedingung*
+a| * Datenbankeintrag für die Buchung wurde aktualisiert
+* Dozent befindet sich wieder im Journal, wobei die aktualisierte Buchung angezeigt wird
+
+|*Benötigte Daten*
+a| * es muss ein Dozentenkonto geben
+* mindestens drei Experimente, sodass eins zur Buchung hinzugefügt werden kann
+* Buchung von dem Dozenten mit mindestens zwei Experimenten und einem Kommentar
+
+|===
+
 ==== TC09 - Buchung kann im Journal gelöscht werden
+
+|===
+
+|*Beschreibung* |Ein Dozent entfernt eine Buchung im Journal. Es wird erwartet, dass diese Buchung nicht mehr im Journal angezeigt wird.
+
+
+|*Vorbedingungen*
+a| * Dozent ist angemeldet
+* Dozent befindet sich im Journal
+
+|*Nachbedingung*
+a| * Datenbankeintrag für die Buchung wurde entfernt
+* Dozent befindet sich wieder im Journal, wobei das Experiment nicht mehr angezeigt wird
+
+|*Benötigte Daten*
+a| * es muss ein Dozentenkonto geben
+* mindestens ein Experiment
+* Buchung von dem Dozenten
+
+|===
 
 === Test Cases für Use Case "Statisik anzeigen"
 
@@ -202,3 +290,23 @@ a| * gefilterte, inkl. aller gebuchten Experimente, Dozentenwoche
 
 |===
 
+=======
+|===
+
+|*Beschreibung* |Ein Admin betrachtet die Statistik. Es wird erwartet, dass alle Buchungen aus den letzten zwei Semestern in die Statistik einbezogen werden.
+
+
+|*Vorbedingungen*
+a| * Admin ist angemeldet
+* Admin befindet sich auf der Statistik-Seite
+
+|*Nachbedingung*
+a| * Anzahl der Buchungen der letzten beiden Semester sowie die Gesamtzahl ist richtig berechnet
+* die aufgelisteten Experimente sind nach der Gesamtnutzung sortiert
+
+|*Benötigte Daten*
+a| * es muss ein Admin- sowie ein Dozentenkonto geben
+* mindestens drei Experimente, um die Sortierung zu testen
+* mehrere Buchungen der vorhandenen Experimente innerhalb sowie außerhalb der beiden Semester
+
+|===

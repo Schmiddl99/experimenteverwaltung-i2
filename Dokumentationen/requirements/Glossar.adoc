@@ -20,10 +20,20 @@ a|* Auftraggeber des Projekts, vorrangiger Stakeholder
 * Hr. Heisig
 a|* Themensteller
 
+|Frontend-Benutzer
+a|* Nutzer der  öffentlich erreichbaren Weboberfläche
+a|* User
+* Nutzer
+* Anwender 
+
+|Rolle
+a|* Bezeichnung für Zuordnung der Zugriffsrechte (siehe "Dozent", "Admin")
+|
+
 |Dozent
 a|* Nutzer des Buchungssystems
 * "Kunde des Kunden"
-a|* User
+a|
 
 |Admin
 a|* Gleichzusetzten mit "Kunde"
@@ -78,11 +88,6 @@ a|* Häufigkeit der vergangenen Buchungen pro Experiment
 a|* Anzahl der Buchungen pro Experiment
 * Statistik
 * Auswertung
-
-|Frontend-Benutzer
-a|* Nutzer der  öffentlich erreichbaren Weboberfläche
-* Gleichzusetzen mit "Dozent"
-a|* User
 
 |Karteikarte
 a|* analoges Abbild der Versuchs-/ Experimentdetails als Alternative zum Tablet/ Webbrowser
