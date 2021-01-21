@@ -203,6 +203,26 @@ a| * es muss ein Dozentenkonto geben
 
 ==== TC10 - Statistik wird richtig angezeigt 
 
+|===
+
+|*Beschreibung* |Ein Admin betrachtet die Statistik. Es wird erwartet, dass alle Buchungen aus den letzten zwei Semestern in die Statistik einbezogen werden.
+
+
+|*Vorbedingungen*
+a| * Admin ist angemeldet
+* Admin befindet sich auf der Statistik-Seite
+
+|*Nachbedingung*
+a| * Anzahl der Buchungen der letzten beiden Semester sowie die Gesamtzahl ist richtig berechnet
+* die aufgelisteten Experimente sind nach der Gesamtnutzung sortiert
+
+|*Benötigte Daten*
+a| * es muss ein Admin- sowie ein Dozentenkonto geben
+* mindestens drei Experimente, um die Sortierung zu testen
+* mehrere Buchungen der vorhandenen Experimente innerhalb sowie außerhalb der beiden Semester
+
+|===
+
 === Test Cases für Use Case "Dozentenwoche anzeigen"
 
 ==== TC11 - Dozentenwoche für einen Dozenten wird korrekt angezeigt
