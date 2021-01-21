@@ -106,7 +106,7 @@ Stakeholder haben Anforderungen. Ziele der Stakeholder sind Teil der Anforderung
 
 * *NFAS-1*: Das Entwicklerteam muss eine (fortgeführte) Entwicklerdokumentation bereitstellen, welche Wartung und Weiterentwicklung des Systems ermöglicht. 
 
-* *NFAS-2*: Die Software muss auf folgende Browser funktionieren: 
+* *NFAS-2*: Die Software muss auf folgenden Browsern funktionieren: 
 ** Edge 
 ** Internet Explorer (Version 11) 
 ** Chrome
