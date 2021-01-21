@@ -47,13 +47,15 @@ a| * Datum und Uhrzeit, Studiengang
 |*Vorbedingungen*
 a| * Dozent ist angemeldet  
 * Buchung wurde gestartet 
+* Es existiert mind. ein Experiment 
 
 |*Nachbedingung*
 a| * Buchung wurde abgebrochen und es kam zu keinem Datenbankeintrag 
-* Dozent befindet sich auf der Seite, auf der er die Buchung begonnen hat 
+* Dozent befindet sich auf der Startseite der Webanwendung 
 
 |*Benötigte Daten*
 a| * Zugangsdaten eines Dozentenkontos  
+* ein Experiment 
 
 |===
 
@@ -62,7 +64,7 @@ a| * Zugangsdaten eines Dozentenkontos
 ==== TC06 - Journal enthält chronologisch geordnete Buchungen
 |===
 
-|*Beschreibung* |Der Dozent will seine Buchungen im Journal einsehen. Erwartet wird, dass die Buchungsauflistung chronologisch geordnet (bezüglich der Datums- und Zeitangaben (und der Reihenfolge bei mehreren Buchungen pro Vorlesung)) und inhaltlich richtig ist. 
+|*Beschreibung* |Der Dozent will seine Buchungen im Journal einsehen. Erwartet wird, dass die Buchungsauflistung chronologisch geordnet inhaltlich richtig ist. 
 
 
 |*Vorbedingungen*
@@ -70,11 +72,13 @@ a| * Dozent ist angemeldet
 * Buchungen wurden erfolgreich getätigt
 |*Nachbedingung*
 a| * Dozent befindet sich auf der Journalseite 
+* Buchungsauflistung wird chronologisch geordnet (bezüglich der Datums- und Zeitangaben (und der Reihenfolge bei mehreren Buchungen pro Vorlesung)) und inhaltlich richtig angezeigt  
 
 |*Benötigte Daten*
 a| * Zugangsdaten eines Dozentenkontos  
-* vollständige und valide Buchungseinträge in der Datenbank 
+* Buchungseinträge (mind. 4) in der Datenbank 
 |===
+
 ==== TC07 - Leeres Journal anzeigen
 |===
 
