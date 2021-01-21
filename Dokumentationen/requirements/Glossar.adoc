@@ -20,6 +20,10 @@ a|* Auftraggeber des Projekts, vorrangiger Stakeholder
 * Hr. Heisig
 a|* Themensteller
 
+|Rolle
+a|* Bezeichnung für Zuordnung der Zugriffsrechte (siehe "Dozent", "Admin")
+|
+
 |Dozent
 a|* Nutzer des Buchungssystems
 * "Kunde des Kunden"

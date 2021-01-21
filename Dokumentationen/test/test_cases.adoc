@@ -100,13 +100,61 @@ a| * Valides Datum, valide Uhrzeit und valider Studiengang
 |===
 
 ==== TC05 - Abbruch muss möglich sein
+|===
+
+|*Beschreibung* |Der Dozent beginnt einen Buchungsprozess, entscheidet sich aber zu einem beliebigen Zeitpunkt vor Buchungsabschluss dazu, diesen abzubrechen. Erwartet wird, dass ein Buchungsabbruch jederzeit fehlerfrei möglich ist.  
+
+
+|*Vorbedingungen*
+a| * Dozent ist angemeldet  
+* Buchung wurde gestartet 
+* Es existiert mind. ein Experiment 
+
+|*Nachbedingung*
+a| * Buchung wurde abgebrochen und es kam zu keinem Datenbankeintrag 
+* Dozent befindet sich auf der Startseite der Webanwendung 
+
+|*Benötigte Daten*
+a| * Zugangsdaten eines Dozentenkontos  
+* ein Experiment 
+
+|===
 
 === Test Cases für Use Case "Buchungsjournal verwalten"
 
 ==== TC06 - Journal enthält chronologisch geordnete Buchungen
+|===
+
+|*Beschreibung* |Der Dozent will seine Buchungen im Journal einsehen. Erwartet wird, dass die Buchungsauflistung chronologisch geordnet inhaltlich richtig ist. 
+
+
+|*Vorbedingungen*
+a| * Dozent ist angemeldet  
+* Buchungen wurden erfolgreich getätigt
+|*Nachbedingung*
+a| * Dozent befindet sich auf der Journalseite 
+* Buchungsauflistung wird chronologisch geordnet (bezüglich der Datums- und Zeitangaben (und der Reihenfolge bei mehreren Buchungen pro Vorlesung)) und inhaltlich richtig angezeigt  
+
+|*Benötigte Daten*
+a| * Zugangsdaten eines Dozentenkontos  
+* Buchungseinträge (mind. 4) in der Datenbank 
+|===
 
 ==== TC07 - Leeres Journal anzeigen
+|===
 
+|*Beschreibung* |Der Dozent will das Journal einsehen. Erwartet wird, dass dieses leer ist und keine Einträge angezeigt werden, wenn dieser Dozent noch nichts gebucht hat.
+
+
+|*Vorbedingungen*
+a| * Dozent ist angemeldet  
+* keine Buchungen für diesen Dozenten 
+|*Nachbedingung*
+a| * Dozent befindet sich auf der (leeren) Journalseite 
+
+|*Benötigte Daten*
+a| * Zugangsdaten eines Dozentenkontos  
+|===
 ==== TC08 - Buchung im Journal bearbeitet werden
 
 |===
@@ -174,4 +222,3 @@ a| * es muss ein Admin- sowie ein Dozentenkonto geben
 * mehrere Buchungen der vorhandenen Experimente innerhalb sowie außerhalb der beiden Semester
 
 |===
-
