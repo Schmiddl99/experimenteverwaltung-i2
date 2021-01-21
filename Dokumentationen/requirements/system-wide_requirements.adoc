@@ -83,7 +83,7 @@ Stakeholder haben Anforderungen. Ziele der Stakeholder sind Teil der Anforderung
 
 *** Schaltflächen und Symbole müssen von guter grafischer Qualität und scharf sein.  
 
-*** Zur Überprüfung wird eine Testperson die Anwendung mit einem Abstand von 50cm Entfernung zum Bildschrim nutzen. 
+*** Zur Überprüfung wird eine Testperson die Anwendung mit einem Abstand von 50cm Entfernung zum Bildschirm nutzen. 
 
 * *NFAU-2*: Die Eingabemöglichkeiten sollen nicht als Pop-ups erscheinen. 
 
