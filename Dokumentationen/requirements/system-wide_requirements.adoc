@@ -30,7 +30,7 @@ Stakeholder haben Anforderungen. Ziele der Stakeholder sind Teil der Anforderung
 == Systemweite funktionale Anforderungen
 //Angabe von system-weiten funktionalen Anforderungen, die nicht als Use Cases ausgedrückt werden können. Beispiele sind Drucken, Berichte, Authentifizierung, Änderungsverfolgung (Auditing), zeitgesteuerte Aktivitäten (Scheduling), Sicherheit / Maßnahmen zum Datenschutz
 
-* *SWFA-1* Das System muss Zugriffsbeschränkungen gewährleisten, da nicht jeder Anwender jeden Use Case ausführen darf. Diese Zugriffsbeschränkungen erlauben es dem Anwender, nur für ihn vorgesehene Funktionen auszuführen und nur auf für Ihn zugängliche Daten zuzugreifen. Dafür ist eine Zuordnung aller Anwender zu Rollen und einem Login notwendig.
+* *SWFA-1*: Das System muss Zugriffsbeschränkungen gewährleisten, da nicht jeder Anwender jeden Use Case ausführen darf. Diese Zugriffsbeschränkungen erlauben es dem Anwender, nur für ihn vorgesehene Funktionen auszuführen und nur auf für Ihn zugängliche Daten zuzugreifen. Dafür ist eine Zuordnung aller Anwender zu Rollen und einem Login notwendig.
 
 ** Zu Überprüfungszwecken wird anhand von Test-Logins vesucht auf auf fremde Daten und Rollenfunktionalitäten zuzugreifen. 
 
