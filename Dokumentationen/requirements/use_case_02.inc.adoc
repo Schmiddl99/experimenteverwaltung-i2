@@ -1,10 +1,10 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
 == Use-Case: Buchungsjournal verwalten
 ===	Kurzbeschreibung
-Gebuchte Exp. im Buchungsjournal ansehen, bearbeiten und löschen.
+Dozent will seine gebuchten Exp. im Buchungsjournal ansehen.
 
 ===	Kurzbeschreibung der Akteure
-* Dozenten
+* Dozent
 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
@@ -14,22 +14,16 @@ Gebuchte Exp. im Buchungsjournal ansehen, bearbeiten und löschen.
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
-. Der Use Case beginnt, wenn Dozent Buchungsjournalseite aufruft
+. Der Use Case beginnt, wenn User Buchungsjournalseite aufruft
 . Möglichkeit die Ansicht zu filtern (Vorführungsdatum + Studiengang, Studiengang, Kalenerwoche) --> siehe Unterablauf 1
-. Auflistung aller bisher getätigten Buchungen nach Studiengang und Vorführungsdatum
-. Dozent ruft Bearbeitungsformular auf
-. Dozent kann Kommentar ändern
-. Dozent bestätigt Änderung
-. Use Case endet damit, dass die Seite neu geladen wird
+. Use Case endet mit Auflistung aller bisher getätigten Buchungen nach Studiengang und Vorführungsdatum
 
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
-==== Löschen
-Wenn der Dozent im Schritt 3 des Standardablaufes die Löschfunktion betätigt, dann wird er nach einer Bestätigung gefragt. Der Use Case ist mit der Bestätigung der Löschung und dem Neuladen der Seite beendet. Das Löschen kann im Bestätigungsfenster noch abgebrochen werden.
+--- keine alternativen Abläufe ---
 
 === Unterabläufe (subflows)
 //Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
-
 ==== Filtern
 . Filtern
 [arabic]
@@ -38,18 +32,13 @@ Wenn der Dozent im Schritt 3 des Standardablaufes die Löschfunktion betätigt, 
 
 === Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
-==== falscher Kommentar
-Änderung bei Wiederholung des Standardablaufes ab Schritt 4
-
-==== falsche Buchung gelöscht
-Neue Buchung gemäß Use Case "Experiment buchen" 
+--- keine wesentliche Szenarios ---
 
 ===	Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
-==== DB-Eintrag
-DB-Eintrag wird aktualisiert und nicht neu angelegt oder gelöscht
+--- keine Nachbedingungen ---
 
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
-==== Datumsbegranzung
-Nur präsente und zukünftige Exp. dürfen gelöscht werden.
+* Der User darf nur selbst gebuchte Exp. einsehen
+* Gäste und der Admin dürfen keine Einsicht in die jeweiligen Journale haben

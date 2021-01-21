@@ -27,16 +27,77 @@ a| * Datenbankeintrag für die Bestellung ist angelegt
 * Dozent befindet sich auf der Buchungsbestätigungseite
 
 |*Benötigte Daten*
-a| * Datum und Uhrzeit, Studiengang
+a| * Valides Datum, valide Uhrzeit und valider Studiengang
 * es muss ein Dozentenkonto geben 
 
 |===
 
 ==== TC02 - Dozent kann keine invaliden Voreinstellungen auswählen 
 
+|===
+
+|*Beschreibung* |Der Dozent versucht bewusst falsche Eingaben in den Voreinstellungen zu treffen. Damit sind keine menschlichen Fehler gemeint, wie z.B. ein falsches Datum ausgewählt zu haben sondern ein Datum in der Vergangenheit zu wählen. 
+
+
+|*Vorbedingungen*
+a| * Dozent ist angemeldet  
+* Es wurde eine Buchung begonnen
+
+|*Nachbedingung*
+a| * Es können nur verfügbare Studiengänge über ein Dropdown Menü ausgewählt werden 
+* Es kann nur ein zeitlich korrektes Datum aus dem Pick Menü ausgewählt werden
+* Es kann nur eine korrekte Uhrzeit in Verbindung der Unterrichtszeiten eingeben werden
+
+|*Benötigte Daten*
+a| * Invalides Datum, invalide Uhrzeit und invalider Studiengang
+* es muss ein Dozentenkonto geben 
+
+|===
+
 ==== TC03 - Leerer Warenkorb darf nicht zur Buchung führen
 
+|===
+
+|*Beschreibung* |Der Dozent hat die Voreinstellungen getroffen und versucht ohne ein Experiment ausgewählt zu haben die Buchung abzuschließen.
+
+
+|*Vorbedingungen*
+a| * Dozent ist angemeldet  
+* Es wurde eine Buchung begonnen
+* Es wurde valide Daten in die Voreinstellungen eingegeben  
+
+|*Nachbedingung*
+a| * Der Button "Buchung abschließen" ist bis zur Auswahl mindestens eines Experiments ausgegraut und kann nicht geklickt werden. 
+* Dozent bleibt auf der Seite Experimentenübersicht 
+
+|*Benötigte Daten*
+a| * Valides Datum, valide Uhrzeit und valider Studiengang
+* es muss ein Dozentenkonto geben 
+
+|===
+
 ==== TC04 - Keine Mehrfachauswahl eines Experiments pro Buchung möglich
+
+|===
+
+|*Beschreibung* |Der Dozent versucht das selbe Experiment mehrmals in den Warenkorb mitaufzunehmen.
+
+|*Vorbedingungen*
+a| * Dozent ist angemeldet  
+* Es wurde eine Buchung begonnen
+* Es wurde valide Daten in die Voreinstellungen eingegeben 
+* Es wurde mindestens ein Experiment ausgewählt
+
+
+|*Nachbedingung*
+a| * Es ist nicht möglich das selbe Experiment mehrmals auszuwählen
+
+|*Benötigte Daten*
+a| * Valides Datum, valide Uhrzeit und valider Studiengang
+* es muss ein Dozentenkonto geben 
+* es muss mindestens ein Experiment geben
+
+|===
 
 ==== TC05 - Abbruch muss möglich sein
 |===
@@ -96,8 +157,68 @@ a| * Zugangsdaten eines Dozentenkontos
 |===
 ==== TC08 - Buchung im Journal bearbeitet werden
 
+|===
+
+|*Beschreibung* |Ein Dozent bearbeitet eine Buchung im Journal indem er ein Experiment hinzufügt, eines entfernt und den Kommentar zur Buchung ändert. Es wird erwartet, dass alle geänderten Daten übernommen werden.
+
+
+|*Vorbedingungen*
+a| * Dozent ist angemeldet
+* Dozent befindet sich im Journal
+
+|*Nachbedingung*
+a| * Datenbankeintrag für die Buchung wurde aktualisiert
+* Dozent befindet sich wieder im Journal, wobei die aktualisierte Buchung angezeigt wird
+
+|*Benötigte Daten*
+a| * es muss ein Dozentenkonto geben
+* mindestens drei Experimente, sodass eins zur Buchung hinzugefügt werden kann
+* Buchung von dem Dozenten mit mindestens zwei Experimenten und einem Kommentar
+
+|===
+
 ==== TC09 - Buchung kann im Journal gelöscht werden
+
+|===
+
+|*Beschreibung* |Ein Dozent entfernt eine Buchung im Journal. Es wird erwartet, dass diese Buchung nicht mehr im Journal angezeigt wird.
+
+
+|*Vorbedingungen*
+a| * Dozent ist angemeldet
+* Dozent befindet sich im Journal
+
+|*Nachbedingung*
+a| * Datenbankeintrag für die Buchung wurde entfernt
+* Dozent befindet sich wieder im Journal, wobei das Experiment nicht mehr angezeigt wird
+
+|*Benötigte Daten*
+a| * es muss ein Dozentenkonto geben
+* mindestens ein Experiment
+* Buchung von dem Dozenten
+
+|===
 
 === Test Cases für Use Case "Statisik anzeigen"
 
 ==== TC10 - Statistik wird richtig angezeigt 
+
+|===
+
+|*Beschreibung* |Ein Admin betrachtet die Statistik. Es wird erwartet, dass alle Buchungen aus den letzten zwei Semestern in die Statistik einbezogen werden.
+
+
+|*Vorbedingungen*
+a| * Admin ist angemeldet
+* Admin befindet sich auf der Statistik-Seite
+
+|*Nachbedingung*
+a| * Anzahl der Buchungen der letzten beiden Semester sowie die Gesamtzahl ist richtig berechnet
+* die aufgelisteten Experimente sind nach der Gesamtnutzung sortiert
+
+|*Benötigte Daten*
+a| * es muss ein Admin- sowie ein Dozentenkonto geben
+* mindestens drei Experimente, um die Sortierung zu testen
+* mehrere Buchungen der vorhandenen Experimente innerhalb sowie außerhalb der beiden Semester
+
+|===

@@ -1,28 +1,27 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
-== Use-Case: Dozentenwoche ansehen
+== Use-Case: *eigene* Dozentenwoche drucken
 ===	Kurzbeschreibung
-Admin möchte sich Wochenplan (Übersicht von allen Exp. inkl. Details) für bestimmte KW anzeigen lassen
+Dozent möchte seinen (vorgefilterten) Wochenplan (Übersicht von allen eigenen Exp. inkl. Details) für eine bestimmte KW ausdrucken
 
 ===	Kurzbeschreibung der Akteure
-* Admin
+* Dozent
 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
 * User muss eingeloggt sein
 * User muss Wochenplanansicht aufgerufen haben
-* Es müssen gebuchte Exp. vorhanden sein - ansonsten Informationsmeldung
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
-. Der Use Case beginnt, wenn User die Wochenplanansicht aufruft
-. Wochenplanansicht wird dargestellt
-. KW muss ausgewählt werden
-. Filter (Dozent) kann angewendet werden
-. Use Case endet damit, dass die Ansicht generiert wird
+. Der Use Case beginnt, wenn User die Wochenplanansicht drucken möchte
+. (im Browser integrierte) Druckvorschau öffnet sich (weitere Funktionen sind vom Browser abhängig und deshalb nicht Teil unseres Systems)
+. Nach der Bestätigung wird der Druckauftrag erteilt
+. Use Case endet
 
 === Alternative Abläufe
-//Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
+//Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf123
+==== Wochenplanansicht drucken
 --- keine alternativen Abläufe möglich ---
 
 === Unterabläufe (subflows)
@@ -31,7 +30,7 @@ Admin möchte sich Wochenplan (Übersicht von allen Exp. inkl. Details) für bes
 --- keine Unterabläufe ---
 
 === Wesentliche Szenarios
-//Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
+//Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden..
 --- keine Szenarios ---
 
 ===	Nachbedingungen
@@ -40,4 +39,4 @@ Admin möchte sich Wochenplan (Übersicht von allen Exp. inkl. Details) für bes
 
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
---- keine Nachbedingungen ---
+--- keine besonderen Anforderungen ---
