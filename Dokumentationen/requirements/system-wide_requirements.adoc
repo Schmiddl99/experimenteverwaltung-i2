@@ -61,7 +61,7 @@ Stakeholder haben Anforderungen. Ziele der Stakeholder sind Teil der Anforderung
 
 ** *NFAU-1.2*: Die Auswahlmenüs zur Detailfestlegung müssen verständlich und inhaltlich komprimiert sein.  
 
-*** Es soll vorgefertigte Drop-Down Menüs und Widgets zur Auswahl aus festgelegten Wertebereich geben. Zur Überprüfung wird getestet, ob invalide Eingaben möglich sind. 
+*** Es soll vorgefertigte Drop-Down Menüs und Widgets zur Auswahl aus festgelegten Wertebereichen geben. Zur Überprüfung wird getestet, ob invalide Eingaben möglich sind. 
 
 ** *NFAU-1.3*: Die Anwendung (inkl. Änderung) muss einfach erfassbar und nutzbar sein.  
 
@@ -78,7 +78,7 @@ Stakeholder haben Anforderungen. Ziele der Stakeholder sind Teil der Anforderung
 
 *** Schaltflächen und Symbole müssen von guter grafischer Qualität und scharf sein.  
 
-*** Zur Überprüfung wird eine Testperson die Anwendung mit einem Abstand von 50cm Entfernung zum Bildschrim nutzen. 
+*** Zur Überprüfung wird eine Testperson die Anwendung mit einem Abstand von 50cm Entfernung zum Bildschirm nutzen. 
 
 * *NFAU-2*: Die Eingabemöglichkeiten sollen nicht als Pop-ups erscheinen. 
 
@@ -101,7 +101,7 @@ Stakeholder haben Anforderungen. Ziele der Stakeholder sind Teil der Anforderung
 
 * *NFAS-1*: Das Entwicklerteam muss eine (fortgeführte) Entwicklerdokumentation bereitstellen, welche Wartung und Weiterentwicklung des Systems ermöglicht. 
 
-* *NFAS-2*: Die Software muss auf folgende Browser funktionieren: 
+* *NFAS-2*: Die Software muss auf folgenden Browsern funktionieren: 
 ** Edge 
 ** Internet Explorer (Version 11) 
 ** Chrome
