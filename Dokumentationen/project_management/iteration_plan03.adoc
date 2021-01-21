@@ -27,13 +27,12 @@ include::../_includes/default-attributes.inc.adoc[]
 //Nennen Sie 1-5 wesentliche Ziele für die Iteration.
 
 * Erreichen der Zustimmung des Auftraggebers in Bezug auf die vorgelegten Wireframes.
-*Übereinstimmung mit dem Auftraggeber in Bezug auf die grundlegende Vorgehensweise der Buchung.
-*Übereinstimmung mit dem Auftraggeber in Bezug auf das Journal.
+* Übereinstimmung mit dem Auftraggeber in Bezug auf die grundlegende Vorgehensweise der Buchung.
+* Übereinstimmung mit dem Auftraggeber in Bezug auf das Journal.
 * Ausarbeitung eines Architektur-Konzeptes
-* Ausarbeitung von Text Cases
+* Ausarbeitung von Test Cases
 * Risikoliste weiterführen und pflegen
 
-* **Wissensaustausch:** Interessierte Mitglieder sollen ein GitHub-Tutorial erhalten, was einerseits die Arbeit im Team fördert als auch einen weiteren Mehrwert innerhalb dieses Moduls schafft.
 
 
 == Aufgabenzuordnung
@@ -41,7 +40,7 @@ include::../_includes/default-attributes.inc.adoc[]
 
 Aufgaben werden in der Work Item List (https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#column-11862065) geordnet und priorisiert.
 
-Die in **dieser** Iteration geplanten Aufgaben wurden in der To-Do-List dargestellt: https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#column-11861913. Die To-Do-List verhält sich dynamisch. Deswegen sind nachfolgend die Work Items der Iteration I aufgeführt.
+Die in **dieser** Iteration geplanten Aufgaben wurden in der To-Do-List dargestellt: https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#column-11861913. Die To-Do-List verhält sich dynamisch. Deswegen sind nachfolgend die Work Items der Iteration III aufgeführt.
 
 //Übernommen aus dem Board Iteration Planning auf Github. Referenz von Issues: Link[#Issue_ID]; link durch klick auf drei Punkte der Aufgabe->Copy card link
 
@@ -88,22 +87,22 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 [%header, cols="2,1,3"]
 |===
 | Problem | Status | Notizen
-| Feature Creep | unverändert 
-a|* Nach dem Entwurf der ersten Wireframes wurden diese teilweise wieder verworfen, da von TS-Seite veränderte Anforderungen gestellt wurden.
-* Verworfen werden mussten u.a. die Deadline, die Benachrichtigung von Dozenten, die Pop-Up-Buchungseingabe.
-* Eine Konsultation des Coaches sowie eine Bestätigung der überarbeiteten Vision durch TS sind angedacht. (Stand:06.01.21)
+| Kopierfunktion | geklärt 
+a|* Die Kopierfunktion sorgte für Abstimmungsschwierigkeiten zwischen dem Auftraggeber und den Auftragnehmern.
+* Die vom Auftraggeber vorgesehene Kopierfunktion sorgt für einen erheblichen Mehraufwand in technischer und organisatorischer Sicht.
+* Der Auftraggeber und die Auftragnehmer einigten sich auf eine Verlegung dieses Problems in ein folgendes Projekt, um eine vollständige und rechtzeitige Fertigstellung des Gesamtprojektes zu gewährleisten.
 |===
 
 
 == Bewertungskriterien
 //Eine kurze Beschreibung, wie Erfüllung die o.g. Ziele bewertet werden sollen.
 
-* Der Kunde hat die überarbeitete Version per Mail (schriftlich) bestätigt. 
-* Jedes Element der Vision findet sich in den _system wide requirements_ abgedeckt.
-* 6 Use Cases wurden dokumentiert und in einem Modell zusammengefasst (Doku liegt als adoc vor)
-* 5 Risiken und entsprechende Gegenmaßnahmen wurden identifiziert. Die Dokumentation liegt als .csv vor.
-* Für jeden dokumentierten Use Case existiert ein Wireframe. Jede dokumentierte Anforderung lässt sich anhand mindestens eines Wireframes erläutern.
-* Der GitHub-Workshop wurde durchgeführt und aufgezeichnet.
+* Der Kunde hat die ihm vorgelegten Wireframes bestätigt. Jede mögliche Handlung wurde mit einem Wireframe abgedeckt. 
+* Die einzelnen Schritte der Buchung wurden mit dem Auftraggeber durchgegangen und wurden akzeptiert. Jeder mögliche Schritt wurde betrachtet.
+* Über die Handhabung und dem Umfang des Journal herrscht Einigkeit. Alle Varianten wurden betrachtet.
+* Das Architekturkonzept wurde mit allen notwendigen Bestandteilen fertiggestellt.
+* Die Test Cases wurden für alle notwendigen Fälle aufgestellt.
+* Die Risikoliste wurde weiterhin aktualisiert und erneuert.
 
 == Assessment
 //In diesem Abschnitt werden die Ergebnisse und Maßnahmen der Bewertung erfasst und kommunziert. Die Bewertung wird üblicherweise am Ende jeder Iteration durchgeführt. Wenn Sie diese Bewertungen nicht machen, ist das Team möglicherweise nicht in der Lage, die eigene Arbeitsweise ("Way of Working") zu verbessern.
