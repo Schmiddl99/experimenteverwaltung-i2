@@ -1,5 +1,5 @@
 = Test Cases: {project-name}
-Gregor Müller <gregor.mueller@htw-dresden.de>; Julius Schmidt <juliusheiko.schmidt@htw-dresden.de>; Richard Böhme <richard.boehme@htw-dresden.de>; William Elsner <william.elsner@htw-dresden.de>; 
+Gregor Müller <gregor.mueller@htw-dresden.de>;
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
@@ -203,94 +203,6 @@ a| * es muss ein Dozentenkonto geben
 
 ==== TC10 - Statistik wird richtig angezeigt 
 
-=== Test Cases für Use Case "Dozentenwoche anzeigen"
-
-==== TC11 - Dozentenwoche für einen Dozenten wird korrekt angezeigt
-
-|===
-
-|*Beschreibung* |Der Admin möchte sich die Dozentenwoche für eine bestimmte KW und einen bestimmten Dozenten ausgeben lassen.
-
-|*Vorbedingungen*
-a| * Admin ist angemeldet  
-* Admin befindet sich auf der Website für die Dozentenwoche
-
-|*Nachbedingung*
-a| * Die entsprechend gefilterte Dozentenwoche, inkl. aller gebuchten Experimente, wird angezeigt
-
-|*Benötigte Daten*
-a| * Valide KW, valider Dozentenname
-* die von dem Dozenten gebuchten Experimente mit dem jeweiligen Datum, Uhrzeit und Studiengang
-
-|===
-
-
-=== Test Cases für Use Case "Dozentenwoche drucken"
-
-==== TC12 - Dozentenwoche wird korrekt gedruckt
-
-|===
-
-|*Beschreibung* |Der Admin möchte sich seine entsprechend gefilterte, inkl. aller gebuchten Experimente, Dozentenwoche drucken lassen.
-
-|*Vorbedingungen*
-a| * Admin ist angemeldet  
-* Admin befindet sich auf der Website für die Dozentenwoche
-* gefilterte Dozentenwoche, inkl. aller gebuchten Experimente, wird angezeigt
-
-|*Nachbedingung*
-a| * Die entsprechend gefilterte, inkl. aller gebuchten Experimente, Dozentenwoche wird in der gewünschen Darstellung gedruckt
-
-|*Benötigte Daten*
-a| * gefilterte, inkl. aller gebuchten Experimente, Dozentenwoche
-
-|===
-
-
-=== Test Cases für Use Case "eigene Dozentenwoche anzeigen"
-
-==== TC13 - Dozentenwoche für einen Dozenten wird korrekt angezeigt
-
-|===
-
-|*Beschreibung* |Der Dozent möchte sich seine Dozentenwoche für eine bestimmte KW ausgeben lassen.
-
-|*Vorbedingungen*
-a| * Dozent ist angemeldet  
-* Dozent befindet sich auf der Website für die Dozentenwoche
-
-|*Nachbedingung*
-a| * Die entsprechend gefilterte, inkl. aller gebuchten Experimente, Dozentenwoche wird angezeigt
-
-|*Benötigte Daten*
-a| * Valide KW, valider Dozentenname
-* die von dem Dozenten gebuchten Experimente mit dem jeweiligen Datum, Uhrzeit und Studiengang
-
-|===
-
-
-=== Test Cases für Use Case "eigene Dozentenwoche drucken"
-
-==== TC14 - eigene Dozentenwoche wird korrekt gedruckt
-
-|===
-
-|*Beschreibung* |Der Dozent möchte sich seine entsprechend gefilterte, inkl. aller gebuchten Experimente, Dozentenwoche drucken lassen.
-
-|*Vorbedingungen*
-a| * Dozent ist angemeldet  
-* Dozent befindet sich auf der Website für die Dozentenwoche
-* gefilterte, inkl. aller gebuchten Experimente, Dozentenwoche wird angezeigt
-
-|*Nachbedingung*
-a| * Die entsprechend gefilterte, inkl. aller gebuchten Experimente, Dozentenwoche wird in der gewünschen Darstellung gedruckt
-
-|*Benötigte Daten*
-a| * gefilterte, inkl. aller gebuchten Experimente, Dozentenwoche
-
-|===
-
-=======
 |===
 
 |*Beschreibung* |Ein Admin betrachtet die Statistik. Es wird erwartet, dass alle Buchungen aus den letzten zwei Semestern in die Statistik einbezogen werden.
