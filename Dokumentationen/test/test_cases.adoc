@@ -5,7 +5,10 @@ include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
 
 
-== Allgemeine Informationen
+== Allgemeine Informationen und Bedingungen
+* valides Datum: Datum muss in der Zukunft liegen
+* valide Uhrzeit: Entsprechend den Möglichkeiten im Drop-Down-Menü
+* valider Studiengang: Entsprechend den Möglichkeiten im Drop-Down-Menü
 
 
 == Test Cases
@@ -17,18 +20,17 @@ include::../_includes/default-attributes.inc.adoc[]
 
 |*Beschreibung* |Der Dozent legt drei Experimente in den Warenkorb und legt einen Kommentar an. Im Warenkorb löscht er das erste Experiment und schließt die Buchung ab. Es wird erwartet das die zwei verbliebenen Experimente im Warenkorb erfolgreich gebucht werden.
 
-
 |*Vorbedingungen*
-a| * Dozent ist angemeldet  
-* Es existieren mindestens drei Experimente
+a| * ein Dozent ist mit validen Zugangsdaten angemeldet  
+* es existieren mindestens drei Experimente
 
 |*Nachbedingung*
 a| * Datenbankeintrag für die Bestellung ist angelegt 
 * Dozent befindet sich auf der Buchungsbestätigungseite
 
 |*Benötigte Daten*
-a| * Valides Datum, valide Uhrzeit und valider Studiengang
-* es muss ein Dozentenkonto geben 
+a| * valides Datum, valide Uhrzeit und valider Studiengang
+* es muss ein Dozentenkonto geben
 
 |===
 
@@ -40,17 +42,17 @@ a| * Valides Datum, valide Uhrzeit und valider Studiengang
 
 
 |*Vorbedingungen*
-a| * Dozent ist angemeldet  
-* Es wurde eine Buchung begonnen
+a| * ein Dozent ist mit validen Zugangsdaten angemeldet
+* es wurde eine Buchung begonnen
 
 |*Nachbedingung*
-a| * Es können nur verfügbare Studiengänge über ein Dropdown Menü ausgewählt werden 
-* Es kann nur ein zeitlich korrektes Datum aus dem Pick Menü ausgewählt werden
-* Es kann nur eine korrekte Uhrzeit in Verbindung der Unterrichtszeiten eingeben werden
+a| * es können nur verfügbare Studiengänge über ein Dropdown Menü ausgewählt werden 
+* es kann nur ein zeitlich korrektes Datum aus dem Pick Menü ausgewählt werden
+* es kann nur eine korrekte Uhrzeit in Verbindung der Unterrichtszeiten eingeben werden
 
 |*Benötigte Daten*
-a| * Invalides Datum, invalide Uhrzeit und invalider Studiengang
-* es muss ein Dozentenkonto geben 
+a| * invalides Datum, invalide Uhrzeit und invalider Studiengang
+ 
 
 |===
 
@@ -60,19 +62,18 @@ a| * Invalides Datum, invalide Uhrzeit und invalider Studiengang
 
 |*Beschreibung* |Der Dozent hat die Voreinstellungen getroffen und versucht ohne ein Experiment ausgewählt zu haben die Buchung abzuschließen.
 
-
 |*Vorbedingungen*
-a| * Dozent ist angemeldet  
-* Es wurde eine Buchung begonnen
-* Es wurde valide Daten in die Voreinstellungen eingegeben  
+a| * ein Dozent ist mit validen Zugangsdaten angemeldet  
+* es wurde eine Buchung begonnen
+* es wurde valide Daten in die Voreinstellungen eingegeben  
 
 |*Nachbedingung*
-a| * Der Button "Buchung abschließen" ist bis zur Auswahl mindestens eines Experiments ausgegraut und kann nicht geklickt werden. 
+a| * der Button "Buchung abschließen" ist bis zur Auswahl mindestens eines Experments ausgegraut und kann nicht geklickt werden. 
 * Dozent bleibt auf der Seite Experimentenübersicht 
 
 |*Benötigte Daten*
-a| * Valides Datum, valide Uhrzeit und valider Studiengang
-* es muss ein Dozentenkonto geben 
+a| * valides Datum, valide Uhrzeit und valider Studiengang
+ 
 
 |===
 
@@ -83,18 +84,17 @@ a| * Valides Datum, valide Uhrzeit und valider Studiengang
 |*Beschreibung* |Der Dozent versucht das selbe Experiment mehrmals in den Warenkorb mitaufzunehmen.
 
 |*Vorbedingungen*
-a| * Dozent ist angemeldet  
-* Es wurde eine Buchung begonnen
-* Es wurde valide Daten in die Voreinstellungen eingegeben 
-* Es wurde mindestens ein Experiment ausgewählt
+a| * ein Dozent ist mit validen Zugangsdaten angemeldet
+* es wurde eine Buchung begonnen
+* es wurde valide Daten in die Voreinstellungen eingegeben 
+* es wurde mindestens ein Experiment ausgewählt
 
 
 |*Nachbedingung*
-a| * Es ist nicht möglich das selbe Experiment mehrmals auszuwählen
+a| * es ist nicht möglich das selbe Experiment mehrmals auszuwählen
 
 |*Benötigte Daten*
-a| * Valides Datum, valide Uhrzeit und valider Studiengang
-* es muss ein Dozentenkonto geben 
+a| * valides Datum, valide Uhrzeit und valider Studiengang
 * es muss mindestens ein Experiment geben
 
 |===
@@ -106,17 +106,16 @@ a| * Valides Datum, valide Uhrzeit und valider Studiengang
 
 
 |*Vorbedingungen*
-a| * Dozent ist angemeldet  
+a| * ein Dozent ist mit validen Zugangsdaten angemeldet  
 * Buchung wurde gestartet 
-* Es existiert mind. ein Experiment 
+* es existiert mind. ein Experiment 
 
 |*Nachbedingung*
 a| * Buchung wurde abgebrochen und es kam zu keinem Datenbankeintrag 
 * Dozent befindet sich auf der Startseite der Webanwendung 
 
 |*Benötigte Daten*
-a| * Zugangsdaten eines Dozentenkontos  
-* ein Experiment 
+a| * ein Experiment 
 
 |===
 
@@ -125,19 +124,18 @@ a| * Zugangsdaten eines Dozentenkontos
 ==== TC06 - Journal enthält chronologisch geordnete Buchungen
 |===
 
-|*Beschreibung* |Der Dozent will seine Buchungen im Journal einsehen. Erwartet wird, dass die Buchungsauflistung chronologisch geordnet inhaltlich richtig ist. 
+|*Beschreibung* |Der Dozent will seine Buchungen im Journal einsehen. Erwartet wird, dass die Buchungsauflistung chronologisch geordnet und inhaltlich richtig ist. 
 
 
 |*Vorbedingungen*
-a| * Dozent ist angemeldet  
+a| * ein Dozent ist mit validen Zugangsdaten angemeldet  
 * Buchungen wurden erfolgreich getätigt
 |*Nachbedingung*
 a| * Dozent befindet sich auf der Journalseite 
 * Buchungsauflistung wird chronologisch geordnet (bezüglich der Datums- und Zeitangaben (und der Reihenfolge bei mehreren Buchungen pro Vorlesung)) und inhaltlich richtig angezeigt  
 
 |*Benötigte Daten*
-a| * Zugangsdaten eines Dozentenkontos  
-* Buchungseinträge (mind. 4) in der Datenbank 
+a|* Buchungseinträge (mind. 4) in der Datenbank 
 |===
 
 ==== TC07 - Leeres Journal anzeigen
@@ -147,13 +145,13 @@ a| * Zugangsdaten eines Dozentenkontos
 
 
 |*Vorbedingungen*
-a| * Dozent ist angemeldet  
+a| * ein Dozent ist mit validen Zugangsdaten angemeldet  
 * keine Buchungen für diesen Dozenten 
 |*Nachbedingung*
 a| * Dozent befindet sich auf der (leeren) Journalseite 
 
 |*Benötigte Daten*
-a| * Zugangsdaten eines Dozentenkontos  
+a| --- keine Daten benötigt ---
 |===
 ==== TC08 - Buchung im Journal bearbeitet werden
 
@@ -163,7 +161,7 @@ a| * Zugangsdaten eines Dozentenkontos
 
 
 |*Vorbedingungen*
-a| * Dozent ist angemeldet
+a| * ein Dozent ist mit validen Zugangsdaten angemeldet
 * Dozent befindet sich im Journal
 
 |*Nachbedingung*
@@ -171,8 +169,7 @@ a| * Datenbankeintrag für die Buchung wurde aktualisiert
 * Dozent befindet sich wieder im Journal, wobei die aktualisierte Buchung angezeigt wird
 
 |*Benötigte Daten*
-a| * es muss ein Dozentenkonto geben
-* mindestens drei Experimente, sodass eins zur Buchung hinzugefügt werden kann
+a|* mindestens drei Experimente, sodass eins zur Buchung hinzugefügt werden kann
 * Buchung von dem Dozenten mit mindestens zwei Experimenten und einem Kommentar
 
 |===
@@ -185,7 +182,7 @@ a| * es muss ein Dozentenkonto geben
 
 
 |*Vorbedingungen*
-a| * Dozent ist angemeldet
+a| * ein Dozent ist mit validen Zugangsdaten angemeldet
 * Dozent befindet sich im Journal
 
 |*Nachbedingung*
@@ -193,8 +190,7 @@ a| * Datenbankeintrag für die Buchung wurde entfernt
 * Dozent befindet sich wieder im Journal, wobei das Experiment nicht mehr angezeigt wird
 
 |*Benötigte Daten*
-a| * es muss ein Dozentenkonto geben
-* mindestens ein Experiment
+a|* mindestens ein Experiment
 * Buchung von dem Dozenten
 
 |===
@@ -207,9 +203,8 @@ a| * es muss ein Dozentenkonto geben
 
 |*Beschreibung* |Ein Admin betrachtet die Statistik. Es wird erwartet, dass alle Buchungen aus den letzten zwei Semestern in die Statistik einbezogen werden.
 
-
 |*Vorbedingungen*
-a| * Admin ist angemeldet
+a| * ein Admin ist mit validen Zugangsdaten angemeldet
 * Admin befindet sich auf der Statistik-Seite
 
 |*Nachbedingung*
@@ -217,7 +212,7 @@ a| * Anzahl der Buchungen der letzten beiden Semester sowie die Gesamtzahl ist r
 * die aufgelisteten Experimente sind nach der Gesamtnutzung sortiert
 
 |*Benötigte Daten*
-a| * es muss ein Admin- sowie ein Dozentenkonto geben
+a| * es muss ein Dozentenkonto geben
 * mindestens drei Experimente, um die Sortierung zu testen
 * mehrere Buchungen der vorhandenen Experimente innerhalb sowie außerhalb der beiden Semester
 
@@ -236,10 +231,10 @@ a| * Admin ist angemeldet
 * Admin befindet sich auf der Website für die Dozentenwoche
 
 |*Nachbedingung*
-a| * Die entsprechend gefilterte Dozentenwoche, inkl. aller gebuchten Experimente, wird angezeigt
+a| * die entsprechend gefilterte Dozentenwoche, inkl. aller gebuchten Experimente, wird angezeigt
 
 |*Benötigte Daten*
-a| * Valide KW, valider Dozentenname
+a| * valide KW, valider Dozentenname
 * die von dem Dozenten gebuchten Experimente mit dem jeweiligen Datum, Uhrzeit und Studiengang
 
 |===
@@ -259,7 +254,7 @@ a| * Admin ist angemeldet
 * gefilterte Dozentenwoche, inkl. aller gebuchten Experimente, wird angezeigt
 
 |*Nachbedingung*
-a| * Die entsprechend gefilterte, inkl. aller gebuchten Experimente, Dozentenwoche wird in der gewünschen Darstellung gedruckt
+a| * die entsprechend gefilterte, inkl. aller gebuchten Experimente, Dozentenwoche wird in der gewünschen Darstellung gedruckt
 
 |*Benötigte Daten*
 a| * gefilterte, inkl. aller gebuchten Experimente, Dozentenwoche
@@ -276,14 +271,14 @@ a| * gefilterte, inkl. aller gebuchten Experimente, Dozentenwoche
 |*Beschreibung* |Der Dozent möchte sich seine Dozentenwoche für eine bestimmte KW ausgeben lassen.
 
 |*Vorbedingungen*
-a| * Dozent ist angemeldet  
+a| * ein Dozent ist mit validen Zugangsdaten angemeldet  
 * Dozent befindet sich auf der Website für die Dozentenwoche
 
 |*Nachbedingung*
-a| * Die entsprechend gefilterte, inkl. aller gebuchten Experimente, Dozentenwoche wird angezeigt
+a| * die entsprechend gefilterte, inkl. aller gebuchten Experimente, Dozentenwoche wird angezeigt
 
 |*Benötigte Daten*
-a| * Valide KW, valider Dozentenname
+a| * valide KW, valider Dozentenname
 * die von dem Dozenten gebuchten Experimente mit dem jeweiligen Datum, Uhrzeit und Studiengang
 
 |===
@@ -298,35 +293,14 @@ a| * Valide KW, valider Dozentenname
 |*Beschreibung* |Der Dozent möchte sich seine entsprechend gefilterte, inkl. aller gebuchten Experimente, Dozentenwoche drucken lassen.
 
 |*Vorbedingungen*
-a| * Dozent ist angemeldet  
+a| * ein Dozent ist mit validen Zugangsdaten angemeldet  
 * Dozent befindet sich auf der Website für die Dozentenwoche
 * gefilterte, inkl. aller gebuchten Experimente, Dozentenwoche wird angezeigt
 
 |*Nachbedingung*
-a| * Die entsprechend gefilterte, inkl. aller gebuchten Experimente, Dozentenwoche wird in der gewünschen Darstellung gedruckt
+a| * die entsprechend gefilterte, inkl. aller gebuchten Experimente, Dozentenwoche wird in der gewünschen Darstellung gedruckt
 
 |*Benötigte Daten*
 a| * gefilterte, inkl. aller gebuchten Experimente, Dozentenwoche
-
-|===
-
-=======
-|===
-
-|*Beschreibung* |Ein Admin betrachtet die Statistik. Es wird erwartet, dass alle Buchungen aus den letzten zwei Semestern in die Statistik einbezogen werden.
-
-
-|*Vorbedingungen*
-a| * Admin ist angemeldet
-* Admin befindet sich auf der Statistik-Seite
-
-|*Nachbedingung*
-a| * Anzahl der Buchungen der letzten beiden Semester sowie die Gesamtzahl ist richtig berechnet
-* die aufgelisteten Experimente sind nach der Gesamtnutzung sortiert
-
-|*Benötigte Daten*
-a| * es muss ein Admin- sowie ein Dozentenkonto geben
-* mindestens drei Experimente, um die Sortierung zu testen
-* mehrere Buchungen der vorhandenen Experimente innerhalb sowie außerhalb der beiden Semester
 
 |===
