@@ -93,7 +93,7 @@ Stakeholder haben Anforderungen. Ziele der Stakeholder sind Teil der Anforderung
 === Effizienz (Performance)
 // Die Performanz Charakteristiken des Systems sollten in diesem Bereich ausgeführt werden. Beispiele sind Antwortzeit, Durchsatz, Kapazität und Zeiten zum Starten oder Beenden.
 
-* *NFAR-1*: Die Nutzbarkeit muss gewährleistet sein, wenn alle derzeitigen Anwender gleichzeitig arbeiten wollen. 
+* *NFAP-1*: Die Nutzbarkeit muss gewährleistet sein, wenn alle derzeitigen Anwender gleichzeitig arbeiten wollen. 
 ** Überprüft wird dies durch einen Stresstest mit 10 Nutzern. 
 
 === Wartbarkeit (Supportability)
