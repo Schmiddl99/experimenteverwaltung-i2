@@ -32,7 +32,7 @@ Stakeholder haben Anforderungen. Ziele der Stakeholder sind Teil der Anforderung
 
 * *SWFA-1*: Das System muss Zugriffsbeschränkungen gewährleisten, da nicht jeder Anwender jeden Use Case ausführen darf. Diese Zugriffsbeschränkungen erlauben es dem Anwender, nur für ihn vorgesehene Funktionen auszuführen und nur auf für Ihn zugängliche Daten zuzugreifen. Dafür ist eine Zuordnung aller Anwender zu Rollen und einem Login notwendig.
 
-** Zu Überprüfungszwecken wird anhand von Test-Logins vesucht auf auf fremde Daten und Rollenfunktionalitäten zuzugreifen. 
+** Zu Überprüfungszwecken wird anhand von Test-Logins versucht auf fremde Daten und Rollenfunktionalitäten zuzugreifen. 
 
 * *SWFA-2*: Das System muss Buchungs- und Anwenderdaten persistent speichern. 
 
