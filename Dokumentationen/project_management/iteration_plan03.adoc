@@ -15,11 +15,9 @@ include::../_includes/default-attributes.inc.adoc[]
 
 | Beginn der Iteration | 07.01.2020
 | TS-M3 | 07.01.2021
-|XXX
-|XXX
 | Ende der Iteration 
 | 21.01.2021
-| LCO    |-
+| LCA    |-
 |===
 
 
@@ -32,7 +30,7 @@ include::../_includes/default-attributes.inc.adoc[]
 * Ausarbeitung eines Architektur-Konzeptes
 * Ausarbeitung von Test Cases
 * Risikoliste weiterführen und pflegen
-
+* Problematik Kopierfunktion klären bzw. Übereinstimmung erreichen
 
 
 == Aufgabenzuordnung
@@ -109,11 +107,59 @@ a|* Die Kopierfunktion sorgte für Abstimmungsschwierigkeiten zwischen dem Auftr
 
 [%header, cols="1,3"]
 |===
-| Assessment Ziel | Das kann die gesamte Iteration oder eine spezifische Komponente sein
-| Assessment Datum | ...
-| Teilnehmer | ...
-| Projektstatus	| Zum Beispiel ausgedrückt als rot, gelb oder grün.
+| Review | Gesamte Iteration 3
+| Assessment Datum | 26.01.2021
+| Teilnehmer | gesamtes Team
+| Projektstatus: *gelbgrün*	a| 
+* Ziel: Erreichung LCA-Meilenstein - Inception Phase. Nicht erreicht.
+** **Understand what to build:** Grundsätzlich verstanden. *Erfolgskriterien* sind noch nicht zu 100% klar - z.B. Ablaufplan des Buchens. Journal wurde angenommen, *Konfliktpunkt* ist die Kopierfunktion. Grenzen wurden gesetzt: Aussprache gegen mobile Version. Oberstes Erfolgskriterium: Leichte Verständlichkeit (In Design und Sprache anwendergerecht) 
+** **Identify key system functionality:** Die kritischsten Anforderungen wurden identifiziert: *Buchungen durchführen*, *Buchungen anzeigen* (-> Dozentenwoche), Historie (als Sahnehäubchen?)  
+
+** *Determine at least one possible solution:* Ja, die Vision ist technisch umsetzbar.
+
+** *Understand:* 
+*** Risiken sind verstanden 
+*** Wir bekommen kein Geld (-> nur "Zeitkosten" fallen an)
+*** Zeitplan: wurde *nicht* abgestimmt. (Orientierung an Empfelung aus Vorlesung)
+
+* *Überprüfung selbst gesteckter Iterationsziele: Y/N (4/2)*
+** Der Kunde hat die überarbeitete Version per Mail (schriftlich) bestätigt. *Y* 
+** Jedes Element der Vision findet sich in den system wide requirements abgedeckt. *Y*
+** 6 Use Cases wurden dokumentiert und in einem Modell zusammengefasst (Doku liegt als adoc vor) *N* 
+
+Nein –4 Use Cases ausgearbeitet, Rest nur erfasst, adocs liegen vor 
+
+** 5 Risiken und entsprechende Gegenmaßnahmen wurden identifiziert. Die Dokumentation liegt als .csv vor. *N* 
+
+5 Risiken liegen vor, aber nicht als .csv 
+
+** Für jeden dokumentierten Use Case existiert ein Wireframe. Jede dokumentierte Anforderung lässt sich anhand mindestens eines Wireframes erläutern. *Y*
+
+-> Drucken-Funktion fehlt noch (Brauchen wir auch nicht?) 
+
+-> Kopierfunktion nicht 
+
+** Der GitHub-Workshop wurde durchgeführt und aufgezeichnet. *Y*
 |===
+
+[%header, cols="1,3"]
+|===
+| Retrospective | Gesamte Iteration 2
+| Assessment Datum | 05.01.2021
+| Teilnehmer | gesamtes Team
+| Projektstatus: *grün*	a| 
+Wie gut waren unsere Schätzungen? Welche Hindernisse gab es? Wie können wir besser werden? 
+
+* Zu viele Leute – ineffektiv? Drei Leute pro TS-Meeting sind am effizientesten! 
+* Schätzungen im Iteration Board (Aufwand/Prio im GitHub) trafen zu, funktioniert auch mit weniger “Schätzern” 
+* Ausgesprochene Zufriedenheit mit eigenem Teamwork 
+* Teamwork und Gemeinschafts-Gedanke spiegelte sich z.B. im GitHub-Workshop wider
+|===
+
+=== ALPHA States
+
+image::31.12.20_END_I2.png[ALPHA states 05.01.2020]
+
 
 * Beurteilung im Vergleich zu den Zielen
 //Dokumentieren Sie, ob die angestrebten Ziele des Iterationsplans erreicht wurden.
