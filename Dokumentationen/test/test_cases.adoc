@@ -68,7 +68,7 @@ a| * ein Dozent ist mit validen Zugangsdaten angemeldet
 * es wurde valide Daten in die Voreinstellungen eingegeben  
 
 |*Nachbedingung*
-a| * der Button "Buchung abschließen" ist bis zur Auswahl mindestens eines Experments ausgegraut und kann nicht geklickt werden. 
+a| * der Button "Buchung abschließen" ist bis zur Auswahl mindestens eines Experiments ausgegraut und kann nicht geklickt werden. 
 * Dozent bleibt auf der Seite Experimentenübersicht 
 
 |*Benötigte Daten*
