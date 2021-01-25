@@ -22,9 +22,9 @@ Dozent möchte sich seinen Wochenplan (Übersicht von allen eigenen Exp. inkl. D
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
 --- keine alternativen Abläufe möglich ---
+
 === Unterabläufe (subflows)
 //Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
-
 --- keine Unterabläufe ---
 
 === Wesentliche Szenarios
