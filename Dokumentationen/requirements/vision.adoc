@@ -19,7 +19,7 @@ Ziel dieses Dokumentes ist es, einen genaueren Überblick über die wesentlichen
 
 === Zweck
 
-Der Zweck dieses Dokuments ist es, die wesentlichen  an das System gestellten Anforderungen aus Sicht der künftigen Anwender zu beschreiben. Die Begrifflichkeiten sind an die Bedüfnisse und den Sprachgebrauch der Anwender angepasst.
+Der Zweck dieses Dokuments ist es, die wesentlichen  an das System gestellten Anforderungen aus Sicht der künftigen Anwender zu beschreiben. Formulierungen werden so gestaltet, dass sie für alle Stakeholder verständlich sind.
 
 
 === Gültigkeitsbereich (Scope)
