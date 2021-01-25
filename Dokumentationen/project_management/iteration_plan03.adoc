@@ -15,6 +15,7 @@ include::../_includes/default-attributes.inc.adoc[]
 
 | Beginn der Iteration | 07.01.2020
 | TS-M3 | 07.01.2021
+| Anforderungsvalidierung mit Coach | 12.01.2021??????
 | Ende der Iteration 
 | 21.01.2021
 | LCA    |-
