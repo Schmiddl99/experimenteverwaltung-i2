@@ -39,7 +39,7 @@ include::../_includes/default-attributes.inc.adoc[]
 
 Aufgaben werden in der Work Item List (https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#column-11862065) geordnet und priorisiert.
 
-Die in dieser Iteration geplanten Aufgaben wurden in der To-Do-List dargestellt: https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#column-11861913. Die To-Do-List verhält sich dynamisch. Deswegen sind nachfolgend die Work Items der Iteration I aufgeführt.
+Die in dieser Iteration geplanten Aufgaben wurden in der To-Do-List dargestellt: https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#column-11861913. Die To-Do-List verhält sich dynamisch. Deswegen sind nachfolgend die Work Items der Iteration II aufgeführt.
 
 //Übernommen aus dem Board Iteration Planning auf Github. Referenz von Issues: Link[#Issue_ID]; link durch klick auf drei Punkte der Aufgabe->Copy card link
 

@@ -15,11 +15,9 @@ include::../_includes/default-attributes.inc.adoc[]
 
 | Beginn der Iteration | 07.01.2020
 | TS-M3 | 07.01.2021
-|XXX
-|XXX
-| Ende der Iteration 
-| 21.01.2021
-| LCO    |-
+| LCO| 21.01.2021
+| LCA    |-
+| Ende der Iteration | 21.01.2021
 |===
 
 
@@ -27,13 +25,14 @@ include::../_includes/default-attributes.inc.adoc[]
 //Nennen Sie 1-5 wesentliche Ziele für die Iteration.
 
 * Erreichen der Zustimmung des Auftraggebers in Bezug auf die vorgelegten Wireframes.
-*Übereinstimmung mit dem Auftraggeber in Bezug auf die grundlegende Vorgehensweise der Buchung.
-*Übereinstimmung mit dem Auftraggeber in Bezug auf das Journal.
+* Übereinstimmung mit dem Auftraggeber in Bezug auf die grundlegende Vorgehensweise der Buchung.
+* Übereinstimmung mit dem Auftraggeber in Bezug auf das Journal.
 * Ausarbeitung eines Architektur-Konzeptes
-* Ausarbeitung von Text Cases
+* Ausarbeitung von Test Cases
+* Ziel positives Feedback des Coaches zu den System Wide Requirements
 * Risikoliste weiterführen und pflegen
-
-* **Wissensaustausch:** Interessierte Mitglieder sollen ein GitHub-Tutorial erhalten, was einerseits die Arbeit im Team fördert als auch einen weiteren Mehrwert innerhalb dieses Moduls schafft.
+* Anforderungsvalidierung mit Coach
+* Problematik Kopierfunktion klären bzw. Übereinstimmung erreichen
 
 
 == Aufgabenzuordnung
@@ -41,7 +40,7 @@ include::../_includes/default-attributes.inc.adoc[]
 
 Aufgaben werden in der Work Item List (https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#column-11862065) geordnet und priorisiert.
 
-Die in **dieser** Iteration geplanten Aufgaben wurden in der To-Do-List dargestellt: https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#column-11861913. Die To-Do-List verhält sich dynamisch. Deswegen sind nachfolgend die Work Items der Iteration I aufgeführt.
+Die in **dieser** Iteration geplanten Aufgaben wurden in der To-Do-List dargestellt: https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#column-11861913. Die To-Do-List verhält sich dynamisch. Deswegen sind nachfolgend die Work Items der Iteration III aufgeführt.
 
 //Übernommen aus dem Board Iteration Planning auf Github. Referenz von Issues: Link[#Issue_ID]; link durch klick auf drei Punkte der Aufgabe->Copy card link
 
@@ -88,33 +87,82 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 [%header, cols="2,1,3"]
 |===
 | Problem | Status | Notizen
-| Feature Creep | unverändert 
-a|* Nach dem Entwurf der ersten Wireframes wurden diese teilweise wieder verworfen, da von TS-Seite veränderte Anforderungen gestellt wurden.
-* Verworfen werden mussten u.a. die Deadline, die Benachrichtigung von Dozenten, die Pop-Up-Buchungseingabe.
-* Eine Konsultation des Coaches sowie eine Bestätigung der überarbeiteten Vision durch TS sind angedacht. (Stand:06.01.21)
+| Kopierfunktion | geklärt 
+a|* Die Kopierfunktion sorgte für Abstimmungsschwierigkeiten zwischen dem Auftraggeber und den Auftragnehmern. Die Funktion sorgte sogar für einen Zielkonflikt: Das zugrundeliegende individuelle Buchungssystem sollte dadurch die Funktionen eines eher statischen Planungssystems erhalten.
+* Die vom Auftraggeber vorgesehene Kopierfunktion sorgt für einen erheblichen Mehraufwand in technischer und organisatorischer Sicht.
+* Die identifizierten resultierenden Probleme wurden gemeinsam mit Themensteller als so umfangreich bewertet, dass die Idee verworfen wurde, bzw. aus dem gestellten funktionellen Anforderungen ausgeklammert wurde.
+
 |===
 
 
 == Bewertungskriterien
 //Eine kurze Beschreibung, wie Erfüllung die o.g. Ziele bewertet werden sollen.
 
-* Der Kunde hat die überarbeitete Version per Mail (schriftlich) bestätigt. 
-* Jedes Element der Vision findet sich in den _system wide requirements_ abgedeckt.
-* 6 Use Cases wurden dokumentiert und in einem Modell zusammengefasst (Doku liegt als adoc vor)
-* 5 Risiken und entsprechende Gegenmaßnahmen wurden identifiziert. Die Dokumentation liegt als .csv vor.
-* Für jeden dokumentierten Use Case existiert ein Wireframe. Jede dokumentierte Anforderung lässt sich anhand mindestens eines Wireframes erläutern.
-* Der GitHub-Workshop wurde durchgeführt und aufgezeichnet.
+* Der Kunde hat die ihm vorgelegten Wireframes bestätigt. Jede mögliche Usecase wurde mit einem Wireframe abgedeckt. 
+* Die einzelnen Schritte der Buchung wurden mit dem Auftraggeber durchgegangen und wurden akzeptiert. Jeder mögliche Schritt wurde betrachtet.
+* Über die Handhabung und dem Umfang des Journal herrscht Einigkeit. Alle Varianten wurden betrachtet.
+* Das Architekturkonzept wurde mit allen notwendigen Bestandteilen fertiggestellt.
+* Die Test Cases wurden für alle notwendigen Fälle aufgestellt.
+* Die Risikoliste wurde weiterhin aktualisiert und erneuert.
 
 == Assessment
 //In diesem Abschnitt werden die Ergebnisse und Maßnahmen der Bewertung erfasst und kommunziert. Die Bewertung wird üblicherweise am Ende jeder Iteration durchgeführt. Wenn Sie diese Bewertungen nicht machen, ist das Team möglicherweise nicht in der Lage, die eigene Arbeitsweise ("Way of Working") zu verbessern.
 
 [%header, cols="1,3"]
 |===
-| Assessment Ziel | Das kann die gesamte Iteration oder eine spezifische Komponente sein
-| Assessment Datum | ...
-| Teilnehmer | ...
-| Projektstatus	| Zum Beispiel ausgedrückt als rot, gelb oder grün.
+| Review | Gesamte Iteration 3
+| Assessment Datum | 26.01.2021
+| Teilnehmer | gesamtes Team
+| Projektstatus: *gelbgrün*	a| 
+* Ziel: LCO-Meilenstein - Ende der Inception Phase. Wurde erreicht.
+** **Understand what to build:** Grundsätzlich verstanden. *Erfolgskriterien* sind zu 100% klar. Ablaufplan des Buchens und Journal wurde angenommen. Der vorhandene *Zielonflikt* =Kopierfunktion konnte zunächst beigelegt werden. UseCases wurden überarbeitet. Damit sind Ziel und Umfang des Systems und seiner Funktionalitäten klar und erfasst. 
+** **Identify key system functionality:** Die kritischsten Anforderungen wurden identifiziert: *Buchungen durchführen*, *Buchungen anzeigen* (-> Dozentenwoche), Historie)  
+
+** *Determine at least one possible solution:* Ja, die Vision ist technisch umsetzbar.
+
+** *Understand:* 
+*** Risiken sind verstanden 
+*** Wir bekommen kein Geld (-> nur "Zeitkosten" fallen an)
+*** Zeitplan: wurde *nicht* abgestimmt. (Orientierung an Empfelung aus Vorlesung)
+
+* *Überprüfung selbst gesteckter Iterationsziele: Y/N (4/2)*
+** Der Themensteller hat die vorgelegen Wireframes bestätigt. *Y* 
+** Die geplante Vorgehensweise der Buchung ist mit dem Themensteller abgesprochen, es herrscht Übereinstimmung. *Y*
+** Übereinstimmung mit dem Themensteller in Bezug auf das Journal *Y*
+
+Nein –4 Use Cases ausgearbeitet, Rest nur erfasst, adocs liegen vor 
+
+** 5 Risiken und entsprechende Gegenmaßnahmen wurden identifiziert. Die Dokumentation liegt als .csv vor. *N* 
+
+5 Risiken liegen vor, aber nicht als .csv 
+
+** Für jeden dokumentierten Use Case existiert ein Wireframe. Jede dokumentierte Anforderung lässt sich anhand mindestens eines Wireframes erläutern. *Y*
+
+-> Drucken-Funktion fehlt noch (Brauchen wir auch nicht?) 
+
+-> Kopierfunktion nicht 
+
+** Der GitHub-Workshop wurde durchgeführt und aufgezeichnet. *Y*
 |===
+
+[%header, cols="1,3"]
+|===
+| Retrospective | Gesamte Iteration 3
+| Assessment Datum | 26.01.2021
+| Teilnehmer | gesamtes Team
+| Projektstatus: *grün*	a| 
+Wie gut waren unsere Schätzungen? Welche Hindernisse gab es? Wie können wir besser werden? 
+
+* Zu viele Leute – ineffektiv? Drei Leute pro TS-Meeting sind am effizientesten! 
+* Schätzungen im Iteration Board (Aufwand/Prio im GitHub) trafen zu, funktioniert auch mit weniger “Schätzern” 
+* Ausgesprochene Zufriedenheit mit eigenem Teamwork 
+* Teamwork und Gemeinschafts-Gedanke spiegelte sich z.B. im GitHub-Workshop wider
+|===
+
+=== ALPHA States
+
+image::31.12.20_END_I2.png[ALPHA states 05.01.2020]
+
 
 * Beurteilung im Vergleich zu den Zielen
 //Dokumentieren Sie, ob die angestrebten Ziele des Iterationsplans erreicht wurden.
