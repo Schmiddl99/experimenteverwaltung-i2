@@ -35,7 +35,7 @@ Nun müssen die Voreinstellungen für die Buchung festgelegt werden. Dabei hande
 image::WF_2_ExperimentWaehlen.PNG[Experiment wählen]
 
 .Erklärung:
-Mit einem Klick auf die Warenkorb Symbole werden diese eingefärbt (d.h. sie befinden sich im Warenkorb; Rückgängig machen mit erneutem Klick). Sind alle gewünschten Experimente ausgewählt, kann die Buchung abgeschlossen oder abgebrochen werden
+Mit einem Klick auf die Warenkorb Symbole werden diese eingefärbt (d.h. sie befinden sich im Warenkorb; Rückgängig machen mit erneutem Klick). Sind alle gewünschten Experimente ausgewählt, kann zum Buchungsabschluss navigiert werden oder abgebrochen werden
 
 === WF3: Checkout
 
