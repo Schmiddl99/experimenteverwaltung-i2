@@ -76,7 +76,9 @@ a|* Übersicht der eigenen Buchungen mit Anpassungsmöglichkeiten für Dozenten
 a|* Darstellung aller für eine Woche durch einen bestimmten Dozenten gebuchten Experimente
 * "Wochenplan pro Dozent"
 * Übersicht/Druckansicht für Admin
-|
+a|
+* Wochenplan
+* Wochenplanansicht 
 
 |Deadline 
 a|* Englisch für Grenze/Frist 
