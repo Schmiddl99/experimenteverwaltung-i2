@@ -378,15 +378,15 @@ a| *
 |===
 
 |*Beschreibung* |
-Die Werte der Voreinstellungen (Studiengang, Uhrzeit, Datum) werden aus einem festgelegten Wertebereich gewählt. Realisiert wird dies durch Dropdown-Menüs und einen Datepicker. Offensichtlich wird also erwartet, dass die Voreinstellungen nicht durch Freitextfelder erfasst werden können. (manueller Test)
+Die Werte der Voreinstellungen (Studiengang, Uhrzeit, Datum) und die Auswahl der Details von Ausgaben (Dozentenwoche: Dozent, Datum; Statistik: KW, Semester) und alle Filtermöglichkeiten werden aus einem festgelegten Wertebereich gewählt. Realisiert wird dies durch Dropdown-Menüs und einen Datepicker. Es wird erwartet, dass die Voreinstellungen nicht durch Freitextfelder erfasst werden können. (manueller Test)
 
 |*Vorbedingungen und benötigte Daten*
-a| * Dozent ist angemeldet 
-* Buchung wurde gestartet 
-* auswählbare Daten bezüglich Datum, Uhrzeit, Studiengang
+a| * Dozent oder Admin ist angemeldet 
+* Buchung wurde gestartet/ Dozentwochenseite wurde aufgerufen/ Statistikseite wurde aufgerufen
+* auswählbare Daten bezüglich Datum, Uhrzeit, Studiengang, Dozent, Semester, KW, Filtermöglichkeiten 
 
 |*Nachbedingung*
-a| * Dozent befindet sich auf Voreinstellungsseite mit ausgewählten Einstellungen
+a| * Dozent befindet sich auf Voreinstellungsseite mit ausgewählten Einstellungen (bei Buchung) oder Admin betrachet ausgefüllte Menüs (bei Dozentenwoche oder Statistik)
 * zum Auswählen mussten keine Tastatureingabe getätigt werden
  
 |===
@@ -400,12 +400,12 @@ a| * Dozent befindet sich auf Voreinstellungsseite mit ausgewählten Einstellung
 Die auswählbaren Werte der Voreinstellungsmenüs beziehen sich auf feste Wertebereiche. Erwartet wird, dass alle Eingabemöglichkeiten valide sind. (manueller Test)
 
 |*Vorbedingungen und benötigte Daten*
-a|* Dozent ist angemeldet 
-* Buchung wurde gestartet 
+a|* Dozent/Admin ist angemeldet 
+* Buchung wurde gestartet/ Dozentwochenseite wurde aufgerufen/ Statistikseite wurde aufgerufen 
 * auswählbare Daten bezüglich Datum, Uhrzeit, Studiengang
 
 |*Nachbedingung*
-a| * Dozent befindet sich auf Voreinstellungsseite mit ausgewählten Einstellungen
+a| * Dozent befindet sich auf Voreinstellungsseite mit ausgewählten Einstellungen oder Admin betrachet ausgefüllte Menüs (bei Dozentenwoche oder Statistik)
 * es wurde keine invalide Eingabemöglichkeit geboten 
  
 |===
@@ -416,7 +416,7 @@ a| * Dozent befindet sich auf Voreinstellungsseite mit ausgewählten Einstellung
 |===
 
 |*Beschreibung* |
-Die Anwendung sollte nutzerfreundlich und leicht erfassbar sein. Erwartet wird deswegen, dass eine themenfremde Person die Anwendung (bezogen auf einen Buchungsdurchlauf) ohne Hilfe durch Dritte nutzen kann. (manueller Test)
+Die Anwendung sollte nutzerfreundlich und leicht erfassbar sein. Erwartet wird, dass eine themenfremde Person die Anwendung (bezogen auf einen Buchungsdurchlauf) ohne Hilfe durch Dritte nutzen kann. (manueller Test)
 
 |*Vorbedingungen und benötigte Daten*
 a| * Testperson ist mit einem Dozentenkonto angemeldet 
@@ -434,7 +434,7 @@ a| * die Testperson befindet sich auf der Bestätigungsseite und hat diese ohne 
 |===
 
 |*Beschreibung* |
-Der Buchungsprozess sollte unkompliziert und gut orientiert sein. Es wird deshalb erwartet, dass die erfolgreiche Buchung eines Experiments mit 15 Klicks oder weniger passieren kann. (manueller Test)
+Der Buchungsprozess sollte unkompliziert und gut orientiert sein. Es wird deshalb erwartet, dass die erfolgreiche Buchung eines Experiments mit 15 Klicks oder weniger passiert. (manueller Test)
 
 |*Vorbedingungen und benötigte Daten*
 a| * Dozent ist angemeldet 
