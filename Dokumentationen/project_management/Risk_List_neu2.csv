@@ -1,28 +1,28 @@
-<project> Risk List;;;;;;;;;
+Ôªø<project> Risk List;;;;;;;;;
 Risk ID;Date Identified;Headline;Description;Type;Impact;Probability;Magnitude;Owner;Mitigation Strategy
-1;01.12.2020;Datenschutz- Login Professoren;Die Daten der Dozenten m¸ssen (Benutzername, Passwort) gesch¸tzt werden. Die gebuchten Experimente sowie zus‰tzliche Angaben sind nur f¸r den Admin + dem jeweiligen Donzenten einsehbar.;Technical;5;5%;0,3;"TW; RB";"Login Daten entsprechend sch¸tzen.
-Passwort-Verordnung (Zahl, Buchstabe, Groﬂ- und Kleinschreibung); Passwortschutz durch System (Hashen)
+1;01.12.2020;Datenschutz- Login Professoren;Die Daten der jeweiligen Dozenten (Benutzername, Passwort) m√ºssen vor unerlaubtem Zugriff durch andere Anwender oder nicht f√ºr den Systemzugriff autorisierte Personen gesch√ºtzt werden. Die gebuchten Experimente sowie zus√§tzliche Angaben sind nur f√ºr den Admin + dem jeweiligen Donzenten einsehbar.;Technical;5;5%;0,3;"TW; RB";"Login Daten entsprechend sch√ºtzen.
+Passwort-Verordnung (Zahl, Buchstabe, Gro√ü- und Kleinschreibung); Passwortschutz durch System (Hashen)
 ->Architecture Notebook"
-2;01.12.2020;Datenschutz- Lizenzen, Urheberrecht;Es besteht die Gefahr das Grafiken missbr‰uchlich genutzt werden. Dies kann zu einer Urheberrechtsverletzung f¸hren.;Business;5;5%;0,3;"TW; AB";Lizenzvereinbarungen der neugenutzen Grafiken kl‰ren oder eigene Grafiken erstellen.
-3;21.12.2020;Missverst‰ndinisse mit Auftraggeber;In den Gespr‰chen mit dem Auftraggeber kommt/ kann es zu Missverst‰ndnissen in der Kommunikation und im Verst‰ndnis kommen. Diese werden vor allem durch einen unterschiedlichen Sprachgebrauch als auch durch unterschiedliche Vorstellungen der technichen Umsetzung und der technischen Sinnhaftigkeit  getragen.;"Business; Schedule; direct";5;80%;4,0;TW, TKa, GM, AB;H‰ufige Meetings und reger Ausstausch mit dem Auftraggeber.Einfacher Sprachgebrauch und Vermeidung von Fachbegriffen. Optische Darstellungen nutzen um ein besseres Verst‰ndnis zu erreichen. Miteinbeziehen von Dozenten (Anwendern).
-4;05.01.2021;Zeit f¸r Bearbeitung reicht nicht aus;Es besteht das Risiko, dass der Umfang des Arbeitsaufwandes untersch‰tzt wird und dadurch die rechtzeitige Fertigstellung in Gefahr ist.;Schedule;3;20%;0,6;GM;"Deadlines f¸r Meilensteine setzen. Im Team den Aufwand gemeinsam kritisch beurteilen.
+2;01.12.2020;Datenschutz- Lizenzen, Urheberrecht;Es besteht die Gefahr, dass Grafiken die bei der Erstellung der Oberfl√§che ben√∂tigt werden, missbr√§uchlich genutzt werden. Dies kann zu einer Urheberrechtsverletzung f√ºhren.;Business;5;5%;0,3;"TW; AB";Lizenzvereinbarungen der neugenutzen Grafiken kl√§ren oder eigene Grafiken erstellen.
+3;21.12.2020;Missverst√§ndinisse mit Themensteller;In den Gespr√§chen mit dem Themensteller kommt/ kann es zu Missverst√§ndnissen in der Kommunikation und im Verst√§ndnis kommen. Diese werden vor allem durch einen unterschiedlichen Sprachgebrauch als auch durch unterschiedliche Vorstellungen der technichen Machbarkeit und der technischen Sinnhaftigkeit getragen.;"Business; Schedule; direct";5;80%;4;TW, TKa, GM, AB;H√§ufige Meetings und reger Ausstausch mit dem Auftraggeber.Einfacher Sprachgebrauch und Vermeidung von Fachbegriffen. Optische Darstellungen nutzen um ein besseres Verst√§ndnis zu erreichen. Miteinbeziehen von Dozenten (Anwendern).
+4;05.01.2021;Zeit f√ºr Bearbeitung reicht nicht aus;Es besteht das Risiko, dass der Umfang des Arbeitsaufwandes untersch√§tzt wird und dadurch die rechtzeitige Fertigstellung in Gefahr ist.;Schedule;3;20%;0,6;GM;"Deadlines f√ºr Meilensteine setzen. Im Team den Aufwand gemeinsam kritisch beurteilen.
 
 ->Architecture Notebook"
-5;05.01.2021;technische Umsetzung ist nicht mˆglich;Es besteht das Risiko, dass die in den Anforderungen erarbeiteten Funktionen, aufgrund von mangelnden Kenntnissen, nicht technisch umsetzbar sind.;Technical;5;50%;2,5;RW, GM;"Alle notwendigen Schritte durchgehen und die mˆgliche Umsetzung pr¸fen. Aufgaben nach Kompetemzen zuteilen. Im Zweifel eigenst‰ndige Weiterbildung notwendig bzw. gegenseitige Unterst¸tzung.
+5;05.01.2021;technische Umsetzung ist nicht m√∂glich;Es besteht das Risiko, dass die in den Anforderungen erarbeiteten Funktionen, aufgrund von fehlender Expertise, nicht technisch umsetzbar sind.;Technical;5;40%;2;RW, GM;"Alle notwendigen Schritte durchgehen und die m√∂gliche Umsetzung pr√ºfen. Aufgaben nach Kompetemzen zuteilen. Im Zweifel eigenst√§ndige Weiterbildung notwendig bzw. gegenseitige Unterst√ºtzung.
 
 ->Architecture Notebook"
-6;07.01.2021;Datenverlust bei R¸ck¸bertragung der virtuellen Maschine;Die Sorge des Themenerstellers ist, dass die Daten die von Ihm im aktuell laufenden System eingegeben wurden, in der neuen Version wegfallen kˆnnten, da die Auftragnehmer das System auf Basis eines veralteten Datenbestandes entwickeln.;Technical;1;20%;0,2;RW;"Es ist geplant die Datenbank neu zu inkludieren und somit w¸rde man nur mit aktuellen Datenbest‰nden arbeiten.
+6;07.01.2021;Datenverlust bei R√ºck√ºbertragung der virtuellen Maschine;Die Sorge des Themenerstellers ist, dass die Daten die von Ihm im aktuell laufenden System eingegeben wurden, in der neuen Version wegfallen k√∂nnten, da die Auftragnehmer das System auf Basis eines veralteten Datenbestandes entwickeln.;Technical;1;20%;0,2;RW;"Es ist geplant die Datenbank neu zu inkludieren und somit w√ºrde man nur mit aktuellen Datenbest√§nden arbeiten.
 
 ->Architecture Notebook"
-7;;;;;;;0,0;;
-8;;;;;;;0,0;;
-9;;;;;;;0,0;;
-10;;;;;;;0,0;;
-11;;;;;;;0,0;;
-12;;;;;;;0,0;;
-13;;;;;;;0,0;;
-14;;;;;;;0,0;;
-15;;;;;;;0,0;;
-16;;;;;;;0,0;;
-17;;;;;;;0,0;;
-18;;;;;;;0,0;;
+7;27.01.2021;√úbersehen von Anforderungen;Durch ein nicht rechtzeitiges einbeziehen aller Stakeholder, kann es zum √ºbersehen von Anforderungen kommen. Dies kann zur Folge haben, dass ein erh√∂hter Mehraufwand r√ºckwirkend notwendig ist und die geplante Abgabe erschoben werden muss.;Business;5;5%;0,25;"GM; TW; Tka";Ansprechen aller Stakeholder die identifiziert wurden. Bei Dozenten exemplarische Stellvertreter ausw√§hlen (Prof. Dr. Krawitz)
+8;;;;;;;0;;
+9;;;;;;;0;;
+10;;;;;;;0;;
+11;;;;;;;0;;
+12;;;;;;;0;;
+13;;;;;;;0;;
+14;;;;;;;0;;
+15;;;;;;;0;;
+16;;;;;;;0;;
+17;;;;;;;0;;
+18;;;;;;;0;;
