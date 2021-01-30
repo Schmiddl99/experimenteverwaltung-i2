@@ -76,7 +76,7 @@ image::WF_7_Dozentenwoche.PNG[Dozentenwoche Anzeige]
 
 === WF8: Dozentenwoche
 
-image::Dozentenwoche.jpg[Dozentenwoche Druckansicht]
+image::WF_8_Druckansicht.PNG[Dozentenwoche Druckansicht]
 
 .Erklärung:
 Ansicht des beispielhaften Wochenplans.
