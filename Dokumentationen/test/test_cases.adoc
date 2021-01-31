@@ -373,12 +373,12 @@ a| *
 |===
 
 
-==== TC19 - NFAU-1.2 - Alle Eingaben mit festem Wertebereich sind nicht durch Freitextfelder realisiert
+==== TC19 - NFAU-1.2 - Alle Eingaben mit festem Wertebereich sind nicht durch Freitextfelder realisiert  (manueller Test)
 
 |===
 
 |*Beschreibung* |
-Die Werte der Voreinstellungen (Studiengang, Uhrzeit, Datum) und die Auswahl der Details von Ausgaben (Dozentenwoche: Dozent, Datum; Statistik: KW, Semester) und alle Filtermöglichkeiten werden aus einem festgelegten Wertebereich gewählt. Realisiert wird dies durch Dropdown-Menüs und einen Datepicker. Es wird erwartet, dass die oben genannten Eingaben nicht durch Freitextfelder erfasst werden können. (manueller Test)
+Die Werte der Voreinstellungen (Studiengang, Uhrzeit, Datum) und die Auswahl der Details von Ausgaben (Dozentenwoche: Dozent, Datum; Statistik: KW, Semester) und alle Filtermöglichkeiten werden aus einem festgelegten Wertebereich gewählt. Realisiert wird dies durch Dropdown-Menüs und einen Datepicker. Es wird erwartet, dass die oben genannten Eingaben nicht durch Freitextfelder erfasst werden können.
 
 |*Vorbedingungen und benötigte Daten*
 a| * Dozent oder Admin ist angemeldet 
@@ -392,12 +392,12 @@ a| * Dozent befindet sich auf Voreinstellungsseite mit ausgewählten Einstellung
 |===
 
 
-==== TC20 - NFAU-1.2 - Alle vorgegebenen Eingabemöglichkeiten sind valide
+==== TC20 - NFAU-1.2 - Alle vorgegebenen Eingabemöglichkeiten sind valide (manueller Test)
 
 |===
 
 |*Beschreibung* | 
-Die auswählbaren Werte der Auswahlungsmenüs beziehen sich auf feste Wertebereiche. Erwartet wird, dass alle Eingabemöglichkeiten valide sind. (manueller Test)
+Die auswählbaren Werte der Auswahlungsmenüs beziehen sich auf feste Wertebereiche. Erwartet wird, dass alle Eingabemöglichkeiten valide sind. 
 
 |*Vorbedingungen und benötigte Daten*
 a|* Dozent/Admin ist angemeldet 
@@ -411,12 +411,12 @@ a| * Dozent befindet sich auf Voreinstellungsseite mit ausgewählten Einstellung
 |===
 
 
-==== TC21 - NFAU-1.3 - Themenfremde Person kann die Anwendung ohne fremde Hilfe benutzen
+==== TC21 - NFAU-1.3 - Themenfremde Person kann die Anwendung ohne fremde Hilfe benutzen (manueller Test)
 
 |===
 
 |*Beschreibung* |
-Die Anwendung sollte nutzerfreundlich und leicht erfassbar sein. Erwartet wird, dass eine themenfremde Person die Anwendung (bezogen auf einen Buchungsdurchlauf) ohne Hilfe durch Dritte nutzen kann. (manueller Test)
+Die Anwendung sollte nutzerfreundlich und leicht erfassbar sein. Erwartet wird, dass eine themenfremde Person die Anwendung (bezogen auf einen Buchungsdurchlauf) ohne Hilfe durch Dritte nutzen kann. 
 
 |*Vorbedingungen und benötigte Daten*
 a| * Testperson ist mit einem Dozentenkonto angemeldet 
@@ -434,7 +434,7 @@ a| * die Testperson befindet sich auf der Bestätigungsseite und hat diese ohne 
 |===
 
 |*Beschreibung* |
-Der Buchungsprozess sollte unkompliziert und gut orientiert sein. Es wird deshalb erwartet, dass die erfolgreiche Buchung eines Experiments mit 15 Klicks oder weniger passiert. (manueller Test)
+Der Buchungsprozess sollte unkompliziert und gut orientiert sein. Es wird deshalb erwartet, dass die erfolgreiche Buchung eines Experiments mit 15 Klicks oder weniger passiert.
 
 |*Vorbedingungen und benötigte Daten*
 a| * Dozent ist angemeldet 
