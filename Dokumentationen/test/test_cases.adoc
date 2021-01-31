@@ -480,13 +480,13 @@ a| *
 
 |*Beschreibung* | Das System wird einem Stresstest durch 10 gleichzeitige Nutzer unterzogen. Es wird erwartet, dass das System fehlerlos funktioniert.
 
-|*Vorbedingungen und benötigte Daten und benötigte Daten*
-a| * 10 verschiedene Accounts für die Testnutzer (egal ob Admin, Dozent oder Gast)
+|*Vorbedingungen und benötigte Daten*
+a| * 10 verschiedene Accounts für die Testnutzer (2 Admin, 7 Dozent und 1 Gast)
 * alle 10 Testnutzer sind angemeldet
 * alle 10 Testnutzer benutzen jede Funktionalität des Systems
 
 |*Nachbedingung*
-a| * Das System wird keine Fehler anzeigen oder Probleme während des Testlaufes haben
+a| * das System zeigt keine Fehler an und hatte keine Probleme während des Testlaufes
  
 |===
 
@@ -495,13 +495,14 @@ a| * Das System wird keine Fehler anzeigen oder Probleme während des Testlaufes
 
 |===
 
-|*Beschreibung* | Das System wird in alles geforderten Browser auf volle Funktionalität getestet. Es wird erwartet, dass das System in allen getesteten Browsern vollumfänglich und mit gleichen Ergebnissen funktioniert.
+|*Beschreibung* | Das System wird in allen geforderten Browser auf volle Funktionalität getestet. Es wird erwartet, dass das System in allen getesteten Browsern vollumfänglich und mit gleichen Ergebnissen funktioniert.
 
-|*Vorbedingungen und benötigte Daten und benötigte Daten*
+|*Vorbedingungen und benötigte Daten*
 a| * ein Admin-, ein Dozenten- und ein Gastkonto
-* verschiedene Browser
+* alle geforderten Browser in der aktuellen Version
 
 |*Nachbedingung*
-a| * alle Funktionen des Systems funktionieren in den unterschiedlichen Browsern wie erwartet und entsprechend den Berechtigungen der einzelnen Accounts
+a| * die Funktionen des Systems haben in den unterschiedlichen Browsern wie erwartet und entsprechend den Berechtigungen der einzelnen Accounts funktioniert
+* die Webanwendung ist korrekt dargestellt
  
 |===
