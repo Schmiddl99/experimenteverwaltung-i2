@@ -1,0 +1,10 @@
+= Domain Model: {project-name}
+Richard Böhme <richard.boehme@htw-dresden.de>
+{localdatetime}
+include::../_includes/default-attributes.inc.adoc[]
+
+
+== Domänenmodell für die Erweiterung des EMS
+
+.zuletzt aktualisiert am 28.01.2021
+image::./domain_model.svg[Domänenmodell des EMS]
