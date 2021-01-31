@@ -378,12 +378,16 @@ a| *
 |===
 
 |*Beschreibung* |
+Die Werte der Voreinstellungen (Studiengang, Uhrzeit, Datum) und die Auswahl der Details von Ausgaben (Dozentenwoche: Dozent, Datum; Statistik: KW, Semester) und alle Filtermöglichkeiten werden aus einem festgelegten Wertebereich gewählt. Realisiert wird dies durch Dropdown-Menüs und einen Datepicker. Es wird erwartet, dass die oben genannten Eingaben nicht durch Freitextfelder erfasst werden können. (manueller Test)
 
 |*Vorbedingungen und benötigte Daten*
-a| * 
+a| * Dozent oder Admin ist angemeldet 
+* Buchung wurde gestartet/ Dozentwochenseite wurde aufgerufen/ Statistikseite wurde aufgerufen
+* auswählbare Daten bezüglich Datum, Uhrzeit, Studiengang, Dozent, Semester, KW, Filtermöglichkeiten 
 
 |*Nachbedingung*
-a| *
+a| * Dozent befindet sich auf Voreinstellungsseite mit ausgewählten Einstellungen (bei Buchung) oder Admin betrachet ausgefüllte Menüs (bei Dozentenwoche oder Statistik)
+* zum Auswählen mussten keine Tastatureingabe getätigt werden
  
 |===
 
@@ -392,13 +396,17 @@ a| *
 
 |===
 
-|*Beschreibung* |
+|*Beschreibung* | 
+Die auswählbaren Werte der Auswahlungsmenüs beziehen sich auf feste Wertebereiche. Erwartet wird, dass alle Eingabemöglichkeiten valide sind. (manueller Test)
 
 |*Vorbedingungen und benötigte Daten*
-a| * 
+a|* Dozent/Admin ist angemeldet 
+* Buchung wurde gestartet/ Dozentwochenseite wurde aufgerufen/ Statistikseite wurde aufgerufen 
+* auswählbare Daten bezüglich Datum, Uhrzeit, Studiengang
 
 |*Nachbedingung*
-a| *
+a| * Dozent befindet sich auf Voreinstellungsseite mit ausgewählten Einstellungen oder Admin betrachet ausgefüllte Menüs (bei Dozentenwoche oder Statistik)
+* es wurde keine invalide Eingabemöglichkeit geboten 
  
 |===
 
@@ -408,12 +416,15 @@ a| *
 |===
 
 |*Beschreibung* |
+Die Anwendung sollte nutzerfreundlich und leicht erfassbar sein. Erwartet wird, dass eine themenfremde Person die Anwendung (bezogen auf einen Buchungsdurchlauf) ohne Hilfe durch Dritte nutzen kann. (manueller Test)
 
 |*Vorbedingungen und benötigte Daten*
-a| * 
+a| * Testperson ist mit einem Dozentenkonto angemeldet 
+* es gibt mindestens ein buchbares Experiment 
 
 |*Nachbedingung*
-a| *
+a| * die Testperson befindet sich auf der Bestätigungsseite und hat diese ohne externe Hilfestellung bezüglich der Nutzung erreicht 
+* dementsprechend wurde eine Buchung erfolgreich getätigt und ist im Journal nachvollziehbar 
  
 |===
 
@@ -423,12 +434,15 @@ a| *
 |===
 
 |*Beschreibung* |
+Der Buchungsprozess sollte unkompliziert und gut orientiert sein. Es wird deshalb erwartet, dass die erfolgreiche Buchung eines Experiments mit 15 Klicks oder weniger passiert. (manueller Test)
 
 |*Vorbedingungen und benötigte Daten*
-a| * 
+a| * Dozent ist angemeldet 
+* es gibt mindestens ein buchbares Experiment
 
 |*Nachbedingung*
-a| *
+a| * Dozent befindet sich auf der Bestätigungsseite 
+* die Anzahl der gezählten Klicks ist gleich 15 oder weniger 
  
 |===
 
