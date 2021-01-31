@@ -397,7 +397,7 @@ a| * Dozent befindet sich auf Voreinstellungsseite mit ausgewählten Einstellung
 |===
 
 |*Beschreibung* | 
-Die auswählbaren Werte der Voreinstellungsmenüs beziehen sich auf feste Wertebereiche. Erwartet wird, dass alle Eingabemöglichkeiten valide sind. (manueller Test)
+Die auswählbaren Werte der Auswahlungsmenüs beziehen sich auf feste Wertebereiche. Erwartet wird, dass alle Eingabemöglichkeiten valide sind. (manueller Test)
 
 |*Vorbedingungen und benötigte Daten*
 a|* Dozent/Admin ist angemeldet 
