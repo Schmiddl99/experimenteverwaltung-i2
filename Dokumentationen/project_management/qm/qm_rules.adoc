@@ -78,7 +78,7 @@ Ziel ist es, alle Beteiligten auf denselben Wissensstand über die angefallenen 
 === Erstellen von Testcases 
 Testcases sind wichtig, um die Funktionalität eines bestimmten Elements eines Programmes zu testen. Hier wird genau beschrieben, welche Funktionen getestet werden sollen, Hintergrundinformationen dieser, welche Akteure und Daten daran teilhaben, ob es Vorbedingungen gibt und wie genau der Ablauf stattfinden soll. 
 
-Mit der Abarbeitung dieser Testcases wird sichergestellt, das mit der Einhaltung der aufgeführten Schritte das gewünschte Ergebnis erreicht werden kann. 
+Mit der Abarbeitung dieser Testcases wird sichergestellt, dass mit der Einhaltung der aufgeführten Schritte das gewünschte Ergebnis erreicht werden kann. 
 
 Inhalte: 
 
