@@ -20,7 +20,7 @@ Wichtige Punkte sind:
 * ansprechen von Problemen, sobald diese Auftreten 
 
 === Rollen und Verantwortlichkeit
-Je besser die Rollen und Verantwortlichkeiten geklärt sind, desto einfacher lassen sich Aufgaben verteilen und erledigen. Jedoch sollte jeder dafür verantwortlich seien, dass Aufgaben bestmöglich gelöst werden.  
+Je besser die Rollen und Verantwortlichkeiten geklärt sind, desto einfacher lassen sich Aufgaben verteilen und erledigen. Jedoch sollte jeder dafür verantwortlich sein, dass Aufgaben bestmöglich gelöst werden.  
 
 Deswegen: 
 
