@@ -2,7 +2,6 @@
 Julius Schmidt <juliusheiko.schmidt@htw-dresden.de>; Richard Böhme <richard.boehme@htw-dresden.de>; William Elsner <william.elsner@htw-dresden.de>; Tobias Karsch <tobias.karsch@htw-dresden.de>
 :toc: 
 :toc-title: Inhaltsverzeichnis
-
 include::../_includes/default-attributes.inc.adoc[]
 {localdatetime}
 
@@ -11,7 +10,7 @@ include::../_includes/default-attributes.inc.adoc[]
 
 == Zweck
 
-Dieses Dokument beschreibt die Philosophie, Nebenbedingungen, Begründungen, wesentliche Elemente und andere übergreifende Aspekte, die Einfluss auf Entwurf und Implementierung bezüglich der Realisierung eines in der Vision (link) beschriebenen Buchungssystems für Physikexperimente haben.
+Dieses Dokument beschreibt die Philosophie, Nebenbedingungen, Begründungen, wesentliche Elemente und andere übergreifende Aspekte, die Einfluss auf Entwurf und Implementierung bezüglich der Realisierung eines in der link:../requirements/vision.adoc[Vision] beschriebenen Buchungssystems für Physikexperimente haben.
 Die für die Architektur getroffenen Entscheidungen und Ihre Hintergründe werden hier festgehalten.
 
 
@@ -50,13 +49,13 @@ Weitere Ziele, die die Architektur in Struktur und Verhalten erfüllen muss, sin
 == Architektur-relevante Anforderungen
 //Fügen Sie eine Referenz / Link zu den Anforderungen ein, die implementiert werden müssen, um die Architektur zu erzeugen.
 
-Über die Systemweiten funktionalen und nichtfunktionalen Anforderungen kann im Anforderungsdokument (link) nachgelesen werden. 
+Über die Systemweiten funktionalen und nichtfunktionalen Anforderungen kann im link:../requirements/system-wide_requirements.adoc[Anforderungsdokument] nachgelesen werden. 
 
 [cols="1,1,2"] 
 |===
 |Anforderung |Systemkomponente |Architekturmechanismen
 
-|UC01 (link)
+|link:../requirements/use_case_01.inc.adoc[UC01]
 a|   * Webanwendung
      * Weboberfläche 
      * Datenbank 
@@ -70,7 +69,7 @@ a|  * Sicherheit
     * Session-Management
     * Error Management
 
-|UC03 (link)
+|link:../requirements/use_case_01.inc.adoc[UC03]
 a|   * Webanwendung
      * Weboberfläche 
      * Buchung
@@ -84,7 +83,7 @@ a|  * Zugriffsschutz
     * Error Management
 
 
-|UC05 (link)
+|link:../requirements/use_case_01.inc.adoc[UC05]
 a|   * Webanwendung
      * Weboberfläche 
      * Buchung
@@ -175,7 +174,7 @@ a|  * Kompatibilität
 . **Archivierung** 
 * [.underline]#Zustand#: Implementation (bestehendes System) 
 * [.underline]#Zweck#: Daten dürfen im Normalbetrieb bei möglichen Systemausfällen oder   Anwendungsfehlern nicht verloren gehen
-* [.underline]#Eigenscahften/Attribute#: Backups werden im Moment täglich von Datenbank und Bilddateien angelegt, wobei stets nur die letzten 5 Backups behalten werden
+* [.underline]#Eigenschaften/Attribute#: Backups werden im Moment täglich von Datenbank und Bilddateien angelegt, wobei stets nur die letzten 5 Backups behalten werden
 * [.underline]#Funktion#: Automatisches Backup von Datenbank und Bilddateien wird auf dem Fakultätsserver angelegt 
 
 . **Kommunikation**
@@ -276,7 +275,7 @@ Schutz vor Datenverlust (adressiert Risk No. 6)
  
 * **Model**  = Schicht der Geschäftslogik und ihrer Anwendung 
 
-    Bild: Domain-Modell
+    image:Dokumentationen\requirements\images\domain_model.svg:domain_model.svg[]
 
 * **View** = Schicht der HTML-Verarbeitung zur Darstellung der Ressourcen
 * **Controller** = Schicht der Requestverarbeitung durch http-Anfragen 
