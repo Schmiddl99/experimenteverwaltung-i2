@@ -95,9 +95,9 @@ Beim Black Box Testing liegt das Augenmerk auf den Ein- und Ausgaben. Es ist kei
 
 Vorteil: 
 
-* Tester kann ein Nutzer seien 
-* Tester braucht keine Technischen Vorkenntnisse 
-* Wichtiger Blick auf Software aus Tester Sicht 
+* Tester kann ein Nutzer sein 
+* Tester braucht keine technischen Vorkenntnisse 
+* Wichtiger Blick auf Software aus Testersicht 
 
 Nachteile: 
 
@@ -111,7 +111,7 @@ Wichtig:
 * Erstellung einer Testliste mit möglichen richtigen Werten 
 
 === Negativtests
-Beim Negativtest wird überprüft, ob bei einer Fehlerhaften Eingabe in das Programm dieses richtig reagiert, z.B. mit einer Fehlermeldung. Er werden absichtlich ungültige Werte eingegeben oder Masken nicht vollständig ausgefüllt, um eventuelle Fehler zu erzeugen. Auch Bedienfehler sollten hier beachtet werden. Hierbei können auch eventuelle Verbesserungen der Benutzerfreundlichkeit festgestellt werden. 
+Beim Negativtest wird überprüft, ob bei einer fehlerhaften Eingabe in das Programm dieses richtig reagiert, z.B. mit einer Fehlermeldung. Er werden absichtlich ungültige Werte eingegeben oder Masken nicht vollständig ausgefüllt, um eventuelle Fehler zu erzeugen. Auch Bedienfehler sollten hier beachtet werden. Hierbei können auch eventuelle Verbesserungen der Benutzerfreundlichkeit festgestellt werden. 
 
 Wichtig: 
 
