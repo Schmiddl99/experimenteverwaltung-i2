@@ -11,23 +11,23 @@ Alena Bischoff alena.bischoff@htw-dresden.de
 == Rückblick auf das Projekt bisher
 
 === Einleitung
-Zum Abschluss der ersten Hälfte der Projektverwirklichung möchten wir noch einmal einen prüfenden Blick auf die bisherige Arbeitsweise, Bewältigung und die Einhaltung der gesetzten Qualitätsmanagement Regeln werfen und ein Fazit aus dem Erlernten ziehen.
+Zum Abschluss der ersten Hälfte der Projektverwirklichung möchten wir noch einmal einen prüfenden Blick auf die bisherige Arbeitsweise, Bewältigung und die Einhaltung der gesetzten Qualitätsmanagement-Regeln werfen und ein Fazit aus dem Erlernten ziehen.
 
 === Verbessern der Meeting Qualität
 
-Unser wöchentliches Meeting fand stets am Dienstagabend statt. Hier hatten wir zu Anfangs einige Probleme: die zu bearbeiteten Dokumente wurden per Screensharing geteilt, wir unterhielten uns zu den Problemen, aber leider gab es oft Verwirrungen, an welcher Stelle wir uns gerade befinden, ob durch mangelnde Aufmerksamkeit oder ungewollte Gedankensprünge bei der Klärung von Problemen. Ebenfalls gab es ein Fehlen von Feedback, ob sie mit den Änderungen und Bestimmungen zufrieden sind, es meldeten sich nur wenige Personen zu Wort. Dadurch zogen sich die Gespräche in die Länge, viele der Meetings zogen sich bis zu 3 Stunden.
+Unser wöchentliches Meeting fand stets am Dienstagabend statt. Hier hatten wir zu Anfangs einige Probleme: Die zu bearbeitenden Dokumente wurden per Screensharing geteilt, wir unterhielten uns zu den Problemen, aber leider gab es oft Verwirrungen, an welcher Stelle wir uns gerade befinden, ob durch mangelnde Aufmerksamkeit oder ungewollte Gedankensprünge bei der Klärung von Problemen. Ebenfalls gab es ein Fehlen von Feedback, ob sie mit den Änderungen und Bestimmungen zufrieden sind, es meldeten sich nur wenige Personen zu Wort. Dadurch zogen sich die Gespräche in die Länge, viele der Meetings zogen sich bis zu 3 Stunden.
 
-Diesen unnötig langen Besprechungen wollten wir entgegenwirken. Deshalb entschieden wir uns, einen Redeführer / Meeting Leiter einzusetzen. Dieser gab uns vorab die Themen als Liste, mit der ungefähren Zeiteinschätzung pro Thema. Er fungierte als Redeführer, stellte die Dokumente und Probleme vor, und leitete Diskussionen. Wurden Absprachen getroffen, wurde gefragt, ob jemand etwas gegen die Anpassung hat, bei Nichtmeldung wurde es als Stille Zustimmung gewertet. Ebenfalls steuerten wir Wortmeldungen und Einrufe über das nutzen des “Hand heben” Systems auf MS Teams. Meldete man sich, wurde mal aufgerufen und durfte Fragen oder Einwände einbringen. So wurde keine Person in seinem Redefluss und Erklärungen gestört. Die Meetings wurden zusätzlich von einem Protokollanten dokumentiert, um Aufgaben festzuhalten und im Nachgang zu verteilen.
-All diese Maßnahmen trugen zu einer Enormen Verbesserung der Meetings bei, wir konnten unser selbst gestecktes Ziel von 2 Stunden pro Meeting zuverlässig halten und somit auch die Produktivität und Moral steigern.
+Diesen unnötig langen Besprechungen wollten wir entgegenwirken. Deshalb entschieden wir uns, einen Redeführer / Meeting Leiter einzusetzen. Dieser gab uns vorab die Themen als Liste, mit der ungefähren Zeiteinschätzung pro Thema. Er fungierte als Redeführer, stellte die Dokumente und Probleme vor, und leitete Diskussionen. Wurden Absprachen getroffen, wurde gefragt, ob jemand etwas gegen die Anpassung hat, bei Nichtmeldung wurde es als Stille Zustimmung gewertet. Ebenfalls steuerten wir Wortmeldungen und Einrufe über das nutzen des “Hand heben” Systems auf MS Teams. Meldete man sich, wurde man aufgerufen und durfte Fragen oder Einwände einbringen. So wurde keine Person in ihrem Redefluss und ihren Erklärungen gestört. Die Meetings wurden zusätzlich von einem Protokollanten dokumentiert, um Aufgaben festzuhalten und im Nachgang zu verteilen.
+All diese Maßnahmen trugen zu einer enormen Verbesserung der Meetings bei, wir konnten unser selbst gestecktes Ziel von 2 Stunden pro Meeting zuverlässig halten und somit auch die Produktivität und Moral steigern.
 
 === Ansprechen von Problemen 
 
-Keine Teamarbeit verläuft reibungsfrei, dies war uns allen von Anfang an klar. Deshalb waren wir um so dankbarer darüber, das wir Probleme offen ansprechen konnten. Über Misstände in der Arbeitsbewältigung konnte offen diskutiert werden und die Gründe dafür ermittelt werden. Innerhalb maximal einer Iteration konnten Verbesserungen oder das Einstellen des Problems festgestellt werden.
+Keine Teamarbeit verläuft reibungsfrei, dies war uns allen von Anfang an klar. Deshalb waren wir umso dankbarer darüber, dass wir Probleme offen ansprechen konnten. Über Misstände in der Arbeitsbewältigung konnte offen diskutiert werden und die Gründe dafür ermittelt werden. Innerhalb maximal einer Iteration konnten Verbesserungen oder das Einstellen des Problems festgestellt werden.
 Folgende Probleme wurden wärend der Projektarbeit festgestellt und bewältigt:
 
 image::qm_problems.PNG[Probleme]
 
-Während der Arbeit mit unserem Auftraggeber konnten wir ebenfalls Probleme erkennen. Oftmals fiehlen uns bessere Lösungen für die Probleme des Stakeholders ein, welche aber oftmals nicht angenommen wurden und sich für eine andere Version entschieden wurde. Dies führte zu einem frustrierten Projektteam. Hilfe bekamen wir dazu in der Konsultation mit Herrn Anke
+Während der Arbeit mit unserem Auftraggeber konnten wir ebenfalls Probleme erkennen. Oftmals fielen uns bessere Lösungen für die Probleme des Stakeholders ein, welche aber oftmals nicht angenommen wurden und sich für eine andere Version entschieden wurde. Dies führte zu einem frustrierten Projektteam. Hilfe bekamen wir dazu in der Konsultation mit Herrn Anke
 // Ich brauch hier mal Hilfe, keinen Plan was ich hier so schreiben soll… 
 
 
@@ -44,5 +44,5 @@ Der Verlauf der Arbeit im Meeting wurde ebenfalls durch die Verwendung einer Tra
 
 image::qm_work.PNG[Probleme]
 
-Durch das Ausscheiden einiger Teammitgliedern im nächsten Semester wissen wir, das hier einige Hürden auf uns zukommen werden, aber mit Blick auf das bisher absolvierte Projekt können wir uns aber sicher seien, das wir diese ebenfalls überwinden können.
+Durch das Ausscheiden einiger Teammitgliedern im nächsten Semester wissen wir, das hier einige Hürden auf uns zukommen werden, aber mit Blick auf das bisher absolvierte Projekt können wir uns sicher seien, das wir diese ebenfalls überwinden können.
 
