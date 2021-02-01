@@ -1,5 +1,5 @@
 = Iteration Plan 02: {project-name}
-Tobias Karsch <tobias.karsch@htw-dresden.de>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
+Tobias Karsch <tobias.karsch@htw-dresden.de>; Tim Würzburg <tim.wuerzburg@htw-dresden.de>; Gregor Müller <mueller.gregor@htw-dresden.de>
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
@@ -26,12 +26,12 @@ include::../_includes/default-attributes.inc.adoc[]
 == Wesentliche Ziele
 //Nennen Sie 1-5 wesentliche Ziele für die Iteration.
 
-* Erreichen Bestätigung der Vision durch Kunden, Über die Initialen Anforderungen herrscht Einigkeit.
-* Erhebung der Systemweiten Anforderungen
+* erreichen der Bestätigung der Vision durch den Kunden; Über die initialen Anforderungen herrscht Einigkeit.
+* erhebung der systemweiten Anforderungen
 * Use Case Model
 * Risikoliste
 * Wireframes für jeden essentiellen Funktionsschritt nach aktuellem Anforderungskatalog
-* **Wissensaustausch:** Interessierte Mitglieder sollen ein GitHub-Tutorial erhalten, was einerseits die Arbeit im Team fördert als auch einen weiteren Mehrwert innerhalb dieses Moduls schafft.
+* **Wissensaustausch:** Interessierte Mitglieder sollen ein GitHub-Tutorial erhalten, was einerseits die Arbeit im Team fördert anderseits auch einen weiteren Mehrwert innerhalb dieses Moduls schafft.
 
 
 == Aufgabenzuordnung
@@ -60,7 +60,7 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
  
 |Git-Workshop |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51222488[#31] |B |1 |DUE: 21.12. |{RB} {GM}
 
-|System Wide Requirements: adoc anlegen mit aktuellem Stand |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51719987[#60] |B |1 |DUE:27.12. |{WE}
+|System Wide Requirements: ADOC anlegen mit aktuellem Stand |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51719987[#60] |B |1 |DUE:27.12. |{WE}
 
 |Projektplan erstellen |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-50190577[#4] |B |3 |DUE: 31.12 |PM 
 
@@ -114,7 +114,7 @@ a|* Nach dem Entwurf der ersten Wireframes wurden diese teilweise wieder verworf
 
 * Der Kunde hat die überarbeitete Version per Mail (schriftlich) bestätigt. 
 * Jedes Element der Vision findet sich in den _system wide requirements_ abgedeckt.
-* 6 Use Cases wurden dokumentiert und in einem Modell zusammengefasst (Doku liegt als adoc vor)
+* 6 Use Cases wurden dokumentiert und in einem Modell zusammengefasst (Doku liegt als ADOC vor)
 * 5 Risiken und entsprechende Gegenmaßnahmen wurden identifiziert. Die Dokumentation liegt als .csv vor.
 * Für jeden dokumentierten Use Case existiert ein Wireframe. Jede dokumentierte Anforderung lässt sich anhand mindestens eines Wireframes erläutern.
 * Der GitHub-Workshop wurde durchgeführt und aufgezeichnet.
@@ -129,29 +129,25 @@ a|* Nach dem Entwurf der ersten Wireframes wurden diese teilweise wieder verworf
 | Teilnehmer | gesamtes Team
 | Projektstatus: *gelbgrün*	a| 
 * Ziel: Erreichung LCO-Meilenstein - Inception Phase. Nicht erreicht.
-** **Understand what to build:** Grundsätzlich verstanden. *Erfolgskriterien* sind noch nicht zu 100% klar - z.B. Ablaufplan des Buchens. Journal wurde angenommen, *Konfliktpunkt* ist die Kopierfunktion. Grenzen wurden gesetzt: Aussprache gegen mobile Version. Oberstes Erfolgskriterium: Leichte Verständlichkeit (In Design und Sprache anwendergerecht) 
+** **Understand what to build:** Grundsätzlich verstanden. *Erfolgskriterien* sind noch nicht zu 100% klar - z.B. Ablaufplan des Buchens. Journal wurde angenommen. *Konfliktpunkt* ist die Kopierfunktion. Grenzen wurden gesetzt: Aussprache gegen mobile Version. Oberstes Erfolgskriterium: Leichte Verständlichkeit (in Design und Sprache anwendergerecht) 
 ** **Identify key system functionality:** Die kritischsten Anforderungen wurden identifiziert: *Buchungen durchführen*, *Buchungen anzeigen* (-> Dozentenwoche), Historie (als Sahnehäubchen?)  
 
-** *Determine at least one possible solution:* Ja, die Vision ist technisch umsetzbar.
+** *Determine at least one possible solution:* Die Vision ist technisch umsetzbar.
 
 ** *Understand:* 
 *** Risiken sind verstanden 
-*** Wir bekommen kein Geld (-> nur "Zeitkosten" fallen an)
+*** wir bekommen kein Geld (-> nur "Zeitkosten" fallen an)
 *** Zeitplan: wurde *nicht* abgestimmt. (Orientierung an Empfelung aus Vorlesung)
 
 * *Überprüfung selbst gesteckter Iterationsziele: Y/N (4/2)*
 ** Der Kunde hat die überarbeitete Version per Mail (schriftlich) bestätigt. *Y* 
 ** Jedes Element der Vision findet sich in den system wide requirements abgedeckt. *Y*
-** 6 Use Cases wurden dokumentiert und in einem Modell zusammengefasst (Doku liegt als adoc vor) *N* 
+** 6 Use Cases wurden dokumentiert und in einem Modell zusammengefasst (Doku liegt als ADOC vor) *N* (4 Use Cases ausgearbeitet, Rest nur erfasst, ADOCs liegen vor) 
 
-Nein –4 Use Cases ausgearbeitet, Rest nur erfasst, adocs liegen vor 
-
-** 5 Risiken und entsprechende Gegenmaßnahmen wurden identifiziert. Die Dokumentation liegt als .csv vor. *N* 
-
-5 Risiken liegen vor, aber nicht als .csv 
+** 5 Risiken und entsprechende Gegenmaßnahmen wurden identifiziert. Die Dokumentation liegt als CSV vor. *N* (5 Risiken liegen vor, aber nicht als .csv) 
 
 ** Für jeden dokumentierten Use Case existiert ein Wireframe. Jede dokumentierte Anforderung lässt sich anhand mindestens eines Wireframes erläutern. *Y*
-
+    
 -> Drucken-Funktion fehlt noch (Brauchen wir auch nicht?) 
 
 -> Kopierfunktion nicht 
