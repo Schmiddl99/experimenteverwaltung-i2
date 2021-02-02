@@ -451,13 +451,15 @@ a| * Dozent befindet sich auf der Bestätigungsseite
 
 |===
 
-|*Beschreibung* |
+|*Beschreibung* |Es wird erwartet, dass Funktionen, die aktuell nicht verfügbar sind, nicht aufgerufen werden können. Im Speziellen betrifft das die Schaltfläche zur Warenkorb-Ansicht, wenn noch kein Experiment in den Warenkorb hinzugefügt wurde.
 
 |*Vorbedingungen und benötigte Daten*
-a| * 
+a| * ein Dozent ist mit validen Zugangsdaten angemeldet
+* es wurde eine Buchung, mit validen Voreinstellungen, begonnen
 
 |*Nachbedingung*
-a| *
+a| * Warenkorb-Ansicht ist nicht aufrufbar
+* Schaltflächen dazu sind deaktiviert
  
 |===
 
@@ -466,28 +468,37 @@ a| *
 
 |===
 
-|*Beschreibung* |
+|*Beschreibung* |Eine Testperson nutzt die Anwendung mit einem Abstand von 50cm zum Bildschirm. Dabei wird erwartet, dass alle Texte und Schaltflächen gut lesbar sind und Grafiken von guter grafischer Qualität sind.
 
 |*Vorbedingungen und benötigte Daten*
-a| * 
+a| * ein Experiment
+* valides Datum, valide Uhrzeit und valider Studiengang
+* ein Testzugang für einen Dozenten sowie für einen Admin mit gültigen Anmeldedaten
 
 |*Nachbedingung*
-a| *
+a| * während eines Buchungsvorgangs sind die Erwartungen erfüllt
+* beim Betrachten des Journals und der eigenen Dozentenwoche sind die Erwartungen erfüllt
+* beim Betrachten der Dozentenwoche aller Dozenten sowie der Statistik als Admin sind die Erwartungen erfüllt 
  
 |===
 
 
-==== TC25 - NFAU-2 - Eingaben geschehen nicht in Pop-Ups
+==== TC25 - NFAU-2 - Eingaben geschehen nicht in Pop-Ups (manueller Test)
 
 |===
 
-|*Beschreibung* |
+|*Beschreibung* |Eine Testperson nutzt alle Funktionen der Anwendung. Dabei wird erwartet, dass keine Eingaben über Pop-Ups erfolgen.
 
 |*Vorbedingungen und benötigte Daten*
-a| * 
+a| * ein Experiment
+* valides Datum, valide Uhrzeit und valider Studiengang
+* ein Testzugang für einen Dozenten sowie für einen Admin mit gültigen Anmeldedaten
 
 |*Nachbedingung*
-a| * 
+a| * während eines Buchungsvorgangs sind die Erwartungen erfüllt
+* beim Betrachten und Einstellen des Journals und der eigenen Dozentenwoche sind die Erwartungen erfüllt
+* beim Bearbeiten und Löschen von Buchungen sind die Erwartungen erfüllt
+* beim Betrachten und Einstellen der Dozentenwoche aller Dozenten sowie der Statistik als Admin sind die Erwartungen erfüllt 
 
 |===
 
@@ -496,13 +507,16 @@ a| *
 
 |===
 
-|*Beschreibung* |
+|*Beschreibung* |Wird die Verbindung zum Server während einer Buchung unterbrochen (durch Internetausfall, Browser bzw. Tab schließen o.Ä.) gehen bereits gewählte Voreinstellungen oder Experimente nicht verloren. Dazu wird eine Testperson während eines Buchungsprozesses, bei welchem bereits Voreinstellungen getätigt wurden und ein Experiment in den Warenkorb gelegt wurde, einen Internetausfall simulieren.
 
 |*Vorbedingungen und benötigte Daten*
-a| * 
+a| * ein Dozent ist mit validen Zugangsdaten angemeldet
+* valides Datum, valide Uhrzeit und valider Studiengang
+* ein Experiment
 
 |*Nachbedingung*
-a| *
+a| * nach dem simulierten Internetausfall sind die Voreinstelllungen noch ausgewählt und das Experiment befindet sich noch im Warenkorb
+* die Buchung ist erfolgreich abgeschlossen
  
 |===
 
