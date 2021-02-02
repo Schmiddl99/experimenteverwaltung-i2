@@ -14,24 +14,24 @@ include::../_includes/default-attributes.inc.adoc[]
 | Datum
 
 | Beginn der Iteration | 17.12.2020
-| TS-M2 | 17.12.2020?
+| TS-M2 | 17.12.2020
 |Git-Workshop für Teammitglieder
 |21.12.2020
 | Ende der Iteration 
 | 31.12.2020
-| LCO    |-
+| LCO    |nicht erreicht
 |===
 
 
 == Wesentliche Ziele
 //Nennen Sie 1-5 wesentliche Ziele für die Iteration.
 
-* erreichen der Bestätigung der Vision durch den Kunden; Über die initialen Anforderungen herrscht Einigkeit.
-* erhebung der systemweiten Anforderungen
+* erreichen der Bestätigung der Vision durch den Kunden; über die initialen Anforderungen herrscht Einigkeit
+* Erhebung der systemweiten Anforderungen
 * Use Case Model
 * Risikoliste
 * Wireframes für jeden essentiellen Funktionsschritt nach aktuellem Anforderungskatalog
-* **Wissensaustausch:** Interessierte Mitglieder sollen ein GitHub-Tutorial erhalten, was einerseits die Arbeit im Team fördert anderseits auch einen weiteren Mehrwert innerhalb dieses Moduls schafft.
+* *Wissensaustausch:* Interessierte Mitglieder sollen ein GitHub-Tutorial erhalten, was einerseits die Arbeit im Team fördert, andererseits auch einen weiteren Mehrwert innerhalb dieses Moduls schafft.
 
 
 == Aufgabenzuordnung
@@ -43,39 +43,39 @@ Die in dieser Iteration geplanten Aufgaben wurden in der To-Do-List dargestellt:
 
 //Übernommen aus dem Board Iteration Planning auf Github. Referenz von Issues: Link[#Issue_ID]; link durch klick auf drei Punkte der Aufgabe->Copy card link
 
-Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
-[%header]
+Die folgenden Aufgaben werden in dieser Iteration bearbeitet (Abbildung des Boards):
+[%header, cols="2,1,1,1,1,4"]
 |===
-| Aufgabe bzw. Beschreibung |#Github-Issue |Schätzung der Größe (Skala A-C; A=höchster Aufwand) | Priorität (Skala 1-3; 1=höchste Prio) |Status | Zugewiesen (Name) 
+| Aufgabe bzw. Beschreibung |#Github-Issue |Schätzung der Größe (Skala A-C; A=höchster Aufwand) | Priorität (Skala 1-3; 1=höchste Prio) |Status | Zugewiesen (Mail) 
 
-|Erarbeitung "System wide requirements" nach TS-M2 |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51185141[#28] | A | 1 | DUE: 18.12.20 |siehe Issue
+|Erarbeitung "System wide requirements" nach TS-M2 |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51185141[#28] | A | 1 | DUE: 18.12.20 |{AB} {TW} {tki} {GM} {JS} {tka}
 
-|Meeting Coach Anforderungsproblematik |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51434318[#43] |A |1 |DUE: nach Ferien?? |{tka}
+|Meeting Coach Anforderungsproblematik |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51434318[#43] |A |1 |DUE: nach Ferien |{tka}
 
-|GitHub-Workshop vorbereiten |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51307222[#35] |A |1 |DUE:19.12.20 |{RB} {GM}
+|GitHub-Workshop vorbereiten |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51307222[#35] |A |1 |DUE: 19.12.20 |{RB} {GM}
 
-|Existierende Use Cases vervollständigen |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51308341[#39] |A |1 | DUE: 23.12 |siehe Issue
+|Existierende Use Cases vervollständigen |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51308341[#39] |A |1 | DUE: 23.12 |{AB} {TW} {tki} {gm} {js} {rb} {we}
 
-|TS-M3 | https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51720237[#56] |A |2 |DUE:29.12. |{TW}
+|TS-M3 | https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51720237[#56] |A |2 |DUE: 29.12. |{TW}
  
 |Git-Workshop |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51222488[#31] |B |1 |DUE: 21.12. |{RB} {GM}
 
-|System Wide Requirements: ADOC anlegen mit aktuellem Stand |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51719987[#60] |B |1 |DUE:27.12. |{WE}
+|System Wide Requirements: ADOC anlegen mit aktuellem Stand |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51719987[#60] |B |1 |DUE: 27.12. |{WE}
 
 |Projektplan erstellen |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-50190577[#4] |B |3 |DUE: 31.12 |PM 
 
 |ESSENCE: Projekt updaten |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51439792[#51]|C 
-|3 |DUE:31.12. |{TKa}
+|3 |DUE: 31.12. |{TKa}
 
 |Vision überarbeiten: Neue Stakeholderziele + Zukunftsaussichten für kommendes Projekt |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51433798[#47] |C |2 |DUE: 23.12. |{TKa}
 
-|Vision 2.0 zur Bestätigung MH vorlegen |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51434366[#42] |C |3 |DUE:31.12 |{TW}
+|Vision 2.0 zur Bestätigung MH vorlegen |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51434366[#42] |C |3 |DUE: 31.12 |{TW}
 
 |Risk List: Datenschutz |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51433827[#46] |C |2 |DUE: 22.12.20 |{TW}
 
 |Glossarupdate |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51307087[#50] |C |3 |DUE: 31.12. |{Js} {WE}
 
-|Wireframe: Druckansicht Dozentenwoche |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51434289[#41] |C |2 |DUE: 28.12.? |{GM} {AB}
+|Wireframe: Druckansicht Dozentenwoche |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51434289[#41] |C |2 |DUE: 28.12. |{GM} {AB}
 
 |Wireframe: Header-Menü (Drop-Down) für Studiengang (siehe Anforderungen) und Uhrzeitauswahl (VL-Zeit) |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51434260[#44] |C |2 |DUE: 28.12.? |{GM} {AB}
 
@@ -83,7 +83,7 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 
 |Wireframe: [Journalansicht] für Dozenten |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51720164[#59] |C |2 |DUE: 28.12. |{AB} {GM}
 
-|Dok: Zugänge (Anwendung, VM...) in Teams anlegen |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51720214[#57] |C |3 |DUE:31.12. |{RB}
+|Dok: Zugänge (Anwendung, VM...) in Teams anlegen |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51720214[#57] |C |3 |DUE: 31.12. |{RB}
 
 |Iteration Plan Pflegen |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51666243[#54] |x |x |Fortlaufende Aufgabe |{TKa}
 
@@ -97,27 +97,27 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 == Probleme (optional)
 //Optional: Führen Sie alle Probleme auf, die in dieser Iteration adressiert werden sollen. Aktualisieren Sie den Status, wenn neue Probleme bei den täglichen / regelmäßigen Abstimmungen berichtet werden.
 
-[%header, cols="2,1,3"]
+[%header, cols="1,1,3"]
 |===
 | Problem | Status | Notizen
 | Feature Creep | entgegengewirkt 
-a|* Nach dem Entwurf der ersten Wireframes wurden diese teilweise wieder verworfen, da von TS-Seite veränderte Anforderungen gestellt wurden.
-* Verworfen werden mussten u.a. die Deadline, die Benachrichtigung von Dozenten, die Pop-Up-Buchungseingabe.
+a|* Nach dem Entwurf der ersten Wireframes wurden diese teilweise wieder verworfen, da von TS-Seite veränderte Anforderungen gestellt wurden
+* Verworfen werden mussten u.a. die Deadline, die Benachrichtigung von Dozenten, die Pop-Up-Buchungseingabe
 * Größte Sorgen bereitet uns die "Kopierfunktion für ein ganzes Semester". Diese ist in unseren Augen unpraktisch, stark fehleranfällig - und steht im Gegensatz zu einem "Buchungssystem", da hier im Grunde eine stetig zu replizierende Vorlage gefordert wird (Zielkonflikt).
-* Eine Konsultation des Coaches sowie eine Bestätigung der überarbeiteten Vision durch TS sind angedacht. (Stand:22.12.20)
-* Update 07.01.21: Im TS-M3 legten wir die Problematik offen. Alle Beteiligten erkannten die Schwierigkeit. Wir konnten uns darauf einigen, die Kopierfunktion in einer _Zukunftsvision_ vorerst nur zu beschreiben. Die Arbeit des Teams fokussiert sich primär auf das funktionierende Buchungssystem.
+* Eine Konsultation des Coaches sowie eine Bestätigung der überarbeiteten Vision durch TS sind angedacht (Stand:22.12.20)
+* Update 07.01.21 (Iteration 3): Im TS-M3 legten wir die Problematik offen. Alle Beteiligten erkannten die Schwierigkeit. Wir konnten uns darauf einigen, die Kopierfunktion in einer _Zukunftsvision_ vorerst nur zu beschreiben. Die Arbeit des Teams fokussiert sich primär auf das funktionierende Buchungssystem.
 |===
 
 
 == Bewertungskriterien
 //Eine kurze Beschreibung, wie Erfüllung die o.g. Ziele bewertet werden sollen.
 
-* Der Kunde hat die überarbeitete Version per Mail (schriftlich) bestätigt. 
-* Jedes Element der Vision findet sich in den _system wide requirements_ abgedeckt.
-* 6 Use Cases wurden dokumentiert und in einem Modell zusammengefasst (Doku liegt als ADOC vor)
+* Der Kunde hat die überarbeitete Version per Mail (schriftlich) bestätigt
+* Jedes Element der Vision findet sich in den _system wide requirements_ abgedeckt
+* 6 Use Cases wurden dokumentiert und in einem Modell zusammengefasst (Doku liegt als .adoc vor)
 * 5 Risiken und entsprechende Gegenmaßnahmen wurden identifiziert. Die Dokumentation liegt als .csv vor.
-* Für jeden dokumentierten Use Case existiert ein Wireframe. Jede dokumentierte Anforderung lässt sich anhand mindestens eines Wireframes erläutern.
-* Der GitHub-Workshop wurde durchgeführt und aufgezeichnet.
+* Für jeden dokumentierten Use Case existiert ein Wireframe. Jede dokumentierte Anforderung lässt sich anhand mindestens eines Wireframes erläutern
+* Der GitHub-Workshop wurde durchgeführt und aufgezeichnet
 
 == Assessment
 //In diesem Abschnitt werden die Ergebnisse und Maßnahmen der Bewertung erfasst und kommunziert. Die Bewertung wird üblicherweise am Ende jeder Iteration durchgeführt. Wenn Sie diese Bewertungen nicht machen, ist das Team möglicherweise nicht in der Lage, die eigene Arbeitsweise ("Way of Working") zu verbessern.
@@ -129,30 +129,37 @@ a|* Nach dem Entwurf der ersten Wireframes wurden diese teilweise wieder verworf
 | Teilnehmer | gesamtes Team
 | Projektstatus: *gelbgrün*	a| 
 * Ziel: Erreichung LCO-Meilenstein - Inception Phase. Nicht erreicht.
-** **Understand what to build:** Grundsätzlich verstanden. *Erfolgskriterien* sind noch nicht zu 100% klar - z.B. Ablaufplan des Buchens. Journal wurde angenommen. *Konfliktpunkt* ist die Kopierfunktion. Grenzen wurden gesetzt: Aussprache gegen mobile Version. Oberstes Erfolgskriterium: Leichte Verständlichkeit (in Design und Sprache anwendergerecht) 
-** **Identify key system functionality:** Die kritischsten Anforderungen wurden identifiziert: *Buchungen durchführen*, *Buchungen anzeigen* (-> Dozentenwoche), Historie (als Sahnehäubchen?)  
+** *Understand what to build:* Grundsätzlich verstanden. *Erfolgskriterien* sind noch nicht zu 100% klar - z.B. Ablaufplan des Buchens. Journal wurde angenommen. *Konfliktpunkt* ist die Kopierfunktion. Grenzen wurden gesetzt: Aussprache gegen mobile Version. Oberstes Erfolgskriterium: Leichte Verständlichkeit (in Design und Sprache anwendergerecht) 
+** *Identify key system functionality:* Die kritischsten Anforderungen wurden identifiziert: *Buchungen durchführen*, *Buchungen anzeigen* (-> Dozentenwoche), Historie (als Sahnehäubchen?)  
 
-** *Determine at least one possible solution:* Die Vision ist technisch umsetzbar.
+** *Determine at least one possible solution:* Die Vision ist technisch umsetzbar
 
 ** *Understand:* 
 *** Risiken sind verstanden 
 *** wir bekommen kein Geld (-> nur "Zeitkosten" fallen an)
-*** Zeitplan: wurde *nicht* abgestimmt. (Orientierung an Empfelung aus Vorlesung)
+*** Zeitplan: wurde *nicht* abgestimmt (Orientierung an Empfelung aus Vorlesung)
 
 * *Überprüfung selbst gesteckter Iterationsziele: Y/N (4/2)*
-** Der Kunde hat die überarbeitete Version per Mail (schriftlich) bestätigt. *Y* 
-** Jedes Element der Vision findet sich in den system wide requirements abgedeckt. *Y*
-** 6 Use Cases wurden dokumentiert und in einem Modell zusammengefasst (Doku liegt als ADOC vor) *N* (4 Use Cases ausgearbeitet, Rest nur erfasst, ADOCs liegen vor) 
+** Der Kunde hat die überarbeitete Version per Mail (schriftlich) bestätigt *Y* 
+** Jedes Element der Vision findet sich in den system wide requirements abgedeckt *Y*
+** 6 Use Cases wurden dokumentiert und in einem Modell zusammengefasst (Doku liegt als .adoc vor) *N* +
+(4 Use Cases ausgearbeitet, Rest nur erfasst, .adocs liegen vor) 
 
-** 5 Risiken und entsprechende Gegenmaßnahmen wurden identifiziert. Die Dokumentation liegt als CSV vor. *N* (5 Risiken liegen vor, aber nicht als .csv) 
+** 5 Risiken und entsprechende Gegenmaßnahmen wurden identifiziert. Die Dokumentation liegt als .csv vor. *N* +
+(5 Risiken liegen vor, aber nicht als .csv) 
 
 ** Für jeden dokumentierten Use Case existiert ein Wireframe. Jede dokumentierte Anforderung lässt sich anhand mindestens eines Wireframes erläutern. *Y*
-    
--> Drucken-Funktion fehlt noch (Brauchen wir auch nicht?) 
++
+-> Drucken-Funktion fehlt noch (Brauchen wir auch nicht; übernimmt der Browser)
++
+-> Kopierfunktion nicht bearbeitet; siehe Abschnitt Probleme
+//Keiner dieser Links funktioniert!
+//xref:Probleme[Probleme]
+//xref:_Probleme[Probleme]
+//<<Probleme>>
+//<<link-Probleme, Probleme>>
 
--> Kopierfunktion nicht 
-
-** Der GitHub-Workshop wurde durchgeführt und aufgezeichnet. *Y*
+** Der GitHub-Workshop wurde durchgeführt und aufgezeichnet *Y*
 |===
 
 [%header, cols="1,3"]
