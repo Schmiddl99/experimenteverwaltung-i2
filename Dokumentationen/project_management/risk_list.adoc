@@ -18,7 +18,7 @@ Dabei werden folgende Attribute verwendet:
 
 == Risiken
 
-Die Risiken sind in folgender Tabelle: <<table_risks>> dargestellt. Das Datum des Dokuments oben gibt an, wann die Risikoliste zuletzt aktualisiert wurde.
+Die Risiken sind in folgender Tabelle: <<table_risks>> dargestellt. Das Datum des Dokuments (oben) gibt an, wann die Risikoliste zuletzt aktualisiert wurde.
 
 
 // Die inkludierte csv-Datei "risks.csv" verwendet `;` Semmikolons als Trennzeichen. Achten Sie beim Export als csv-Datei auf das Angeben des entsprechenden Trennzeichens. Verwenden Sie stattdessen `,` Kommas, kann das Tabellenattribut `separator=` weggelassen werden oder muss entprechend angepasst werden.
