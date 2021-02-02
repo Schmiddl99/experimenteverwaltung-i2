@@ -11,7 +11,7 @@ Alena Bischoff alena.bischoff@htw-dresden.de
 == Teamregeln
 
 === Dialog miteinander
-Wichtig ist, das im Team offen und ehrlich miteinander diskutiert werden kann. Hierbei sollen Rollen (bspw. Teamleiter, Developer…) außer Acht gelassen werden und auf einer gemeinsamen Ebene, nämlich dem Teammitglied, miteinander gesprochen werden. 
+Wichtig ist, das im Team offen und ehrlich miteinander diskutiert werden kann. Hierbei sollen Rollen (bspw. Teamleiter, Developer…) außer Acht gelassen werden und auf einer gemeinsamen Ebene, nämlich von Teammitglied zu Teammitglied, miteinander gesprochen werden. 
 
 Wichtige Punkte sind: 
 
@@ -28,7 +28,7 @@ Deswegen:
 * Hilfe soll Angeboten und angenommen werden 
 
 === Verantwortung
-Verantwortung bedeutet die Übernahme von schlechten sowie guten Ergebnissen einzugestehen und zu tragen. Wichtig ist hier, das bei negativen auftreten niemals jemanden die Schuld gegeben werden sollte. 
+Verantwortung bedeutet die Übernahme von schlechten sowie guten Ergebnissen einzugestehen und zu tragen. Wichtig ist hier, das beim auftreten von Fehlern und Problemen niemals jemanden die Schuld gegeben werden sollte. 
 
 Deswegen: 
 
@@ -52,7 +52,7 @@ Bei Besprechung wichtiger Dokumente können Vorgänge und Bearbeitung dieser oft
 Deshalb: 
 
 * Ablauf der Bearbeitung vorher besprechen 
-* Meetingführer bestimmen
+* Redeführer bestimmen
 * Einwürfe und Zwischenrufe unterbinden  
 * Themen nacheinander absprechen und Zwischenstände absegnen 
 * Schweigen wird als Zustimmung gewertet 
@@ -70,8 +70,9 @@ Wichtige Punkte sind:
 ** Was ist noch offen? 
 ** Gab es Dinge, die mich bei der Erledigung behindert haben? 
 * Redner gibt immer an Teilnehmer seiner Wahl weiter → Aufmerksamkeit steigern 
+* letzte Person, die den Raum betritt, muss beginnen
 
-Ziel ist es, alle Beteiligten auf denselben Wissensstand über die angefallenen Aufgaben zu bringen, eventuell Lasten umverteilen oder Blocker aus dem Weg schaffen. 
+Ziel ist es, alle Beteiligten auf denselben Wissensstand über die angefallenen Aufgaben zu bringen, eventuell Lasten umzuverteilen oder Blocker aus dem Weg zu schaffen. 
 
 == Qualitätsmanagement in der Softwareentwicklung 
 
