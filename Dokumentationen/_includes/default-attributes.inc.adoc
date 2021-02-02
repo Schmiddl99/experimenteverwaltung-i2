@@ -1,5 +1,5 @@
 // Meta
-:project-name: Experimenteverwaltung: Erweiterung Buchungssystem (I2)
+:project-name: Experimenteverwaltung - Erweiterung Buchungssystem (I2)
 :GM: gregor.mueller@htw-dresden.de
 :RB: richard.boehme@htw-dresden.de
 :AB: alena.bischoff@htw-dresden.de

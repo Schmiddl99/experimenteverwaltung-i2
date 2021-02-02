@@ -1,11 +1,8 @@
-= Wireframes Übersicht und Erklärungen
+= Wireframes Übersicht und Erklärungen: {project-name}
 Alena Bischoff alena.bischoff@htw-dresden.de
-1.0, 14.01.2021
-:toc: 
-:toc-title: Inhaltsverzeichnis
-// Platzhalter für weitere Dokumenten-Attribute 
-:source-highlighter: highlightjs
-:imagesdir: wf_pictures
+{localdatetime}
+include::../../_includes/default-attributes.inc.adoc[]
+ifndef::imagesdir[:imagesdir: wf_pictures]
 
 
 == Wireframes
@@ -76,7 +73,7 @@ image::WF_7_Dozentenwoche.PNG[Dozentenwoche Anzeige]
 
 === WF8: Dozentenwoche
 
-image::Dozentenwoche.jpg[Dozentenwoche Druckansicht]
+image::WF_8_Druckansicht.PNG[Dozentenwoche Druckansicht]
 
 .Erklärung:
 Ansicht des beispielhaften Wochenplans.
