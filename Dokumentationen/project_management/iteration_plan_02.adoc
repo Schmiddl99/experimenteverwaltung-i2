@@ -100,7 +100,7 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet (Abbildung des Boar
 [%header, cols="1,1,3"]
 |===
 | Problem | Status | Notizen
-| Feature Creep | entgegengewirkt 
+| Feature Creep | resolved 
 a|* Nach dem Entwurf der ersten Wireframes wurden diese teilweise wieder verworfen, da von TS-Seite veränderte Anforderungen gestellt wurden
 * Verworfen werden mussten u.a. die Deadline, die Benachrichtigung von Dozenten, die Pop-Up-Buchungseingabe
 * Größte Sorgen bereitet uns die "Kopierfunktion für ein ganzes Semester". Diese ist in unseren Augen unpraktisch, stark fehleranfällig - und steht im Gegensatz zu einem "Buchungssystem", da hier im Grunde eine stetig zu replizierende Vorlage gefordert wird (Zielkonflikt).
@@ -127,7 +127,7 @@ a|* Nach dem Entwurf der ersten Wireframes wurden diese teilweise wieder verworf
 | Review | Gesamte Iteration 2
 | Assessment Datum | 05.01.2021
 | Teilnehmer | gesamtes Team
-| Projektstatus: *gelbgrün*	a| 
+| Projektstatus: *gelb*	a| 
 * Ziel: Erreichung LCO-Meilenstein - Inception Phase. Nicht erreicht.
 ** *Understand what to build:* Grundsätzlich verstanden. *Erfolgskriterien* sind noch nicht zu 100% klar - z.B. Ablaufplan des Buchens. Journal wurde angenommen. *Konfliktpunkt* ist die Kopierfunktion. Grenzen wurden gesetzt: Aussprache gegen mobile Version. Oberstes Erfolgskriterium: Leichte Verständlichkeit (in Design und Sprache anwendergerecht) 
 ** *Identify key system functionality:* Die kritischsten Anforderungen wurden identifiziert: *Buchungen durchführen*, *Buchungen anzeigen* (-> Dozentenwoche), Historie (als Sahnehäubchen?)  
