@@ -2,6 +2,7 @@
 Alena Bischoff <alena.bischoff@htw-dresden.de>; Gregor Müller <gregor.mueller@htw-dresden.de>; Julius Schmidt <juliusheiko.schmidt@htw-dresden.de>; Richard Böhme <richard.boehme@htw-dresden.de>; Taejun Kim <taejun.kim@htw-dresden.de>; Tim Würzburg <tim.wuerzburg@htw-dresden.de>; Tobias Karsch <tobias.karsch@htw-dresden.de>; William Elsner <william.elsner@htw-dresden.de>;
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
+
 // Platzhalter für weitere Dokumenten-Attribute
 
 
@@ -46,3 +47,15 @@ include::use_case_04.inc.adoc[]
 
 //<<<
 //include::use_case_10.inc.adoc[]
+
+== Grafische Veranschaulichung
+
+Um eine einfache Übersicht über die Use Cases zu erlangen, wurde ein BPMN Diagramm erstellt das alle Use Cases darstellt und ein UML Diagramm um die einzelnen Beziehungen der User auf die Use Cases aufzuzeigen. 
+
+=== BPMN Diagramm für alles UCs
+
+image::BPMN_Diagramm_Gesamt.PNG[BPMN Diagramm für alles UCs]
+
+=== UML Diagramm für die Beziehungen der User
+
+image::UML_Diagramm_V2.0.PNG[UML Diagramm für die Beziehungen der User]

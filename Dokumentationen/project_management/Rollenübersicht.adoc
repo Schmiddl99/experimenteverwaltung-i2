@@ -1,6 +1,6 @@
-= Verantwortlichkeiten
- HTW Dresden, Software Engineering I WS 2020/2021
-Projekt I2_Erweiterung_Experimenteverwaltung
+= Verantwortlichkeiten: {project-name}
+{localdatetime}
+include::../_includes/default-attributes.inc.adoc[]
 
 |===
 |*Name* |*Rolle* |*Anmerkung* |*Letze Änderung*

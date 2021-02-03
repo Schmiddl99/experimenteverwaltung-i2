@@ -1,4 +1,6 @@
-= Umfrage zur Zufriedenheit der Gruppe in Bezug der Projektarbeit
+= Umfrage zur Zufriedenheit der Gruppe in Bezug der Projektarbeit: {project-name}
+{localdatetime}
+include::../_includes/default-attributes.inc.adoc[]
 
 Die Umfrage wurde im Zeitraum der 3. Iteration, zwischen dem 12.01.21 und dem 18.01.21 durchgeführt und am 18.01.21 ausgewertet. Der Anlass zur Umfrage war eine Übersicht der Gruppenzufriedenheit, in Bezug der Projektarbeit, für das Essence Dokument zu erlangen.   
 
