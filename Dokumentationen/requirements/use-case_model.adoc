@@ -50,7 +50,7 @@ include::use_case_04.inc.adoc[]
 
 == Grafische Veranschaulichung
 
-Um eine einfache Übersicht über die Use Cases zu erlangen, wurde ein BPMN Diagramm erstellt das alle Use Cases darstellt und ein UML Diagramm um die einzelnen Beziehungen der User auf die Use Cases aufzuzeigen. 
+Um eine einfache Übersicht über die Use Cases zu erlangen, wurde ein BPMN Diagramm erstellt, welches alle Use Cases darstellt sowie ein UML Diagramm, um die einzelnen Beziehungen der User auf die Use Cases aufzuzeigen. 
 
 === BPMN Diagramm für alles UCs
 
