@@ -296,13 +296,18 @@ a| * die entsprechend gefilterte, inkl. aller gebuchten Experimente, Dozentenwoc
 
 |===
 
-|*Beschreibung* |
+|*Beschreibung* |Es wird erwartet, dass der Admin keinen Zugriff auf das Dozenten-Journal hat, die Dozenten nur ihr persönliches Journal einsehen dürfen und nur der Admin die Statistik abrufen kann. Auch dürfen die Dozenten nur ihre eigene Dozentenwoche abrufen. 
 
-|*Vorbedingungen und benötigte Daten und benötigte Daten*
-a| * 
+
+|*Vorbedingungen und benötigte Daten*
+a| * ein Admin ist mit Zugangsdaten angemeldet
+* ein Dozent ist mit validen Zugangsdaten angemeldet
 
 |*Nachbedingung*
-a| *
+a| * Admin hatte keinen Zugriff auf beliebiges Journal 
+* Dozent konnte kein fremdes Journal einsehen
+* Dozent konnte die Statistik nicht aufrufen
+* Dozent konnte keine fremde Dozentenwoche einsehen
 
 |===
 
@@ -311,13 +316,16 @@ a| *
 
 |===
 
-|*Beschreibung* |
+|*Beschreibung* |Nach einem Neustart des Systems müssen die Anwenderdaten noch abrufbar sein. 
 
-|*Vorbedingungen und benötigte Daten und benötigte Daten*
-a| * 
+
+|*Vorbedingungen und benötigte Daten*
+a| * es muss ein Adminkonto geben
+* es muss ein Dozentenkonto geben 
+* es muss eine Buchung geben
 
 |*Nachbedingung*
-a| *
+a| * Daten müssen abrufbar sein
  
 |===
 
@@ -326,30 +334,35 @@ a| *
 
 |===
 
-|*Beschreibung* |
+|*Beschreibung* |Es darf nicht möglich sein, die Zugangsdaten der Konten auszulesen.
 
-|*Vorbedingungen und benötigte Daten und benötigte Daten*
-a| * 
+|*Vorbedingungen und benötigte Daten*
+a|  * es muss ein Adminkonto geben
+* es muss ein Dozentenkonto geben 
 
 |*Nachbedingung*
-a| *
+a| * Die Daten konnten nicht ausgelesen werden
  
 |===
 
 
 === Test Cases für nicht funktionale Anforderungen
 
+
 ==== TC18 - NFAU-1.1 - Es gibt keine redundanten Schaltflächen
 
 |===
 
-|*Beschreibung* |
+|*Beschreibung* |Es wird erwartet, dass es zu keinem Zeitpunkt Schaltflächen gibt, die denselben Zweck erfüllen oder dieselbe Funktion aufrufen. 
 
-|*Vorbedingungen und benötigte Daten und benötigte Daten*
-a| * 
+|*Vorbedingungen und benötigte Daten*
+a| * Admin ist angemeldet
+* Dozent ist angemeldet
+* es existiert mindestens ein Experiment
+* es existiert mindestens eine Buchung
 
 |*Nachbedingung*
-a| *
+a| * In allen möglichen Abläufen des Funktionsumfanges existieren keine Schaltflächen, die denselben Zweck erfüllen oder dieselbe Funktion aufrufen
  
 |===
 
