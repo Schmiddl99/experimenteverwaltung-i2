@@ -14,7 +14,7 @@ Das Projekt umfasst die vier Phasen:
 * Construction
 * Transition
 
-Der Projektplan wird fortlaufend ergänzt und verfeinert. Verantwortlich zeichnen die Project Manager.
+Der Projektplan wird fortlaufend ergänzt und verfeinert. Verantwortlich dafür sind die Projektmanager.
 
 == Projektorganisation
 //Introduce the project team, team members, and roles that they play during this project. If applicable, introduce work areas, domains, or technical work packages that are assigned to team members. Introduce neighboring projects, relationships, and communication channels. If the project is introduced somewhere else, reference that location with a link.
@@ -68,11 +68,7 @@ Die Position der Stakeholder wird dabei zu gleichen Teilen, aber auf indirekte A
 === Technical Practices
 https://www2.htw-dresden.de/~anke/openup/publish.openup.base/customcategories/technical_practice_list_E425C20F.html?nodeId=cd065eb4[Technical Practices OpenUP]
 
-* *Shared Vision*: Diese OpenUP-Praktik verbessert die Akzeptanz des späteren Produktes durch alle Stakeholder. In unserem Fall strebten wir die Übereinstimmung über die Vision
-//Link!!
-und die damit beschriebene Opportunity gemeinsam mit dem Themensteller an. Das Team konnte diese Übereinstimmung in Iteration I03
-//Link Iteration Plan!!
-erreichen.
+* *Shared Vision*: Diese OpenUP-Praktik verbessert die Akzeptanz des späteren Produktes durch alle Stakeholder. In unserem Fall strebten wir die Übereinstimmung über die https://github.com/Schmiddl99/experimenteverwaltung-i2/blob/main/Dokumentationen/requirements/vision.adoc[Vision] und die damit beschriebene Gelegenheit gemeinsam mit dem Themensteller an. Das Team konnte diese Übereinstimmung in https://github.com/Schmiddl99/experimenteverwaltung-i2/blob/main/Dokumentationen/project_management/iteration_plan03.adoc[Iteration I3] erreichen.
 
 * *Use Case Driven Development*: OpenUP empfiehlt die Zugrundelegung eines *Use Case Models* 
 //Link!!
@@ -137,9 +133,9 @@ Bei der Planung zukünftiger Iterationen und ihrer Ziele sind diese Punkte zu ve
 //Outline the strategy for deploying the software (and its updates) into the production environment.
 * Übertragung des Systems von der VM auf den regulären Fakultätsserver durch TAVM
 
-== Erkenntnisse (Lessons learned)
+== Erkenntnisse (Lessons Learned)
 //List lessons learned from the retrospective, with special emphasis on actions to be taken to improve, for example: the development environment, the process, or team collaboration.
 
-* Kommunikation mit den Stakeholdern ist der Knackpunkt für die Anforderungsanalyse, das tiefgründige gegenseitige Verständnis initial der wichtigste Faktor.
+* Kommunikation mit den Stakeholdern ist der Knackpunkt für die Anforderungsanalyse und das tiefgründige gegenseitige Verständnis initial der wichtigste Faktor.
 * Bestimmung eines Redeführers und Vorbereitung der Tagesordnung machen Meetings deutlich zeiteffizienter.
 * Wissensweitergabe im Team lässt sich über selbstorganisierte Workshops sehr gut realisieren - von der Erfahrung einzelner Teammitglieder können so alle profitieren.
