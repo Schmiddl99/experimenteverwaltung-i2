@@ -11,7 +11,7 @@ In diesem Dokument werden die systemweiten Anforderungen für das Projekt {proje
 
 * Systemweite funktionale Anforderungen (F),
 * Qualitätsanforderungen für Benutzbarkeit, Zuverlässigkeit, Effizienz und Wartbarkeit (URPS) sowie
-* zusätzliche Anforderungen (+) für technische, rechtliche, organisatorische Randbedingungen
+* Zusätzliche Anforderungen (+) für technische, rechtliche, organisatorische Randbedingungen
 
 NOTE: Die funktionalen Anforderungen, die sich aus der Interaktion von Nutzern mit dem System ergeben, sind als Use Cases in einem separaten Dokument festgehalten. [https://github.com/Schmiddl99/experimenteverwaltung-i2/blob/main/Dokumentationen/requirements/use-case_model.adoc[Use Case Model]]
 
@@ -30,7 +30,7 @@ Stakeholder haben Anforderungen. Ziele der Stakeholder sind Teil der Anforderung
 == Systemweite funktionale Anforderungen
 //Angabe von system-weiten funktionalen Anforderungen, die nicht als Use Cases ausgedrückt werden können. Beispiele sind Drucken, Berichte, Authentifizierung, Änderungsverfolgung (Auditing), zeitgesteuerte Aktivitäten (Scheduling), Sicherheit / Maßnahmen zum Datenschutz
 
-* *SWFA-1*: Das System muss Zugriffsbeschränkungen gewährleisten, da nicht jeder Anwender jeden Use Case ausführen darf. Diese Zugriffsbeschränkungen erlauben es dem Anwender, nur für ihn vorgesehene Funktionen auszuführen und nur auf für Ihn zugängliche Daten zuzugreifen. Dafür ist eine Zuordnung aller Anwender zu Rollen und einem Login notwendig.
+* *SWFA-1*: Das System muss Zugriffsbeschränkungen gewährleisten, da nicht jeder Anwender jeden Use Case ausführen darf. Diese Zugriffsbeschränkungen erlauben es dem Anwender, nur für ihn vorgesehene Funktionen auszuführen und nur auf für ihn zugängliche Daten zuzugreifen. Dafür ist eine Zuordnung aller Anwender zu Rollen und einem Login notwendig.
 
 ** Zu Überprüfungszwecken wird anhand von Test-Logins versucht auf fremde Daten und Rollenfunktionalitäten zuzugreifen. 
 
@@ -53,36 +53,36 @@ Stakeholder haben Anforderungen. Ziele der Stakeholder sind Teil der Anforderung
 === Benutzbarkeit (Usability)
 //Beschreiben Sie Anforderungen für Eigenschaften wie einfache Bedienung, einfaches Erlernen, Standards für die Benutzerfreundlichkeit, Lokalisierung (landesspezifische Anpassungen von Sprache, Datumsformaten, Währungen usw.)
 
-* *NFAU-1*: Alle Prozesse und Datenausgaben müssen übersichtlich, eindeutig und verständlich sein.  
+* *NFAU-1*: Alle Prozesse und Datenausgaben müssen übersichtlich, eindeutig und verständlich sein.
 
-** *NFAU-1.1*: Die Anzahl der Interaktionselemente soll komprimiert sein.  
+** *NFAU-1.1*: Die Anzahl der Interaktionselemente soll komprimiert sein.
 
 *** Es soll jeweils nur eine Schaltfläche pro Aktion geben (Bsp.: Warenkorb-Icon zum Buchen). Zu Überprüfungszwecken werden alle Interaktionselemente in ihrer Funktion verglichen. 
 
-** *NFAU-1.2*: Die Auswahlmenüs zur Detailfestlegung müssen verständlich und inhaltlich komprimiert sein.  
+** *NFAU-1.2*: Die Auswahlmenüs zur Detailfestlegung müssen verständlich und inhaltlich komprimiert sein.
 
 *** Es soll vorgefertigte Drop-Down-Menüs und Widgets zur Auswahl aus von festgelegten Wertebereichen geben. Zur Überprüfung wird getestet, ob invalide Eingaben möglich sind. 
 
-** *NFAU-1.3*: Die Anwendung (inkl. Änderung) muss einfach erfassbar und nutzbar sein.  
+** *NFAU-1.3*: Die Anwendung (inkl. Änderung) muss einfach erfassbar und nutzbar sein.
 
-*** Es soll ausschließlich deutsche Sprache verwendet werden. Auf Anglizismen und Fachterminologie wird verzichtet. Große informatische und technische Kenntnisse dürfen nicht zur Bedienung erforderlich sein. Zur Überprüfung wird eine themenfremde Testperson die Anwendung allgemein nutzen, wobei auf externe Hilfe verzichtet werden muss.  
+*** Es soll ausschließlich deutsche Sprache verwendet werden. Auf Anglizismen und Fachterminologie wird verzichtet. Große informatische und technische Kenntnisse dürfen nicht zur Bedienung erforderlich sein. Zur Überprüfung wird eine themenfremde Testperson die Anwendung allgemein nutzen, wobei auf externe Hilfe verzichtet werden muss.
 
 ** *NFAU-1.4*: Die Möglichkeiten für Fehlentscheidungen oder Orientierungslosigkeit sollen minimiert werden. 
 
 *** Die Dozenten sollen für die Buchung eines Experiments maximal 15 Klicks (von Anmeldung bis „Buchungsabschluss“) benötigen. Temporär nicht verfügbare Interaktionsmöglichkeiten sollen ausgegraut werden. Zu Überprüfungszwecken wird ein Testdurchlauf stattfinden, bei dem die Klicks gezählt werden und darauf geachtet wird, ob es möglich ist, nicht erreichbare Funktionalitäten aufzurufen. 
-//Fehlermeldungen sollen eindeutig, ohne Interpretationsspielraum und minimal sein.  
+//Fehlermeldungen sollen eindeutig, ohne Interpretationsspielraum und minimal sein.
 
 ** *NFAU-1.5*: Texte und Schaltflächen sollen auf ca. 50cm Entfernung leicht lesbar und erkennbar sein. 
 
-*** Text muss eine passende Größe und augenschonende, sowie leserliche Farbe aufweisen.  
+*** Text muss eine passende Größe und augenschonende, sowie leserliche Farbe aufweisen.
 
-*** Schaltflächen und Symbole müssen von guter grafischer Qualität und scharf sein.  
+*** Schaltflächen und Symbole müssen von guter grafischer Qualität und scharf sein.
 
 *** Zur Überprüfung wird eine Testperson die Anwendung mit einem Abstand von 50cm Entfernung zum Bildschirm nutzen. 
 
 * *NFAU-2*: Die Eingabemöglichkeiten sollen nicht als Pop-ups erscheinen. 
 
-*** Zur Überprüfung wird die Anwendung auf das Vorhandensein von Pop-up-Fenstern getestet.  
+*** Zur Überprüfung wird die Anwendung auf das Vorhandensein von Pop-up-Fenstern getestet.
 
 === Zuverlässigkeit (Reliability)
 // Zuverlässigkeit beinhaltet die Fähigkeit des Produkts und/oder des Systems unter Stress und ungünstigen Bedingungen am laufen zu bleiben. Spezifizieren Sie Anforderungen für zuverlässige Akzeptanzstufen, und wie diese gemessen und evaluiert werden. Vorgeschlagene Themen sind Verfügbarkeit, Häufigkeit und Schwere von Fehlern und Wiederherstellbarkeit.
@@ -107,7 +107,7 @@ Stakeholder haben Anforderungen. Ziele der Stakeholder sind Teil der Anforderung
 ** Chrome
 ** Firefox 
 ** Safari
-** Zur Überprüfung muss die Anwendung in allen Browsern, mit der aktuellen Version (wenn nicht anders spezifiziert), getestet werden. 
+** Zur Überprüfung muss die Anwendung in allen Browsern mit der aktuellen Version (wenn nicht anders spezifiziert), getestet werden. 
 
 == Zusätzliche Anforderungen
 === Einschränkungen
@@ -115,7 +115,7 @@ Stakeholder haben Anforderungen. Ziele der Stakeholder sind Teil der Anforderung
 * Die Verwaltung des Sourcecodes und der Dokumentation muss mittels *GitHub*  erfolgen. 
 * *Ruby on Rails* stellt das hauptsächlich zu nutzende Framework dar. 
 * Folgende Programmiersprachen sind weiterhin vorgegeben: 
-** *Ruby*   
+** *Ruby*
 ** HTML/ Slim
 ** Sass 
 ** JavaScript 
