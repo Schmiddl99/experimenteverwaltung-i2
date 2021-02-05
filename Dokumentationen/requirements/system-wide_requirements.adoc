@@ -106,6 +106,7 @@ Stakeholder haben Anforderungen. Ziele der Stakeholder sind Teil der Anforderung
 ** Internet Explorer (Version 11) 
 ** Chrome
 ** Firefox 
+** Safari
 ** Zur Überprüfung muss die Anwendung in allen Browsern getestet werden. 
 
 == Zusätzliche Anforderungen
