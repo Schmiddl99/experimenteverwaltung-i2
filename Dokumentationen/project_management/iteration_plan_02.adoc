@@ -26,7 +26,7 @@ include::../_includes/default-attributes.inc.adoc[]
 == Wesentliche Ziele
 //Nennen Sie 1-5 wesentliche Ziele für die Iteration.
 
-* erreichen der Bestätigung der Vision durch den Kunden; über die initialen Anforderungen herrscht Einigkeit
+* Erreichen der Bestätigung der Vision durch den Kunden; über die initialen Anforderungen herrscht Einigkeit
 * Erhebung der systemweiten Anforderungen
 * Use Case Model
 * Risikoliste
