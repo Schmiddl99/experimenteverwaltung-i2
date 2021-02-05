@@ -158,7 +158,7 @@ a|  * Kompatibilität
 .. Grund: Architekturbezogene Komplexität mit Zeitbudget nicht realisierbar
 
 . Einführung von Quellcodekommentierung 
-.. Grund: Arbeitserleichterung des Nachfolgerentwicklerteams 
+.. Grund: Arbeitserleichterung des Nachfolge-Entwicklerteams 
 
 . Verwendung von Drops-Downs, Datepicker etc. um entsprechend der Anwenderanforderungen für intuitiv bedienbare Elemente zu sorgen
 
@@ -204,7 +204,7 @@ a|  * Kompatibilität
 
 . **Kompatibilität **
 * [.underline]#Zustand#: Problem
-* [.underline]#Zweck#: System muss auf allen erwähnten Browsern funktionieren 
+* [.underline]#Zweck#: System muss auf allen (in den SWRs (siehe SWR)) erwähnten Browsern funktionieren  
 * [.underline]#Eigenschaften/Attribute#: gegeben oder nicht gegeben 
 * [.underline]#Funktion#: Sicherstellen der Benutzbarkeit 
 
