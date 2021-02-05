@@ -21,7 +21,7 @@ a|* Auftraggeber des Projekts, vorrangiger Stakeholder
 a|* Themensteller
 
 |Frontend-Benutzer
-a|* Nutzer der  öffentlich erreichbaren Weboberfläche
+a|* Nutzer der öffentlich erreichbaren Weboberfläche
 a|* User
 * Nutzer
 * Anwender 
@@ -40,11 +40,11 @@ a|* Gleichzusetzten mit "Kunde"
 |
 
 |Template
-a|* Englisch für Vorlage/ Schablone
+a|* Englisch für Vorlage/Schablone
 |
 
 |Bestellung
-a|* Anforderung eines Versuchsaufbaus mit Durchführung zur einer festgelegten Zeit
+a|* Anforderung eines Versuchsaufbaus mit Durchführung zu einer festgelegten Zeit
 |
 
 |Warenkorb
