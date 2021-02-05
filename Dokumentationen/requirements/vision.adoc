@@ -25,7 +25,8 @@ Der Zweck dieses Dokuments ist es, die wesentlichen  an das System gestellten An
 Dieses Visions-Dokument bezieht sich auf das Experimente-Verwaltungs-System, das von Team I2 entwickelt wird. Das System wird es dem Admin erlauben, ein Buchungssystem zu betreiben, um damit das umständliche Bestellen per E-Mail abzulösen.
 
 === Definitionen, Akronyme und Abkürzungen
-siehe  <<Glossar.adoc#requirements,Glossar>>
+siehe *Glossar*
+//Link?
 
 === Referenzen
 based on: https://www2.htw-dresden.de/~anke/openup/core.tech.common.extend_supp/guidances/templates/resources/vision_tpl.dot [EPL V1.0]
@@ -68,7 +69,7 @@ a|
 a|
 
 * Dozenten haben verschiedene “Templates” für das Versenden ihre Wünsche per Mail → kein normales “Kopieren” möglich 
-* Keine automatische Sortierung pro Tag; muss händisch durch Kunden in richtige Reihenfolge gebracht werden. 
+* Keine automatische Sortierung pro Tag; muss händisch durch Kunden in richtige Reihenfolge gebracht werden 
 * Unnötiges Aufkommen von vielen Mails 
 * Es ist nicht ersichtlich, wessen Wochenplan noch nicht aufgegeben wurde	
 
@@ -76,9 +77,9 @@ a|
 |eine erfolgreiche Lösung wäre 
 a|
 
-* Warenkorb-System: Experimente können nach Festlegung der Voreinstellungen für eine Vorlesung in einen Warenkorb abgelegt werden, wo ihre Reinfolge angepasst werden kann. Anschließend werden sie dem Journal hinzugefügt.
-* Journal-System: Buchungsübersicht des Dozenten, wo er alle vergangenen Buchungen einsehen und aktuelle Buchungen anpassen kann. 
-* Dozentenwochen-System: Buchungsübersicht des Admins, wo er alle Buchungen pro Dozent und sortiert je Wochentag einsehen kann. 
+* Warenkorb-System: Experimente können nach Festlegung der Voreinstellungen für eine Vorlesung in einen Warenkorb abgelegt werden, wo ihre Reinfolge angepasst werden kann. Anschließend werden sie dem Journal hinzugefügt
+* Journal-System: Buchungsübersicht des Dozenten, wo er alle vergangenen Buchungen einsehen und aktuelle Buchungen anpassen kann
+* Dozentenwochen-System: Buchungsübersicht des Admins, wo er alle Buchungen pro Dozent und sortiert je Wochentag einsehen kann
 
 |===
 
@@ -100,10 +101,10 @@ Admin [Kunde]
 a|
 
 * Dozenten:  
-** … die Experimente für die kommenden Vorlesungen bestellen wollen. 
+** … die Experimente für die kommenden Vorlesungen bestellen wollen
 * Admin: 
-** ... der einsehen will, welche Experimente bestellt wurden. 
-** … der einsehen will, in welchem Umfang die Experimente in der Vergangenheit gebucht wurden sind. 
+** ... der einsehen will, welche Experimente bestellt wurden 
+** … der einsehen will, in welchem Umfang die Experimente in der Vergangenheit gebucht wurden sind
 
 |Das Produkt / die Lösung ist eine | … Erweiterung der Web-Anwendung “Physik Experimente Verwaltung”, 
 
@@ -151,7 +152,7 @@ a|
 // Bezeichnung Stakeholder?
 |Betreuer der VM |Gewährleistung eines Arbeitsumfeldes für uns
 
-|Rechenzentrum der HTW |? |Ist "Standort" der Nutzeranwendung und Datenbank
+|Rechenzentrum der HTW |- |Ist "Standort" der Nutzeranwendung und Datenbank
 
 |===
 
@@ -191,10 +192,10 @@ a|
 |===
 |Bedarf|	Priorität|	Features|	Geplantes Release
 
-|Voreinstellungen | hoch| Festlegung der Buchungsdetails vor Buchungsbeginn| xx
-|Warenkorb |hoch |Experiment in Warenkorb legen und evtl. anpassen |xx
-|Journal ansehen |hoch |Einsehen vergangener und Bearbeiten aktueller Buchungen durch den Dozenten   |xx
-|Dozentenwoche |hoch | Einsehen der Buchungen je Wochentag und pro Dozent durch den Admin; DEinleitung des Druckprozesses| xx 
+|Voreinstellungen | hoch| Festlegung der Buchungsdetails vor Buchungsbeginn|SoSe
+|Warenkorb |hoch |Experiment in Warenkorb legen und evtl. anpassen |SoSe
+|Journal ansehen |hoch |Einsehen vergangener und Bearbeiten aktueller Buchungen durch den Dozenten   |SoSe
+|Dozentenwoche |hoch | Einsehen der Buchungen je Wochentag und pro Dozent durch den Admin; Einleitung des Druckprozesses| SoSe 
 |Statistik ansehen |mittel |Statistik (z.B. als Top 10) der (bestellten) Experimente einsehen |xx
 |Verwaltung der Bilder |niedrig |Bilder in Experimenten können ersetzt werden, Reihenfolge wird einbehalten. |xx
 |===
@@ -222,24 +223,24 @@ a|
 
 Dienlich zum Verständnis ist bspw. das Lesen des Protokolles zu TS-M3 vom 07.01.2021 (Word-Dokument; Ansprechpartner: {GM}, {TKa})
 
-* Auswahl des Studienganges bei jeder Buchung ist umständlich – das Problem wurde auf Später vertagt, wir entwickeln die Lösung nach den besprochenen Wireframes. (Stand: 31.01.2021)
-* Ein "Dummy-Experiment" für **Freitextbuchungen** war eine vom Team favorisierte Lösung, welche aber nicht umgesetzt werden sollte. (Stand: 31.01.2021)
+* Auswahl des Studienganges bei jeder Buchung ist umständlich – das Problem wurde auf Später vertagt, wir entwickeln die Lösung nach den besprochenen Wireframes (Stand: 31.01.2021)
+* Ein "Dummy-Experiment" für *Freitextbuchungen* war eine vom Team favorisierte Lösung, welche aber nicht umgesetzt werden sollte (Stand: 31.01.2021)
 * Statistik/Historie: Ein Date-Picker-Mechanismus sollte von uns im Deployment hinterlegt worden sein. Darauf kann evtl. bei einer Neugestaltung der Historien-Ansicht zurückgegriffen werden. Wir halten den bisherigen Entwurf als Aufgliederung in zwei Semester als verbesserungswürdig. (Stand: 31.01.2021)
-* **Kopierfunktion:** Eine Kopierfunktion zur Reproduktion aller Buchungen eines vergangenen Semesters wurde gewünscht. Wir sahen hier einen Zielkonflikt und einigten uns mit allen Stakeholdern darauf, dass wir das bisher entworfene Buchungssystem entwickeln (vgl. **I03**).
-//Link!!
+* *Kopierfunktion:* Eine Kopierfunktion zur Reproduktion aller Buchungen eines vergangenen Semesters wurde gewünscht. Wir sahen hier einen Zielkonflikt und einigten uns mit allen Stakeholdern darauf, dass wir das bisher entworfene Buchungssystem entwickeln (vgl. *I03*).
+//Link?
 Sollte diese Funktion in der Zukunft erneut gefordert werden, so sind hier unsere Überlegungen dazu aufgelistet:
 
 [%header, cols="1,1"]
 |===
 |Agreement (Stand: 07.01.2021)|	Probleme, die zu adressieren
 a|* Problem wurde von allen Parteien erkannt
-* Die Kopierfunktion entspringt der **grundsätzlichen Motivation** des Projektes: Den Dozenten soll die **Arbeit im höchstmöglichen Umfang vereinfacht werden**. Deshalb soll der einmal bestrittene Ablauf von Experimenten in einem Semester leicht wieder auf ein Neues anzuwenden sein.
+* Die Kopierfunktion entspringt der *grundsätzlichen Motivation* des Projektes: Den Dozenten soll die *Arbeit im höchstmöglichen Umfang vereinfacht werden*. Deshalb soll der einmal bestrittene Ablauf von Experimenten in einem Semester leicht wieder auf ein Neues anzuwenden sein.
 * Erkenntnis aus dem derzeitigen Projekt: Um Statistik zu erhalten, müssen Dozenten immer wieder neu buchen -> muss den Dozenten klar gemacht werden
-* Dozent muss sich **seine** Woche drucken können -> braucht auch Zugang zu SEINER Dozentenwoche (Journal als Historie, Dozentenwochen aber auch) 
+* Dozent muss sich *seine* Woche drucken können -> braucht auch Zugang zu SEINER Dozentenwoche (Journal als Historie, Dozentenwochen aber auch) 
 a|* Datumsanpassung jeder kopierten Vorlesung ist erforderlich
 * Was ist beim Wechsel Winter- zu Sommersemester? 
 * Je mehr kopiert werden soll (einzelne VL-Tage-Wochen-Semester), desto mehr Angaben muss der User wieder anpassen
-* Je einfacher die Kopierfunktion wird, desto mehr Daten fallen weg: MO der 06. Um 11:10 wird zu MO
+* Je einfacher die Kopierfunktion wird, desto mehr Daten fallen weg: MO der 06. um 11:10 wird zu MO
 * Wochentage ändern sich von Semester zu Semester! (Feiertage etc.) + Unterschiedlicher Fortschritt in den Vorlesungen
 
 |===
