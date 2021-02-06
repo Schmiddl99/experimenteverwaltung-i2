@@ -24,7 +24,7 @@ include::../_includes/default-attributes.inc.adoc[]
 == Wesentliche Ziele
 //Nennen Sie 1-5 wesentliche Ziele für die Iteration.
 
-* erreichen der Zustimmung des Auftraggebers in Bezug auf die vorgelegten Wireframes
+* Erreichen der Zustimmung des Auftraggebers in Bezug auf die vorgelegten Wireframes
 * Übereinstimmung mit dem Auftraggeber in Bezug auf die grundlegende Vorgehensweise der Buchung
 * Übereinstimmung mit dem Auftraggeber in Bezug auf das Journal
 * Ausarbeitung eines Architektur-Konzeptes
@@ -32,7 +32,7 @@ include::../_includes/default-attributes.inc.adoc[]
 * positives Feedback des Coaches zu den System Wide Requirements
 * Risikoliste weiterführen und pflegen
 * Anforderungsvalidierung mit Coach
-* Problematik Kopierfunktion klären bzw. Übereinstimmung erreichen
+* Problematik der Kopierfunktion klären bzw. Übereinstimmung erreichen
 
 
 == Aufgabenzuordnung
@@ -40,14 +40,14 @@ include::../_includes/default-attributes.inc.adoc[]
 
 Aufgaben werden in der Work Item List (https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#column-11862065) geordnet und priorisiert.
 
-Die in **dieser** Iteration geplanten Aufgaben wurden in der To-Do-List dargestellt: https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#column-11861913. Die To-Do-List verhält sich dynamisch. Deswegen sind nachfolgend die Work Items der Iteration III aufgeführt.
+Die in *dieser* Iteration geplanten Aufgaben wurden in der To-Do-List dargestellt: https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#column-11861913. Die To-Do-List verhält sich dynamisch. Deswegen sind nachfolgend die Work Items der Iteration III aufgeführt.
 
 //Übernommen aus dem Board Iteration Planning auf Github. Referenz von Issues: Link[#Issue_ID]; link durch klick auf drei Punkte der Aufgabe->Copy card link
 
 Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 [%header]
 |===
-| Aufgabe bzw. Beschreibung |#Github-Issue |Schätzung der Größe (Skala A-C; A=höchster Aufwand) | Priorität (Skala 1-3; 1=höchste Prio) |Status | Zugewiesen (Name) 
+|Aufgabe bzw. Beschreibung |#Github-Issue |Schätzung der Größe (Skala A-C; A=höchster Aufwand) |Priorität (Skala 1-3; 1=höchste Prio) |Status |Zugewiesen (Mail) 
 
 |Architektur- Notizbuch fortführen |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51159540[#26] | X | X | DUE: OPEN |{WE}
 
@@ -55,15 +55,15 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 
 |Architektur-Konzept|https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-52286316[#81] |B |1 |DUE:21.01.21 |{RB} {WE} {tka} {JS}
 
-|Coach Meeting: SWFAs+ MH-Thematik |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51434318[#43] |B |1 | DUE: 14.01.21 |{tka}
+|Coach-Meeting: SWFAs + MH-Thematik |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51434318[#43] |B |1 | DUE: 14.01.21 |{tka}
 
-|Risk-List: Exel in CSV |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51300929[#36] |B |3 |DUE:21.01.21 |{TW}
+|Risk-List: Excel in CSV |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51300929[#36] |B |3 |DUE:21.01.21 |{TW}
  
-|Test Cases: Fälle überlegen |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-52286350[#75] |C |1 |DUE: 2110.01.21.12. |{RB} {GM} {JS} {WE}
+|Test Cases: Fälle überlegen |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-52286350[#75] |C |1 |DUE: 21.01.21. |{RB} {GM} {JS} {WE}
 
-|Test Cases: dokument anlegen |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-52286328[#76] |C |1 |DUE:10.01.21 |{GM}
+|Test Cases: Dokument anlegen |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-52286328[#76] |C |1 |DUE:10.01.21 |{GM}
 
-|Architektur Notitzbuch anlegen |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-52286292[#80] |C |1 |DUE: 10.01.21 |{we}
+|Architektur-Notitzbuch anlegen |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-52286292[#80] |C |1 |DUE: 10.01.21 |{we}
 
 |Screenshot Essence Iteration 2 |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-52283809[#70]|C 
 |1 |DUE:07.01.21 |{TKa}
@@ -90,17 +90,17 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 | Kopierfunktion | geklärt 
 a|* Die Kopierfunktion sorgte für Abstimmungsschwierigkeiten zwischen dem Auftraggeber und den Auftragnehmern. Die Funktion sorgte sogar für einen Zielkonflikt: Das zugrundeliegende individuelle Buchungssystem sollte dadurch die Funktionen eines eher statischen Planungssystems erhalten.
 * Die vom Auftraggeber vorgesehene Kopierfunktion sorgt für einen erheblichen Mehraufwand in technischer und organisatorischer Sicht.
-* Die identifizierten resultierenden Probleme wurden gemeinsam mit Themensteller als so umfangreich bewertet, dass die Idee verworfen wurde, bzw. aus dem gestellten funktionellen Anforderungen ausgeklammert wurde.
+* Die identifizierten resultierenden Probleme wurden gemeinsam mit dem Themensteller als so umfangreich bewertet, dass die Idee verworfen wurde, bzw. aus den gestellten funktionellen Anforderungen ausgeklammert wurde.
 
 |===
 
 
 == Bewertungskriterien
-//Eine kurze Beschreibung, wie Erfüllung die o.g. Ziele bewertet werden sollen.
+//Eine kurze Beschreibung, wie die Erfüllung der o.g. Ziele bewertet werden soll
 
 * Der Kunde hat die ihm vorgelegten Wireframes bestätigt. Jeder mögliche Use Case wurde mit einem Wireframe abgedeckt. 
 * Die einzelnen Schritte der Buchung wurden mit dem Auftraggeber durchgegangen und wurden akzeptiert. Jeder mögliche Schritt wurde betrachtet.
-* Über die Handhabung und dem Umfang des Journal herrscht Einigkeit. Alle Varianten wurden betrachtet.
+* Über die Handhabung und den Umfang des Journal herrscht Einigkeit. Alle Varianten wurden betrachtet.
 * Das Architekturkonzept wurde mit allen notwendigen Bestandteilen fertiggestellt.
 * Die Test Cases wurden für alle notwendigen Fälle aufgestellt.
 * Die Risikoliste wurde weiterhin aktualisiert und erneuert.
@@ -115,15 +115,15 @@ a|* Die Kopierfunktion sorgte für Abstimmungsschwierigkeiten zwischen dem Auftr
 | Teilnehmer | gesamtes Team
 | Projektstatus: *gelbgrün*	a| 
 * Ziel: LCO-Meilenstein - Ende der Interception Phase, wurde erreicht. LCA-Meilenstein- Ende der Elaboration Phase, wurde nicht erreicht.
-** **Understand what to build:** Grundsätzlich verstanden. *Erfolgskriterien* sind zu 100% klar, auch in Bezug auf den Ablaufplan des Buchens und in Bezug auf das Journal. Der vorhandene *Zielkonflikt* =Kopierfunktion konnte beigelegt werden. UseCases und die dazugehörigen Diagramme wurden überarbeitet. Damit sind Ziel und Umfang des Systems und seiner Funktionalitäten klar und erfasst. Die kritischen Anforderungen, die von der Architektur validiert werden müssen, wurden erfasst. Die Beschreibung der Architektur ist vollständig und die Architektur ist angesichts der Ziele angemessen detailiert. Die Konzepte wurden so einfach wie möglich gehalten. Die Architektur beinhaltet die Lösung, die Motivation und die Ziele, die bei der Gestaltung der Architektur getroffen wurden. Die wichtigsten Annahmen auf denen die Architektur basiert, wurden dokumentiert und sind für Reviewer und Verwender sichtbar. Die Architektur beschreibung ist aktuell. Desweiteren wurden die Systempartitionen hinreichend definiert und alle Schlüsselelemente wurden ausreichend definiert. Die gesamte Wiederverwendung wurde identifiziert. Die Architektur wurde so gebaut, dass sie sich weiterentwickeln kann. Die Architektur bietet eine geeignete Grundlage für die Organisation der Entwicklerteams, allerdings sind die Verantwortlichkeit im Team noch nicht aufgeteilt und nicht alle Teammitglieder sind auf dem selben Stand. Architektur-Notebook ist noch nicht vollständig. SWR Problematik noch nicht vollständig erreicht, da noch keine klare Aussage ob es zu 100% richitg ist.
-** **Identify key system functionality:** Die kritischsten Anforderungen wurden identifiziert: *Buchungen durchführen*, *Buchungen anzeigen* (-> Dozentenwoche), Historie)
+** **Understand what to build:** Grundsätzlich verstanden. *Erfolgskriterien* sind zu 100% klar, auch in Bezug auf den Ablaufplan des Buchens und in Bezug auf das Journal. Der vorhandene *Zielkonflikt* =Kopierfunktion konnte beigelegt werden. UseCases und die dazugehörigen Diagramme wurden überarbeitet. Damit sind Ziel und Umfang des Systems und seiner Funktionalitäten klar und erfasst. Die kritischen Anforderungen, die von der Architektur validiert werden müssen, wurden erfasst. Die Beschreibung der Architektur ist vollständig und die Architektur ist angesichts der Ziele angemessen detailliert. Die Konzepte wurden so einfach wie möglich gehalten. Die Architektur beinhaltet die Lösung, die Motivation und die Ziele, die bei der Gestaltung der Architektur getroffen wurden. Die wichtigsten Annahmen auf denen die Architektur basiert, wurden dokumentiert und sind für Reviewer und Verwender sichtbar. Die Architekturbeschreibung ist aktuell. Des Weiteren wurden die Systempartitionen hinreichend definiert und alle Schlüsselelemente ausreichend definiert. Die gesamte Wiederverwendung wurde identifiziert. Die Architektur wurde so gebaut, dass sie sich weiterentwickeln kann. Die Architektur bietet eine geeignete Grundlage für die Organisation der Entwicklerteams, allerdings ist die Verantwortlichkeit im Team noch nicht aufgeteilt und nicht alle Teammitglieder sind auf dem selben Stand. Architektur-Notebook ist noch nicht vollständig. SWR Problematik noch nicht vollständig erreicht, da noch keine klare Aussage, ob es zu 100% richitg ist.
+** *Identify key system functionality:* Die kritischsten Anforderungen wurden identifiziert: *Buchungen durchführen*, *Buchungen anzeigen* (-> Dozentenwoche), Historie
 
 ** *Determine at least one possible solution:* Ja, die Vision ist technisch umsetzbar.?????Was soll hier hin?
 
 ** *Understand:* 
 *** Risiken sind verstanden 
 *** Wir bekommen kein Geld (-> nur "Zeitkosten" fallen an)
-*** Zeitplan: wurde *nicht* abgestimmt. (Orientierung an Empfelung aus Vorlesung)
+*** Zeitplan: wurde *nicht* abgestimmt. (Orientierung an Empfehlung aus Vorlesung)
 
 * *Überprüfung selbst gesteckter Iterationsziele: Y/N (7/2)* + 1 *?*
 ** Der Themensteller hat die vorgelegen Wireframes bestätigt. *Y* 
@@ -153,9 +153,9 @@ Wie gut waren unsere Schätzungen? Welche Hindernisse gab es? Wie können wir be
 * Im Weekly: Gesamtes Team Arbeitet an einer Problematik– ineffektiv? Aufteilen in zwei Teams und Ausarbeiten einer Lösung, anschließend gegenseitige Abstimmung und Kontrolle.
 * Schätzungen im Iteration Board (Aufwand/Prio im GitHub) trafen zu, funktioniert auch mit weniger “Schätzern” 
 * Ausgesprochene Zufriedenheit mit eigenem Teamwork 
-* Gutes Teamwork --> hohe Hilfsbereitschaft bei Fragen.
+* Gutes Teamwork -> hohe Hilfsbereitschaft bei Fragen.
 * Deadline für Meetings hat die Effektivität im Meeting erhöht, positive Resonanz in der Gruppe.
-* Ausbaufähig war die Kommunikation zur Terminfindung eines aufgabenbezogenen Gruppenmeetings, dies geschah häufig sehr kurzfristig. Nach Ansprache im Weekly erfolgte, eine direkte Verbesserung noch innerhalb der dritten Iteration.
+* Ausbaufähig war die Kommunikation zur Terminfindung eines aufgabenbezogenen Gruppenmeetings, dies geschah häufig sehr kurzfristig. Nach Ansprache im Weekly erfolgte eine direkte Verbesserung noch innerhalb der dritten Iteration.
 |===
 
 === ALPHA States
