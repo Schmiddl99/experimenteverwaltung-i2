@@ -232,7 +232,7 @@ Sollte diese Funktion in der Zukunft erneut gefordert werden, so sind hier unser
 
 [%header, cols="1,1"]
 |===
-|Agreement (Stand: 07.01.2021)|	Probleme, die zu adressieren
+|Agreement (Stand: 07.01.2021)|	Probleme, die zu adressieren sind
 a|* Problem wurde von allen Parteien erkannt
 * Die Kopierfunktion entspringt der *grundsätzlichen Motivation* des Projektes: Den Dozenten soll die *Arbeit im höchstmöglichen Umfang vereinfacht werden*. Deshalb soll der einmal bestrittene Ablauf von Experimenten in einem Semester leicht wieder auf ein Neues anzuwenden sein.
 * Erkenntnis aus dem derzeitigen Projekt: Um Statistik zu erhalten, müssen Dozenten immer wieder neu buchen -> muss den Dozenten klar gemacht werden
