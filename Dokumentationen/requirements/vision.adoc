@@ -6,7 +6,9 @@ include::../_includes/default-attributes.inc.adoc[]
 
 
 == Einführung
+
 Ziel dieses Dokumentes ist es, einen genaueren Überblick über die wesentlichen Bestandteile der Änderung an der Web-App “Experimente-Management-Software” (EMS) aufzuzeigen und Informationen zu sammeln, zu analysieren und genauer zu definieren. Wir werfen einen Blick auf die einzelnen Stakeholder der Anwendung, deren Wünsche und Bedingungen. Die genaueren Details, wie die angegeben Bedürfnisse realisiert werden, finden sich in dem https://github.com/Schmiddl99/experimenteverwaltung-i2/blob/main/Dokumentationen/requirements/use-case_model.adoc[Use Case Model] und der https://github.com/Schmiddl99/experimenteverwaltung-i2/blob/main/Dokumentationen/requirements/use-case_model.adoc[System-Wide-Requirements] wieder. 
+
 
  
 
@@ -25,7 +27,9 @@ Der Zweck dieses Dokuments ist es, die wesentlichen an das System gestellten Anf
 Dieses Visions-Dokument bezieht sich auf das Experimente-Management-System, das von Team I2 entwickelt wird. Das System wird es dem Admin erlauben, ein Buchungssystem zu betreiben, um damit das umständliche Bestellen per E-Mail abzulösen.
 
 === Definitionen, Akronyme und Abkürzungen
+
 siehe https://github.com/Schmiddl99/experimenteverwaltung-i2/blob/main/Dokumentationen/requirements/Glossar.adoc[Glossar]
+
 
 === Referenzen
 based on: https://www2.htw-dresden.de/~anke/openup/core.tech.common.extend_supp/guidances/templates/resources/vision_tpl.dot [EPL V1.0]
@@ -38,7 +42,9 @@ Für die Dozenten ist es wichtig, bei unserem Kunden ihre Wahl an durchzuführen
 
 Diese Methode ist sehr unübersichtlich, da die einzelnen Mails der Dozenten ausgewertet werden müssen und keine einheitliche Bestellvorlage verwendet wird. Die Mails müssen händisch nach Wochentag und Dozent sortiert werden, was einen deutlichen Mehraufwand darstellt. 
 
+
 Um diesen Mehraufwand zu umgehen, möchte der Kunde die Möglichkeit, Experimente in einen “Warenkorb” hinzuzufügen. In diesem sollen je Vorlesung verschiedene Experimente hinterlegt und als Auftrag bestellt werden können. Schlussendlich sollen diese Daten dann automatisiert abrufbar gemacht werden und zur einfachen Planung der Bestellungen als in Tage gegliederte Wochen pro Dozent angezeigt werden. 
+
 
 Ebenfalls soll die Möglichkeit einer Auswertung der vergangenen Bestellungen ermöglicht werden. Dies ist wichtig, um herauszufinden, welche Experimente besonders oft gebucht werden, um bspw. Verschleiß der Geräte vorauszusagen und in Folge dessen mehr Geräte oder Instrumente einzukaufen.
 
@@ -67,6 +73,7 @@ a|
 |Die Auswirkung davon ist 
 a|
 
+
 * Dozenten haben verschiedene “Templates” für das Versenden ihrer Wünsche per Mail → kein normales “Kopieren” möglich 
 * Keine automatische Sortierung pro Tag; muss händisch durch Kunden in richtige Reihenfolge gebracht werden
 * Unnötiges Aufkommen von vielen Mails 
@@ -75,6 +82,7 @@ a|
 
 |Eine erfolgreiche Lösung wäre 
 a|
+
 
 * Warenkorb-System: Die Experimente können nach Festlegung der Voreinstellungen für eine Vorlesung in einen Warenkorb abgelegt werden. Anschließend kann die Reihenfolge noch angepasst werden. Nach erfolgreicher Buchung werden sie dem persönlichen Journal hinzugefügt.
 * Journal-System: Buchungsübersicht des Dozenten, wo er alle vergangenen Buchungen einsehen und aktuelle Buchungen anpassen kann
@@ -99,11 +107,13 @@ Admin [Kunde]
 
 a|
 
+
 * Dozenten: 
 ** … die Experimente für die kommenden Vorlesungen buchen wollen
 * Admin: 
 ** ... der einsehen will, welche Experimente gebucht wurden
 ** … der einsehen will, in welchem Umfang die Experimente in der Vergangenheit gebucht wurden
+
 
 |Das Produkt / Die Lösung ist eine | … Erweiterung der Web-Anwendung “Experimente-Management-System"
 
@@ -151,7 +161,9 @@ a|
 // Bezeichnung Stakeholder?
 a| * Betreuer der VM a| *Gewährleistung eines Arbeitsumfeldes für uns
 
+
 |Rechenzentrum der HTW a| * Ist "Standort" der Nutzeranwendung und Datenbank a| * Muss die Bereitstellung der Anwendung sicherstellen
+
 
 |===
 
@@ -191,12 +203,14 @@ a| * Betreuer der VM a| *Gewährleistung eines Arbeitsumfeldes für uns
 |===
 |Bedarf|	Priorität|	Features|	Geplantes Release
 
+
 |Voreinstellungen | Hoch| Festlegung der Buchungsdetails vor Buchungsbeginn| xx
 |Warenkorb |Hoch |Experiment in Warenkorb legen und evtl. Reihenfolge anpassen |xx
 |Journal ansehen |Hoch |Einsehen vergangener und Bearbeiten aktueller Buchungen durch den Dozenten |xx
 |Dozentenwoche |Hoch | Einsehen der Buchungen je Wochentag und pro Dozent durch den Admin; Einleitung des Druckprozesses| xx 
 |Statistik ansehen |Mittel |Statistik (z.B. als Top 10) der (bestellten) Experimente einsehen |xx
 |Verwaltung der Bilder |Niedrig |Bilder in Experimenten können ersetzt werden, Reihenfolge wird einbehalten. |xx
+
 |===
 
 
@@ -218,4 +232,28 @@ a| * Betreuer der VM a| *Gewährleistung eines Arbeitsumfeldes für uns
 |===
 
 == Aussicht für zukünftige Projekte
-//Einige Ideen des Teams wurden vom Themensteller abgelehnt. Da das Team I2 dennoch von der Notwendigkeit und dem Nutzen dieser skizzierten Funktionen für die Vorlesungsassistenz überzeugt ist, wollen wir sie nicht in in Vergessenheit geraten lassen. Zukünftige (studentische) Projektteams sollen davon profitieren können. Hier ist der Platz, sie festzuhalten.
+#Einige Ideen des Teams wurden vom Themensteller abgelehnt. Da das Team I2 dennoch von der Notwendigkeit und dem Nutzen dieser skizzierten Funktionen für die Vorlesungsassistenz überzeugt ist, wollen wir sie nicht in in Vergessenheit geraten lassen. Zukünftige (studentische) Projektteams sollen davon profitieren können. Hier ist der Platz, sie festzuhalten.#
+
+Dienlich zum Verständnis ist bspw. das Lesen des Protokolles zu TS-M3 vom 07.01.2021 (Word-Dokument; Ansprechpartner: {GM}, {TKa})
+
+* Auswahl des Studienganges bei jeder Buchung ist umständlich – das Problem wurde auf Später vertagt, wir entwickeln die Lösung nach den besprochenen Wireframes (Stand: 31.01.2021)
+* Ein "Dummy-Experiment" für *Freitextbuchungen* war eine vom Team favorisierte Lösung, welche aber nicht umgesetzt werden sollte (Stand: 31.01.2021)
+* Statistik/Historie: Ein Date-Picker-Mechanismus sollte von uns im Deployment hinterlegt worden sein. Darauf kann evtl. bei einer Neugestaltung der Historien-Ansicht zurückgegriffen werden. Wir halten den bisherigen Entwurf als Aufgliederung in zwei Semester als verbesserungswürdig. (Stand: 31.01.2021)
+* *Kopierfunktion:* Eine Kopierfunktion zur Reproduktion aller Buchungen eines vergangenen Semesters wurde gewünscht. Wir sahen hier einen Zielkonflikt und einigten uns mit allen Stakeholdern darauf, dass wir das bisher entworfene Buchungssystem entwickeln (vgl. *I03*).
+//Link?
+Sollte diese Funktion in der Zukunft erneut gefordert werden, so sind hier unsere Überlegungen dazu aufgelistet:
+
+[%header, cols="1,1"]
+|===
+|Agreement (Stand: 07.01.2021)|	Probleme, die zu adressieren sind
+a|* Problem wurde von allen Parteien erkannt
+* Die Kopierfunktion entspringt der *grundsätzlichen Motivation* des Projektes: Den Dozenten soll die *Arbeit im höchstmöglichen Umfang vereinfacht werden*. Deshalb soll der einmal bestrittene Ablauf von Experimenten in einem Semester leicht wieder auf ein Neues anzuwenden sein.
+* Erkenntnis aus dem derzeitigen Projekt: Um Statistik zu erhalten, müssen Dozenten immer wieder neu buchen -> muss den Dozenten klar gemacht werden
+* Dozent muss sich *seine* Woche drucken können -> braucht auch Zugang zu SEINER Dozentenwoche (Journal als Historie, Dozentenwochen aber auch) 
+a|* Datumsanpassung jeder kopierten Vorlesung ist erforderlich
+* Was ist beim Wechsel Winter- zu Sommersemester? 
+* Je mehr kopiert werden soll (einzelne VL-Tage-Wochen-Semester), desto mehr Angaben muss der User wieder anpassen
+* Je einfacher die Kopierfunktion wird, desto mehr Daten fallen weg: MO der 06. um 11:10 wird zu MO
+* Wochentage ändern sich von Semester zu Semester! (Feiertage etc.) + Unterschiedlicher Fortschritt in den Vorlesungen
+
+|===
