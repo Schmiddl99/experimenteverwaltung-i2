@@ -112,11 +112,11 @@ a|* Nach dem Entwurf der ersten Wireframes wurden diese teilweise wieder verworf
 == Bewertungskriterien
 //Eine kurze Beschreibung, wie Erfüllung die o.g. Ziele bewertet werden sollen.
 
-* Der Kunde hat die überarbeitete Version per Mail (schriftlich) bestätigt
-* Jedes Element der Vision findet sich in den _system wide requirements_ abgedeckt
+* Der Kunde hat die überarbeitete Vision per Mail (= schriftlich) bestätigt
+* Jedes Element der Vision findet sich in den _System wide requirements_ abgedeckt
 * 6 Use Cases wurden dokumentiert und in einem Modell zusammengefasst (Doku liegt als .adoc vor)
 * 5 Risiken und entsprechende Gegenmaßnahmen wurden identifiziert. Die Dokumentation liegt als .csv vor.
-* Für jeden dokumentierten Use Case existiert ein Wireframe. Jede dokumentierte Anforderung lässt sich anhand mindestens eines Wireframes erläutern
+* Für jeden dokumentierten Use Case existiert ein Wireframe. Jede dokumentierte Anforderung lässt sich anhand mindestens eines Wireframes erläutern.
 * Der GitHub-Workshop wurde durchgeführt und aufgezeichnet
 
 == Assessment
@@ -140,7 +140,7 @@ a|* Nach dem Entwurf der ersten Wireframes wurden diese teilweise wieder verworf
 *** Zeitplan: wurde *nicht* abgestimmt (Orientierung an Empfelung aus Vorlesung)
 
 * *Überprüfung selbst gesteckter Iterationsziele: Y/N (4/2)*
-** Der Kunde hat die überarbeitete Version per Mail (schriftlich) bestätigt *Y* 
+** Der Kunde hat die überarbeitete Vision per Mail (schriftlich) bestätigt *Y* 
 ** Jedes Element der Vision findet sich in den system wide requirements abgedeckt *Y*
 ** 6 Use Cases wurden dokumentiert und in einem Modell zusammengefasst (Doku liegt als .adoc vor) *N* +
 (4 Use Cases ausgearbeitet, Rest nur erfasst, .adocs liegen vor) 
