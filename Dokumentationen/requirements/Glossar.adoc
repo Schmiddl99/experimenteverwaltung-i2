@@ -160,6 +160,10 @@ a|* Vorgehendmodell
 |Das weiterzuentwickelnde Projekt
 |https://mphyda.mw.htw-dresden.de/
 
+|KW
+|Kalenderwoche
+|-
+
 |===
 
 
