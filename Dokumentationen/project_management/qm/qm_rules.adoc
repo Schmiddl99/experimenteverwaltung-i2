@@ -32,11 +32,7 @@ Deswegen:
 * Hilfe soll angeboten und angenommen werden 
 
 === Verantwortung
-<<<<<<< HEAD
 Verantwortung bedeutet die Übernahme von schlechten sowie guten Ergebnissen einzugestehen und zu tragen. Wichtig ist hier, das beim auftreten von Fehlern und Problemen niemals jemanden die Schuld gegeben werden sollte. 
-=======
-Verantwortung bedeutet die Übernahme von schlechten sowie guten Ergebnissen einzugestehen und zu tragen. Wichtig ist hier, dass bei negativem Auftreten niemals jemanden die Schuld gegeben werden sollte. 
->>>>>>> 8c85cb735cb9e9448de8118e1f10c38edfd7b507
 
 Deswegen: 
 
