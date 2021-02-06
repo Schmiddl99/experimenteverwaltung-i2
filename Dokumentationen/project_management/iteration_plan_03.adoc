@@ -114,33 +114,32 @@ a|* Die Kopierfunktion sorgte für Abstimmungsschwierigkeiten zwischen dem Auftr
 | Assessment Datum | 26.01.2021
 | Teilnehmer | gesamtes Team
 | Projektstatus: *gelbgrün*	a| 
-* Ziel: LCO-Meilenstein - Ende der Inception Phase. (wurde erreicht)
-** **Understand what to build:** Grundsätzlich verstanden. *Erfolgskriterien* sind zu 100% klar. Ablaufplan des Buchens und Journal wurde angenommen. Der vorhandene *Zielkonflikt* = Kopierfunktion konnte zunächst beigelegt werden. UseCases wurden überarbeitet. Damit sind Ziel und Umfang des Systems und seiner Funktionalitäten klar und erfasst. 
-** **Identify key system functionality:** Die kritischsten Anforderungen wurden identifiziert: *Buchungen durchführen*, *Buchungen anzeigen* (-> Dozentenwoche), Journal)  
+* Ziel: LCO-Meilenstein - Ende der Interception Phase, wurde erreicht. LCA-Meilenstein- Ende der Elaboration Phase, wurde nicht erreicht.
+** **Understand what to build:** Grundsätzlich verstanden. *Erfolgskriterien* sind zu 100% klar, auch in Bezug auf den Ablaufplan des Buchens und in Bezug auf das Journal. Der vorhandene *Zielkonflikt* =Kopierfunktion konnte beigelegt werden. UseCases und die dazugehörigen Diagramme wurden überarbeitet. Damit sind Ziel und Umfang des Systems und seiner Funktionalitäten klar und erfasst. Die kritischen Anforderungen, die von der Architektur validiert werden müssen, wurden erfasst. Die Beschreibung der Architektur ist vollständig und die Architektur ist angesichts der Ziele angemessen detailiert. Die Konzepte wurden so einfach wie möglich gehalten. Die Architektur beinhaltet die Lösung, die Motivation und die Ziele, die bei der Gestaltung der Architektur getroffen wurden. Die wichtigsten Annahmen auf denen die Architektur basiert, wurden dokumentiert und sind für Reviewer und Verwender sichtbar. Die Architektur beschreibung ist aktuell. Desweiteren wurden die Systempartitionen hinreichend definiert und alle Schlüsselelemente wurden ausreichend definiert. Die gesamte Wiederverwendung wurde identifiziert. Die Architektur wurde so gebaut, dass sie sich weiterentwickeln kann. Die Architektur bietet eine geeignete Grundlage für die Organisation der Entwicklerteams, allerdings sind die Verantwortlichkeit im Team noch nicht aufgeteilt und nicht alle Teammitglieder sind auf dem selben Stand. Architektur-Notebbok ist noch nicht vollständig. SWR Problematik noch nicht vollständig erreicht, da noch keine klare Aussage ob es zu 100% richitg ist.
+** **Identify key system functionality:** Die kritischsten Anforderungen wurden identifiziert: *Buchungen durchführen*, *Buchungen anzeigen* (-> Dozentenwoche), Historie)
 
-** *Determine at least one possible solution:* Ja, die Vision ist technisch umsetzbar.
+** *Determine at least one possible solution:* Ja, die Vision ist technisch umsetzbar.?????Was soll hier hin?
 
 ** *Understand:* 
 *** Risiken sind verstanden 
 *** Wir bekommen kein Geld (-> nur "Zeitkosten" fallen an)
 *** Zeitplan: wurde *nicht* abgestimmt. (Orientierung an Empfelung aus Vorlesung)
 
-* *Überprüfung selbst gesteckter Iterationsziele: Y/N (4/2)*
+* *Überprüfung selbst gesteckter Iterationsziele: Y/N (7/2)* + 1 *?*
 ** Der Themensteller hat die vorgelegen Wireframes bestätigt. *Y* 
 ** Die geplante Vorgehensweise der Buchung ist mit dem Themensteller abgesprochen, es herrscht Übereinstimmung. *Y*
 ** Übereinstimmung mit dem Themensteller in Bezug auf das Journal *Y*
-
-Nein – 4 Use Cases ausgearbeitet, Rest nur erfasst, ADOCs liegen vor 
-
-** 5 Risiken und entsprechende Gegenmaßnahmen wurden identifiziert. Die Dokumentation liegt als CSV vor. *N* (5 Risiken liegen vor, aber nicht als .csv) 
-
+** 6 Risiken und entsprechende Gegenmaßnahmen wurden identifiziert. Die Dokumentation liegt als .csv vor. *Y* 
 ** Für jeden dokumentierten Use Case existiert ein Wireframe. Jede dokumentierte Anforderung lässt sich anhand mindestens eines Wireframes erläutern. *Y*
+** Das Architektur Konzept wurde ausgearbeitet. *Y*
+** Test Cases sind vollständig ausgearbeitet. *N*
+** Ziel positives Feedback des Coaches zu den System Wide Requirements. *N*
+** Anforderungsvalidierung mit Coach *?*
+** Problematik Kopierfunktion klären bzw. Übereinstimmung erreichen. *Y*
 
--> Drucken-Funktion fehlt noch (Brauchen wir auch nicht?) 
 
--> Kopierfunktion nicht 
 
-** Der GitHub-Workshop wurde durchgeführt und aufgezeichnet. *Y*
+
 |===
 
 [%header, cols="1,3"]
@@ -151,10 +150,12 @@ Nein – 4 Use Cases ausgearbeitet, Rest nur erfasst, ADOCs liegen vor
 | Projektstatus: *grün*	a| 
 Wie gut waren unsere Schätzungen? Welche Hindernisse gab es? Wie können wir besser werden? 
 
-* Zu viele Leute – ineffektiv? Drei Leute pro TS-Meeting sind am effizientesten! 
+* Im Weekly: Gesamtes Team Arbeitet an einer Problematik– ineffektiv? Aufteilen in zwei Teams und Ausarbeiten einer Lösung, anschließend gegenseitige Abstimmung und Kontrolle.
 * Schätzungen im Iteration Board (Aufwand/Prio im GitHub) trafen zu, funktioniert auch mit weniger “Schätzern” 
 * Ausgesprochene Zufriedenheit mit eigenem Teamwork 
-* Teamwork und Gemeinschafts-Gedanke spiegelte sich z.B. im GitHub-Workshop wider
+* Gutes Teamwork --> hohe Hilfsbereitschaft bei Fragen.
+* Deadline für Meetings hat die Effektivität im Meeting erhöht, positive Resonanz in der Gruppe.
+* Ausbaufähig war die Kommunikation zur Terminfindung eines aufgabenbezogenen Gruppenmeetings, dies geschah häufig sehr kurzfristig. Nach Ansprache im Weekly erfolgte, eine direkte Verbesserung noch innerhalb der dritten Iteration.
 |===
 
 === ALPHA States
