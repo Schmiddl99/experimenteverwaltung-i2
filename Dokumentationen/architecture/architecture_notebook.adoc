@@ -10,7 +10,7 @@ include::../_includes/default-attributes.inc.adoc[]
 
 == Zweck
 
-Dieses Dokument beschreibt die Philosophie, Nebenbedingungen, Begründungen, wesentliche Elemente und andere übergreifende Aspekte, die Einfluss auf Entwurf und Implementierung bezüglich der Realisierung eines in der link:../requirements/vision.adoc[Vision] beschriebenen Buchungssystems für Physikexperimente haben.
+Dieses Dokument beschreibt die Philosophie, Nebenbedingungen, Begründungen, wesentliche Elemente und andere übergreifende Aspekte, die Einfluss auf Entwurf und Implementierung bezüglich der Realisierung eines in der <<Vision: {project-name}, Vision>> beschriebenen Buchungssystems für Physikexperimente haben.
 Die für die Architektur getroffenen Entscheidungen und Ihre Hintergründe werden hier festgehalten.
 
 // Link überprüfen!!
@@ -50,7 +50,7 @@ Weitere Ziele, die die Architektur in Struktur und Verhalten erfüllen muss, sin
 == Architektur-relevante Anforderungen
 //Fügen Sie eine Referenz / Link zu den Anforderungen ein, die implementiert werden müssen, um die Architektur zu erzeugen.
 
-Über die Systemweiten funktionalen und nichtfunktionalen Anforderungen kann im link:../requirements/system-wide_requirements.adoc[Anforderungsdokument] nachgelesen werden. 
+Über die Systemweiten funktionalen und nichtfunktionalen Anforderungen kann im <<System-Wide Requirements: {project-name},Anforderungsdokument>> nachgelesen werden. 
 
 //Link überprüfen!!
 
@@ -60,7 +60,7 @@ Weitere Ziele, die die Architektur in Struktur und Verhalten erfüllen muss, sin
 |===
 |Anforderung |Systemkomponente |Architekturmechanismen
 
-|link:../requirements/use_case_01.inc.adoc[UC01]
+|<<Use-Case: Experiment buchen, UC01>>
 a|   * Webanwendung
      * Weboberfläche 
      * Datenbank 
@@ -74,7 +74,7 @@ a|  * Sicherheit
     * Session-Management
     * Error Management
 
-|link:../requirements/use_case_01.inc.adoc[UC03]
+|<<Use-Case: eigene Experimente im Buchungsjournal ansehen, UC02>>
 a|   * Webanwendung
      * Weboberfläche 
      * Buchung
@@ -88,7 +88,7 @@ a|  * Zugriffsschutz
     * Error Management
 
 
-|link:../requirements/use_case_01.inc.adoc[UC05]
+|<<Use-Case: Dozentenwoche ansehen, UC03>>
 a|   * Webanwendung
      * Weboberfläche 
      * Buchung
@@ -278,9 +278,7 @@ Schutz vor Datenverlust (adressiert Risk No. 6)
 === Model-View-Controller (MVC) 
 * ergibt sich durch Rails
  
-* **Model**  = Schicht der Geschäftslogik und ihrer Anwendung 
-
-    image:Dokumentationen\requirements\images\domain_model.svg:domain_model.svg[]
+* **Model**  = Schicht der Geschäftslogik und ihrer Anwendung (siehe <<Domain Model: {project-name}, Domain-Modell>>)
 
 * **View** = Schicht der HTML-Verarbeitung zur Darstellung der Ressourcen
 * **Controller** = Schicht der Requestverarbeitung durch http-Anfragen 
