@@ -23,7 +23,11 @@ Der Projektplan wird fortlaufend ergänzt und verfeinert. Verantwortlich dafür 
 
 //<<Dokumentationen\project_management\Rollenübersicht.adoc, Rollenübersicht>> Link haut nicht hin, vielleicht aber für PDF-Generierung relevant?
 
-xref:Rollenübersicht.adoc#Verantwortlichkeiten[Rollenübersicht]
+Unser gesamtes Team und die Personen, die auch direkt oder indirekt mit dem Projekt in Verbindung stehen, werden in der <<Verantwortlichkeiten: {project-name},Rollenübersicht>> vorgestellt. Hier findet man auch eine Übersicht, welche unterschiedlichen Rollen und zusätzlichen Aufgaben die einzelnen Gruppenmitglieder innehaben.
+
+Da während unsres Projekts die Corona-AHA Regeln gegolten haben, wurden auf physische Treffen komplett verzichtet. Die komplette Kommunikation lief über die Programme *Whatsapp* , *Discord* und *MS-Teams*.
+
+Der rote Faden unsrer Arbeit war, dass die Projektmanager einen Iterationszeitraum bestimmten und versuchten, die zu bewältigende Arbeit in Meilensteinen, Iterationsziele und Aufgaben aufzugliedern. Die Aufgaben wurden dann an die gesamten Gruppenmitglieder verteilt und durch die Gruppe überwacht. Wenn einzelnen Personen Probleme bei ihren zugewiesnen Aufgaben, egal welcher Art, hatten, wurde dies in den Weeklys aufgegriffen und versucht die Probleme zu lösen.
 
 
 
@@ -68,12 +72,11 @@ Die Position der Stakeholder wird dabei zu gleichen Teilen, aber auf indirekte A
 === Technical Practices
 https://www2.htw-dresden.de/~anke/openup/publish.openup.base/customcategories/technical_practice_list_E425C20F.html?nodeId=cd065eb4[Technical Practices OpenUP]
 
-* *Shared Vision*: Diese OpenUP-Praktik verbessert die Akzeptanz des späteren Produktes durch alle Stakeholder. In unserem Fall strebten wir die Übereinstimmung über die https://github.com/Schmiddl99/experimenteverwaltung-i2/blob/main/Dokumentationen/requirements/vision.adoc[Vision] und die damit beschriebene Gelegenheit gemeinsam mit dem Themensteller an. Das Team konnte diese Übereinstimmung in https://github.com/Schmiddl99/experimenteverwaltung-i2/blob/main/Dokumentationen/project_management/iteration_plan03.adoc[Iteration I3] erreichen.
+* *Shared Vision*: Diese OpenUP-Praktik verbessert die Akzeptanz des späteren Produktes durch alle Stakeholder. In unserem Fall strebten wir die Übereinstimmung über die <<Vision: {project-name}, Vision>> und die damit beschriebene Opportunity gemeinsam mit dem Themensteller an. Das Team konnte diese Übereinstimmung in <<Iteration Plan 03: {project-name}, Iteration I3>> erreichen.
 
-* *Use Case Driven Development*: OpenUP empfiehlt die Zugrundelegung eines *Use Case Models* 
-//Link!!
-sowie von *System-Wide Requirements*
-//Link!!
+* *Use Case Driven Development*: OpenUP empfiehlt die Zugrundelegung eines 
+<<Use-Case Model: Experimenteverwaltung I2, Use Case Models>>
+sowie von <<System-Wide Requirements: {project-name}, System-Wide Requirements>>
 zur Beschreibung, Gliederung und Auswertung der erhobenen Anforderungen. Durch die Nutzung dieser Praktik versprechen wir uns eine effizientere Umsetzung und ein höheres Erfolgspotential des gesamten Projektes.
 
 * *Evolutionary Architecture*: Das Architecture Notebook
@@ -104,19 +107,18 @@ wird in Abhängigkeit des Projektzustandes bearbeitet. Bei dieser schrittweisen 
 | 16.11.2020-16.12.2020
 
 | I02
-|xref:iteration_plan_02.adoc#Meilensteine[Iterationsplan 02]
+|<<Iteration Plan 02: {project-name}, Iterationsplan 02>>
 | 17.12.2020-31.12.2020
 
 | I03
-|xref:iteration_plan_03.adoc#Meilensteine[Iterationsplan 03]
+|<<Iteration Plan 03: {project-name}, Iterationsplan 03>>
 | 07.01.2021-21.01.2021
 
 | I04
 | * Domänenmodell
 * Überarbeitung der Use Cases
 * Überarbeitung der Test Cases
-* Anfertigung des Beleges für das Modul: Überprüfung der Dokumente (siehe *QM*)
-//Link!!
+* Anfertigung des Beleges für das Modul: Überprüfung der Dokumente (siehe <<QM Regeln, QM>>)
 
 * Ausscheiden der Teilnehmer {JS}, {TW}, {TKa} aufgrund Beendigung des Moduls I925 Requirements Engineering
 | 22.01.2021-04.02.2021
