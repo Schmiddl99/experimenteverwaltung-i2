@@ -111,8 +111,7 @@ wird in Abhängigkeit des Projektzustandes bearbeitet. Bei dieser schrittweisen 
 | siehe *Iterationsplan I02*
 //<<Dokumentationen\project_management\iteration_plan_02.adoc, Iterationsplan 02>> 
 //xref:iteration_plan_02.adoc#Meilensteine[Iterationsplan 02]
-
-Link testen!!
+//Link testen!!
 | 17.12.2020-31.12.2020
 
 | I03
