@@ -15,15 +15,15 @@ Admin möchte sich eine Statistik über gebuchte Experimente anzeigen lassen
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
-. Der Use Case beginnt, dass der User auf "Statistik" klickt.
+. Der Use Case beginnt, dass der User auf "Statistik" klickt
 . Zeitraum begrenzen (Optionen: Sommersemster, Wintersemester, Gesamt)
-. Auflistung der Exp., welche in dem angegeben Zeitraum genutzt wurden (Standardansicht: Anzahl absteigend) --> siehe Unterablauf 1
+. Auflistung der Exp., welche in dem angegeben Zeitraum genutzt wurden (Standardansicht: Anzahl absteigend) -> siehe Unterablauf 1
 . Use Case endet
 
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
 ==== Filtern
-Nach Schritt 3 des Standardablaufes gibt es die Möglichkeit, die aktuelle Ansicht zu filtern (Anzahl oder Alphabet, auf- wie auch absteigend).
+Nach Schritt 3 des Standardablaufes gibt es die Möglichkeit, die aktuelle Ansicht zu filtern (Anzahl oder Alphabet, auf- wie auch absteigend)
 
 === Unterabläufe (subflows)
 //Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
@@ -44,4 +44,4 @@ Nach Schritt 3 des Standardablaufes gibt es die Möglichkeit, die aktuelle Ansic
 
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
-* nur der Admin darf die Statistik einsehen
+* Nur der Admin darf die Statistik einsehen

@@ -1,6 +1,6 @@
-= Protokollvorlage
- HTW Dresden, Software Engineering I WS 2020/2021
-Projekt I2_Erweiterung_Experimenteverwaltung
+= Protokollvorlage: {project-name}
+{localdatetime}
+include::./_includes/default-attributes.inc.adoc[]
 
 
 |===

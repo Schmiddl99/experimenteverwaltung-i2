@@ -6,7 +6,7 @@ include::../_includes/default-attributes.inc.adoc[]
 
 == Einführung
 //Briefly describe the content of the project plan.
-Wir (Team I2) orientieren uns bei unserem Projekt am Vorgehensmodell Open Unified Process (OpenUP).
+Wir (Team I2) orientieren uns bei unserem Projekt am Vorgehensmodell Open Unified Process.
 Das Projekt umfasst die vier Phasen:
 
 * Inception
@@ -21,9 +21,11 @@ Der Projektplan wird fortlaufend ergänzt und verfeinert. Verantwortlich zeichne
 
 //Rollenübersicht verlinken!
 
-<<Dokumentationen\project_management\Rollenübersicht.adoc, Rollenübersicht>> Link haut noch nicht hin?
+//<<Dokumentationen\project_management\Rollenübersicht.adoc, Rollenübersicht>> Link haut nicht hin, vielleicht aber für PDF-Generierung relevant?
 
 xref:Rollenübersicht.adoc#Verantwortlichkeiten[Rollenübersicht]
+
+
 
 == Praktiken und Bewertung
 //Describe or reference which management and technical practices will be used in the project, such as iterative development, continuous integration, independent testing and list any changes or particular configuration to the project. Specify how you will track progress in each practice. As an example, for iterative development the team may decide to use iteration assessments and iteration burndown reports and collect metrics such as velocity (completed work item points/ iteration).
@@ -34,66 +36,103 @@ https://www2.htw-dresden.de/~anke/openup/publish.openup.base/customcategories/ma
 
 * *Iterative Development:* Plan Iteration - Manage Iteration - Assess Results
 
-Das Team führt 14-tägige Iterationen durch. Wir nutzen ein modifiziertes https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3[Scrum-Board] auf GitHub für Planung und Steuerung der Iteration. Regeln zum Umgang mit den Aufgaben (Issues) sind im https://github.com/Schmiddl99/experimenteverwaltung-i2/wiki/Iteration-Planning[Wiki] festgehalten.
-Der Fortschritt einer jeden Iteration bildet sich durch das "Wandern" der Aufgaben von der Spalte "Work Item List" in die Spalte "DONE" ab. Zu Beginn einer jeden Iteration wird die Work Item List wieder gefüllt. Der globale Projektfortschritt wird außerdem mithilfe des ESSENCE Navigator Tools sowie durch die Definition errecihter OpenUP-Meilensteine veranschaulicht.
+Das Team führt 14-tägige Iterationen durch. Wir nutzen ein modifiziertes https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3[Scrum-Board] auf GitHub für Planung und Steuerung jeder Iteration. Iterationen werden in ALLEN Phasen des Projektes generell mit der Klassifizierung I1, I2, ... I[n] benannt. Dafür haben wir uns entschieden, da die OpenUP-Meilensteine nicht zwangsweise am Ende einer Iteration, sondern während der Arbeit erreicht wurden, was eine Aufteilung in I-, E-, C- und T-Phasen erschwerte.
+Regeln zum Umgang mit den Aufgaben (Issues) und mit Pull Requests sind im https://github.com/Schmiddl99/experimenteverwaltung-i2/wiki/Iteration-Planning[Wiki] festgehalten.
+Der Fortschritt einer jeden Iteration bildet sich durch das "Wandern" der Aufgaben von der Spalte "Work Item List" in die Spalte "DONE" ab. Zu Beginn einer jeden Iteration wird die Work Item List wieder gefüllt. Der globale Projektfortschritt wird außerdem mithilfe des ESSENCE Navigator Tools sowie durch die Definition und Messung zu erreichender OpenUP-Meilensteine veranschaulicht.
 
-** Wöchentliche Besprechungen [Weekly] sind obligatorisch.
-*** Dabei hat sich die Moderation durch einen zuvor bestimmten Redeführer etabliert
-*** Die Agenda wird im Voraus von den PMs entworfen und der Gruppe zugesandt
-** Ein "Weekly Scrum" wird zu Beginn eines jeden Weekly durchgeführt. 
+Das Ende einer jeden Iteration wird mit einer *Review* und einer *Retrospective* abgeschlossen. Dabei ist das gesamte Team mit einzubeziehen!
+
+* Wöchentliche Besprechungen (*Weekly*) sind obligatorisch.
+** Dabei hat sich die Moderation durch einen zuvor bestimmten Redeführer etabliert
+** Die Agenda wird im Voraus von den PM entworfen und der Gruppe zugesandt
+** Ein "Weekly Scrum" wird zu Beginn eines jeden Weekly durchgeführt
 *** Dauer insgesamt max. 10 min
-*** Jedes Teammitglied erläutert knapp woran er/sie gerade arbeitet bzw. gearbeitet hat
+*** Jedes Teammitglied erläutert knapp woran er/sie gerade arbeitet bzw. in der vergangenen Woche gearbeitet hat
 *** Jedes Teammitglied berichtet, was sie/ihn aktuell an der Arbeit behindert
 *** Äußerungen werden nicht kommentiert
 
-//Formatierung??
+* *Team Change Management:* Diese OpenUP-Praktik wird durch unser https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3[Scrum-Board] auf GitHub realisiert. Änderungsanfragen am Scope für diese/folgende Iteration(en) sowie Change Requests an Work Items werden durch das Anlegen eines neuen Issues mit entsprechender Beschreibung nach den Regeln im https://github.com/Schmiddl99/experimenteverwaltung-i2/wiki/Iteration-Planning[Wiki] vorgenommen. Die PM müssen zeitnah darauf reagieren.
 
-* *Risk-Value Life Cycle:*
+* *Risk-Value Life Cycle:* Im OpenUP ermöglicht diese Praxis das systematische Erkennen und Reagieren auf Risiken. Uns dient sie in erster Linie zur internen Bewertung des Projektfortschritts. Die definierten Meilensteine - LCO, LCA, IOC, PRM - werden in jeder Iteration Review überprüft. 
+
+Die Position der Stakeholder wird dabei zu gleichen Teilen, aber auf indirekte Art und Weise berücksichtigt. Die Bewertung der Risiken und dem bisherigen Wertzuwachs - kurzum des Projektzustands - wird in den Stakeholdermeetings erfragt. Die Erläuterung der OpenUP-Praktiken und -Begrifflichkeiten gegenüber dem Themensteller erfolgt jedoch aufgrund der begrenzten Zeit nicht. Die Meetings sollen stattdessen noch stärker dem Wertzuwachs am eigentlichen Produkt dienen.
+
 * *Whole Team:*
 
-** Workshops für Teaminternen Wissensaustausch werden ad-hoc durchgeführt (z.B. für die Arbeit in GitHub und Ruby). Alle Teammitglieder sollen vom Wissen der anderen profitieren können.
+** Workshops für teaminternen Wissensaustausch werden ad-hoc durchgeführt (z.B. für die Arbeit in GitHub und Ruby). Alle Teammitglieder sollen vom Wissen der Anderen profitieren können
+*** Der erste Workshop zum Thema "GitHub" wurde am 21.12.2020 von {RB}, {TKI} und {GM} durchgeführt (Siehe I2)
 ** Konventionen und Anleitungen werden im GitHub-Wiki geteilt: https://github.com/Schmiddl99/experimenteverwaltung-i2/wiki[Wiki]
-* Das Qualitätsmanagement wird durch die Verantwortliche {AB} gestaltet und durchgeführt
+
+* Das *Qualitätsmanagement* wird durch die Verantwortliche {AB} gestaltet und durchgeführt
 
 === Technical Practices
+https://www2.htw-dresden.de/~anke/openup/publish.openup.base/customcategories/technical_practice_list_E425C20F.html?nodeId=cd065eb4[Technical Practices OpenUP]
 
-== Meilesteine und Ziele
+* *Shared Vision*: Diese OpenUP-Praktik verbessert die Akzeptanz des späteren Produktes durch alle Stakeholder. In unserem Fall strebten wir die Übereinstimmung über die Vision
+//Link!!
+und die damit beschriebene Opportunity gemeinsam mit dem Themensteller an. Das Team konnte diese Übereinstimmung in Iteration I03
+//Link Iteration Plan!!
+erreichen.
+
+* *Use Case Driven Development*: OpenUP empfiehlt die Zugrundelegung eines *Use Case Models* 
+//Link!!
+sowie von *System-Wide Requirements*
+//Link!!
+zur Beschreibung, Gliederung und Auswertung der erhobenen Anforderungen. Durch die Nutzung dieser Praktik versprechen wir uns eine effizientere Umsetzung und ein höheres Erfolgspotential des gesamten Projektes.
+
+* *Evolutionary Architecture*: Das Architecture Notebook
+//Link!!
+wird in Abhängigkeit des Projektzustandes bearbeitet. Bei dieser schrittweisen Ausarbeitung und Verfeinerung der Architektur wird darauf geachtet, die identifizierten Risiken zu berücksichtigen und, wenn möglich, mit den Architekturmechanismen adäquat auf sie zu reagieren.
+
+//Hier solltet ihr in SEII weitere angewandte Praktiken beschreiben (siehe https://www2.htw-dresden.de/~anke/openup/publish.openup.base/customcategories/technical_practice_list_E425C20F.html?nodeId=cd065eb4) - TKa
+
+[#project-plan-meilensteine-und-ziele]
+== Meilensteine und Ziele
 //Define and describe the high-level objectives for the iterations and define milestones. For example, use the following table to lay out the schedule. If needed you may group the iterations into phases and use a separate table for each phase
 
 
-[%header, cols="1,3a,2,1"]
+[%header, cols="1,3a,2"]
 |===
 | Iteration
-| Primary objectives +
-(risks and use case scenarios)
+| Primary objectives (risks and use case scenarios)
 | Scheduled start or milestone
-| [.line-through]#Target velocity#
 
-| I1
-|
-* Gruppenfindung, Team kennenlernen
-* Rollenverteilung, Projektmanager übermitteln
-* Aufgabe kennen lernen
+| I01
+
+| * Gruppenfindung, Team kennenlernen
+* Rollenverteilung, Namen der Projektmanager übermitteln
+* Aufgabe kennenlernen
 * Kontakt zu Themensteller aufnehmen
 * TS-M1
 * Kontakt zu Coach
-| 16.11.-16.12.
-| -
 
-| I2
-|
-<<Dokumentationen\project_management\iteration_plan_02.adoc, Iterationsplan 02>> Link testen!!
-| 16.12.2020-31.12.2020
-| -
+| 16.11.2020-16.12.2020
 
-| I3
-|
-* Mitigate Risk1
-* Develop Use Case 3, Scenario 2
+| I02
+|xref:iteration_plan_02.adoc#Meilensteine[Iterationsplan 02]
+| 17.12.2020-31.12.2020
+
+| I03
+|xref:iteration_plan_03.adoc#Meilensteine[Iterationsplan 03]
 | 07.01.2021-21.01.2021
-| -
+
+| I04
+| * Domänenmodell
+* Überarbeitung der Use Cases
+* Überarbeitung der Test Cases
+* Anfertigung des Beleges für das Modul: Überprüfung der Dokumente (siehe *QM*)
+//Link!!
+
+* Ausscheiden der Teilnehmer {JS}, {TW}, {TKa} aufgrund Beendigung des Moduls I925 Requirements Engineering
+| 22.01.2021-04.02.2021
 
 |===
+
+=== Bemerkungen zum weiteren Projektverlauf
+* Im Team herrscht Einigkeit darüber, dass Serveroptimierung nicht in unseren Aufgabenbereich fällt. Vom Vorhandensein ausreichender technischer Ressourcen und der Wartung des Fakultätsservers durch die Verantwortlichen außerhalb des Projektes wird ausgegangen.
+* In das Benutzerhandbuch ist eine Anleitung zum Systemneustart zu integrieren
+
+Bei der Planung zukünftiger Iterationen und ihrer Ziele sind diese Punkte zu verwirklichen. 
 
 == Deployment
 //Outline the strategy for deploying the software (and its updates) into the production environment.
@@ -102,6 +141,6 @@ Der Fortschritt einer jeden Iteration bildet sich durch das "Wandern" der Aufgab
 == Erkenntnisse (Lessons learned)
 //List lessons learned from the retrospective, with special emphasis on actions to be taken to improve, for example: the development environment, the process, or team collaboration.
 
-* Kommunikation mit den Stakeholdern ist der Knackpunkt für die Anforderungsanalyse, das tiefrgündige gegenseitige Verständnis initial der wichtigste Faktor.
+* Kommunikation mit den Stakeholdern ist der Knackpunkt für die Anforderungsanalyse, das tiefgründige gegenseitige Verständnis initial der wichtigste Faktor.
 * Bestimmung eines Redeführers und Vorbereitung der Tagesordnung machen Meetings deutlich zeiteffizienter.
 * Wissensweitergabe im Team lässt sich über selbstorganisierte Workshops sehr gut realisieren - von der Erfahrung einzelner Teammitglieder können so alle profitieren.

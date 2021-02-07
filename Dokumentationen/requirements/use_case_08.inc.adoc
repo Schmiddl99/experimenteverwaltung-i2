@@ -1,5 +1,5 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
-== Use-Case: Buchungsjournal verwalten
+== Use-Case: Experimente im Buchungsjournal bearbeiten
 ===	Kurzbeschreibung
 Dozent will seine gebuchten Exp. im Buchungsjournal bearbeiten.
 
@@ -42,4 +42,4 @@ DB-Eintrag wird aktualisiert und nicht neu angelegt oder gelöscht
 * Datumsbegrenzung: Nur zukünftige Exp. dürfen bearbeitet werden
 * Der User darf nur selbst gebuchte Exp. editieren
 * Gäste und der Admin darf keine Einsicht in die jeweiligen Journale haben
-* Buchnungsänderungen müssen temporär gespeichert werden (um ungewollten Datenverlust zu vermeiden, bspw. durch Verbindungsabbruch)
+* Buchungsänderungen müssen temporär gespeichert werden (um ungewollten Datenverlust zu vermeiden, bspw. durch Verbindungsabbruch)

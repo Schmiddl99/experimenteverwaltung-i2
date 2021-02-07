@@ -1,6 +1,6 @@
-= Verantwortlichkeiten
- HTW Dresden, Software Engineering I WS 2020/2021
-Projekt I2_Erweiterung_Experimenteverwaltung
+= Verantwortlichkeiten: {project-name}
+{localdatetime}
+include::../_includes/default-attributes.inc.adoc[]
 
 |===
 |*Name* |*Rolle* |*Anmerkung* |*Letze Änderung*
@@ -24,7 +24,9 @@ Risk-List (zus.)
 
 Analyst (zus.)
 |Standardmäßig Protkoll-verantw.
-|01.12.2020
+
+Kontaktperson Themensteller
+|20.01.2020
 
 |Gregor Müller 
 |Tester
@@ -82,7 +84,7 @@ Tester (zus.)
 
 |Matthias Heisig
 |Stakeholder
-|Themenersteller
+|Themensteller
 
 Admin / Anwender
 

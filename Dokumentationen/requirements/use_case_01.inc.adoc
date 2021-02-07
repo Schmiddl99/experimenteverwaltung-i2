@@ -1,7 +1,7 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
 == Use-Case: Experiment buchen
 ===	Kurzbeschreibung
-Buchungsablauf von Exp. vom Buchungsstart bis zum fertigen Eintrag in der DB.
+Buchungsablauf von Exp. vom Buchungsstart bis zum fertigen Eintrag in der DB
 
 ===	Kurzbeschreibung der Akteure
 * Dozent
@@ -9,19 +9,19 @@ Buchungsablauf von Exp. vom Buchungsstart bis zum fertigen Eintrag in der DB.
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
 * User muss eingeloggt sein
-* User muss sich an einer beliebigen stelle im EMS befinden
+* User muss sich an einer beliebigen Stelle im EMS befinden
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
 . Der Use Case beginnt, wenn User auf "Buchung starten" klickt
-. Neue Seite mit Formular (Uhrzeit, Datum, Studiengang) --> Vorauswahl für aktuellen Buchungsvorgang
+. Neue Seite mit Formular (Uhrzeit, Datum, Studiengang) -> Vorauswahl für aktuellen Buchungsvorgang
 . Exp.-Übersicht wird geöffnet
 . Exp. können über Warenkorbsymbol zum aktuellen Buchungsvorgang hinzugefügt werden
-. wird auf "Buchung abschließen" geklickt, wird man zum Checkout (neue Seite) weitergeleitet
+. Wird auf "Buchung abschließen" geklickt, wird man zum Checkout (neue Seite) weitergeleitet
 . Im Checkout werden die aktuellen Buchungen aufgezählt, mit Möglichkeit zur Löschung und Kommentierung jeder Buchung
-. Nach klicken des Users auf "Buchung speichern", wir der User auf eine Buchungsbestätigungsseite geleitet
-. Der UC endet damit, dass der User die Buchungsbestätigung bestätigt.
+. Nach Klicken des Users auf "Buchung speichern", wir der User auf eine Buchungsbestätigungsseite geleitet
+. Der UC endet damit, dass der User die Buchungsbestätigung bestätigt
 
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
@@ -46,4 +46,4 @@ Wenn der User ab Schritt 2 des Standardablaufes die Buchung abbricht, dann wird 
 * Daten müssen valide sein (Bspw.: Datumseingabe für Exp. darf nicht in der Vergangenheit liegen; Studiengang muss existieren)
 * Gäste und der Admin dürfen keine Buchungen tätigen
 * Buchungen müssen persistent gespeichert werden; Datenverlust muss ausgeschlossen werden
-* Buchnungseingaben müssen temporär gespeichert werden (um ungewollten Datenverlust zu vermeiden, bspw. durch Verbindungsabbruch)
+* Buchungseingaben müssen temporär gespeichert werden (um ungewollten Datenverlust zu vermeiden, bspw. durch Verbindungsabbruch)
