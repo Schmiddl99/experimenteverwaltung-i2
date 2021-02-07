@@ -1,5 +1,5 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
-== Use-Case: *eigene* Dozentenwoche drucken
+== Use-Case: *Eigene* Dozentenwoche drucken
 ===	Kurzbeschreibung
 Dozent möchte seinen (vorgefilterten) Wochenplan (Übersicht von allen eigenen Exp. inkl. Details) für eine bestimmte KW ausdrucken
 
@@ -15,7 +15,7 @@ Dozent möchte seinen (vorgefilterten) Wochenplan (Übersicht von allen eigenen 
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
 . Der Use Case beginnt, wenn User die Wochenplanansicht drucken möchte
-. (im Browser integrierte) Druckvorschau öffnet sich (weitere Funktionen sind vom Browser abhängig und deshalb nicht Teil unseres Systems)
+. (Im Browser integrierte) Druckvorschau öffnet sich (weitere Funktionen sind vom Browser abhängig und deshalb nicht Teil unseres Systems)
 . Nach der Bestätigung wird der Druckauftrag erteilt
 . Use Case endet
 

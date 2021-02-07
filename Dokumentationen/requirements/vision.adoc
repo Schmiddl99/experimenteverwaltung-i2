@@ -6,7 +6,9 @@ include::../_includes/default-attributes.inc.adoc[]
 
 
 == Einführung
-Ziel dieses Dokumentes ist es, einen genaueren Überblick über die wesentlichen Bestandteile der Änderung an der Web-App “Experimente Verwaltung” aufzuzeigen und Informationen zu sammeln, zu analysieren und genauer zu definieren. Wir werfen einen Blick auf die einzelnen Stakeholder der Anwendung, deren Wünsche und Bedingungen. Die genaueren Details, wie die angegeben Bedürfnisse realisiert werden, finden sich in den zugehörigen Dokumenten. 
+
+Ziel dieses Dokumentes ist es, einen genaueren Überblick über die wesentlichen Bestandteile der Änderung an der Web-App “Experimente-Management-Software” (EMS) aufzuzeigen und Informationen zu sammeln, zu analysieren und genauer zu definieren. Wir werfen einen Blick auf die einzelnen Stakeholder der Anwendung, deren Wünsche und Bedingungen. Die genaueren Details, wie die angegeben Bedürfnisse realisiert werden, finden sich in dem https://github.com/Schmiddl99/experimenteverwaltung-i2/blob/main/Dokumentationen/requirements/use-case_model.adoc[Use Case Model] und der https://github.com/Schmiddl99/experimenteverwaltung-i2/blob/main/Dokumentationen/requirements/use-case_model.adoc[System-Wide-Requirements] wieder. 
+
 
  
 
@@ -18,11 +20,11 @@ Ziel dieses Dokumentes ist es, einen genaueren Überblick über die wesentlichen
 
 === Zweck
 
-Der Zweck dieses Dokuments ist es, die wesentlichen  an das System gestellten Anforderungen aus Sicht der künftigen Anwender zu beschreiben. Formulierungen werden so gestaltet, dass sie für alle Stakeholder verständlich sind.
+Der Zweck dieses Dokuments ist es, die wesentlichen an das System gestellten Anforderungen aus Sicht der künftigen Anwender zu beschreiben. Formulierungen werden so gestaltet, dass sie für alle Stakeholder verständlich sind.
 
 
 === Gültigkeitsbereich (Scope)
-Dieses Visions-Dokument bezieht sich auf das Experimente-Verwaltungs-System, das von Team I2 entwickelt wird. Das System wird es dem Admin erlauben, ein Buchungssystem zu betreiben, um damit das umständliche Bestellen per E-Mail abzulösen.
+Dieses Visions-Dokument bezieht sich auf das Experimente-Management-System, das von Team I2 entwickelt wird. Das System wird es dem Admin erlauben, ein Buchungssystem zu betreiben, um damit das umständliche Bestellen per E-Mail abzulösen.
 
 === Definitionen, Akronyme und Abkürzungen
 siehe <<Glossar: {project-name},Glossar>>
@@ -36,11 +38,13 @@ based on: https://www2.htw-dresden.de/~anke/openup/core.tech.common.extend_supp/
 Unser Kunde besitzt bereits eine Web-Anwendung, welche es ihm und seinen Kollegen (Dozenten) möglich macht, physikalische Experimente in passenden Kategorien zu betrachten. Details und Bestandteile können angesehen und eine Karteikarte generiert werden, welche genau diese Informationen druckbar macht, um diese physisch vorliegen zu haben.
 Für die Dozenten ist es wichtig, bei unserem Kunden ihre Wahl an durchzuführenden Experimenten für die kommende Woche in Auftrag zu geben. Dies geschieht bisher formlos per Mail an den Kunden. 
 
-Diese Methode ist sehr unübersichtlich, da die einzelnen Mails der Dozenten ausgewertet werden müssen und keine einheitliche Bestell-Vorlage verwendet wird. Die Mails müssen händisch nach Wochentag und Dozent sortiert werden, was einen deutlichen Mehraufwand darstellt. 
+Diese Methode ist sehr unübersichtlich, da die einzelnen Mails der Dozenten ausgewertet werden müssen und keine einheitliche Bestellvorlage verwendet wird. Die Mails müssen händisch nach Wochentag und Dozent sortiert werden, was einen deutlichen Mehraufwand darstellt. 
 
-Um diesen Mehraufwand zu umgehen, möchte der Kunde die Möglichkeit, Experimente in einen “Warenkorb” hinzuzufügen. In diesem sollen je Vorlesung  verschiedene Experimente hinterlegt werden und als Auftrag bestellt werden können. Schlussendlich sollen diese Daten dann automatisiert abrufbar gemacht werden und zur einfachen Planung der Bestellungen als in Tage gegliederte Bestellung pro Dozent angezeigt werden. 
 
-Ebenfalls soll die Möglichkeit einer Auswertung der vergangenen Bestellungen ermöglicht werden. Dies ist wichtig, um herauszufinden welche Experimente besonders oft gebucht werden, um bspw. Verschleiß der Geräte vorauszusagen und in Folge dessen mehr Geräte oder Instrumente einzukaufen.
+Um diesen Mehraufwand zu umgehen, möchte der Kunde die Möglichkeit, Experimente in einen “Warenkorb” hinzuzufügen. In diesem sollen je Vorlesung verschiedene Experimente hinterlegt und als Auftrag bestellt werden können. Schlussendlich sollen diese Daten dann automatisiert abrufbar gemacht werden und zur einfachen Planung der Bestellungen als in Tage gegliederte Wochen pro Dozent angezeigt werden. 
+
+
+Ebenfalls soll die Möglichkeit einer Auswertung der vergangenen Bestellungen ermöglicht werden. Dies ist wichtig, um herauszufinden, welche Experimente besonders oft gebucht werden, um bspw. Verschleiß der Geräte vorauszusagen und in Folge dessen mehr Geräte oder Instrumente einzukaufen.
 
 Als Zusatzziel gilt die Verwaltung der in den Experimenten enthaltenen Bilder. Bei der Anschaffung von neuen Instrumenten für die Experimente müssen auch die Bilder entsprechend erneuert werden. Dabei soll, um Konsistenz zu bewahren, die Bezeichnung der Bilder gleich bleiben, das Bild jedoch in Datei und Reihenfolge anpassbar gemacht werden. 
 
@@ -55,28 +59,30 @@ a|
 
 * Dozent muss für die Folgewoche eine Mail verfassen, welche seine gewünschte Experimente-Auswahl enthält
 * Jede Änderung erfordert das erneute Senden einer Mail
-* Kunde muss händisch Emails der Dozenten auswerten und sortieren; sich selbst einen Plan der benötigten Experimente je Wochentag erarbeiten 
+* Kunde muss händisch E-Mails der Dozenten auswerten und sortieren; sich selbst einen Plan der benötigten Experimente je Wochentag erarbeiten 
 
 
-|betrifft 
+|Betrifft 
 a|	
 
 * Kunde
 * Dozenten
 
-|die Auswirkung davon ist 
+|Die Auswirkung davon ist 
 a|
 
-* Dozenten haben verschiedene “Templates” für das Versenden ihre Wünsche per Mail → kein normales “Kopieren” möglich 
-* Keine automatische Sortierung pro Tag; muss händisch durch Kunden in richtige Reihenfolge gebracht werden 
+
+* Dozenten haben verschiedene “Templates” für das Versenden ihrer Wünsche per Mail → kein normales “Kopieren” möglich 
+* Keine automatische Sortierung pro Tag; muss händisch durch Kunden in richtige Reihenfolge gebracht werden
 * Unnötiges Aufkommen von vielen Mails 
 * Es ist nicht ersichtlich, wessen Wochenplan noch nicht aufgegeben wurde	
 
 
-|eine erfolgreiche Lösung wäre 
+|Eine erfolgreiche Lösung wäre 
 a|
 
-* Warenkorb-System: Experimente können nach Festlegung der Voreinstellungen für eine Vorlesung in einen Warenkorb abgelegt werden, wo ihre Reinfolge angepasst werden kann. Anschließend werden sie dem Journal hinzugefügt
+
+* Warenkorb-System: Die Experimente können nach Festlegung der Voreinstellungen für eine Vorlesung in einen Warenkorb abgelegt werden. Anschließend kann die Reihenfolge noch angepasst werden. Nach erfolgreicher Buchung werden sie dem persönlichen Journal hinzugefügt.
 * Journal-System: Buchungsübersicht des Dozenten, wo er alle vergangenen Buchungen einsehen und aktuelle Buchungen anpassen kann
 * Dozentenwochen-System: Buchungsübersicht des Admins, wo er alle Buchungen pro Dozent und sortiert je Wochentag einsehen kann
 
@@ -95,22 +101,24 @@ a|
 |Dozenten,
 Admin [Kunde] 
 
-|der / die
+|Der / Die
 
 a|
 
-* Dozenten:  
-** … die Experimente für die kommenden Vorlesungen bestellen wollen
+
+* Dozenten: 
+** … die Experimente für die kommenden Vorlesungen buchen wollen
 * Admin: 
-** ... der einsehen will, welche Experimente bestellt wurden 
-** … der einsehen will, in welchem Umfang die Experimente in der Vergangenheit gebucht wurden sind
+** ... der einsehen will, welche Experimente gebucht wurden
+** … der einsehen will, in welchem Umfang die Experimente in der Vergangenheit gebucht wurden
 
-|Das Produkt / die Lösung ist eine | … Erweiterung der Web-Anwendung “Physik Experimente Verwaltung”, 
 
-|welche	|… die Buchung von Experimenten und Einsicht der Buchungen sowie deren Historie ermöglicht 
+|Das Produkt / Die Lösung ist eine | … Erweiterung der Web-Anwendung “Experimente-Management-System"
 
-|im Gegensatz zu	|… zu der Buchung über Email und der manuellen Historie und Aufbereitung.
-|Unser Produkt|	… ermöglicht die einfache Bestellung von Experimenten und Generierung eines für den Anwender optimierten Buchungsplans, sowie eine Übersicht der bisherigen Buchungen.
+|Welche	|… die Buchung von Experimenten und Einsicht der Buchungen sowie deren Historie ermöglicht 
+
+|Im Gegensatz zu	|… der Buchung über E-Mail und der manuellen Historie sowie Aufbereitung
+|Unser Produkt|	… ermöglicht die einfache Bestellung von Experimenten und Generierung eines für den Anwender optimierten Buchungsplans, sowie eine Übersicht der bisherigen Buchungen
 
 |===
 
@@ -131,10 +139,10 @@ a|
 * Möchte seine wöchentliche Arbeit optimieren 
 * Möchte, dass die Dozenten möglichst minimalen Aufwand haben	a|
 
-* stellt Experimente nach Bestellung bereit 
+* Stellt Experimente nach Bestellung bereit 
 * “Verwalter” des Webtools – stellt Informationen zu den Experimenten bereit 
-* führt sie durch 
-* kümmert sich um Instandhaltung der Geräte
+* Führt diese durch 
+* Kümmert sich um Instandhaltung der Experimentiergeräte
 * Verantwortlicher für Datenschutzaufgaben (Datenschutzerklärung verfassen & herausgeben)
 
 |Dozent a|
@@ -149,9 +157,11 @@ a|
 
 |TAVM (Herr Hornoff)
 // Bezeichnung Stakeholder?
-|Betreuer der VM |Gewährleistung eines Arbeitsumfeldes für uns
+a| * Betreuer der VM a| *Gewährleistung eines Arbeitsumfeldes für uns
 
-|Rechenzentrum der HTW |- |Ist "Standort" der Nutzeranwendung und Datenbank
+
+|Rechenzentrum der HTW a| * Ist "Standort" der Nutzeranwendung und Datenbank a| * Muss die Bereitstellung der Anwendung sicherstellen
+
 
 |===
 
@@ -168,15 +178,15 @@ a|
 
 [.underline]#Für Admin:# 
 
-* bisherige Webanwendung soll verwendet werden (bekannt und etabliert) 
-* soll Bestellungen komfortabel einsehen können 
-* einfache Handhabung (Kunde ist kein Power-User) 
-* muss Bestellhistorie (“komprimiert”) einsehen können
+* Bisherige Webanwendung soll verwendet werden (bekannt und etabliert) 
+* Soll Bestellungen komfortabel einsehen können 
+* Einfache Handhabung (Kunde ist kein Power-User) 
+* Muss Bestellhistorie (“komprimiert”) einsehen können
 
 [.underline]#Für Dozent:# 
 
-* bisherige Webanwendung soll verwendet werden (bekannt und etabliert) 
-* einfache Bestellung; intuitiv & schnell und anpassbar 
+* Bisherige Webanwendung soll verwendet werden (bekannt und etabliert) 
+* Einfache Bestellung; intuitiv, schnell und anpassbar 
 * Bestellung erfolgt nur über Webanwendung (keine Mails mehr) 
 * Anzahl der Dozenten kann sich ändern 
 
@@ -191,12 +201,14 @@ a|
 |===
 |Bedarf|	Priorität|	Features|	Geplantes Release
 
-|Voreinstellungen | hoch| Festlegung der Buchungsdetails vor Buchungsbeginn|SoSe
-|Warenkorb |hoch |Experiment in Warenkorb legen und evtl. anpassen |SoSe
-|Journal ansehen |hoch |Einsehen vergangener und Bearbeiten aktueller Buchungen durch den Dozenten   |SoSe
-|Dozentenwoche |hoch | Einsehen der Buchungen je Wochentag und pro Dozent durch den Admin; Einleitung des Druckprozesses| SoSe 
-|Statistik ansehen |mittel |Statistik (z.B. als Top 10) der (bestellten) Experimente einsehen |xx
-|Verwaltung der Bilder |niedrig |Bilder in Experimenten können ersetzt werden, Reihenfolge wird einbehalten. |xx
+
+|Voreinstellungen | Hoch| Festlegung der Buchungsdetails vor Buchungsbeginn| xx
+|Warenkorb |Hoch |Experiment in Warenkorb legen und evtl. Reihenfolge anpassen |xx
+|Journal ansehen |Hoch |Einsehen vergangener und Bearbeiten aktueller Buchungen durch den Dozenten |xx
+|Dozentenwoche |Hoch | Einsehen der Buchungen je Wochentag und pro Dozent durch den Admin; Einleitung des Druckprozesses| xx 
+|Statistik ansehen |Mittel |Statistik (z.B. als Top 10) der (bestellten) Experimente einsehen |xx
+|Verwaltung der Bilder |Niedrig |Bilder in Experimenten können ersetzt werden, Reihenfolge wird einbehalten. |xx
+
 |===
 
 
@@ -213,8 +225,8 @@ a|
 [%header, cols="4,1,1"]
 |===
 |Anforderung|	Priorität|	Geplantes Release
-|einfache Bedienbarkeit |hoch |xx
-|Hilfestellung / Kundenfreundliche  Dokumentation |niedrig |xx
+|Einfache Bedienbarkeit |Hoch |xx
+|Hilfestellung / Kundenfreundliche Dokumentation |Niedrig |xx
 |===
 
 == Aussicht für zukünftige Projekte
