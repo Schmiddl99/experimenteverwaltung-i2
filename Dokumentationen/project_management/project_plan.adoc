@@ -40,7 +40,7 @@ https://www2.htw-dresden.de/~anke/openup/publish.openup.base/customcategories/ma
 
 * *Iterative Development:* Plan Iteration - Manage Iteration - Assess Results
 
-Das Team führt 14-tägige Iterationen durch. Wir nutzen ein modifiziertes https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3[Scrum-Board] auf GitHub für Planung und Steuerung jeder Iteration. Iterationen werden in ALLEN Phasen des Projektes generell mit der Klassifizierung I1, I2, ... I[n] benannt. Dafür haben wir uns entschieden, da die OpenUP-Meilensteine nicht zwangsweise am Ende einer Iteration, sondern während der Arbeit erreicht wurden, was eine Aufteilung in I-, E-, C- und T-Phasen erschwerte.
+Das Team führt 14-tägige Iterationen durch. Wir nutzen ein modifiziertes https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3[Scrum-Board] auf GitHub für Planung und Steuerung jeder Iteration. Iterationen werden in ALLEN Phasen des Projektes generell mit der Klassifizierung I01, I02, ... I[n] benannt. Dafür haben wir uns entschieden, da die OpenUP-Meilensteine nicht zwangsweise am Ende einer Iteration, sondern während der Arbeit erreicht wurden, was eine Aufteilung in I-, E-, C- und T-Phasen erschwerte.
 Regeln zum Umgang mit den Aufgaben (Issues) und mit Pull Requests sind im https://github.com/Schmiddl99/experimenteverwaltung-i2/wiki/Iteration-Planning[Wiki] festgehalten.
 Der Fortschritt einer jeden Iteration bildet sich durch das "Wandern" der Aufgaben von der Spalte "Work Item List" in die Spalte "DONE" ab. Zu Beginn einer jeden Iteration wird die Work Item List wieder gefüllt. Der globale Projektfortschritt wird außerdem mithilfe des ESSENCE Navigator Tools sowie durch die Definition und Messung zu erreichender OpenUP-Meilensteine veranschaulicht.
 
@@ -64,7 +64,7 @@ Die Position der Stakeholder wird dabei zu gleichen Teilen, aber auf indirekte A
 * *Whole Team:*
 
 ** Workshops für teaminternen Wissensaustausch werden ad-hoc durchgeführt (z.B. für die Arbeit in GitHub und Ruby). Alle Teammitglieder sollen vom Wissen der Anderen profitieren können
-*** Der erste Workshop zum Thema "GitHub" wurde am 21.12.2020 von {RB}, {TKI} und {GM} durchgeführt (Siehe I2)
+*** Der erste Workshop zum Thema "GitHub" wurde am 21.12.2020 von {RB}, {TKI} und {GM} durchgeführt (Siehe <<Iteration Plan 02: {project-name}, I02>>)
 ** Konventionen und Anleitungen werden im GitHub-Wiki geteilt: https://github.com/Schmiddl99/experimenteverwaltung-i2/wiki[Wiki]
 
 * Das *Qualitätsmanagement* wird durch die Verantwortliche {AB} gestaltet und durchgeführt
@@ -72,7 +72,7 @@ Die Position der Stakeholder wird dabei zu gleichen Teilen, aber auf indirekte A
 === Technical Practices
 https://www2.htw-dresden.de/~anke/openup/publish.openup.base/customcategories/technical_practice_list_E425C20F.html?nodeId=cd065eb4[Technical Practices OpenUP]
 
-* *Shared Vision*: Diese OpenUP-Praktik verbessert die Akzeptanz des späteren Produktes durch alle Stakeholder. In unserem Fall strebten wir die Übereinstimmung über die <<Vision: {project-name}, Vision>> und die damit beschriebene Opportunity gemeinsam mit dem Themensteller an. Das Team konnte diese Übereinstimmung in <<Iteration Plan 03: {project-name}, Iteration I3>> erreichen.
+* *Shared Vision*: Diese OpenUP-Praktik verbessert die Akzeptanz des späteren Produktes durch alle Stakeholder. In unserem Fall strebten wir die Übereinstimmung über die <<Vision: {project-name}, Vision>> und die damit beschriebene Opportunity gemeinsam mit dem Themensteller an. Das Team konnte diese Übereinstimmung in <<Iteration Plan 03: {project-name}, Iteration I03>> erreichen.
 
 * *Use Case Driven Development*: OpenUP empfiehlt die Zugrundelegung eines 
 <<Use-Case Model: Experimenteverwaltung I2, Use Case Models>>
@@ -95,7 +95,7 @@ wird in Abhängigkeit des Projektzustandes bearbeitet. Bei dieser schrittweisen 
 | Primary objectives (risks and use case scenarios)
 | Scheduled start or milestone
 
-| I1
+| I01
 
 | * Gruppenfindung, Team kennenlernen
 * Rollenverteilung, Namen der Projektmanager übermitteln
@@ -106,15 +106,15 @@ wird in Abhängigkeit des Projektzustandes bearbeitet. Bei dieser schrittweisen 
 
 | 16.11.2020-16.12.2020
 
-| I2
-|<<Iteration Plan 02: {project-name}, Iterationsplan I2>>
+| I02
+|<<Iteration Plan 02: {project-name}, Iterationsplan I02>>
 | 17.12.2020-31.12.2020
 
-| I3
-|<<Iteration Plan 03: {project-name}, Iterationsplan I3>>
+| I03
+|<<Iteration Plan 03: {project-name}, Iterationsplan I03>>
 | 07.01.2021-21.01.2021
 
-| I4
+| I04
 | * Domänenmodell
 * Überarbeitung der Use Cases
 * Überarbeitung der Test Cases
