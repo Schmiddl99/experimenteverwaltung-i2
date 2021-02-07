@@ -14,44 +14,18 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 |===
 |Term|Definition/ Bedeutung |Synonym
 
-|Kunde
-a|* Auftraggeber des Projekts, vorrangiger Stakeholder 
-* Betreiber des Verwaltungssystem
-* Hr. Heisig
-a|* Themensteller
-
-|Frontend-Benutzer
-a|* Nutzer der  öffentlich erreichbaren Weboberfläche
-a|* User
-* Nutzer
-* Anwender 
-
-|Rolle
-a|* Bezeichnung für Zuordnung der Zugriffsrechte (siehe "Dozent", "Admin")
-|
-
-|Dozent
-a|* Nutzer des Buchungssystems
-* "Kunde des Kunden"
-a|
-
 |Admin
 a|* Gleichzusetzten mit "Kunde"
 |
 
-|Template
-a|* Englisch für Vorlage/ Schablone
-|
-
 |Bestellung
-a|* Anforderung eines Versuchsaufbaus mit Durchführung zur einer festgelegten Zeit
+a|* Anforderung eines Versuchsaufbaus mit Durchführung zu einer festgelegten Zeit
 |
 
-|Warenkorb
-a|* Temporärer Sammelspeicher für bestellte Experimente pro Dozent
-* Bestellübersicht mit Datums- und Zeitauswahl
-a|* Bestellzusammenfassung
-* Checkout
+|Bestelldetails
+a|* Bei Buchung eines konkreten Experimentes anzugebende Informationen
+* enthält: Studiengang, Datum, Zeit, Kommentar, Anmeldedaten (siehe 1.3 Datenstrukturen)
+|
 
 |Buchungsschaltfläche
 a|* Schaltfläche, die dem Nutzer per Klick die Buchung eines Experiments ermöglicht
@@ -59,18 +33,15 @@ a|* Schaltfläche, die dem Nutzer per Klick die Buchung eines Experiments ermög
 a|* Warenkorbicon
 * Warenkorbsymbol 
 
-|Voreinstellungen 
-a| * Festlegung der Bestelldetails (ohne Anmeldedaten) vor Auswahl der Buchungen 
+|Deadline 
+a|* Englisch für Grenze/Frist 
+* Datum, bis zu dem Buchungen geändert/stoniert werden können
+| 
+
+|Dozent
+a|* Nutzer des Buchungssystems
+* "Kunde des Kunden"
 a|
-
-|Bestelldetails
-a|* Bei Buchung eines konkreten Experimentes anzugebende Informationen
-* enthält: Studiengang, Datum, Zeit, Kommentar, Anmeldedaten (siehe 1.3 Datenstrukturen)
-|
-
-|Journal
-a|* Übersicht der eigenen Buchungen mit Anpassungsmöglichkeiten für Dozenten
-|
 
 |Dozentenwoche
 a|* Darstellung aller für eine Woche durch einen bestimmten Dozenten gebuchten Experimente
@@ -80,10 +51,11 @@ a|
 * Wochenplan
 * Wochenplanansicht 
 
-|Deadline 
-a|* Englisch für Grenze/Frist 
-* Datum, bis zu dem Buchungen geändert/stoniert werden können
-| 
+|Frontend-Benutzer
+a|* Nutzer der öffentlich erreichbaren Weboberfläche
+a|* User
+* Nutzer
+* Anwender 
 
 |Historie
 a|* Häufigkeit der vergangenen Buchungen pro Experiment
@@ -91,15 +63,19 @@ a|* Anzahl der Buchungen pro Experiment
 * Statistik
 * Auswertung
 
+|Journal
+a|* Übersicht der eigenen Buchungen mit Anpassungsmöglichkeiten für Dozenten
+|
+
 |Karteikarte
 a|* analoges Abbild der Versuchs-/ Experimentdetails als Alternative zum Tablet/ Webbrowser
 a| * Versuchsübersicht
 
-|Virtuelle Maschine
-a|* Softwaretechnische Kapselung eines Rechnersystems innerhalb eines lauffähigen Rechnersystems
-a|* Testbereich des Systems
-* Abkürzung:  VM
-* Betreuung durch TAVM
+|Kunde
+a|* Auftraggeber des Projekts, vorrangiger Stakeholder 
+* Betreiber des Verwaltungssystem
+* Hr. Heisig
+a|* Themensteller
 
 |Open Unified Process
 a|* Vorgehensmodell
@@ -107,6 +83,30 @@ a|* Vorgehensmodell
 * _OpenUP is a lean Unified Process that applies iterative and incremental approaches within a structured lifecycle_
 a|* Vorgehendmodell
 * OpenUP
+
+|Rolle
+a|* Bezeichnung für Zuordnung der Zugriffsrechte (siehe "Dozent", "Admin")
+|
+
+|Template
+a|* Englisch für Vorlage/Schablone
+|
+
+|Virtuelle Maschine
+a|* Softwaretechnische Kapselung eines Rechnersystems innerhalb eines lauffähigen Rechnersystems
+a|* Testbereich des Systems
+* Abkürzung:  VM
+* Betreuung durch TAVM
+
+|Voreinstellungen 
+a| * Festlegung der Bestelldetails (ohne Anmeldedaten) vor Auswahl der Buchungen 
+a|
+
+|Warenkorb
+a|* Temporärer Sammelspeicher für bestellte Experimente pro Dozent
+* Bestellübersicht mit Datums- und Zeitauswahl
+a|* Bestellzusammenfassung
+* Checkout
 
 |===
 
@@ -116,17 +116,25 @@ a|* Vorgehendmodell
 |===
 |Abkürzung|Bedeutung|Erläuterung
 
-|VM
-|Virtuelle Maschine
-|siehe Term _Virtuelle Maschine_ in _Begriffe_
+|AQM
+|Ansprechpartner QM
+|{AB}
 
-|TAVM
-|Technischer Ansprechpartner für VM
-|hornoff@htw-dresden.de Kontaktverantwortlicher: Richard Böhme
+|DB
+|Datenbank
+|Gemeint ist die Datenbank, in welche Buchungseinträge geschrieben werden.
 
-|OpenUP
-|Open Unified Process
-|siehe Term _Open Unified Process_
+|EMS
+|Das weiterzuentwickelnde Projekt
+|https://mphyda.mw.htw-dresden.de/
+
+|Exp.
+|Experiment
+|
+
+|KW
+|Kalenderwoche
+|
 
 a|* LCO
 * LCA
@@ -138,7 +146,23 @@ a|* Life Cycle Objective Milestone
 * Initial Operative Capability Milestone
 * Product Release Milestone
 
-|Meilensteine des OpenUP. Siehe project_plan _4. Meilensteine und Ziele_
+|Meilensteine des OpenUP. Siehe <<project-plan-meilensteine-und-ziele, Meilensteine und Ziele im Projektplan>>
+
+|OpenUP
+|Open Unified Process
+|siehe Term _Open Unified Process_
+
+|PM
+|Projektmanager
+|Als Singular oder Plural zu verwenden
+
+|QM
+|Qualitätsmanagement
+|Interne Sicherung der Qualität in Zusammenarbeit und im Ergebnis
+
+|TAVM
+|Technischer Ansprechpartner für VM
+|hornoff@htw-dresden.de Kontaktverantwortlicher: Richard Böhme
 
 |TS
 |Themensteller
@@ -148,33 +172,9 @@ a|* Life Cycle Objective Milestone
 |Themensteller-Meeting Nr. x
 |Bezeichnung für ein Treffen mit dem Themensteller, fortlaufende Nummerierung
 
-|QM
-|Qualitätsmanagement
-|Interne Sicherung der Qualität in Zusammenarbeit und im Ergebnis
-
-|AQM
-|Ansprechpartner QM
-|{AB}
-
-|PM
-|Projektmanager
-|Als Singular oder Plural zu verwenden
-
-|DB
-|Datenbank
-|Gemeint ist die Datenbank, in welche Buchungseinträge geschrieben werden.
-
-|Exp.
-|Experiment
-|
-
-|EMS
-|Das weiterzuentwickelnde Projekt
-|https://mphyda.mw.htw-dresden.de/
-
-|KW
-|Kalenderwoche
-|-
+|VM
+|Virtuelle Maschine
+|siehe Term _Virtuelle Maschine_
 
 |===
 
