@@ -1,15 +1,8 @@
 // --- 1. Projektthema -------------------------
-= SE I - Belegabgabe: Verwaltung von Physikexperimenten
-
-// --- 2. Teammitglieder -----------------------
-Bischoff, Alena <s00000@htw-dresden.de>; Böhme, Richard <s00000@htw-dresden.de>; Elsner, William <s00000@htw-dresden.de>; Karsch, Tobias <s79375@htw-dresden.de>; Kim, Taejun <s00000@htw-dresden.de>; Müller, Gregor <s00000@htw-dresden.de>; Schmidt, Julius Heiko <s00000@htw-dresden.de>; Würzburg, Tim <s00000@htw-dresden.de>
-
-// --- 3. Abgabedatum --------------------------
-31. Januar 2021
-// ---------------------------------------------
-:docs: ../docs
-include::{docs}/_includes/default-attributes.inc.adoc[]
-// ---
+= SE I - Belegabgabe: {project-name}
+Alena Bischoff <alena.bischoff@htw-dresden.de>; Gregor Müller <gregor.mueller@htw-dresden.de>; Julius Schmidt <juliusheiko.schmidt@htw-dresden.de>; Richard Böhme <richard.boehme@htw-dresden.de>; Taejun Kim <taejun.kim@htw-dresden.de>; Tim Würzburg <tim.wuerzburg@htw-dresden.de>; Tobias Karsch <tobias.karsch@htw-dresden.de>; William Elsner <william.elsner@htw-dresden.de>;
+12. Februar 2021
+:docs: .
 :doctype: book
 :toc:
 :toclevels: 2
@@ -27,12 +20,13 @@ include::{docs}/_includes/default-attributes.inc.adoc[]
 :listing-caption: Listing
 // Folders
 :imagesdir-reset: {imagesdir}
-:docs-test2: {docs}/test2
 :docs-requirements: {docs}/requirements
 :docs-project-management: {docs}/project_management
 :docs-architecture: {docs}/architecture
 :docs-test: {docs}/test
 :docs-development: {docs}/development
+include::{docs}/_includes/default-attributes.inc.adoc[]
+
 
 <<<
 
@@ -49,16 +43,21 @@ include::{docs}/_includes/default-attributes.inc.adoc[]
 :imagesdir: {docs-requirements}/images
 
 // Vision
-include::{docs-requirements}/Vision.adoc[lines=1..1;4..-1,leveloffset=+1]
+include::{docs-requirements}/vision.adoc[lines=1..1;4..-1,leveloffset=+1]
 <<<
 // Use Case Model (inkludiert selbst die einzelnen usecase_spec_x.adoc Dateien)
 include::{docs-requirements}/use-case_model.adoc[lines=1..1;4..-1,leveloffset=+1]
 <<<
+// Wireframes
+:imagesdir: {docs-requirements}/wireframes/wf_pictures
+include::{docs-requirements}/wireframes/WF_overview.adoc[lines=1..1;4..-1,leveloffset=+1]
+<<<
 // System-wide Requirements
+:imagesdir: {docs-requirements}/images
 include::{docs-requirements}/system-wide_requirements.adoc[lines=1..1;4..-1,leveloffset=+1]
 <<<
 // Glossar
-include::{docs-requirements}/glossary.adoc[lines=1..1;4..-1,leveloffset=+1]
+include::{docs-requirements}/Glossar.adoc[lines=1..1;4..-1,leveloffset=+1]
 <<<
 // Domänenmodell
 include::{docs-requirements}/domain_model.adoc[lines=1..1;4..-1,leveloffset=+1]
@@ -79,20 +78,19 @@ include::{docs-project-management}/project_plan.adoc[lines=1..1;4..-1,leveloffse
 include::{docs-project-management}/risk_list.adoc[lines=1..1;4..-1,leveloffset=+1]
 <<<
 // Iteration 1
-include::{docs-project-management}/iteration_plan_01.adoc[lines=1..1;4..-1,leveloffset=+1]
+// include::{docs-project-management}/iteration_plan_01.adoc[lines=1..1;4..-1,leveloffset=+1]
 <<<
 // Iteration 2
-//include::{docs-project-management}/iteration_plan_02.adoc[lines=1..1;4..-1,leveloffset=+1]
+include::{docs-project-management}/iteration_plan_02.adoc[lines=1..1;4..-1,leveloffset=+1]
 <<<
 // Iteration 3
-//include::{docs-project-management}/iteration_plan_03.adoc[lines=1..1;4..-1,leveloffset=+1]
+include::{docs-project-management}/iteration_plan_03.adoc[lines=1..1;4..-1,leveloffset=+1]
 <<<
 
 // --- Entwurfsdokumentation ---
 = Entwurfsdokumentation
 * Architektur-Notizbuch
 * Test Cases
-* Design
 
 // Architektur-Notizbuch
 :imagesdir: {docs-architecture}/images
@@ -103,9 +101,9 @@ include::{docs-architecture}/architecture_notebook.adoc[lines=1..1;4..-1,levelof
 include::{docs-test}/test_cases.adoc[lines=1..1;4..-1,leveloffset=+1]
 <<<
 // Design
-:imagesdir: {docs-development}/images
-include::{docs-development}/design.adoc[lines=1..1;4..-1,leveloffset=+1]
-<<<
+// :imagesdir: {docs-development}/images
+// include::{docs-development}/design.adoc[lines=1..1;4..-1,leveloffset=+1]
+// <<<
 
 // ---------------------------------------------
 

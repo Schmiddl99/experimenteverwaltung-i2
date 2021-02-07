@@ -1,7 +1,7 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
-== Use-Case: eigene Experimente im Buchungsjournal löschen
+== Use-Case: Eigene Experimente im Buchungsjournal löschen
 ===	Kurzbeschreibung
-Dozent will seine gebuchten Exp. im Buchungsjournal löschen.
+Dozent will seine gebuchten Exp. im Buchungsjournal löschen
 
 ===	Kurzbeschreibung der Akteure
 * Dozent
@@ -28,7 +28,7 @@ Dozent will seine gebuchten Exp. im Buchungsjournal löschen.
 
 === Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
-==== falsche Buchung gelöscht
+==== Falsche Buchung gelöscht
 Neue Buchung gemäß Use Case "Experiment buchen"
 
 ===	Nachbedingungen
@@ -41,4 +41,4 @@ DB-Eintrag wird aktualisiert und nicht neu angelegt oder gelöscht
 * Datumsbegrenzung: Nur zukünftige Exp. dürfen gelöscht werden
 * Der User darf nur selbst gebuchte Exp. einsehen, editieren und löschen
 * Gäste und der Admin darf keine Einsicht in die jeweiligen Journale haben
-* Buchnungsänderungen müssen temporär gespeichert werden (um ungewollten Datenverlust zu vermeiden, bspw. durch Verbindungsabbruch)
+* Buchungsänderungen müssen temporär gespeichert werden (um ungewollten Datenverlust zu vermeiden, bspw. durch Verbindungsabbruch)

@@ -128,9 +128,17 @@ a|* Vorgehendmodell
 |Open Unified Process
 |siehe Term _Open Unified Process_
 
-|LCO
-|Life Cycle Objective Milestone
-|siehe project_plan _4. Meilensteine und Ziele_
+a|* LCO
+* LCA
+* IOC
+* PRM
+
+a|* Life Cycle Objective Milestone
+* Life Cycle Architecture Milestone
+* Initial Operative Capability Milestone
+* Product Release Milestone
+
+|Meilensteine des OpenUP. Siehe project_plan _4. Meilensteine und Ziele_
 
 |TS
 |Themensteller
@@ -148,6 +156,10 @@ a|* Vorgehendmodell
 |Ansprechpartner QM
 |{AB}
 
+|PM
+|Projektmanager
+|Als Singular oder Plural zu verwenden
+
 |DB
 |Datenbank
 |Gemeint ist die Datenbank, in welche Buchungseinträge geschrieben werden.
@@ -159,6 +171,10 @@ a|* Vorgehendmodell
 |EMS
 |Das weiterzuentwickelnde Projekt
 |https://mphyda.mw.htw-dresden.de/
+
+|KW
+|Kalenderwoche
+|-
 
 |===
 
