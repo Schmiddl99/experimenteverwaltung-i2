@@ -23,9 +23,9 @@ Der Projektplan wird fortlaufend ergänzt und verfeinert. Verantwortlich zeichne
 
 //<<Dokumentationen\project_management\Rollenübersicht.adoc, Rollenübersicht>> Link haut nicht hin, vielleicht aber für PDF-Generierung relevant?
 
-xref:Rollenübersicht.adoc#Verantwortlichkeiten[Rollenübersicht]
+//xref:Rollenübersicht.adoc#Verantwortlichkeiten[Rollenübersicht]
 
-
+Siehe *Rollenübersicht*
 
 == Praktiken und Bewertung
 //Describe or reference which management and technical practices will be used in the project, such as iterative development, continuous integration, independent testing and list any changes or particular configuration to the project. Specify how you will track progress in each practice. As an example, for iterative development the team may decide to use iteration assessments and iteration burndown reports and collect metrics such as velocity (completed work item points/ iteration).
@@ -60,17 +60,17 @@ Die Position der Stakeholder wird dabei zu gleichen Teilen, aber auf indirekte A
 * *Whole Team:*
 
 ** Workshops für teaminternen Wissensaustausch werden ad-hoc durchgeführt (z.B. für die Arbeit in GitHub und Ruby). Alle Teammitglieder sollen vom Wissen der Anderen profitieren können
-*** Der erste Workshop zum Thema "GitHub" wurde am 21.12.2020 von Richard und Gregor durchgeführt (Siehe I2)
-** Konventionen und Anleitungen werden im GitHub-Wiki geteilt: https://github.com/Schmiddl99/experimenteverwaltung-i2/wiki[Wiki]
+*** Der erste Workshop zum Thema "GitHub" wurde am 21.12.2020 von Richard und Gregor durchgeführt (Siehe *I02*)
+** Konventionen und Anleitungen werden im *GitHub-Wiki* geteilt: https://github.com/Schmiddl99/experimenteverwaltung-i2/wiki[Wiki]
 
 * Das *Qualitätsmanagement* wird durch die Verantwortliche {AB} gestaltet und durchgeführt
 
 === Technical Practices
 https://www2.htw-dresden.de/~anke/openup/publish.openup.base/customcategories/technical_practice_list_E425C20F.html?nodeId=cd065eb4[Technical Practices OpenUP]
 
-* *Shared Vision*: Diese OpenUP-Praktik verbessert die Akzeptanz des späteren Produktes durch alle Stakeholder. In unserem Fall strebten wir die Übereinstimmung über die Vision
+* *Shared Vision*: Diese OpenUP-Praktik verbessert die Akzeptanz des späteren Produktes durch alle Stakeholder. In unserem Fall strebten wir die Übereinstimmung über die *Vision*
 //Link!!
-und die damit beschriebene Opportunity gemeinsam mit dem Themensteller an. Das Team konnte diese Übereinstimmung in Iteration I03
+und die damit beschriebene Opportunity gemeinsam mit dem Themensteller an. Das Team konnte diese Übereinstimmung in *Iteration I03*
 //Link Iteration Plan!!
 erreichen.
 
@@ -108,17 +108,17 @@ wird in Abhängigkeit des Projektzustandes bearbeitet. Bei dieser schrittweisen 
 | 16.11.2020-16.12.2020
 
 | I02
-|
-<<Dokumentationen\project_management\iteration_plan_02.adoc, Iterationsplan 02>> 
-xref:iteration_plan_02.adoc#Meilensteine[Iterationsplan 02]
+| siehe *Iterationsplan I02*
+//<<Dokumentationen\project_management\iteration_plan_02.adoc, Iterationsplan 02>> 
+//xref:iteration_plan_02.adoc#Meilensteine[Iterationsplan 02]
 
 Link testen!!
 | 17.12.2020-31.12.2020
 
 | I03
-|
-<<Dokumentationen\project_management\iteration_plan_03.adoc, Iterationsplan 03>> 
-xref:iteration_plan_03.adoc#Meilensteine[Iterationsplan 03]
+| siehe *Iterationsplan I03*
+//<<Dokumentationen\project_management\iteration_plan_03.adoc, Iterationsplan 03>> 
+//xref:iteration_plan_03.adoc#Meilensteine[Iterationsplan 03]
 | 07.01.2021-21.01.2021
 
 | I04
