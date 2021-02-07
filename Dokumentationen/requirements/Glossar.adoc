@@ -132,13 +132,29 @@ a|* Bestellzusammenfassung
 |Experiment
 |
 
-|LCO
-|Life Cycle Objective Milestone
-|siehe project_plan _4. Meilensteine und Ziele_
+|KW
+|Kalenderwoche
+|-
+
+a|* LCO
+* LCA
+* IOC
+* PRM
+
+a|* Life Cycle Objective Milestone
+* Life Cycle Architecture Milestone
+* Initial Operative Capability Milestone
+* Product Release Milestone
+
+|Meilensteine des OpenUP. Siehe project_plan _4. Meilensteine und Ziele_
 
 |OpenUP
 |Open Unified Process
 |siehe Term _Open Unified Process_
+
+|PM
+|Projektmanager
+|Als Singular oder Plural zu verwenden
 
 |QM
 |Qualitätsmanagement

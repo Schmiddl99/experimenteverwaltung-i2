@@ -42,4 +42,4 @@ DB-Eintrag wird aktualisiert und nicht neu angelegt oder gelöscht
 * Datumsbegrenzung: Nur zukünftige Exp. dürfen bearbeitet werden
 * Der User darf nur selbst gebuchte Exp. editieren
 * Gäste und der Admin darf keine Einsicht in die jeweiligen Journale haben
-* Buchnungsänderungen müssen temporär gespeichert werden (um ungewollten Datenverlust zu vermeiden, bspw. durch Verbindungsabbruch)
+* Buchungsänderungen müssen temporär gespeichert werden (um ungewollten Datenverlust zu vermeiden, bspw. durch Verbindungsabbruch)

@@ -24,7 +24,7 @@ Die Merkmale der einzelnen Fragen waren teilweise Smileys oder vordefinierte Tex
 |Bist du mit der Qualität der Arbeit deiner Gruppenmitglieder zufrieden? a| * 😀x5
 * 🙂x3 |1,375
 
-|Bist du zufrieden mit deiner Rolle die du im Projekt ausübst? a|* 😀x4
+|Bist du zufrieden mit deiner Rolle, die du im Projekt ausübst? a|* 😀x4
 * 🙂x4 |1,5
 
 |Fühlst du dich anhand deiner Kompetenzen in deiner Rolle gut aufgehoben? a|* 😀x2
@@ -38,12 +38,12 @@ Die Merkmale der einzelnen Fragen waren teilweise Smileys oder vordefinierte Tex
 * Stimme nicht zu x3
 * Stimme überhaupt nicht zu x1 |3,625
 
-|Hast du Angst dein Beitrag wird von der Gruppe zu wenig geschätzt? a|* Stimme zu x1
+|Hast du Angst, dein Beitrag wird von der Gruppe zu wenig geschätzt? a|* Stimme zu x1
 * Neutral x1
 * Stimme nicht zu x4
 * Stimme überhaupt nicht zu x2 |3,875
 
-|Befürchtest du die Gruppe könnte dich wegen (deiner Meinung nach: zu wenig Mitarbeit, zu wenig Fachkompetenz, zu wenig Kommunikation, etc.) ausschließen oder dich benachteiligen? a|* Stimme zu x1
+|Befürchtest du, die Gruppe könnte dich wegen zu wenig Mitarbeit, zu wenig Fachkompetenz, zu wenig Kommunikation etc. ausschließen oder dich benachteiligen? a|* Stimme zu x1
 * Neutral x1
 * Stimme nicht zu x2
 * Stimme überhaupt nicht zu x4 |4,125
@@ -52,7 +52,7 @@ Die Merkmale der einzelnen Fragen waren teilweise Smileys oder vordefinierte Tex
 * Stimme zu x6
 * Neutral x1 |2,0
 
-|Befürchtest du das sich andere auf deiner Arbeit ausruhen? a|* Stimme zu x1
+|Befürchtest du, das sich andere auf deiner Arbeit ausruhen? a|* Stimme zu x1
 * Neutral x2 
 * Stimme nicht zu x2
 * Stimme überhaupt nicht zu x3 |3,875
@@ -60,15 +60,15 @@ Die Merkmale der einzelnen Fragen waren teilweise Smileys oder vordefinierte Tex
 |Glaubst du das Projekt bringt dir etwas für deine Zukunft? Erfahrung, Organisation, Kommunikation, Freundschaft ... ? a|* 😀x4
 * 🙂x4 |1,5
 
-|Bist du mit den Aufgaben die dir zugeteilt wurden zufrieden oder wäre es dir lieber selbst Aufgaben auszuwählen? a|* 😀x4
+|Bist du mit den Aufgaben, die dir zugeteilt wurden zufrieden oder wäre es dir lieber, selbst Aufgaben auszuwählen? a|* 😀x4
 * 🙂x4 |1,5
 
-|Glaubst du wir alle sind auf einem guten Weg ein Projekt abzuschließen das die Besten Chancen auf zufriedene Stakeholder und eine gute Benotung gibt? a|* 😀x3
+|Glaubst du, wir alle sind auf einem guten Weg das Projekt abzuschließen, das die Besten Chancen auf zufriedene Stakeholder und eine gute Benotung gibt? a|* 😀x3
 * 🙂x4 
 * 🙁x1 |1,75
 
 |===
 
-Durch diese Umfrage konnte bestätigt werden, dass das allgemein "Gute Gefühl" das sich durch die wöchentlichen Meetings und die Gruppenarbeiten ergeben hat zutrifft. Auch konnten einzelne Problemfelder einzelner Gruppenmitglieder identifiziert werden und nun gezielt an ihrer Verbesserung gearbeitet werden.
+Durch diese Umfrage konnte bestätigt werden, dass das allgemein "Gute Gefühl", das sich durch die wöchentlichen Meetings und die Gruppenarbeiten ergeben hat, zutrifft. Auch konnten einzelne Problemfelder einzelner Gruppenmitglieder identifiziert werden und nun gezielt an ihrer Verbesserung gearbeitet werden.
 
 Diese Umfrage war für alle Gruppenmitglieder verpflichtend und anonym, sie wurde mit Hilfe von Microsoft Teams -Polly- durchgeführt.
