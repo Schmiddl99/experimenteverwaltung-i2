@@ -7,7 +7,7 @@ include::../_includes/default-attributes.inc.adoc[]
 
 == Einführung
 
-Ziel dieses Dokumentes ist es, einen genaueren Überblick über die wesentlichen Bestandteile der Änderung an der Web-App “Experimente-Management-Software” (EMS) aufzuzeigen und Informationen zu sammeln, zu analysieren und genauer zu definieren. Wir werfen einen Blick auf die einzelnen Stakeholder der Anwendung, deren Wünsche und Bedingungen. Die genaueren Details, wie die angegeben Bedürfnisse realisiert werden, finden sich in dem https://github.com/Schmiddl99/experimenteverwaltung-i2/blob/main/Dokumentationen/requirements/use-case_model.adoc[Use Case Model] und der https://github.com/Schmiddl99/experimenteverwaltung-i2/blob/main/Dokumentationen/requirements/use-case_model.adoc[System-Wide-Requirements] wieder. 
+Ziel dieses Dokumentes ist es, einen genaueren Überblick über die wesentlichen Bestandteile der Änderung an der Web-App “Experimente-Management-Software” (EMS) aufzuzeigen und Informationen zu sammeln, zu analysieren und genauer zu definieren. Wir werfen einen Blick auf die einzelnen Stakeholder der Anwendung, deren Wünsche und Bedingungen. Die genaueren Details, wie die angegeben Bedürfnisse realisiert werden, finden sich in dem <<Use-Case Model: Experimenteverwaltung I2, Use-Case Model>> und der <<System-Wide Requirements: {project-name}, System-Wide Requirements>> wieder. 
 
 
  
@@ -28,11 +28,11 @@ Dieses Visions-Dokument bezieht sich auf das Experimente-Management-System, das 
 
 === Definitionen, Akronyme und Abkürzungen
 
-siehe https://github.com/Schmiddl99/experimenteverwaltung-i2/blob/main/Dokumentationen/requirements/Glossar.adoc[Glossar]
+siehe <<Glossar: Experimenteverwaltung I2, Glossar>>
 
 
 === Referenzen
-based on: https://www2.htw-dresden.de/~anke/openup/core.tech.common.extend_supp/guidances/templates/resources/vision_tpl.dot [EPL V1.0]
+based on: https://www2.htw-dresden.de/~anke/openup/core.tech.common.extend_supp/guidances/templates/resources/vision_tpl.dot[EPL V1.0]
 
 == Positioning
 === Fachliche Motivation

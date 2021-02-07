@@ -103,7 +103,7 @@ a|* Testbereich des Systems
 
 |Open Unified Process
 a|* Vorgehensmodell
-* siehe https://www2.htw-dresden.de/~anke/openup/index.htm
+* siehe https://www2.htw-dresden.de/~anke/openup/index.htm[Open Unified Process]
 * _OpenUP is a lean Unified Process that applies iterative and incremental approaches within a structured lifecycle_
 a|* Vorgehendmodell
 * OpenUP
@@ -138,7 +138,7 @@ a|* Life Cycle Objective Milestone
 * Initial Operative Capability Milestone
 * Product Release Milestone
 
-|Meilensteine des OpenUP. Siehe project_plan _4. Meilensteine und Ziele_
+|Meilensteine des OpenUP. Siehe <<Projektplan: {project-name}, 4. Meilensteine und Ziele>> 
 
 |TS
 |Themensteller
@@ -166,7 +166,7 @@ a|* Life Cycle Objective Milestone
 
 |Exp.
 |Experiment
-|
+|-
 
 |EMS
 |Das weiterzuentwickelnde Projekt

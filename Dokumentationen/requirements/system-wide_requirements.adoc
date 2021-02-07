@@ -13,10 +13,10 @@ In diesem Dokument werden die systemweiten Anforderungen für das Projekt {proje
 * Qualitätsanforderungen für Benutzbarkeit, Zuverlässigkeit, Effizienz und Wartbarkeit (URPS) sowie
 * Zusätzliche Anforderungen (+) für technische, rechtliche, organisatorische Randbedingungen
 
-NOTE: Die funktionalen Anforderungen, die sich aus der Interaktion von Nutzern mit dem System ergeben, sind als Use Cases in einem separaten Dokument festgehalten. [https://github.com/Schmiddl99/experimenteverwaltung-i2/blob/main/Dokumentationen/requirements/use-case_model.adoc[Use Case Model]]
+NOTE: Die funktionalen Anforderungen, die sich aus der Interaktion von Nutzern mit dem System ergeben, sind als Use Cases in einem separaten Dokument festgehalten. <<Use-Case Model: Experimenteverwaltung I2, Use-Case Model>>
 
 NOTE: "To write a good requirement, you must write it as a complete sentence, with a subject and a predicate (usually a verb). The subject is an Actor, a stakeholder, the system under development, or a design entity that is related to the requirement. The predicate specifies a condition, action, or intended result that is done for, by, with, or to the subject."
-- (OpenUP; siehe https://www2.htw-dresden.de/~anke/openup) 
+- (siehe https://www2.htw-dresden.de/~anke/openup[OpenUP]) 
 
 NOTE: Unsere Anforderungen sollen den Projekterfolg garantieren. Je gewissenhafter wir sie ausarbeiten und pflegen, desto besser wird das Endprodukt. 
 
