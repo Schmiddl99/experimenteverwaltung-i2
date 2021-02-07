@@ -146,7 +146,7 @@ a|* Life Cycle Objective Milestone
 * Initial Operative Capability Milestone
 * Product Release Milestone
 
-|Meilensteine des OpenUP. Siehe project_plan _4. Meilensteine und Ziele_
+|Meilensteine des OpenUP. Siehe <<project-plan-meilensteine-und-ziele, Meilensteine und Ziele im Projektplan>>
 
 |OpenUP
 |Open Unified Process
