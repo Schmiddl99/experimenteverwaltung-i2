@@ -134,7 +134,7 @@ a|* Bestellzusammenfassung
 
 |KW
 |Kalenderwoche
-|-
+|
 
 a|* LCO
 * LCA
@@ -174,7 +174,7 @@ a|* Life Cycle Objective Milestone
 
 |VM
 |Virtuelle Maschine
-|siehe Term _Virtuelle Maschine_ in _Begriffe_
+|siehe Term _Virtuelle Maschine_
 
 |===
 
