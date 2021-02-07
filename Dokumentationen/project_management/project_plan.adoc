@@ -19,11 +19,9 @@ Der Projektplan wird fortlaufend ergänzt und verfeinert. Verantwortlich zeichne
 == Projektorganisation
 //Introduce the project team, team members, and roles that they play during this project. If applicable, introduce work areas, domains, or technical work packages that are assigned to team members. Introduce neighboring projects, relationships, and communication channels. If the project is introduced somewhere else, reference that location with a link.
 
+<<Verantwortlichkeiten: {project-name}, Rollenübersicht>>
+
 //Rollenübersicht verlinken!
-
-//<<Dokumentationen\project_management\Rollenübersicht.adoc, Rollenübersicht>> Link haut nicht hin, vielleicht aber für PDF-Generierung relevant?
-
-//xref:Rollenübersicht.adoc#Verantwortlichkeiten[Rollenübersicht]
 
 Siehe *Rollenübersicht*
 

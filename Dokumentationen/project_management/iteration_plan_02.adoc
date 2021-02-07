@@ -152,12 +152,8 @@ a|* Nach dem Entwurf der ersten Wireframes wurden diese teilweise wieder verworf
 +
 -> Drucken-Funktion fehlt noch (Brauchen wir auch nicht; übernimmt der Browser)
 +
--> Kopierfunktion nicht bearbeitet; siehe Abschnitt Probleme
-//Keiner dieser Links funktioniert!
-//xref:Probleme[Probleme]
-//xref:_Probleme[Probleme]
-//<<Probleme>>
-//<<link-Probleme, Probleme>>
+-> Kopierfunktion nicht bearbeitet; siehe Abschnitt *Probleme*
+//Verlinkung nicht zwingend
 
 ** Der GitHub-Workshop wurde durchgeführt und aufgezeichnet *Y*
 |===
