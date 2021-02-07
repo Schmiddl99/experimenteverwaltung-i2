@@ -50,7 +50,7 @@ Weitere Ziele, die die Architektur in Struktur und Verhalten erfüllen muss, sin
 == Architektur-relevante Anforderungen
 //Fügen Sie eine Referenz / Link zu den Anforderungen ein, die implementiert werden müssen, um die Architektur zu erzeugen.
 
-Über die Systemweiten funktionalen und nichtfunktionalen Anforderungen kann im <<System-Wide Requirements: {project-name},Anforderungsdokument>> nachgelesen werden. 
+Über die systemweiten funktionalen und nichtfunktionalen Anforderungen kann im <<System-Wide Requirements: {project-name},Dokument zu den systemweiten Anforderungen>> nachgelesen werden. 
 
 //Link überprüfen!!
 
