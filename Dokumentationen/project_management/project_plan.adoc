@@ -25,7 +25,7 @@ Der Projektplan wird fortlaufend ergänzt und verfeinert. Verantwortlich dafür 
 
 Unser gesamtes Team und die Personen, die auch direkt oder indirekt mit dem Projekt in Verbindung stehen, werden in der <<Verantwortlichkeiten: {project-name},Rollenübersicht>> vorgestellt. Hier findet man auch eine Übersicht, welche unterschiedlichen Rollen und zusätzlichen Aufgaben die einzelnen Gruppenmitglieder innehaben.
 
-Da während unsres Projekts die Corona-AHA Regeln gegolten haben, wurden auf physische Treffen komplett verzichtet. Die komplette Kommunikation lief über die Programme *Whatsapp* , *Discord* und *MS-Teams*.
+Da während unseres Projekts die Corona-AHA Regeln gegolten haben, wurden auf physische Treffen komplett verzichtet. Die komplette Kommunikation lief über die Programme *Whatsapp*, *Discord* und *MS-Teams*.
 
 Der rote Faden unsrer Arbeit war, dass die Projektmanager einen Iterationszeitraum bestimmten und versuchten, die zu bewältigende Arbeit in Meilensteinen, Iterationsziele und Aufgaben aufzugliedern. Die Aufgaben wurden dann an die gesamten Gruppenmitglieder verteilt und durch die Gruppe überwacht. Wenn einzelnen Personen Probleme bei ihren zugewiesnen Aufgaben, egal welcher Art, hatten, wurde dies in den Weeklys aufgegriffen und versucht die Probleme zu lösen.
 
@@ -95,7 +95,7 @@ wird in Abhängigkeit des Projektzustandes bearbeitet. Bei dieser schrittweisen 
 | Primary objectives (risks and use case scenarios)
 | Scheduled start or milestone
 
-| I01
+| I1
 
 | * Gruppenfindung, Team kennenlernen
 * Rollenverteilung, Namen der Projektmanager übermitteln
@@ -106,15 +106,15 @@ wird in Abhängigkeit des Projektzustandes bearbeitet. Bei dieser schrittweisen 
 
 | 16.11.2020-16.12.2020
 
-| I02
-|<<Iteration Plan 02: {project-name}, Iterationsplan 02>>
+| I2
+|<<Iteration Plan 02: {project-name}, Iterationsplan I2>>
 | 17.12.2020-31.12.2020
 
-| I03
-|<<Iteration Plan 03: {project-name}, Iterationsplan 03>>
+| I3
+|<<Iteration Plan 03: {project-name}, Iterationsplan I3>>
 | 07.01.2021-21.01.2021
 
-| I04
+| I4
 | * Domänenmodell
 * Überarbeitung der Use Cases
 * Überarbeitung der Test Cases
