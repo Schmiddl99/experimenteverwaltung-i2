@@ -11,11 +11,8 @@ Alena Bischoff alena.bischoff@htw-dresden.de
 == Teamregeln
 
 === Dialog miteinander
-<<<<<<< HEAD
+
 Wichtig ist, das im Team offen und ehrlich miteinander diskutiert werden kann. Hierbei sollen Rollen (bspw. Teamleiter, Developer…) außer Acht gelassen werden und auf einer gemeinsamen Ebene, nämlich von Teammitglied zu Teammitglied, miteinander gesprochen werden. 
-=======
-Wichtig ist, dass im Team offen und ehrlich miteinander diskutiert werden kann. Hierbei sollen Rollen (bspw. Teamleiter, Developer…) außer Acht gelassen werden und auf einer gemeinsamen Ebene, nämlich dem Teammitglied, miteinander gesprochen werden. 
->>>>>>> 8c85cb735cb9e9448de8118e1f10c38edfd7b507
 
 Wichtige Punkte sind: 
 
