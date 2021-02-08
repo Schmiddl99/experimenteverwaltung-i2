@@ -1,11 +1,7 @@
 = QM Regeln
 Alena Bischoff <alena.bischoff@htw-dresden.de>; Gregor Müller <gregor.mueller@htw-dresden.de>;
 1.0, 01.02.2021
-:toc: 
-:toc-title: Inhaltsverzeichnis
-// Platzhalter für weitere Dokumenten-Attribute 
-:source-highlighter: highlightjs
-:imagesdir: qm
+
 
 
 == Teamregeln
