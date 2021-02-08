@@ -1,5 +1,5 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
-== Use-Case: *eigene* Dozentenwoche ansehen
+== Use-Case: *Eigene* Dozentenwoche ansehen
 ===	Kurzbeschreibung
 Dozent möchte sich seinen Wochenplan (Übersicht von allen eigenen Exp. inkl. Details) für bestimmte KW anzeigen lassen
 

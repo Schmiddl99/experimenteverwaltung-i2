@@ -1,5 +1,5 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
-== Use-Case: eigene Experimente im Buchungsjournal ansehen
+== Use-Case: Eigene Experimente im Buchungsjournal ansehen
 ===	Kurzbeschreibung
 Dozent will seine gebuchten Exp. im Buchungsjournal ansehen.
 
@@ -15,7 +15,7 @@ Dozent will seine gebuchten Exp. im Buchungsjournal ansehen.
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
 . Der Use Case beginnt, wenn User Buchungsjournalseite aufruft
-. Möglichkeit die Ansicht zu filtern (Vorführungsdatum + Studiengang, Studiengang, Kalenerwoche) --> siehe Unterablauf 1
+. Möglichkeit die Ansicht zu filtern (Vorführungsdatum + Studiengang, Studiengang, Kalenerwoche) -> siehe Unterablauf 1
 . Use Case endet mit Auflistung aller bisher getätigten Buchungen nach Studiengang und Vorführungsdatum
 
 === Alternative Abläufe
@@ -40,5 +40,5 @@ Dozent will seine gebuchten Exp. im Buchungsjournal ansehen.
 
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
-* Der User darf nur selbst gebuchte Exp. einsehen
+* Der User darf nur *selbst* gebuchte Exp. einsehen
 * Gäste und der Admin dürfen keine Einsicht in die jeweiligen Journale haben

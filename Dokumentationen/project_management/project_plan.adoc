@@ -19,17 +19,13 @@ Der Projektplan wird fortlaufend ergänzt und verfeinert. Verantwortlich dafür 
 == Projektorganisation
 //Introduce the project team, team members, and roles that they play during this project. If applicable, introduce work areas, domains, or technical work packages that are assigned to team members. Introduce neighboring projects, relationships, and communication channels. If the project is introduced somewhere else, reference that location with a link.
 
-//Rollenübersicht verlinken!
-
-//<<Dokumentationen\project_management\Rollenübersicht.adoc, Rollenübersicht>> Link haut nicht hin, vielleicht aber für PDF-Generierung relevant?
-
 Unser gesamtes Team und die Personen, die auch direkt oder indirekt mit dem Projekt in Verbindung stehen, werden in der <<Verantwortlichkeiten: {project-name},Rollenübersicht>> vorgestellt. Hier findet man auch eine Übersicht, welche unterschiedlichen Rollen und zusätzlichen Aufgaben die einzelnen Gruppenmitglieder innehaben.
 
 Da während unseres Projekts die Corona-AHA Regeln gegolten haben, wurden auf physische Treffen komplett verzichtet. Die komplette Kommunikation lief über die Programme *Whatsapp*, *Discord* und *MS-Teams*.
 
 Der rote Faden unsrer Arbeit war, dass die Projektmanager einen Iterationszeitraum bestimmten und versuchten, die zu bewältigende Arbeit in Meilensteinen, Iterationsziele und Aufgaben aufzugliedern. Die Aufgaben wurden dann an die gesamten Gruppenmitglieder verteilt und durch die Gruppe überwacht. Wenn einzelnen Personen Probleme bei ihren zugewiesnen Aufgaben, egal welcher Art, hatten, wurde dies in den Weeklys aufgegriffen und versucht die Probleme zu lösen.
 
-
+Siehe *<<Verantwortlichkeiten: {project-name}, Rollenübersicht>>*
 
 == Praktiken und Bewertung
 //Describe or reference which management and technical practices will be used in the project, such as iterative development, continuous integration, independent testing and list any changes or particular configuration to the project. Specify how you will track progress in each practice. As an example, for iterative development the team may decide to use iteration assessments and iteration burndown reports and collect metrics such as velocity (completed work item points/ iteration).
@@ -64,6 +60,7 @@ Die Position der Stakeholder wird dabei zu gleichen Teilen, aber auf indirekte A
 * *Whole Team:*
 
 ** Workshops für teaminternen Wissensaustausch werden ad-hoc durchgeführt (z.B. für die Arbeit in GitHub und Ruby). Alle Teammitglieder sollen vom Wissen der Anderen profitieren können
+
 *** Der erste Workshop zum Thema "GitHub" wurde am 21.12.2020 von {RB}, {TKI} und {GM} durchgeführt (Siehe <<Iteration Plan 02: {project-name}, I02>>)
 ** Konventionen und Anleitungen werden im GitHub-Wiki geteilt: https://github.com/Schmiddl99/experimenteverwaltung-i2/wiki[Wiki]
 
@@ -116,10 +113,9 @@ wird in Abhängigkeit des Projektzustandes bearbeitet. Bei dieser schrittweisen 
 
 | I04
 | * Domänenmodell
-* Überarbeitung der Use Cases
-* Überarbeitung der Test Cases
+* Überarbeitung der <<Use-Case Model: {project-name}, Use Cases>>
+* Überarbeitung der <<Test Cases: {project-name},Test Cases>>
 * Anfertigung des Beleges für das Modul: Überprüfung der Dokumente (siehe <<QM Regeln, QM>>)
-
 * Ausscheiden der Teilnehmer {JS}, {TW}, {TKa} aufgrund Beendigung des Moduls I925 Requirements Engineering
 | 22.01.2021-04.02.2021
 

@@ -37,7 +37,7 @@ a| * Datenbankeintrag für die Bestellung ist angelegt
 
 |===
 
-|*Beschreibung* |Der Dozent versucht bewusst falsche Eingaben in den Voreinstellungen zu treffen. Damit sind keine menschlichen Fehler gemeint, wie z.B. ein falsches Datum ausgewählt zu haben sondern ein Datum in der Vergangenheit zu wählen. 
+|*Beschreibung* |Der Dozent versucht bewusst falsche Eingaben in den Voreinstellungen zu treffen. Damit sind keine menschlichen Fehler gemeint, wie z.B. ein falsches Datum ausgewählt zu haben, sondern ein Datum in der Vergangenheit zu wählen. 
 
 
 |*Vorbedingungen und benötigte Daten*
@@ -62,7 +62,7 @@ a| * es können nur verfügbare Studiengänge über ein Dropdown Menü ausgewäh
 |*Vorbedingungen und benötigte Daten*
 a| * ein Dozent ist mit validen Zugangsdaten angemeldet  
 * es wurde eine Buchung begonnen
-* es wurde valide Daten in die Voreinstellungen eingegeben  
+* es wurden valide Daten in die Voreinstellungen eingegeben  
 * valides Datum, valide Uhrzeit und valider Studiengang
 
 |*Nachbedingung*
@@ -81,7 +81,7 @@ a| * der Button "Buchung abschließen" ist bis zur Auswahl mindestens eines Expe
 |*Vorbedingungen und benötigte Daten*
 a| * ein Dozent ist mit validen Zugangsdaten angemeldet
 * es wurde eine Buchung begonnen
-* es wurde valide Daten in die Voreinstellungen eingegeben 
+* es wurden valide Daten in die Voreinstellungen eingegeben 
 * es wurde mindestens ein Experiment ausgewählt
 * valides Datum, valide Uhrzeit und valider Studiengang
 * es muss mindestens ein Experiment geben
@@ -298,7 +298,6 @@ a| * die entsprechend gefilterte, inkl. aller gebuchten Experimente, Dozentenwoc
 
 |*Beschreibung* |Es wird erwartet, dass der Admin keinen Zugriff auf das Dozenten-Journal hat, die Dozenten nur ihr persönliches Journal einsehen dürfen und nur der Admin die Statistik abrufen kann. Auch dürfen die Dozenten nur ihre eigene Dozentenwoche abrufen. 
 
-
 |*Vorbedingungen und benötigte Daten*
 a| * ein Admin ist mit Zugangsdaten angemeldet
 * ein Dozent ist mit validen Zugangsdaten angemeldet
@@ -423,7 +422,7 @@ a| * die Testperson befindet sich auf der Bestätigungsseite und hat diese ohne 
 |===
 
 
-==== TC22 - NFAU-1.4 - Buchung eines Exp. kann innerhalb von 15 Klicks abgeschlossen werden (manueller Test)
+==== TC22 - NFAU-1.4 - Buchung eines Experiments kann innerhalb von 15 Klicks abgeschlossen werden (manueller Test)
 
 |===
 
