@@ -1,0 +1,18 @@
+= Qualitätsmanagement
+Alena Bischoff <alena.bischoff@htw-dresden.de>; Gregor Müller <gregor.mueller@htw-dresden.de>; Julius Schmidt <juliusheiko.schmidt@htw-dresden.de>; Richard Böhme <richard.boehme@htw-dresden.de>; Taejun Kim <taejun.kim@htw-dresden.de>; Tim Würzburg <tim.wuerzburg@htw-dresden.de>; Tobias Karsch <tobias.karsch@htw-dresden.de>; William Elsner <william.elsner@htw-dresden.de>;
+{localdatetime}
+include::../_includes/default-attributes.inc.adoc[]
+
+
+== Hintergrund 
+
+Unser Ziel war es, ein Projekt zu verwirklichen, was auf der einen Seite alle Stakeholder zufriedenstellt, aber auch vor allem die hohen Qualitätsanforderungen der Gruppe widerspiegelt. Deshalb entschlossen wir uns sehr früh ein *Qualitätsmanagement* zu gründen, dass einzelnen Arbeitsschritte, Dokumentationsarbeiten und die Kommunikation der Gruppe überwacht.
+
+Aus diesem Grund wurde von {AB} und {GM} ein Regelwerk formuliert, nachdem das QM die oben aufgezählten Punkte bewerten kann. Zusätzlich wurden hier auch Anhaltspunkte für die Test Cases und den Umgang mit GitHub festgehalten. Anschließend wurde {AB} mit der Aufgabe betraut, das QM zu führen und auf Regelverstöße aufmerksam zu machen. Auch wurde in jedem Weekly durch kurzes Nachfragen durch die Projektmanager überprüft, ob das QM auf Probleme aufmerksam wurde.
+
+<<<
+include::qm_rules.adoc[]
+
+<<<
+include::qm_review.adoc[]
+
