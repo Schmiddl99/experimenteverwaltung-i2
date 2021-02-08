@@ -27,9 +27,7 @@ Der Zweck dieses Dokuments ist es, die wesentlichen an das System gestellten Anf
 Dieses Visions-Dokument bezieht sich auf das Experimente-Management-System, das von Team I2 entwickelt wird. Das System wird es dem Admin erlauben, ein Buchungssystem zu betreiben, um damit das umständliche Bestellen per E-Mail abzulösen.
 
 === Definitionen, Akronyme und Abkürzungen
-
-siehe https://github.com/Schmiddl99/experimenteverwaltung-i2/blob/main/Dokumentationen/requirements/Glossar.adoc[Glossar]
-
+siehe <<Glossar: {project-name},Glossar>>
 
 === Referenzen
 based on: https://www2.htw-dresden.de/~anke/openup/core.tech.common.extend_supp/guidances/templates/resources/vision_tpl.dot [EPL V1.0]

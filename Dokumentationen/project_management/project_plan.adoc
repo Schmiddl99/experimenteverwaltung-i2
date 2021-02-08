@@ -14,18 +14,18 @@ Das Projekt umfasst die vier Phasen:
 * Construction
 * Transition
 
-Der Projektplan wird fortlaufend ergänzt und verfeinert. Verantwortlich zeichnen die Project Manager.
+Der Projektplan wird fortlaufend ergänzt und verfeinert. Verantwortlich dafür sind die Projektmanager.
 
 == Projektorganisation
 //Introduce the project team, team members, and roles that they play during this project. If applicable, introduce work areas, domains, or technical work packages that are assigned to team members. Introduce neighboring projects, relationships, and communication channels. If the project is introduced somewhere else, reference that location with a link.
 
-//Rollenübersicht verlinken!
+Unser gesamtes Team und die Personen, die auch direkt oder indirekt mit dem Projekt in Verbindung stehen, werden in der <<Verantwortlichkeiten: {project-name},Rollenübersicht>> vorgestellt. Hier findet man auch eine Übersicht, welche unterschiedlichen Rollen und zusätzlichen Aufgaben die einzelnen Gruppenmitglieder innehaben.
 
-//<<Dokumentationen\project_management\Rollenübersicht.adoc, Rollenübersicht>> Link haut nicht hin, vielleicht aber für PDF-Generierung relevant?
+Da während unseres Projekts die Corona-AHA Regeln gegolten haben, wurden auf physische Treffen komplett verzichtet. Die komplette Kommunikation lief über die Programme *Whatsapp*, *Discord* und *MS-Teams*.
 
-xref:Rollenübersicht.adoc#Verantwortlichkeiten[Rollenübersicht]
+Der rote Faden unsrer Arbeit war, dass die Projektmanager einen Iterationszeitraum bestimmten und versuchten, die zu bewältigende Arbeit in Meilensteinen, Iterationsziele und Aufgaben aufzugliedern. Die Aufgaben wurden dann an die gesamten Gruppenmitglieder verteilt und durch die Gruppe überwacht. Wenn einzelnen Personen Probleme bei ihren zugewiesnen Aufgaben, egal welcher Art, hatten, wurde dies in den Weeklys aufgegriffen und versucht die Probleme zu lösen.
 
-
+Siehe *<<Verantwortlichkeiten: {project-name}, Rollenübersicht>>*
 
 == Praktiken und Bewertung
 //Describe or reference which management and technical practices will be used in the project, such as iterative development, continuous integration, independent testing and list any changes or particular configuration to the project. Specify how you will track progress in each practice. As an example, for iterative development the team may decide to use iteration assessments and iteration burndown reports and collect metrics such as velocity (completed work item points/ iteration).
@@ -36,7 +36,7 @@ https://www2.htw-dresden.de/~anke/openup/publish.openup.base/customcategories/ma
 
 * *Iterative Development:* Plan Iteration - Manage Iteration - Assess Results
 
-Das Team führt 14-tägige Iterationen durch. Wir nutzen ein modifiziertes https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3[Scrum-Board] auf GitHub für Planung und Steuerung jeder Iteration. Iterationen werden in ALLEN Phasen des Projektes generell mit der Klassifizierung I1, I2, ... I[n] benannt. Dafür haben wir uns entschieden, da die OpenUP-Meilensteine nicht zwangsweise am Ende einer Iteration, sondern während der Arbeit erreicht wurden, was eine Aufteilung in I-, E-, C- und T-Phasen erschwerte.
+Das Team führt 14-tägige Iterationen durch. Wir nutzen ein modifiziertes https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3[Scrum-Board] auf GitHub für Planung und Steuerung jeder Iteration. Iterationen werden in ALLEN Phasen des Projektes generell mit der Klassifizierung I01, I02, ... I[n] benannt. Dafür haben wir uns entschieden, da die OpenUP-Meilensteine nicht zwangsweise am Ende einer Iteration, sondern während der Arbeit erreicht wurden, was eine Aufteilung in I-, E-, C- und T-Phasen erschwerte.
 Regeln zum Umgang mit den Aufgaben (Issues) und mit Pull Requests sind im https://github.com/Schmiddl99/experimenteverwaltung-i2/wiki/Iteration-Planning[Wiki] festgehalten.
 Der Fortschritt einer jeden Iteration bildet sich durch das "Wandern" der Aufgaben von der Spalte "Work Item List" in die Spalte "DONE" ab. Zu Beginn einer jeden Iteration wird die Work Item List wieder gefüllt. Der globale Projektfortschritt wird außerdem mithilfe des ESSENCE Navigator Tools sowie durch die Definition und Messung zu erreichender OpenUP-Meilensteine veranschaulicht.
 
@@ -60,7 +60,8 @@ Die Position der Stakeholder wird dabei zu gleichen Teilen, aber auf indirekte A
 * *Whole Team:*
 
 ** Workshops für teaminternen Wissensaustausch werden ad-hoc durchgeführt (z.B. für die Arbeit in GitHub und Ruby). Alle Teammitglieder sollen vom Wissen der Anderen profitieren können
-*** Der erste Workshop zum Thema "GitHub" wurde am 21.12.2020 von {RB}, {TKI} und {GM} durchgeführt (Siehe I2)
+
+*** Der erste Workshop zum Thema "GitHub" wurde am 21.12.2020 von {RB}, {TKI} und {GM} durchgeführt (Siehe <<Iteration Plan 02: {project-name}, I02>>)
 ** Konventionen und Anleitungen werden im GitHub-Wiki geteilt: https://github.com/Schmiddl99/experimenteverwaltung-i2/wiki[Wiki]
 
 * Das *Qualitätsmanagement* wird durch die Verantwortliche {AB} gestaltet und durchgeführt
@@ -68,16 +69,11 @@ Die Position der Stakeholder wird dabei zu gleichen Teilen, aber auf indirekte A
 === Technical Practices
 https://www2.htw-dresden.de/~anke/openup/publish.openup.base/customcategories/technical_practice_list_E425C20F.html?nodeId=cd065eb4[Technical Practices OpenUP]
 
-* *Shared Vision*: Diese OpenUP-Praktik verbessert die Akzeptanz des späteren Produktes durch alle Stakeholder. In unserem Fall strebten wir die Übereinstimmung über die Vision
-//Link!!
-und die damit beschriebene Opportunity gemeinsam mit dem Themensteller an. Das Team konnte diese Übereinstimmung in Iteration I03
-//Link Iteration Plan!!
-erreichen.
+* *Shared Vision*: Diese OpenUP-Praktik verbessert die Akzeptanz des späteren Produktes durch alle Stakeholder. In unserem Fall strebten wir die Übereinstimmung über die <<Vision: {project-name}, Vision>> und die damit beschriebene Opportunity gemeinsam mit dem Themensteller an. Das Team konnte diese Übereinstimmung in <<Iteration Plan 03: {project-name}, Iteration I03>> erreichen.
 
-* *Use Case Driven Development*: OpenUP empfiehlt die Zugrundelegung eines *Use Case Models* 
-//Link!!
-sowie von *System-Wide Requirements*
-//Link!!
+* *Use Case Driven Development*: OpenUP empfiehlt die Zugrundelegung eines 
+<<Use-Case Model: Experimenteverwaltung I2, Use Case Models>>
+sowie von <<System-Wide Requirements: {project-name}, System-Wide Requirements>>
 zur Beschreibung, Gliederung und Auswertung der erhobenen Anforderungen. Durch die Nutzung dieser Praktik versprechen wir uns eine effizientere Umsetzung und ein höheres Erfolgspotential des gesamten Projektes.
 
 * *Evolutionary Architecture*: Das Architecture Notebook
@@ -109,20 +105,18 @@ wird in Abhängigkeit des Projektzustandes bearbeitet. Bei dieser schrittweisen 
 | 16.11.2020-16.12.2020
 
 | I02
-|xref:iteration_plan_02.adoc#Meilensteine[Iterationsplan 02]
+|<<Iteration Plan 02: {project-name}, Iterationsplan I02>>
 | 17.12.2020-31.12.2020
 
 | I03
-|xref:iteration_plan_03.adoc#Meilensteine[Iterationsplan 03]
+|<<Iteration Plan 03: {project-name}, Iterationsplan I03>>
 | 07.01.2021-21.01.2021
 
 | I04
 | * Domänenmodell
-* Überarbeitung der Use Cases
-* Überarbeitung der Test Cases
-* Anfertigung des Beleges für das Modul: Überprüfung der Dokumente (siehe *QM*)
-//Link!!
-
+* Überarbeitung der <<Use-Case Model: {project-name}, Use Cases>>
+* Überarbeitung der <<Test Cases: {project-name},Test Cases>>
+* Anfertigung des Beleges für das Modul: Überprüfung der Dokumente (siehe <<QM Regeln, QM>>)
 * Ausscheiden der Teilnehmer {JS}, {TW}, {TKa} aufgrund Beendigung des Moduls I925 Requirements Engineering
 | 22.01.2021-04.02.2021
 
@@ -138,9 +132,9 @@ Bei der Planung zukünftiger Iterationen und ihrer Ziele sind diese Punkte zu ve
 //Outline the strategy for deploying the software (and its updates) into the production environment.
 * Übertragung des Systems von der VM auf den regulären Fakultätsserver durch TAVM
 
-== Erkenntnisse (Lessons learned)
+== Erkenntnisse (Lessons Learned)
 //List lessons learned from the retrospective, with special emphasis on actions to be taken to improve, for example: the development environment, the process, or team collaboration.
 
-* Kommunikation mit den Stakeholdern ist der Knackpunkt für die Anforderungsanalyse, das tiefgründige gegenseitige Verständnis initial der wichtigste Faktor.
+* Kommunikation mit den Stakeholdern ist der Knackpunkt für die Anforderungsanalyse und das tiefgründige gegenseitige Verständnis initial der wichtigste Faktor.
 * Bestimmung eines Redeführers und Vorbereitung der Tagesordnung machen Meetings deutlich zeiteffizienter.
 * Wissensweitergabe im Team lässt sich über selbstorganisierte Workshops sehr gut realisieren - von der Erfahrung einzelner Teammitglieder können so alle profitieren.
