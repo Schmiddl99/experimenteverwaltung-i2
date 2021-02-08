@@ -30,6 +30,7 @@ include::{docs}/_includes/default-attributes.inc.adoc[]
 
 <<<
 
+//#Bitte PDF einmal komplett durchscrollen, um Verlinkungen zu laden!#
 // --- 4. include Pfade anpassen ---------------
 
 // --- Technische Spezifikation ---
