@@ -78,7 +78,7 @@ a|* Themensteller
 
 |Open Unified Process
 a|* Vorgehensmodell
-* siehe https://www2.htw-dresden.de/~anke/openup/index.htm
+* siehe https://www2.htw-dresden.de/~anke/openup/index.htm[Open Unified Process]
 * _OpenUP is a lean Unified Process that applies iterative and incremental approaches within a structured lifecycle_
 a|* Vorgehendmodell
 * OpenUP
@@ -129,11 +129,11 @@ a|* Bestellzusammenfassung
 
 |Exp.
 |Experiment
-|
+|-
 
 |KW
 |Kalenderwoche
-|
+|-
 
 a|* LCO
 * LCA
