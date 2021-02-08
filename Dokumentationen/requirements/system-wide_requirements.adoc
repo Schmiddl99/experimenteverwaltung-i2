@@ -13,7 +13,7 @@ In diesem Dokument werden die systemweiten Anforderungen für das Projekt {proje
 * Qualitätsanforderungen für Benutzbarkeit, Zuverlässigkeit, Effizienz und Wartbarkeit (URPS) sowie
 * Zusätzliche Anforderungen (+) für technische, rechtliche, organisatorische Randbedingungen
 
-NOTE: Die funktionalen Anforderungen, die sich aus der Interaktion von Nutzern mit dem System ergeben, sind als Use Cases in einem separaten Dokument festgehalten. <<Use-Case Model: Experimenteverwaltung I2, Use-Case Model>>
+NOTE: Die funktionalen Anforderungen, die sich aus der Interaktion von Nutzern mit dem System ergeben, sind als Use Cases in einem separaten Dokument festgehalten <<Use-Case Model: Experimenteverwaltung I2, Use-Case Model>>
 
 NOTE: "To write a good requirement, you must write it as a complete sentence, with a subject and a predicate (usually a verb). The subject is an Actor, a stakeholder, the system under development, or a design entity that is related to the requirement. The predicate specifies a condition, action, or intended result that is done for, by, with, or to the subject."
 - (siehe https://www2.htw-dresden.de/~anke/openup[OpenUP]) 
@@ -22,7 +22,7 @@ NOTE: Unsere Anforderungen sollen den Projekterfolg garantieren. Je gewissenhaft
 
 NOTE: Aussagen des ESSENCE Kernel: 
 Opportunity focuses on Requirements. 
-Requirements set scopes & constraints for work. 
+Requirements set scopes & constraints for work.
 
 NOTE: Anforderungsanalyse ist Teil der Solution, damit essentieller Teil der Lösung. 
 Stakeholder haben Anforderungen. Ziele der Stakeholder sind Teil der Anforderungsspezifikation! 
@@ -32,17 +32,17 @@ Stakeholder haben Anforderungen. Ziele der Stakeholder sind Teil der Anforderung
 
 * *SWFA-1*: Das System muss Zugriffsbeschränkungen gewährleisten, da nicht jeder Anwender jeden Use Case ausführen darf. Diese Zugriffsbeschränkungen erlauben es dem Anwender, nur für ihn vorgesehene Funktionen auszuführen und nur auf für ihn zugängliche Daten zuzugreifen. Dafür ist eine Zuordnung aller Anwender zu Rollen und einem Login notwendig.
 
-** Zu Überprüfungszwecken wird anhand von Test-Logins versucht auf fremde Daten und Rollenfunktionalitäten zuzugreifen. 
+** Zu Überprüfungszwecken wird anhand von Test-Logins versucht auf fremde Daten und Rollenfunktionalitäten zuzugreifen
 
 * *SWFA-2*: Das System muss Buchungs- und Anwenderdaten persistent speichern. 
 
-** Überprüfbar wird dies durch Einfügen von Daten. Nach einem Neustart des Systems ist es notwendig, dass die Daten weiterhin vollständig sind. 
+** Überprüfbar wird dies durch Einfügen von Daten. Nach einem Neustart des Systems ist es notwendig, dass die Daten weiterhin vollständig sind
 
 // * *SWFA-8*: Das System muss sicherstellen, dass nur valide Angaben angenommen werden können. 
 
 * *SWFA-3*: Das System muss Zugangsdaten der Anwender vor Diebstahl schützen. 
 
-** Überprüfbar wird dies durch einen Versuch, Testzugangsdaten auszulesen. 
+** Überprüfbar wird dies durch einen Versuch, Testzugangsdaten auszulesen
 
 // * *SWFA-9*: Das System muss Buchungsfortführungen nach Verbindungsabbrüchen gewährleisten. Dies wird durch einen Session-Token sichergestellt. 
 

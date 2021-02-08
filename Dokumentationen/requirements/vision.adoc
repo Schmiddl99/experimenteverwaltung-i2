@@ -44,7 +44,7 @@ Diese Methode ist sehr unübersichtlich, da die einzelnen Mails der Dozenten aus
 Um diesen Mehraufwand zu umgehen, möchte der Kunde die Möglichkeit, Experimente in einen “Warenkorb” hinzuzufügen. In diesem sollen je Vorlesung verschiedene Experimente hinterlegt und als Auftrag bestellt werden können. Schlussendlich sollen diese Daten dann automatisiert abrufbar gemacht werden und zur einfachen Planung der Bestellungen als in Tage gegliederte Wochen pro Dozent angezeigt werden. 
 
 
-Ebenfalls soll die Möglichkeit einer Auswertung der vergangenen Bestellungen ermöglicht werden. Dies ist wichtig, um herauszufinden, welche Experimente besonders oft gebucht werden, um bspw. Verschleiß der Geräte vorauszusagen und in Folge dessen mehr Geräte oder Instrumente einzukaufen.
+Ebenfalls soll die Möglichkeit einer Auswertung der vergangenen Bestellungen ermöglicht werden. Dies ist wichtig, um herauszufinden, welche Experimente besonders oft gebucht werden, um bspw. den Verschleiß der Geräte vorauszusagen und in Folge dessen mehr Geräte oder Instrumente einzukaufen.
 
 Als Zusatzziel gilt die Verwaltung der in den Experimenten enthaltenen Bilder. Bei der Anschaffung von neuen Instrumenten für die Experimente müssen auch die Bilder entsprechend erneuert werden. Dabei soll, um Konsistenz zu bewahren, die Bezeichnung der Bilder gleich bleiben, das Bild jedoch in Datei und Reihenfolge anpassbar gemacht werden. 
 
@@ -131,7 +131,8 @@ a|
 |===
 |Name|	Beschreibung	| Verantwortlichkeiten
 
-|Admin/Kunde	a|
+|Admin/ +
+Kunde	a|
 
 * Mitarbeiter der HTW
 * Vorlesungsassistent im Bereich Energietechnik/Physik
@@ -157,7 +158,7 @@ a|
 
 |TAVM (Herr Hornoff)
 // Bezeichnung Stakeholder?
-a| * Betreuer der VM a| *Gewährleistung eines Arbeitsumfeldes für uns
+a| * Betreuer der VM a| * Gewährleistung eines Arbeitsumfeldes für uns
 
 
 |Rechenzentrum der HTW a| * Ist "Standort" der Nutzeranwendung und Datenbank a| * Muss die Bereitstellung der Anwendung sicherstellen
@@ -199,7 +200,7 @@ a| * Betreuer der VM a| *Gewährleistung eines Arbeitsumfeldes für uns
 
 [%header, cols="4,1,4,1"]
 |===
-|Bedarf|	Priorität|	Features|	Geplantes Release
+|Bedarf|	Priori-tät|	Features|	Geplan-tes Release
 
 
 |Voreinstellungen | Hoch| Festlegung der Buchungsdetails vor Buchungsbeginn| xx
@@ -207,7 +208,7 @@ a| * Betreuer der VM a| *Gewährleistung eines Arbeitsumfeldes für uns
 |Journal ansehen |Hoch |Einsehen vergangener und Bearbeiten aktueller Buchungen durch den Dozenten |xx
 |Dozentenwoche |Hoch | Einsehen der Buchungen je Wochentag und pro Dozent durch den Admin; Einleitung des Druckprozesses| xx 
 |Statistik ansehen |Mittel |Statistik (z.B. als Top 10) der (bestellten) Experimente einsehen |xx
-|Verwaltung der Bilder |Niedrig |Bilder in Experimenten können ersetzt werden, Reihenfolge wird einbehalten. |xx
+|Verwaltung der Bilder |Niedrig |Bilder in Experimenten können ersetzt werden, Reihenfolge wird einbehalten |xx
 
 |===
 
@@ -247,7 +248,7 @@ Sollte diese Funktion in der Zukunft erneut gefordert werden, so sind hier unser
 a|* Problem wurde von allen Parteien erkannt
 * Die Kopierfunktion entspringt der *grundsätzlichen Motivation* des Projektes: Den Dozenten soll die *Arbeit im höchstmöglichen Umfang vereinfacht werden*. Deshalb soll der einmal bestrittene Ablauf von Experimenten in einem Semester leicht wieder auf ein Neues anzuwenden sein.
 * Erkenntnis aus dem derzeitigen Projekt: Um Statistik zu erhalten, müssen Dozenten immer wieder neu buchen -> muss den Dozenten klar gemacht werden
-* Dozent muss sich *seine* Woche drucken können -> braucht auch Zugang zu SEINER Dozentenwoche (Journal als Historie, Dozentenwochen aber auch) 
+* Dozent muss sich SEINE Woche drucken können -> braucht auch Zugang zu SEINER Dozentenwoche (Journal als Historie, Dozentenwochen aber auch) 
 a|* Datumsanpassung jeder kopierten Vorlesung ist erforderlich
 * Was ist beim Wechsel Winter- zu Sommersemester? 
 * Je mehr kopiert werden soll (einzelne VL-Tage-Wochen-Semester), desto mehr Angaben muss der User wieder anpassen

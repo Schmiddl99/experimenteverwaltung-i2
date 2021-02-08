@@ -66,7 +66,7 @@ a| * ein Dozent ist mit validen Zugangsdaten angemeldet
 * valides Datum, valide Uhrzeit und valider Studiengang
 
 |*Nachbedingung*
-a| * der Button "Buchung abschließen" ist bis zur Auswahl mindestens eines Experiments ausgegraut und kann nicht geklickt werden. 
+a| * der Button "Buchung abschließen" ist bis zur Auswahl mindestens eines Experiments ausgegraut und kann nicht geklickt werden
 * Dozent bleibt auf der Seite Experimentenübersicht 
 
 |===
