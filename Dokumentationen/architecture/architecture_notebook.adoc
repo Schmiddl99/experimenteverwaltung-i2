@@ -74,7 +74,7 @@ a|  * Sicherheit
     * Session-Management
     * Error Management
 
-|<<Use-Case: eigene Experimente im Buchungsjournal ansehen, UC02>>
+|<<Use-Case: Eigene Experimente im Buchungsjournal ansehen, UC02>>
 a|   * Webanwendung
      * Weboberfläche 
      * Buchung
