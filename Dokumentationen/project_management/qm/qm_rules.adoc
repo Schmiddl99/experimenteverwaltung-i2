@@ -1,12 +1,11 @@
-= QM Regeln
-Alena Bischoff <alena.bischoff@htw-dresden.de>; Gregor Müller <gregor.mueller@htw-dresden.de>;
-1.0, 01.02.2021
+== QM Regeln
 
 
 
-== Teamregeln
 
-=== Dialog miteinander
+=== Teamregeln
+
+==== Dialog miteinander
 
 Wichtig ist, das im Team offen und ehrlich miteinander diskutiert werden kann. Hierbei sollen Rollen (bspw. Teamleiter, Developer…) außer Acht gelassen werden und auf einer gemeinsamen Ebene, nämlich von Teammitglied zu Teammitglied, miteinander gesprochen werden. 
 
@@ -16,7 +15,7 @@ Wichtige Punkte sind:
 * keine Angriffe auf persönlicher Ebene; Vorwürfe 
 * ansprechen von Problemen, sobald diese Auftreten 
 
-=== Rollen und Verantwortlichkeit
+==== Rollen und Verantwortlichkeit
 Je besser die Rollen und Verantwortlichkeiten geklärt sind, desto einfacher lassen sich Aufgaben verteilen und erledigen. Jedoch sollte jeder dafür verantwortlich sein, dass Aufgaben bestmöglich gelöst werden.  
 
 Deswegen: 
@@ -24,7 +23,7 @@ Deswegen:
 * keine Aufgabe bleibt liegen, auch wenn Sie nicht im Verantwortlichkeitsbereich liegt 
 * Hilfe soll angeboten und angenommen werden 
 
-=== Verantwortung
+==== Verantwortung
 Verantwortung bedeutet die Übernahme von schlechten sowie guten Ergebnissen einzugestehen und zu tragen. Wichtig ist hier, das beim auftreten von Fehlern und Problemen niemals jemanden die Schuld gegeben werden sollte. 
 
 Deswegen: 
@@ -34,7 +33,7 @@ Deswegen:
 * gemeinsam überlegen, wie Problem beseitigt werden kann 
 
 
-=== Feedback
+==== Feedback
 Wo eine Qualität erreicht und gehalten werden soll, ist ständiges Feedback notwendig. Jeder muss willens und in der Lage sein, dieses zu geben. 
 
 Deswegen: 
@@ -43,7 +42,7 @@ Deswegen:
 * positives Feedback ist wichtig 
 * Feedback sollte nicht persönlich genommen werden; auf fachlicher Ebene darf gerne diskutiert werden 
 
-=== Ablaufoptimierung
+==== Ablaufoptimierung
 Bei Besprechung wichtiger Dokumente können Vorgänge und Bearbeitung dieser oft kompliziert werden. Deshalb ist es wichtig, dort den Überblick zu behalten. 
 
 Deshalb: 
@@ -54,9 +53,9 @@ Deshalb:
 * Themen nacheinander absprechen und Zwischenstände absegnen 
 * Schweigen wird als Zustimmung gewertet 
 
-== Arbeiten im Team
+=== Arbeiten im Team
 
-=== Weekly Scrum
+==== Weekly Scrum
 Das Scrum Meeting bietet eine Möglichkeit, eine Arbeitsbesprechung effektiv durchzuführen. Durchgeführt wird es zu unserem wöchentlichen Meeting (jeden Dienstag), am besten am Anfang der Sitzung.  
 
 Wichtige Punkte sind: 
@@ -71,9 +70,9 @@ Wichtige Punkte sind:
 
 Ziel ist es, alle Beteiligten auf denselben Wissensstand über die angefallenen Aufgaben zu bringen, eventuell Lasten umzuverteilen oder Blocker aus dem Weg zu schaffen. 
 
-== Qualitätsmanagement in der Softwareentwicklung 
+=== Qualitätsmanagement in der Softwareentwicklung 
 
-=== Erstellen von Testcases 
+==== Erstellen von Testcases 
 Testcases sind wichtig, um die Funktionalität eines bestimmten Elements eines Programmes zu testen. Hier wird genau beschrieben, welche Funktionen getestet werden sollen, Hintergrundinformationen dieser, welche Akteure und Daten daran teilhaben, ob es Vorbedingungen gibt und wie genau der Ablauf stattfinden soll. 
 
 Mit der Abarbeitung dieser Testcases wird sichergestellt, dass mit der Einhaltung der aufgeführten Schritte das gewünschte Ergebnis erreicht werden kann. 
@@ -88,7 +87,7 @@ Inhalte:
 * (eventuell) benötigte Daten 
 * Ablauf (einzelne Schritte des Ablaufs, welche überprüft werden müssen) 
 
-=== Black Box Testing
+==== Black Box Testing
 Beim Black Box Testing liegt das Augenmerk auf den Ein- und Ausgaben. Es ist kein Wissen zum Code oder dem Backend nötig, wichtig ist, das nach einer Eingabe die richtige Ausgabe zustande kommt. 
 
 Vorteil: 
@@ -101,24 +100,24 @@ Nachteile:
 
 * Gründe für falsche Ausgaben können nicht sofort erkannt werden 
 
-=== Positivtests
+==== Positivtests
 Hierbei wird getestet, ob bei korrekter Eingabe richtiger Werte die Ergebnisse erzielt werden, welche erwartet werden. Hierbei wird das korrekte Verhalten der Software auf den Prüfstand gestellt. 
 
 Wichtig: 
 
 * Erstellung einer Testliste mit möglichen richtigen Werten 
 
-=== Negativtests
+==== Negativtests
 Beim Negativtest wird überprüft, ob bei einer fehlerhaften Eingabe in das Programm dieses richtig reagiert, z.B. mit einer Fehlermeldung. Er werden absichtlich ungültige Werte eingegeben oder Masken nicht vollständig ausgefüllt, um eventuelle Fehler zu erzeugen. Auch Bedienfehler sollten hier beachtet werden. Hierbei können auch eventuelle Verbesserungen der Benutzerfreundlichkeit festgestellt werden. 
 
 Wichtig: 
 
 * Erstellung einer möglichst vielseitigen Liste an möglichen Fehleingaben in verschiedenen Variationen 
 
-=== Testen durch User
+==== Testen durch User
 Besonders wichtig bei unserer Webanwendungs-Erweiterung ist die einfache Bedienung durch den Endbenutzer. Deshalb soll spezielles Augenmerk auf den Test durch einen Benutzer gelegt  werden. Auf Feedback soll gehört werden und eventuelle Anpassungen danach sollten mit Priorität umgesetzt werden. 
 
-=== Kommentare
+==== Kommentare
 Bei der Programmierung oder Einbindung von Tools müssen Kommentare verfasst werden, die: 
 
 * Erklären was passiert 
@@ -126,7 +125,7 @@ Bei der Programmierung oder Einbindung von Tools müssen Kommentare verfasst wer
 * Kennzeichnen dass ein Codestück noch in der Entwicklung ist 
 * Ein Kürzel enthalten wer der Autor ist 
 
-=== GitHub Regeln
+==== GitHub Regeln
 Beim Arbeiten in einem großen Team muss besonders bei der Bearbeitung von gemeinsamen Dokumenten darauf geachtet werden, das es gewisse Konventionen gibt, die Mehr- und Doppelarbeiten verhindern. Dies ist mindestens genauso wichtig wie die Verwendungen von gleichbleibenden Namens-Konstrukten, dem Umgang und Bearbeitung von neuen Aufgaben sowie die Migrierung der Ergebnisse zu den bereits validierten Dokumenten.  
 
 Deshalb wurde von unserem Team ein https://github.com/Schmiddl99/experimenteverwaltung-i2/wiki/Github-Regeln[Guide]  zur Verwendung von GitHub erstellt, welcher bei der Benutzung im Projektrahmen unbedingt eingehalten werden soll.  
