@@ -8,9 +8,9 @@ ifndef::imagesdir[:imagesdir: wf_pictures]
 == Wireframes
 
 === Erklärung
-Für die einfache Darstellungen von Sachverhalten und der Nutzung unserer Erweiterung der Webanwendung haben wir uns für die Verwendung von Wireframes entschieden. Besonders bei der Darstellung des Buchungsvorganges und unserer Vorstellung zu den Benutzeroberflächen war uns die Nutzung besonders wichtig, da unser Kunde mit visuellen Darstellungen unsere Ideen besser nachvollziehen konnte.
+Für die einfache Darstellung von Sachverhalten und der Nutzung unserer Erweiterung der Webanwendung haben wir uns für die Verwendung von Wireframes entschieden. Besonders bei der Darstellung des Buchungsvorganges und unserer Vorstellung zu den Benutzeroberflächen war uns die Nutzung besonders wichtig, da unser Kunde mit visuellen Darstellungen unsere Ideen besser nachvollziehen konnte.
 
-//Aus diesem Grund wählten wir sehr detaillierte Darstellungen, welche stellenweise über einen klassischen Wireframe hinaus gehen mögen. Die bildliche Vorstellung begünstigte eine erfolgreiche Verständigung mit den Stakeholdern über die Lösungsansätze.
+Aus diesem Grund wählten wir sehr detaillierte Darstellungen, welche stellenweise über einen klassischen Wireframe hinaus gehen mögen. Die bildliche Vorstellung begünstigte eine erfolgreiche Verständigung mit den Stakeholdern über die Lösungsansätze.
 
 Anbei nun eine Zusammenstellung der einzelnen Wireframes.
 

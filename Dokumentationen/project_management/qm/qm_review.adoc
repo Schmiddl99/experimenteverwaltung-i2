@@ -1,5 +1,4 @@
 == QM Review zum bisherigen Projekt
-:imagesdir: qm
 
 
 === Rückblick auf das Projekt bisher

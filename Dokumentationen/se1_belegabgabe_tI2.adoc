@@ -67,6 +67,7 @@ include::{docs-requirements}/domain_model.adoc[lines=1..1;4..-1,leveloffset=+1]
 // --- Projektdokumentation ---
 = Projektdokumentation
 * Projektplan
+* Verantwortlichkeiten
 * Qualitätsmanagement
 * Umfrage zur Zufriedenheit der Gruppe in Bezug der Projektarbeit 
 * Risikoliste
@@ -77,12 +78,17 @@ include::{docs-requirements}/domain_model.adoc[lines=1..1;4..-1,leveloffset=+1]
 // Projektplan
 include::{docs-project-management}/project_plan.adoc[lines=1..1;4..-1,leveloffset=+1]
 <<<
+// Verantwortlichkeiten
+include::{docs-project-management}/Rollenübersicht.adoc[lines=1..1;4..-1,leveloffset=+1]
+<<<
 //Qualitätsmanagement
 include::{docs-project-management}/qm/Qualitaetsmanagement.adoc[lines=1..1;4..-1,leveloffset=+1]
 <<<
 // Umfrage zur Zufriedenheit der Gruppe in Bezug der Projektarbeit
+:imagesdir: {docs-requirements}/images
 include::{docs-requirements}/survey_for_essence.adoc[lines=1..1;4..-1,leveloffset=+1]
 <<<
+:imagesdir: {docs-project-management}/images
 // Risikoliste
 include::{docs-project-management}/risk_list.adoc[lines=1..1;4..-1,leveloffset=+1]
 <<<

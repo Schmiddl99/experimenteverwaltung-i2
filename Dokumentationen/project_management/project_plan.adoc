@@ -72,7 +72,7 @@ https://www2.htw-dresden.de/~anke/openup/publish.openup.base/customcategories/te
 * *Shared Vision*: Diese OpenUP-Praktik verbessert die Akzeptanz des späteren Produktes durch alle Stakeholder. In unserem Fall strebten wir die Übereinstimmung über die <<Vision: {project-name}, Vision>> und die damit beschriebene Opportunity gemeinsam mit dem Themensteller an. Das Team konnte diese Übereinstimmung in <<Iteration Plan 03: {project-name}, Iteration I03>> erreichen.
 
 * *Use Case Driven Development*: OpenUP empfiehlt die Zugrundelegung eines 
-<<Use-Case Model: Experimenteverwaltung I2, Use Case Models>>
+<<Use-Case Model: {project-name}, Use Case Models>>
 sowie von <<System-Wide Requirements: {project-name}, System-Wide Requirements>>
 zur Beschreibung, Gliederung und Auswertung der erhobenen Anforderungen. Durch die Nutzung dieser Praktik versprechen wir uns eine effizientere Umsetzung und ein höheres Erfolgspotential des gesamten Projektes.
 
