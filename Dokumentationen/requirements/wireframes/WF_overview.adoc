@@ -21,7 +21,7 @@ image::WF_0_BuchungStarten.PNG[Buchung starten]
 .Erklärung:
 Hier wird die eigentliche Buchung gestartet. Dies geschiet mit einem einfachen Klick auf den "Buchung starten" Knopf.
 
-
+<<<
 === WF1: Voreinstellungen
 
 image::WF_1_Voreinstellungen.PNG[Voreinstellungen]

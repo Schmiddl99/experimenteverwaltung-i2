@@ -80,7 +80,7 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 
 |===
 
-
+<<<
 == Probleme (optional)
 //Optional: Führen Sie alle Probleme auf, die in dieser Iteration adressiert werden sollen. Aktualisieren Sie den Status, wenn neue Probleme bei den täglichen / regelmäßigen Abstimmungen berichtet werden.
 
@@ -124,7 +124,7 @@ a|* Die Kopierfunktion sorgte für Abstimmungsschwierigkeiten zwischen dem Auftr
 *** Risiken sind verstanden 
 *** Wir bekommen kein Geld (-> nur "Zeitkosten" fallen an)
 *** Zeitplan: wurde *nicht* abgestimmt. (Orientierung an Empfehlung aus Vorlesung)
-
+| a|
 * *Überprüfung selbst gesteckter Iterationsziele: Y/N (8/2)*
 ** Der Themensteller hat die vorgelegen Wireframes bestätigt. *Y* 
 ** Die geplante Vorgehensweise der Buchung ist mit dem Themensteller abgesprochen, es herrscht Übereinstimmung. *Y*

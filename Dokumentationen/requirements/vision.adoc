@@ -123,7 +123,7 @@ a|
 |===
 
 
-
+<<<
 ==	Stakeholder Beschreibungen
 ===	Zusammenfassung der Stakeholder
 

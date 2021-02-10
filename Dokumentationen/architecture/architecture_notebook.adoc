@@ -1,9 +1,7 @@
 = Architecture Notebook: {project-name}
 Julius Schmidt <juliusheiko.schmidt@htw-dresden.de>; Richard Böhme <richard.boehme@htw-dresden.de>; William Elsner <william.elsner@htw-dresden.de>; Tobias Karsch <tobias.karsch@htw-dresden.de>
-:toc: 
-:toc-title: Inhaltsverzeichnis
-include::../_includes/default-attributes.inc.adoc[]
 {localdatetime}
+include::../_includes/default-attributes.inc.adoc[]
 
 // Platzhalter für weitere Dokumenten-Attribute
 
@@ -166,7 +164,7 @@ a|  * Kompatibilität
 
 
 
-
+<<<
 == Architekturmechanismen
 // https://www2.htw-dresden.de/~anke/openup/core.tech.common.extend_supp/guidances/concepts/arch_mechanism_2932DFB6.html[Doku "Concept: Architectural Mechanism"]
 
@@ -309,7 +307,7 @@ image::container_legend.png[Container-Legende]
 
 //=== Physische Sicht (Betriebssicht)
 //Beschreibt die physischen Knoten (Rechner) des Systems, der Prozesse, Threads und Komponenten, die in diesen Knoten ausgeführt werden. Diese Sicht wird nicht benötigt, wenn das System in einem einzelnen Prozess oder Thread ausgeführt wird.
-
+<<<
 === Use cases
 //Eine Liste oder ein Diagramm der Use Cases, die architektur-relevante Anforderungne enthalten.
 
