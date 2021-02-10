@@ -37,9 +37,9 @@ include::../_includes/default-attributes.inc.adoc[]
 == Aufgabenzuordnung
 //Dieser Abschnitt sollte einen Verweis auf die Work Items List enthalten, die die für diese Iteration vorgesehenen Aufgaben dokumentiert sowie die Zuordnung dieser Aufgaben zu Teammitgliedern. Alternativ können die Aufgaben für die Iteration und die Zuordnung zu Teammitgliedern in nachfolgender Tabelle dokumentiert werden - je nach dem, was einfacher für die Projektbeteiligten einfacher zu finden ist.
 
-Aufgaben werden in der Work Item List (https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#column-11862065) geordnet und priorisiert.
+Aufgaben werden in der https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#column-11862065[ Work Item List] geordnet und priorisiert.
 
-Die in dieser Iteration geplanten Aufgaben wurden in der To-Do-List dargestellt: https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#column-11861913. Die To-Do-List verhält sich dynamisch. Deswegen sind nachfolgend die Work Items der Iteration II aufgeführt.
+Die in dieser Iteration geplanten Aufgaben wurden in der https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#column-11861913[To-Do-List] dargestellt. Die To-Do-List verhält sich dynamisch. Deswegen sind nachfolgend die Work Items der Iteration II aufgeführt.
 
 //Übernommen aus dem Board Iteration Planning auf Github. Referenz von Issues: Link[#Issue_ID]; link durch klick auf drei Punkte der Aufgabe->Copy card link
 

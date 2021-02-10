@@ -33,7 +33,7 @@ image::qm_time.PNG[Zeitverteilung]
 
 ==== Abschließendes Fazit
 
-Mit der Bearbeitung des Projektes kann das Projektteam sehr zufrieden seien. Die Aufgabenverteilung wurde fair durchgeführt, auftretende Probleme wurden schnell erkannt, offen angesprochen und ihnen entgegengewirkt. Mit zunehmender Vertrautheit in den Iterationen konnte die Arbeitsqualität stetig verbessert werden. Auch die Arbeitsmoral, die Zusammenarbeit im Team und die allgemeine Kommunikation konnte gehalten, wenn nicht sogar verbessert werden. 
+Mit der Bearbeitung des Projektes kann das Projektteam sehr zufrieden sein. Die Aufgabenverteilung wurde fair durchgeführt, auftretende Probleme wurden schnell erkannt, offen angesprochen und ihnen entgegengewirkt. Mit zunehmender Vertrautheit in den Iterationen konnte die Arbeitsqualität stetig verbessert werden. Auch die Arbeitsmoral, die Zusammenarbeit im Team und die allgemeine Kommunikation konnte gehalten, wenn nicht sogar verbessert werden. 
 Der Verlauf der Arbeit im Meeting wurde ebenfalls durch die Verwendung einer Tracking Tabelle dokumentiert.
 
 image::qm_work.PNG[Bewertung]

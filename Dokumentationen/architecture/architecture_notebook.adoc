@@ -278,7 +278,7 @@ Schutz vor Datenverlust (adressiert Risk No. 6)
 === Model-View-Controller (MVC) 
 * ergibt sich durch Rails
  
-* **Model**  = Schicht der Geschäftslogik und ihrer Anwendung (siehe <<Domain Model: {project-name}, Domain-Modell>>)
+* **Model**  = Schicht der Geschäftslogik und ihrer Anwendung (siehe <<Domain Model: {project-name}, Domänenmodell>>)
 
 * **View** = Schicht der HTML-Verarbeitung zur Darstellung der Ressourcen
 * **Controller** = Schicht der Requestverarbeitung durch http-Anfragen 
