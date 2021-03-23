@@ -15,11 +15,11 @@ br
         = @sub_category.category.name
     .col
       -if @sub_category.next.present?
-        = link_to sub_category_path(@sub_category.next), class: "btn btn-secondary btn-block btn-hover--jade pull-right"
+        = link_to sub_category_path(@sub_category.next), class: "btn btn-secondary btn-block btn-hover--jade float-right"
           = @sub_category.next.name
           i.fa.fs.fa-arrow-right<
       -else
-        .btn.btn-secondary.btn-block.disabled.pull-right
+        .btn.btn-secondary.btn-block.disabled.float-right
           i.fa.fs.fa-arrow-right
   br
   h1

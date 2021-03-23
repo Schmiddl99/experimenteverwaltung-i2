@@ -1,7 +1,7 @@
 .page-header
   
-  = link_to new_cover_picture_path, class: 'btn btn-secondary btn-hover--jade pull-right' do
-    = raw "#{icon("plus")} #{t('activerecord.models.cover_picture', default: "Titelbild")} #{t('interface.new')}"
+  = link_to new_cover_picture_path, class: 'btn btn-secondary btn-hover--jade float-right' do
+    = raw "#{icon("fas", "plus")} #{t('activerecord.models.cover_picture', default: "Titelbild")} #{t('interface.new')}"
   h1 = "#{t('activerecord.models.cover_picture', default: "Cover picture")} #{t('interface.index')}"
 br
 br

@@ -1,6 +1,6 @@
 .page-header
-  = link_to new_<%= singular_table_name %>_path, class: 'btn btn-success pull-right' do
-    = raw "#{icon("plus")} #{t('activerecord.models.<%= singular_table_name %>', default: "<%= singular_table_name.humanize %>")} #{t('interface.new')}"
+  = link_to new_<%= singular_table_name %>_path, class: 'btn btn-success float-right' do
+    = raw "#{icon("fas", "plus")} #{t('activerecord.models.<%= singular_table_name %>', default: "<%= singular_table_name.humanize %>")} #{t('interface.new')}"
   h1 = "#{t('activerecord.models.<%= singular_table_name %>', default: "<%= singular_table_name.humanize %>")} #{t('interface.index')}"
 
 .table-responsive
@@ -18,10 +18,10 @@
           td
             = <%= singular_table_name %>.<%= attribute.name %>
 <%- end -%>
-          td.pull-right
-            = link_to icon("eye").html_safe, <%= singular_table_name %>, class: "btn btn-primary"
+          td.float-right
+            = link_to icon("fas", "eye").html_safe, <%= singular_table_name %>, class: "btn btn-primary"
             = " "
-            = link_to icon("pencil").html_safe, edit_<%= singular_table_name %>_path(<%= singular_table_name %>), class: "btn btn-primary"
+            = link_to icon("fas", "pencil-alt").html_safe, edit_<%= singular_table_name %>_path(<%= singular_table_name %>), class: "btn btn-primary"
             = " "
-            = link_to icon("trash").html_safe, <%= singular_table_name %>, method: :delete, data: { confirm: t('interface.confirm') }, class: "btn btn-danger"
+            = link_to icon("fas", "trash").html_safe, <%= singular_table_name %>, method: :delete, data: { confirm: t('interface.confirm') }, class: "btn btn-danger"
 = will_paginate @<%= plural_table_name %>, renderer: WillPaginate::ActionView::BootstrapLinkRenderer

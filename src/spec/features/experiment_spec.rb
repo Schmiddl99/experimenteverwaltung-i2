@@ -31,7 +31,9 @@ describe "Experiment", js_errors: false do
     sign_in user
     Fabricate :experiment
     visit "/experiments/1"
-    find('.dropdown-bin--red').click
+    accept_alert('Sind Sie sicher?') do
+      find('.dropdown-bin--red').click
+    end
     expect(page.has_text?('TestExperiment')).to be_falsey
   end
 
@@ -39,7 +41,9 @@ describe "Experiment", js_errors: false do
     sign_in user
     Fabricate :experiment
     visit "/experiments/1"
-    find('.dropdown-bin--red').click
+    accept_alert('Sind Sie sicher?') do
+      find('.dropdown-bin--red').click
+    end
     visit "/experiments/trash"
     expect(page.has_text?('TestExperiment')).to be_truthy
     find('a[class="btn btn-danger"]').click
@@ -50,7 +54,9 @@ describe "Experiment", js_errors: false do
     sign_in user
     Fabricate :experiment
     visit "/experiments/1"
-    find('.dropdown-bin--red').click
+    accept_alert('Sind Sie sicher?') do
+      find('.dropdown-bin--red').click
+    end
     visit "/experiments/trash"
     page.all('.btn.btn-secondary.btn-hover--jade')[0].click
     visit "/experiments/trash"

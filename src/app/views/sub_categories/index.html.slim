@@ -1,6 +1,6 @@
 .page-header
-  = link_to new_sub_category_path, class: 'btn btn-success pull-right' do
-    = raw "#{icon("plus")} #{t('activerecord.models.sub_category', default: "Sub category")} #{t('interface.new')}"
+  = link_to new_sub_category_path, class: 'btn btn-success float-right' do
+    = raw "#{icon("fas", "plus")} #{t('activerecord.models.sub_category', default: "Sub category")} #{t('interface.new')}"
   h1 = "#{t('activerecord.models.sub_category', default: "Sub category")} #{t('interface.index')}"
 
 .table-responsive
@@ -20,10 +20,10 @@
             = sub_category.label
           td
             = sub_category.category.name if sub_category.category
-          td.pull-right
-            = link_to icon("eye").html_safe, sub_category, class: "btn btn-primary"
+          td.float-right
+            = link_to icon("fas", "eye").html_safe, sub_category, class: "btn btn-primary"
             = " "
-            = link_to icon("pencil").html_safe, edit_sub_category_path(sub_category), class: "btn btn-primary"
+            = link_to icon("fas", "pencil-alt").html_safe, edit_sub_category_path(sub_category), class: "btn btn-primary"
             = " "
-            = link_to icon("trash").html_safe, sub_category, method: :delete, data: { confirm: t('interface.confirm') }, class: "btn btn-danger"
+            = link_to icon("fas", "trash").html_safe, sub_category, method: :delete, data: { confirm: t('interface.confirm') }, class: "btn btn-danger"
 = will_paginate @sub_categories, renderer: WillPaginate::ActionView::BootstrapLinkRenderer

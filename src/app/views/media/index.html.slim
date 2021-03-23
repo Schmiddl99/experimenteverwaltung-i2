@@ -17,7 +17,7 @@
             .w-25.text-center
               = link_to image_tag(medium.file.url, class:"img-fluid img-thumb w-75"), medium_path(medium)
           td.text-center
-            = link_to icon("pencil").html_safe, edit_medium_path(medium), class: "btn btn-secondary btn-hover--jade"
+            = link_to icon("fas", "pencil-alt").html_safe, edit_medium_path(medium), class: "btn btn-secondary btn-hover--jade"
             = " "
-            = link_to icon("trash").html_safe, medium, method: :delete, data: { confirm: t('interface.confirm') }, class: "btn btn-danger"
+            = link_to icon("fas", "trash").html_safe, medium, method: :delete, data: { confirm: t('interface.confirm') }, class: "btn btn-danger"
 = will_paginate @media, renderer: WillPaginate::ActionView::BootstrapLinkRenderer

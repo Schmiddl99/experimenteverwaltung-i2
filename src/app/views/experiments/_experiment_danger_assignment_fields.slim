@@ -6,6 +6,6 @@
       .col-sm-1.edit-button-danger
         - if f.object.danger.present?
           button.btn.btn-link.times-nested-forms.danger-modal(type="button" data-id=f.object.danger.id data-name=f.object.danger.name data-label=f.object.danger.label data-adhoc=f.object.danger.adhoc)
-            = icon("edit")
+            = icon("fas", "edit")
       .col-sm-1
-        = link_to_remove_association icon("trash"), f, class: "btn btn-link times-nested-forms"
+        = link_to_remove_association icon("fas", "trash"), f, class: "btn btn-link times-nested-forms"

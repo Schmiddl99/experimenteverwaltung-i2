@@ -1,5 +1,5 @@
 .page-header
-  = link_to cover_pictures_path, class: 'btn btn-secondary pull-right' do
-    = raw "#{icon("angle-left")} #{t('activerecord.models.cover_picture', default: "Cover picture")} #{t('interface.index')}"
+  = link_to cover_pictures_path, class: 'btn btn-secondary float-right' do
+    = raw "#{icon("fas", "angle-left")} #{t('activerecord.models.cover_picture', default: "Cover picture")} #{t('interface.index')}"
   h1 = "#{t('activerecord.models.cover_picture', default: "Cover picture")} #{t('interface.new')}"
 = render 'form'

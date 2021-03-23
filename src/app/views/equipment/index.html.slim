@@ -1,6 +1,6 @@
 .page-header
-  = link_to new_equipment_path, class: 'btn btn-secondary btn-hover--jade pull-right' do
-    = raw "#{icon("plus")} #{t('activerecord.models.equipment', default: "Equipment")} #{t('interface.new')}"
+  = link_to new_equipment_path, class: 'btn btn-secondary btn-hover--jade float-right' do
+    = raw "#{icon("fas", "plus")} #{t('activerecord.models.equipment', default: "Equipment")} #{t('interface.new')}"
   h1 = "#{t('activerecord.model.equipment', default: "Equipment")} #{t('interface.index')}"
   br
 .table-responsive
@@ -21,9 +21,9 @@
           td
             = equipment.inventory_nr
           td.text-center
-            = link_to "#{icon("refresh")} austauschen".html_safe, edit_equipment_path(equipment, exchange: true), class: "btn btn-sm btn-primary btn-hover--jade"
+            = link_to "#{icon("fas", "sync")} austauschen".html_safe, edit_equipment_path(equipment, exchange: true), class: "btn btn-sm btn-primary btn-hover--jade"
             = " "
-            = link_to "#{icon("pencil")} bearbeiten".html_safe, edit_equipment_path(equipment), class: "btn btn-sm btn-secondary btn-hover--jade"
+            = link_to "#{icon("fas", "pencil-alt")} bearbeiten".html_safe, edit_equipment_path(equipment), class: "btn btn-sm btn-secondary btn-hover--jade"
             = " "
-            = link_to "#{icon("trash")} löschen".html_safe, equipment, method: :delete, data: { confirm: t('interface.confirm') }, class: "btn btn-sm btn-danger"
+            = link_to "#{icon("fas", "trash")} löschen".html_safe, equipment, method: :delete, data: { confirm: t('interface.confirm') }, class: "btn btn-sm btn-danger"
 = will_paginate @equipment, renderer: WillPaginate::ActionView::BootstrapLinkRenderer
