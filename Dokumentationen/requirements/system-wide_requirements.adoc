@@ -55,11 +55,11 @@ Stakeholder haben Anforderungen. Ziele der Stakeholder sind Teil der Anforderung
 
 * *NFAU-1*: Alle Prozesse und Datenausgaben müssen übersichtlich, eindeutig und verständlich sein.
 
-** *NFAU-1.1*: Die Anzahl der Interaktionselemente soll komprimiert sein.
+** *NFAU-1.1*: Die Anzahl der Interaktionselemente soll minimal sein.
 
 *** Es soll jeweils nur eine Schaltfläche pro Aktion geben (Bsp.: Warenkorb-Icon zum Buchen). Zu Überprüfungszwecken werden alle Interaktionselemente in ihrer Funktion verglichen. 
 
-** *NFAU-1.2*: Die Auswahlmenüs zur Detailfestlegung müssen verständlich und inhaltlich komprimiert sein.
+** *NFAU-1.2*: Die Auswahlmenüs zur Detailfestlegung müssen verständlich und inhaltlich minimal sein.
 
 *** Es soll vorgefertigte Drop-Down-Menüs und Widgets zur Auswahl aus von festgelegten Wertebereichen geben. Zur Überprüfung wird getestet, ob invalide Eingaben möglich sind. 
 

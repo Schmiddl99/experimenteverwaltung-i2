@@ -19,22 +19,22 @@ Dozent möchte sich seinen Wochenplan (Übersicht von allen eigenen Exp. inkl. D
 . KW muss ausgewählt werden
 . Use Case endet damit, dass die Ansicht generiert wird
 
-=== Alternative Abläufe
+//=== Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
---- keine alternativen Abläufe möglich ---
+//--- keine alternativen Abläufe möglich ---
 
-=== Unterabläufe (subflows)
+//=== Unterabläufe (subflows)
 //Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
---- keine Unterabläufe ---
+//--- keine Unterabläufe ---
 
-=== Wesentliche Szenarios
+//=== Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
---- keine Szenarios ---
+//--- keine Szenarios ---
 
-===	Nachbedingungen
+//===	Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
---- keine Nachbedingungen ---
+//--- keine Nachbedingungen ---
 
-=== Besondere Anforderungen
+//=== Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
---- keine Nachbedingungen ---
+//--- keine Nachbedingungen ---

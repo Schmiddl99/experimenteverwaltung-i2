@@ -28,13 +28,13 @@ Buchungsablauf von Exp. vom Buchungsstart bis zum fertigen Eintrag in der DB
 ==== Abbruch des Buchungsvorgangs
 Wenn der User ab Schritt 2 des Standardablaufes die Buchung abbricht, dann wird der Use Case beendet. Es wird keinen Eintrag in der DB geben. Selbiges ist im Chekout unter Schritt 6 möglich.
 
-=== Unterabläufe (subflows)
+//=== Unterabläufe (subflows)
 //Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
---- keine Vorhanden ---
 
-=== Wesentliche Szenarios
+
+//=== Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
---- keine abweichenden Szenarios vom Standardablauf ---
+
 
 ===	Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.

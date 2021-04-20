@@ -82,43 +82,10 @@ Tester (zus.)
 |Glossar Betreuung
 |14.01.2021
 
-|Matthias Heisig
-|Stakeholder
-|Themensteller
-
-Admin / Anwender
-
-Webanwendung
-|14.01.2021
-
-|Prof. Dr.-Ing. Rhena Krawietz
-|Stakeholder
-|Dozent / Anwenderin
-
-Physik-Professorin
-
-Vorlesungen für WIng und BauIng
-|18.01.2021
-
-
-
-|Herr Hornoff
-
-hornoff@htw-dresden.de
-|Technischer Ansprechpartner VM
-|Ansprechpartner
-
-virtuelle Maschine
-
-Admin
-
-Fak. MaschBau
-|01.12.2020
-
 |Vincent Thelang
 
 vincent@vincent-thelang.de
-|Ehemaliges Teammitglied
+|Mitglied des Vorgängerteams -
 |Steht zur Seite bei Fragen
 
 bietet Einführung zu Ruby on Rails an

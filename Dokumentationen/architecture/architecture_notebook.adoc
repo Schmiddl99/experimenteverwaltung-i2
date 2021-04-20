@@ -187,7 +187,7 @@ a|  * Kompatibilität
 * [.underline]#Funktion#: z.B. zwischen DB/Buchungssystem 
 
 . **Error Management **
-* [.underline]#Zustand#: Problem 
+* [.underline]#Zustand#: Analysis
 * [.underline]#Zweck#: Information des Anwenders bei einem unerwarteten Fehler 
 * [.underline]#Eigenschaften/Attribute#: Standardmäßig im Browser 
 * [.underline]#Funktion#: Rails und der Webservice geben bei einem unerwarteten Fehler eine Standard-Fehlerseite aus 
@@ -201,7 +201,7 @@ a|  * Kompatibilität
 ** Kann auch Kommentare im Quellcode beschreiben (=zwischen Entwicklerteams) 
 
 . **Kompatibilität **
-* [.underline]#Zustand#: Problem
+* [.underline]#Zustand#: Analysis
 * [.underline]#Zweck#: System muss auf allen (in den SWRs (siehe SWR)) erwähnten Browsern funktionieren  
 * [.underline]#Eigenschaften/Attribute#: gegeben oder nicht gegeben 
 * [.underline]#Funktion#: Sicherstellen der Benutzbarkeit 
@@ -241,7 +241,7 @@ Schutz vor Datenverlust (adressiert Risk No. 6)
 * [.underline]#Funktion#: Ausführung von Migrationsskript(en)
 
 . **Zugriffsschutz **
-* [.underline]#Zustand#: Problem 
+* [.underline]#Zustand#: Analysis
 * [.underline]#Zweck#: 
 ** Authentifizierung 
 ** Login 
@@ -260,11 +260,11 @@ Schutz vor Datenverlust (adressiert Risk No. 6)
 == Wesentliche fachliche Abstraktionen
 //[List and briefly describe the key abstractions of the system. This should be a relatively short list of the critical concepts that define the system. The key abstractions will usually translate to the initial analysis classes and important patterns.]
 
-* **Klasse Experiment:** Teil der Buchung - Das Objekt wird beim Buchungsvorgang aus der Datenbank bezogen. Das Objekt wird in Dozentenwoche angezeigt.
-* **Klasse Nutzer (Vererbung):**
+* **Experiment:** Teil der Buchung - Das Objekt wird beim Buchungsvorgang aus der Datenbank bezogen. Das Objekt wird in Dozentenwoche angezeigt.
+* **Nutzer (Vererbung):**
 ** **Admin:** Anwender-Rolle - Erstellt und bearbeitet Experimente. Verwaltet Rechte der Dozenten. Betrachtet alle Dozentenwochen. Betrachtet Statistik.
 ** **Dozent:** Anwender-Rolle - Führt Buchung durch. Betrachtet seine Dozentenwoche. Betrachtet Journal.
-* **Klasse Buchung:** Wird vom Dozenten erstellt. Beinhaltet ein oder mehrere Experimente. Besitzt zusätzliche Daten.
+* **Buchung:** Wird vom Dozenten erstellt. Beinhaltet ein oder mehrere Experimente. Besitzt zusätzliche Daten.
 * ** Dozentenwoche:** Ausgabe - Wird von Admin und/oder Dozent betrachtet. Enthält alle Buchungen eines Dozenten innerhalb des bestimmten Zeitabschnitts=einer Woche.
 * **Journal:** Ausgabe - Wird vom Dozenten angefordert. Auflistung aller getätigten Buchungen eines Dozenten. Wird vom Dozenten betrachtet.
 * **Statistik:** Ausgabe - Wird vom Admin angefordert. Wird vom Admin betrachtet. Enthält Anzahl von allen in einer bestimmten Periode gebuchten Experimenten, sortiert nach spezifischen Kategorien. 

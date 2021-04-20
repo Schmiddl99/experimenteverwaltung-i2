@@ -28,8 +28,8 @@ include::../_includes/default-attributes.inc.adoc[]
 
 * Erreichen der Bestätigung der Vision durch den Kunden; über die initialen Anforderungen herrscht Einigkeit
 * Erhebung der systemweiten Anforderungen
-* Use Case Model
-* Risikoliste
+* Erarbeitung des Use Case Model
+* Erarbeitung der Risikoliste
 * Wireframes für jeden essentiellen Funktionsschritt nach aktuellem Anforderungskatalog
 * *Wissensaustausch:* Interessierte Mitglieder sollen ein GitHub-Tutorial erhalten, was einerseits die Arbeit im Team fördert, andererseits auch einen weiteren Mehrwert innerhalb dieses Moduls schafft.
 

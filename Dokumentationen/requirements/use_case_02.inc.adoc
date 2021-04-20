@@ -18,11 +18,11 @@ Dozent will seine gebuchten Exp. im Buchungsjournal ansehen.
 . Möglichkeit die Ansicht zu filtern (Vorführungsdatum + Studiengang, Studiengang, Kalenerwoche) -> siehe Unterablauf 1
 . Use Case endet mit Auflistung aller bisher getätigten Buchungen nach Studiengang und Vorführungsdatum
 
-=== Alternative Abläufe
+//=== Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
---- keine alternativen Abläufe ---
+//--- keine alternativen Abläufe ---
 
-=== Unterabläufe (subflows)
+//=== Unterabläufe (subflows)
 //Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
 ==== Filtern
 . Filtern
@@ -30,13 +30,13 @@ Dozent will seine gebuchten Exp. im Buchungsjournal ansehen.
 .. Filter auswählen
 .. Filter anwenden und die Seite wird automatisch neu geladen
 
-=== Wesentliche Szenarios
+//=== Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
---- keine wesentliche Szenarios ---
+//--- keine wesentliche Szenarios ---
 
-===	Nachbedingungen
+//===	Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
---- keine Nachbedingungen ---
+//--- keine Nachbedingungen ---
 
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
