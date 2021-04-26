@@ -124,7 +124,7 @@ a|* Bestellzusammenfassung
 |Gemeint ist die Datenbank, in welche Buchungseinträge geschrieben werden.
 
 |EMS
-|Das weiterzuentwickelnde Projekt
+|Das weiterzuentwickelnde Experimente-Management-System
 |https://mphyda.mw.htw-dresden.de/
 
 |Exp.

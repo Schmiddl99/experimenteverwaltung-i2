@@ -113,11 +113,11 @@ wird in Abhängigkeit des Projektzustandes bearbeitet. Bei dieser schrittweisen 
 | 07.01.2021-21.01.2021
 
 | I04
-| * Domänenmodell
+| * Erarbeitung des Domänenmodells
 * Überarbeitung der <<Use-Case Model: {project-name}, Use Cases>>
 * Überarbeitung der <<Test Cases: {project-name},Test Cases>>
 * Anfertigung des Beleges für das Modul: Überprüfung der Dokumente (siehe <<QM Regeln, QM>>)
-* Ausscheiden der Teilnehmer {JS}, {TW}, {TKa} aufgrund Beendigung des Moduls I925 Requirements Engineering
+//* Ausscheiden der Teilnehmer {JS}, {TW}, {TKa} aufgrund Beendigung des Moduls I925 Requirements Engineering
 | 22.01.2021-04.02.2021
 
 |===

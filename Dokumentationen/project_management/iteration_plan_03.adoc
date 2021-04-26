@@ -81,7 +81,7 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 |===
 
 <<<
-== Probleme (optional)
+== Probleme
 //Optional: Führen Sie alle Probleme auf, die in dieser Iteration adressiert werden sollen. Aktualisieren Sie den Status, wenn neue Probleme bei den täglichen / regelmäßigen Abstimmungen berichtet werden.
 
 [%header, cols="2,1,3"]

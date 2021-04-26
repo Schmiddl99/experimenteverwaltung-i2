@@ -19,13 +19,13 @@ Dozent will seine gebuchten Exp. im Buchungsjournal bearbeiten.
 . User bestätigt Änderung
 . Use Case endet damit, dass die Seite neu geladen und die Änderung aktiv wird
 
-=== Alternative Abläufe
+//=== Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
---- keine alternative Abläufe ---
+//--- keine alternative Abläufe ---
 
-=== Unterabläufe (subflows)
+//=== Unterabläufe (subflows)
 //Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
---- keine Unterabläufe ---
+//--- keine Unterabläufe ---
 
 === Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
