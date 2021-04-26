@@ -113,7 +113,7 @@ wird in Abhängigkeit des Projektzustandes bearbeitet. Bei dieser schrittweisen 
 | 07.01.2021-21.01.2021
 
 | I04
-| * Erarbeitung des Domänenmodell 
+| * Erarbeitung des Domänenmodells
 * Überarbeitung der <<Use-Case Model: {project-name}, Use Cases>>
 * Überarbeitung der <<Test Cases: {project-name},Test Cases>>
 * Anfertigung des Beleges für das Modul: Überprüfung der Dokumente (siehe <<QM Regeln, QM>>)
