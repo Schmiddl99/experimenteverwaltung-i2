@@ -74,7 +74,7 @@ a|
 a|
 
 
-* Warenkorb-Funktio: Die Experimente können nach Festlegung der Voreinstellungen für eine Vorlesung in einen Warenkorb abgelegt werden. Anschließend kann die Reihenfolge noch angepasst werden. Nach erfolgreicher Buchung werden sie dem persönlichen Journal hinzugefügt.
+* Warenkorb-Funktion: Die Experimente können nach Festlegung der Voreinstellungen für eine Vorlesung in einen Warenkorb abgelegt werden. Anschließend kann die Reihenfolge noch angepasst werden. Nach erfolgreicher Buchung werden sie dem persönlichen Journal hinzugefügt.
 * Journal-Funktion: Buchungsübersicht des Dozenten, wo er alle vergangenen Buchungen einsehen und aktuelle Buchungen anpassen kann
 * Dozentenwochen-Funktion: Buchungsübersicht des Admins, wo er alle Buchungen pro Dozent und sortiert je Wochentag einsehen kann
 
