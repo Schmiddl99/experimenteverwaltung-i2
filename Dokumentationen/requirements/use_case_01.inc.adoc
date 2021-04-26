@@ -26,7 +26,7 @@ Buchungsablauf eines Experiments vom Buchungsstart bis zum fertigen Eintrag in d
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
 ==== Abbruch des Buchungsvorgangs
-Wenn der User ab Schritt 2 des Standardablaufes die Buchung abbricht, dann wird der Use Case beendet. Es wird keinen Eintrag in der DB geben. Selbiges ist im Chekout unter Schritt 6 möglich.
+Wenn der User ab Schritt 2 des Standardablaufes die Buchung abbricht, dann wird der Use Case beendet. Es wird keinen Eintrag in der DB geben. Selbiges ist im Checkout unter Schritt 6 möglich.
 
 //=== Unterabläufe (subflows)
 //Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
