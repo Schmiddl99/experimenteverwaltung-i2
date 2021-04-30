@@ -30,7 +30,9 @@ describe "Subcategory", js_errors: false do
     Fabricate :sub_category
     visit "/sub_categories"
     expect(page.has_text?("TestSubCategory")).to be_truthy
-    find('a[class="btn btn-danger"]').click
+    accept_alert('Sind Sie sicher?') do
+      find('a[class="btn btn-danger"]').click
+    end
     visit "/sub_categories"
     expect(page.has_text?("TestSubCategory")).to be_falsey
   end

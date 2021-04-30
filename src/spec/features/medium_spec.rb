@@ -51,7 +51,9 @@ describe "Medium", js_errors: false do
     Fabricate :medium
     visit "/experiments/1/edit"
     expect(page.html.include?("/uploads/media/thumb/1.png")).to be_truthy
-    page.all('.btn.btn-link.times-nested-forms.remove_fields.existing')[0].click
+    accept_alert('Möchten Sie dies wirklich löschen?') do
+      page.all('.btn.btn-link.times-nested-forms.remove_fields.existing')[0].click
+    end
     page.all('.btn.btn-link.times-nested-forms.remove_fields.dynamic')[0].click
     expect(page.html.include?("/uploads/media/thumb/1.png")).to be_falsey
     find('input[value="Speichern"]').click

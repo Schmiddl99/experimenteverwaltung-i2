@@ -34,7 +34,9 @@ describe "Equipment", js_errors: false do
     Fabricate :equipment
     visit "/equipment"
     expect(page.has_text?("TestEquipment")).to be_truthy
-    find('a[class="btn btn-sm btn-danger"]').click
+    accept_alert('Sind Sie sicher?') do
+      find('a[class="btn btn-sm btn-danger"]').click
+    end
     expect(page.has_text?("Gerät wurde gelöscht")).to be_truthy
     expect(page.has_text?("TestEquipment")).to be_falsey
   end

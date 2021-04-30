@@ -34,7 +34,9 @@ describe "User", js_errors: false do
     Fabricate :user
     visit "/users"
     expect(page.has_text?(user.name)).to be_truthy
-    page.all('.btn.btn-danger')[1].click
+    accept_alert('Sind Sie sicher?') do
+      page.all('.btn.btn-danger')[1].click
+    end
     visit "/users"
     expect(page.has_text?(user.name)).to be_falsey
   end

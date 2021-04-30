@@ -16,11 +16,11 @@ br
           = @experiment.sub_category.name
     .col
       -if @experiment.next.present?
-        = link_to experiment_path(@experiment.next), class: "btn btn-secondary btn-block btn-hover--jade pull-right"
+        = link_to experiment_path(@experiment.next), class: "btn btn-secondary btn-block btn-hover--jade float-right"
           = @experiment.next.name
           i.fa.fs.fa-arrow-right<
       -else
-        .btn.btn-secondary.btn-block.disabled.pull-right
+        .btn.btn-secondary.btn-block.disabled.float-right
           i.fa.fs.fa-arrow-right
   br  
 h1 
@@ -30,13 +30,13 @@ h1
 
 .row
   .col
-    .pull-right
+    .float-right
       -if current_user.admin? || current_user.assistant?
         =link_to "Experiment bearbeiten", edit_experiment_path(@experiment), class: 'btn btn-sm btn-hover--jade btn-secondary mr-1'
       -if !current_user.guest? 
         =link_to "Karteikarte öffnen",  experiment_path(@experiment, format: :pdf), class: "btn btn-sm btn-secondary btn-hover--jade mr-1", target: "_blank"
       -if current_user.admin? || current_user.assistant?
-        =link_to icon("trash").html_safe, params[:id], method: :delete, data: { confirm: t('interface.confirm') }, class: "dropdown-bin--red btn btn-sm btn-danger pull-right"
+        =link_to icon("fas", "trash").html_safe, params[:id], method: :delete, data: { confirm: t('interface.confirm') }, class: "dropdown-bin--red btn btn-sm btn-danger float-right"
 
 br
 br
@@ -60,7 +60,7 @@ br
         .list-group
           .list-group-item.bg-info 
             b  
-              .pull-left
+              .float-left
                 | Gerät
           .list-group-item
             -if @experiment.equipment.any?

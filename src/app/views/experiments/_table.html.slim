@@ -17,8 +17,8 @@
           td
             = experiment.sub_category.name if experiment.sub_category
           td.text-center
-            = link_to icon("eye").html_safe, experiment, class: "btn btn-primary"
-            = link_to icon("trash").html_safe, experiment, method: :delete, data: { confirm: t('interface.confirm') }, class: "btn btn-danger"
+            = link_to icon("fas", "eye").html_safe, experiment, class: "btn btn-primary"
+            = link_to icon("fas", "trash").html_safe, experiment, method: :delete, data: { confirm: t('interface.confirm') }, class: "btn btn-danger"
             - if experiment.deleted?
-              = link_to icon("undo").html_safe, restore_experiment_path(experiment), method: :post, data: { confirm: "Wirklich wiederherstellen ?" }, class: "btn btn-secondary btn-hover--jade"           
+              = link_to icon("fas", "undo").html_safe, restore_experiment_path(experiment), method: :post, data: { confirm: "Wirklich wiederherstellen ?" }, class: "btn btn-secondary btn-hover--jade"
 = will_paginate @experiments, renderer: WillPaginate::ActionView::BootstrapLinkRenderer

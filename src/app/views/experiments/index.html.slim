@@ -1,6 +1,6 @@
 .page-header
-  i class ="pull-right fa fa-angle-down"
-  a data-toggle="collapse" href="#collapseFilter" aria-expanded="false" aria-controls="collapseFilter" class="pull-right" Filteroptionen
+  i class ="float-right fa fa-angle-down"
+  a data-toggle="collapse" href="#collapseFilter" aria-expanded="false" aria-controls="collapseFilter" class="float-right" Filteroptionen
   h1 = "Suchergebnisse"
 br 
 .collapse id="collapseFilter"
@@ -16,8 +16,8 @@ br
   br
 .card
   .card-header
-    .pull-left = "#{@experiments.count} gefundene Experimente"
-    .pull-right
+    .float-left = "#{@experiments.count} gefundene Experimente"
+    .float-right
       b
         = "Filterung: "
       - if params[:c].present?

@@ -2,7 +2,7 @@
   .card-body.nested-fields
     .row
       .col-sm-1
-        = icon "bars icon-nested-forms"
+        = icon "fas", "bars icon-nested-forms"
       .col-sm-10
         - if f.object.try(:file).present?
           img.img-preview.img-fluid src=f.object.file.url(:thumb) id="preview-#{f.index}"
@@ -19,4 +19,4 @@
 
         = f.input :sort, as: :hidden, input_html: {class: "sort-input"} 
       .col-sm-1
-        = link_to_remove_association icon("trash"), f, class: "btn btn-link times-nested-forms"
+        = link_to_remove_association icon("fas", "trash"), f, class: "btn btn-link times-nested-forms"

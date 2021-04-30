@@ -1,6 +1,6 @@
 .page-header
-  = link_to equipment_index_path, class: 'btn btn-secondary pull-right' do
-    = raw "#{icon("angle-left")} #{t('activerecord.models.equipment', default: "Equipment")} #{t('interface.index')}"
+  = link_to equipment_index_path, class: 'btn btn-secondary float-right' do
+    = raw "#{icon("fas", "angle-left")} #{t('activerecord.models.equipment', default: "Equipment")} #{t('interface.index')}"
   h1
     - if params[:exchange].present?
      | Gerät mit neuen austauschen

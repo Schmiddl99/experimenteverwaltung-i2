@@ -11,27 +11,27 @@ br
   .card-header
     | Account Informationen
     - if "#{current_user.role}" == "admin"  
-      .pull-right 
-        = link_to icon("pencil").html_safe, edit_user_path("#{current_user.id}"), class: " btn btn-secondary btn-hover--jade"
+      .float-right
+        = link_to icon("fas", "pencil-alt").html_safe, edit_user_path("#{current_user.id}"), class: " btn btn-secondary btn-hover--jade"
   .card-body
     .list-group
       .list-group-item
-        b.pull-left
+        b.float-left
           | Name:
         .text-center
           ="#{current_user.name}"
       .list-group-item
-        b.pull-left
+        b.float-left
           | Username:
         .text-center
           ="#{current_user.username}"
       .list-group-item
-        b.pull-left
+        b.float-left
           | Role:
         .text-center
           = t("activerecord.user.#{current_user.role}")
       .list-group-item
-        b.pull-left
+        b.float-left
           | Active:
         .text-center
           -if current_user.active == true
