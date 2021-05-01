@@ -50,11 +50,28 @@ a|
 * Wochenplan
 * Wochenplanansicht 
 
+|Experiment
+a|* Ein Experiment ist eine Veranschulichung inerhalb einer Physikvorlesung 
+* Es behinhaltet alle Informationen die zur Durchführung nötig sind 
+
+|Experimentefeld
+a|* Bei jedem Experiment gibt es die Möglichkeit Zusatzinforamtionen hinzufügen
+* Diese sind optional und dienen der besseren Übersicht
+* Es gibt die Rubriken: !!!!!!!!!!!!
+|
+
+
 |Frontend-Benutzer
 a|* Nutzer der öffentlich erreichbaren Weboberfläche
 a|* User
 * Nutzer
 * Anwender 
+
+|Handbuch
+a|* Das Handbuch dient als Nachschlagewerk für die Benutzer
+* In ihm sind alle funktionen der Anwendung beschrieben 
+* Es wird zusätzlich teschnische Informationen enthalten die den Update Prozess von Ruby on Rails beschreibt
+|
 
 |Historie
 a|* Häufigkeit der vergangenen Buchungen pro Experiment
@@ -82,6 +99,11 @@ a|* Vorgehensmodell
 * _OpenUP is a lean Unified Process that applies iterative and incremental approaches within a structured lifecycle_
 a|* Vorgehendmodell
 * OpenUP
+
+|optionaler Titel
+a|* Bei den Voreinstellungen ist es möglich einen Titel für jede Vorlesung zu vergeben
+* Die Vergabe eines Titels ist optional
+|
 
 |Rolle
 a|* Bezeichnung für Zuordnung der Zugriffsrechte (siehe "Dozent", "Admin")
