@@ -199,8 +199,11 @@ a| * Betreuer der VM a| * Gewährleistung eines Arbeitsumfeldes für uns
 |Warenkorb |Hoch |Experiment in Warenkorb legen und evtl. Reihenfolge anpassen |xx
 |Journal ansehen |Hoch |Einsehen vergangener und Bearbeiten aktueller Buchungen durch den Dozenten |xx
 |Dozentenwoche |Hoch | Einsehen der Buchungen je Wochentag und pro Dozent durch den Admin; Einleitung des Druckprozesses| xx 
-|Statistik ansehen |Mittel |Statistik (z.B. als Top 10) der (bestellten) Experimente einsehen |xx
+|Login |Hoch | Benutzerverwaltung der einzelnen Anwender | xx
+|Experimentfeld-Geräte Anpassung | Mittel |Ansicht der Geräte für Experimente übersichtlicher gestalten | xx
+|Statistik ansehen |Mittel |Statistik, als Overlay bei der Experimente-Auswahl, der (bestellten) Experimente einsehen |xx
 |Verwaltung der Bilder |Niedrig |Bilder in Experimenten können ersetzt werden, Reihenfolge wird einbehalten |xx
+|Bugfix bei Experimentfeld-Gefahren | Niedrig | Bei der Anzeige von Textfeldern werden diese ineinander geschoben, dies soll behoben werden | xx
 
 |===
 
@@ -219,6 +222,8 @@ a| * Betreuer der VM a| * Gewährleistung eines Arbeitsumfeldes für uns
 |===
 |Anforderung|	Priorität|	Geplantes Release
 |Einfache Bedienbarkeit |Hoch |xx
+|Im Handbuch soll erklärt werden wie ein Update von Ruby on Rails durchzuführen ist |Hoch |xx
+|Der Kunde erhält ein Admin Konto und ein Dozenten Konto |Hoch |xx
 |Hilfestellung / Kundenfreundliche Dokumentation |Niedrig |xx
 |===
 
@@ -229,8 +234,8 @@ a| * Betreuer der VM a| * Gewährleistung eines Arbeitsumfeldes für uns
 Dienlich zum Verständnis ist bspw. das Lesen des Protokolles zu TS-M3 vom 07.01.2021 (Word-Dokument; Ansprechpartner: {GM}, {TKa})
 
 * Auswahl des Studienganges bei jeder Buchung ist umständlich – das Problem wurde auf Später vertagt, wir entwickeln die Lösung nach den besprochenen Wireframes (Stand: 31.01.2021)
-* Ein "Dummy-Experiment" für *Freitextbuchungen* war eine vom Team favorisierte Lösung, welche aber nicht umgesetzt werden sollte (Stand: 31.01.2021)
 * Statistik/Historie: Ein Date-Picker-Mechanismus sollte von uns im Deployment hinterlegt worden sein. Darauf kann evtl. bei einer Neugestaltung der Historien-Ansicht zurückgegriffen werden. Wir halten den bisherigen Entwurf als Aufgliederung in zwei Semester als verbesserungswürdig. (Stand: 31.01.2021)
+* Das Projekt soll der Öffentlichkeit zugänglich gemacht werden, was über den Gast Zugang realiseirt werden soll. Hierbei sind große Interessen auf die Schützung der Personenbezogenen Daten so wie der Experimente Daten zu legen. (Stand: 27.04.2021)
 * *Kopierfunktion:* Eine Kopierfunktion zur Reproduktion aller Buchungen eines vergangenen Semesters wurde gewünscht. Wir sahen hier einen Zielkonflikt und einigten uns mit allen Stakeholdern darauf, dass wir das bisher entworfene Buchungssystem entwickeln (vgl. *I03*).
 //Link?
 Sollte diese Funktion in der Zukunft erneut gefordert werden, so sind hier unsere Überlegungen dazu aufgelistet:
