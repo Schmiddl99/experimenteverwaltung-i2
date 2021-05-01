@@ -15,11 +15,11 @@ Buchungsablauf eines Experiments vom Buchungsstart bis zum fertigen Eintrag in d
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
 . Der Use Case beginnt, wenn User auf "Buchung starten" klickt
-. Neue Seite mit Formular (Uhrzeit, Datum, Studiengang) -> Vorauswahl für aktuellen Buchungsvorgang
+. Neue Seite mit Formular (optionaler Titel, Uhrzeit, Datum, Studiengang) -> Vorauswahl für aktuellen Buchungsvorgang
 . Exp.-Übersicht wird geöffnet
 . Exp. können über Warenkorbsymbol zum aktuellen Buchungsvorgang hinzugefügt werden
 . Wird auf "Buchung abschließen" geklickt, wird man zum Checkout (neue Seite) weitergeleitet
-. Im Checkout werden die aktuellen Buchungen aufgezählt, mit Möglichkeit zur Löschung und Kommentierung jeder Buchung
+. Im Checkout werden die aktuellen Buchungen aufgezählt, mit Möglichkeit zur Löschung und Kommentierung jeder Buchung. Auch ist es möglich die Reihenfolge der Experimente mit Drag and Drop zu ändern und durch klicken auf den Button "manuel Experiment hinzufügen" kann ein Expermint außerhalb der Datenbank hinzugefügt werden.
 . Nach Klicken des Users auf "Buchung speichern", wir der User auf eine Buchungsbestätigungsseite geleitet
 . Der UC endet damit, dass der User die Buchungsbestätigung bestätigt
 

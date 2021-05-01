@@ -15,6 +15,7 @@ Dozent will seine gebuchten Exp. im Buchungsjournal ansehen.
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
 . Der Use Case beginnt, wenn User Buchungsjournalseite aufruft
+. Von den gebuchten Vorlesungen ist nur der Titel zu lesen, durch klicken fahren die ausgewählten Experimente der Vorlesung nach unten hin auf. Durch erneutes klicken auf den Titel fahren die Vorlesungbetreffenden Experimnte wieder ein
 . Möglichkeit die Ansicht zu filtern (Vorführungsdatum + Studiengang, Studiengang, Kalenerwoche) -> siehe Unterablauf 1
 . Use Case endet mit Auflistung aller bisher getätigten Buchungen nach Studiengang und Vorführungsdatum
 
