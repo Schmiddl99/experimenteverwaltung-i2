@@ -18,12 +18,16 @@ Buchungsablauf eines Experiments vom Buchungsstart bis zum fertigen Eintrag in d
 . Neue Seite mit Formular (optionaler Titel, Uhrzeit, Datum, Studiengang) -> Vorauswahl für aktuellen Buchungsvorgang
 . Exp.-Übersicht wird geöffnet
 . Exp. können über Warenkorbsymbol zum aktuellen Buchungsvorgang hinzugefügt werden
+
 . Wird auf "Buchung abschließen" geklickt, wird man zum Checkout (neue Seite) weitergeleitet
-. Im Checkout werden die aktuellen Buchungen aufgezählt, mit Möglichkeit zur Löschung und Kommentierung jeder Buchung. Auch ist es möglich die Reihenfolge der Experimente mit Drag and Drop zu ändern und durch klicken auf den Button "manuel Experiment hinzufügen" kann ein Expermint außerhalb der Datenbank hinzugefügt werden.
+. Im Checkout werden die aktuellen Buchungen aufgezählt, mit Möglichkeit zur Löschung von Experimenten und Kommentierung der Vorlesung. Auch ist es möglich die Reihenfolge der Experimente mit Drag and Drop zu ändern
 . Nach Klicken des Users auf "Buchung speichern", wir der User auf eine Buchungsbestätigungsseite geleitet
 . Der UC endet damit, dass der User die Buchungsbestätigung bestätigt
 
 === Alternative Abläufe
+==== Benutzerdefiniertes Experiment buchen 
+Es ist möglich ein datenbankfremdes Experiment hinzuzufügen. Dazu gibt es die Möglichkeit nach dem Klick auf einen Button einen selbstgewählten Titel einzugeben. 
+
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
 ==== Abbruch des Buchungsvorgangs
 Wenn der User ab Schritt 2 des Standardablaufes die Buchung abbricht, dann wird der Use Case beendet. Es wird keinen Eintrag in der DB geben. Selbiges ist im Checkout unter Schritt 6 möglich.
