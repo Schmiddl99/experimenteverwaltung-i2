@@ -51,13 +51,13 @@ a|
 * Wochenplanansicht 
 
 |Experiment
-a|* Ein Experiment ist eine Veranschulichung inerhalb einer Physikvorlesung 
-* Es behinhaltet alle Informationen die zur Durchführung nötig sind 
+a|* Ein Experiment ist eine Veranschaulichung innerhalb einer Physikvorlesung 
+* Es beinhaltet alle Informationen die zur Durchführung nötig sind 
 
 |Experimentefeld
-a|* Bei jedem Experiment gibt es die Möglichkeit Zusatzinforamtionen hinzufügen
+a|* Bei jedem Experiment gibt es die Möglichkeit Zusatzinforamtionen hinzuzufügen
 * Diese sind optional und dienen der besseren Übersicht
-* Es gibt die Rubriken: !!!!!!!!!!!!
+* Es gibt die Felder: Bilder, Geräte, Gefahren, Videos, Links, Instruktionen, Anmerkung
 |
 
 
@@ -69,8 +69,8 @@ a|* User
 
 |Handbuch
 a|* Das Handbuch dient als Nachschlagewerk für die Benutzer
-* In ihm sind alle funktionen der Anwendung beschrieben 
-* Es wird zusätzlich teschnische Informationen enthalten die den Update Prozess von Ruby on Rails beschreibt
+* In ihm sind alle Funktionen der Anwendung beschrieben 
+* Es wird zusätzlich technische Informationen enthalten die den Update Prozess von Ruby on Rails beschreibt
 |
 
 |Historie
@@ -210,5 +210,16 @@ a|* Life Cycle Objective Milestone
 |String
 |E-Mail-Adresse muss `@`-Zeichen, Punkt und "htw-dresden"-Domaine enthalten
 |Login
+|Buchungsdaten 
+|Daten die eine Buchung beschreiben (Studiengang, Datum, optionaler Titel, Kommentar)
+|Date, String
+|Datum muss in der Zukunft liegen, Studiengang muss existieren
+|-
+|Experimentedaten 
+|Es gibt die Felder: Kennung, Name, Bilder, Versuchsbeschreibung, Geräte, Gefahren, Videos, Links, Instruktionen, Anmerkung
+|String, Files
+|Kennung, Name und Versuchbeschreibung müssen ausgefüllt sein
+|-
+
 
 |===
