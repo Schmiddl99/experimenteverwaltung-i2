@@ -168,20 +168,19 @@ a| * Betreuer der VM a| * Gewährleistung eines Arbeitsumfeldes für uns
 //. Welche anderen Anwendungen sind im Einsatz? Muss ihre Anwendung mit diesen integriert werden?
 
 //Hier können zudem bei Bedarf Teile des Unternehmensmodells (Prozesse, Organigramme, IT-Landschaft, ...) eingefügt werden, um die beteiligten Aufgaben und Rollen zu skizzieren.
+[%header, cols="1,1"]
+|===
+|Kunde
+|Dozent
 
-[.underline]#Für Admin:# 
+|*Ist-Zustand:* Kunde erhält Mails mit Bestellwünschen der einzelnen Experimente pro Woche. Daraufhin druckt sich der Kunde die Wünsche aus. Unübersichtliches, uneinheitliches und zeitintensives Auswerten der einzelnen Dozentenwünsche.  
+|*Ist-Zustand:* Die Dozenten suchen sich für Ihre Vorlesungen Experimente aus dem EMS aus und senden Ihre Experimentwünsche dem Kunden per Mail zu. Hierbei fallen zusätzliche Arbeiten an, da sie ihre Experimente zeitlich organisieren müssen.
+|*Soll-Zustand:* Der Kunde kann sich im EMS direkt einen Wochenplan für jeden Dozenten ausdrucken lassen. Es soll einfacheres und komfortableres Arbeiten ermöglicht werden.  
+|*Soll-Zustand:* Die Dozenten können ihre Wunschexperimente direkt im EMS pro Vorlesung buchen.
 
-* Bisherige Webanwendung soll verwendet werden (bekannt und etabliert) 
-* Soll Bestellungen komfortabel einsehen können 
-* Einfache Handhabung (Kunde ist kein Power-User) 
-* Muss Bestellhistorie (“komprimiert”) einsehen können
+|===
 
-[.underline]#Für Dozent:# 
 
-* Bisherige Webanwendung soll verwendet werden (bekannt und etabliert) 
-* Einfache Bestellung; intuitiv, schnell und anpassbar 
-* Bestellung erfolgt nur über Webanwendung (keine Mails mehr) 
-* Anzahl der Dozenten kann sich ändern 
 
 
 
@@ -192,18 +191,22 @@ a| * Betreuer der VM a| * Gewährleistung eines Arbeitsumfeldes für uns
 
 [%header, cols="4,1,4,1"]
 |===
-|Bedarf|	Priori-tät|	Features|	Geplan-tes Release
+|Bedarf|	Priorität|	Features|	Geplan-tes Release
 
 
-|Voreinstellungen | Hoch| Festlegung der Buchungsdetails vor Buchungsbeginn| xx
-|Warenkorb |Hoch |Experiment in Warenkorb legen und evtl. Reihenfolge anpassen |xx
-|Journal ansehen |Hoch |Einsehen vergangener und Bearbeiten aktueller Buchungen durch den Dozenten |xx
-|Dozentenwoche |Hoch | Einsehen der Buchungen je Wochentag und pro Dozent durch den Admin; Einleitung des Druckprozesses| xx 
-|Login |Hoch | Benutzerverwaltung der einzelnen Anwender | xx
-|Experimentfeld-Geräte Anpassung | Mittel |Ansicht der Geräte für Experimente übersichtlicher gestalten | xx
-|Statistik ansehen |Mittel |Statistik, als Overlay bei der Experimente-Auswahl, der (bestellten) Experimente einsehen |xx
-|Verwaltung der Bilder |Niedrig |Bilder in Experimenten können ersetzt werden, Reihenfolge wird einbehalten |xx
-|Bugfix bei Experimentfeld-Gefahren | Niedrig | Bei der Anzeige von Textfeldern werden diese ineinander geschoben, dies soll behoben werden | xx
+|Einheitliches Buchungssystem für EMS mit Buchungsverwaltungsfunktionalitäten| Hoch a|* *Voreinstellung:*  Festlegung der Buchungsdetails vor Buchungsbeginn
+* *Warenkorb:* Experiment in Warenkorb legen und evtl. Reihenfolge anpassen
+* *Journal:* Einsehen vergangener und Bearbeiten aktueller Buchungen durch den Dozenten
+* *Dozentenwoche:* Einsehen der Buchungen je Kalenderwoche und pro Dozent 
+ | xx
+
+|Benutzerverwaltung der einzelnen Anwender |Hoch | *Login:* Erweitern auf dozentenspezifische Accounts | xx
+|Einfachere Auswahl eines Geräts bei der Erstellung eines Experiments| Mittel |
+*Experimentfeld "Geräte" Anpassung*: Ansicht der Geräte für Experimente übersichtlicher gestalten | xx
+|Buchungshäufigkeit auswerten |Mittel |*Statistik:* bei der Experimente-Auswahl, um die bestellten Experimente einsehen zu können |xx
+|Fehlerbehebung |Niedrig a|* *Verwaltung der Bilder:* Bilder in Experimenten können ersetzt werden, Reihenfolge wird einbehalten
+* *Bugfix bei Experimentfeld "Gefahren":* Bei der Anzeige von Textfeldern werden diese ineinander geschoben, dies soll behoben werden   |xx
+
 
 |===
 
