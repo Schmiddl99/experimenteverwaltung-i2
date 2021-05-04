@@ -1,0 +1,163 @@
+= Iteration Plan 05: {project-name}
+Gregor Müller <mueller.gregor@htw-dresden.de>
+{localdatetime}
+include::../_includes/default-attributes.inc.adoc[]
+// Platzhalter für weitere Dokumenten-Attribute
+
+
+== Meilensteine
+//Meilensteine zeigen den Ablauf der Iteration, wie z.B. den Beginn und das Ende, Zwischen-Meilensteine, Synchronisation mit anderen Teams, Demos usw.
+
+[%header, cols="3,1"]
+|===
+| Meilenstein
+| Datum
+
+| Beginn der Iteration | 21.04.2021
+| TS-M4 | 27.04.2021
+| Ruby on Rails Update| xxxxxx
+| LCA Meilenstein wird übarbeitet und abgeschlossen    | 21.01.2021
+| Vorbereitungen für IOC Meilenstein wird abgeschlossen | 21.01.2021
+|===
+
+
+== Wesentliche Ziele
+//Nennen Sie 1-5 wesentliche Ziele für die Iteration.
+
+* Validierung der Benutzerwünsche mit dem Kunden
+* Überarbeitung der UCs, TCs, Wireframes, Vision und des Glossars 
+* Besuch des Ruby on Rails Workshops durch alle Gruppenmitgleider
+* Installation der Entwicklungsumgebung aller Developer 
+* Evaluation von alten TCs, Entscheidung fällen über das zu verwendende Testframework,
+* TCs überarbeiten und Testdaten formulieren 
+* C4 Modell für UC01
+* Entscheidung fällen bezüglich eines selbstentwickelten Logins oder des zurückgreifens auf den HTW Login  
+
+
+== Aufgabenzuordnung
+//Dieser Abschnitt sollte einen Verweis auf die Work Items List enthalten, die die für diese Iteration vorgesehenen Aufgaben dokumentiert sowie die Zuordnung dieser Aufgaben zu Teammitgliedern. Alternativ können die Aufgaben für die Iteration und die Zuordnung zu Teammitgliedern in nachfolgender Tabelle dokumentiert werden - je nach dem, was einfacher für die Projektbeteiligten einfacher zu finden ist.
+
+Aufgaben werden in der https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#column-11862065[Work Item List] geordnet und priorisiert.
+
+Die in *dieser* Iteration geplanten Aufgaben wurden in der https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#column-11861913[To-Do-List] dargestellt. Die To-Do-List verhält sich dynamisch. Deswegen sind nachfolgend die Work Items der Iteration III aufgeführt.
+
+//Übernommen aus dem Board Iteration Planning auf Github. Referenz von Issues: Link[#Issue_ID]; link durch klick auf drei Punkte der Aufgabe->Copy card link
+
+Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
+[%header]
+|===
+|Aufgabe bzw. Beschreibung |#Github-Issue |Schätzung der Größe (Skala A-C; A=höchster Aufwand) |Priorität (Skala 1-3; 1=höchste Prio) |Status |Zugewiesen (Mail) 
+
+|Architektur- Notizbuch fortführen |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51159540[#26] | X | X | DUE: OPEN |{WE}
+
+|Ergänzen von Kleinigkeiten in SWRs |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-52283972[#71]|B |1 |DUE: 10.01.21 |{tka} {GM}
+
+|Architektur-Konzept|https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-52286316[#81] |B |1 |DUE:21.01.21 |{RB} {WE} {tka} {JS}
+
+|Coach-Meeting: SWFAs + MH-Thematik |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51434318[#43] |B |1 | DUE: 14.01.21 |{tka}
+
+|Risk-List: Excel in CSV |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51300929[#36] |B |3 |DUE:21.01.21 |{TW}
+ 
+|Test Cases: Fälle überlegen |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-52286350[#75] |C |1 |DUE: 21.01.21. |{RB} {GM} {JS} {WE}
+
+|Test Cases: Dokument anlegen |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-52286328[#76] |C |1 |DUE:10.01.21 |{GM}
+
+|Architektur-Notitzbuch anlegen |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-52286292[#80] |C |1 |DUE: 10.01.21 |{we}
+
+|Screenshot Essence Iteration 2 |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-52283809[#70]|C 
+|1 |DUE:07.01.21 |{TKa}
+
+|Iterationplan 3 erstellen |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-52284228[#74] |C |1 |DUE: 07.01.21 |{TW}
+
+|Iterationsplan 2 |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-52283639[#69] |C |2 |DUE: 10.01.21 |{TKa}
+
+|QM: Git-Konvention|https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51299110[#34] |C |3 |DUE:21.01.21 |{AB}
+
+|QM: Belegabgabe |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-52286661[#77] |C |3 |DUE: XX |{AB}
+
+|Rollenverteilung überarbeiten |https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#card-51434289[#41] |C |3 |DUE: 21.01.21 |{GM} {TKi}
+
+|===
+
+<<<
+== Probleme
+//Optional: Führen Sie alle Probleme auf, die in dieser Iteration adressiert werden sollen. Aktualisieren Sie den Status, wenn neue Probleme bei den täglichen / regelmäßigen Abstimmungen berichtet werden.
+
+[%header, cols="2,1,3"]
+|===
+| Problem | Status | Notizen
+| Kopierfunktion | geklärt 
+a|* Die Kopierfunktion sorgte für Abstimmungsschwierigkeiten zwischen dem Auftraggeber und den Auftragnehmern. Die Funktion sorgte sogar für einen Zielkonflikt: Das zugrundeliegende individuelle Buchungssystem sollte dadurch die Funktionen eines eher statischen Planungssystems erhalten.
+* Die vom Auftraggeber vorgesehene Kopierfunktion sorgt für einen erheblichen Mehraufwand in technischer und organisatorischer Sicht.
+* Die identifizierten resultierenden Probleme wurden gemeinsam mit dem Themensteller als so umfangreich bewertet, dass die Idee verworfen wurde, bzw. aus den gestellten funktionellen Anforderungen ausgeklammert wurde.
+
+|===
+
+
+== Bewertungskriterien
+//Eine kurze Beschreibung, wie die Erfüllung der o.g. Ziele bewertet werden soll
+
+* Der Kunde hat die ihm vorgelegten Wireframes bestätigt. Jeder mögliche Use Case wurde mit einem Wireframe abgedeckt. 
+* Die einzelnen Schritte der Buchung wurden mit dem Auftraggeber durchgegangen und wurden akzeptiert. Jeder mögliche Schritt wurde betrachtet.
+* Über die Handhabung und den Umfang des Journal herrscht Einigkeit. Alle Varianten wurden betrachtet.
+* Das Architekturkonzept wurde mit allen notwendigen Bestandteilen fertiggestellt.
+* Die Test Cases wurden für alle notwendigen Fälle aufgestellt.
+* Die Risikoliste wurde weiterhin aktualisiert und erneuert.
+
+== Assessment
+//In diesem Abschnitt werden die Ergebnisse und Maßnahmen der Bewertung erfasst und kommunziert. Die Bewertung wird üblicherweise am Ende jeder Iteration durchgeführt. Wenn Sie diese Bewertungen nicht machen, ist das Team möglicherweise nicht in der Lage, die eigene Arbeitsweise ("Way of Working") zu verbessern.
+
+[%header, cols="1,3"]
+|===
+| Review | Gesamte Iteration 3
+| Assessment Datum | 26.01.2021
+| Teilnehmer | gesamtes Team
+| Projektstatus: *grün*	a| 
+* Ziel: LCO-Meilenstein - Ende der Inception Phase, wurde erreicht. LCA-Meilenstein - Ende der Elaboration Phase, wurde erreicht.
+** **Understand what to build:** Grundsätzlich verstanden. *Erfolgskriterien* sind zu 100% klar, auch in Bezug auf den Ablaufplan des Buchens und in Bezug auf das Journal. Der vorhandene *Zielkonflikt* durch die Kopierfunktion konnte beigelegt werden. UseCases und die dazugehörigen Diagramme wurden überarbeitet. Damit sind Ziel und Umfang des Systems und seiner Funktionalitäten klar und erfasst. Die kritischen Anforderungen, die von der Architektur validiert werden müssen, wurden erfasst. Die Beschreibung der Architektur ist vollständig und ist angesichts der Ziele angemessen detailliert. Die Konzepte wurden so einfach wie möglich gehalten. Das Architektur-Notebook beinhaltet die bisherige Lösung, die Motivation und die Ziele, die für die Gestaltung der Software-Architektur festgelegt wurden. Die wichtigsten Annahmen auf denen die Architektur basiert, wurden dokumentiert und sind für Reviewer und Verwender sichtbar. Die Architekturbeschreibung ist aktuell. Des Weiteren wurden die Systempartitionen hinreichend definiert und alle Schlüsselelemente ausreichend definiert. Die gesamte Wiederverwendung wurde identifiziert. Die Architektur wurde so entworfen, dass sie weiterentwickelt werden kann. Die Architektur bietet eine geeignete Grundlage für die Organisation der Entwicklerteams, allerdings ist die Verantwortlichkeit im Team noch nicht aufgeteilt und nicht alle Teammitglieder sind auf dem aktuellen Stand. Das Architektur-Notebook ist noch nicht vollständig und wird im Verlauf des Projektes ergänzt. Die SWR Problematik ist abgeschlossen, allerdings steht ein Review des Coaches noch aus.
+** *Identify key system functionality:* Die kritischsten Anforderungen wurden identifiziert: *Buchungen durchführen*, *Buchungen anzeigen* (-> Dozentenwoche), Journal
+
+** *Determine at least one possible solution:* Die Hauptfunktionen des Systems lassen sich aufgrund von UseCase-, SWR- und Architektur-Beschreibungen technisch umsetzen.
+
+** *Understand:* 
+*** Risiken sind verstanden 
+*** Wir bekommen kein Geld (-> nur "Zeitkosten" fallen an)
+*** Zeitplan: wurde *nicht* abgestimmt. (Orientierung an Empfehlung aus Vorlesung)
+| a|
+* *Überprüfung selbst gesteckter Iterationsziele: Y/N (8/2)*
+** Der Themensteller hat die vorgelegen Wireframes bestätigt. *Y* 
+** Die geplante Vorgehensweise der Buchung ist mit dem Themensteller abgesprochen, es herrscht Übereinstimmung. *Y*
+** Übereinstimmung mit dem Themensteller in Bezug auf das Journal *Y*
+** 6 Risiken und entsprechende Gegenmaßnahmen wurden identifiziert. Die Dokumentation liegt als .csv vor. *Y* 
+** Für jeden dokumentierten Use Case existiert ein Wireframe. Jede dokumentierte Anforderung lässt sich anhand mindestens eines Wireframes erläutern. *Y*
+** Das Architektur Konzept wurde ausgearbeitet. *Y*
+** Test Cases sind vollständig ausgearbeitet. *N*
+** Ziel positives Feedback des Coaches zu den System Wide Requirements. *N*
+** Anforderungsvalidierung mit Coach (Feedback erzielt und bestmöglich umgesetzt) *Y*
+** Problematik Kopierfunktion klären bzw. Übereinstimmung erreichen. *Y*
+
+
+
+
+|===
+
+[%header, cols="1,3"]
+|===
+| Retrospective | Gesamte Iteration 3
+| Assessment Datum | 26.01.2021
+| Teilnehmer | gesamtes Team
+| Projektstatus: *grün*	a| 
+Wie gut waren unsere Schätzungen? Welche Hindernisse gab es? Wie können wir besser werden? 
+
+* Im Weekly: Gesamtes Team Arbeitet an einer Problematik– ineffektiv? Aufteilen in zwei Teams und Ausarbeiten einer Lösung, anschließend gegenseitige Abstimmung und Kontrolle.
+* Schätzungen im Iteration Board (Aufwand/Prio im GitHub) trafen zu, funktioniert auch mit weniger “Schätzern” 
+* Ausgesprochene Zufriedenheit mit eigenem Teamwork 
+* Gutes Teamwork -> hohe Hilfsbereitschaft bei Fragen.
+* Deadline für Meetings hat die Effektivität im Meeting erhöht, positive Resonanz in der Gruppe.
+* Ausbaufähig war die Kommunikation zur Terminfindung eines aufgabenbezogenen Gruppenmeetings, dies geschah häufig sehr kurzfristig. Nach Ansprache im Weekly erfolgte eine direkte Verbesserung noch innerhalb der dritten Iteration.
+|===
+
+=== ALPHA States
+
+image::31.01.2021_End_I3.jpeg[ALPHA states 31.01.2021]
+
