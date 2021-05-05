@@ -53,6 +53,7 @@ a|
 |Experiment
 a|* Ein Experiment ist eine Veranschaulichung innerhalb einer Physikvorlesung 
 * Es beinhaltet alle Informationen die zur Durchführung nötig sind 
+|
 
 |Experimentefeld
 a|* Bei jedem Experiment gibt es die Möglichkeit Zusatzinforamtionen hinzuzufügen
