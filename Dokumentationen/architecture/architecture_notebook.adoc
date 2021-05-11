@@ -144,6 +144,9 @@ a|  * Kompatibilität
 .. Objekte 
 .. Konfigurationen 
 
+. Weiterverwendung des bis jetzt genutzen Test-Frameworks und der bis jetzt existierenden (teilweise fehlerhaften) Testcases und damit einherkommende Fehlerbehebung
+.. Grund: zu hoher Mehraufwand durch Einarbeitung in neues Framework und erneutes Schreiben der Alttests
+
 
 . Verwendung von kostenlosen Bibliotheken (Open Source) und Lizenzen
 .. Grund: dringende Vermeidung von Kosten 
