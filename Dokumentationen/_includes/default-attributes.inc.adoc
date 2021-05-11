@@ -8,6 +8,7 @@
 :JS: juliusheiko.schmidt@htw-dresden.de
 :TKi: taejun.kim@htw-dresden.de
 :TKa: tobias.karsch@htw-dresden.de
+:PG: piet.gutsche@htw-dresden.de
 
 :CZ: Coach (christoph.zirkelbach@htw-dresden.de)
 :MH: Kunde (matthias.heisig@htw-dresden.de)
