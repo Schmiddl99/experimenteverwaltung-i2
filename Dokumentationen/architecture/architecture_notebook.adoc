@@ -144,8 +144,8 @@ a|  * Kompatibilität
 .. Objekte 
 .. Konfigurationen 
 
-. Weiterverwendung des bis jetzt genutzen Test-Frameworks und der bis jetzt existierenden (teilweise fehlerhaften) Testcases und damit einherkommende Fehlerbehebung
-.. Grund: zu hoher Mehraufwand durch Einarbeitung in neues Framework und erneutes Schreiben der Alttests
+. Weiterverwendung des bis jetzt genutzten Test-Frameworks (Rspec) und der bis jetzt existierenden (teilweise fehlerhaften) Testcases und damit einherkommende Fehlerbehebung
+.. Grund: beim Review des alten Testqeullcodes wurde festgestellt, dass ca. 30% der Tests mit einem Fehler abschließen, weshalb der Gedanke zum Testframework Minitest zu wechseln diskutiert wurde, da dies schon bekannt ist - Mehraufwand durch Umbauen der alten Tests ist jedoch vermutlich größer als Einarbeitungszeit in unbekanntes Framework Rspec; Risiko beim Frameworkwechsel, dass Aspekte übersehen werden
 
 
 . Verwendung von kostenlosen Bibliotheken (Open Source) und Lizenzen
