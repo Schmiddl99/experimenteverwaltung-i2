@@ -18,6 +18,7 @@ gem 'bootstrap', '< 5.0.0'
 gem 'font-awesome-sass'
 gem 'bootswatch'
 gem 'validate_url'
+gem 'date_validator'
 gem 'devise'
 gem 'simple_form'
 # TODO: replace with ActiveStorage
@@ -26,6 +27,8 @@ gem "cocoon"
 gem 'will_paginate'
 gem 'will_paginate-bootstrap4'
 gem 'listen'
+
+gem 'activerecord-session_store'
 
 gem 'wicked_pdf'
 gem 'wkhtmltopdf-binary'

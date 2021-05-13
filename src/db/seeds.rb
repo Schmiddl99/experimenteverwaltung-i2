@@ -7,6 +7,7 @@
 #   Character.find_or_create_by!(name: 'Luke', movie: movies.first)
 User.create_with(password: "123456").find_or_create_by!(name: "Entwickler", username: "dev", role: :admin)
 User.create_with(password: "123456").find_or_create_by!(name: "Matthias Heisig", username: "m.heisig", role: :admin)
+User.create_with(password: "123456").find_or_create_by!(name: "Dozent", username: "lecturer", role: :lecturer)
 
 a = Category.find_or_create_by!(name: "Atom und Festkörperphysik", label: "A")
 e = Category.find_or_create_by!(name: "Elektrizität und Magentismus", label: "E")
@@ -66,6 +67,13 @@ Equipment.find_or_create_by!(name: "Wärmestrahlungsgerät kompl.", location: "W
 Equipment.find_or_create_by!(name: "Strahler", location: "W1", inventory_nr: "5")
 Equipment.find_or_create_by!(name: "Wärmebildkamera", location: "N 227", inventory_nr: "6")
 Equipment.find_or_create_by!(name: "Trafo für Halle-Magnet", location: "V33", inventory_nr: "7")
+
+Course.find_or_create_by!(name: 'Maschinenbau')
+Course.find_or_create_by!(name: 'Elektrotechnik')
+Course.find_or_create_by!(name: 'Chemie')
+Course.find_or_create_by!(name: 'Wirtschaftsingenieure')
+Course.find_or_create_by!(name: 'Bauingenieure')
+Course.find_or_create_by!(name: 'Sonstiges')
 
 if ENV['USER'] == "witt"
   path = "/home/witt/DB_Gefahren/"
