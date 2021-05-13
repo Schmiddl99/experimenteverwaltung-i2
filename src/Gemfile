@@ -14,7 +14,7 @@ gem 'jquery-rails'
 gem 'jquery-ui-rails'
 
 gem 'slim-rails'
-gem 'bootstrap'
+gem 'bootstrap', '< 5.0.0'
 gem 'font-awesome-sass'
 gem 'bootswatch'
 gem 'validate_url'
