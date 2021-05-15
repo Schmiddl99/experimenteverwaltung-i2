@@ -2,6 +2,10 @@
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 
+== Verteilungskriterien
+
+Die Aufgaben wurden hauptsächlich nach Interessens- und Expertisengebieten verteilt. Das Team einigte sich darauf, das der Rollenverantwortliche sich hauptsächlich um die Dokumentationspflichten und Arbeitsprirorisierung kümmerte, er aber immer von anderen Teammitglieder bei der eigentlichen Aufgabe unterstützt wird. So konnte wir eine perfekte Mischung aus Rollenspezialisierung und Informationsaustausch erreichen. 
+
 |===
 |*Name* |*Rolle* |*Anmerkung* |*Letze Änderung*
 |Tobias Karsch

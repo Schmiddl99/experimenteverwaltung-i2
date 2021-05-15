@@ -87,7 +87,7 @@ Stakeholder haben Anforderungen. Ziele der Stakeholder sind Teil der Anforderung
 === Zuverlässigkeit (Reliability)
 // Zuverlässigkeit beinhaltet die Fähigkeit des Produkts und/oder des Systems unter Stress und ungünstigen Bedingungen am laufen zu bleiben. Spezifizieren Sie Anforderungen für zuverlässige Akzeptanzstufen, und wie diese gemessen und evaluiert werden. Vorgeschlagene Themen sind Verfügbarkeit, Häufigkeit und Schwere von Fehlern und Wiederherstellbarkeit.
 
-* *NFAR-1*: Das System darf aufgrund von Netzwerkausfällen keinen Schaden nehmen. 
+* *NFAR-1*: Das System darf aufgrund von Netzwerkausfällen keine Daten verlieren oder Daten fehlerhaft speichern. 
 ** Testweise wird beim Buchen ein Verbindungsabbruch erzwungen. 
 
 === Effizienz (Performance)
@@ -130,5 +130,5 @@ Stakeholder haben Anforderungen. Ziele der Stakeholder sind Teil der Anforderung
 === Rechtliche Anforderungen
 //Angaben ergänzen, nicht relevante Unterpunkte streichen oder auskommentieren
 * Der Kunde muss über eine mögliche Speicherung von Nutzungsdaten informiert werden.
-* Eine etwaige Datenschutzerklärung muss beim Login vorliegen und vor der Nutzung durch Dozenten anerkannt werden. Der Verantwortliche hierbei sollte der Admin sein. 
+* Eine etwaige Datenschutzerklärung muss vor der Registration vorliegen und vor der Nutzung durch Dozenten anerkannt werden. Der Verantwortliche hierbei sollte der Admin sein. 
 * Keine fremden Werke dürfen fälschlicherweise als Eigene ausgewiesen werden. Urheberrecht ist zu beachten, gegebenenfalls müssen eigene Grafiken erstellt werden. 

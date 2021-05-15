@@ -125,6 +125,8 @@ wird in Abhängigkeit des Projektzustandes bearbeitet. Bei dieser schrittweisen 
 === Bemerkungen zum weiteren Projektverlauf
 * Im Team herrscht Einigkeit darüber, dass Serveroptimierung nicht in unseren Aufgabenbereich fällt. Vom Vorhandensein ausreichender technischer Ressourcen und der Wartung des Fakultätsservers durch die Verantwortlichen außerhalb des Projektes wird ausgegangen.
 * In das Benutzerhandbuch ist eine Anleitung zum Systemneustart zu integrieren
+* Bei dem Wechsel von SE I zu SE II wurde das Team von {tka}, {tw}, {js}, {tki} und {ab} aus privaten oder Lehrplangründen verlassen. Der Abschied verlief bei jedem Teammitglied geregelt und auf eigenen Wunsch hin ab. Jeder Verlust wurde vom restlichen Team sehr bedauert. 
+* Um diese Unterbesetzung auszugleichen wurde dem Team {pg} zugewiesen, welcher mit großer Freude aufgenommen wurde und sich selbständig in das Projekt einarbeitete.  
 
 Bei der Planung zukünftiger Iterationen und ihrer Ziele sind diese Punkte zu verwirklichen. 
 
@@ -133,8 +135,15 @@ Bei der Planung zukünftiger Iterationen und ihrer Ziele sind diese Punkte zu ve
 * Übertragung des Systems von der VM auf den regulären Fakultätsserver durch TAVM
 
 == Erkenntnisse (Lessons Learned)
+
+=== SE I
 //List lessons learned from the retrospective, with special emphasis on actions to be taken to improve, for example: the development environment, the process, or team collaboration.
 
 * Kommunikation mit den Stakeholdern ist der Knackpunkt für die Anforderungsanalyse und das tiefgründige gegenseitige Verständnis initial der wichtigste Faktor.
 * Bestimmung eines Redeführers und Vorbereitung der Tagesordnung machen Meetings deutlich zeiteffizienter.
 * Wissensweitergabe im Team lässt sich über selbstorganisierte Workshops sehr gut realisieren - von der Erfahrung einzelner Teammitglieder können so alle profitieren.
+
+=== SE II
+
+* Es besteht ein großer Unterschied zwischen dem Verständis die Agile Softwareentwicklung theoretisch zu verstehen oder in der Praxis anzuwenden. 
+* Der Kunde muss für sein System selbst die Verantwortung tragen und nicht das Entwickler-Team. Es reicht aus den Kunden auf fragwürdige Anforderungen hinzuweisen, sie werden aber auf Wunsch umgesetz solange sie ethisch vertretbar sind.

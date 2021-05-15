@@ -19,6 +19,10 @@ Dozent möchte sich seinen Wochenplan (Übersicht von allen eigenen Exp. inkl. D
 . KW muss ausgewählt werden
 . Use Case endet damit, dass die Ansicht generiert wird
 
+=== Wireframe Dozentenwoche
+
+image::WF_8_Druckansicht.PNG[Dozentenwoche Druckansicht]
+
 //=== Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
 //--- keine alternativen Abläufe möglich ---

@@ -21,9 +21,12 @@ Admin möchte sich Wochenplan (Übersicht von allen Exp. inkl. Details) für bes
 . Filter (Dozent) kann angewendet werden
 . Use Case endet damit, dass die Ansicht generiert wird
 
-=== Alternative Abläufe
+=== Wireframe Dozentenwoche ansehen
+
+image::WF_7_Dozentenwoche.PNG[Dozentenwoche Anzeige]
+//=== Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
---- keine alternativen Abläufe möglich ---
+//--- keine alternativen Abläufe möglich ---
 
 //=== Unterabläufe (subflows)
 //Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
@@ -32,12 +35,12 @@ Admin möchte sich Wochenplan (Übersicht von allen Exp. inkl. Details) für bes
 
 //=== Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
---- keine Szenarios ---
+//--- keine Szenarios ---
 
 ===	Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 * Wochenplanansicht wird angezeigt
 
-=== Besondere Anforderungen
+//=== Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
---- keine Nachbedingungen ---
+//--- keine Nachbedingungen ---

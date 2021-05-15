@@ -8,13 +8,67 @@ include::../_includes/default-attributes.inc.adoc[]
 
 == Allgemeine Informationen
 // ...
-Die Anordnung der Use Cases entspricht der Priorisierung in der Entwicklung.
+Für eine bessere Veranschaulichung wurde ein BPMN Diagramm über alles Use Cases erstellt. 
+
+<<<
+=== BPMN Diagramm für alle UCs
+
+image::BPMN_Diagramm_Gesamt.PNG[BPMN Diagramm für alles UCs]
+
+Für die einfache Darstellung von Sachverhalten und der Nutzung unserer Erweiterung der Webanwendung haben wir uns für die Verwendung von Wireframes entschieden. Besonders bei der Darstellung des Buchungsvorganges und unserer Vorstellung zu den Benutzeroberflächen war uns die Nutzung besonders wichtig, da unser Kunde mit visuellen Darstellungen unsere Ideen besser nachvollziehen konnte.
+
+Aus diesem Grund wählten wir sehr detaillierte Darstellungen, welche stellenweise über einen klassischen Wireframe hinaus gehen mögen. Die bildliche Vorstellung begünstigte eine erfolgreiche Verständigung mit den Stakeholdern über die Lösungsansätze.
 
 Der Begriff "User" in den Use Cases greift die vorher genannten Akteure auf und impliziert, dass der User sich mit einem der Rolle entsprechenden Account eingeloggt hat.
 
 Jeder User hat einen eigenen persönlichen Account. Nur der Gast-User kann mehrfach verwendet werden.
 
 *Weiteres: tbd* (Fortsetzung in SEII)
+
+== Anordnung der Use Cases
+
+Die Anordnung der Use Cases entspricht der Priorisierung in der Entwicklung.
+
+[%header, cols="1,4,1"]
+|===
+|Use Case Nummer
+|Use Case Name
+|Use Case Priorisierung
+|01
+|Experiment buchen
+|Hoch
+|03
+|Dozentenwoche ansehen
+|Hoch
+|05
+|Eigene Dozentenwoche ansehen
+|Hoch
+|06
+|Eigene Dozentenwoche drucken
+|Hoch
+|07
+|Dozentenwoche drucken
+|Hoch
+|02
+|Eigene Experimente im Buchungsjournal
+ansehen
+|Hoch
+|08
+|Experimente im Buchungsjournal
+bearbeiten
+|Hoch
+|09
+|Eigene Experimente im Buchungsjournal
+löschen
+|Hoch
+|04
+|Statistik anzeigen
+|Mittel
+
+
+|===
+
+
 
 //Fügen Sie nachfolgend eine Liste aller Use-Cases per Include ein.
 //Dafür sollten Sie pro Use-Case eine Datei anlegen, die auf dem usecase_spec.adoc Template basiert.
@@ -48,14 +102,12 @@ include::use_case_04.inc.adoc[]
 //<<<
 //include::use_case_10.inc.adoc[]
 
-<<<
-== Grafische Veranschaulichung
 
-Um eine einfache Übersicht über die Use Cases zu erlangen, wurde ein BPMN Diagramm erstellt das alle Use Cases darstellt und ein UML Diagramm um die einzelnen Beziehungen der User auf die Use Cases aufzuzeigen. 
+== Beziehungen der User
 
-=== BPMN Diagramm für alles UCs
+Um eine einfache Übersicht über die Use Cases zu erlangen, wurde ein UML Diagramm erstellt um die einzelnen Beziehungen der User auf die Use Cases aufzuzeigen. 
 
-image::BPMN_Diagramm_Gesamt.PNG[BPMN Diagramm für alles UCs]
+
 
 <<<
 === UML Diagramm für die Beziehungen der User

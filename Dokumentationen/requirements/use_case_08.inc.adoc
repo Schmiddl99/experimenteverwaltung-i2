@@ -15,7 +15,7 @@ Dozent will seine gebuchten Exp. im Buchungsjournal bearbeiten.
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
 . Der Use Case beginnt, wenn User Bearbeitungsformular aufruft
-. User kann Exp. ändern
+. User kann Experimente löschen oder weitere aus der Experimenten-Übersicht hinzufügen
 . User bestätigt Änderung
 . Use Case endet damit, dass die Seite neu geladen und die Änderung aktiv wird
 

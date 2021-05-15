@@ -19,6 +19,10 @@ Dozent will seine gebuchten Exp. im Buchungsjournal ansehen.
 . Möglichkeit die Ansicht zu filtern (Vorführungsdatum + Studiengang, Studiengang, Kalenerwoche) -> siehe Unterablauf 1
 . Use Case endet mit Auflistung aller bisher getätigten Buchungen nach Studiengang und Vorführungsdatum
 
+=== Wireframe Journal Ansicht
+
+image::WF_6_Journal.PNG[Journal Anzeige]
+
 //=== Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
 //--- keine alternativen Abläufe ---
