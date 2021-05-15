@@ -109,7 +109,7 @@ Projekt-Einstieg SE II
 Analyst (zus.)
 
 Developer (zus.)
-|
+|GitHub-Kontrolleur
 |05.05.2021
 
 |Vincent Thelang

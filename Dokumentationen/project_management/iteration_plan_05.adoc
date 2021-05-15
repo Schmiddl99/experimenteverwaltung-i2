@@ -17,7 +17,7 @@ include::../_includes/default-attributes.inc.adoc[]
 | TS-M4 | 27.04.2021
 | Ruby on Rails Update| xxxxxx
 | LCA Meilenstein wird übarbeitet und abgeschlossen    | 05.05.2021
-| Vorbereitungen für IOC Meilenstein wird abgeschlossen | 50.05.2021
+| Vorbereitungen für IOC Meilenstein wird abgeschlossen | 05.05.2021
 |===
 
 
@@ -87,11 +87,11 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 |===
 | Problem | Status | Notizen
 | Agile Softwareentwicklung im Mindset umsetzen | geklärt 
-a|* Vor dem TSM 4 wurden von dem Team durch Kontakt der Benutzer des Systems Benutzerwünsche gesammelt und validier. Diese sollten dann im TSM 4 mit dem Kunden besprochen werden. 
+a|* Vor dem TSM 4 wurden von dem Team durch Kontakt der Benutzer des Systems Benutzerwünsche gesammelt und validiert. Diese sollten dann im TSM 4 mit dem Kunden besprochen werden. 
 * Die Absicht des Teams war es, die gewünschten Anforderungen der Benutzer durch den Kunden prüfen zu lassen und diese ggf. im System und dem Beleg einzuarbeiten bzw. zu streichen.
 * Dies funktionierte nur bedingt gut, da der Kunde eine neue Priorisierung von Aufgaben wünschte, Aufgaben hinzufügte und bereits beschlossene Funktionen abänderte.
 * Dem wurde zwar zugestimmt, stieß aber auf Ablehnung einiger Teammitglieder. Die Befürchtung war, dass viel von der Arbeit aus SE I ja jetzt hinfällig war und die Zeit nun nicht für einen erfolgreichen Abschluss ausreichen würde. 
-* Durch starke Zusammenarbeit mit dem Coach und Herr Prof. Dr. Anke könnte die Situation besser verstanden und analysiert werden. 
+* Durch starke Zusammenarbeit mit dem Coach und Herr Prof. Dr. Anke konnte die Situation besser verstanden und analysiert werden. 
 * Lösung: Das Team nimmt alle Änderungen und Forderungen an, selektiert diese, ob sie "In-Scope" oder "Out-Scope" sind und protokolliert diese im Beleg entsprechend. Die eigentliche Arbeit wird durch die Priorisierung gesteuert. Erst wenn eine Aufgabe abgeschlossen ist, werden die gewünschten Änderungen an dieser Aufgabe im System und im Beleg umgesetzt. 
 
 |===
@@ -104,7 +104,7 @@ a|* Vor dem TSM 4 wurden von dem Team durch Kontakt der Benutzer des Systems Ben
 * Die Änderungen des Kunden wurde mit Wireframes validiert. 
 * Die alten TCs wurden versucht auszuführen. Es wurde die Entscheidung getroffen das Framework "Rspec" zu verwenden. 
 * Das Update von Ruby on Rails wurde auf der VM durchgeführt. 
-* Das C4 Modell für UC01 wurde abgeschlossen und liegt in GitHub vor.
+* Integration des UC01 in das C4 Modell anhand eines Klassendiagramms.
 * Die Belegdokumente wurden den Änderungen des Kunden angepasst und liegen in GitHub vor. 
 * Das EMS-System kann von allen Devolpern aufgerufen werden. 
 
@@ -119,9 +119,9 @@ a|* Vor dem TSM 4 wurden von dem Team durch Kontakt der Benutzer des Systems Ben
 | Projektstatus: *gelb*	a| 
 * Ziel: LCA-Meilenstein - Ende der Elaboration Phase, wurde NICHT erreicht, Vorbereitungen für IOC Meilenstein wurde erreicht.
 ** *Get a more detailed understanding of the requirements:* Grundsätzlich verstanden. 
-*** *Erfolgskriterien:* konnten zum Ende der Iteration verstanden und umgesetzt werden. Die Neupriorisierung wurde in der Vision festgehalten und die einzelnen Belegbestandteile wurde auch aufgabenspezifisch angepasst. 
+*** *Erfolgskriterien:* konnten zum Ende der Iteration verstanden und umgesetzt werden. Die Neupriorisierung wurde in der Vision festgehalten und die einzelnen Belegbestandteile wurden auch aufgabenspezifisch angepasst. 
 ** *Design, implement, validate, and establish the baseline for the architecture:* Zu weiten Teilen abgeschlosssen.
-*** *Erfolgskriterien:* Die Wireframes wurden den Änderungen nach angepasst und vom Kunden validiert. Auf die Validierung eines Skelettsystems wurde verzichtet, da unsre Ziele ja auf einem vorhanden, funktionierenden und verwendeten Projekt aufbauen. Da aber einige TCs des Vorgängerteams noch nicht funktionieren und wir hier erst selektieren müssen, welche repariert oder entfernt werden müssen, sehen wir diesen Punkt noch nicht als abgeschlossen an.
+*** *Erfolgskriterien:* Die Wireframes wurden den Änderungen nach angepasst und vom Kunden validiert. Auf die Validierung eines Skelettsystems wurde verzichtet, da unsere Ziele ja auf einem vorhanden, funktionierenden und verwendeten Projekt aufbauen. Da aber einige TCs des Vorgängerteams noch nicht funktionieren und wir hier erst selektieren müssen, welche repariert oder entfernt werden müssen, sehen wir diesen Punkt noch nicht als abgeschlossen an.
 
 ** *Mitigate essential risks, and produce accurate schedule and cost estimates:* Konnte mit Erfolg umgesetzt werden.
 *** *Erfolgskriterien:* Um diese Punkte zu erfüllen, arbeitet das Team mit Verwendung einer Work Item List und einer Risk List. (siehe <<project_plan: {project-name}, Projektplan>>)
@@ -129,7 +129,7 @@ a|* Vor dem TSM 4 wurden von dem Team durch Kontakt der Benutzer des Systems Ben
 
 ** *Understand:* 
 *** Agile Software Entwicklung wurde verstanden.  
-*** Unsre Arbeitszeit ist begrenzt: Heißt wir Arbeiten nicht, bis das Projekt abgeschlossen ist, sondern bis die verfügbare Zeit aufgebraucht ist.
+*** Unsere Arbeitszeit ist begrenzt: Heißt wir Arbeiten nicht, bis das Projekt abgeschlossen ist, sondern bis die verfügbare Zeit aufgebraucht ist.
 *** Unser Kunde darf jederzeit Änderungen wünschen, wir müssen aber selektieren welche "In-Scope" oder "Out-Scope" sind.
 | a|
 * * Überprüfung selbst gesteckter Iterationsziele: Y/N (6/6)*
@@ -137,7 +137,7 @@ a|* Vor dem TSM 4 wurden von dem Team durch Kontakt der Benutzer des Systems Ben
 ** Die Änderungen des Kunden wurde mit Wireframes validiert. *Y*
 ** Die alten TCs wurden versucht auszuführen. Es wurde die Entscheidung getroffen das Framework "Rspec" zu verwenden. *Y*
 ** Das Update von Ruby on Rails wurde auf der VM durchgeführt. *Y*
-** Das C4 Modell für UC01 wurde abgeschlossen und liegt in GitHub vor. *Y*
+** Integration des UC01 in das C4 Modell anhand eines Klassendiagramms. *Y*
 ** Die Beleg Dokumente wurden den Änderungen des Kunden angepasst und liegen in GitHub vor. *Y*
 ** Das EMS System kann von allen Devolpern aufgerufen werden. *Y*
 
