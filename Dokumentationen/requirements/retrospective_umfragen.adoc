@@ -1,4 +1,4 @@
-= Umfragensammlung zum Ende jeder Iteration: {project-name}
+= Puls Check zum Ende jeder Iteration: {project-name}
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 
