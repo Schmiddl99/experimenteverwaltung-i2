@@ -126,7 +126,7 @@ wird in Abhängigkeit des Projektzustandes bearbeitet. Bei dieser schrittweisen 
 * Im Team herrscht Einigkeit darüber, dass Serveroptimierung nicht in unseren Aufgabenbereich fällt. Vom Vorhandensein ausreichender technischer Ressourcen und der Wartung des Fakultätsservers durch die Verantwortlichen außerhalb des Projektes wird ausgegangen.
 * In das Benutzerhandbuch ist eine Anleitung zum Systemneustart zu integrieren
 * Bei dem Wechsel von SE I zu SE II wurde das Team von {tka}, {tw}, {js}, {tki} und {ab} aus privaten oder Lehrplangründen verlassen. Der Abschied verlief bei jedem Teammitglied geregelt und auf eigenen Wunsch hin ab. Jeder Verlust wurde vom restlichen Team sehr bedauert. 
-* Um diese Unterbesetzung auszugleichen wurde dem Team {pg} zugewiesen, welcher mit großer Freude aufgenommen wurde und sich selbständig in das Projekt einarbeitete.  
+* Um diese Unterbesetzung auszugleichen wurde dem Team {pg} zugewiesen, welcher mit großer Freude aufgenommen wurde und sich selbständig in das Projekt einarbeitete. 
 
 Bei der Planung zukünftiger Iterationen und ihrer Ziele sind diese Punkte zu verwirklichen. 
 

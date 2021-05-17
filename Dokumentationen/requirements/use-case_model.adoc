@@ -8,12 +8,13 @@ include::../_includes/default-attributes.inc.adoc[]
 
 == Allgemeine Informationen
 // ...
-Für eine bessere Veranschaulichung wurde ein BPMN Diagramm über alles Use Cases erstellt. 
+Um eine einfache Übersicht über die Use Cases zu erlangen, wurde ein UML Diagramm erstellt um die einzelnen Beziehungen der User auf die Use Cases aufzuzeigen. 
 
-<<<
-=== BPMN Diagramm für alle UCs
 
-image::BPMN_Diagramm_Gesamt.PNG[BPMN Diagramm für alles UCs]
+
+
+image::UML_Diagramm_V2.0.PNG[UML Diagramm für die Beziehungen der User]
+
 
 Für die einfache Darstellung von Sachverhalten und der Nutzung unserer Erweiterung der Webanwendung haben wir uns für die Verwendung von Wireframes entschieden. Besonders bei der Darstellung des Buchungsvorganges und unserer Vorstellung zu den Benutzeroberflächen war uns die Nutzung besonders wichtig, da unser Kunde mit visuellen Darstellungen unsere Ideen besser nachvollziehen konnte.
 
@@ -29,41 +30,29 @@ Jeder User hat einen eigenen persönlichen Account. Nur der Gast-User kann mehrf
 
 Die Anordnung der Use Cases entspricht der Priorisierung in der Entwicklung.
 
-[%header, cols="1,4,1"]
+[%header, cols="1,4"]
 |===
 |Use Case Nummer
 |Use Case Name
-|Use Case Priorisierung
+
 |01
-|Experiment buchen
-|Hoch
+|<< Use-Case: Experiment buchen, Experiment buchen >>
+
 |03
-|Dozentenwoche ansehen
-|Hoch
-|05
-|Eigene Dozentenwoche ansehen
-|Hoch
-|06
-|Eigene Dozentenwoche drucken
-|Hoch
-|07
-|Dozentenwoche drucken
-|Hoch
+|<< Use-Case: Dozentenwoche ansehen,Dozentenwoche ansehen >>
+
 |02
-|Eigene Experimente im Buchungsjournal
-ansehen
-|Hoch
+|<< Use-Case: Eigene Experimente im Buchungsjournal ansehen,Eigene Experimente im Buchungsjournal ansehen >>
+
 |08
-|Experimente im Buchungsjournal
-bearbeiten
-|Hoch
+|<< Use-Case: Experimente im Buchungsjournal bearbeiten,Experimente im Buchungsjournal bearbeiten >>
+
 |09
-|Eigene Experimente im Buchungsjournal
-löschen
-|Hoch
+|<< Eigene Buchungen im Buchungsjournal löschen,Eigene Buchungen im Buchungsjournal löschen >>
+
 |04
-|Statistik anzeigen
-|Mittel
+|<< Use-Case: Statistik anzeigen, Statistik anzeigen >>
+
 
 
 |===
@@ -77,15 +66,6 @@ include::use_case_01.inc.adoc[]
 
 <<<
 include::use_case_03.inc.adoc[]
-
-<<<
-include::use_case_05.inc.adoc[]
-
-<<<
-include::use_case_06.inc.adoc[]
-
-<<<
-include::use_case_07.inc.adoc[]
 
 <<<
 include::use_case_02.inc.adoc[]
@@ -109,7 +89,5 @@ Um eine einfache Übersicht über die Use Cases zu erlangen, wurde ein UML Diagr
 
 
 
-<<<
-=== UML Diagramm für die Beziehungen der User
 
-image::UML_Diagramm_V2.0.PNG[UML Diagramm für die Beziehungen der User]
+

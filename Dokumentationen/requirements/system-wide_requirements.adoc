@@ -130,5 +130,5 @@ Stakeholder haben Anforderungen. Ziele der Stakeholder sind Teil der Anforderung
 === Rechtliche Anforderungen
 //Angaben ergänzen, nicht relevante Unterpunkte streichen oder auskommentieren
 * Der Kunde muss über eine mögliche Speicherung von Nutzungsdaten informiert werden.
-* Eine etwaige Datenschutzerklärung muss vor der Registration vorliegen und vor der Nutzung durch Dozenten anerkannt werden. Der Verantwortliche hierbei sollte der Admin sein. 
+* Eine etwaige Datenschutzerklärung muss vor der Registrierung vorliegen und vor der Nutzung durch Dozenten anerkannt werden. Der Verantwortliche hierbei sollte der Admin sein. 
 * Keine fremden Werke dürfen fälschlicherweise als Eigene ausgewiesen werden. Urheberrecht ist zu beachten, gegebenenfalls müssen eigene Grafiken erstellt werden. 

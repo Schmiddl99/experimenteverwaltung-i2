@@ -24,7 +24,15 @@ Admin möchte sich Wochenplan (Übersicht von allen Exp. inkl. Details) für bes
 === Wireframe Dozentenwoche ansehen
 
 image::WF_7_Dozentenwoche.PNG[Dozentenwoche Anzeige]
-//=== Alternative Abläufe
+=== Alternative Abläufe
+
+==== Dozent will eigenen Wochenplan einsehen 
+
+Wenn der Dozent seinen eigenen Wochenplan einsehen will, entfällt Schritt 4 des Standardablaufs. Es ist ihm nicht möglich Wochenpläne von anderen Dozenten einzusehen. 
+
+==== Keine Buchungen in ausgewählter Woche vorhanden
+
+Wenn in der ausgewählte Woche des Dozenten keine Buchungen existierten wird eine Meldung ausgegeben, die beinhaltet, dass keine Buchnungen vorhanden sind. 
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
 //--- keine alternativen Abläufe möglich ---
 
@@ -41,6 +49,11 @@ image::WF_7_Dozentenwoche.PNG[Dozentenwoche Anzeige]
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 * Wochenplanansicht wird angezeigt
 
-//=== Besondere Anforderungen
+=== Besondere Anforderungen
+
+==== Ansicht der Druckansicht
+Die Druckansicht muss dem folgenden Wireframe entsprechen. Es wird die integrierte Druckfunktion des Browsers verwendet. 
+
+image::WF_8_Druckansicht.PNG[Dozentenwoche Druckansicht] 
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
 //--- keine Nachbedingungen ---
