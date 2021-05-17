@@ -15,7 +15,7 @@ include::../_includes/default-attributes.inc.adoc[]
 
 | Beginn der Iteration | 21.04.2021
 | TS-M4 | 27.04.2021
-| Ruby on Rails Update| xxxxxx
+| Ruby on Rails Update| 27.04.2021
 | LCA Meilenstein wird übarbeitet und abgeschlossen    | 05.05.2021
 | Vorbereitungen für IOC Meilenstein wird abgeschlossen | 05.05.2021
 |===
@@ -106,7 +106,7 @@ a|* Vor dem TSM 4 wurden von dem Team durch Kontakt der Benutzer des Systems Ben
 * Das Update von Ruby on Rails wurde auf der VM durchgeführt. 
 * Integration des UC01 in das C4 Modell anhand eines Klassendiagramms.
 * Die Belegdokumente wurden den Änderungen des Kunden angepasst und liegen in GitHub vor. 
-* Das EMS-System kann von allen Devolpern aufgerufen werden. 
+* Das EMS-System kann von allen Developern aufgerufen werden. 
 
 == Assessment
 //In diesem Abschnitt werden die Ergebnisse und Maßnahmen der Bewertung erfasst und kommunziert. Die Bewertung wird üblicherweise am Ende jeder Iteration durchgeführt. Wenn Sie diese Bewertungen nicht machen, ist das Team möglicherweise nicht in der Lage, die eigene Arbeitsweise ("Way of Working") zu verbessern.
@@ -121,7 +121,7 @@ a|* Vor dem TSM 4 wurden von dem Team durch Kontakt der Benutzer des Systems Ben
 ** *Get a more detailed understanding of the requirements:* Grundsätzlich verstanden. 
 *** *Erfolgskriterien:* konnten zum Ende der Iteration verstanden und umgesetzt werden. Die Neupriorisierung wurde in der Vision festgehalten und die einzelnen Belegbestandteile wurden auch aufgabenspezifisch angepasst. 
 ** *Design, implement, validate, and establish the baseline for the architecture:* Zu weiten Teilen abgeschlosssen.
-*** *Erfolgskriterien:* Die Wireframes wurden den Änderungen nach angepasst und vom Kunden validiert. Auf die Validierung eines Skelettsystems wurde verzichtet, da unsere Ziele ja auf einem vorhanden, funktionierenden und verwendeten Projekt aufbauen. Da aber einige TCs des Vorgängerteams noch nicht funktionieren und wir hier erst selektieren müssen, welche repariert oder entfernt werden müssen, sehen wir diesen Punkt noch nicht als abgeschlossen an.
+*** *Erfolgskriterien:* Die Wireframes wurden den Änderungen nach angepasst und vom Kunden validiert. Auf die Validierung eines Skelettsystems wurde verzichtet, da unsere Ziele auf einem vorhandenen, funktionierenden und verwendeten Projekt aufbauen. Da aber einige TCs des Vorgängerteams noch nicht funktionieren und wir hier erst selektieren müssen, welche repariert oder entfernt werden müssen, sehen wir diesen Punkt noch nicht als abgeschlossen an.
 
 ** *Mitigate essential risks, and produce accurate schedule and cost estimates:* Konnte mit Erfolg umgesetzt werden.
 *** *Erfolgskriterien:* Um diese Punkte zu erfüllen, arbeitet das Team mit Verwendung einer Work Item List und einer Risk List. (siehe <<project_plan: {project-name}, Projektplan>>)
@@ -154,13 +154,13 @@ a|* Vor dem TSM 4 wurden von dem Team durch Kontakt der Benutzer des Systems Ben
 | Projektstatus: *grün*	a| 
 Wie gut waren unsere Schätzungen? Welche Hindernisse gab es? Wie können wir besser werden? 
 
-* Die Funktion des Redeführes wurde abgeschafft, da bei einer Gruppengröße von vier Personen diese nicht benötigt wird. 
-* Das fehlerhafte Verständnis der Agilen Software Entwicklung hat bei uns zwar viele Negative Gefühle ausgelöst und es wurde auch viel diskutiert, dennoch haben wir es durch unsren Professionalismus und durch das teilweise Einschreiten von Teammitgliedern geschafft die Iteration abzuschließen. 
+* Die Funktion des Redeführers wurde abgeschafft, da bei einer Gruppengröße von vier Personen diese nicht benötigt wird. 
+* Das fehlerhafte Verständnis der agilen Softwareentwicklung hat bei uns zwar viele negative Gefühle ausgelöst und es wurde auch viel diskutiert, dennoch haben wir es durch unsere Professionalität und durch das teilweise Einschreiten von Teammitgliedern geschafft die Iteration abzuschließen. 
 * Der beabsichtigte Zeitaufwand konnte erfüllt werden.
 * Das Gruppen- und Arbeitsklima ist im gelben Bereich. Siehe <<retrospective_umfragen: {project-name}, Iterations-Umfrage>> 
 |===
 
 === ALPHA States
 
-image::31.01.2021_End_I3.jpeg[ALPHA states 31.01.2021]
+image::05.05.21_END_I5.png[ALPHA states 05.05.2021]
 

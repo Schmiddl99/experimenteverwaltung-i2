@@ -2,7 +2,7 @@
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 
-Damit das QM einen besseren Überblick über die Gruppendynamik erhält, wurde in SE II nach jeder Iteration eine Umfrage in Microsoft Teams mit "Polly" durchgeführt. Diese Umfragen entstanden nach dem Vorbild der <<survey_for_essence: {project-name}, Umfrage>> aus SE I erstellt. Die Bewertungskriterien sind identisch, aber der Umfang wurde um die hälfte reduziert, damit der zeitliche Aufwand gerechtfertigt ist. 
+Damit das QM einen besseren Überblick über die Gruppendynamik erhält, wurde in SE II nach jeder Iteration eine Umfrage in Microsoft Teams mit "Polly" durchgeführt. Diese Umfragen entstanden nach dem Vorbild der <<survey_for_essence: {project-name}, Umfrage>> aus SE I. Die Bewertungskriterien sind identisch, aber der Umfang wurde um die Hälfte reduziert, damit der zeitliche Aufwand gerechtfertigt ist. 
 
 == Iteration 05 
 
