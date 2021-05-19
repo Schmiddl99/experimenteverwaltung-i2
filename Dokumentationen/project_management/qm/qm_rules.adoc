@@ -119,6 +119,7 @@ Besonders wichtig bei unserer Webanwendungs-Erweiterung ist die einfache Bedienu
 
 ==== Programmierkonvention 
 Da mehrere Developer teilweise gleichzeitig oder getrennt an unsrem Projekt arbeiten, haben wir uns dafür entschieden, eine Programmierkonvention einzuführen. Diese soll die Übersichtlichkeit und Lesbarkeit von Code vereinfachen. Um aber mehr Nutzen als Zusatzarbeit zu generieren, gehen wir hier nicht zu sehr in die Tiefe ein und haben uns stark an Ruby on Rails orientiert.
+
 ===== Ruby on Rails
 
 Alle Entwickler halten sich an die folgenden Programmierkonventionen. Diese wurden aus den Konventionen der Ruby-Community entnommen und gewählt, um eine gewisse Qualität des Codes zu gewährleisten. Dies hilft dabei den Code übersichtlich zu halten und trägt zur einfacheren Wartbarkeit und Weiterentwicklung der Anwendung bei.
