@@ -1,3 +1,6 @@
+# Model that represents a order for one course.
+#
+# @author Richard Böhme
 class Order < ApplicationRecord
   belongs_to :course
   belongs_to :user
@@ -15,6 +18,10 @@ class Order < ApplicationRecord
 
   private
 
+  # Before validation happens, this will set the `course_at` from
+  # `course_at_date` and `course_at_time` if set.
+  #
+  # @author Richard Böhme
   def set_course_at
     if course_at_date.present? && course_at_time.present?
       self.course_at = "#{course_at_date} #{course_at_time.strip}"
