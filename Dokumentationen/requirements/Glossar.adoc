@@ -50,6 +50,10 @@ a|
 * Wochenplan
 * Wochenplanansicht 
 
+|Entwicklungsumgebung 
+a|* Linux-System, auf dem implementiert und getestet werden kann
+|
+
 |Experiment
 a|* Ein Experiment ist eine Veranschaulichung innerhalb einer Physikvorlesung 
 * Es beinhaltet alle Informationen die zur Durchführung nötig sind 
@@ -60,7 +64,6 @@ a|* Bei jedem Experiment gibt es die Möglichkeit Zusatzinforamtionen hinzuzufü
 * Diese sind optional und dienen der besseren Übersicht
 * Es gibt die Felder: Bilder, Geräte, Gefahren, Videos, Links, Instruktionen, Anmerkung
 |
-
 
 |Frontend-Benutzer
 a|* Nutzer der öffentlich erreichbaren Weboberfläche
