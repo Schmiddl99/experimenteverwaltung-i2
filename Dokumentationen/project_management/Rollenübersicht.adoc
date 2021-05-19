@@ -29,15 +29,20 @@ Kontaktperson Themensteller
 |20.01.2020
 
 |Gregor Müller 
-|Tester
+|Tester (SE I)
+
+Developer (zus.) (SE I)
 
 Project Manager (SE II)
 
-Developer (zus.)
+QM-Beauftragter (zus.) (SE II)
+
+Risk-List (zus.) ( SE II)
+
 |Übernimmt PM in SE II
 
-Redeführer in Meetings (SEI)
-|18.01.2021
+Redeführer in Meetings (SE I)
+|05.04.2021
 
 |Julius Schmidt
 
@@ -53,34 +58,59 @@ Microsoft-Teams Verantwortlicher
 
 GitHub Verantwortlicher (zus.)
 
+Architect (zus.) (SE II)
+
+Deployment (zus.) (SE II)
+
 Tester (zus.)
 |Deployment (virtuelle Maschine)
-|14.01.2021
+
+GitHub Workshop
+
+Ruby on Rails Workshop
+|05.04.2021
 
 |Alena Bischoff
+
+Ausscheidend nach SE I
 |QM-Beauftragte
 
 Developer (zus.)
 
 Tester (zus.)
 |Erstellt Wireframes und UML-Diagramme
-|14.01.2021
+|05.04.2021
 
 |Taejun Kim
+
+Ausscheidend nach SE I
 |GitHub-Verantwortlicher
 
 Developer (zus.)
 
 Architect (zus.)
 |GitHub-Kontrolleur
-|14.01.2021
+|05.04.2021
 
 |William Elsner
 |Architect 
 
 Tester (zus.)
+
+Developer (zus.) (SE II)
 |Glossar Betreuung
-|14.01.2021
+|05.04.2021
+
+|Piet Gutsche
+
+Projekt-Einstieg SE II
+|Tester
+
+Analyst (zus.)
+
+Developer (zus.)
+|GitHub-Kontrolleur
+|05.05.2021
 
 |Vincent Thelang
 
