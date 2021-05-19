@@ -87,7 +87,7 @@ Inhalte:
 * (eventuell) benötigte Daten 
 * Ablauf (einzelne Schritte des Ablaufs, welche überprüft werden müssen) 
 
-==== Black Box Testing
+===== Black Box Testing
 Beim Black Box Testing liegt das Augenmerk auf den Ein- und Ausgaben. Es ist kein Wissen zum Code oder dem Backend nötig, wichtig ist, das nach einer Eingabe die richtige Ausgabe zustande kommt. 
 
 Vorteil: 
@@ -100,24 +100,35 @@ Nachteile:
 
 * Gründe für falsche Ausgaben können nicht sofort erkannt werden 
 
-==== Positivtests
+===== Positivtests
 Hierbei wird getestet, ob bei korrekter Eingabe richtiger Werte die Ergebnisse erzielt werden, welche erwartet werden. Hierbei wird das korrekte Verhalten der Software auf den Prüfstand gestellt. 
 
 Wichtig: 
 
 * Erstellung einer Testliste mit möglichen richtigen Werten 
 
-==== Negativtests
+===== Negativtests
 Beim Negativtest wird überprüft, ob bei einer fehlerhaften Eingabe in das Programm dieses richtig reagiert, z.B. mit einer Fehlermeldung. Er werden absichtlich ungültige Werte eingegeben oder Masken nicht vollständig ausgefüllt, um eventuelle Fehler zu erzeugen. Auch Bedienfehler sollten hier beachtet werden. Hierbei können auch eventuelle Verbesserungen der Benutzerfreundlichkeit festgestellt werden. 
 
 Wichtig: 
 
 * Erstellung einer möglichst vielseitigen Liste an möglichen Fehleingaben in verschiedenen Variationen 
 
-==== Testen durch User
+===== Testen durch User
 Besonders wichtig bei unserer Webanwendungs-Erweiterung ist die einfache Bedienung durch den Endbenutzer. Deshalb soll spezielles Augenmerk auf den Test durch einen Benutzer gelegt  werden. Auf Feedback soll gehört werden und eventuelle Anpassungen danach sollten mit Priorität umgesetzt werden. 
 
-==== Kommentare
+==== Programmierkonvention 
+Da mehrere Developer teilweise gleichzeitig oder getrennt an unsrem Projekt arbeiten, haben wir uns dafür entschieden, eine Programmierkonvention einzuführen. Diese soll die Übersichtlichkeit und Lesbarkeit von Code vereinfachen. Um aber mehr Nutzen als Zusatzarbeit zu generieren, gehen wir hier nicht zu sehr in die Tiefe ein und haben uns stark an Ruby on Rails orientiert.
+===== Ruby on Rails
+
+Alle Entwickler halten sich an die folgenden Programmierkonventionen. Diese wurden aus den Konventionen der Ruby-Community entnommen und gewählt, um eine gewisse Qualität des Codes zu gewährleisten. Dies hilft dabei den Code übersichtlich zu halten und trägt zur einfacheren Wartbarkeit und Weiterentwicklung der Anwendung bei.
+
+* Code (Variablen, Klassennamen usw.) und Kommentare werden in Englisch geschrieben
+* Jeder hält sich an den https://github.com/rubocop/ruby-style-guide[Ruby Styleguide], wenn es Berührungspunkte gibt
+* Funktionen und Klassen werden mithilfe des Tools https://yardoc.org[Yard] dokumentiert
+* Es wird versucht sich an die Standards und Konventionen von Rails zu halten
+
+===== Kommentare
 Bei der Programmierung oder Einbindung von Tools müssen Kommentare verfasst werden, die: 
 
 * Erklären was passiert 
@@ -130,4 +141,4 @@ Beim Arbeiten in einem großen Team muss besonders bei der Bearbeitung von gemei
 
 Deshalb wurde von unserem Team ein https://github.com/Schmiddl99/experimenteverwaltung-i2/wiki/Github-Regeln[Guide]  zur Verwendung von GitHub erstellt, welcher bei der Benutzung im Projektrahmen unbedingt eingehalten werden soll.  
 
-Des Weiteren gibt es ein Mini-Schulungsvideo zur Verwendung und Navigation in GitHub, welches im Microsoft Teams Kanal des Projektteams bereitgestellt wurde. 
+Des Weiteren gibt es ein Mini-Schulungsvideo des GitHub Workshops, zur Verwendung und Navigation in GitHub, welches im Microsoft Teams Kanal des Projektteams bereitgestellt wurde. 
