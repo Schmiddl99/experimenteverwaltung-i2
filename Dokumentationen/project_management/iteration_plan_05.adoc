@@ -18,6 +18,7 @@ include::../_includes/default-attributes.inc.adoc[]
 | Ruby on Rails Update| 27.04.2021
 | LCA Meilenstein wird übarbeitet und abgeschlossen    | 05.05.2021
 | Vorbereitungen für IOC Meilenstein wird abgeschlossen | 05.05.2021
+| Ende der Iteration | 05.05.2021
 |===
 
 
@@ -54,7 +55,7 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 
 |Evaluation der alten TCs des Vorgängerteams und Entscheidung über das zu verwendende Testframework |https://github.com/Schmiddl99/experimenteverwaltung-i2/issues/204[#204] |A |1 | DUE: 05.05.21 |{PG}
 
-|Risklist Update: Alte TCs könnten nicht funktionieren  |https://github.com/Schmiddl99/experimenteverwaltung-i2/issues/[#202] |C |3 |DUE:27.04.21 |{GM}
+|Risklist Update: Alte TCs könnten nicht funktionieren  |https://github.com/Schmiddl99/experimenteverwaltung-i2/issues/202[#202] |C |3 |DUE:27.04.21 |{GM}
  
 |Ruby on Rails Update |https://github.com/Schmiddl99/experimenteverwaltung-i2/issues/196[#196] |B |1 |DUE: 27.04.21 |{RB} {GM} {WE} {PG}
 
