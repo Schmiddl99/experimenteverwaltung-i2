@@ -1,0 +1,161 @@
+= Iteration Plan 05: {project-name}
+Gregor Müller <mueller.gregor@htw-dresden.de>
+{localdatetime}
+include::../_includes/default-attributes.inc.adoc[]
+// Platzhalter für weitere Dokumenten-Attribute
+
+
+== Meilensteine
+//Meilensteine zeigen den Ablauf der Iteration, wie z.B. den Beginn und das Ende, Zwischen-Meilensteine, Synchronisation mit anderen Teams, Demos usw.
+
+[%header, cols="3,1"]
+|===
+| Meilenstein
+| Datum
+
+| Beginn der Iteration | 05.05.2021
+| LCA Meilenstein wird übarbeitet und abgeschlossen    | 19.05.2021
+| IOC Meilenstein wird begonnen | 05.05.2021
+| Ende der Iteration | 02.06.2021
+|===
+
+
+== Wesentliche Ziele
+//Nennen Sie 1-5 wesentliche Ziele für die Iteration.
+
+* Entscheidung treffen, welche alte Test Cases entfernt werden und welche repariert werden
+* Update des Systementwurfs im Architecture-Notebook
+* Das C4 Modell von Use Case 01 um die Änderung des "Dummy Experiments" erweitern 
+* Das C4 Modell um Use Case 03 erweitern
+* Die Implementierung von Use Case 01
+* Fortlaufende Korrektur des Belegs
+
+
+
+== Aufgabenzuordnung
+//Dieser Abschnitt sollte einen Verweis auf die Work Items List enthalten, die die für diese Iteration vorgesehenen Aufgaben dokumentiert sowie die Zuordnung dieser Aufgaben zu Teammitgliedern. Alternativ können die Aufgaben für die Iteration und die Zuordnung zu Teammitgliedern in nachfolgender Tabelle dokumentiert werden - je nach dem, was einfacher für die Projektbeteiligten einfacher zu finden ist.
+
+Aufgaben werden in der https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#column-11862065[Work Item List] geordnet und priorisiert.
+
+Die in *dieser* Iteration geplanten Aufgaben wurden in der https://github.com/Schmiddl99/experimenteverwaltung-i2/projects/3#column-11861913[To-Do-List] dargestellt. Die To-Do-List verhält sich dynamisch. Deswegen sind nachfolgend die Work Items der Iteration III aufgeführt.
+
+//Übernommen aus dem Board Iteration Planning auf Github. Referenz von Issues: Link[#Issue_ID]; link durch klick auf drei Punkte der Aufgabe->Copy card link
+
+Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
+[%header]
+|===
+|Aufgabe bzw. Beschreibung |#Github-Issue |Schätzung der Größe (Skala A-C; A=höchster Aufwand) |Priorität (Skala 1-3; 1=höchste Prio) |Status |Zugewiesen (Mail) 
+
+|Architektur- Notizbuch fortführen |https://github.com/Schmiddl99/experimenteverwaltung-i2/issues/26[#26] | X | X | DUE: OPEN |{WE}
+
+|QM Überwachung |https://github.com/Schmiddl99/experimenteverwaltung-i2/issues/17[#17]|X |X |DUE: OPEN | {GM}
+
+|Risklist fortführen |https://github.com/Schmiddl99/experimenteverwaltung-i2/issues/21[#21] |X |X |DUE:OPEN |{GM}
+
+|Reparatur und Entscheidung über alten TCs |https://github.com/Schmiddl99/experimenteverwaltung-i2/issues/223[#223] |A |1 | DUE: 19.05.21 |{PG}
+
+|Implementierung von UC01 |https://github.com/Schmiddl99/experimenteverwaltung-i2/issues/222[#222] |A |1 |DUE:19.05.21 |{RB} {WE}
+ 
+|Erweiterung des C4 Modells um UC03 |https://github.com/Schmiddl99/experimenteverwaltung-i2/issues/226[#226] |B |2 |DUE: 19.05.21 |{RB}  {WE} 
+
+|C4 Modell für UC01 mit Dummy Experiment anpassen |https://github.com/Schmiddl99/experimenteverwaltung-i2/issues/224[#224] |B |1 |DUE:19.05.21 |{WE}
+
+|Beleg Korrektur Teil 2 |https://github.com/Schmiddl99/experimenteverwaltung-i2/issues/221[#221] |B |3 |DUE: 19.05.21 |{GM}
+
+|Programmierkonvention erstellen|https://github.com/Schmiddl99/experimenteverwaltung-i2/issues/216[#216]|B 
+|2 |19.05.21 |{RB}
+
+|Programmierkonvention in QM einarbeiten |https://github.com/Schmiddl99/experimenteverwaltung-i2/issues/217[#217] |C |2 |DUE: 19.05.21 |{GM}
+
+|Architecture Notebook, bezüglich der Evaluation der alten TCs, aktualisieren|https://github.com/Schmiddl99/experimenteverwaltung-i2/issues/203[#203] |A |3 |DUE: 19.05.21 |{PG} {WE}
+
+|Iterationsplan 05 erstellen|https://github.com/Schmiddl99/experimenteverwaltung-i2/issues/220[#220] |B |2 |DUE:12.05.21 |{GM}
+
+|Überarbeitung der Vision|https://github.com/Schmiddl99/experimenteverwaltung-i2/issues/206[#206] |C |2 |DUE: 05.05.21 |{GM}
+
+|Ergänzungen des Glossars |https://github.com/Schmiddl99/experimenteverwaltung-i2/issues/207[#207] |C |2 |DUE: 05.05.21 |{GM} 
+
+|C4 Modell für UC01 erstellen  |https://github.com/Schmiddl99/experimenteverwaltung-i2/issues/200[#200] |A |3 |DUE: OPEN |{RB} {WE}
+
+|===
+
+<<<
+== Probleme
+//Optional: Führen Sie alle Probleme auf, die in dieser Iteration adressiert werden sollen. Aktualisieren Sie den Status, wenn neue Probleme bei den täglichen / regelmäßigen Abstimmungen berichtet werden.
+
+[%header, cols="2,1,3"]
+|===
+| Problem | Status | Notizen
+| Schlechte Dokumentaion der Vorgänger| in Bearbeitung 
+| Da unsre Vorgänger leider keine genau Aufführung Ihrer Test Cases erstellt haben müssen wir uns nun la
+
+|===
+
+
+== Bewertungskriterien
+//Eine kurze Beschreibung, wie die Erfüllung der o.g. Ziele bewertet werden soll
+
+* Die Teilnahme am Ruby on Rails Workshop war vollzählig.
+* Die Änderungen des Kunden wurde mit Wireframes validiert. 
+* Die alten TCs wurden versucht auszuführen. Es wurde die Entscheidung getroffen das Framework "Rspec" zu verwenden. 
+* Das Update von Ruby on Rails wurde auf der VM durchgeführt. 
+* Integration des UC01 in das C4 Modell anhand eines Klassendiagramms.
+* Die Belegdokumente wurden den Änderungen des Kunden angepasst und liegen in GitHub vor. 
+* Das EMS-System kann von allen Developern aufgerufen werden. 
+
+== Assessment
+//In diesem Abschnitt werden die Ergebnisse und Maßnahmen der Bewertung erfasst und kommunziert. Die Bewertung wird üblicherweise am Ende jeder Iteration durchgeführt. Wenn Sie diese Bewertungen nicht machen, ist das Team möglicherweise nicht in der Lage, die eigene Arbeitsweise ("Way of Working") zu verbessern.
+
+[%header, cols="1,3"]
+|===
+| Review | Gesamte Iteration 3
+| Assessment Datum | 05.05.2021
+| Teilnehmer | gesamtes Team
+| Projektstatus: *gelb*	a| 
+* Ziel: LCA-Meilenstein - Ende der Elaboration Phase, wurde NICHT erreicht, Vorbereitungen für IOC Meilenstein wurde erreicht.
+** *Get a more detailed understanding of the requirements:* Grundsätzlich verstanden. 
+*** *Erfolgskriterien:* konnten zum Ende der Iteration verstanden und umgesetzt werden. Die Neupriorisierung wurde in der Vision festgehalten und die einzelnen Belegbestandteile wurden auch aufgabenspezifisch angepasst. 
+** *Design, implement, validate, and establish the baseline for the architecture:* Zu weiten Teilen abgeschlosssen.
+*** *Erfolgskriterien:* Die Wireframes wurden den Änderungen nach angepasst und vom Kunden validiert. Auf die Validierung eines Skelettsystems wurde verzichtet, da unsere Ziele auf einem vorhandenen, funktionierenden und verwendeten Projekt aufbauen. Da aber einige TCs des Vorgängerteams noch nicht funktionieren und wir hier erst selektieren müssen, welche repariert oder entfernt werden müssen, sehen wir diesen Punkt noch nicht als abgeschlossen an.
+
+** *Mitigate essential risks, and produce accurate schedule and cost estimates:* Konnte mit Erfolg umgesetzt werden.
+*** *Erfolgskriterien:* Um diese Punkte zu erfüllen, arbeitet das Team mit Verwendung einer Work Item List und einer Risk List. (siehe <<project_plan: {project-name}, Projektplan>>)
+
+
+** *Understand:* 
+*** Agile Software Entwicklung wurde verstanden.  
+*** Unsere Arbeitszeit ist begrenzt: Heißt wir Arbeiten nicht, bis das Projekt abgeschlossen ist, sondern bis die verfügbare Zeit aufgebraucht ist.
+*** Unser Kunde darf jederzeit Änderungen wünschen, wir müssen aber selektieren welche "In-Scope" oder "Out-Scope" sind.
+| a|
+* * Überprüfung selbst gesteckter Iterationsziele: Y/N (6/6)*
+** Die Teilnahme am Ruby on Rails Workshop war vollzählig. *Y*
+** Die Änderungen des Kunden wurde mit Wireframes validiert. *Y*
+** Die alten TCs wurden versucht auszuführen. Es wurde die Entscheidung getroffen das Framework "Rspec" zu verwenden. *Y*
+** Das Update von Ruby on Rails wurde auf der VM durchgeführt. *Y*
+** Integration des UC01 in das C4 Modell anhand eines Klassendiagramms. *Y*
+** Die Beleg Dokumente wurden den Änderungen des Kunden angepasst und liegen in GitHub vor. *Y*
+** Das EMS System kann von allen Devolpern aufgerufen werden. *Y*
+
+
+
+
+|===
+
+[%header, cols="1,3"]
+|===
+| Retrospective | Gesamte Iteration 5
+| Assessment Datum | 05.05.2021
+| Teilnehmer | gesamtes Team
+| Projektstatus: *grün*	a| 
+Wie gut waren unsere Schätzungen? Welche Hindernisse gab es? Wie können wir besser werden? 
+
+* Die Funktion des Redeführers wurde abgeschafft, da bei einer Gruppengröße von vier Personen diese nicht benötigt wird. 
+* Das fehlerhafte Verständnis der agilen Softwareentwicklung hat bei uns zwar viele negative Gefühle ausgelöst und es wurde auch viel diskutiert, dennoch haben wir es durch unsere Professionalität und durch das teilweise Einschreiten von Teammitgliedern geschafft die Iteration abzuschließen. 
+* Der beabsichtigte Zeitaufwand konnte erfüllt werden.
+* Das Gruppen- und Arbeitsklima ist im gelben Bereich. Siehe <<retrospective_umfragen: {project-name}, Iterations-Umfrage>> 
+|===
+
+=== ALPHA States
+
+image::05.05.21_END_I5.png[ALPHA states 05.05.2021]
+
