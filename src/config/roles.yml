@@ -21,6 +21,7 @@ roles:
       - index
       - show
       - pdf
+    checkouts: all
   assistant: &assistant
     <<: *lecturer
     categories: all
@@ -31,6 +32,7 @@ roles:
     dangers: all
     links: all
     media: all
+    checkouts: []
   admin: &admin
     <<: *assistant
     users: all

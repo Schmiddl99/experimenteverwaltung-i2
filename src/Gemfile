@@ -14,10 +14,11 @@ gem 'jquery-rails'
 gem 'jquery-ui-rails'
 
 gem 'slim-rails'
-gem 'bootstrap'
+gem 'bootstrap', '< 5.0.0'
 gem 'font-awesome-sass'
 gem 'bootswatch'
 gem 'validate_url'
+gem 'date_validator'
 gem 'devise'
 gem 'simple_form'
 # TODO: replace with ActiveStorage
@@ -26,6 +27,8 @@ gem "cocoon"
 gem 'will_paginate'
 gem 'will_paginate-bootstrap4'
 gem 'listen'
+
+gem 'activerecord-session_store'
 
 gem 'wicked_pdf'
 gem 'wkhtmltopdf-binary'
@@ -43,6 +46,8 @@ group :development do
   gem "capistrano-rails", "~> 1.4", require: false
   gem 'capistrano-rvm', github: 'capistrano/rvm', require: false
   gem 'capistrano-scm-copy', require: false
+  gem 'yard'
+  gem 'webrick'
 end
 
 group :test do

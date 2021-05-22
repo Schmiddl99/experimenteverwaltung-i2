@@ -1,0 +1,41 @@
+.page-header
+  h1 Warenkorb
+  h3
+    | für:
+    =< @order.course.name
+    | ,
+    =< I18n.l(@order.course_at, format: :time_at)
+  hr
+  strong Hinweis: Reihenfolge der Experimente kann durch Verschieben dieser verändert werden.
+
+
+= simple_form_for(@order, url: checkout_path, method: :patch) do |f|
+  .sortable.mt-4
+    - @order.ordered_experiments.sort_by(&:sort).each_with_index do |ordered_experiment, index|
+      = f.simple_fields_for :ordered_experiments, ordered_experiment do |oef|
+        .card id=ordered_experiment.sort
+          .card-body
+            .d-flex.p-1.align-items-center
+              = oef.hidden_field :sort, class: "sort-input"
+              = icon "fas", "bars", class: "mr-3"
+              .flex-grow-1
+                h5.m-0
+                  strong.sort-title>
+                    = index + 1
+                    | .
+                  | Experiment:
+                  - if ordered_experiment.experiment_type == "Experiment"
+                    =<> ordered_experiment.experiment.label
+                    | -
+                  =< ordered_experiment.experiment.name
+              = remove_experiment_from_order_link(ordered_experiment)
+
+  .mt-4
+    = f.input :comment, as: :text, label: "Kommentar"
+
+  .mt-4.d-flex.justify-content-between
+    = link_to "Buchung abbrechen", checkout_path, method: :delete, class: "btn btn-light", data: { confirm: "Wollen Sie die Buchung wirklich abbrechen?" }
+    = f.submit "Änderungen speichern", class: "btn btn-secondary"
+
+  = footer do
+    - f.submit "Buchung abschließen", name: :persist, class: "btn btn-primary"

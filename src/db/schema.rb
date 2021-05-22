@@ -2,15 +2,15 @@
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
 #
-# Note that this schema.rb definition is the authoritative source for your
-# database schema. If you need to create the application database on another
-# system, you should be using db:schema:load, not running all the migrations
-# from scratch. The latter is a flawed and unsustainable approach (the more migrations
-# you'll amass, the slower it'll run and the greater likelihood for issues).
+# This file is the source Rails uses to define your schema when running `bin/rails
+# db:schema:load`. When creating a new database, `bin/rails db:schema:load` tends to
+# be faster and is potentially less error prone than running all of your
+# migrations from scratch. Old migrations may fail to apply correctly if those
+# migrations use external dependencies or application code.
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_31_141658) do
+ActiveRecord::Schema.define(version: 2021_05_22_133047) do
 
   create_table "categories", force: :cascade do |t|
     t.string "name"
@@ -20,13 +20,20 @@ ActiveRecord::Schema.define(version: 2020_03_31_141658) do
     t.integer "priority", default: 0
   end
 
+  create_table "courses", force: :cascade do |t|
+    t.string "name", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["name"], name: "index_courses_on_name", unique: true
+  end
+
   create_table "cover_pictures", force: :cascade do |t|
     t.boolean "current", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "file_file_name"
     t.string "file_content_type"
-    t.integer "file_file_size"
+    t.bigint "file_file_size"
     t.datetime "file_updated_at"
   end
 
@@ -37,7 +44,7 @@ ActiveRecord::Schema.define(version: 2020_03_31_141658) do
     t.datetime "updated_at", null: false
     t.string "file_file_name"
     t.string "file_content_type"
-    t.integer "file_file_size"
+    t.bigint "file_file_size"
     t.datetime "file_updated_at"
     t.boolean "adhoc", default: false
   end
@@ -49,9 +56,15 @@ ActiveRecord::Schema.define(version: 2020_03_31_141658) do
     t.datetime "updated_at", null: false
     t.string "file_file_name"
     t.string "file_content_type"
-    t.integer "file_file_size"
+    t.bigint "file_file_size"
     t.datetime "file_updated_at"
     t.index ["experiment_id"], name: "index_documents_on_experiment_id"
+  end
+
+  create_table "dummy_experiments", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "equipment", force: :cascade do |t|
@@ -107,15 +120,49 @@ ActiveRecord::Schema.define(version: 2020_03_31_141658) do
   create_table "media", force: :cascade do |t|
     t.string "name"
     t.string "media_type"
-    t.integer "sort"
+    t.integer "sort", null: false
     t.integer "experiment_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "file_file_name"
     t.string "file_content_type"
-    t.integer "file_file_size"
+    t.bigint "file_file_size"
     t.datetime "file_updated_at"
     t.index ["experiment_id"], name: "index_media_on_experiment_id"
+  end
+
+  create_table "ordered_experiments", force: :cascade do |t|
+    t.integer "order_id", null: false
+    t.string "experiment_type", null: false
+    t.integer "experiment_id", null: false
+    t.integer "sort", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["experiment_type", "experiment_id"], name: "index_ordered_experiments_on_experiment"
+    t.index ["order_id", "experiment_id", "experiment_type"], name: "unique_ordered_experiment", unique: true
+    t.index ["order_id", "sort"], name: "unique_experiment_sort", unique: true
+    t.index ["order_id"], name: "index_ordered_experiments_on_order_id"
+  end
+
+  create_table "orders", force: :cascade do |t|
+    t.integer "course_id", null: false
+    t.string "alternative_course_name"
+    t.datetime "course_at"
+    t.string "comment"
+    t.integer "user_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["course_id"], name: "index_orders_on_course_id"
+    t.index ["user_id"], name: "index_orders_on_user_id"
+  end
+
+  create_table "sessions", force: :cascade do |t|
+    t.string "session_id", null: false
+    t.text "data"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["session_id"], name: "index_sessions_on_session_id", unique: true
+    t.index ["updated_at"], name: "index_sessions_on_updated_at"
   end
 
   create_table "sub_categories", force: :cascade do |t|
@@ -150,11 +197,24 @@ ActiveRecord::Schema.define(version: 2020_03_31_141658) do
     t.integer "experiment_id"
     t.string "file_file_name"
     t.string "file_content_type"
-    t.integer "file_file_size"
+    t.bigint "file_file_size"
     t.datetime "file_updated_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["experiment_id"], name: "index_videos_on_experiment_id"
   end
 
+  add_foreign_key "documents", "experiments"
+  add_foreign_key "experiment_danger_assignments", "dangers"
+  add_foreign_key "experiment_danger_assignments", "experiments"
+  add_foreign_key "experiment_equipment_assignments", "equipment"
+  add_foreign_key "experiment_equipment_assignments", "experiments"
+  add_foreign_key "experiments", "sub_categories"
+  add_foreign_key "experiments", "users"
+  add_foreign_key "links", "experiments"
+  add_foreign_key "media", "experiments"
+  add_foreign_key "ordered_experiments", "orders"
+  add_foreign_key "orders", "users"
+  add_foreign_key "sub_categories", "categories"
+  add_foreign_key "videos", "experiments"
 end

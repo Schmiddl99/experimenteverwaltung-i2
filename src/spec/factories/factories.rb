@@ -64,3 +64,7 @@ Fabricator :experiment_danger_assignment do
   experiment { Fabricate :experiment }
   danger { Fabricate :danger }
 end
+
+Fabricator :course do
+  name { "Teststudiengang" }
+end
