@@ -118,6 +118,30 @@
 
     <ul class="summary">
       
+        <li class="private ">
+  <span class="summary_signature">
+    
+      <a href="#cover_picture_params-instance_method" title="#cover_picture_params (instance method)">#<strong>cover_picture_params</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  <span class="note title private">private</span>
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Only allow a trusted parameter “white list” through.</p>
+</div></span>
+  
+</li>
+
+      
         <li class="public ">
   <span class="summary_signature">
     
@@ -238,6 +262,28 @@
 </li>
 
       
+        <li class="private ">
+  <span class="summary_signature">
+    
+      <a href="#set_cover_picture-instance_method" title="#set_cover_picture (instance method)">#<strong>set_cover_picture</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  <span class="note title private">private</span>
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
         <li class="public ">
   <span class="summary_signature">
     
@@ -275,7 +321,7 @@
   
   
   <h3 class="inherited">Methods inherited from <span class='object_link'><a href="ApplicationController.html" title="ApplicationController (class)">ApplicationController</a></span></h3>
-  <p class="inherited"><span class='object_link'><a href="ApplicationController.html#after_sign_in_path_for-instance_method" title="ApplicationController#after_sign_in_path_for (method)">#after_sign_in_path_for</a></span></p>
+  <p class="inherited"><span class='object_link'><a href="ApplicationController.html#after_sign_in_path_for-instance_method" title="ApplicationController#after_sign_in_path_for (method)">#after_sign_in_path_for</a></span>, <span class='object_link'><a href="ApplicationController.html#authorize_user!-instance_method" title="ApplicationController#authorize_user! (method)">#authorize_user!</a></span></p>
 
   
 
@@ -284,7 +330,48 @@
 
     
       <div class="method_details first">
-  <h3 class="signature first" id="create-instance_method">
+  <h3 class="signature first" id="cover_picture_params-instance_method">
+  
+    #<strong>cover_picture_params</strong>  &#x21d2; <tt>Object</tt>  <span class="extras">(private)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Only allow a trusted parameter “white list” through.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+56
+57
+58</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/controllers/cover_pictures_controller.rb', line 56</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_cover_picture_params'>cover_picture_params</span>
+  <span class='id identifier rubyid_params'>params</span><span class='period'>.</span><span class='id identifier rubyid_require'>require</span><span class='lparen'>(</span><span class='symbol'>:cover_picture</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_permit'>permit</span><span class='lparen'>(</span><span class='symbol'>:current</span><span class='comma'>,</span> <span class='symbol'>:file</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="create-instance_method">
   
     #<strong>create</strong>  &#x21d2; <tt>Object</tt> 
   
@@ -509,6 +596,36 @@
 </div>
     
       <div class="method_details ">
+  <h3 class="signature " id="set_cover_picture-instance_method">
+  
+    #<strong>set_cover_picture</strong>  &#x21d2; <tt>Object</tt>  <span class="extras">(private)</span>
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+51
+52
+53</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/controllers/cover_pictures_controller.rb', line 51</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_set_cover_picture'>set_cover_picture</span>
+  <span class='ivar'>@cover_picture</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="CoverPicture.html" title="CoverPicture (class)">CoverPicture</a></span></span><span class='period'>.</span><span class='id identifier rubyid_find'>find</span><span class='lparen'>(</span><span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:id</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
   <h3 class="signature " id="update-instance_method">
   
     #<strong>update</strong>  &#x21d2; <tt>Object</tt> 
@@ -564,7 +681,7 @@
 </div>
 
       <div id="footer">
-  Generated on Wed May 19 20:23:43 2021 by
+  Generated on Sun May 30 16:05:42 2021 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.26 (ruby-3.0.1).
 </div>

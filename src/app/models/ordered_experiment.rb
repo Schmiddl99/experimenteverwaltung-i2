@@ -5,4 +5,6 @@
 class OrderedExperiment < ApplicationRecord
   belongs_to :order
   belongs_to :experiment, polymorphic: true
+
+  scope :sorted, ->() { order(:sort) }
 end

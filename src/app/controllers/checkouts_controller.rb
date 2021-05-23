@@ -163,7 +163,7 @@ class CheckoutsController < ApplicationController
   end
 
   # Gets the order from the session. If there is no order this method
-  # will redirect the user to the root path. (use with {#before_action})
+  # will redirect the user to the root path. (use with `before_action`)
   #
   # @author Richard Böhme
   def set_order

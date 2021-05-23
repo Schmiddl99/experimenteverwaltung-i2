@@ -14,13 +14,13 @@ describe Order do
   end
 
   it "validate course_at_date" do
-    order = Order.new(course_at_date: Date.today)
+    order = Order.new(course_at_date: Date.today, course_at_time: '00:00')
     order.valid?
-    expect(order.errors.messages.keys).to include(:course_at_date)
+    expect(order.errors.messages.keys).to include(:course_at)
 
     order.course_at_date = Date.tomorrow
     order.valid?
-    expect(order.errors.messages.keys).to_not include(:course_at_date)
+    expect(order.errors.messages.keys).to_not include(:course_at)
   end
 
   it "validate course_at_time format" do

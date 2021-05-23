@@ -19,7 +19,7 @@ html
             - if alert
               p.alert.alert-danger = alert.html_safe
             = yield
-        .col-md-2
+        .col-md-2.d-print-none
           - if content_for? :sidebar
             = yield :sidebar
     - unless @disable_footer

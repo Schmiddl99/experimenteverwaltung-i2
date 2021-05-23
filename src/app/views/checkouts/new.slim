@@ -14,5 +14,7 @@
       input_html: { class: "datepicker" } \
   )
   = f.input :course_at_time, required: true, label: "Uhrzeit"
+  = f.error :course_at, class: "invalid-feedback d-block"
+
   = footer do
     - f.submit "weiter zu Experimenten", class: "btn btn-primary mr-2"

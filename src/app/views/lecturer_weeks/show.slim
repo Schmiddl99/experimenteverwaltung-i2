@@ -1,0 +1,37 @@
+h5.text-center
+  u = @lecturer_week.heading
+p.mt-3.mb-0.text-center = @lecturer_week.lecturer.name
+
+table.table.table-bordered.table-sm
+  thead
+    tr
+      th.text-center scope="col" style="width: 5%"
+        | Woche
+        =< @lecturer_week.week
+      - @lecturer_week.orders.each do |order|
+        th.text-center scope="col"
+          = order.course.name
+          - if order.alternative_course_name.present?
+            br
+            = "(#{order.alternative_course_name})"
+          br
+          = @lecturer_week.course_at_header(order)
+  tbody
+    tr
+      th
+      - @lecturer_week.orders.each do |order|
+        td
+          ol style="padding-left: 1.2em"
+            - order.ordered_experiments.each do |ordered_experiment|
+              li
+                - if ordered_experiment.experiment_type == "Experiment"
+                  strong
+                    u
+                      = ordered_experiment.experiment.label
+                =< ordered_experiment.experiment.name
+    - if @lecturer_week.comment.present?
+      tr
+        td.text-center colspan=(@lecturer_week.orders.size + 1)
+          | Kommentar:
+          =< @lecturer_week.comment
+

@@ -22,6 +22,7 @@ roles:
       - show
       - pdf
     checkouts: all
+    lecturer_weeks: all
   assistant: &assistant
     <<: *lecturer
     categories: all
