@@ -13,24 +13,23 @@ include::../_includes/default-attributes.inc.adoc[]
 | Meilenstein
 | Datum
 
-| Beginn der Iteration | 21.04.2021
-| TS-M4 | 27.04.2021
-| Ruby on Rails Update| 27.04.2021
-| LCA Meilenstein wird übarbeitet und abgeschlossen    | 05.05.2021
-| Vorbereitungen für IOC Meilenstein wird abgeschlossen | 05.05.2021
-| Ende der Iteration | 05.05.2021
+| Beginn der Iteration | 05.05.2021
+| LCA Meilenstein wird übarbeitet und abgeschlossen    | 19.05.2021
+| IOC Meilenstein wird begonnen | 05.05.2021
+| Ende der Iteration | 02.06.2021
 |===
 
 
 == Wesentliche Ziele
 //Nennen Sie 1-5 wesentliche Ziele für die Iteration.
 
-* Validierung der Benutzerwünsche mit dem Kunden
-* Überarbeitung der UCs, TCs, Wireframes, Vision und des Glossars 
-* Besuch des Ruby on Rails Workshops durch alle Gruppenmitglieder
-* Installation der Entwicklungsumgebung aller Developer 
-* Evaluation von alten TCs, Entscheidung fällen über das zu verwendende Testframework
-* C4 Modell für UC01
+* Entscheidung treffen, welche alte Test Cases entfernt werden und welche repariert werden
+* Update des Systementwurfs im Architecture-Notebook
+* Das C4 Modell von Use Case 01 um die Änderung des "Dummy Experiments" erweitern 
+* Das C4 Modell um Use Case 03 erweitern
+* Die Implementierung von Use Case 01
+* Fortlaufende Korrektur des Belegs
+
 
 
 == Aufgabenzuordnung
@@ -53,24 +52,24 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 
 |Risklist fortführen |https://github.com/Schmiddl99/experimenteverwaltung-i2/issues/21[#21] |X |X |DUE:OPEN |{GM}
 
-|Evaluation der alten TCs des Vorgängerteams und Entscheidung über das zu verwendende Testframework |https://github.com/Schmiddl99/experimenteverwaltung-i2/issues/204[#204] |A |1 | DUE: 05.05.21 |{PG}
+|Reparatur und Entscheidung über alten TCs |https://github.com/Schmiddl99/experimenteverwaltung-i2/issues/223[#223] |A |1 | DUE: 19.05.21 |{PG}
 
-|Risklist Update: Alte TCs könnten nicht funktionieren  |https://github.com/Schmiddl99/experimenteverwaltung-i2/issues/202[#202] |C |3 |DUE:27.04.21 |{GM}
+|Implementierung von UC01 |https://github.com/Schmiddl99/experimenteverwaltung-i2/issues/222[#222] |A |1 |DUE:19.05.21 |{RB} {WE}
  
-|Ruby on Rails Update |https://github.com/Schmiddl99/experimenteverwaltung-i2/issues/196[#196] |B |1 |DUE: 27.04.21 |{RB} {GM} {WE} {PG}
+|Erweiterung des C4 Modells um UC03 |https://github.com/Schmiddl99/experimenteverwaltung-i2/issues/226[#226] |B |2 |DUE: 19.05.21 |{RB}  {WE} 
 
-|Erste Belegkorrektur |https://github.com/Schmiddl99/experimenteverwaltung-i2/issues/197[#197] |C |2 |DUE:27.04.21 |{WE}
+|C4 Modell für UC01 mit Dummy Experiment anpassen |https://github.com/Schmiddl99/experimenteverwaltung-i2/issues/224[#224] |B |1 |DUE:19.05.21 |{WE}
 
-|Ruby on Rails Workshop |https://github.com/Schmiddl99/experimenteverwaltung-i2/issues/13[#13] |A |1 |DUE: 27.04.21 |{RB}
+|Beleg Korrektur Teil 2 |https://github.com/Schmiddl99/experimenteverwaltung-i2/issues/221[#221] |B |3 |DUE: 19.05.21 |{GM}
 
-|TSM 4 durchführen|https://github.com/Schmiddl99/experimenteverwaltung-i2/issues/210[#210]|B 
-|1 |27.04.21 |{GM}
+|Programmierkonvention erstellen|https://github.com/Schmiddl99/experimenteverwaltung-i2/issues/216[#216]|B 
+|2 |19.05.21 |{RB}
 
-|Entwicklungsumgebung wurde von allen Developern installiert |https://github.com/Schmiddl99/experimenteverwaltung-i2/issues/205[#205] |C |1 |DUE: 05.05.21 |{RB} {WE} {PG}
+|Programmierkonvention in QM einarbeiten |https://github.com/Schmiddl99/experimenteverwaltung-i2/issues/217[#217] |C |2 |DUE: 19.05.21 |{GM}
 
-|Überarbeitung der UCs|https://github.com/Schmiddl99/experimenteverwaltung-i2/issues/209[#209] |C |2 |DUE: 05.05.21 |{GM}
+|Architecture Notebook, bezüglich der Evaluation der alten TCs, aktualisieren|https://github.com/Schmiddl99/experimenteverwaltung-i2/issues/203[#203] |A |3 |DUE: 19.05.21 |{PG} {WE}
 
-|Überarbeitung der Wireframes |https://github.com/Schmiddl99/experimenteverwaltung-i2/issues/208[#208] |C |2 |DUE:05.05.21 |{GM}
+|Iterationsplan 05 erstellen|https://github.com/Schmiddl99/experimenteverwaltung-i2/issues/220[#220] |B |2 |DUE:12.05.21 |{GM}
 
 |Überarbeitung der Vision|https://github.com/Schmiddl99/experimenteverwaltung-i2/issues/206[#206] |C |2 |DUE: 05.05.21 |{GM}
 
