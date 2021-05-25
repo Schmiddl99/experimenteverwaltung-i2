@@ -48,7 +48,7 @@ ActiveRecord::Schema.define(version: 2021_05_22_133047) do
     t.datetime "file_updated_at"
     t.boolean "adhoc", default: false
   end
-
+  
   create_table "documents", force: :cascade do |t|
     t.string "name"
     t.integer "experiment_id"

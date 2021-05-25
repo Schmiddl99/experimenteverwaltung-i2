@@ -1,4 +1,5 @@
 function experimentsManager(name, fields, path){
+  if($("#new_experiment").length === 0) return;
   window[name] = {}
   $("#"+name+"-modal").on('hidden.bs.modal', function () {
     window[name] = {}

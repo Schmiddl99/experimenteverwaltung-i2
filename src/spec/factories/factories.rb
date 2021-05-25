@@ -46,6 +46,7 @@ Fabricator :medium do
   name 'TestMedium'
   file { File.open('spec/fixtures/file1.jpg') }
   experiment { Fabricate :experiment }
+  sort 0
 end
 
 Fabricator :document do

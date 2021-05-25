@@ -8,7 +8,7 @@ describe "Danger" do
   it "anlegen", js: true do
     sign_in user
     visit "/dangers"
-    find('.btn.btn-secondary.btn-hover--jade.pull-right').click
+    find('.btn.btn-secondary.btn-hover--jade.float-right').click
     expect(page.has_text?("Gefahrensymbol anlegen")).to be_truthy
     fill_in "danger_name", with: "TestName"
     fill_in "danger_label", with: "TestLabel"

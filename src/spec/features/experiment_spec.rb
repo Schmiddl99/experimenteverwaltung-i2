@@ -46,7 +46,9 @@ describe "Experiment", js_errors: false do
     end
     visit "/experiments/trash"
     expect(page.has_text?('TestExperiment')).to be_truthy
-    find('a[class="btn btn-danger"]').click
+    accept_alert('Sind Sie sicher?') do
+      find('a[class="btn btn-danger"]').click
+    end
     expect(page.has_text?('TestExperiment')).to be_falsey
   end
 
@@ -58,7 +60,10 @@ describe "Experiment", js_errors: false do
       find('.dropdown-bin--red').click
     end
     visit "/experiments/trash"
-    page.all('.btn.btn-secondary.btn-hover--jade')[0].click
+    sleep 1
+    accept_alert('Wirklich wiederherstellen ?') do
+      page.all('.btn.btn-secondary.btn-hover--jade')[0].click
+    end
     visit "/experiments/trash"
     expect(page.has_text?('TestExperiment')).to be_falsey
     visit "/experiments/1"
@@ -88,9 +93,9 @@ describe "Experiment", js_errors: false do
     experiment
     visit "/experiments/1"
     expect(page.has_text?("TestExperiment")).to be_truthy
-    find('i.fa.fs.fa-arrow-right').click
-    expect(page.has_text?("Test2")).to be_truthy
     find('i.fa.fs.fa-arrow-left').click
+    expect(page.has_text?("Test2")).to be_truthy
+    find('i.fa.fs.fa-arrow-right').click
     expect(page.has_text?("TestExperiment")).to be_truthy
   end
 
