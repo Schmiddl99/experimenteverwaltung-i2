@@ -24,8 +24,32 @@ br
   br
   h1
     = "#{@sub_category.label} - #{@sub_category.name}"
+  - if @order.present?
+    h3
+      | Einstellung:
+      =< @order.course.name
+      | ,
+      =< I18n.l(@order.course_at, format: :time_at)
+    - content_for(:sidebar) do
+      .position-fixed style="top: 23%"
+        = link_to("zum Buchungsabschluss", checkout_path, class: "btn btn-secondary d-block #{@order.ordered_experiments.blank? ? "disabled" : ""}".rstrip)
+        = link_to("Buchung abbrechen", checkout_path, method: :delete, class: "btn btn-light mt-2", data: { confirm: "Wollen Sie die Buchung wirklich abbrechen?" })
+        button data-toggle="modal" data-target="#dummy-experiment-modal" class="btn btn-secondary d-block mt-2" manuell Experiment hinzufügen
+      #dummy-experiment-modal.modal.fade tabindex="-1"
+        .modal-dialog
+          .modal-content
+            = simple_form_for(DummyExperiment.new, url: add_experiment_checkout_path, method: :patch) do |f|
+              .modal-header
+                h5.modal-title Manuell Experiment hinzufügen
+                button.close data-dismiss="modal" type="button"
+                  span  &times;
+              .modal-body
+                = f.input :name, label: "Name"
+              .modal-footer
+                button.btn.btn-secondary data-dismiss="modal" type="button" Abbrechen
+                = f.submit "Experiment hinzufügen", class: "btn btn-primary"
   br
-br 
+br
 .card
   .card-header 
     = link_to @sub_category.category.name, category_path(@sub_category.category)
@@ -35,8 +59,15 @@ br
 
   .card-body
     .list-group
-      - @sub_category.experiments.sorted.active.each do | sub_category |
-        .list-group-item
-          = link_to experiment_path(sub_category), class: "stretched-link"
-            = "#{sub_category.label} - #{sub_category.name}"
+      - @sub_category.experiments.sorted.active.each do | experiment |
+        .list-group-item.d-flex id=experiment.id
+          = link_to experiment_path(experiment), class: "flex-grow-1"
+            = "#{experiment.label} - #{experiment.name}"
+          - if @order.present?
+            - ordered_experiment = @order.ordered_experiments.find { |ordered_experiment| ordered_experiment.experiment == experiment }
+            - if ordered_experiment.blank?
+              = add_experiment_to_order_link(experiment)
+            - else
+              = remove_experiment_from_order_link(ordered_experiment)
+
 br

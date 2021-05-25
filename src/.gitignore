@@ -26,3 +26,5 @@ config/master.key
 /storage/*
 !/storage/.keep
 /public/uploads
+
+.yardoc

@@ -181,3 +181,6 @@ SimpleForm.setup do |config|
   # config.input_field_valid_class = 'is-valid'
   # config.input_field_error_class = 'is-invalid'
 end
+
+Dir[Rails.root.join('lib/components/**/*.rb')].each { |f| require f }
+

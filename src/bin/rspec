@@ -1,11 +1,9 @@
-!/bin/bash
-source /usr/local/rvm/scripts/rvm
+#!/bin/bash
 set -o xtrace
 
 export RAILS_ENV=test
 
-rvm use `cat .ruby-version`
-gem install bundler --no-ri --no-rdoc
+gem install bundler --no-document
 bundle
 
 bundle exec rake db:create RAILS_ENV=test
@@ -13,4 +11,4 @@ bundle exec rake db:schema:load RAILS_ENV=test
 
 rm -rf coverage/
 
-bundle exec rspec --color --tty
+bundle exec rspec --color --tty $1
