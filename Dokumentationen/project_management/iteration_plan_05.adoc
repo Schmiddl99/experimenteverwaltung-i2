@@ -132,8 +132,9 @@ a|* Vor dem TSM 4 wurden von dem Team durch Kontakt der Benutzer des Systems Ben
 *** Agile Software Entwicklung wurde verstanden.  
 *** Unsere Arbeitszeit ist begrenzt: Heißt wir Arbeiten nicht, bis das Projekt abgeschlossen ist, sondern bis die verfügbare Zeit aufgebraucht ist.
 *** Unser Kunde darf jederzeit Änderungen wünschen, wir müssen aber selektieren welche "In-Scope" oder "Out-Scope" sind.
-| a|
-* * Überprüfung selbst gesteckter Iterationsziele: Y/N (6/6)*
+| 
+a|
+* *Überprüfung selbst gesteckter Iterationsziele: Y/N (6/6)*
 ** Die Teilnahme am Ruby on Rails Workshop war vollzählig. *Y*
 ** Die Änderungen des Kunden wurde mit Wireframes validiert. *Y*
 ** Die alten TCs wurden versucht auszuführen. Es wurde die Entscheidung getroffen das Framework "Rspec" zu verwenden. *Y*

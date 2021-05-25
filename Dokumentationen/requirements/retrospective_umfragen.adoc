@@ -25,6 +25,11 @@ a|* Stimme zu x1
 * Stimme nicht zu x1
 |3,0
 
+|Denkst du dein Arbeitsaufwand ist gerechtfertigt?
+a| * Stimme zu x3
+* Neutral x1
+|2,25
+
 |Wie bewertest du die Kommunikation in den Meetings (werde oft unterbrochen, weiß nicht was ich sagen soll, werde nie angesprochen, meine Ideen und Gedanken werden nie mit aufgenommen)? a| * image:1.png[1]x4
 |1,0
 
@@ -37,5 +42,42 @@ a|* image:1.png[1]x2
 |===
 
 Das QM nimmt zur Kenntnis, dass eine Person unglücklich in Bezug auf das Projekt ist und einer Person der Workload zu hoch ist. Da dies die erste Umfrage war, werden noch keine Schritte eingeleitet, sondern es wird abgewartet ob dies eine einmalige Auffälligkeit war. Dennoch wird im Weekly darauf aufmerksam gemacht und die Möglichkeit angeboten, Einzelgespräche zu suchen.
+
+== Iteration 06 
+
+|===
+
+|*Frage* |*Auswertung der Merkmale* |*Arithmetisches Mittel* 
+
+|Wenn du an das Projekt denkst, wie glücklich bist du? a|* image:1.png[2]x3
+* image:2.png[3]x1 |2,25
+
+|Bist du zufrieden mit der Hilfestellung deiner Gruppenmitglieder, falls du sie benötigt hast? a| * image:1.png[1]x4 |1,0
+
+|Bist du mit der Qualität der Arbeit deiner Gruppenmitglieder zufrieden? a| * image:1.png[1]x2
+* image:2.png[2]x2 |1,5
+
+
+|Denkst du deine Arbeit ist zu anspruchsvoll? 
+a| * Neutral x1
+* Stimme nicht zu x3
+|3,75
+
+|Denkst du dein Arbeitsaufwand ist gerechtfertigt?
+a| * Stimme zu x3
+* Neutral x1
+|2,25
+
+|Wie bewertest du die Kommunikation in den Meetings (werde oft unterbrochen, weiß nicht was ich sagen soll, werde nie angesprochen, meine Ideen und Gedanken werden nie mit aufgenommen)? a| * image:1.png[1]x4
+|1,0
+
+
+|Glaubst du, wir alle sind auf einem guten Weg das Projekt abzuschließen, das die Besten Chancen auf zufriedene Stakeholder und eine gute Benotung gibt? 
+a| * image:2.png[2]x2 
+|2
+
+|===
+
+Durch diese Umfrage konnte bestätigt werden, dass der Zustand der unglücklichen Person der letzten Umfrage nur ein temporärer Zustand war und es mussten keine Maßnahmen ergriffen werden. Das selbe gilt für den Workload der andren Person. 
 
 
