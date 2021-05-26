@@ -118,17 +118,16 @@ a|* Vor dem TSM 4 wurden von dem Team durch Kontakt der Benutzer des Systems Ben
 | Assessment Datum | 05.05.2021
 | Teilnehmer | gesamtes Team
 | Projektstatus: *gelb*	a| 
-* Ziel: LCA-Meilenstein - Ende der Elaboration Phase, wurde NICHT erreicht, Vorbereitungen für IOC Meilenstein wurde erreicht.
+* Ziel: LCA-Meilenstein - Ende der Elaboration Phase, wurde NICHT erreicht
 ** *Get a more detailed understanding of the requirements:* Grundsätzlich verstanden. 
 *** *Erfolgskriterien:* konnten zum Ende der Iteration verstanden und umgesetzt werden. Die Neupriorisierung wurde in der Vision festgehalten und die einzelnen Belegbestandteile wurden auch aufgabenspezifisch angepasst. 
 ** *Design, implement, validate, and establish the baseline for the architecture:* Zu weiten Teilen abgeschlosssen.
 *** *Erfolgskriterien:* Die Wireframes wurden den Änderungen nach angepasst und vom Kunden validiert. Auf die Validierung eines Skelettsystems wurde verzichtet, da unsere Ziele auf einem vorhandenen, funktionierenden und verwendeten Projekt aufbauen. Da aber einige TCs des Vorgängerteams noch nicht funktionieren und wir hier erst selektieren müssen, welche repariert oder entfernt werden müssen, sehen wir diesen Punkt noch nicht als abgeschlossen an.
-
 ** *Mitigate essential risks, and produce accurate schedule and cost estimates:* Konnte mit Erfolg umgesetzt werden.
 *** *Erfolgskriterien:* Um diese Punkte zu erfüllen, arbeitet das Team mit Verwendung einer Work Item List und einer Risk List. (siehe <<project_plan: {project-name}, Projektplan>>)
+* Ziel: Vorbereitungen für IOC Meilenstein wurde erreicht.
 
-
-** *Understand:* 
+* *Understand:* 
 *** Agile Software Entwicklung wurde verstanden.  
 *** Unsere Arbeitszeit ist begrenzt: Heißt wir Arbeiten nicht, bis das Projekt abgeschlossen ist, sondern bis die verfügbare Zeit aufgebraucht ist.
 *** Unser Kunde darf jederzeit Änderungen wünschen, wir müssen aber selektieren welche "In-Scope" oder "Out-Scope" sind.
