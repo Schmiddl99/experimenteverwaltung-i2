@@ -70,6 +70,10 @@ Wichtige Punkte sind:
 
 Ziel ist es, alle Beteiligten auf denselben Wissensstand über die angefallenen Aufgaben zu bringen, eventuell Lasten umzuverteilen oder Blocker aus dem Weg zu schaffen. 
 
+=== Zeitmanagement
+
+Um beim Abschluss des Projekt eine bessere Übersicht darüber zu erlangen wie viele Arbeitsstunden insgesamt eingeflossen sind, wurden die Teammitglieder dazu angehalten, diese zu protokolieren. In SE II wurde dies fortgestzt, aber von einigen Mitgliedern immer wieder vergessen. Deshalb wurde das QM ab SE II dazu ermächtig immer wieder zu kontrollieren ob die Arbeitsstunden auch in Microsoft Teams eingetragen werden. Diese Kontrolle diente nur der Auflistung der Arbeitszeit und nicht zur Überprüfung welches Mitglied wieviel gearbeitet hat. 
+
 === Qualitätsmanagement in der Softwareentwicklung 
 
 ==== Erstellen von Testcases 
