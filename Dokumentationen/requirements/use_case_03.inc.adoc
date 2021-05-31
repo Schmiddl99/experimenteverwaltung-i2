@@ -17,7 +17,7 @@ Admin möchte sich Wochenplan (Übersicht von allen Exp. inkl. Details) für bes
 
 . Der Use Case beginnt, wenn User die Wochenplanansicht aufruft
 . Wochenplanansicht wird dargestellt
-. KW muss ausgewählt werden
+. Jahr und KW muss ausgewählt werden
 . Filter (Dozent) kann angewendet werden
 . Use Case endet damit, dass die Ansicht generiert wird
 

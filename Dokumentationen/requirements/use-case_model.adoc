@@ -42,13 +42,16 @@ Die Anordnung der Use Cases entspricht der Priorisierung in der Entwicklung.
 |<< Use-Case: Dozentenwoche ansehen, Dozentenwoche ansehen >>
 
 |02
-|<< Use-Case: Eigene Experimente im Buchungsjournal ansehen,Eigene Experimente im Buchungsjournal ansehen >>
+|<< Use-Case: Eigene Experimente im Buchungsjournal ansehen, Eigene Experimente im Buchungsjournal ansehen >>
 
 |08
-|<< Use-Case: Experimente im Buchungsjournal bearbeiten,Experimente im Buchungsjournal bearbeiten >>
+|<< Use-Case: Experimente im Buchungsjournal bearbeiten, Experimente im Buchungsjournal bearbeiten >>
 
 |09
-|<< Eigene Buchungen im Buchungsjournal löschen,Eigene Buchungen im Buchungsjournal löschen >>
+|<< Eigene Buchungen im Buchungsjournal löschen, Eigene Buchungen im Buchungsjournal löschen >>
+
+|10
+|<< Use-Case: Verwalten der Studiengänge, Verwalten der Studiengänge >>
 
 |04
 |<< Use-Case: Statistik anzeigen, Statistik anzeigen >>
