@@ -145,5 +145,5 @@ Bei der Planung zukünftiger Iterationen und ihrer Ziele sind diese Punkte zu ve
 
 === SE II
 
-* Es besteht ein großer Unterschied zwischen dem Verständis die Agile Softwareentwicklung theoretisch zu verstehen oder in der Praxis anzuwenden. 
-* Der Kunde muss für sein System selbst die Verantwortung tragen und nicht das Entwickler-Team. Es reicht aus den Kunden auf fragwürdige Anforderungen hinzuweisen, sie werden aber auf Wunsch umgesetz solange sie ethisch vertretbar sind.
+* Es gibt Differenzen zwischen dem theoretischen Verständnis bezüglich der agilen Softwareentwicklung und ihrer Umsetzung. 
+* Der Kunde muss für sein System selbst die Verantwortung tragen und nicht das Entwickler-Team. Es reicht aus, den Kunden auf fragwürdige Anforderungen hinzuweisen, sie werden aber auf Wunsch umgesetzt, solange sie ethisch vertretbar sind.

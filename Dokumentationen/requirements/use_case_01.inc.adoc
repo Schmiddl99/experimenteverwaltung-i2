@@ -44,7 +44,7 @@ Es ist möglich ein datenbankfremdes Experiment hinzuzufügen. Dazu gibt es die 
 
 ==== Fehlerhafte Daten im Checkout angegeben 
 
-Versucht der Nutzer mit null Experimenten oder einen Kommentar, der länger als x Zeichen ist zu speichern erscheint eine Fehlermeldung, die den Nutzer auf seinen Fehler hinweißt. 
+Versucht der Nutzer eine Buchung mit null Experimenten oder einem Kommentar, der länger als x Zeichen ist zu speichern, erscheint eine Fehlermeldung, die den Nutzer auf seinen Fehler hinweist. 
 
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
 ==== Abbruch des Buchungsvorgangs

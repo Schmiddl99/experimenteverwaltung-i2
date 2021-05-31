@@ -39,7 +39,7 @@ Die Anordnung der Use Cases entspricht der Priorisierung in der Entwicklung.
 |<< Use-Case: Experiment buchen, Experiment buchen >>
 
 |03
-|<< Use-Case: Dozentenwoche ansehen,Dozentenwoche ansehen >>
+|<< Use-Case: Dozentenwoche ansehen, Dozentenwoche ansehen >>
 
 |02
 |<< Use-Case: Eigene Experimente im Buchungsjournal ansehen,Eigene Experimente im Buchungsjournal ansehen >>

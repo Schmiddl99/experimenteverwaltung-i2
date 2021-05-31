@@ -32,7 +32,7 @@ Wenn der Dozent seinen eigenen Wochenplan einsehen will, entfällt Schritt 4 des
 
 ==== Keine Buchungen in ausgewählter Woche vorhanden
 
-Wenn in der ausgewählte Woche des Dozenten keine Buchungen existierten wird eine Meldung ausgegeben, die beinhaltet, dass keine Buchnungen vorhanden sind. 
+Wenn in der ausgewählten Woche des Dozenten keine Buchungen existieren, wird eine Meldung ausgegeben, die beinhaltet, dass keine Buchungen vorhanden sind.
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
 //--- keine alternativen Abläufe möglich ---
 
