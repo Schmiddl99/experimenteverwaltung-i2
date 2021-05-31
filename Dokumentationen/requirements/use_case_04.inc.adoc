@@ -20,6 +20,10 @@ Admin möchte sich eine Statistik über gebuchte Experimente anzeigen lassen
 . Auflistung der Exp., welche in dem angegeben Zeitraum genutzt wurden (Standardansicht: Anzahl absteigend) -> siehe Unterablauf 1
 . Use Case endet
 
+=== Wireframe Statistik
+
+image::WF_5_Statistik.PNG[Statistik Anzeige]
+
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
 ==== Filtern

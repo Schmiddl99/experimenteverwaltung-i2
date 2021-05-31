@@ -8,13 +8,56 @@ include::../_includes/default-attributes.inc.adoc[]
 
 == Allgemeine Informationen
 // ...
-Die Anordnung der Use Cases entspricht der Priorisierung in der Entwicklung.
+Um eine einfache Übersicht über die Use Cases zu erlangen, wurde ein UML Diagramm erstellt um die einzelnen Beziehungen der User auf die Use Cases aufzuzeigen. 
+
+
+
+
+image::UML_Diagramm_V2.0.PNG[UML Diagramm für die Beziehungen der User]
+
+
+Für die einfache Darstellung von Sachverhalten und der Nutzung unserer Erweiterung der Webanwendung haben wir uns für die Verwendung von Wireframes entschieden. Besonders bei der Darstellung des Buchungsvorganges und unserer Vorstellung zu den Benutzeroberflächen war uns die Nutzung besonders wichtig, da unser Kunde mit visuellen Darstellungen unsere Ideen besser nachvollziehen konnte.
+
+Aus diesem Grund wählten wir sehr detaillierte Darstellungen, welche stellenweise über einen klassischen Wireframe hinaus gehen mögen. Die bildliche Vorstellung begünstigte eine erfolgreiche Verständigung mit den Stakeholdern über die Lösungsansätze.
 
 Der Begriff "User" in den Use Cases greift die vorher genannten Akteure auf und impliziert, dass der User sich mit einem der Rolle entsprechenden Account eingeloggt hat.
 
 Jeder User hat einen eigenen persönlichen Account. Nur der Gast-User kann mehrfach verwendet werden.
 
 *Weiteres: tbd* (Fortsetzung in SEII)
+
+== Anordnung der Use Cases
+
+Die Anordnung der Use Cases entspricht der Priorisierung in der Entwicklung.
+
+[%header, cols="1,4"]
+|===
+|Use Case Nummer
+|Use Case Name
+
+|01
+|<< Use-Case: Experiment buchen, Experiment buchen >>
+
+|03
+|<< Use-Case: Dozentenwoche ansehen, Dozentenwoche ansehen >>
+
+|02
+|<< Use-Case: Eigene Experimente im Buchungsjournal ansehen,Eigene Experimente im Buchungsjournal ansehen >>
+
+|08
+|<< Use-Case: Experimente im Buchungsjournal bearbeiten,Experimente im Buchungsjournal bearbeiten >>
+
+|09
+|<< Eigene Buchungen im Buchungsjournal löschen,Eigene Buchungen im Buchungsjournal löschen >>
+
+|04
+|<< Use-Case: Statistik anzeigen, Statistik anzeigen >>
+
+
+
+|===
+
+
 
 //Fügen Sie nachfolgend eine Liste aller Use-Cases per Include ein.
 //Dafür sollten Sie pro Use-Case eine Datei anlegen, die auf dem usecase_spec.adoc Template basiert.
@@ -23,15 +66,6 @@ include::use_case_01.inc.adoc[]
 
 <<<
 include::use_case_03.inc.adoc[]
-
-<<<
-include::use_case_05.inc.adoc[]
-
-<<<
-include::use_case_06.inc.adoc[]
-
-<<<
-include::use_case_07.inc.adoc[]
 
 <<<
 include::use_case_02.inc.adoc[]
@@ -48,16 +82,12 @@ include::use_case_04.inc.adoc[]
 //<<<
 //include::use_case_10.inc.adoc[]
 
-<<<
-== Grafische Veranschaulichung
 
-Um eine einfache Übersicht über die Use Cases zu erlangen, wurde ein BPMN Diagramm erstellt das alle Use Cases darstellt und ein UML Diagramm um die einzelnen Beziehungen der User auf die Use Cases aufzuzeigen. 
+== Beziehungen der User
 
-=== BPMN Diagramm für alles UCs
+Um eine einfache Übersicht über die Use Cases zu erlangen, wurde ein UML Diagramm erstellt um die einzelnen Beziehungen der User auf die Use Cases aufzuzeigen. 
 
-image::BPMN_Diagramm_Gesamt.PNG[BPMN Diagramm für alles UCs]
 
-<<<
-=== UML Diagramm für die Beziehungen der User
 
-image::UML_Diagramm_V2.0.PNG[UML Diagramm für die Beziehungen der User]
+
+
