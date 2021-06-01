@@ -34,7 +34,7 @@ Der Admin hat die Möglichkeit Studiengänge anzulegen, zu löschen und zu bearb
 === Alternative Abläufe
 ==== Keine Studiengänge vorhanden
 
-Wenn keine Studiengänge vorhanden sind, wird eine leere Liste angezeigt. Auf der Übersichtsseite besteht nun nur noch die Möglichkeit der Anlegung eines Studiengangs.  
+Wenn keine Studiengänge vorhanden sind, wird eine leere Liste angezeigt. Auf der Übersichtsseite besteht nun nur noch die Möglichkeit einen Studiengang anzulegen.  
 
 
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
