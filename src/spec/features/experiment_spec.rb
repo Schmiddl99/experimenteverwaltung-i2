@@ -59,8 +59,8 @@ describe "Experiment", js_errors: false do
     accept_alert('Sind Sie sicher?') do
       find('.dropdown-bin--red').click
     end
-    visit "/experiments/trash"
     sleep 1
+    visit "/experiments/trash"
     accept_alert('Wirklich wiederherstellen ?') do
       page.all('.btn.btn-secondary.btn-hover--jade')[0].click
     end
@@ -99,12 +99,13 @@ describe "Experiment", js_errors: false do
     expect(page.has_text?("TestExperiment")).to be_truthy
   end
 
-  it "über Sub_Category ausählen" do
+    #changed '.stretched-link' to flex-grow-1
+  it "über Sub_Category auswählen" do
     sign_in user
     Fabricate :experiment
     visit "/sub_categories/1"
     expect(page.has_text?("TestExperiment")).to be_truthy
-    find('.stretched-link').click
+    find('.flex-grow-1').click
     expect(page.has_text?("TestExperiment")).to be_truthy
   end
 end
