@@ -24,8 +24,8 @@ describe "Medium", js_errors: false do
     sign_in user
     Fabricate :medium
     visit "/experiments/1/edit"
-    attach_file("experiment_media_attributes_0_file", image, visible: false)
     expect(page.html.include?("/uploads/media/thumb/1.png")).to be_truthy
+    attach_file("experiment_media_attributes_0_file", image, visible: false)
     find('input[value="Speichern"]').click
     expect(page.has_text?("file2")).to be_truthy
     expect(page.has_text?("file1")).to be_falsey

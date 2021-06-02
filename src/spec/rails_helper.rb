@@ -47,7 +47,7 @@ RSpec.configure do |config|
   #   Capybara::Poltergeist::Driver.new(app, js_errors: false, debug: false)
   # end
   # Capybara.javascript_driver = :poltergeist
-  Capybara.default_driver = Capybara.javascript_driver = :selenium_chrome_headless
+  Capybara.default_driver = Capybara.javascript_driver = :selenium_chrome
 
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.include Devise::Test::IntegrationHelpers, type: :feature

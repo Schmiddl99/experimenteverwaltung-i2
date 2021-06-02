@@ -8,7 +8,7 @@ describe "Equipment", js_errors: false do
     sign_in user
     Fabricate :experiment
     visit "/equipment"
-    find('.btn.btn-secondary.btn-hover--jade.pull-right').click
+    find('.btn.btn-secondary.btn-hover--jade.float-right').click
     expect(page.has_text?("Gerät anlegen")).to be_truthy
     fill_in "equipment_name", with: "TestName"
     fill_in "equipment_location", with: "TestLocation"
