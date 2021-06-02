@@ -109,6 +109,78 @@ a| * Buchung wurde abgebrochen und es kam zu keinem Datenbankeintrag
 
 |===
 
+==== TC0X1- Buchung ist nur mit einem Dummyexperiment möglich
+|===
+
+|*Beschreibung* |Der Dozent wählt im Auswahlmenü die Schaltfläche "Manuell Experiment hinzufügen". Er gibt einen Namen für das Experiment ein und schließt die Buchung ab. Erwartet wird eine erfolgreiche Buchung des Dummyexperiments.
+
+
+|*Vorbedingungen und benötigte Daten*
+a| * ein Dozent ist mit validen Zugangsdaten angemeldet  
+* Buchung wurde mit validen Parametern gestartet 
+* Warenkorb ist leer
+ 
+
+|*Nachbedingung*
+a| * Datenbankeintrag für die Bestellung ist angelegt 
+* Dozent befindet sich auf der Buchungsbestätigungseite
+
+|===
+
+==== TC0X2a - Buchung eines Dummyexperiments mit einem regulären Experiment ist möglich. Reihenfolge: reguläres Experiment gefolgt von Dummyexperiment 
+|===
+
+|*Beschreibung* |Der Dozent legt ein Experiment in den Warenkorb und wählt anschließend im Auswahlmenü die Schaltfläche "Manuell Experiment hinzufügen". Er gibt einen Namen für das Experiment ein und schließt die Buchung ab. Erwartet wird eine erfolgreiche Buchung beider Experimente.
+
+
+|*Vorbedingungen und benötigte Daten*
+a| * ein Dozent ist mit validen Zugangsdaten angemeldet  
+* Buchung wurde mit validen Parametern gestartet 
+* es existiert mind. ein Experiment 
+ 
+
+|*Nachbedingung*
+a| * Datenbankeintrag für die Bestellung ist angelegt 
+* Dozent befindet sich auf der Buchungsbestätigungseite
+
+|===
+
+==== TC0X2b - Buchung eines Dummyexperiments mit einem regulären Experiment ist möglich. Reihenfolge: Dummyexperiment gefolgt von einem regulären Experiment
+|===
+
+|*Beschreibung* |Der Dozent wählt im Auswahlmenü die Schaltfläche "Manuell Experiment hinzufügen". Er gibt einen Namen für das Experiment ein und legt dann ein reguläres Experiment in den Warenkorb. Erwartet wird eine erfolgreiche Buchung beider Experimente.
+
+
+|*Vorbedingungen und benötigte Daten*
+a| * ein Dozent ist mit validen Zugangsdaten angemeldet  
+* Buchung wurde mit validen Parametern gestartet 
+* es existiert mind. ein Experiment 
+ 
+
+|*Nachbedingung*
+a| * Datenbankeintrag für die Bestellung ist angelegt 
+* Dozent befindet sich auf der Buchungsbestätigungseite
+
+|===
+
+==== TC0X3- Die Reihenfolge der Experimente kann getauscht werden
+|===
+
+|*Beschreibung* |Der Dozent legt 2 Experimente in den Warenkorb und geht zum Buchungsabschluss. Erwartet wird das eine Vertauschung der Experimentenreihenfolge möglich ist.
+
+
+|*Vorbedingungen und benötigte Daten*
+a| * ein Dozent ist mit validen Zugangsdaten angemeldet  
+* Buchung wurde mit validen Parametern gestartet 
+* Warenkorb ist leer
+ 
+
+|*Nachbedingung*
+a| * das zuerst gebuchte Experiment befindet sich nach der Vertauschung an zweiter Stelle.
+
+
+|===
+
 
 === Test Cases für Use Case "Buchungsjournal verwalten"
 
@@ -371,7 +443,7 @@ a| * In allen möglichen Abläufen des Funktionsumfanges existieren keine Schalt
 |===
 
 |*Beschreibung* |
-Die Werte der Voreinstellungen (Studiengang, Uhrzeit, Datum) und die Auswahl der Details von Ausgaben (Dozentenwoche: Dozent, Datum; Statistik: KW, Semester) und alle Filtermöglichkeiten werden aus einem festgelegten Wertebereich gewählt. Realisiert wird dies durch Dropdown-Menüs und einen Datepicker. Es wird erwartet, dass die oben genannten Eingaben nicht durch Freitextfelder erfasst werden können.
+Die Werte der Voreinstellungen (Studiengang, Datum) und die Auswahl der Details von Ausgaben (Dozentenwoche: Dozent, Datum; Statistik: KW, Semester) und alle Filtermöglichkeiten werden aus einem festgelegten Wertebereich gewählt. Realisiert wird dies durch Dropdown-Menüs und einen Datepicker. Es wird erwartet, dass die oben genannten Eingaben nicht durch Freitextfelder erfasst werden können.
 
 |*Vorbedingungen und benötigte Daten*
 a| * Dozent oder Admin ist angemeldet 
