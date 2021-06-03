@@ -11,7 +11,7 @@ header
         - Category.sorted.each do |category|
           li.nav-item
             b = link_to category.name, category, class: "nav-link"
-      - if !session.key?(:order) && current_user.role.to_sym == :lecturer
+      - if @order.blank? && current_user.role.to_sym == :lecturer
         = link_to "Buchung starten", new_checkout_path, class: "btn btn-secondary mr-4 btn-sm"
       = form_tag(experiments_path, method: :get, class:"form form-inline my-3 my-lg-0") do
         = text_field_tag :q, params[:q], placeholder: "Suche", name: "q", type: "search", class:"mr-sm-2 input form-control"

@@ -169,7 +169,8 @@ class CheckoutsController < ApplicationController
   #
   # @author Richard Böhme
   def set_order
-    @order = session[:order]
+    super
+
     unless @order
       redirect_to root_path
     end
