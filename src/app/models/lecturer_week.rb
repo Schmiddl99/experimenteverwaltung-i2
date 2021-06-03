@@ -19,7 +19,7 @@ class LecturerWeek
 
   validates :year,
     numericality: {
-      less_than_or_equal_to: -> (_) { Date.current.year },
+      less_than_or_equal_to: -> (_) { Date.current.year + 1 },
       greater_than_or_equal_to: MIN_YEAR
     }
 

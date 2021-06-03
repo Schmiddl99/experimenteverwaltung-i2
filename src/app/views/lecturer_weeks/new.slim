@@ -3,7 +3,7 @@
 = simple_form_for @lecturer_week, url: lecturer_week_path, method: :get do |f|
   - if !current_user.lecturer?
     = f.input :lecturer_id, label: "Dozenten-Auswahl", as: :select, collection: User.lecturer, label_method: :name, include_blank: false
-  = f.input :year, as: :select, collection: LecturerWeek::MIN_YEAR..Date.current.year, include_blank: false, label: "Jahr"
+  = f.input :year, as: :select, collection: LecturerWeek::MIN_YEAR..(Date.current.year + 1), include_blank: false, label: "Jahr"
   = f.input( \
     :week,
     label: "Zeitraum",

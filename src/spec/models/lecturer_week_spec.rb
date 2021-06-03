@@ -36,9 +36,9 @@ describe LecturerWeek do
     expect(lecturer_week).to be_invalid
     expect(lecturer_week.errors.messages[:year].first).to eql("muss größer oder gleich 2021 sein")
 
-    lecturer_week.year = Date.current.year + 1
+    lecturer_week.year = Date.current.year + 2
     expect(lecturer_week).to be_invalid
-    expect(lecturer_week.errors.messages[:year].first).to eql("muss kleiner oder gleich #{Date.current.year} sein")
+    expect(lecturer_week.errors.messages[:year].first).to eql("muss kleiner oder gleich #{Date.current.year + 1} sein")
   end
 
   it "validate week" do

@@ -257,8 +257,9 @@ describe "Checkout Workflow" do
       expect(ordered_experiments.first.experiment).to eql(experiment)
       expect(ordered_experiments.second.experiment.name).to eql("Dummy Experiment")
 
-      follow_redirect!
-      expect(response.body).to include("Buchung erfolgreich abgeschlossen!")
+      expect(response).to be_successful
+      expect(response.body).to include("Ihre Buchung wurde gespeichert!")
+      expect(response.body).to include("Sie finden eine Übersicht Ihrer Buchungen im Journal.")
     end
 
     it "fail if no experiments attached" do
