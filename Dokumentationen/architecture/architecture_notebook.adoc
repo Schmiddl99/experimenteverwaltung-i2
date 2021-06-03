@@ -328,9 +328,15 @@ image::ordering_class_model.svg[Klassendiagramm der Bestellkomponenten]
 .Klassendiagramm der Dozentenwochekomponenten
 image::lecturer_week_class_model.svg[Klassendiagramm der Dozentenwochekomponenten]
 
-//=== Physische Sicht (Betriebssicht)
+=== Physische Sicht
 //Beschreibt die physischen Knoten (Rechner) des Systems, der Prozesse, Threads und Komponenten, die in diesen Knoten ausgeführt werden. Diese Sicht wird nicht benötigt, wenn das System in einem einzelnen Prozess oder Thread ausgeführt wird.
-<<<
+
+Das System wird auf einer VM der Fakultät Maschinenbau betrieben.
+
+Als Webserver wird https://www.nginx.com[NGINX] verwendet.
+
+Als Applikationsserver wird https://www.phusionpassenger.com[Phusion Passenger] verwendet. Dieser skaliert die Anwendung automatisch mit mehreren Prozessen. Dabei werden maximal sechs Prozesse verwendet. Der genaue Skalierungsprozess ist in der https://www.phusionpassenger.com/docs/tutorials/process_management/ruby/#working-with-multiple-processes[Dokumentation] von Passenger dokumentiert.
+
 === Use cases
 //Eine Liste oder ein Diagramm der Use Cases, die architektur-relevante Anforderungne enthalten.
 

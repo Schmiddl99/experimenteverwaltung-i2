@@ -1,0 +1,84 @@
+= Deployment: {project-name}
+Richard Böhme <richard.boehme@htw-dresden.de>
+{localdatetime}
+include::../_includes/default-attributes.inc.adoc[]
+
+== Generelles
+
+Das Deployment des EMS wurde von der bereits bestehenden Anwendung übernommen.
+
+Zum Einsatz kommt die Bibliothek https://capistranorb.com[Capistrano]. Die bereits bestehende Konfiguration der Bibliothek wurde weiter verwendet, allerdings wurden Änderungen vorgenommen um das Update der Ruby Version vornehmen zu können.
+
+== Testsystem
+
+Um eine Weiterentwicklung vor der produktiven Nutzung durch alle Stakeholder testen zu können wurde ein Klon des Produktivsystem als Testsystem eingesetzt.
+
+== Aktualisieren der Anwendung
+
+=== Voraussetzungen
+
+Der SSH-Public-Key der Person, die das Deployment durchführt, ist auf dem Zielsystem hinterlegt.
+
+=== Auf einem System mit Ruby 3.0.1
+
+Läuft die Anwendung auf dem System bereits mit der Ruby Version `3.0.1`, dann kann ein Deployment durch das Kommando `bundle exec cap <stage> deploy` durchgeführt werden. Mögliche Stages sind `production` und `test`.
+
+Dabei wird der Stand installiert, der lokal vorliegt.
+
+=== Auf einem System mit Ruby < 3.0.1
+
+Folgende Schritte müssen durchgeführt werden um Ruby auf die verwendete Version zu aktualisieren. Alle Kommandos (außer Nr. 6) müssen auf der jeweiligen VM ausgeführt werden.
+
+. RVM (Ruby Version Manager) aktualieren
++
+```
+rvm get stable
+```
+. Neue Ruby Version aktualisieren
++
+```
+rvm install 3.0.1
+```
+. Neue `bundler` (Ruby Paketmanagement) Version installieren
++
+```
+gem install bundler
+```
+. Yarn installieren (Javascript Paketmanagement)
++
+```
+curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+sudo apt-get install -y nodejs
+sudo npm install --global yarn 
+```
+. Passenger (Anwendungsserver) aktualisieren
++
+```
+sudo apt-get --only-upgrade install passenger
+```
+. Capistrano Deploy-Prozess anstoßen (Kommando lokal)
++
+```
+bundle exec cap <stage> deploy
+```
+*Hinweis:* Es gilt dasselbe Verhalten wie <<Auf einem System mit Ruby Version 3.0.1, oben>> beschrieben.
+. Neue Ruby Version als Standard einstellen
++
+```
+rvm default 3.0.1
+```
+
+== Installation rückgängig machen
+
+Eine Installation wird erst angewendet, wenn das Kommando `bundle exec cap <stage> deploy` erfolgreich war.
+
+Soll eine installierte Version trotzdem rückgängig gemacht werden, muss das Kommando `cap <stage> deploy:rollback` verwendet werden. Alternativ kann einfach eine neue Version installiert werden. Mehr Informationen dazu sind in der https://capistranorb.com/documentation/getting-started/rollbacks/[Dokumentation von Capistrano] zu finden.
+
+== Ordnerstruktur
+
+Die Anwendung wird auf allen Systemen im Pfad `/var/www/app` installiert. Per Konvention von Capistrano befinden sich in diesem Verzeichnis folgende Ordner:
+
+* *current*: Aktuell laufende Version. Dies ist ein Symlink auf einen Ordner im `releases` Ordner.
+* *releases*: Enthält die letzten fünf installierten Versionen (inklusive der aktuell installierten Version)
+* *shared*: Enthält Dateien und Ordner welche zwischen allen Releases geteilt werden (z.B. von Nutzern hochgeladene Dateien oder die Datenbank)
+
