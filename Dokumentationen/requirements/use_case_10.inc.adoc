@@ -26,10 +26,15 @@ Der Admin hat die Möglichkeit Studiengänge anzulegen, zu löschen und zu bearb
 . User ändert den Namen des Studiengangs im Textfeld. 
 . User speichert die Änderung durch Bestätigung.
 
-==== Studiengang löschen
+==== Studiengang deaktivieren
 
-. User klickt in der Studiengangsübersicht auf das Icon "Studiengang löschen".
-. User bestätigt die Löschung druch erneuten Druck auf das Icon, nachdem er durch Benachrichtigung darauf hingewiesen wurde.
+. User klickt in der Studiengangsübersicht auf das Icon "Studiengang deaktivieren".
+. User bestätigt die Deaktivierung druch erneuten Druck auf das Icon, nachdem er durch Benachrichtigung darauf hingewiesen wurde. Hierdurch wird der Studiengang in die gesonderte Übersicht der deaktivierten Studiengänge verschoben. 
+
+==== Studiengang reaktivieren
+
+. User klickt in der Übersicht der deaktivierten Studiengänge auf das Icon "Studiengang reaktivieren".
+. User bestätigt die Reaktivieren druch erneuten Druck auf das Icon, nachdem er durch Benachrichtigung darauf hingewiesen wurde. Hierdruch wird der Studiengang zurück in die Studiengangsübersicht verschoben. 
 
 === Alternative Abläufe
 ==== Keine Studiengänge vorhanden
@@ -53,8 +58,9 @@ Der User kann die Änderung oder Anlegung jederzeit verwerfen/abbrechen.
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 * Der User befindet sich wieder auf der Verwaltungsübersicht und wurde über Erfolg der ausgeführten Tätigkeit informiert. 
 
-//=== Besondere Anforderungen
+=== Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
+* Die Studiengänge können nur deaktiviert (nicht gelöscht) werden, um die Persistenz und somit die Konsistenz der Daten zu gewährleisten. 
 
 
 //=== Wireframes
