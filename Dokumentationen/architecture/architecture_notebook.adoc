@@ -320,11 +320,13 @@ Zur Darstellung der Code-Ebene wurde ein UML-Klassendiagramm verwendet.
 
 * hellblau gefärbte Packages dienen zur virtuellen Aufteilung der Klassen in ihre Komponenten (siehe <<Component>>)
 * lila gefärbte Attribute stellen sogenannte _virtuelle_ Attribute dar, welche nicht in der Datenbank persistiert werden 
+* hellgrau gefärbte Klassen bilden Bibliotheksklassen ab
 
-.UML-Klassendiagramm
-image::class_model.svg[Klassendiagramm]
+.Klassendiagramm der Bestellkomponenten
+image::ordering_class_model.svg[Klassendiagramm der Bestellkomponenten]
 
-
+.Klassendiagramm der Dozentenwochekomponenten
+image::lecturer_week_class_model.svg[Klassendiagramm der Dozentenwochekomponenten]
 
 //=== Physische Sicht (Betriebssicht)
 //Beschreibt die physischen Knoten (Rechner) des Systems, der Prozesse, Threads und Komponenten, die in diesen Knoten ausgeführt werden. Diese Sicht wird nicht benötigt, wenn das System in einem einzelnen Prozess oder Thread ausgeführt wird.

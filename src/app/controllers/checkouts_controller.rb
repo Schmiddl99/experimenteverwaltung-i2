@@ -45,6 +45,7 @@ class CheckoutsController < ApplicationController
       if experiment.present? && @order.ordered_experiments.none? { |ordered_experiment| ordered_experiment.experiment == experiment }
         flash[:notice] = "Experiment erfolgreich zur Buchung hinzugefügt!"
         @order.ordered_experiments.build(
+          order: @order,
           experiment: experiment,
           sort: (@order.ordered_experiments.map(&:sort).max || 0) + 1
         )
@@ -54,6 +55,7 @@ class CheckoutsController < ApplicationController
       if experiment.valid?
         flash[:notice] = "Benutzerdefiniertes Experiment erfolgreich zur Buchung hinzugefügt!"
         @order.ordered_experiments.build(
+          order: @order,
           experiment: experiment,
           sort: (@order.ordered_experiments.map(&:sort).max || 0) + 1
         )
@@ -163,7 +165,7 @@ class CheckoutsController < ApplicationController
   end
 
   # Gets the order from the session. If there is no order this method
-  # will redirect the user to the root path. (use with {#before_action})
+  # will redirect the user to the root path. (use with `before_action`)
   #
   # @author Richard Böhme
   def set_order

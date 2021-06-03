@@ -25,7 +25,9 @@ header
             .dropdown-divider
             -if current_user.admin?
               = link_to "Kontenübersicht",  users_path, class: "dropdown-item hover--jade" 
-            = link_to "Kategorien",  categories_path, class: "dropdown-item hover--jade" 
+            = link_to "Kategorien",  categories_path, class: "dropdown-item hover--jade"
+            - if current_user.admin? || current_user.lecturer?
+              = link_to "Dozentenwoche", new_lecturer_week_path, class: "dropdown-item hover--jade"
             -if current_user.admin? || current_user.assistant?
               = link_to "Experiment anlegen",  new_experiment_path, class: "dropdown-item hover--jade"
             -if current_user.admin? || current_user.assistant?

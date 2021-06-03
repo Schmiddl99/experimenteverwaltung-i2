@@ -30,6 +30,8 @@ gem 'listen'
 
 gem 'activerecord-session_store'
 
+gem 'draper'
+
 gem 'wicked_pdf'
 gem 'wkhtmltopdf-binary'
 

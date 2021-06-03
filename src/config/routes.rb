@@ -20,4 +20,5 @@ Rails.application.routes.draw do
     patch :add_experiment
     delete :remove_experiment
   end
+  resource :lecturer_week, only: [:new, :show]
 end
