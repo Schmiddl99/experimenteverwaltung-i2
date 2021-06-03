@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_22_133047) do
+ActiveRecord::Schema.define(version: 2021_06_03_191251) do
 
   create_table "categories", force: :cascade do |t|
     t.string "name"
@@ -48,7 +48,7 @@ ActiveRecord::Schema.define(version: 2021_05_22_133047) do
     t.datetime "file_updated_at"
     t.boolean "adhoc", default: false
   end
-  
+
   create_table "documents", force: :cascade do |t|
     t.string "name"
     t.integer "experiment_id"
