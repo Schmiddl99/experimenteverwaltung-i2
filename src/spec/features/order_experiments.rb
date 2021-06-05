@@ -187,7 +187,7 @@ describe "Book_experiment", js_errors: false do
     end
     find(:xpath,"//a[contains(.,'zum Buchungsabschluss')]").click                    #zum Buchungsabschluss
     source=find(:xpath,"//div[@id='1']")                                             #das 1 experiment wählen
-    target=find(:xpath,"//textarea")                                 # element weit unten
+    target=find(:xpath,"//textarea")                                                  # element weit unten
     source.drag_to(target,delay:1)
     binding.pry
     find(:xpath,"//input[contains(@value,'Buchung abschließen')]").click             #buchung abschließen
