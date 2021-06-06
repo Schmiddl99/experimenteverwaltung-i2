@@ -80,6 +80,11 @@ Stakeholder haben Anforderungen. Ziele der Stakeholder sind Teil der Anforderung
 
 *** Zur Überprüfung wird eine Testperson die Anwendung mit einem Abstand von 50cm Entfernung zum Bildschirm nutzen. 
 
+** *NFAU-1.6*: Freitextfelder sind in ihrer Zeichenkapazität begrenzt. 
+*** Der Name des Dummy-Experiments fasst maximal 75 Zeichen.
+*** Der Name des Studiengangs fasst maximal 75 Zeichen. 
+*** Der Buchungskommentar fasst 200 Zeichen
+
 * *NFAU-2*: Die Eingabemöglichkeiten sollen nicht als Pop-ups erscheinen. 
 
 *** Zur Überprüfung wird die Anwendung auf das Vorhandensein von Pop-up-Fenstern getestet.
