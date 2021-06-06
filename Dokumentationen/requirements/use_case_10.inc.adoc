@@ -34,7 +34,7 @@ Der Admin hat die Möglichkeit Studiengänge anzulegen, zu löschen und zu bearb
 ==== Studiengang reaktivieren
 
 . User klickt in der Übersicht der deaktivierten Studiengänge auf das Icon "Studiengang reaktivieren".
-. User bestätigt das Reaktivieren druch erneuten Druck auf das Icon, nachdem er durch Benachrichtigung darauf hingewiesen wurde. Hierdurch wird der Studiengang zurück in die Studiengangsübersicht verschoben. 
+. User bestätigt das Reaktivieren, nachdem er durch Benachrichtigung darauf hingewiesen wurde. Hierdurch wird der Studiengang zurück in die Studiengangsübersicht verschoben. 
 
 === Alternative Abläufe
 ==== Keine Studiengänge vorhanden
