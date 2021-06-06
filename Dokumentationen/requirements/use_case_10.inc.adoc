@@ -29,7 +29,7 @@ Der Admin hat die Möglichkeit Studiengänge anzulegen, zu löschen und zu bearb
 ==== Studiengang deaktivieren
 
 . User klickt in der Studiengangsübersicht auf das Icon "Studiengang deaktivieren".
-. User bestätigt die Deaktivierung druch erneuten Druck auf das Icon, nachdem er durch Benachrichtigung darauf hingewiesen wurde. Hierdurch wird der Studiengang in die gesonderte Übersicht der deaktivierten Studiengänge verschoben. 
+. User bestätigt die Deaktivierung, nachdem er durch Benachrichtigung darauf hingewiesen wurde. Hierdurch wird der Studiengang in die gesonderte Übersicht der deaktivierten Studiengänge verschoben. 
 
 ==== Studiengang reaktivieren
 
