@@ -60,7 +60,7 @@ Der User kann die Änderung oder Anlegung jederzeit verwerfen/abbrechen.
 
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
-* Die Studiengänge können nur deaktiviert (nicht gelöscht) werden, um die Persistenz und somit die Konsistenz der Daten zu gewährleisten. 
+* Die Studiengänge können nur deaktiviert (nicht gelöscht) werden, um die Konsistenz der Bestellungen zu gewährleisten. 
 
 
 //=== Wireframes
