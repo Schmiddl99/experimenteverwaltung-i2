@@ -546,3 +546,7 @@ a| * die Funktionen des Systems haben in den unterschiedlichen Browsern wie erwa
 * die Webanwendung ist korrekt dargestellt
  
 |===
+
+TODO
+dokumentation der alten Testcases als tabelle der Form test|zweck|(ü,r,sk) ->übernommen,skipped,repariert
+dazu soll noch für den projektbericht eine seite über die reparatur der alten tcs, wo probleme lagen etc
