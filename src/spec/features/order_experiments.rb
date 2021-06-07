@@ -1,4 +1,5 @@
 require 'rails_helper'
+require 'date'
 describe "Book_experiment", js_errors: false do
   let(:random) { Faker::Config.random }
   let(:password) { Faker::Config.random }
@@ -11,6 +12,7 @@ describe "Book_experiment", js_errors: false do
   let(:invalid_time) {Array['12:61','25:01','24:61']}
   let(:comment) {'Kommentar'}
   let(:name_dummy_experiment) {'manuell eingefügtes Experiment 1'}
+  let(:days_in_future) {'7'}
   
   before(:each) do
     Fabricate :course
@@ -28,7 +30,7 @@ describe "Book_experiment", js_errors: false do
     experiment_1
     experiment_2
     experiment_3
-    page.execute_script("$('#order_course_at_date').datepicker('setDate', '+7d')")    #insert date today +7d
+    page.execute_script("$('#order_course_at_date').datepicker('setDate', '+#{days_in_future}d')")    #insert date today +7d
     find(:xpath,"//input[@id='order_course_at_time']").set(valid_time)                #insert time
     find(:xpath,"//input[@class='btn btn-primary mr-2']").click                       #click 'weiter zu den experimenten'
     expect(page.has_text?("Buchung erfolgreich gestartet!")).to be_truthy
@@ -41,8 +43,13 @@ describe "Book_experiment", js_errors: false do
     find(:xpath,"(//i[@class='fas fa-shopping-cart'])[1]").click                     #remove experiment 1
     find(:xpath,"//textarea").set(comment)
     find(:xpath,"//input[contains(@value,'Buchung abschließen')]").click             #buchung abschließen
-    expect(page.has_text?("Ihre Buchung wurde gespeichert!")).to be_truthy
-    #TODO check for correctnes -> journal
+    expect(page.has_text?("Ihre Buchung wurde gespeichert!")).to be_truthy            
+    visit "/lecturer_week/new"                                                        #check im journal
+    week=(Date.today.strftime('%-V').to_i+(days_in_future.to_i/7)).to_s               #week is current week (today.strftime('%-V')) + (days in future)/7 
+    find(:xpath,"//select[@id='lecturer_week_week']/option[contains(.,'KW #{week}')]").select_option  #entsprechende woche raussuchen
+    find(:xpath,"//input[@value='Anzeigen']").click                                   #anzeigen 
+    expect(page.has_css?("ol li:nth-child(1)",text:'test_label_2 test_experiment_2')).to be_truthy
+    expect(page.has_css?("ol li:nth-child(2)",text:'test_label_3 test_experiment_3')).to be_truthy
   end
 
   #TC02a
@@ -91,6 +98,7 @@ describe "Book_experiment", js_errors: false do
     expect(page.has_text?("Buchung erfolgreich gestartet!")).to be_truthy
     visit "/sub_categories/1"
     find(:xpath,"(//div[@class='list-group']/div[1]/a/i)").click                      #order experiment1
+    sleep(0.3)
     expect(page.has_xpath?("//a[@class='btn btn-secondary d-block disabled']")).to be_falsy    #btn disabled -> kann nicht gebucht werden
     expect(page.has_xpath?("//a[@class='btn btn-secondary d-block']")).to be_truthy
     find(:xpath,"(//div[@class='list-group']/div[1]/a/i)").click                      #clicking again -> gets removed from order list
@@ -129,7 +137,11 @@ describe "Book_experiment", js_errors: false do
     find(:xpath,"//a[contains(.,'zum Buchungsabschluss')]").click                      #zum Buchungsabschluss
     find(:xpath,"//input[contains(@value,'Buchung abschließen')]").click               #buchung abschließen
     expect(page.has_text?("Ihre Buchung wurde gespeichert!")).to be_truthy
-    #todo check im journal
+    visit "/lecturer_week/new"                                                        #check im journal
+    week=(Date.today.strftime('%-V').to_i+(days_in_future.to_i/7)).to_s               #week is current week (today.strftime('%-V')) + (days in future)/7 
+    find(:xpath,"//select[@id='lecturer_week_week']/option[contains(.,'KW #{week}')]").select_option  #entsprechende woche raussuchen
+    find(:xpath,"//input[@value='Anzeigen']").click                                   #anzeigen 
+    expect(page.has_css?("ol li:nth-child(1)",text:'manuell eingefügtes Experiment 1')).to be_truthy
   end
 
   #TC07a
@@ -148,7 +160,12 @@ describe "Book_experiment", js_errors: false do
     find(:xpath,"//a[contains(.,'zum Buchungsabschluss')]").click                      #zum Buchungsabschluss
     find(:xpath,"//input[contains(@value,'Buchung abschließen')]").click               #buchung abschließen
     expect(page.has_text?("Ihre Buchung wurde gespeichert!")).to be_truthy
-    #todo check im journal
+    visit "/lecturer_week/new"                                                        #check im journal
+    week=(Date.today.strftime('%-V').to_i+(days_in_future.to_i/7)).to_s               #week is current week (today.strftime('%-V')) + (days in future)/7 
+    find(:xpath,"//select[@id='lecturer_week_week']/option[contains(.,'KW #{week}')]").select_option  #entsprechende woche raussuchen
+    find(:xpath,"//input[@value='Anzeigen']").click                                   #anzeigen 
+    expect(page.has_css?("ol li:nth-child(1)",text:'manuell eingefügtes Experiment 1')).to be_truthy
+    expect(page.has_css?("ol li:nth-child(2)",text:'test_label_1 test_experiment_1')).to be_truthy
   end
 
   #TC07b
@@ -167,7 +184,13 @@ describe "Book_experiment", js_errors: false do
     find(:xpath,"//a[contains(.,'zum Buchungsabschluss')]").click                      #zum Buchungsabschluss
     find(:xpath,"//input[contains(@value,'Buchung abschließen')]").click               #buchung abschließen
     expect(page.has_text?("Ihre Buchung wurde gespeichert!")).to be_truthy
-    #todo check im journal
+    visit "/lecturer_week/new"                                                        #check im journal
+    week=(Date.today.strftime('%-V').to_i+(days_in_future.to_i/7)).to_s               #week is current week (today.strftime('%-V')) + (days in future)/7 
+    find(:xpath,"//select[@id='lecturer_week_week']/option[contains(.,'KW #{week}')]").select_option  #entsprechende woche raussuchen
+    find(:xpath,"//input[@value='Anzeigen']").click                                   #anzeigen 
+    expect(page.has_css?("ol li:nth-child(1)",text:'test_label_1 test_experiment_1')).to be_truthy
+    expect(page.has_css?("ol li:nth-child(2)",text:'manuell eingefügtes Experiment 1')).to be_truthy
+    
   end
 
   #TC08
@@ -187,19 +210,15 @@ describe "Book_experiment", js_errors: false do
     end
     find(:xpath,"//a[contains(.,'zum Buchungsabschluss')]").click                    #zum Buchungsabschluss
     source=find(:xpath,"//div[@id='1']")                                             #das 1 experiment wählen
-    target=find(:xpath,"//textarea")                                                  # element weit unten
+    target=find(:xpath,"//div[@id='2']")                                                  # element weit unten
     source.drag_to(target,delay:1)
-    binding.pry
     find(:xpath,"//input[contains(@value,'Buchung abschließen')]").click             #buchung abschließen
     expect(page.has_text?("Ihre Buchung wurde gespeichert!")).to be_truthy
-    #TODO check for correctnes -> journal
+    visit "/lecturer_week/new"                                                        #check im journal
+    week=(Date.today.strftime('%-V').to_i+(days_in_future.to_i/7)).to_s               #week is current week (today.strftime('%-V')) + (days in future)/7 
+    find(:xpath,"//select[@id='lecturer_week_week']/option[contains(.,'KW #{week}')]").select_option  #entsprechende woche raussuchen
+    find(:xpath,"//input[@value='Anzeigen']").click                                   #anzeigen 
+    expect(page.has_css?("ol li:nth-child(1)",text:'test_label_2 test_experiment_2')).to be_truthy
+    expect(page.has_css?("ol li:nth-child(2)",text:'test_label_1 test_experiment_1')).to be_truthy
   end
-
-
-
-  
-  
-
-
-
 end
