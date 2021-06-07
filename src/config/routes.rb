@@ -20,5 +20,6 @@ Rails.application.routes.draw do
     patch :add_experiment
     delete :remove_experiment
   end
+  resources :orders, only: [:index, :edit, :destroy], path: 'journal'
   resource :lecturer_week, only: [:new, :show]
 end

@@ -24,7 +24,7 @@ table.table.table-bordered.table-sm
           ol style="padding-left: 1.2em"
             - order.ordered_experiments.each do |ordered_experiment|
               li
-                - if ordered_experiment.experiment_type == "Experiment"
+                - if !ordered_experiment.dummy_experiment?
                   strong
                     u
                       = ordered_experiment.experiment.label

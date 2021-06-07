@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::Base
   before_action :authenticate_user!
   before_action :authorize_user!
-  before_action :set_order
+  before_action :set_checkout_order
 
   def after_sign_in_path_for(resource)
     "/"
@@ -16,7 +16,7 @@ class ApplicationController < ActionController::Base
     end
   end
 
-  def set_order
+  def set_checkout_order
     @order = session[:order]
   end
 end

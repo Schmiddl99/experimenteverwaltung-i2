@@ -328,6 +328,9 @@ image::ordering_class_model.svg[Klassendiagramm der Bestellkomponenten]
 .Klassendiagramm der Dozentenwochekomponenten
 image::lecturer_week_class_model.svg[Klassendiagramm der Dozentenwochekomponenten]
 
+.Klassendiagramm des Journals
+image::journal_class_model.svg[Klassendiagramm des Journals]
+
 === Physische Sicht
 //Beschreibt die physischen Knoten (Rechner) des Systems, der Prozesse, Threads und Komponenten, die in diesen Knoten ausgeführt werden. Diese Sicht wird nicht benötigt, wenn das System in einem einzelnen Prozess oder Thread ausgeführt wird.
 

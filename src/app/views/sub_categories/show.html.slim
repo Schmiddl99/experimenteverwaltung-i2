@@ -46,7 +46,7 @@ br
           = link_to experiment_path(experiment), class: "flex-grow-1"
             = "#{experiment.label} - #{experiment.name}"
           - if @order.present?
-            - ordered_experiment = @order.ordered_experiments.find { |ordered_experiment| ordered_experiment.experiment == experiment }
+            - ordered_experiment = @order.current_ordered_experiments.find { |ordered_experiment| ordered_experiment.experiment == experiment }
             - if ordered_experiment.blank?
               = add_experiment_to_order_link(experiment)
             - else
