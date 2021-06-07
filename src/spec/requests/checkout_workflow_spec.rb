@@ -48,6 +48,7 @@ describe "Checkout Workflow" do
       get new_checkout_path
       expect(response).to be_successful
       expect(response.body).to include("Voreinstellungen")
+      expect(response.body).to_not include("Buchung starten")
     end
   end
 
@@ -57,6 +58,7 @@ describe "Checkout Workflow" do
 
       follow_redirect!
       expect(response.body).to include("Buchung erfolgreich gestartet!")
+      expect(response.body).to include("zum Buchungsabschluss")
       order = session[:order]
       expect(order).to_not be_nil
       expect(order.course_at).to eql(Date.tomorrow.midday)
@@ -171,6 +173,7 @@ describe "Checkout Workflow" do
       get(checkout_path)
       expect(response).to be_successful
       expect(response.body).to include("Warenkorb")
+      expect(response.body).to_not include("zum Buchungsabschluss")
     end
   end
 

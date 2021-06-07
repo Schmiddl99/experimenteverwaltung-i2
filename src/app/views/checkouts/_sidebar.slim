@@ -1,0 +1,17 @@
+.position-fixed style="top: 23%"
+  = link_to("zum Buchungsabschluss", checkout_path, class: "btn btn-secondary d-block #{@order.ordered_experiments.blank? ? "disabled" : ""}".rstrip)
+  = link_to("Buchung abbrechen", checkout_path, method: :delete, class: "btn btn-light mt-2", data: { confirm: "Wollen Sie die Buchung wirklich abbrechen?" })
+  button data-toggle="modal" data-target="#dummy-experiment-modal" class="btn btn-secondary d-block mt-2" manuell Experiment hinzufügen
+#dummy-experiment-modal.modal.fade tabindex="-1"
+  .modal-dialog
+    .modal-content
+      = simple_form_for(DummyExperiment.new, url: add_experiment_checkout_path, method: :patch) do |f|
+        .modal-header
+          h5.modal-title Manuell Experiment hinzufügen
+          button.close data-dismiss="modal" type="button"
+            span  &times;
+        .modal-body
+          = f.input :name, label: "Name"
+        .modal-footer
+          button.btn.btn-secondary data-dismiss="modal" type="button" Abbrechen
+          = f.submit "Experiment hinzufügen", class: "btn btn-primary"

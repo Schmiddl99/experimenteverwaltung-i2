@@ -20,7 +20,7 @@ html
               p.alert.alert-danger = alert.html_safe
             = yield
         .col-md-2.d-print-none
-          - if content_for? :sidebar
-            = yield :sidebar
+          - if @order.present? && !controller.is_a?(CheckoutsController)
+            = render "checkouts/sidebar"
     - unless @disable_footer
       = render "layouts/footer"
