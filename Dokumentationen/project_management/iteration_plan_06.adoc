@@ -162,5 +162,5 @@ Wie gut waren unsere Schätzungen? Welche Hindernisse gab es? Wie können wir be
 
 === ALPHA States
 
-image::05.05.21_END_I5.png[ALPHA states 05.05.2021]
+image::19.05.21_END_I6.png[ALPHA states 19.05.2021]
 
