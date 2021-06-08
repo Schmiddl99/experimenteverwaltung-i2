@@ -48,7 +48,7 @@ RSpec.configure do |config|
   # end
   # Capybara.javascript_driver = :poltergeist
   Capybara.default_driver = Capybara.javascript_driver = :selenium_chrome
-
+  
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.include Devise::Test::IntegrationHelpers, type: :feature
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
