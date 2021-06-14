@@ -11,7 +11,7 @@ Zum Einsatz kommt die Bibliothek https://capistranorb.com[Capistrano]. Die berei
 
 == Testsystem
 
-Um eine Weiterentwicklung vor der produktiven Nutzung durch alle Stakeholder testen zu können wurde ein Klon des Produktivsystem als Testsystem eingesetzt.
+Um eine Weiterentwicklung vor der produktiven Nutzung durch alle Stakeholder testen zu können, wurde ein Klon des Produktivsystem als Testsystem eingesetzt.
 
 == Aktualisieren der Anwendung
 
@@ -81,4 +81,3 @@ Die Anwendung wird auf allen Systemen im Pfad `/var/www/app` installiert. Per Ko
 * *current*: Aktuell laufende Version. Dies ist ein Symlink auf einen Ordner im `releases` Ordner.
 * *releases*: Enthält die letzten fünf installierten Versionen (inklusive der aktuell installierten Version)
 * *shared*: Enthält Dateien und Ordner welche zwischen allen Releases geteilt werden (z.B. von Nutzern hochgeladene Dateien oder die Datenbank)
-
