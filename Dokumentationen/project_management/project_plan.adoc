@@ -151,7 +151,7 @@ Bei der Planung zukünftiger Iterationen und ihrer Ziele sind diese Punkte zu ve
 
 == Deployment
 //Outline the strategy for deploying the software (and its updates) into the production environment.
-* Übertragung des Systems von der VM auf den regulären Fakultätsserver durch TAVM
+Das Deployment des EMS wird in großen Teilen von dem bereits bestehenden System übernommen. Durchgeführt wird es hauptsächlich vom Deployment Engineer. Damit dieser Prozess trotzdem für alle am System beteiligten Entwickler zugänglich ist, wurde es im <<Deployment: {project-name}, Abschnitt Deployment>> dokumentiert.
 
 == Erkenntnisse (Lessons Learned)
 

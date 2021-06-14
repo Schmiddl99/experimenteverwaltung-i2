@@ -2,6 +2,7 @@ set :application, 'EMS'
 # set :repo_url, 'git@host:user/app.git'
 
 set :rvm_type, :user
+set :rvm_ruby_version, '3.0.1'
 
 set :scm, :copy
 set :repository, "."
