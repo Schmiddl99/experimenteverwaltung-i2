@@ -1,6 +1,10 @@
-h5.text-center
-  u = @lecturer_week.heading
-p.mt-3.mb-0.text-center = @lecturer_week.lecturer.name
+.row
+  .col-md-6.offset-md-3
+    h5.text-center
+      u = @lecturer_week.heading
+    p.mt-3.mb-0.text-center = @lecturer_week.lecturer.name
+  .col-md-3.d-print-none
+    button.btn.btn-secondary.ml-auto.d-block onclick="window.print();" Drucken
 
 table.table.table-bordered.table-sm
   thead
