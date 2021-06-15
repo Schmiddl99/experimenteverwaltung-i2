@@ -2,6 +2,7 @@ class User < ApplicationRecord
   devise :database_authenticatable, :recoverable, :rememberable, :validatable, :timeoutable, authentication_keys: [:username]
 
   has_many :experiments, dependent: :nullify
+  has_many :orders, dependent: :nullify
   validates :name, presence: true
   validates :username, presence: true
   validates :role, presence: true

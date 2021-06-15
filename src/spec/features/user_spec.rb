@@ -31,14 +31,15 @@ describe "User", js_errors: false do
 
   it "löschen" do
     sign_in user
-    Fabricate :user
+    other_user = Fabricate :user
     visit "/users"
-    expect(page.has_text?(user.name)).to be_truthy
+    expect(page.has_text?(other_user.name)).to be_truthy
     accept_alert('Sind Sie sicher?') do
-      page.all('.btn.btn-danger')[1].click
+      page.all('.btn.btn-danger')[0].click
     end
+    expect(page.has_text?("Nutzer wurde gelöscht"))
     visit "/users"
-    expect(page.has_text?(user.name)).to be_falsey
+    expect(page.has_text?(other_user.name)).to be_falsey
   end
 
   it "keine leeren Felder beim Anlegen" do

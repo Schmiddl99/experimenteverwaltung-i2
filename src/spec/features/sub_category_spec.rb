@@ -33,6 +33,7 @@ describe "Subcategory", js_errors: false do
     accept_alert('Sind Sie sicher?') do
       find('a[class="btn btn-danger"]').click
     end
+    expect(page.has_text?("Unterkategorie wurde gelöscht"))
     visit "/sub_categories"
     expect(page.has_text?("TestSubCategory")).to be_falsey
   end

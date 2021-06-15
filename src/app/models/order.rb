@@ -12,10 +12,29 @@ class Order < ApplicationRecord
   attr_accessor :course_at_time
   attribute :course_at_date, :date
 
-  validates :course_at_time, format: /\A([0-9]|0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]\z/
-  validates :course_at_date, date: true
-  validates :course_at, date: { after: ->(_) { Time.current }, allow_blank: true }
+  validates :course_at_time,
+      format: /\A([0-9]|0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]\z/,
+      if: -> (_) { new_record? }
+
+  validates :course_at_date,
+      date: true,
+      if: -> (_) { new_record? }
+
+  validates :course_at,
+      date: { after: ->(_) { Time.current }, allow_blank: true },
+      if: -> (_) { new_record? }
+
   validates :ordered_experiments, length: { minimum: 1 }, on: [:create, :update]
+
+  self.per_page = 10
+
+  # Get all ordered experiments that are not marked for destruction.
+  #
+  # @author Richard Böhme
+  # @return [Array<OrderedExperiment>] the ordered experiments
+  def current_ordered_experiments
+    self.ordered_experiments.reject(&:marked_for_destruction?)
+  end
 
   private
 

@@ -44,6 +44,7 @@ describe "Experiment", js_errors: false do
     accept_alert('Sind Sie sicher?') do
       find('.dropdown-bin--red').click
     end
+    expect(page.has_text?("Experiment wurde gelöscht")).to be_truthy
     visit "/experiments/trash"
     expect(page.has_text?('TestExperiment')).to be_truthy
     accept_alert('Sind Sie sicher?') do
@@ -59,11 +60,12 @@ describe "Experiment", js_errors: false do
     accept_alert('Sind Sie sicher?') do
       find('.dropdown-bin--red').click
     end
-    sleep 1
+    expect(page.has_text?("Experiment wurde gelöscht")).to be_truthy
     visit "/experiments/trash"
     accept_alert('Wirklich wiederherstellen ?') do
       page.all('.btn.btn-secondary.btn-hover--jade')[0].click
     end
+    expect(page.has_text?("Experiment wurde wiederhergestellt")).to be_truthy
     visit "/experiments/trash"
     expect(page.has_text?('TestExperiment')).to be_falsey
     visit "/experiments/1"

@@ -1,6 +1,6 @@
 .position-fixed style="top: 23%"
-  = link_to("zum Buchungsabschluss", checkout_path, class: "btn btn-secondary d-block #{@order.ordered_experiments.blank? ? "disabled" : ""}".rstrip)
-  = link_to("Buchung abbrechen", checkout_path, method: :delete, class: "btn btn-light mt-2", data: { confirm: "Wollen Sie die Buchung wirklich abbrechen?" })
+  = link_to("zum Buchungsabschluss", checkout_path, class: "btn mb-2 btn-secondary d-block #{@order.current_ordered_experiments.blank? ? "disabled" : ""}".rstrip)
+  = cancel_order_link
   button data-toggle="modal" data-target="#dummy-experiment-modal" class="btn btn-secondary d-block mt-2" manuell Experiment hinzufügen
 #dummy-experiment-modal.modal.fade tabindex="-1"
   .modal-dialog

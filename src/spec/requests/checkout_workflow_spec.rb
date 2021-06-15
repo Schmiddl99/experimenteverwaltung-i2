@@ -117,6 +117,21 @@ describe "Checkout Workflow" do
       expect(session[:order].ordered_experiments.size).to eql(0)
       expect(response.body).to include("Benutzerdefiniertes Experiment konnte nicht gespeichert werden!")
     end
+
+    it "works with persisted order" do
+      order = Fabricate :order, user: lecturer
+      get edit_order_path(order)
+
+      patch(add_experiment_checkout_path, params: { experiment_id: experiment.id })
+      follow_redirect!
+      expect(path).to eql(root_path)
+
+      expect(session[:order].ordered_experiments.size).to eql(2)
+      ordered_experiment = session[:order].ordered_experiments.last
+      expect(ordered_experiment.sort).to eql(2)
+      expect(ordered_experiment.experiment).to eql(experiment)
+      expect(response.body).to include("Experiment erfolgreich zur Buchung hinzugefügt!")
+    end
   end
 
   describe "remove_experiment" do
@@ -131,7 +146,8 @@ describe "Checkout Workflow" do
       follow_redirect!
       expect(path).to eql(root_path)
       order = session[:order]
-      expect(order.ordered_experiments.size).to eql(0)
+      expect(order.current_ordered_experiments.size).to eql(0)
+      expect(order.ordered_experiments.first.marked_for_destruction?).to be_truthy
       expect(response.body).to include("Experiment erfolgreich aus der Buchung entfernt!")
     end
 
@@ -146,7 +162,22 @@ describe "Checkout Workflow" do
       follow_redirect!
       expect(path).to eql(root_path)
       order = session[:order]
-      expect(order.ordered_experiments.size).to eql(0)
+      expect(order.current_ordered_experiments.size).to eql(0)
+      expect(order.ordered_experiments.first.marked_for_destruction?).to be_truthy
+      expect(response.body).to include("Experiment erfolgreich aus der Buchung entfernt!")
+    end
+
+    it "works for persisted order" do
+      order = Fabricate :order, user: lecturer
+      get edit_order_path(order)
+
+      delete(remove_experiment_checkout_path, params: { experiment_sort: order.ordered_experiments.first.sort })
+      follow_redirect!
+      expect(path).to eql(root_path)
+
+      expect(session[:order].current_ordered_experiments.size).to eql(0)
+      ordered_experiment = session[:order].ordered_experiments.first
+      expect(ordered_experiment.marked_for_destruction?).to be_truthy
       expect(response.body).to include("Experiment erfolgreich aus der Buchung entfernt!")
     end
   end
@@ -162,6 +193,18 @@ describe "Checkout Workflow" do
       expect(path).to eql(root_path)
       expect(session[:order]).to be_nil
       expect(response.body).to include("Buchung erfolgreich abgebrochen!")
+    end
+
+    it "works for persisted order" do
+      order = Fabricate :order, user: lecturer
+      get edit_order_path(order)
+
+      delete(checkout_path)
+      follow_redirect!
+
+      expect(path).to eql(orders_path)
+      expect(session[:order]).to be_nil
+      expect(response.body).to include("Bearbeiten der Buchung erfolgreich abgebrochen!")
     end
   end
 
@@ -285,6 +328,30 @@ describe "Checkout Workflow" do
 
       expect(response.body).to include("Warenkorb")
       expect(response.body).to include("Fehler beim Speichern der Buchung! Bitte versuchen Sie es erneut.")
+    end
+
+    it "works for persisted order" do
+      order = Fabricate :order, user: lecturer
+      get edit_order_path(order)
+
+      expect do
+        patch(
+          checkout_path,
+          params: {
+            order: {
+              comment: "Toller neuer Kommentar"
+            },
+            persist: "1"
+          }
+        )
+      end.to_not change { Order.count }
+
+      expect(response).to be_redirect
+      follow_redirect!
+      expect(path).to eql(orders_path)
+      expect(response.body).to include("Buchung erfolgreich aktualisiert!")
+
+      expect(order.reload.comment).to eql("Toller neuer Kommentar")
     end
   end
 end

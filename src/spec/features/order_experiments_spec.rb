@@ -41,7 +41,7 @@ describe "Book_experiment", js_errors: false do
       find(:xpath,"(//div[@class='list-group']/div[#{i}]/a/i)").click
     end
     find(:xpath,"//a[contains(.,'zum Buchungsabschluss')]").click                                       #click 'zum Buchungsabschluss'
-    find(:xpath,"(//i[@class='fas fa-shopping-cart'])[1]").click                                        #remove experiment 1
+    find(:xpath,"(//i[@class='fas fa-trash-alt'])[1]").click                                        #remove experiment 1
     find(:xpath,"//textarea").set(comment)
     find(:xpath,"//input[contains(@value,'Buchung abschließen')]").click                                #click 'Buchung abschließen'
     expect(page.has_text?("Ihre Buchung wurde gespeichert!")).to be_truthy            
@@ -97,7 +97,7 @@ describe "Book_experiment", js_errors: false do
     find(:xpath,"//input[@class='btn btn-primary mr-2']").click                                           #click 'weiter zu den experimenten'
     expect(page.has_text?("Buchung erfolgreich gestartet!")).to be_truthy
     visit "/sub_categories/1"
-    expect(page.has_xpath?("//a[@class='btn btn-secondary d-block disabled']")).to be_truthy              #btn disabled -> order completion not possible
+    expect(page.has_xpath?("//a[@class='btn mb-2 btn-secondary d-block disabled']")).to be_truthy              #btn disabled -> order completion not possible
   end
 
   #TC04
@@ -114,11 +114,11 @@ describe "Book_experiment", js_errors: false do
     visit "/sub_categories/1"
     find(:xpath,"(//div[@class='list-group']/div[1]/a/i)").click                                          #order experiment1
     sleep(0.3)
-    expect(page.has_xpath?("//a[@class='btn btn-secondary d-block disabled']")).to be_falsy               #btn disabled -> kann nicht gebucht werden
-    expect(page.has_xpath?("//a[@class='btn btn-secondary d-block']")).to be_truthy
+    expect(page.has_xpath?("//a[@class='btn mb-2 btn-secondary d-block disabled']")).to be_falsy               #btn disabled -> kann nicht gebucht werden
+    expect(page.has_xpath?("//a[@class='btn mb-2 btn-secondary d-block']")).to be_truthy
     find(:xpath,"(//div[@class='list-group']/div[1]/a/i)").click                                          #clicking again -> gets removed from order list
-    expect(page.has_xpath?("//a[@class='btn btn-secondary d-block disabled']")).to be_truthy              #btn disabled -> order completion not possible
-    expect(page.has_xpath?("//a[@class='btn btn-secondary d-block']")).to be_falsy
+    expect(page.has_xpath?("//a[@class='btn mb-2 btn-secondary d-block disabled']")).to be_truthy              #btn disabled -> order completion not possible
+    expect(page.has_xpath?("//a[@class='btn mb-2 btn-secondary d-block']")).to be_falsy
   end
 
   #TC05
@@ -133,7 +133,7 @@ describe "Book_experiment", js_errors: false do
     visit "/sub_categories/1"
     find(:xpath,"(//div[@class='list-group']/div[1]/a/i)").click                                          #order experiment1
     accept_alert('Wollen Sie die Buchung wirklich abbrechen?') do
-      find(:xpath,"//a[@class='btn btn-light mt-2']").click                                               #click 'Buchung abbrechen'
+      find(:xpath,"//a[@class='btn btn-light']").click                                               #click 'Buchung abbrechen'
     end
     expect(page.has_text?("Buchung erfolgreich abgebrochen!")).to be_truthy
   end
@@ -197,7 +197,9 @@ describe "Book_experiment", js_errors: false do
     expect(page.has_text?("Buchung erfolgreich gestartet!")).to be_truthy
     visit "/sub_categories/1"
     find(:xpath,"(//div[@class='list-group']/div[1]/a/i)").click                                            #order experiment1
+    expect(page.has_text?("Experiment erfolgreich zur Buchung hinzugefügt")).to be_truthy
     find(:xpath,"//button[@class='btn btn-secondary d-block mt-2']").click                                  #click 'Experiment manuell hinzufügen'
+    expect(page.has_text?("Manuell Experiment hinzufügen")).to be_truthy
     find(:xpath,"//input[@id='dummy_experiment_name']").set(name_dummy_experiment)                          #name of dummyexperiment
     find(:xpath,"//input[@value='Experiment hinzufügen']").click                                            
     find(:xpath,"//a[contains(.,'zum Buchungsabschluss')]").click                                           #click 'zum Buchungsabschluss'

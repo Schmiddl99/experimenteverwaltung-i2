@@ -2,7 +2,7 @@
 #
 # @author Richard Böhme
 class CheckoutsController < ApplicationController
-  before_action :set_order, except: %i(new create)
+  before_action :set_checkout_order, except: %i(new create)
 
   # Entrypoint action for a checkout. This renders the form
   # that allows setting the course and the course_at of an order
@@ -42,7 +42,7 @@ class CheckoutsController < ApplicationController
   def add_experiment
     if params[:experiment_id].present?
       experiment = Experiment.find_by(id: params[:experiment_id].to_i)
-      if experiment.present? && @order.ordered_experiments.none? { |ordered_experiment| ordered_experiment.experiment == experiment }
+      if experiment.present? && @order.current_ordered_experiments.none? { |ordered_experiment| ordered_experiment.experiment == experiment }
         flash[:notice] = "Experiment erfolgreich zur Buchung hinzugefügt!"
         @order.ordered_experiments.build(
           order: @order,
@@ -68,16 +68,18 @@ class CheckoutsController < ApplicationController
 
   # With this action you can remove a persisted or a dummy experiment from an order.
   # The affected experiment is chosen by it's `sort`-value.
+  # The experiment will only be marked for destruction. The actual destruction happens
+  # when calling #{persist}.
   #
   # DELETE /checkout/remove_experiment
   #
   # @author Richard Böhme
   def remove_experiment
     if params[:experiment_sort].present?
-      ordered = @order.ordered_experiments.find { |ordered_experiment| ordered_experiment.sort == params[:experiment_sort].to_i }
+      ordered = @order.current_ordered_experiments.find { |ordered_experiment| ordered_experiment.sort == params[:experiment_sort].to_i }
       if ordered.present?
         flash[:notice] = "Experiment erfolgreich aus der Buchung entfernt!"
-        @order.ordered_experiments.delete(ordered)
+        ordered.mark_for_destruction
       end
     end
     redirect_back(fallback_location: root_path)
@@ -91,8 +93,13 @@ class CheckoutsController < ApplicationController
   # @author Richard Böhme
   def destroy
     session.delete(:order)
-    flash[:notice] = "Buchung erfolgreich abgebrochen!"
-    redirect_back(fallback_location: root_path)
+    if @order.new_record?
+      flash[:notice] = "Buchung erfolgreich abgebrochen!"
+      redirect_back(fallback_location: root_path)
+    else
+      flash[:notice] = "Bearbeiten der Buchung erfolgreich abgebrochen!"
+      redirect_to orders_path
+    end
   end
 
   # This action will render a form for adding a comment or to reorder ordered experiments.
@@ -113,12 +120,11 @@ class CheckoutsController < ApplicationController
   #
   # @author Richard Böhme
   def update
-    @order.ordered_experiments.sort_by(&:sort).each_with_index do |ordered_experiment, index|
+    @order.current_ordered_experiments.sort_by(&:sort).each_with_index do |ordered_experiment, index|
       if (sort = params.dig(:order, :ordered_experiments_attributes, index.to_s, :sort))
         ordered_experiment.sort = sort.to_i
       end
     end
-
     @order.assign_attributes(update_params)
 
     if params.key?(:persist)
@@ -128,8 +134,8 @@ class CheckoutsController < ApplicationController
         flash[:notice] = "Änderungen erfolgreich gespeichert!"
         redirect_to checkout_path
       else
-        flash[:alert] = "Fehler beim Speichern der Buchung. Bitte starten Sie die Buchung erneut."
-        redirect_to new_checkout_path
+        flash[:alert] = "Fehler beim Speichern der Buchung."
+        render "show"
       end
     end
   end
@@ -137,14 +143,35 @@ class CheckoutsController < ApplicationController
   # This method will be called by the {#update} action and saves the order to the
   # database.
   #
+  # To avoid a ActiveRecord::RecordNotUnique error we update the sort value of all
+  # ordered experiments to their negatives before actually updating them.
+  # To avoid inconsistencies this is wrapped in a transaction.
+  #
   # @author Richard Böhme
   def persist
-    if @order.save
-      session.delete(:order)
-      render "success"
-    else
-      flash[:alert] = "Fehler beim Speichern der Buchung! Bitte versuchen Sie es erneut."
-      render "show"
+    Order.transaction do
+      if @order.persisted?
+        @order.current_ordered_experiments.select(&:persisted?).each do |ordered_experiment|
+          sort = ordered_experiment.sort
+          ordered_experiment.update(sort: -1 * sort)
+          ordered_experiment.sort = sort
+        end
+      end
+
+      if @order.save
+        session.delete(:order)
+
+        if @order.previously_new_record?
+          render "success"
+        else
+          flash[:notice] = "Buchung erfolgreich aktualisiert!"
+          redirect_to orders_path
+        end
+      else
+        flash[:alert] = "Fehler beim Speichern der Buchung! Bitte versuchen Sie es erneut."
+        render "show"
+        raise ActiveRecord::Rollback
+      end
     end
   end
 
@@ -168,7 +195,7 @@ class CheckoutsController < ApplicationController
   # will redirect the user to the root path. (use with `before_action`)
   #
   # @author Richard Böhme
-  def set_order
+  def set_checkout_order
     super
 
     unless @order
