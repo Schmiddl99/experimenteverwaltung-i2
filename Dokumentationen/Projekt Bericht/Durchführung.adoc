@@ -1,0 +1,10 @@
+= Durchführung des Projekts
+{localdatetime}
+include::../_includes/default-attributes.inc.adoc[]
+
+== SE I
+
+Das Hauptaugenmerk in SE I unseres Projektes war, eine gute und solide Grundlage für die Constructions Phase in SE II zu scaheffen. Deshalb bestand die erste Iteration hauptsächlich aus Teamorganistaorischen Tätigkeiten und der Einarbeitung in das Projekt und die Aufgabenstellung. Hier haben wir auch zum ersten Mal Kontakt zum Kunden hergestellt. 
+
+Die Ziele der zweiten Iteration waren es Einigkeit mit dem Kunden über die Vision herzustellen. Hierzu benutzen wir erstmals Wireframes, damit unsere Kunde sich unsere Ideen besser Vorstellen konnte. Auch wurden hier die systemweiten Anforderungen aufgestellt und der GitHub Workshop abgehalten.
+

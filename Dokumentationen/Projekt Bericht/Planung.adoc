@@ -6,45 +6,80 @@ include::../_includes/default-attributes.inc.adoc[]
 
 === Teamaufstellung 
 
-Am Anfang des Semesters wurde das Team von {ab} und {tki} leider verlassen. Deshalb wurde uns {pg} als Verstärkung zugewisen. Dadurch haben wir am Angang des Semester zu erst eine neu Einteilung der Rollen des Teams durchgeführt. Diese ist genauer in der Rollenübersicht einzusehen. LINK!!!!
+Am Anfang des Projekts bestand das Team aus acht Mitgliedern. Diese waren eine Hochshul-Externe Fachinformatikerin ({ab}), ein Informatikstudent ({rb}), zwei Wirtschaftsinformatikstudenten ({we}, {tki}), ein Verwaltungsinformatikstudent ({gm}) und drei Wirtschaftsingenieurstudenten ({tka}, {tw}, {js}). Geplant war das Ausscheiden der Wirtschaftsingenieure zu SE II, jedoch wurde das Team von {ab} und {tki} leider verlassen zusätzlich verlassen. Deshalb wurde uns der Informatikstudent {pg} als Verstärkung zugewiesen. Dadurch haben wir am Beginn von SE II zuerst eine neue Einteilung der Rollen des Teams durchgeführt. Mehr dazu findet man in der Rollenverteilung. LINK!!!!
 
 === Aufgabenstellung und Auftraggeber 
 
-Die Aufgabenstellung änderte sich nicht zu SE I, es war unsere Aufgabe auf dem existierenden System ein Buchungssystem zu integrieren und Bugs des vorhanden Systems zu beheben. Auch unser Auftraggeber Herr Matthias Heisig blieb identisch zu SE I. 
+Die Aufgabenstellung änderte sich nicht zu SE I, es war unsere Aufgabe, auf dem existierenden System ein Buchungssystem zu integrieren und Bugs des vorhanden Systems zu beheben (siehe Vision LINK !!!). Auch unser Auftraggeber, Herr Matthias Heisig blieb identisch zu SE I. 
 Allerdings änderte er gleich beim ersten Themenersteller-Meeting die Aufgaben-Priorisierung.
-Es war von unsere Seite eigentlich geplant das erst die Use Cases nacheinander implemtiert werden und anschlißend ein Zeitfenster eingerichtet wird für Bugfixing und Änderungen des aktuellen Systems. Dies wurde verworfen. 
+Es war von unsere Seite eigentlich geplant, dass erst die Use Cases nacheinander implementiert werden und anschließend ein Zeitfenster eingerichtet wird für Bugfixing und Änderungen des aktuellen Systems. Dies wurde verworfen. 
 Durch den Kunden war nun gewünscht, dass nach der Implementierung des Buchungssystems direkt ein besserer Weg gefunden wird, die Geräte im vorhanden System auszuwählen. Die andren Arbeiten sollten dann nach gewohnter Priorisierung aus SE I erfolgen. Eine genaue Auflistungen der Aufgaben ist in der Vision zu finden. LINK!!!
 
 == Projektorganisation 
 
 === Team 
 
-Da wir schon früh in SE I die Erfahrung gemacht haben, das ein gutes Team der Schlüssel zu einem guten Projektabschluss ist haben wir auch in SE II dran festgehalten. Wir meinen mit gutem Team nicht, dass die einzelnen Teammitglieder über große Expertisen im Bereich Software Engineering oder andre IT bezogene Qulifikationen verfügen müssen, sondern wir wollen hier zum Ausdruck bringen, dass eine gute Gruppendynamik und ein starker Zusammenhalt inerhalb der Gruppe für uns wichtig war. 
+Da wir schon früh in SE I die Erfahrung gemacht haben, das ein gutes Team der Schlüssel zu einem guten Projektabschluss ist, haben wir auch in SE II dran festgehalten. Wir meinen mit gutem Team nicht, dass die einzelnen Teammitglieder über große Expertisen im Bereich Software Engineering oder andre IT bezogene Qualifikationen verfügen müssen, sondern wir wollen hier zum Ausdruck bringen, dass eine gute Gruppendynamik und ein starker Zusammenhalt innerhalb der Gruppe für uns wichtig war. 
 
-Wir haben versucht die Planung der einezlnen Teilaspekte so zu gestalten, das die eben genannten Eigenschaft stehts in hohem Ausmaß vorhanden sind. 
+Wir haben versucht, die Planung der einzelnen Teilaspekte so zu gestalten, dass die eben genannten Eigenschaften stets in hohem Ausmaß vorhanden sind.
 
 [%header, cols="1,2"]
 |===
 |Eingesetzte Praktik
 |Gewünschter Erfolg
 |Risiko des Scheiterns miteinbeziehen 
-|Die Priorisierung, der Reihenfolge der Arbeitsschritte wurde stets so gewählt, dass ein auftretendes Problem nie die Arbeit der anderen Gruppenmitglieder behinderte. So sollte der Erfolgsdruck gemindert werden.
+|Die Priorisierung der Reihenfolge der Arbeitsschritte wurde stets so gewählt, dass ein auftretendes Problem nie die Arbeit der anderen Gruppenmitglieder behinderte. So sollte der Erfolgsdruck gemindert werden.
 |Aufgabengebiete weit streuen
-|Es wurde versucht die einzlnen Gruppenmitglieder, Rollenunabhänig, in allen Teilgebieten mit kleinen Aufgaben einzusetzen. Hintergrund dieser Strategie war, dass jedes Gruppenmitglied auch die Aufgaben der anderen Rollen kennlernen kann und so auch außerhalb der eigenen Rolle Erfahrungen sammelen konnte.
-|Zeit für Austausch einplanen 
-|Durch geregelte Gruppendiskussionen kann jedes Mitglied seine Meinung oder Erfahrung bei Entscheidung miteinbringen und sollte dadruch auch mehr am Projekt beteiligt werden
+|Es wurde versucht, die einzelnen Gruppenmitglieder Rollenunabhänig, in allen Teilgebieten mit kleinen Aufgaben einzusetzen. Hintergrund dieser Strategie war, dass jedes Gruppenmitglied auch die Aufgaben der anderen Rollen kennlernen kann und so auch außerhalb der eigenen Rolle Erfahrungen sammeln konnte.
+|Zeit für Austausch einplanen
+|Durch geregelte Gruppendiskussionen kann jedes Mitglied seine Meinung oder Erfahrung bei Entscheidung miteinbringen und sollte dadurch auch mehr am Projekt beteiligt werden
 |Demokratische Entscheidungsfindung
-|Jede Entscheidung die von unsere Stelle getroffen werden konnte wurde demokratisch und nicht autoritär entschiden. Dies sollte gewährleisten, dass alle Gruppenmitglieder mit der Entscheidung einverstanden sind und auch keine schlechten Entscheidungen, wie z.B. durch mangelhafte Expertise, getroffen werden.
+|Jede Entscheidung, die von unsere Stelle getroffen werden konnte, wurde demokratisch und nicht autoritär entschieden. Dies sollte gewährleisten, dass alle Gruppenmitglieder mit der Entscheidung einverstanden sind und auch keine schlechten Entscheidungen, wie z.B. durch mangelhafte Expertise getroffen werden.
 |Einsetzen eines QMs und Puls-Checks
-|Durch Verwendung eines Qualitätsmanagements und Puls-Check-Umfragen konnte in der Planung, das allgemeine Gruppenempfinden miteinebzogen werden. Hier sollten mögliche Probleme durch gezielte Fragen oder Austausch gelöst werden können. (Hinweis: es wurden alle Probleme stets anonymisiert gesammelt und die Disskusionsgrundlage allgemein formuliert)
+|Durch Verwendung eines Qualitätsmanagements und Puls-Check-Umfragen konnte in der Planung das allgemeine Gruppenempfinden miteinbezogen werden. Hier sollten mögliche Probleme durch gezielte Fragen oder Austausch gelöst werden können. (Hinweis: Es wurden alle Probleme stets anonymisiert gesammelt und die Diskussionsgrundlage allgemein formuliert)
 |Stundennachweis
-|Die Gruppenmitglieder wurden dazu angehalten, ihre Arbeitszeiten in einer Stundenliste zu protokolieren. So sollte in der Planung sichergestellt werden, das eine gleichmäßige Verteilung der Arbeitszeit über alle Gruppenmitglieder statt finden kann. 
+|Die Gruppenmitglieder wurden dazu angehalten, ihre Arbeitszeiten in einer Stundenliste zu protokollieren. So sollte in der Planung sichergestellt werden, dass eine gleichmäßige Verteilung der Arbeitszeit über alle Gruppenmitglieder stattfinden kann. 
+|Wiederkehrende Aufgaben standalisieren
+|Immer wiederkehrende kleine Aufgaben wie z.B. das erstellen einer Agenda für das Weekly wurden direkt ohne Dokumentation in der Work-Item-List ausgeführt oder wurden als durchgehender Issue aufgeführt. Dies sollte ermöglichen, dass die Work-Item-List übersichtlicher angezeigt werden konnte, trotz teilweiser sehr granularen Aufgliederung von großen Aufgaben.
 |===
 
 
 === Rollenverteilung 
 
+Die Aufgaben wurden hauptsächlich nach Interessen- und Expertisengebieten verteilt. Das Team einigte sich darauf, das der Rollenverantwortliche sich hauptsächlich um die Dokumentationspflichten und Arbeitspriorisierung kümmerte, er aber immer von anderen Teammitglieder bei der eigentlichen Aufgabe unterstützt wird. So konnten wir eine perfekte Mischung aus Rollenspezialisierung und Informationsaustausch erreichen. Durch die starke Dezimierung des Teams in SE II waren wir gezwungen, dass einige Gruppenmitglieder mehrer Rollen ausüben mussten. Somit wandelte sich die Teamarbeit in den Bereichen Dokumentation und Organisation zu spezialisierter Einzelarbeit. Der Informationsaustausch wurde durch präzise Reports in den Weeklys aufrecht erhalten. Eine genaue Übersicht zur Verteilung der einzelnen Gruppenmitglieder auf die einzelnen Rollen findet man in der Rollenübersicht. Link !!!
 
-Wiederkehrende Aufgaben standalisieren:
 
-Immer wiederkehrnde kleine Aufgaben wie z.B. das erstellen einer Agenda für das Weekly wurden, direkt ohne Dokumentation in der Work-Item-List ausgeführt oder wurden als durchgehender Issue aufgeführt. Dies sollte ermöglichen, dass die Work-Item-List übersichtlicher angezeigt werden konnte, troz teilweiser sehr granularen Aufgliederung von großen Aufgaben. 
+== Ablauf der Kommunikation unter Verwendung von Tools
+
+Da während des Projekts die Corona Pandemie Deutschland beherrschte, wurde versucht, sämtliche Kommunikation online durchzuführen. Um dies umzusetzen, wurde der Messenger-Dienst WhatsApp für die direkte Kommunikation zwischen einzelnen Gruppenmitgliedern und zur schnellen Informationsübermittlung an alle Teammitglieder genutzt. Um Meetings zu realisieren, wurde zu erst ein Discord Server genutzt, im Laufe des Projekts dann aber auf Microsoft Teams gewechselt. Hintergrund hier war, dass Teams einige Zusatzfunktionen bat, wie z.B. "Polly", die für Umfragen genutzt wurden, die Discord leider nicht unterstütze. Des Weiteren konnte in Teams auch ein cloudbasiertes Datei-Mangement-Tool leicht verwendet werden, so mussten wir nicht mehr OneDrive nutzen, das privat von einem Gruppenmitglied gestellt wurde. Auch konnte in Teams eine bessere Rollenhierarchie genutzt werden, um Rollenspezifische Feed Anfragen zu nutzen, damit ein Brainstormeffekt entsteht. Die Dokumentation erfolgte geschlossen in ADOC Dateien, die über GitHub verwaltet worden sind. Auch wurde über GitHub unsere Work-Item-List mit hilfe der Issues verwirklicht. GitHub war der Schlüssel um Gruppen- und parallel laufende Arbeiten zu organisieren und umzusetzen. Zur Überprüfung und zur Dokumenation unseres Projekt Fortschritts benuzten wir regelmäßig den Essence Navigator.
+Um mit dem Kunden in Kontakt treten zu können, wurden ausschließlich E-Mails, Microsoft Teams und Präsenz-Treffen genutzt. Die Präsenztreffen fanden erst in SE II statt, mit kompletter Einhaltung der Corona-Hygiene-Maßnahmen. Diese Änderung wurde von unsrem Kunden sehr begrüßt, da er leider durch die eben genannten Techniken in seinem Workflow eher behindert als unterstützt wurde. 
+
+Die online Situation erleichterte die Planung von Meetings und Gruppenarbeiten erheblich, da nun Fragen wie wo wir uns treffen, ob dieser Ort auch zur gegebenen Zeit verfügbar ist oder wie lange die Anreise der einzelnen Mitglieder wohl wäre, nun alle obsolet waren. Es musste nun nur noch eine Uhrzeit gefunden werden, zu der alle verfügbar waren. 
+
+
+== Way of Working
+
+Unsre Arbeitsweise war sehr stark vom Open Unified Process geprägt. Wir haben stets versucht, alle vier Kernziele zu durchlaufen. Alternativ dazu haben wir auch versucht andere Praktiken aus andren Bereichen zu verwenden, die wir aus eigener Erfahrung oder aus der Theorie kannten. Diese waren das QM oder die Puls-Checks. Wir haben mit Iterationen gearbeitet, die immer zwei Wochen andauerten.
+
+Grundsätzlich war aber folgender Ablauf regelmäßig zu erkennen:
+
+. Planung der Iteration 
+* Zielsetzung anhand der Aufgabenpriorisierung des Kunden
+* Die Ziele in Aufgabe unterteilen
+* Bewertung der Aufgaben
+** Bewertung des Aufwands
+** Bewertung der Priorität
+* Aufgaben Verteilung an die Gruppenmitglieder
+. Durchführung der Iteration
+* Die Aufgaben werden nach der Priorisierung unter Beachtung des Aufwands abgearbeitet
+* Ständiger Austausch unter den Gruppenmitgliedern über den Status der Aufgabe
+. Ende der Iteration
+* Vorstellung der erledigten Aufgaben
+* Bewertung der Aufgabe durch die Gruppe
+* Puls-Check
+* Iterationsnachbesprechung
+* Lesson-Learned (wenn erforderlich)
+* Dokumentation der Iteration 
+
+
+Wenn geplante Ziele oder Aufgaben nicht in der Iteration umgesetzt werden konnten, wurden diese in die nächste Iteration übernommen und versucht, die Aufwandsplanung anhand der neuen Erkenntnisse besser umzusetzen.
