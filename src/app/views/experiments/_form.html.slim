@@ -37,7 +37,7 @@
     hr.bg-primary
     = f.input :description, input_html: {rows: 10}
     hr.bg-primary
-    .row
+    .row#equipment-wrapper
       .col-sm-12
         .card
           .card-body
@@ -51,7 +51,7 @@
                 = render 'experiment_equipment_assignment_fields', f: experiment_equipment_assignment
               = link_to_add_association "", f, :experiment_equipment_assignments, class: "hidden", id: "nested-new-experiment_equipment_assignment", "data-association-insertion-method" => "append"
     br
-    .row
+    .row#danger-wrapper
       .col-sm-6
         .card
           .card-body

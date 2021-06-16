@@ -1,5 +1,5 @@
 function experimentsManager(name, fields, path){
-  if($("#new_experiment").length === 0) return;
+  if($("#new_experiment, .edit_experiment").length === 0) return;
   window[name] = {}
   $("#"+name+"-modal").on('hidden.bs.modal', function () {
     window[name] = {}
@@ -27,9 +27,8 @@ function experimentsManager(name, fields, path){
       $("#"+name+"-modal").modal('show');
     })
   };
-  addCallbacks()
-  function insertCallbacks(){
-    $("."+name+"-select").on('change', function() {
+  function insertCallbacks(root){
+    root.find("select."+name+"-select").on('change', function() {
       var el = $(this)
       var value = el.val();
       if (value === "new"){
@@ -48,7 +47,7 @@ function experimentsManager(name, fields, path){
       }
     });
   };
-  insertCallbacks()
+  insertCallbacks($('#' + name + '-wrapper'));
   $("#new_"+name).submit(function( event ) {
     event.preventDefault();
     var data = {
@@ -82,15 +81,15 @@ function experimentsManager(name, fields, path){
         if (response.id){
           if (window[name].id){
             $("."+name+"-select > option[value='" + window[name].id + "']").text(data[name][fields[0]])
-          }else{
-            $("."+name+"-select").append(new Option(data[name][fields[0]], response.id));
+          } else {
+            $("select."+name+"-select").append(new Option(data[name][fields[0]], response.id));
             if (window[name].select){
               data[name].id = response.id
               window[name].select.val(response.id);
               window[name].select.closest(".row").find(".edit-button-"+name+"").html(button_html(data[name]));
               addCallbacks()
             }
-            $("."+name+"-select").each(function() {
+            $("select."+name+"-select").each(function() {
               var x = $(this).val()
               $(this).append($(this).find("option").remove().sort(function(a, b) {
                 var at = $(a).text().toLowerCase(), bt = $(b).text().toLowerCase();
@@ -99,6 +98,7 @@ function experimentsManager(name, fields, path){
               $(this).val(x)
             });
             window[name].select = null
+            $('#' + name + '-wrapper .selectpicker').selectpicker('refresh');
           }
           $("#"+name+"-modal").modal('hide');
         }else{
@@ -108,16 +108,17 @@ function experimentsManager(name, fields, path){
     });
   })
 
-  $('.add_association').click(function(){
+  $('#' + name + '-wrapper .add_association').click(function(){
     $("#nested-new-"+$(this).data("type")).click()
   })
-  $('.nested-form').on('cocoon:after-insert', function(e, insertedItem) {
+  $('#' + name + '-wrapper .nested-form').on('cocoon:after-insert', function(e, insertedItem) {
     e = $(insertedItem)
     e.attr("id", "nested-item-"+Date.now())
     e.find(".sort-input").val(e.parent().prevAll().length)
     nestedTrigger();
     sortable();
-    insertCallbacks();
+    insertCallbacks(e);
+    e.find(".selectpicker").selectpicker();
   }).on('cocoon:before-remove', function(event, insertedItem) {
     var confirmation = confirm("Möchten Sie dies wirklich löschen?");
     if( confirmation === false ){

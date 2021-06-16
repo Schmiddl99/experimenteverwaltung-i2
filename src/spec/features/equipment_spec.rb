@@ -46,7 +46,7 @@ describe "Equipment", js_errors: false do
     Fabricate :equipment
     Fabricate :experiment
     visit "/experiments/1/edit"
-    select "TestEquipment", from: "experiment_experiment_equipment_assignments_attributes_0_equipment_id"
+    select "TestEquipment", from: "experiment_experiment_equipment_assignments_attributes_0_equipment_id", visible: false
     find('#experiment-save').click
     expect(page.has_text?("TestEquipment")).to be_truthy
   end
@@ -56,7 +56,7 @@ describe "Equipment", js_errors: false do
     Fabricate :experiment_equipment_assignment
     neweqipment
     visit "/experiments/1/edit"
-    select "TestEquipmentNew", from: "experiment_experiment_equipment_assignments_attributes_0_equipment_id"
+    select "TestEquipmentNew", from: "experiment_experiment_equipment_assignments_attributes_0_equipment_id", visible: false
     find('#experiment-save').click
     expect(page.has_text?("TestEquipmentNew")).to be_truthy
     expect(page.has_text?("TestEquipment ")).to be_falsey
