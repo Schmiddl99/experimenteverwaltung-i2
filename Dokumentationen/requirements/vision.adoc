@@ -257,3 +257,12 @@ a|* Datumsanpassung jeder kopierten Vorlesung ist erforderlich
 * Wochentage ändern sich von Semester zu Semester! (Feiertage etc.) + Unterschiedlicher Fortschritt in den Vorlesungen
 
 |===
+
+==== Finale Zukunftsanforderungen
+
+NOTE: Die unten genannten Anforderungen resultieren aus dem Themenstellermeeting am 10.06.2021 und sind somit endgültig. 
+
+* das System soll den User informieren, wenn sich an einer bereits gedruckten Dozentenwoche etwas geändert hat 
+* bei der Bearbeitung einer bereits getätigten Buchung soll es möglich werden, auch die Voreinstellungen anzupassen 
+* im Jorunal soll es möglich werden, explizite Buchungen anhand einer Filterfunktion zu finden 
+* die Auswertung der Buchungshäufigkeit der Experimente soll anhand der Statistik umgesetzt werden
