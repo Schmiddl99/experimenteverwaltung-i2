@@ -1,0 +1,760 @@
+= Einführung in Rails
+Richard Böhme <richard.boehme@htw-dresden.de>
+{localdatetime}
+include::../_includes/default-attributes.inc.adoc[]
+
+== Einführung - Was ist Rails?
+
+Rails im Gegensatz zu Ruby ist keine Programmiersprache sondern ein Framework oder eine Basis um eine Webandwendung in Ruby zu entwickeln. Es bringt verschiedene Funktionen mit sich um die Entwicklung einer Webanwendung zu beschleunigen und effizienter zu gestalten. So müssen kritische Stellen in der Applikation nicht selbst entworfen werden (das Rad nicht neu erfinden).
+
+Prinzipien die Rails nutzt _(aus der link:https://rubyonrails.org/doctrine/[Rails Doctrine])_:
+
+* *Optimize for programmer happiness*: Ruby lässt grüßen
+* *Convention over Configuration*: Entscheidungen die "unwichtig" sind werden direkt von Rails getroffen. Beispiel: Es braucht keine 3 Stunden Diskussion darüber wie der Primärschlüssel einer Tabelle heißen sollte.
+* *The menu is omakase*: Rails gibt dir einen Stack an Frameworks und Bibliotheken mit denen du arbeiten kannst. Wie wenn man den Koch nach dem besten Gericht fragt.
+* *No one paradigm*: Rails folgt nicht einem Paradigma. Es mischt teilweise welche, die sich eigentlich in Konflikt stehen. Wichtig ist es ein Paradigma an der Stelle anzuwenden wo es hin passt.
+* *Exalt beautiful code*: Rails wurde entwickelt um "schönen" Code zu schreiben. Das geht natürlich mit dem ersten Punkt dieser Liste zusammen und hilft zusätzlich der Lesbarkeit.
+* *Provide sharp knives*: Rails gibt Werkzeuge die falsch verwendet werden können. Ähnlich zu Ruby gibt es dem Entwickler viele Freiheiten, welche auch im falschen Sinne genutzt werden können. Nutzt man sie jedoch an der richtigen Stelle zum richtigen Zeitpunkt kann man umfangreiche Anforderungen einfach umsetzen oder kapseln.
+* *Value integrated systems*: Rails liebt Monolithe - also eine Anwendung für ein ganzes System (entgegen zu Microservices). Es macht die Enwicklung einfacher. Natürlich braucht man manchmal mehrere Systeme oder Services aber oft reicht eine Anwendung um eine erfolgreiche Anwendung zu entwickeln.
+* *Progress over stability*: Rails will sich weiter entwickeln was unter anderem dazu führt, dass große Änderungen notwendig werden um eine Anwendung auf eine aktuelle Version von Rails zu aktualisieren. Nur so jedoch erhofft man sich Fortschritt und Weiterentwicklung.
+* *Push up a big tent*: Rails will möglich viele Leute in seiner Community sehen. Auch welche die nicht mit einigen Grundideen übereinstimmen. Diskussion bringt die Sprache Ruby und das Framework und somit auch die Community weiter.
+
+// Tour durch unser Source-Repo
+== Struktur
+
+Die wichtigsten Verzeichnisse und Dateien einer Rails Applikation auf einen Blick:
+
+* *app*: Hier befindet sich der eigentliche Applikationscode. (Models, Views, Controller, JS/CSS, ...).
+* *config*: Hier finden sich alle möglichen Konfigurationen wie z.B. die Zugangsdaten zur Datenbank, die Routen, verschiedene Einstellungen für das Framework, Deploymenteinstellungen oder Ähnliches.
+* *db*: Der db-Ordner beinhaltet Datenbank-Migrationen, das Schema der Datenbank sowie Testdaten für die Entwicklung.
+* *lib*: Hier kann eigener Bibliothekscode abgelegt werden (selten verwendet).
+* *public*: Alle Dateien die hier liegen sind statisch über die Webanwendung später erreichbar. (z.B. Favicon, Fehlerseiten, o.Ä.)
+* *.ruby-version*: Enthält die Ruby Version der Anwendung (wird von Ruby Versionsmanagern genutzt um automatisch die Ruby Version zu wechseln).
+* *Capfile*: Für das Deployment notwendig
+* *Gemfile*: Enthält alle Abhängigkeiten zu Bibliotheken die benötigt werden
+
+Es gibt noch ein paar mehr. Die oben genannten sind aber die wichtigsten und am meisten verwendeten.
+
+== Routen
+
+Wird ein Request an die Anwendung gemacht wird zunächst geprüft welche Stelle im Code zuständig ist um die Anfrage zu bearbeiten. Das geschieht meistens in Abhängigkeit vom Pfad (www.example.com/*test/anmelden*) und der HTTP-Methode (Get, Post, Patch, Delete, ...). Diese Zuordnung geschieht in Rails über die Routen, welche in _config/routes.rb_ definiert werden.
+
+Rails stellt dafür verschiedene Methoden bereit. Weitere Informationen dazu können in den link:https://guides.rubyonrails.org/routing.html[Rails Guides] gefunden werden.
+ 
+== Model, View, Controller (MVC)
+
+=== Controller
+
+Eine Route, wie oben beschrieben, verweist dann auf eine Action in einem Controller. Ein Controller ist eine Ruby Klasse, welche in _app/controllers_ liegt und von `ActionController::Base` erbt. Rails erstellt automatisch einen `ApplicationController`, von welchem dann meist weiter vererbt wird.
+
+Eine Action ist nichts anderes als eine Methode. Diese wird also beim Zugriff über eine bestimmte Route aufgerufen und bestimmt was nun mit der Anfrage des Nutzers passieren soll.
+
+Häufig werden HTML-Views generiert und zurückgegeben oder es wird auf einen anderen Pfad weitergeleitet. Rails hilft da natürlich. Weitergeleitet werden kann mittels der `redirect_to` Methode.
+
+```ruby
+class PagesController < ApplicationController
+
+  def test
+    redirect_to '/'
+  end
+
+end
+```
+
+Oben stehendes Beispiel würde auf die Hauptseite weiterleiten.
+
+Mittels der `render` Methode können Views gerendert werden (sowohl HTML als auch andere Formate).
+
+```ruby
+class PagesController < ApplicationController
+
+  def test
+    render 'show'
+  end
+
+end
+```
+
+Standardmäßig versucht Rails eine View zu rendern die in dem zum Controller zugehörigen Pfad liegt und den Namen der Action trägt. In dem Fall z.B. _app/views/pages/show_ wenn kein `render` Befehl gemacht wird.
+
+Die Kommunikation mit der View geschieht über Instanzvariablen (siehe Ruby Einführung). Diese können im Controller definiert werden und sind dann ebenfalls in der View verfügbar.
+
+Innerhalb einer Action hat man zudem Zugriff auf einige wichtige Informationen die mit dem Request zusammenhängen. Zum einen kann man auf den Request selbst zugreifen mit der `request`-Methode. Viel wichtiger ist jedoch meistens die `params` Methode, welche alle Parameter zu einem Request mitbringt. Parameter sind in Rails zum einen zusätzliche Daten in dem Pfad wie `/experiments/*1*/show?*foo=bar*` und zum anderen Daten die über Formulare übermittelt werden. Es gibt ein Objekt der Klasse `ActionController::Parameters` zurück, welches in seinem Aufbau einem Hash ähnelt.
+
+Warum ist es nun kein Hash? Es gibt die Möglichkeit Parameter direkt an eine Klasse zu übergeben, welche dann automatisch alle Attribute von diesen Parametern setzt. Nun wäre es aber möglich, dass die Parameter nicht das enthalten was man selbst erwartet (User Input). Ein klassisches Beispiel ist, dass ein Nutzer ein Attribut `admin` hat, welches ihn zum Admin macht. Natürlich wird man dies nicht einem Formular anbieten, aber Nutzer können Parameter auch händisch manipulieren. Um zu verhindern, dass solche Probleme auftreten, wurden Möglichkeiten geschaffen Parameter nach ihrem Namen zu erlauben. Häufig macht man das mit solch einem Ansatz:
+
+```ruby
+class UsersController < ApplicationController
+
+  def update
+    user = User.find(params[:id].to_i)
+    user.update(user_params)
+  end 
+
+  def user_params
+    params.require(:user).permit(
+      :name,
+      :birth_date
+    )
+  end
+
+end 
+```
+
+Obiges Snippet würde nur Parameter in der Form `{ "user" => { "name" => "..", "birth_date" => "..." } }` erlauben.
+
+Mehr Informationen zu Controllern sind in den link:https://guides.rubyonrails.org/action_controller_overview.html[Rails Guides] zu finden.
+
+=== Model
+
+Models sind Klassen, welche in _app/models_ liegen und von `ActiveRecord::Base` erben. Auch hier wird häufig eine Basisklasse `ApplicationRecord` verwendet.
+
+Sie bilden eine Verbindung zwischen Datenbank und Klassen im Source Code. ActiveRecord ist die dazu gehörende Rails-eigene Bibliothek. Weitere Informationen zu detaillierter Nutzung dieser in <<ActiveRecord Basics>>.
+
+Models bilden also solche Klassen ab, die persistent gespeichert werden sollen. Sie besitzen Möglichkeiten zum Erstellen, Aktualisieren und Löschen von Einträgen ohne manuell irgendwelche SQL Queries schreiben zu müssen. Sie halten zudem Teile der Businesslogik die das jeweilige Objekt betrifft.
+
+An der Stelle ein kurzer Einblick in ein typisches Dilemma in der Rails Welt: Kommt meine Businesslogik in den Controller oder in die Models? Dazu gibt es verschiedenste Meinungen und ich will hier keine von beiden bevorzugen oder sagen wie es am besten ist. Es ist nur eine Frage mit der sich Beginner oft herumtreiben und die eventuell zu schwer lesbaren oder unnötig komplexen Code führen kann. Als Daumenregel gilt für mich immer, dass man ein Mittelmaß finden sollte. Man entwickelt ein gewissen Gefühl dafür und auch professionelle Rails Entwickler haben damit immer mal Probleme (die Alternative zu dem Problem sind dann Service-Objekte).
+
+Models können theoretisch auch einfache Ruby Klassen sein (die nicht von `ActiveRecord::Base`) erben. Das ist nur eben der Standard, da man häufig Objekte in einer Datenbank persistieren will. Alternativ kann man auch das Modul `ActiveModel::Model` inkludieren, welches die Persistenzschicht auslässt.
+
+=== View
+
+Views sind das was der Nutzer am Ende zu sehen bekommt. In einem Monolith ist das meistens HTML. Es könnte aber genauso gut JSON oder XML oder einfach nur Text sein.
+
+Views leben in _app/views_. Standardmäßig legt man sie in einem zum Controller passenden Pfad ab (PagesController erwartet Views z.B. in _app/views/pages_).
+
+Wie schon erwähnt kann man in Views auf Instanzvariablen aus Controllern zugreifen und diese nutzen um dynamische Inhalte zu generieren.
+
+==== Slim
+
+Standardmäßig werden in Rails standard-HTML Dateien verwendet. Die Möglichkeit in diesen Ruby Code zu nutzen nennt sich `erb` (Embedded Ruby). So hat man dann meistens `.html.erb` Dateien. 
+
+Rails unterstützt jedoch auch andere Sprachen um HTML zu generieren. Eine häufig genutzte Variante ist Slim. Die Kurzfassung der Syntax ist:
+
+* HTML ohne schließende Tags
+* Tags ohne <>-Zeichen
+* Text durch | kennzeichnen
+* Ruby-Ausdrücke mit einem Bindestrich davor
+* Ruby-Ausdrücke dessen Ergebnisse angezeigt werden sollen mit einem Gleichheitszeichen davor
+
+Beispiel:
+
+```erb
+<!-- app/views/users/show.html.erb -->
+<h1><%= @user.name %></h1>
+
+<p>Geburtsdatum: <%= @user.birth_date %></p>
+```
+
+```slim
+/ app/views/users/show.slim
+h1 = @user.name
+p 
+  | Geburtsdatum:
+  = @user.name
+```
+
+Hilfreiche Links:
+
+* https://github.com/slim-template/slim
+* https://html2slim.herokuapp.com
+
+==== Layouts
+
+Die meisten Views haben einen gemeinsamen Rahmen (HTML Head, usw.), welcher in Rails durch Layouts abgebildet wird. Diese "besonderen" Views liegen in _app/views/layouts_ und sollten das Keyword `yield` enthalten an wessen Stelle die tatsächliche View beim Rendern eingefügt wird. Im Controller kann man dann u.A. mit der `layout` Methode wählen welches Layout genutzt werden soll.
+
+==== Partials
+
+Häufig möchte man Teile von Views wiederverwenden. Dafür legt man in Rails sogenannte Partials an. Die liegen an der selben Stelle wie andere Views. Allerdings muss der Name mit einem Unterstrich beginnen. So lässt sich z.B. einfach eine Liste darstellen:
+
+```slim
+/ app/views/users/_user.slim
+li = user.name
+
+/ app/views/users/index.slim
+ul
+  - @users.each do |user|
+    = render partial: 'user', locals: { user: user }
+
+    / oder etwas eleganter:
+    = render 'user', user: user
+  
+  / oder noch etwas eleganter:
+  = render partial: 'user', collection: @users
+  
+  / oder noch viel eleganter
+  = render @users
+```
+
+Man sieht an dem Beispiel es gibt viele Wege zum Ziel. Partials müssen auch nicht unbedingt mit einem bestimmten Objekt zusammenhängen. Eine anderes Beispiel wo Partials nützlich sind ist ein Footer oder ein Werbebanner.
+
+==== Helpers
+
+Manchmal benötigt man etwas komplexeren Code um Sachen in einer View darstellen zu können. In Standard Rails gibt es dafür Helper-Klassen. Diese liegen unter _app/helpers_ und können in allen Views verwendet werden. Im Controller sind die Helper mit der `helpers`-Methode verfügbar.
+
+==== Form Helpers
+
+Um das bauen von Formularen zu vereinfachen, liefert Rails u.A. den Form Helper link:https://api.rubyonrails.org/classes/ActionView/Helpers/FormHelper.html#method-i-form_with[`form_with`].
+
+Viele Rails Projekte nutzen allerdings ein Gem, welches das ganze noch weiter vereinfachen soll. Das Gem heißt link:https://github.com/heartcombo/simple_form[SimpleForm].
+
+Angenommen man hat also ein Model `Person` mit den Attributen `name` und `age` und will diese in einem Formular erfassen. So kann man SimpleForm folgendermaßen nutzen:
+
+```slim
+/ app/views/people/_form.slim
+
+= simple_form_for @person do |f|
+  = f.input :name
+  = f.input :age, as: :integer, input_html: { min: 0 }
+  = f.submit
+```
+
+So hätte man ein einfaches Formular um einen Nutzer anzulegen oder zu bearbeiten. Mehr Infos findet sich in der Dokumentation von SimpleForm.
+
+==== Assets
+
+Alle CSS-, Javascript sowie Bilddateien heißen Assets. Sie sind im Ordner `app/assets` zu finden und werden von Rails kompiliert und genutzt.
+
+Statt CSS wird die Variante Sass genutzt die zu CSS kompiliert wird. Sass bietet eine einfachere Syntax und wird daher gern genutzt.
+
+Neue Sass Dateien können mittels `@import "file"` zu einer Datei hinzugeführt werden.
+
+Neue JS Dateien können mittels `//= require file` zu einer Datei hinzugefügt werden.
+
+In dem Layout einer Anwendung nutzt man dann einen Rails Helper um die verschiedenen Dateien (meistens eine JS, eine CSS und x Bilddateien) in das HTML einzubetten.
+
+```ruby
+stylesheet_link_tag 'filename'
+javascript_include_tag 'filename'
+
+image_tag 'filename'
+```
+
+In neuen Anwendung nutzt man häufig, das in der Javascript-Welt beliebte Build-Tool Webpack um Assets zu verwalten.
+
+== ActiveRecord Basics
+
+ActiveRecord stellt die Verbindung zwischen Objekten im Code und der Datenbank dar. Jede Klasse stellt (im Normalfall) eine Tabelle dar und jedes Objekt der Klasse eine Zeile in dieser Tabelle. Dafür bietet ActiveRecord verschiedene Methoden um Objekte anzulegen, zu aktualisieren oder zu löschen.
+
+=== create
+
+Mit der `create` Methode lässt sich ein Objekt in der Datenbank anlegen. Die Instanz des Objektes wird zurückgegeben.
+
+```ruby
+person = Person.create(name: 'Max')
+# => INSERT INTO people (name) VALUES ('Max')
+```
+
+__Hinweis:__ In ActiveRecord werden meist numerische IDs als Primärschlüssel genutzt. Das von `create` zurückgegebene Objekt hat dann eine ID. Man muss sich also nicht um die ID Vergabe selbst kümmern.
+
+__Hinweis:__ Häufig werden in Rails Models mit Timestamps angelegt (`created_at`, `updated_at`). Diese werden ebenfalls automatisch aktualisiert.
+
+=== persisted?
+
+Die `persisted?`-Methode gibt an ob ein Model bereits in der Datenbank gespeichert wurde. Dies kann z.B. genutzt werden um zu Prüfen ob ein `create` geklappt hat.
+
+=== update
+
+Mit der `update`-Methode kann ein Eintrag in der Datenbank aktualisiert werden. Es gibt true/false zurück je nach dem ob das Aktualisieren geklappt hat.
+
+```ruby
+person.update(name: 'Max 2')
+# => UPDATE people SET name = 'Max 2' WHERE id = ? (person.id)
+```
+
+=== save
+
+Zusätzlich zum direkten Aktualisieren oder Anlegen von Datenbankzeilen kann auch das Objekt selbst zunächst angelegt/aktualisiert werden ohne die Datenbank zu aktualisieren. Die Methode gibt true/false zurück je nach dem ob die Operation in der Datenbank erfolgreich war.
+
+```ruby
+person = Person.new
+person.name = 'Max'
+person.save
+# => INSERT ...
+person.name = 'Max2'
+person.save
+# => UPDATE ...
+```
+
+=== destroy
+
+Um ein Objekt aus der Datenbank zu löschen gibt es die `destroy`-Methode. Diese gibt ebenfalls zurück ob die Operation erfolgreich war.
+
+```ruby
+person.destroy
+# => DELETE FROM people WHERE id = ? (person.id)
+```
+
+__Hinweis:__ Es gibt auch eine `delete` Methode. Diese macht ähnliches, führt jedoch keine Callbacks (<<Callbacks>>) aus und führt nur die eine SQL Query aus.
+
+=== Associations
+
+Ein typisches Datenmodell sieht Beziehung zwischen seinen Klassen vor. Auf Datenbankebene wird dies, je nach Beziehungstyp, durch Fremdschlüssel abgebildet. Rails vereinfacht die Arbeit mit diesen Beziehungen im Code. Dafür müssen sie in den Models definiert werden.
+
+Fremdschlüssel haben standardmäßig die Form `model_id`. Wobei `model` der Name der Assoziation ist. Die Klasse leitet Rails von dem Assoziationsnamen ab. Sowohl den Fremdschlüsselname als auch die referenzierte Klasse kann aber auch unabhängig vom Assoziationsnamen gewählt werden. Dies passiert dann über Optionen an jeweiligen Assoziationsmethoden.
+
+==== 1:1
+
+Für 1:1 Beziehungen stellt Rails die Methoden `belongs_to` und `has_one` bereit. Der Unterschied liegt darin, wo der Fremdschlüssel definiert ist.
+
+Beispiel:
+
+```ruby
+# app/models/person.rb
+class Person < ApplicationRecord
+  has_one :profile
+  # Prüft das Profile einen Fremdschlüssel person_id hat.
+end
+
+# app/models/profile.rb
+class Profile < ApplicationRecord
+  belongs_to :person
+  # Prüft Fremdschlüssel person_id.
+end
+```
+
+Dadurch werden folgende Abfragen möglich:
+
+```ruby
+person = Person.create
+profile = Profile.create(person: person)
+person == profile.person
+# => true
+profile == person.reload.profile
+# => true
+```
+
+==== 1:n
+
+Für 1:n Beziehungen stellt Rails die Methoden `has_many` und `belongs_to` bereit.
+
+Beispiel:
+
+```ruby
+# app/models/house.rb
+class House < ApplicationRecord
+  has_many :windows
+  # => Rails leitet aus windows die Klasse Window ab (von Plural zu Singular da has_many)
+end
+
+# app/models/window.rb
+class Window < ApplicationRecord
+  belongs_to :house
+  # => Rails leitet aus house die Klasse House ab
+end
+```
+
+Wie man es von der klassischen Datenbankmodellierung kennt, besitzt `Window` dann den Fremdschlüssel zu `House` (standardmäßig `house_id`).
+
+Dadurch werden folgende Abfragen möglich:
+
+```ruby
+house = House.create
+window1 = Window.create(house: house)
+window2 = Window.create(house: house)
+
+house = house.reload
+house.windows.size == 2
+# => true
+house.windows == [window1, window2]
+# => true
+window1.house == house
+# => true
+```
+
+==== m:n
+
+Für m:n Beziehungen stellt Rails die Methode `has_many_and_belongs_to` bereit. Mehr Informationen dazu gibt es in den link:https://guides.rubyonrails.org/association_basics.html#the-has-and-belongs-to-many-association[Docs]. 
+
+=== where
+
+Um Abfragen an der Datenbank durchzuführen gibt es unter anderem die `where`-Klassenmethode. Mit ihr kann man ein WHERE in SQL abbilden.
+
+Beispiele:
+
+Standardfall:
+```ruby
+people = Person.where(lastname: 'Mustermann')
+# => SELECT * FROM people WHERE lastname = 'Mustermann'
+```
+
+Mehrere Attribute:
+```ruby
+people = Person.where(lastname: 'Mustermann', age: 18)
+# => SELECT * FROM people WHERE lastname = 'Mustermann' AND age = 18
+```
+
+Mehrere Werte:
+```ruby
+people = Person.where(age: [16, 18, 20])
+# => SELECT * FROM people WHERE age IN (16, 18, 20)
+```
+
+Eigene Bedingung:
+```ruby
+min_age = 18
+people = Person.where('age >= ?', min_age)
+# => SELECT * FROM people WHERE age >= 18
+```
+
+Nach Assoziationen:
+```ruby
+windows = Window.where(house: House.first)
+# => SELECT * FROM windows WHERE house_id = 1 
+```
+
+Negiert:
+```ruby
+people = Person.where.not(age: 18)
+# => SELECT * FROM people WHERE age != 18
+```
+
+=== find und find_by
+
+Oft brauch man nur ein Ergebnis einer WHERE Abfrage. Hierfür nutzt man `find` bzw. `find_by`. Mit `find` kann man nur nach der ID suchen:
+
+```ruby
+Person.find(1)
+```
+
+*Achtung*: Findet `find` kein Ergebnis wirft es eine `ActiveRecord::NotFound` Exception. Wird diese in einem Controller geworfen, rendert Rails automatisch eine 404-Seite.
+
+Mit `find_by` sucht man nach einer eigenene Bedingung so wie mit `where`:
+
+```ruby
+Person.find_by(firstname: 'Max', lastname: 'Mustermann')
+```
+
+Man sollte darauf achten `find_by` nur zu nutzen, wenn man sicher ist, dass es nur ein Ergebnis gibt. Andernfalls bekommt man einfach das Erste was die Datenbank ausgibt zurück. Findet `find_by` kein Objekt wird `nil` zurückgegeben.
+
+=== order
+
+ORDER BY SQL Anweisungen bildet Rails mit der `order`-Methode ab. Diese kann z.B. mit der `where` Methode kombiniert werden.
+
+```ruby
+people = Person.where('age > 18').order(:age)
+# => SELECT * FROM people WHERE age > 18 ORDER BY age
+
+people = Person.order(age: :desc)
+# => SELECT * FROM people ORDER BY age DESC
+```
+
+=== Preloading
+
+Häufig hat man folgendes Ablauf im Code:
+
+```ruby
+# app/controllers/houses_controller.rb
+class HousesController < ApplicationController
+  def show
+    @house = House.find(params[:id])
+  end
+end
+```
+
+```slim
+/ app/views/houses/show.slim
+h1 = @house.name
+ul
+  = @house.windows.each do |window|
+    li = window.name
+```
+
+Dies würde dazu führen, dass jedes `Window` Objekt einzeln im SQL abgerufen wird. Man spricht dann von einer sogenannten N+1 Query, wobei N die Anzahl an Fenstern wäre und die eine Query wäre die um das Haus zu finden.
+
+Auf Datenbankebene gibt es dafür Joins. Rails bietet verschiedene Möglichkeiten an um diese durchzuführen. Um obiges Problem zu lösen, müsste man nur den Controller-Code anpassen:
+
+```ruby
+# app/controllers/houses_controller.rb
+class HousesController < ApplicationController
+  def show
+    @house = House.find(params[:id]).includes(:windows)
+  end
+end
+```
+
+Mehr dazu gibt es in den link:https://guides.rubyonrails.org/active_record_querying.html#eager-loading-associations[Docs].
+
+
+=== Callbacks
+
+Callbacks sind Methoden die zu einem bestimmten Zeitpunkt automatisch ausgeführt werden. So zum Beispiel vor oder nach dem Speichern eines Objektes.
+
+Es ist möglich einen Callback als Block direkt zu definieren oder einen Methodennamen zu übergeben, der dann aufgerufen wird.
+
+```ruby
+class Person < ApplicationRecord
+  before_update do 
+    puts "before update"
+  end
+
+  after_update :log_update
+
+  def log_update
+    puts "after update"
+  end
+end
+```
+
+Eine Liste aller Callbacks und weitere Informationen, wie z.B. das bedingte Ausführen von Callbacks, sind link:https://guides.rubyonrails.org/active_record_callbacks.html[hier] dokumentiert.
+
+=== Scopes
+
+Scopes sind eine Möglichkeit häufig verwendete Queries an einem Model zu definieren. Sie können dann als Klassenmethoden des Models aufgerufen werden.
+
+Beispiel:
+
+```ruby
+class Person < ApplicationRecord
+  scope :adult, ->() { where('age >= 18') }
+end
+
+adults = Person.adult
+# => SELECT * FROM people WHERE age >= 18
+```
+
+Es gibt auch die Möglichkeit Argumente an Scopes zu übergeben:
+
+```ruby
+class Person < ApplicationRecord
+  scope :older_than, ->(age) { where('age > ?', age) }
+end
+
+people = Person.older_than(17)
+# => SELECT * FROM people WHERE age > 17
+```
+
+=== Nested Attributes 
+
+Häufig hat man den Fall, dass man ein Eltern-Model mit mehreren Assoziation in einem Formular darstellen will. Damit man nicht jedes Model selbst anlegen muss, bietet Rails die Methode `accepts_nested_attributes_for :relation` an.
+
+Diese legt dann die Methode `relation_attributes=` am Model an. Somit ist es möglich einen Parameter-Hash der Form
+
+```ruby
+{
+  relation_attributes: {
+    foo: 'bar'
+  }
+}
+```
+
+direkt an den Konstruktor des Models zu übergeben. Rails kümmert sich dann um das Anlegen, Löschen oder Bearbeiten der Relation.
+
+Es ist auch möglich mehrere Assoziationen an die Methode zu übergeben:
+
+```ruby
+class Person < ApplicationRecord
+  belongs_to :profile
+  has_many :parents, class_name: 'Person'
+  
+  accepts_nested_attributes_for :profile, :parents
+end
+```
+
+Die wichtigste Option der Methode ist `allow_destroy`, mit welcher es auch möglich wird mittels eines Parameters (`_destroy`) eine Assoziation aufzulösen und das jeweilge Model zu löschen.
+
+
+== ActiveModel Basics
+
+Hier wird nur auf ActiveModel in Verbindung mit Rails eingegangen.
+
+=== Validations
+
+Nicht jeder Wert den ein Nutzer in einem Formular eingibt ist auch semantisch korrekt. Um die Eingaben an einem Model zu prüfen gibt es eine ganze Menge an Validierungen die Rails bereitstellt. Dabei gibt es immer einen gleichen Aufbau um Validierungen zu definieren.
+
+```ruby
+class Person < ApplicationRecord
+  validates :age, numericality: true
+end
+```
+
+Das obige Beispiel validiert z.B. dass das Attribut `age` eine Zahl sein muss.
+
+Rails bietet standardmäßig bereits viele Validierungen an, die hier nicht alle aufgelistet werden sollen. Eine Liste findet man link:https://guides.rubyonrails.org/active_record_validations.html#validation-helpers[hier].
+
+Viele Validierungen erlauben auch zusätzliche Optionen. Diese gibt man dann folgendermaßen an:
+
+```ruby
+class Person < ApplicationRecord
+  validates :age, numericality: { greater_than_or_equal_to: 18 }
+end
+```
+
+Bedingte Validierungen kann man folgendermaßen definieren:
+
+```ruby
+class Person < ApplicationRecord
+  validates :age, numericality: true, if: ->{ self.orders.alcoholic.present? }
+end
+```
+
+Man kann auch mehrere Validierungen kombinieren:
+
+```ruby
+class Person < ApplicationRecord
+  validates :age,
+      presence: true,
+      numericality: true
+end
+```
+
+Man kann auch Methoden definieren die zum Aufruf der Validierungen ausgeführt werden:
+
+```ruby
+class Person < ApplicationRecord
+  validate :age_restrictions
+
+  def age_restriction
+    if age < 18
+      errors.add(:age, :invalid)
+    end
+  end
+end
+```
+
+Validierungen werden automatisch, beim Speichern eines Models aufgerufen (z.B. über `save` oder `create`). Man kann sie auch manuell mit der Methode `valid?` aufrufen.
+
+Ist das Model nicht valide, geben die Methoden `false` zurück.
+
+
+=== Errors
+
+Jedes Model hat die Methode `errors`. Wenn Validierungen für das Model fehlschlagen, kann man damit dem Nutzer Fehlermeldungen anzeigen lassen. Die Methode liefert ein Objekt der Klasse `ActiveModel::Errors` zurück, welches wiederum verschiedene Methoden besitzt. Die wichtigstens Methoden um über Errors zu iterieren sind `full_messages` (Array der Fehlermeldungen) und `messages` (Hash mit dem Attribut als Key und den Nachrichten als Value) (z.B. für Fehlermeldungen).
+
+Man kann selbst eigene Errors an das Error-Objekt hinzufügen (z.B. in einer einenen Validierungs-Methode).
+
+```ruby
+errors.add(:attribute, :type, message: '')
+```
+
+Wenn man die Option `message` weglässt, wird versucht den Fehler mit I18n zu übersetzen.
+
+== Migrations
+
+Um Änderungen am Datenbankschema vorzunehmen nutzt man in Rails Migrationen. Das sind Dateien die eine Änderung am Schema beschreiben (Tabelle anlegen, Feld hinzufügen, Feld ändern, usw.). Migrationen sollten umkehrbar sein. Alle Migrationen liegen im Ordner `db/migrate`.
+
+Rails hält das aktuelle Datenschema in der Datei `db/schema.rb`. Dabei findet sich auch die aktuelle Schemaversion die genutzt wird um herauszufinden, ob neue Migrationen ausgeführt werden müssen.
+
+Eine neue Migration kann man mit dem Befehl `rails g migration <name>` hinzufügen.
+
+Mehr Informationen dazu was man mit Migrationen machen kann gibt es link:https://guides.rubyonrails.org/active_record_migrations.html[hier].
+
+== I18n
+
+I18n ist eine Bibliothek zum Übersetzen von Texten in einer Anwendung. Man wählt einen Schlüssel, nach welchem die Anwendung dann in einer `.yml` Datei sucht und den entsprechenden Text anzeigt.
+
+Mehr dazu kann link:https://guides.rubyonrails.org/i18n.html[hier] nachgelesen werden.
+
+== Einfaches CRUD
+
+Ein einfaches CRUD (Create, Read, Update, Delete) lässt sich in Rails innerhalb kürzester Zeit implementieren:
+
+Neue App anlegen:
+
+```bash
+rails new blog
+cd blog
+``` 
+
+Mittels eines Generators können vorgefertigte Dateien angelegt werden:
+
+```bash
+rails generate scaffold Post name:string content:text author:string
+```
+
+Dieser Command wird folgende Dateien anlegen und befüllen:
+
+* `app/models/post.rb`
+* `app/controllers/posts_controller.rb`
+* `app/views/posts/index.html.erb`
+* `app/views/posts/edit.html.erb`
+* `app/views/posts/show.html.erb`
+* `app/views/posts/new.html.erb`
+* `app/views/posts/_form.html.erb`
+* `db/migrate/0000000_create_posts.rb`
+* ... und einige mehr
+
+Migrationen ausführen:
+
+```bash
+rails db:migrate
+```
+
+Den Server starten:
+
+```bash
+rails s
+```
+
+Und zu `localhost:3000/posts` navigieren!
+
+== Best Practices
+
+* Klassennamen müssen zu Ihrem Pfad passen. (z.B. `app/models/api/player.rb` muss die Klasse `Api::Player` definieren)
+* Halte dich an den Ruby Styleguide
+* Füge nicht unnötig Gems zum Projekt hinzu
+* Nutze *nur* gesicherte Parameter
+* Baue keine eigenen SQL Queries mit Nutzereingaben (ohne ActiveRecord zu nutzen)
+* Teste deinen Code (sowohl Unit- als auch Systemtests)
+
+== Interessante Commands
+
+```bash
+# Öffnet Rails Konsole => irb im Rails Context
+rails c
+
+# Beispieldaten (Seeds) laden
+rails db:seed
+
+# Routen anzeigen
+rails routes
+```
+
+Debugging im Code ist möglich mittels 
+```ruby
+binding.pry
+```
+
+== Einrichtung
+
+* Ruby installieren
+
+Neues Projekt: 
+
+* `gem install rails`
+* `rails new` - um ein neues Projekt anzulegen
+
+Bestehendes Projekt:
+
+```bash
+# Node JS installieren
+apt install nodejs libsqlite3-dev
+
+# Projekt klonen (falls noch nicht getan)
+git clone https://github.com/Schmiddl99/experimenteverwaltung-i2.git
+
+# Verzeichnis betreten
+cd experimenteverwaltung-i2/src
+
+# Aktuellen Branch verwenden (andere sind noch kaputt)
+git checkout 196_richard_ruby-and-rails-update
+
+# Bundler installieren (falls noch nicht getan)
+gem install bundler
+
+# Gems installieren
+bundle install
+
+# Datenbank anlegen / Migrationen vornehmen
+rails db:prepare
+
+# Server starten
+rails s
+```
+
+
+== Hilfreiche Links
+
+* https://api.rubyonrails.org
+* https://guides.rubyonrails.org
+* https://github.com/rails/rails
