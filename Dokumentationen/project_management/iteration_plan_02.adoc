@@ -28,8 +28,8 @@ include::../_includes/default-attributes.inc.adoc[]
 
 * Erreichen der Bestätigung der Vision durch den Kunden; über die initialen Anforderungen herrscht Einigkeit
 * Erhebung der systemweiten Anforderungen
-* Use Case Model
-* Risikoliste
+* Erarbeitung des Use Case Model
+* Erarbeitung der Risikoliste
 * Wireframes für jeden essentiellen Funktionsschritt nach aktuellem Anforderungskatalog
 * *Wissensaustausch:* Interessierte Mitglieder sollen ein GitHub-Tutorial erhalten, was einerseits die Arbeit im Team fördert, andererseits auch einen weiteren Mehrwert innerhalb dieses Moduls schafft.
 
@@ -132,7 +132,7 @@ a|* Nach dem Entwurf der ersten Wireframes wurden diese teilweise wieder verworf
 ** *Understand what to build:* Grundsätzlich verstanden. *Erfolgskriterien* sind noch nicht zu 100% klar - z.B. Ablaufplan des Buchens. Journal wurde angenommen. *Konfliktpunkt* ist die Kopierfunktion. Grenzen wurden gesetzt: Aussprache gegen mobile Version. Oberstes Erfolgskriterium: Leichte Verständlichkeit (in Design und Sprache anwendergerecht) 
 ** *Identify key system functionality:* Die kritischsten Anforderungen wurden identifiziert: *Buchungen durchführen*, *Buchungen anzeigen* (-> Dozentenwoche), Historie (als Sahnehäubchen?)  
 
-** *Determine at least one possible solution:* Die Vision ist technisch umsetzbar
+** *Determine at least one possible solution:* Unsere Projekt baut auf einem bestehenden System auf. Dieses wurde durch uns analysiert und verstanden. Wir können das Vorgängersystem benutzen um die Kundenwünsche umzusetzen. Daraus folgt, dass die Vision technisch umsetzbar ist. 
 
 ** *Understand:* 
 *** Risiken sind verstanden 

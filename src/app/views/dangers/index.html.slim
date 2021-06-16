@@ -1,6 +1,6 @@
 .page-header
-  = link_to new_danger_path, class: 'btn btn-secondary btn-hover--jade pull-right' do
-    = raw "#{icon("plus")} #{t('activerecord.models.danger', default: "Danger")} #{t('interface.new')}"
+  = link_to new_danger_path, class: 'btn btn-secondary btn-hover--jade float-right' do
+    = raw "#{icon("fas", "plus")} #{t('activerecord.models.danger', default: "Danger")} #{t('interface.new')}"
   h1 = "#{t('activerecord.models.danger', default: "Danger")} #{t('interface.index')}"
 
 .table-responsive
@@ -22,7 +22,7 @@
             .text-center
               = link_to image_tag(danger.file.url, class:"img-fluid img-thumb w-75"), danger_path(danger)
           td.text-center
-            = link_to icon("pencil").html_safe, edit_danger_path(danger), class: "btn btn-secondary btn-hover--jade"
+            = link_to icon("fas", "pencil-alt").html_safe, edit_danger_path(danger), class: "btn btn-secondary btn-hover--jade"
             = " "
-            = link_to icon("trash").html_safe, danger, method: :delete, data: { confirm: t('interface.confirm') }, class: "btn btn-danger"
+            = link_to icon("fas", "trash").html_safe, danger, method: :delete, data: { confirm: t('interface.confirm') }, class: "btn btn-danger"
 = will_paginate @dangers, renderer: WillPaginate::ActionView::BootstrapLinkRenderer

@@ -8,6 +8,6 @@
       .col-sm-1.edit-button-equipment
         - if f.object.equipment.present?
           button.btn.btn-link.times-nested-forms.equipment-modal(type="button" data-id=f.object.equipment.id data-name=f.object.equipment.name data-location=f.object.equipment.location data-inventory_nr=f.object.equipment.inventory_nr data-adhoc=f.object.equipment.adhoc)
-            = icon("edit")
+            = icon("fas", "edit")
       .col-sm-1
-        = link_to_remove_association icon("trash"), f, class: "btn btn-link times-nested-forms"
+        = link_to_remove_association icon("fas", "trash"), f, class: "btn btn-link times-nested-forms"

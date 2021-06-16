@@ -46,6 +46,7 @@ Fabricator :medium do
   name 'TestMedium'
   file { File.open('spec/fixtures/file1.jpg') }
   experiment { Fabricate :experiment }
+  sort 0
 end
 
 Fabricator :document do
@@ -63,4 +64,32 @@ end
 Fabricator :experiment_danger_assignment do
   experiment { Fabricate :experiment }
   danger { Fabricate :danger }
+end
+
+Fabricator :course do
+  name { Faker::Name.name }
+end
+
+Fabricator :order do
+  user { Fabricate :user, role: :lecturer }
+  comment { "Testkommentar" }
+  course_at_date { Date.current + 1.day }
+  course_at_time { "12:00" }
+  course
+  ordered_experiments(count: 1)
+
+  before_validation do |order|
+    order.ordered_experiments.each do |ordered_experiment|
+      ordered_experiment.order = order
+    end
+  end
+end
+
+Fabricator :ordered_experiment do
+  sort { 1 }
+  experiment { Fabricate :dummy_experiment }
+end
+
+Fabricator :dummy_experiment do
+  name { "Dummy Experiment Name" }
 end

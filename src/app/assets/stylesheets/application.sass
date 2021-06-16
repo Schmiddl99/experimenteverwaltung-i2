@@ -9,9 +9,11 @@ $link-hover-color: $brand-primary !default
 @import "bootstrap"
 @import "bootswatch/lumen/variables"
 @import "bootswatch/lumen/bootswatch"
+@import "bootstrap-datepicker3.min"
 @import "font-awesome-sprockets"
 @import "font-awesome"
 @import "layouts"
+@import "print"
 
 body 
   padding-top: 3.5rem
@@ -86,3 +88,13 @@ main
 .img-preview:not(.hidden)
   height: 100px
   margin-bottom: 20px
+
+.datepicker table tr td.active.active, .datepicker table tr td.active.highlighted.active, .datepicker table tr td.active.highlighted:active, .datepicker table tr td.active:active, .datepicker table tr td.active.active.focus, .datepicker table tr td.active.active:focus, .datepicker table tr td.active.active:hover, .datepicker table tr td.active.highlighted.active.focus, .datepicker table tr td.active.highlighted.active:focus, .datepicker table tr td.active.highlighted.active:hover, .datepicker table tr td.active.highlighted.focus:active, .datepicker table tr td.active.highlighted:active:focus, .datepicker table tr td.active.highlighted:active:hover, .datepicker table tr td.active.focus:active, .datepicker table tr td.active:active:focus, .datepicker table tr td.active:active:hover
+  background-color: $secondary
+
+#ordersAccordion
+  .card-header
+    button
+      text-transform: none
+    .controls
+      font-size: 1.2rem

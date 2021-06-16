@@ -1,0 +1,20 @@
+.page-header
+  h1 Voreinstellungen
+
+= simple_form_for(@order, url: checkout_path) do |f|
+  = f.association :course, collection: Course.order(Arel.sql("name = 'Sonstiges', name")), label: "Studiengang", prompt: "Bitte Studiengang auswählen"
+  = f.input :alternative_course_name, label: "Alternativer Studiengangname <small class='text-muted'>(optional)</small>".html_safe
+  = f.input(\
+      :course_at_date,
+      wrapper: :input_group,
+      append: icon("fas", "calendar"),
+      required: true,
+      as: :string,
+      label: "Datum",
+      input_html: { class: "datepicker" } \
+  )
+  = f.input :course_at_time, required: true, label: "Uhrzeit"
+  = f.error :course_at, class: "invalid-feedback d-block"
+
+  = footer do
+    - f.submit "weiter zu Experimenten", class: "btn btn-primary mr-2"

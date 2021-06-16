@@ -1,0 +1,14 @@
+.page-header
+  h1 Warenkorb
+  h3.mt-4 Ihre Buchung wurde gespeichert!
+
+p.mt-3
+  | Ihre Buchung für den Studiengang
+  =<> @order.course.name
+  | am
+  =<> l(@order.course_at, format: :time_at)
+  | wurde gespeichert.
+
+p Sie finden eine Übersicht Ihrer Buchungen im Journal.
+
+= link_to("zurück zur Hauptseite", root_path, class: "btn btn-secondary mt-5")

@@ -8,15 +8,19 @@ html
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' 
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   body
-      - if user_signed_in?
-        = render "layouts/header"
-      .container
-        main
-          - if notice
-            p.alert.alert-primary = notice.html_safe
-          - if alert
-            p.alert.alert-danger = alert.html_safe
-          = yield
-      - unless @disabel_footer
-        = render "layouts/footer"
-
+    - if user_signed_in?
+      = render "layouts/header"
+    .container-fluid
+      .row
+        .col-md-6.offset-md-3
+          main
+            - if notice
+              p.alert.alert-primary = notice.html_safe
+            - if alert
+              p.alert.alert-danger = alert.html_safe
+            = yield
+        .col-md-2.d-print-none
+          - if @order.present? && ![CheckoutsController, OrdersController].include?(controller.class)
+            = render "checkouts/sidebar"
+    - unless @disable_footer
+      = render "layouts/footer"

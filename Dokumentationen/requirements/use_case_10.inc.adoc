@@ -1,0 +1,70 @@
+//Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
+== Use-Case: Verwalten der Studiengänge
+===	Kurzbeschreibung
+Der Admin hat die Möglichkeit Studiengänge anzulegen, zu löschen und zu bearbeiten. 
+
+===	Kurzbeschreibung der Akteure
+* Admin
+
+=== Vorbedingungen
+//Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
+* User muss angemeldet sein.
+* User muss sich an einer beliebigen Stelle im EMS befinden und auf die Studiengangsverwaltungsübersicht wechseln. 
+
+=== Standardablauf (Basic Flow)
+//Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
+
+==== Studiengang anlegen
+
+. User klickt in der Studiengangsübersicht auf "Studiengang anlegen"
+. User gibt den gewünschten Namen des Studiengangs in ein Textfeld ein. 
+. User speichert den Studiengang durch Bestätigung.
+
+==== Studiengang bearbeiten
+
+. User klickt in der Studiengangsübersicht auf das Icon "Studiengang bearbeiten" 
+. User ändert den Namen des Studiengangs im Textfeld. 
+. User speichert die Änderung durch Bestätigung.
+
+==== Studiengang deaktivieren
+
+. User klickt in der Studiengangsübersicht auf das Icon "Studiengang deaktivieren".
+. User bestätigt die Deaktivierung, nachdem er durch Benachrichtigung darauf hingewiesen wurde. Hierdurch wird der Studiengang in die gesonderte Übersicht der deaktivierten Studiengänge verschoben. 
+
+==== Studiengang reaktivieren
+
+. User klickt in der Übersicht der deaktivierten Studiengänge auf das Icon "Studiengang reaktivieren".
+. User bestätigt das Reaktivieren, nachdem er durch Benachrichtigung darauf hingewiesen wurde. Hierdurch wird der Studiengang zurück in die Studiengangsübersicht verschoben. 
+
+=== Alternative Abläufe
+==== Keine Studiengänge vorhanden
+
+Wenn keine Studiengänge vorhanden sind, wird eine leere Liste angezeigt. Auf der Übersichtsseite besteht nun nur noch die Möglichkeit einen Studiengang anzulegen.  
+
+
+//Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
+==== Abbruch 
+Der User kann die Änderung oder Anlegung jederzeit verwerfen/abbrechen. 
+
+//=== Unterabläufe (subflows)
+//Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
+
+
+//=== Wesentliche Szenarios
+//Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
+
+
+===	Nachbedingungen
+//Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
+* Der User befindet sich wieder auf der Verwaltungsübersicht und wurde über Erfolg der ausgeführten Tätigkeit informiert. 
+
+=== Besondere Anforderungen
+//Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
+* Die Studiengänge können nur deaktiviert (nicht gelöscht) werden, um die Konsistenz der Bestellungen zu gewährleisten. 
+
+
+//=== Wireframes
+
+//image::WF_0_BuchungStarten.PNG[Buchung starten]
+
+//.Erklärung:

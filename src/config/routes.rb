@@ -16,4 +16,10 @@ Rails.application.routes.draw do
   resources :users
   resources :sub_categories
   resources :categories
+  resource :checkout do
+    patch :add_experiment
+    delete :remove_experiment
+  end
+  resources :orders, only: [:index, :edit, :destroy], path: 'journal'
+  resource :lecturer_week, only: [:new, :show]
 end

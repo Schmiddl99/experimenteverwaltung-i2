@@ -1,7 +1,7 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
 == Use-Case: Experiment buchen
 ===	Kurzbeschreibung
-Buchungsablauf von Exp. vom Buchungsstart bis zum fertigen Eintrag in der DB
+Buchungsablauf eines Experiments vom Buchungsstart bis zum fertigen Eintrag in der DB
 
 ===	Kurzbeschreibung der Akteure
 * Dozent
@@ -13,28 +13,50 @@ Buchungsablauf von Exp. vom Buchungsstart bis zum fertigen Eintrag in der DB
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
+[%header, cols="1,4"]
+|===
+|Beschreibung
+|Wireframe
 
-. Der Use Case beginnt, wenn User auf "Buchung starten" klickt
-. Neue Seite mit Formular (Uhrzeit, Datum, Studiengang) -> Vorauswahl für aktuellen Buchungsvorgang
-. Exp.-Übersicht wird geöffnet
-. Exp. können über Warenkorbsymbol zum aktuellen Buchungsvorgang hinzugefügt werden
-. Wird auf "Buchung abschließen" geklickt, wird man zum Checkout (neue Seite) weitergeleitet
-. Im Checkout werden die aktuellen Buchungen aufgezählt, mit Möglichkeit zur Löschung und Kommentierung jeder Buchung
-. Nach Klicken des Users auf "Buchung speichern", wir der User auf eine Buchungsbestätigungsseite geleitet
-. Der UC endet damit, dass der User die Buchungsbestätigung bestätigt
+| 1. Der Use Case beginnt, wenn User auf "Buchung starten" klickt
+a| image::WF_0_BuchungStarten.PNG[Buchung starten]
 
+| 2. Neue Seite mit Formular (optionaler Titel, Uhrzeit, Datum, Studiengang) -> Vorauswahl für aktuellen Buchungsvorgang
+a| image::WF_1_Voreinstellungen.PNG[Voreinstellungen]
+| 3. Exp.-Übersicht wird geöffnet
+| Kein Wireframe verfügbar
+| 4. Exp. können über Warenkorbsymbol zum aktuellen Buchungsvorgang hinzugefügt werden
+a| image::WF_2_ExperimentWaehlen.PNG[Experiment wählen]
+
+| 5. Wird auf "Buchung abschließen" geklickt, wird man zum Checkout (neue Seite) weitergeleitet
+|Kein Wireframe verfügbar
+| 6. Im Checkout werden die aktuellen Buchungen aufgezählt, mit Möglichkeit zur Löschung von Experimenten und Kommentierung der Vorlesung. Auch ist es möglich die Reihenfolge der Experimente mit Drag and Drop zu ändern
+a| image::WF_3_Checkout.PNG[Checkout]
+| 7. Nach Klicken des Users auf "Buchung speichern", wir der User auf eine Buchungsbestätigungsseite geleitet
+a| image::WF_4_BuchungBestaetigt.PNG[Buchung wird bestätigt]
+| 8. Der UC endet damit, dass der User die Buchungsbestätigung bestätigt
+|Kein Wireframe verfügbar
+|===
 === Alternative Abläufe
+==== Benutzerdefiniertes Experiment buchen 
+
+Es ist möglich ein datenbankfremdes Experiment hinzuzufügen. Dazu gibt es die Möglichkeit nach dem Klick auf einen Button einen selbstgewählten Titel einzugeben. 
+
+==== Fehlerhafte Daten im Checkout angegeben 
+
+Versucht der Nutzer eine Buchung mit null Experimenten oder einem Kommentar, der länger als x Zeichen ist zu speichern, erscheint eine Fehlermeldung, die den Nutzer auf seinen Fehler hinweist. 
+
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
 ==== Abbruch des Buchungsvorgangs
-Wenn der User ab Schritt 2 des Standardablaufes die Buchung abbricht, dann wird der Use Case beendet. Es wird keinen Eintrag in der DB geben. Selbiges ist im Chekout unter Schritt 6 möglich.
+Wenn der User ab Schritt 2 des Standardablaufes die Buchung abbricht, dann wird der Use Case beendet. Es wird keinen Eintrag in der DB geben. Selbiges ist im Checkout unter Schritt 6 möglich.
 
-=== Unterabläufe (subflows)
+//=== Unterabläufe (subflows)
 //Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
---- keine Vorhanden ---
 
-=== Wesentliche Szenarios
+
+//=== Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
---- keine abweichenden Szenarios vom Standardablauf ---
+
 
 ===	Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
@@ -47,3 +69,10 @@ Wenn der User ab Schritt 2 des Standardablaufes die Buchung abbricht, dann wird 
 * Gäste und der Admin dürfen keine Buchungen tätigen
 * Buchungen müssen persistent gespeichert werden; Datenverlust muss ausgeschlossen werden
 * Buchungseingaben müssen temporär gespeichert werden (um ungewollten Datenverlust zu vermeiden, bspw. durch Verbindungsabbruch)
+
+=== Wireframes
+
+image::WF_0_BuchungStarten.PNG[Buchung starten]
+
+.Erklärung:
+Hier wird die eigentliche Buchung gestartet. Dies geschiet mit einem einfachen Klick auf den "Buchung starten" Knopf.

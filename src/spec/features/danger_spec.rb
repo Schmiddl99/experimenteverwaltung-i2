@@ -1,5 +1,5 @@
 require 'rails_helper'
-describe "Danger", js_errors: false do
+describe "Danger" do
   let(:user) { Fabricate :user }
   let(:random) { Faker::Config.random }
   let(:image) { Rails.root.join('spec', 'fixtures', 'file2.jpg') }
@@ -8,7 +8,7 @@ describe "Danger", js_errors: false do
   it "anlegen", js: true do
     sign_in user
     visit "/dangers"
-    find('.btn.btn-secondary.btn-hover--jade.pull-right').click
+    find('.btn.btn-secondary.btn-hover--jade.float-right').click
     expect(page.has_text?("Gefahrensymbol anlegen")).to be_truthy
     fill_in "danger_name", with: "TestName"
     fill_in "danger_label", with: "TestLabel"
@@ -38,7 +38,9 @@ describe "Danger", js_errors: false do
     Fabricate :danger
     visit "/dangers"
     expect(page.has_text?("TestGefahr")).to be_truthy
-    find('a[class="btn btn-danger"]').click
+    accept_alert('Sind Sie sicher?') do
+      find('a[class="btn btn-danger"]').click
+    end
     expect(page.has_text?("Gefahrensymbol wurde gelöscht")).to be_truthy
     expect(page.has_text?("TestGefahr")).to be_falsey
   end

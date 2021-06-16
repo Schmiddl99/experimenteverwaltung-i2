@@ -11,11 +11,11 @@ br
           i.fa.fs.fa-arrow-left
     .col
       -if @category.next.present?
-        = link_to category_path(@category.next), class: "btn btn-secondary btn-block btn-hover--jade pull-right"
+        = link_to category_path(@category.next), class: "btn btn-secondary btn-block btn-hover--jade float-right"
           = @category.next.name
           i.fa.fs.fa-arrow-right<
       -else
-        .btn.btn-secondary.btn-block.disabled.pull-right
+        .btn.btn-secondary.btn-block.disabled.float-right
           i.fa.fs.fa-arrow-right
   br
   h1

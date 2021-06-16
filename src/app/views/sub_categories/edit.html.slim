@@ -1,5 +1,5 @@
 .page-header
-  = link_to sub_categories_path, class: 'btn btn-secondary pull-right' do
-    = raw "#{icon("angle-left")} #{t('activerecord.models.sub_category', default: "Sub category")} #{t('interface.index')}"
+  = link_to sub_categories_path, class: 'btn btn-secondary float-right' do
+    = raw "#{icon("fas", "angle-left")} #{t('activerecord.models.sub_category', default: "Sub category")} #{t('interface.index')}"
   h1 = "#{t('activerecord.models.sub_category', default: "Sub category")} #{t('interface.edit')}"
 = render 'form'

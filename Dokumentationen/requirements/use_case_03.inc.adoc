@@ -17,27 +17,43 @@ Admin möchte sich Wochenplan (Übersicht von allen Exp. inkl. Details) für bes
 
 . Der Use Case beginnt, wenn User die Wochenplanansicht aufruft
 . Wochenplanansicht wird dargestellt
-. KW muss ausgewählt werden
+. Jahr und KW muss ausgewählt werden
 . Filter (Dozent) kann angewendet werden
 . Use Case endet damit, dass die Ansicht generiert wird
 
-=== Alternative Abläufe
-//Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
---- keine alternativen Abläufe möglich ---
+=== Wireframe Dozentenwoche ansehen
 
-=== Unterabläufe (subflows)
+image::WF_7_Dozentenwoche.PNG[Dozentenwoche Anzeige]
+=== Alternative Abläufe
+
+==== Dozent will eigenen Wochenplan einsehen 
+
+Wenn der Dozent seinen eigenen Wochenplan einsehen will, entfällt Schritt 4 des Standardablaufs. Es ist ihm nicht möglich Wochenpläne von anderen Dozenten einzusehen. 
+
+==== Keine Buchungen in ausgewählter Woche vorhanden
+
+Wenn in der ausgewählten Woche des Dozenten keine Buchungen existieren, wird eine Meldung ausgegeben, die beinhaltet, dass keine Buchungen vorhanden sind.
+//Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
+//--- keine alternativen Abläufe möglich ---
+
+//=== Unterabläufe (subflows)
 //Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
 
---- keine Unterabläufe ---
+//--- keine Unterabläufe ---
 
-=== Wesentliche Szenarios
+//=== Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
---- keine Szenarios ---
+//--- keine Szenarios ---
 
 ===	Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
---- keine Nachbedingungen ---
+* Wochenplanansicht wird angezeigt
 
 === Besondere Anforderungen
+
+==== Ansicht der Druckansicht
+Die Druckansicht muss dem folgenden Wireframe entsprechen. Es wird die integrierte Druckfunktion des Browsers verwendet. 
+
+image::WF_8_Druckansicht.PNG[Dozentenwoche Druckansicht] 
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
---- keine Nachbedingungen ---
+//--- keine Nachbedingungen ---

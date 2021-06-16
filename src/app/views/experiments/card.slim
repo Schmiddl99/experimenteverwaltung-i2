@@ -29,7 +29,7 @@
         .right-part
           .first-picture
             - if @experiment.media.first.present?
-              = wicked_pdf_image_tag @experiment.media.first.file.url(:medium), width: 400 
+              = wicked_pdf_image_tag @experiment.media.first.file.url(:medium), width: 400
       br
       br
       .message

@@ -1,9 +1,9 @@
-.form-actions-bar.bg-light.fixed-bottom
+.form-actions-bar.bg-light.fixed-bottom.d-print-none
   .container
     .row
       .col
         - if user_signed_in?
-          = link_to 'javascript:history.back()', class: "btn btn-secondary pull-left"
+          = link_to 'javascript:history.back()', class: "btn btn-secondary float-left"
             | Zurück
       .col
         .text-center
@@ -12,5 +12,5 @@
           a(href="https://www.htw-dresden.de/") 
             small Hochschule für Technik und Wirtschaft Dresden
       .col
-        .pull-right
+        .float-right
           = button if defined? button

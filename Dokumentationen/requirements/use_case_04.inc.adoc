@@ -20,6 +20,10 @@ Admin möchte sich eine Statistik über gebuchte Experimente anzeigen lassen
 . Auflistung der Exp., welche in dem angegeben Zeitraum genutzt wurden (Standardansicht: Anzahl absteigend) -> siehe Unterablauf 1
 . Use Case endet
 
+=== Wireframe Statistik
+
+image::WF_5_Statistik.PNG[Statistik Anzeige]
+
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
 ==== Filtern
@@ -34,13 +38,13 @@ Nach Schritt 3 des Standardablaufes gibt es die Möglichkeit, die aktuelle Ansic
 .. Filter auswählen
 .. Filter anwenden
 
-=== Wesentliche Szenarios
+//=== Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
---- keine Szenarios ---
+//--- keine Szenarios ---
 
 ===	Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
---- keine Nachbedingungen ---
+* spezifische Statistik wird angezeigt
 
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.

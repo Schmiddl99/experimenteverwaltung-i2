@@ -26,3 +26,8 @@ config/master.key
 /storage/*
 !/storage/.keep
 /public/uploads
+
+#ignore result pdf of rspec
+test.pdf
+
+.yardoc

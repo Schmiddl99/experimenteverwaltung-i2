@@ -11,7 +11,9 @@ header
         - Category.sorted.each do |category|
           li.nav-item
             b = link_to category.name, category, class: "nav-link"
-      = form_tag(experiments_path, method: :get, class:"form form-inline my-3 my-lg-0") do 
+      - if @order.blank? && current_user.role.to_sym == :lecturer
+        = link_to "Buchung starten", new_checkout_path, class: "btn btn-secondary mr-4 btn-sm"
+      = form_tag(experiments_path, method: :get, class:"form form-inline my-3 my-lg-0") do
         = text_field_tag :q, params[:q], placeholder: "Suche", name: "q", type: "search", class:"mr-sm-2 input form-control"
         = submit_tag "Suche",  class: "btn btn-secondary btn-sm"
       ul.nav
@@ -23,7 +25,9 @@ header
             .dropdown-divider
             -if current_user.admin?
               = link_to "Kontenübersicht",  users_path, class: "dropdown-item hover--jade" 
-            = link_to "Kategorien",  categories_path, class: "dropdown-item hover--jade" 
+            = link_to "Kategorien",  categories_path, class: "dropdown-item hover--jade"
+            - if current_user.admin? || current_user.lecturer?
+              = link_to "Dozentenwoche", new_lecturer_week_path, class: "dropdown-item hover--jade"
             -if current_user.admin? || current_user.assistant?
               = link_to "Experiment anlegen",  new_experiment_path, class: "dropdown-item hover--jade"
             -if current_user.admin? || current_user.assistant?
@@ -37,6 +41,9 @@ header
             -if current_user.admin? || current_user.assistant?
               = link_to "Experiment Papierkorb",  trash_path, class: "dropdown-item hover--jade" 
             -if current_user.admin?  
-              = link_to "Backups",  backups_path, class: "dropdown-item hover--jade" 
+              = link_to "Backups",  backups_path, class: "dropdown-item hover--jade"
+            - if current_user.lecturer?
+              .dropdown-divider
+              = link_to "Journal", orders_path, class: "dropdown-item hover--jade"
         li.nav-item
           b = link_to "Abmelden",  destroy_user_session_path, method: :delete, class: "nav-link", role:"button"

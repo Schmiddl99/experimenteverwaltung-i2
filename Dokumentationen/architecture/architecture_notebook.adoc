@@ -144,6 +144,9 @@ a|  * Kompatibilität
 .. Objekte 
 .. Konfigurationen 
 
+. Weiterverwendung des bis jetzt genutzten Test-Frameworks (RSpec) und der bis jetzt existierenden (teilweise fehlerhaften) Testcases und damit einherkommende Fehlerbehebung
+.. Grund: beim Review des alten Testquellcodes wurde festgestellt, dass ca. 30% der Tests mit einem Fehler abschließen, weshalb der Gedanke zum Testframework Minitest zu wechseln diskutiert wurde, da dies schon bekannt ist - Mehraufwand durch Umbauen der alten Tests ist jedoch vermutlich größer als Einarbeitungszeit in unbekanntes Framework Rspec; Risiko beim Frameworkwechsel, dass Aspekte übersehen werden
+
 
 . Verwendung von kostenlosen Bibliotheken (Open Source) und Lizenzen
 .. Grund: dringende Vermeidung von Kosten 
@@ -187,7 +190,7 @@ a|  * Kompatibilität
 * [.underline]#Funktion#: z.B. zwischen DB/Buchungssystem 
 
 . **Error Management **
-* [.underline]#Zustand#: Problem 
+* [.underline]#Zustand#: Analysis
 * [.underline]#Zweck#: Information des Anwenders bei einem unerwarteten Fehler 
 * [.underline]#Eigenschaften/Attribute#: Standardmäßig im Browser 
 * [.underline]#Funktion#: Rails und der Webservice geben bei einem unerwarteten Fehler eine Standard-Fehlerseite aus 
@@ -201,7 +204,7 @@ a|  * Kompatibilität
 ** Kann auch Kommentare im Quellcode beschreiben (=zwischen Entwicklerteams) 
 
 . **Kompatibilität **
-* [.underline]#Zustand#: Problem
+* [.underline]#Zustand#: Analysis
 * [.underline]#Zweck#: System muss auf allen (in den SWRs (siehe SWR)) erwähnten Browsern funktionieren  
 * [.underline]#Eigenschaften/Attribute#: gegeben oder nicht gegeben 
 * [.underline]#Funktion#: Sicherstellen der Benutzbarkeit 
@@ -241,7 +244,7 @@ Schutz vor Datenverlust (adressiert Risk No. 6)
 * [.underline]#Funktion#: Ausführung von Migrationsskript(en)
 
 . **Zugriffsschutz **
-* [.underline]#Zustand#: Problem 
+* [.underline]#Zustand#: Analysis
 * [.underline]#Zweck#: 
 ** Authentifizierung 
 ** Login 
@@ -260,11 +263,11 @@ Schutz vor Datenverlust (adressiert Risk No. 6)
 == Wesentliche fachliche Abstraktionen
 //[List and briefly describe the key abstractions of the system. This should be a relatively short list of the critical concepts that define the system. The key abstractions will usually translate to the initial analysis classes and important patterns.]
 
-* **Klasse Experiment:** Teil der Buchung - Das Objekt wird beim Buchungsvorgang aus der Datenbank bezogen. Das Objekt wird in Dozentenwoche angezeigt.
-* **Klasse Nutzer (Vererbung):**
+* **Experiment:** Teil der Buchung - Das Objekt wird beim Buchungsvorgang aus der Datenbank bezogen. Das Objekt wird in Dozentenwoche angezeigt.
+* **Nutzer (Vererbung):**
 ** **Admin:** Anwender-Rolle - Erstellt und bearbeitet Experimente. Verwaltet Rechte der Dozenten. Betrachtet alle Dozentenwochen. Betrachtet Statistik.
 ** **Dozent:** Anwender-Rolle - Führt Buchung durch. Betrachtet seine Dozentenwoche. Betrachtet Journal.
-* **Klasse Buchung:** Wird vom Dozenten erstellt. Beinhaltet ein oder mehrere Experimente. Besitzt zusätzliche Daten.
+* **Buchung:** Wird vom Dozenten erstellt. Beinhaltet ein oder mehrere Experimente. Besitzt zusätzliche Daten.
 * ** Dozentenwoche:** Ausgabe - Wird von Admin und/oder Dozent betrachtet. Enthält alle Buchungen eines Dozenten innerhalb des bestimmten Zeitabschnitts=einer Woche.
 * **Journal:** Ausgabe - Wird vom Dozenten angefordert. Auflistung aller getätigten Buchungen eines Dozenten. Wird vom Dozenten betrachtet.
 * **Statistik:** Ausgabe - Wird vom Admin angefordert. Wird vom Admin betrachtet. Enthält Anzahl von allen in einer bestimmten Periode gebuchten Experimenten, sortiert nach spezifischen Kategorien. 
@@ -287,12 +290,12 @@ Schutz vor Datenverlust (adressiert Risk No. 6)
 === Logische Sicht (C4-Modell)
 //Beschreibt die Struktur und das Verhalten Systemteilen, die hohen Einfluss auf die Architektur haben. Dies kann die Paketstruktur, kritische Schnittstellen, wichtige Klassen und Subsysteme sowie die Beziehungen zwischen diesen Elementen enthalten. Zudem sollten die physische und logische Sicht persistenter Daten beschrieben werden, wenn es diesen Aspekt im System gibt. Dies ist ein hier dokumentierter Teilaspekt des Entwurfs.
 
-==== Kontext
+==== Context
 
 .Context-Diagramm
-image::context_diagram.png[Kontext-Diagramm]
+image::context_diagram.png[Context-Diagramm]
 .Context-Diagramm - Legende 
-image::context_legend.png[Kontext-Legende]
+image::context_legend.png[Context-Legende]
 
 
 ==== Container 
@@ -303,11 +306,40 @@ image::container_diagram.png[Container-Diagramm]
 image::container_legend.png[Container-Legende]
 
 
+==== Component
+
+.Component-Diagramm
+image::component_diagram.png[Component-Diagram]
+.Component-Diagramm - Legende
+image::component_legend.png[Component-Legende]
 
 
-//=== Physische Sicht (Betriebssicht)
+==== Code
+
+Zur Darstellung der Code-Ebene wurde ein UML-Klassendiagramm verwendet.
+
+* hellblau gefärbte Packages dienen zur virtuellen Aufteilung der Klassen in ihre Komponenten (siehe <<Component>>)
+* lila gefärbte Attribute stellen sogenannte _virtuelle_ Attribute dar, welche nicht in der Datenbank persistiert werden 
+* hellgrau gefärbte Klassen bilden Bibliotheksklassen ab
+
+.Klassendiagramm der Bestellkomponenten
+image::ordering_class_model.svg[Klassendiagramm der Bestellkomponenten]
+
+.Klassendiagramm der Dozentenwochekomponenten
+image::lecturer_week_class_model.svg[Klassendiagramm der Dozentenwochekomponenten]
+
+.Klassendiagramm des Journals
+image::journal_class_model.svg[Klassendiagramm des Journals]
+
+=== Physische Sicht
 //Beschreibt die physischen Knoten (Rechner) des Systems, der Prozesse, Threads und Komponenten, die in diesen Knoten ausgeführt werden. Diese Sicht wird nicht benötigt, wenn das System in einem einzelnen Prozess oder Thread ausgeführt wird.
-<<<
+
+Das System wird auf einer VM der Fakultät Maschinenbau betrieben.
+
+Als Webserver wird https://www.nginx.com[NGINX] verwendet.
+
+Als Applikationsserver wird https://www.phusionpassenger.com[Phusion Passenger] verwendet. Dieser skaliert die Anwendung automatisch mit mehreren Prozessen. Dabei werden maximal sechs Prozesse verwendet. Der genaue Skalierungsprozess ist in der https://www.phusionpassenger.com/docs/tutorials/process_management/ruby/#working-with-multiple-processes[Dokumentation] von Passenger dokumentiert.
+
 === Use cases
 //Eine Liste oder ein Diagramm der Use Cases, die architektur-relevante Anforderungne enthalten.
 

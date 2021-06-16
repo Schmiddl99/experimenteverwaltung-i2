@@ -31,7 +31,9 @@ describe "Experiment", js_errors: false do
     sign_in user
     Fabricate :experiment
     visit "/experiments/1"
-    find('.dropdown-bin--red').click
+    accept_alert('Sind Sie sicher?') do
+      find('.dropdown-bin--red').click
+    end
     expect(page.has_text?('TestExperiment')).to be_falsey
   end
 
@@ -39,10 +41,15 @@ describe "Experiment", js_errors: false do
     sign_in user
     Fabricate :experiment
     visit "/experiments/1"
-    find('.dropdown-bin--red').click
+    accept_alert('Sind Sie sicher?') do
+      find('.dropdown-bin--red').click
+    end
+    expect(page.has_text?("Experiment wurde gelöscht")).to be_truthy
     visit "/experiments/trash"
     expect(page.has_text?('TestExperiment')).to be_truthy
-    find('a[class="btn btn-danger"]').click
+    accept_alert('Sind Sie sicher?') do
+      find('a[class="btn btn-danger"]').click
+    end
     expect(page.has_text?('TestExperiment')).to be_falsey
   end
 
@@ -50,9 +57,15 @@ describe "Experiment", js_errors: false do
     sign_in user
     Fabricate :experiment
     visit "/experiments/1"
-    find('.dropdown-bin--red').click
+    accept_alert('Sind Sie sicher?') do
+      find('.dropdown-bin--red').click
+    end
+    expect(page.has_text?("Experiment wurde gelöscht")).to be_truthy
     visit "/experiments/trash"
-    page.all('.btn.btn-secondary.btn-hover--jade')[0].click
+    accept_alert('Wirklich wiederherstellen ?') do
+      page.all('.btn.btn-secondary.btn-hover--jade')[0].click
+    end
+    expect(page.has_text?("Experiment wurde wiederhergestellt")).to be_truthy
     visit "/experiments/trash"
     expect(page.has_text?('TestExperiment')).to be_falsey
     visit "/experiments/1"
@@ -82,18 +95,19 @@ describe "Experiment", js_errors: false do
     experiment
     visit "/experiments/1"
     expect(page.has_text?("TestExperiment")).to be_truthy
-    find('i.fa.fs.fa-arrow-right').click
-    expect(page.has_text?("Test2")).to be_truthy
     find('i.fa.fs.fa-arrow-left').click
+    expect(page.has_text?("Test2")).to be_truthy
+    find('i.fa.fs.fa-arrow-right').click
     expect(page.has_text?("TestExperiment")).to be_truthy
   end
 
-  it "über Sub_Category ausählen" do
+    #changed '.stretched-link' to flex-grow-1
+  it "über Sub_Category auswählen" do
     sign_in user
     Fabricate :experiment
     visit "/sub_categories/1"
     expect(page.has_text?("TestExperiment")).to be_truthy
-    find('.stretched-link').click
+    find('.flex-grow-1').click
     expect(page.has_text?("TestExperiment")).to be_truthy
   end
 end

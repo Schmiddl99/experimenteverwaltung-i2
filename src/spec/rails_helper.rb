@@ -7,7 +7,8 @@ require File.expand_path('../../config/environment', __FILE__)
 # Prevent database truncation if the environment is production
 abort("The Rails environment is running in production mode!") if Rails.env.production?
 require 'rspec/rails'
-require 'capybara/poltergeist'
+require 'capybara/rspec'
+require 'webdrivers/chromedriver'
 
 # Add additional requires below this line. Rails is not loaded until this point!
 
@@ -41,11 +42,13 @@ Fabrication.configure do |config|
 end
 RSpec.configure do |config|
 
-  Capybara.server = :puma, { Silent: true }
-  Capybara.register_driver :poltergeist do |app|
-    Capybara::Poltergeist::Driver.new(app, js_errors: false, debug: false)
-  end
-  Capybara.javascript_driver = :poltergeist
+  # Capybara.server = :puma, { Silent: true }
+  # Capybara.register_driver :selenium_chrome do |app|
+  #   Capybara::Poltergeist::Driver.new(app, js_errors: false, debug: false)
+  # end
+  # Capybara.javascript_driver = :poltergeist
+  browser = ENV["HEADLESS"] ? :selenium_chrome_headless : :selenium_chrome
+  Capybara.default_driver = Capybara.javascript_driver = browser
 
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.include Devise::Test::IntegrationHelpers, type: :feature
@@ -74,4 +77,6 @@ RSpec.configure do |config|
   config.filter_rails_from_backtrace!
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
+
+  config.include Devise::Test::IntegrationHelpers, type: :request
 end

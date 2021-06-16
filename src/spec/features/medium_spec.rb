@@ -24,8 +24,8 @@ describe "Medium", js_errors: false do
     sign_in user
     Fabricate :medium
     visit "/experiments/1/edit"
-    attach_file("experiment_media_attributes_0_file", image, visible: false)
     expect(page.html.include?("/uploads/media/thumb/1.png")).to be_truthy
+    attach_file("experiment_media_attributes_0_file", image, visible: false)
     find('input[value="Speichern"]').click
     expect(page.has_text?("file2")).to be_truthy
     expect(page.has_text?("file1")).to be_falsey
@@ -51,7 +51,9 @@ describe "Medium", js_errors: false do
     Fabricate :medium
     visit "/experiments/1/edit"
     expect(page.html.include?("/uploads/media/thumb/1.png")).to be_truthy
-    page.all('.btn.btn-link.times-nested-forms.remove_fields.existing')[0].click
+    accept_alert('Möchten Sie dies wirklich löschen?') do
+      page.all('.btn.btn-link.times-nested-forms.remove_fields.existing')[0].click
+    end
     page.all('.btn.btn-link.times-nested-forms.remove_fields.dynamic')[0].click
     expect(page.html.include?("/uploads/media/thumb/1.png")).to be_falsey
     find('input[value="Speichern"]').click

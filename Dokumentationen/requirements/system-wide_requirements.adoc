@@ -55,11 +55,11 @@ Stakeholder haben Anforderungen. Ziele der Stakeholder sind Teil der Anforderung
 
 * *NFAU-1*: Alle Prozesse und Datenausgaben müssen übersichtlich, eindeutig und verständlich sein.
 
-** *NFAU-1.1*: Die Anzahl der Interaktionselemente soll komprimiert sein.
+** *NFAU-1.1*: Die Anzahl der Interaktionselemente soll minimal sein.
 
 *** Es soll jeweils nur eine Schaltfläche pro Aktion geben (Bsp.: Warenkorb-Icon zum Buchen). Zu Überprüfungszwecken werden alle Interaktionselemente in ihrer Funktion verglichen. 
 
-** *NFAU-1.2*: Die Auswahlmenüs zur Detailfestlegung müssen verständlich und inhaltlich komprimiert sein.
+** *NFAU-1.2*: Die Auswahlmenüs zur Detailfestlegung müssen verständlich und inhaltlich minimal sein.
 
 *** Es soll vorgefertigte Drop-Down-Menüs und Widgets zur Auswahl aus von festgelegten Wertebereichen geben. Zur Überprüfung wird getestet, ob invalide Eingaben möglich sind. 
 
@@ -80,6 +80,11 @@ Stakeholder haben Anforderungen. Ziele der Stakeholder sind Teil der Anforderung
 
 *** Zur Überprüfung wird eine Testperson die Anwendung mit einem Abstand von 50cm Entfernung zum Bildschirm nutzen. 
 
+** *NFAU-1.6*: Freitextfelder sind in ihrer Zeichenkapazität begrenzt. 
+*** Der Name des Dummy-Experiments fasst maximal 75 Zeichen.
+*** Der Name des Studiengangs fasst maximal 75 Zeichen. 
+*** Der Buchungskommentar fasst 200 Zeichen
+
 * *NFAU-2*: Die Eingabemöglichkeiten sollen nicht als Pop-ups erscheinen. 
 
 *** Zur Überprüfung wird die Anwendung auf das Vorhandensein von Pop-up-Fenstern getestet.
@@ -87,7 +92,7 @@ Stakeholder haben Anforderungen. Ziele der Stakeholder sind Teil der Anforderung
 === Zuverlässigkeit (Reliability)
 // Zuverlässigkeit beinhaltet die Fähigkeit des Produkts und/oder des Systems unter Stress und ungünstigen Bedingungen am laufen zu bleiben. Spezifizieren Sie Anforderungen für zuverlässige Akzeptanzstufen, und wie diese gemessen und evaluiert werden. Vorgeschlagene Themen sind Verfügbarkeit, Häufigkeit und Schwere von Fehlern und Wiederherstellbarkeit.
 
-* *NFAR-1*: Das System darf aufgrund von Netzwerkausfällen keinen Schaden nehmen. 
+* *NFAR-1*: Das System darf aufgrund von Netzwerkausfällen keine Daten verlieren oder Daten fehlerhaft speichern. 
 ** Testweise wird beim Buchen ein Verbindungsabbruch erzwungen. 
 
 === Effizienz (Performance)
@@ -130,5 +135,5 @@ Stakeholder haben Anforderungen. Ziele der Stakeholder sind Teil der Anforderung
 === Rechtliche Anforderungen
 //Angaben ergänzen, nicht relevante Unterpunkte streichen oder auskommentieren
 * Der Kunde muss über eine mögliche Speicherung von Nutzungsdaten informiert werden.
-* Eine etwaige Datenschutzerklärung muss beim Login vorliegen und vor der Nutzung durch Dozenten anerkannt werden. Der Verantwortliche hierbei sollte der Admin sein. 
+* Eine etwaige Datenschutzerklärung muss vor der Registrierung vorliegen und vor der Nutzung durch Dozenten anerkannt werden. Der Verantwortliche hierbei sollte der Admin sein. 
 * Keine fremden Werke dürfen fälschlicherweise als Eigene ausgewiesen werden. Urheberrecht ist zu beachten, gegebenenfalls müssen eigene Grafiken erstellt werden. 

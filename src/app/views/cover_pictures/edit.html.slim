@@ -1,6 +1,6 @@
 .page-header
-  = link_to cover_pictures_path, class: 'btn btn-secondary btn-hover--jade pull-right' do
-    = raw "#{icon("angle-left")} #{t('activerecord.models.cover_picture', default: "Cover picture")} #{t('interface.index')}"
+  = link_to cover_pictures_path, class: 'btn btn-secondary btn-hover--jade float-right' do
+    = raw "#{icon("fas", "angle-left")} #{t('activerecord.models.cover_picture', default: "Cover picture")} #{t('interface.index')}"
   h1 = "#{t('activerecord.models.cover_picture', default: "Cover picture")} #{t('interface.edit')}"
   br
 
@@ -13,7 +13,7 @@
   br
 .row
   .col
-    = link_to "#{icon("trash")} löschen".html_safe, @cover_picture, method: :delete, data: { confirm: t('interface.confirm') }, class: "btn btn-danger btn-block"
+    = link_to "#{icon("fas", "trash")} löschen".html_safe, @cover_picture, method: :delete, data: { confirm: t('interface.confirm') }, class: "btn btn-danger btn-block"
 br
 br
 strong Vorschau:

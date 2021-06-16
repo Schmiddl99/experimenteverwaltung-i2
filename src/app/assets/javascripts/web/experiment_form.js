@@ -32,6 +32,7 @@ function sortable() {
           i++
           el = _self.find("#"+e.replace("_id", ""))
           el.find(".sort-input").val(i)
+          el.find(".sort-title").text(i + ".")
         }
       })
     }

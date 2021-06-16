@@ -50,11 +50,32 @@ a|
 * Wochenplan
 * Wochenplanansicht 
 
+|Entwicklungsumgebung 
+a|* Linux-System, auf dem implementiert und getestet werden kann
+|
+
+|Experiment
+a|* Ein Experiment ist eine Veranschaulichung innerhalb einer Physikvorlesung 
+* Es beinhaltet alle Informationen die zur Durchführung nötig sind 
+|
+
+|Experimentefeld
+a|* Bei jedem Experiment gibt es die Möglichkeit Zusatzinforamtionen hinzuzufügen
+* Diese sind optional und dienen der besseren Übersicht
+* Es gibt die Felder: Bilder, Geräte, Gefahren, Videos, Links, Instruktionen, Anmerkung
+|
+
 |Frontend-Benutzer
 a|* Nutzer der öffentlich erreichbaren Weboberfläche
 a|* User
 * Nutzer
 * Anwender 
+
+|Handbuch
+a|* Das Handbuch dient als Nachschlagewerk für die Benutzer
+* In ihm sind alle Funktionen der Anwendung beschrieben 
+* Es wird zusätzlich technische Informationen enthalten die den Update Prozess von Ruby on Rails beschreibt
+|
 
 |Historie
 a|* Häufigkeit der vergangenen Buchungen pro Experiment
@@ -82,6 +103,11 @@ a|* Vorgehensmodell
 * _OpenUP is a lean Unified Process that applies iterative and incremental approaches within a structured lifecycle_
 a|* Vorgehendmodell
 * OpenUP
+
+|optionaler Titel
+a|* Bei den Voreinstellungen ist es möglich einen Titel für jede Vorlesung zu vergeben
+* Die Vergabe eines Titels ist optional
+|
 
 |Rolle
 a|* Bezeichnung für Zuordnung der Zugriffsrechte (siehe "Dozent", "Admin")
@@ -124,7 +150,7 @@ a|* Bestellzusammenfassung
 |Gemeint ist die Datenbank, in welche Buchungseinträge geschrieben werden.
 
 |EMS
-|Das weiterzuentwickelnde Projekt
+|Das weiterzuentwickelnde Experimente-Management-System
 |https://mphyda.mw.htw-dresden.de/
 
 |Exp.
@@ -188,5 +214,16 @@ a|* Life Cycle Objective Milestone
 |String
 |E-Mail-Adresse muss `@`-Zeichen, Punkt und "htw-dresden"-Domaine enthalten
 |Login
+|Buchungsdaten 
+|Daten die eine Buchung beschreiben (Studiengang, Datum, optionaler Titel, Kommentar)
+|Date, String
+|Datum muss in der Zukunft liegen, Studiengang muss existieren
+|-
+|Experimentedaten 
+|Es gibt die Felder: Kennung, Name, Bilder, Versuchsbeschreibung, Geräte, Gefahren, Videos, Links, Instruktionen, Anmerkung
+|String, Files
+|Kennung, Name und Versuchbeschreibung müssen ausgefüllt sein
+|-
+
 
 |===

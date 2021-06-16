@@ -15,17 +15,23 @@ br
         = @sub_category.category.name
     .col
       -if @sub_category.next.present?
-        = link_to sub_category_path(@sub_category.next), class: "btn btn-secondary btn-block btn-hover--jade pull-right"
+        = link_to sub_category_path(@sub_category.next), class: "btn btn-secondary btn-block btn-hover--jade float-right"
           = @sub_category.next.name
           i.fa.fs.fa-arrow-right<
       -else
-        .btn.btn-secondary.btn-block.disabled.pull-right
+        .btn.btn-secondary.btn-block.disabled.float-right
           i.fa.fs.fa-arrow-right
   br
   h1
     = "#{@sub_category.label} - #{@sub_category.name}"
+  - if @order.present?
+    h3
+      | Einstellung:
+      =< @order.course.name
+      | ,
+      =< I18n.l(@order.course_at, format: :time_at)
   br
-br 
+br
 .card
   .card-header 
     = link_to @sub_category.category.name, category_path(@sub_category.category)
@@ -35,8 +41,15 @@ br
 
   .card-body
     .list-group
-      - @sub_category.experiments.sorted.active.each do | sub_category |
-        .list-group-item
-          = link_to experiment_path(sub_category), class: "stretched-link"
-            = "#{sub_category.label} - #{sub_category.name}"
+      - @sub_category.experiments.sorted.active.each do | experiment |
+        .list-group-item.d-flex id=experiment.id
+          = link_to experiment_path(experiment), class: "flex-grow-1"
+            = "#{experiment.label} - #{experiment.name}"
+          - if @order.present?
+            - ordered_experiment = @order.current_ordered_experiments.find { |ordered_experiment| ordered_experiment.experiment == experiment }
+            - if ordered_experiment.blank?
+              = add_experiment_to_order_link(experiment)
+            - else
+              = remove_experiment_from_order_link(ordered_experiment)
+
 br

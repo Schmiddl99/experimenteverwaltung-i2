@@ -56,7 +56,7 @@ describe "Category", js_errors: false do
 
   it "vor und zurück" do
     sign_in user
-    Fabricate :category
+    Fabricate :category, priority:1 
     category
     visit "/categories/2"
     expect(page.has_text?("Test2")).to be_truthy

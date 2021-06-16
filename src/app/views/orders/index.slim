@@ -1,0 +1,47 @@
+.page-header
+  h1 Journal
+
+- if @orders.empty?
+  p Sie haben noch keine Buchung getätigt.
+- else
+  #ordersAccordion.accordion.mt-5
+    - @orders.each do |order|
+      .card
+        .card-header.d-flex.align-items-center
+          h2.mb-0.flex-grow-1
+            button.btn.btn-link.btn-block.text-left.border-0.m-0 data-target="#order-#{order.id}" data-toggle="collapse" type="button"
+              | Buchungen für:
+              =<> order.course.name
+              - if order.alternative_course_name.present?
+                | (
+                = order.alternative_course_name
+                | )
+                = " "
+              | am
+              =< l(order.course_at, format: :time_at)
+          - if order.course_at > Time.current
+            .controls.ml-2
+              - data = @order.present? ? { data: { confirm: 'Wenn Sie diese Buchung bearbeiten wird Ihre aktive Buchung abgebrochen. Wollen Sie fortfahren?' } } : {}
+              = link_to edit_order_path(order), class: "mr-3", **data do
+                = icon("fas", "pencil-alt")
+              = link_to order_path(order), class: "link-danger", method: :delete, data: { confirm: "Möchten Sie diese Buchung wirklich löschen?" } do
+                = icon("fas", "trash-alt")
+
+        .collapse id="order-#{order.id}"
+          .card-body
+            .list-group
+              - order.ordered_experiments.each_with_index do |ordered_experiment, index|
+                - url = ordered_experiment.dummy_experiment? ? nil : experiment_path(ordered_experiment.experiment)
+                a.list-group-item.list-group-item-action href=url
+                  strong.mr-5
+                    = index + 1
+                    | .
+                  - if !ordered_experiment.dummy_experiment?
+                    =<> ordered_experiment.experiment.label
+                    | -
+                  =< ordered_experiment.experiment.name
+            p.mt-3.mb-0
+              strong Kommentar zur Buchung:
+              =< order.comment
+  .mt-3
+    = will_paginate @orders, renderer: WillPaginate::ActionView::BootstrapLinkRenderer

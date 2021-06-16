@@ -8,6 +8,7 @@ class SubCategoriesController < ApplicationController
 
   # GET /sub_categories/1
   def show
+    @order = session[:order]
   end
 
   # GET /sub_categories/new

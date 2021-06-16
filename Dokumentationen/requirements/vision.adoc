@@ -10,21 +10,13 @@ include::../_includes/default-attributes.inc.adoc[]
 Ziel dieses Dokumentes ist es, einen genaueren Überblick über die wesentlichen Bestandteile der Änderung an der Web-App “Experimente-Management-Software” (EMS) aufzuzeigen und Informationen zu sammeln, zu analysieren und genauer zu definieren. Wir werfen einen Blick auf die einzelnen Stakeholder der Anwendung, deren Wünsche und Bedingungen. Die genaueren Details, wie die angegeben Bedürfnisse realisiert werden, finden sich in dem <<Use-Case Model: {project-name}, Use-Case Model>> und der <<System-Wide Requirements: {project-name}, System-Wide Requirements>> wieder. 
 
 
- 
-
-[.underline]#Stakeholder:#
-
-* Kunde: Herr Matthias Heisig (fortan mit “Kunde” bezeichnet)
-* Dozenten (=Nutzer des Buchungssystems) 
-* Technischer Ansprechpartner für Virtuelle Maschine (TAVM): Herr Hornoff 
-
 === Zweck
 
 Der Zweck dieses Dokuments ist es, die wesentlichen an das System gestellten Anforderungen aus Sicht der künftigen Anwender zu beschreiben. Formulierungen werden so gestaltet, dass sie für alle Stakeholder verständlich sind.
 
 
 === Gültigkeitsbereich (Scope)
-Dieses Visions-Dokument bezieht sich auf das Experimente-Management-System, das von Team I2 entwickelt wird. Das System wird es dem Admin erlauben, ein Buchungssystem zu betreiben, um damit das umständliche Bestellen per E-Mail abzulösen.
+Dieses Visions-Dokument bezieht sich auf das Experimente-Management-System, das von Team I2 entwickelt wird. Das System wird es dem Kunden erlauben, ein Buchungssystem zu betreiben, um damit das umständliche Bestellen per E-Mail abzulösen.
 
 === Definitionen, Akronyme und Abkürzungen
 siehe <<Glossar: {project-name},Glossar>>
@@ -82,9 +74,9 @@ a|
 a|
 
 
-* Warenkorb-System: Die Experimente können nach Festlegung der Voreinstellungen für eine Vorlesung in einen Warenkorb abgelegt werden. Anschließend kann die Reihenfolge noch angepasst werden. Nach erfolgreicher Buchung werden sie dem persönlichen Journal hinzugefügt.
-* Journal-System: Buchungsübersicht des Dozenten, wo er alle vergangenen Buchungen einsehen und aktuelle Buchungen anpassen kann
-* Dozentenwochen-System: Buchungsübersicht des Admins, wo er alle Buchungen pro Dozent und sortiert je Wochentag einsehen kann
+* Warenkorb-Funktion: Die Experimente können nach Festlegung der Voreinstellungen für eine Vorlesung in einen Warenkorb abgelegt werden. Anschließend kann die Reihenfolge noch angepasst werden. Nach erfolgreicher Buchung werden sie dem persönlichen Journal hinzugefügt.
+* Journal-Funktion: Buchungsübersicht des Dozenten, wo er alle vergangenen Buchungen einsehen und aktuelle Buchungen anpassen kann
+* Dozentenwochen-Funktion: Buchungsübersicht des Admins, wo er alle Buchungen pro Dozent und sortiert je Wochentag einsehen kann
 
 |===
 
@@ -176,20 +168,19 @@ a| * Betreuer der VM a| * Gewährleistung eines Arbeitsumfeldes für uns
 //. Welche anderen Anwendungen sind im Einsatz? Muss ihre Anwendung mit diesen integriert werden?
 
 //Hier können zudem bei Bedarf Teile des Unternehmensmodells (Prozesse, Organigramme, IT-Landschaft, ...) eingefügt werden, um die beteiligten Aufgaben und Rollen zu skizzieren.
+[%header, cols="1,1"]
+|===
+|Kunde
+|Dozent
 
-[.underline]#Für Admin:# 
+|*Ist-Zustand:* Kunde erhält Mails mit Bestellwünschen der einzelnen Experimente pro Woche. Daraufhin druckt sich der Kunde die Wünsche aus. Unübersichtliches, uneinheitliches und zeitintensives Auswerten der einzelnen Dozentenwünsche.  
+|*Ist-Zustand:* Die Dozenten suchen sich für Ihre Vorlesungen Experimente aus dem EMS aus und senden Ihre Experimentwünsche dem Kunden per Mail zu. Hierbei fallen zusätzliche Arbeiten an, da sie ihre Experimente zeitlich organisieren müssen.
+|*Soll-Zustand:* Der Kunde kann sich im EMS direkt einen Wochenplan für jeden Dozenten ausdrucken lassen. Es soll einfacheres und komfortableres Arbeiten ermöglicht werden.  
+|*Soll-Zustand:* Die Dozenten können ihre Wunschexperimente direkt im EMS pro Vorlesung buchen.
 
-* Bisherige Webanwendung soll verwendet werden (bekannt und etabliert) 
-* Soll Bestellungen komfortabel einsehen können 
-* Einfache Handhabung (Kunde ist kein Power-User) 
-* Muss Bestellhistorie (“komprimiert”) einsehen können
+|===
 
-[.underline]#Für Dozent:# 
 
-* Bisherige Webanwendung soll verwendet werden (bekannt und etabliert) 
-* Einfache Bestellung; intuitiv, schnell und anpassbar 
-* Bestellung erfolgt nur über Webanwendung (keine Mails mehr) 
-* Anzahl der Dozenten kann sich ändern 
 
 
 
@@ -200,15 +191,22 @@ a| * Betreuer der VM a| * Gewährleistung eines Arbeitsumfeldes für uns
 
 [%header, cols="4,1,4,1"]
 |===
-|Bedarf|	Priori-tät|	Features|	Geplan-tes Release
+|Bedarf|	Priorität|	Features|	Geplan-tes Release
 
 
-|Voreinstellungen | Hoch| Festlegung der Buchungsdetails vor Buchungsbeginn| xx
-|Warenkorb |Hoch |Experiment in Warenkorb legen und evtl. Reihenfolge anpassen |xx
-|Journal ansehen |Hoch |Einsehen vergangener und Bearbeiten aktueller Buchungen durch den Dozenten |xx
-|Dozentenwoche |Hoch | Einsehen der Buchungen je Wochentag und pro Dozent durch den Admin; Einleitung des Druckprozesses| xx 
-|Statistik ansehen |Mittel |Statistik (z.B. als Top 10) der (bestellten) Experimente einsehen |xx
-|Verwaltung der Bilder |Niedrig |Bilder in Experimenten können ersetzt werden, Reihenfolge wird einbehalten |xx
+|Einheitliches Buchungssystem für EMS mit Buchungsverwaltungsfunktionalitäten| Hoch a|* *Voreinstellung:*  Festlegung der Buchungsdetails vor Buchungsbeginn
+* *Warenkorb:* Experiment in Warenkorb legen und evtl. Reihenfolge anpassen
+* *Journal:* Einsehen vergangener und Bearbeiten aktueller Buchungen durch den Dozenten
+* *Dozentenwoche:* Einsehen der Buchungen je Kalenderwoche und pro Dozent 
+ | xx
+
+|Benutzerverwaltung der einzelnen Anwender |Hoch | *Login:* Erweitern auf dozentenspezifische Accounts | xx
+|Einfachere Auswahl eines Geräts bei der Erstellung eines Experiments| Mittel |
+*Experimentfeld "Geräte" Anpassung*: Ansicht der Geräte für Experimente übersichtlicher gestalten | xx
+|Buchungshäufigkeit auswerten |Mittel |*Statistik:* bei der Experimente-Auswahl, um die bestellten Experimente einsehen zu können |xx
+|Fehlerbehebung |Niedrig a|* *Verwaltung der Bilder:* Bilder in Experimenten können ersetzt werden, Reihenfolge wird einbehalten
+* *Bugfix bei Experimentfeld "Gefahren":* Bei der Anzeige von Textfeldern werden diese ineinander geschoben, dies soll behoben werden   |xx
+
 
 |===
 
@@ -227,6 +225,8 @@ a| * Betreuer der VM a| * Gewährleistung eines Arbeitsumfeldes für uns
 |===
 |Anforderung|	Priorität|	Geplantes Release
 |Einfache Bedienbarkeit |Hoch |xx
+|Im Handbuch soll erklärt werden wie ein Update von Ruby on Rails durchzuführen ist |Hoch |xx
+|Der Kunde erhält ein Admin Konto und ein Dozenten Konto |Hoch |xx
 |Hilfestellung / Kundenfreundliche Dokumentation |Niedrig |xx
 |===
 
@@ -237,8 +237,8 @@ a| * Betreuer der VM a| * Gewährleistung eines Arbeitsumfeldes für uns
 Dienlich zum Verständnis ist bspw. das Lesen des Protokolles zu TS-M3 vom 07.01.2021 (Word-Dokument; Ansprechpartner: {GM}, {TKa})
 
 * Auswahl des Studienganges bei jeder Buchung ist umständlich – das Problem wurde auf Später vertagt, wir entwickeln die Lösung nach den besprochenen Wireframes (Stand: 31.01.2021)
-* Ein "Dummy-Experiment" für *Freitextbuchungen* war eine vom Team favorisierte Lösung, welche aber nicht umgesetzt werden sollte (Stand: 31.01.2021)
 * Statistik/Historie: Ein Date-Picker-Mechanismus sollte von uns im Deployment hinterlegt worden sein. Darauf kann evtl. bei einer Neugestaltung der Historien-Ansicht zurückgegriffen werden. Wir halten den bisherigen Entwurf als Aufgliederung in zwei Semester als verbesserungswürdig. (Stand: 31.01.2021)
+* Das Projekt soll der Öffentlichkeit zugänglich gemacht werden, was über den Gast Zugang realiseirt werden soll. Hierbei sind große Interessen auf die Schützung der Personenbezogenen Daten so wie der Experimente Daten zu legen. (Stand: 27.04.2021)
 * *Kopierfunktion:* Eine Kopierfunktion zur Reproduktion aller Buchungen eines vergangenen Semesters wurde gewünscht. Wir sahen hier einen Zielkonflikt und einigten uns mit allen Stakeholdern darauf, dass wir das bisher entworfene Buchungssystem entwickeln (vgl. *I03*).
 //Link?
 Sollte diese Funktion in der Zukunft erneut gefordert werden, so sind hier unsere Überlegungen dazu aufgelistet:
