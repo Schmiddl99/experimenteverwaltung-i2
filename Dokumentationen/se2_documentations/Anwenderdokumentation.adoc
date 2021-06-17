@@ -5,7 +5,11 @@ include::../_includes/default-attributes.inc.adoc[]
 
 == Einführung 
 
-== Zweck
+Das Ziel dieses Dokuments ist es, eine Art Handbuch bezüglich der Nutzung des weiterentwickleten Experiemente-Management-Systems bereit zu stellen. Die Anleitungen beziehen sich detailiert und anschaulich auf die neuen Anwendungsfälle und werden dabei anhand der unterschiedlichen Nutzerrollen strukturiert. Der Zweck dieser Anwenderdokumentation ist es, dem Nutzer bei Fragen und Unklarheiten spezifische Hilfeleistungen bereitzustellen. Dabei wird großteils auf die Veranschaulichung durch Screenshots gesetzt. Der Anwender soll im Fall von Orientierungslosigkeit in der Lage sein, sich anhand dieses Dokuments selber zu helfen, um Kommunikations- und Zeitaufwand für den Nutzer selbst und das Entwicklerteam zu sparen. 
+
+== Zweck des Systems
+
+Der Nutzen des weiterentwickelten EMS liegt nun nicht mehr nur in der Informationsbeschaffung, sondern auch in der Planung. Dozenten ist es nun möglich, die benötigten Experimente ohne Mailverkehr zu "buchen". Durch eben diese Buchungen wird es dem Kunden möglich, die Termine der Bereitstellung der Experimente übersichtlich und einheitlich einzusehen. Das System generiert automatisiert Wochenpläne, die gedruckt werden können, um die Buchungsübersicht zu Papier zu bringen.  Bei Änderungen müssen außerdem keine direkten Kontaktierungen mehr geschehen, da die Anwender mit der Dozentenrolle ihre Buchungen im Journal überarbeiten können. 
 
 == Aufbau der Oberfläche 
 
