@@ -264,6 +264,6 @@ NOTE: Die unten genannten Anforderungen resultieren aus dem Themenstellermeeting
 
 * das System soll den User informieren, wenn sich an einer bereits gedruckten Dozentenwoche etwas geändert hat 
 * bei der Bearbeitung einer bereits getätigten Buchung soll es möglich werden, auch die Voreinstellungen anzupassen 
-* im Jorunal soll es möglich werden, explizite Buchungen anhand einer Filterfunktion zu finden 
+* im Journal soll es möglich werden, explizite Buchungen anhand einer Filterfunktion zu finden 
 * die Auswertung der Buchungshäufigkeit der Experimente soll anhand der Statistik umgesetzt werden
 * eine Verwaltung der Studiegänge soll (ähnlich wie die der Experimente) ermöglich werden
