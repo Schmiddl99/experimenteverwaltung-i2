@@ -14,12 +14,34 @@ describe "Lecturer Week", js_errors: false do
     page.windows[0].maximize
   end 
   
-  #after signing in as lecturer, the user visits his journal
-  #it is expected that a message is show that no orders had been created
+  #after signing in as lecturer, the user visits his journal (no orders had been created)
+  #it is expected that a message is shown that no orders had been created
   it "das leere Journal wird angezeigt" do
     sign_in lecturer
     visit "journal"
     expect(page.has_text?("Sie haben noch keine Buchung getätigt.")).to be_truthy
+  end
+
+  #3 orders are created
+  #order_1 is actual day + 1, order_2 actual day + 2 and order_3 is actual day + 3
+  #after signing in as lecturer, the user visits his journal
+  #it is expected that order_1 is sorted to the first position order_2 2nd and order_3 3rd
+  it "Journal enthält chronologische geordnete Buchungen" do
+    Fabricate :order, user: lecturer, course_at_date:Date.current + 3.day
+    Fabricate :order, user: lecturer, course_at_date:Date.current + 1.day                         #fabricate orders unsorted
+    Fabricate :order, user: lecturer, course_at_date:Date.current + 2.day
+    sign_in lecturer
+    visit "journal"
+    dates_arr=Array.new                                                                           #data structure to store the dates
+    (0..2).each {|i| 
+      txt=find(:xpath,"(//div[@id='ordersAccordion']/div/div/h2)[#{i+1}]")['textContent']         #get textcontent for each order
+      start_of_date=txt.index(" am")+4                                                            #date is found between " am " and " um "
+      end_of_date=txt.index(" um ")-1
+      date_string=txt[start_of_date..end_of_date]                                                 #slicing out datestring
+      dates_arr<<date_string.to_date                                                              
+    }
+    expect(dates_arr[2]).to be < dates_arr[1]                                                     #if chronologically sorted the oldest date is at last position
+    expect(dates_arr[1]).to be < dates_arr[0]
   end
 
 
@@ -72,9 +94,8 @@ describe "Lecturer Week", js_errors: false do
     end
     sign_in lecturer
     visit "journal"
-    expect(page.has_xpath?("//a[@data-method='delete']")).to be_falsey
+    expect(page.has_xpath?("//a[@data-method='delete'and @href='/journal/1']")).to be_falsey
     expect(page.has_xpath?("//a[@href='/journal/1/edit']")).to be_falsey
   end
-
 
 end
