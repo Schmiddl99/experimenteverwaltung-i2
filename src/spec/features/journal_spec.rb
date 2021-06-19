@@ -2,7 +2,7 @@
 require 'rails_helper'
 require 'date'
 
-describe "Lecturer Week", js_errors: false do
+describe "Journal", js_errors: false do
   let(:random) { Faker::Config.random }
   let(:password) { Faker::Config.random }
   let(:lecturer) { Fabricate :user, password: password, role: :lecturer }
