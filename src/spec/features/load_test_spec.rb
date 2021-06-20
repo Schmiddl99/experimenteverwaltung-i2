@@ -20,15 +20,20 @@ describe "Lasttest", js_errors: false do
 
   end 
   
-  #500orders are created to simulate heavy usage
-  #
-  #it is expected that 
-  it "500 Buchungen verhinder nicht eine neue Buchung" do
+  #2000 orders are created to simulate the database after 2+years of usage
+  #user signs in as lecturer and orders some experiments
+  #in the checkout process he deletes one and the finishs his order
+  #he then visits the journal 
+  #it is expected no errors and delay occurs and the order gets correctly completed
+  it "2000 Buchungen verhindern nicht eine neue Buchung" do
     experiment_1
     experiment_2
     experiment_3
-    (2..502).each {|i| 
-        Fabricate :order, user: lecturer, course_at_date:Date.current + i.day
+    (2..102).each {|i| 
+      (0..10).each {|j|
+        hr=(8+j).to_s
+        Fabricate :order, user: lecturer, course_at_date: Date.current + i.day, course_at_time: "#{hr}:00"
+      }  
     }
     sign_in lecturer
     visit "/checkout/new"
@@ -48,11 +53,11 @@ describe "Lasttest", js_errors: false do
     find(:xpath,"//input[contains(@value,'Buchung abschließen')]").click                                #click 'Buchung abschließen'
     expect(page.has_text?("Ihre Buchung wurde gespeichert!")).to be_truthy   
     visit "journal"
-    find(:xpath,"//a[@href='/journal?page=51']").click                                                  #go to last page as our order is "oldest"
-    #expand mit find(:xpath,"//button[@data-target='#order-1']").click #order-1 muss ersetzt werden
-    #neue schleife weiter oben darin noch j 1..10 oder so und buchungen aller 1 stunde so das es ingesamt 5000 sind
-    #dazu noch einen test bei dozentenwoche ob heisig mehrere auswählen kann wenn 2 dozeten eine buchung machen
-    binding.pry
+    find(:xpath,"//a[@href='/journal?page=112']").click                                               #go to last page as our order is "oldest"
+    find(:xpath,"//button[@data-target='#order-1112']").click                                           #expand our order
+    expect(page.has_text?(" test_label_2 - test_experiment_2")).to be_truthy
+    expect(page.has_text?("Kommentar zur Buchung: ein anderer Kommentar")).to be_truthy
+    expect(page.has_text?(" test_label_3 - test_experiment_3")).to be_truthy
   end
 end
 
