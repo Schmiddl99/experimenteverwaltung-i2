@@ -1,4 +1,4 @@
-= Iteration Plan 05: {project-name}
+= Iteration Plan 06: {project-name}
 Gregor Müller <mueller.gregor@htw-dresden.de>
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
@@ -12,11 +12,10 @@ include::../_includes/default-attributes.inc.adoc[]
 |===
 | Meilenstein
 | Datum
-
 | Beginn der Iteration | 05.05.2021
 | LCA Meilenstein wird übarbeitet und abgeschlossen    | 19.05.2021
 | IOC Meilenstein wird begonnen | 05.05.2021
-| Ende der Iteration | 02.06.2021
+| Ende der Iteration | 19.05.2021
 |===
 
 
@@ -86,13 +85,9 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 [%header, cols="2,1,3"]
 |===
 | Problem | Status | Notizen
-| Agile Softwareentwicklung im Mindset umsetzen | geklärt 
-a|* Vor dem TSM 4 wurden von dem Team durch Kontakt der Benutzer des Systems Benutzerwünsche gesammelt und validiert. Diese sollten dann im TSM 4 mit dem Kunden besprochen werden. 
-* Die Absicht des Teams war es, die gewünschten Anforderungen der Benutzer durch den Kunden prüfen zu lassen und diese ggf. im System und dem Beleg einzuarbeiten bzw. zu streichen.
-* Dies funktionierte nur bedingt gut, da der Kunde eine neue Priorisierung von Aufgaben wünschte, Aufgaben hinzufügte und bereits beschlossene Funktionen abänderte.
-* Dem wurde zwar zugestimmt, stieß aber auf Ablehnung einiger Teammitglieder. Die Befürchtung war, dass viel von der Arbeit aus SE I ja jetzt hinfällig war und die Zeit nun nicht für einen erfolgreichen Abschluss ausreichen würde. 
-* Durch starke Zusammenarbeit mit dem Coach und Herr Prof. Dr. Anke konnte die Situation besser verstanden und analysiert werden. 
-* Lösung: Das Team nimmt alle Änderungen und Forderungen an, selektiert diese, ob sie "In-Scope" oder "Out-Scope" sind und protokolliert diese im Beleg entsprechend. Die eigentliche Arbeit wird durch die Priorisierung gesteuert. Erst wenn eine Aufgabe abgeschlossen ist, werden die gewünschten Änderungen an dieser Aufgabe im System und im Beleg umgesetzt. 
+| Stark erhöhter Zeitaufwand bei der Reparatur der alten Test Cases| in Bearbeitung 
+| Da unsere Vorgänger leider keine genau Aufführung Ihrer Test Cases erstellt haben müssen wir uns nun langsam die alten Test Cases erarbeiten. Dieser Umstand des erhöhten Zeitaufwandes wurde als Problem bei der Kosten-Nutzen-Abschätzung erkannt und in der Risklist festgehalten. Nach der Mitigation Strategy der Risk List wurde eine Notfalllösung gefunden: die Arbeit an den alten Test Cases wird nun erst einmal stillgelegt, bis eine Lösung dafür gefunden wurde (Coach und Projektvorgänger wurden um Hilfe gebeten). Es wird die Arbeit an unsren aktuellen Test Cases vorgezogen. 
+|Corona bedingte Zeitmanagementprobleme | in Bearbeitung | Da das Corona Hygienekonzept zur erneuten Schließung von Kindergärten geführt hat, kann {PG}, der Vater von zwei Kinder ist, sich nicht in dem Umfang dem Projekt widmen wie er es möchte. Dies führt zu dem Problem, dass er bei seinem Workload unterstützt werden muss, was ein großes Zeitproblem mit sich bringt. (Coach wurde über dieses "außergewöhnliche" Problem informiert)
 
 |===
 
@@ -100,64 +95,63 @@ a|* Vor dem TSM 4 wurden von dem Team durch Kontakt der Benutzer des Systems Ben
 == Bewertungskriterien
 //Eine kurze Beschreibung, wie die Erfüllung der o.g. Ziele bewertet werden soll
 
-* Die Teilnahme am Ruby on Rails Workshop war vollzählig.
-* Die Änderungen des Kunden wurde mit Wireframes validiert. 
-* Die alten TCs wurden versucht auszuführen. Es wurde die Entscheidung getroffen das Framework "Rspec" zu verwenden. 
-* Das Update von Ruby on Rails wurde auf der VM durchgeführt. 
-* Integration des UC01 in das C4 Modell anhand eines Klassendiagramms.
-* Die Belegdokumente wurden den Änderungen des Kunden angepasst und liegen in GitHub vor. 
-* Das EMS-System kann von allen Developern aufgerufen werden. 
+* Die alten Test Cases wurden komplett verstanden und eine komplette Auswertung liegt vor welche funktionieren, repariert werden müssen oder gelöscht werden können
+* Es wurde im Architecture-Notebook eine begründete Entscheidung getroffen welches Testframework verwendet wird
+* Das C4 Modell von Use Case 01 wurde um das "Dummy Experiment" erweitert
+* Das C4 Modell wurde um Use Case 03 erweitert 
+* Use Caes 01 wurde erfolgreich implemntiert 
+* Der Beleg wurde soweit verbessert, dass die restlichen Änderungen bei der aktuellen Bearbeitung des Projekts mit eingeflochten werden können
+
 
 == Assessment
 //In diesem Abschnitt werden die Ergebnisse und Maßnahmen der Bewertung erfasst und kommunziert. Die Bewertung wird üblicherweise am Ende jeder Iteration durchgeführt. Wenn Sie diese Bewertungen nicht machen, ist das Team möglicherweise nicht in der Lage, die eigene Arbeitsweise ("Way of Working") zu verbessern.
 
+[%header, cols="1,3"] 
+|===
+| Review | Gesamte Iteration 6
+| Assessment Datum | 19.05.2021
+| Teilnehmer | gesamtes Team
+| Projektstatus: *grün*	a| 
+* Ziel: LCA-Meilenstein - Ende der Elaboration Phase, wurde NICHT erreicht
+** *Design, implement, validate, and establish the baseline for the architecture:* Zu weiten Teilen abgeschlosssen.
+*** *Erfolgskriterien:* Die Selektierung der alten Text Cases wurde zu 70% abgeschlossen aber noch nicht vollständig beendet. Deshalb sehen wir diesen Punkt als noch nicht abgeschlossen an. 
+* Ziel: IOC Meilenstein wurde erfolgreich begonnen
+** *Simple project:* Erledigt 
+*** *Erfolgskriterien:* Da wir auf einem vorhanden System unser Projekt aufbauen, sehen wir diesen Punkt als abgeschlossen an.
+** *More substantial project:* Erledigt
+*** *Erfolgskriterien:* Use Case 01 wurde erfolgreich implementiert und liegt in GitHub funktionstüchtig vor. Desweiteren wurde er der Gruppe vorgeführt, dass nun die Beta Tests begonnen werden können. Wir sehen diesen Punkt als erfüllt an. 
+
+** *Large project:* Nicht erfüllt, für die kommenden Iterationen geplant. 
+*** *Erfolgskriterien:* Da die ersten beiden Punkte nun erfüllt sind können wir mit dieser Phase in der kommenden Iteration beginnen. 
+
+
+
+* *Understand:* 
+*** Besserer Informationsaustausch der Gruppen in Bezug auf "Schaffe ich meinen Workload". Durch früheres Melden von Problemen, hätte das Team früher reagieren und dadurch vielleicht die Aufgaben anders verteilen oder die Priorisierung ändern können. 
+| a|
+* *Überprüfung selbst gesteckter Iterationsziele: Y/N (4/6)*
+** Die alten Test Cases wurden komplett verstanden und eine komplette Auswertung liegt vor welche funktionieren, repariert werden müssen oder gelöscht werden können *N*
+** Es wurde im Architecture-Notebook eine begründete Entscheidung getroffen welches Testframework verwendet wird *Y*
+** Das C4 Modell von Use Case 01 wurde um das "Dummy Experiment" erweitert *Y*
+** Das C4 Modell wurde um Use Case 03 erweitert *N*
+** Use Caes 01 wurde erfolgreich implemntiert *Y*
+** Der Beleg wurde soweit verbessert, dass die restlichen Änderungen bei der aktuellen Bearbeitung des Projekts mit eingeflochten werden können *Y*
+
+
+
+
+|===
+
 [%header, cols="1,3"]
 |===
-| Review | Gesamte Iteration 3
+| Retrospective | Gesamte Iteration 6
 | Assessment Datum | 05.05.2021
 | Teilnehmer | gesamtes Team
 | Projektstatus: *gelb*	a| 
-* Ziel: LCA-Meilenstein - Ende der Elaboration Phase, wurde NICHT erreicht, Vorbereitungen für IOC Meilenstein wurde erreicht.
-** *Get a more detailed understanding of the requirements:* Grundsätzlich verstanden. 
-*** *Erfolgskriterien:* konnten zum Ende der Iteration verstanden und umgesetzt werden. Die Neupriorisierung wurde in der Vision festgehalten und die einzelnen Belegbestandteile wurden auch aufgabenspezifisch angepasst. 
-** *Design, implement, validate, and establish the baseline for the architecture:* Zu weiten Teilen abgeschlosssen.
-*** *Erfolgskriterien:* Die Wireframes wurden den Änderungen nach angepasst und vom Kunden validiert. Auf die Validierung eines Skelettsystems wurde verzichtet, da unsere Ziele auf einem vorhandenen, funktionierenden und verwendeten Projekt aufbauen. Da aber einige TCs des Vorgängerteams noch nicht funktionieren und wir hier erst selektieren müssen, welche repariert oder entfernt werden müssen, sehen wir diesen Punkt noch nicht als abgeschlossen an.
-
-** *Mitigate essential risks, and produce accurate schedule and cost estimates:* Konnte mit Erfolg umgesetzt werden.
-*** *Erfolgskriterien:* Um diese Punkte zu erfüllen, arbeitet das Team mit Verwendung einer Work Item List und einer Risk List. (siehe <<project_plan: {project-name}, Projektplan>>)
-
-
-** *Understand:* 
-*** Agile Software Entwicklung wurde verstanden.  
-*** Unsere Arbeitszeit ist begrenzt: Heißt wir Arbeiten nicht, bis das Projekt abgeschlossen ist, sondern bis die verfügbare Zeit aufgebraucht ist.
-*** Unser Kunde darf jederzeit Änderungen wünschen, wir müssen aber selektieren welche "In-Scope" oder "Out-Scope" sind.
-| a|
-* * Überprüfung selbst gesteckter Iterationsziele: Y/N (6/6)*
-** Die Teilnahme am Ruby on Rails Workshop war vollzählig. *Y*
-** Die Änderungen des Kunden wurde mit Wireframes validiert. *Y*
-** Die alten TCs wurden versucht auszuführen. Es wurde die Entscheidung getroffen das Framework "Rspec" zu verwenden. *Y*
-** Das Update von Ruby on Rails wurde auf der VM durchgeführt. *Y*
-** Integration des UC01 in das C4 Modell anhand eines Klassendiagramms. *Y*
-** Die Beleg Dokumente wurden den Änderungen des Kunden angepasst und liegen in GitHub vor. *Y*
-** Das EMS System kann von allen Devolpern aufgerufen werden. *Y*
-
-
-
-
-|===
-
-[%header, cols="1,3"]
-|===
-| Retrospective | Gesamte Iteration 5
-| Assessment Datum | 05.05.2021
-| Teilnehmer | gesamtes Team
-| Projektstatus: *grün*	a| 
 Wie gut waren unsere Schätzungen? Welche Hindernisse gab es? Wie können wir besser werden? 
 
-* Die Funktion des Redeführers wurde abgeschafft, da bei einer Gruppengröße von vier Personen diese nicht benötigt wird. 
-* Das fehlerhafte Verständnis der agilen Softwareentwicklung hat bei uns zwar viele negative Gefühle ausgelöst und es wurde auch viel diskutiert, dennoch haben wir es durch unsere Professionalität und durch das teilweise Einschreiten von Teammitgliedern geschafft die Iteration abzuschließen. 
-* Der beabsichtigte Zeitaufwand konnte erfüllt werden.
-* Das Gruppen- und Arbeitsklima ist im gelben Bereich. Siehe <<retrospective_umfragen: {project-name}, Iterations-Umfrage>> 
+* Unsere Arbeitsschätzungen betrachten wir als GUT obwohl, nicht alle Iterationsziele erreicht werden konnten. Dies begründen wir mit dem oben beschriebenen Corona Umständen. Dennoch werden wir nun unserer Planung für die nächste Iteration überdenken und die Arbeitskräfte besser verteilen. 
+* Das Gruppen- und Arbeitsklima ist im grünen Bereich. Siehe <<Iteration 06, Iterations-Umfrage>> 
 |===
 
 === ALPHA States
