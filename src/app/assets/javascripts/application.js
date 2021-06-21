@@ -9,6 +9,8 @@
 //= require jquery-ui
 //= require bootstrap-datepicker.min
 //= require bootstrap-datepicker.de.min
+//= require bootstrap-select.min
+//= require bootstrap-select-defaults-de_DE.min
 //= require_tree ./web
 $(document).on('turbolinks:load', function(){
   sortable();
@@ -22,4 +24,7 @@ $(document).on('turbolinks:load', function(){
     language: "de",
     startDate: new Date()
   });
+  var pickers = $(".selectpicker")
+  pickers.selectpicker("destroy");
+  pickers.selectpicker();
 })
