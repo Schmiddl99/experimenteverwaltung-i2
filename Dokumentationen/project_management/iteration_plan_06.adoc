@@ -86,8 +86,8 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 |===
 | Problem | Status | Notizen
 | Stark erhöhter Zeitaufwand bei der Reparatur der alten Test Cases| in Bearbeitung 
-| Da unsre Vorgänger leider keine genau Aufführung Ihrer Test Cases erstellt haben müssen wir uns nun langsam die alten Test Cases erarbeiten. Dieser Umstand des erhöhten Zeitaufwandes wurde als Problem bei der Kosten-Nutzen-Abschätzung erkannt und in der Risklist festgehalten. Nach der Mitigation Strategy der Risk List wurde eine Notfalllösung gefunden: die Arbeit an den alten Test Cases wird nun erst einmal stillgelegt, bis eine Lösung dafür gefunden wurde (Coach und Projektvorgänger wurden um Hilfe gebeten). Es wird die Arbeit an unsren aktuellen Test Cases vorgezogen. 
-|Corna bedingte Zeitmanagementprobleme | in Bearbeitung | Da das Corona Hygienekonzept zur erneuten Schließung von Kindergärten geführt hat, kann {PG}, der Vater von zwei Kinder ist, sich nicht in dem Umfang dem Projekt widmen wie er es möchte. Dies führt zu dem Problem, dass er bei seinem Workload unterstützt werden muss, was ein großes Zeitproblem mit sich bringt. (Coach wurde über dieses "außergewöhnliche" Problem informiert)
+| Da unsere Vorgänger leider keine genau Aufführung Ihrer Test Cases erstellt haben müssen wir uns nun langsam die alten Test Cases erarbeiten. Dieser Umstand des erhöhten Zeitaufwandes wurde als Problem bei der Kosten-Nutzen-Abschätzung erkannt und in der Risklist festgehalten. Nach der Mitigation Strategy der Risk List wurde eine Notfalllösung gefunden: die Arbeit an den alten Test Cases wird nun erst einmal stillgelegt, bis eine Lösung dafür gefunden wurde (Coach und Projektvorgänger wurden um Hilfe gebeten). Es wird die Arbeit an unsren aktuellen Test Cases vorgezogen. 
+|Corona bedingte Zeitmanagementprobleme | in Bearbeitung | Da das Corona Hygienekonzept zur erneuten Schließung von Kindergärten geführt hat, kann {PG}, der Vater von zwei Kinder ist, sich nicht in dem Umfang dem Projekt widmen wie er es möchte. Dies führt zu dem Problem, dass er bei seinem Workload unterstützt werden muss, was ein großes Zeitproblem mit sich bringt. (Coach wurde über dieses "außergewöhnliche" Problem informiert)
 
 |===
 
@@ -119,7 +119,7 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 ** *Simple project:* Erledigt 
 *** *Erfolgskriterien:* Da wir auf einem vorhanden System unser Projekt aufbauen, sehen wir diesen Punkt als abgeschlossen an.
 ** *More substantial project:* Erledigt
-*** *Erfolgskriterien:* Use Case 01 wurde erfolgreich implementiert und liegt in GitHub funktionstüchtig vor. Desweiteren wurde er der Gruppe forgeführt, dass nun die Beta Tests begonnen werden können. Wir sehen diesen Punkt als erfüllt an. 
+*** *Erfolgskriterien:* Use Case 01 wurde erfolgreich implementiert und liegt in GitHub funktionstüchtig vor. Desweiteren wurde er der Gruppe vorgeführt, dass nun die Beta Tests begonnen werden können. Wir sehen diesen Punkt als erfüllt an. 
 
 ** *Large project:* Nicht erfüllt, für die kommenden Iterationen geplant. 
 *** *Erfolgskriterien:* Da die ersten beiden Punkte nun erfüllt sind können wir mit dieser Phase in der kommenden Iteration beginnen. 
