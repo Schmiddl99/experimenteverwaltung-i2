@@ -3,8 +3,190 @@
 include::../_includes/default-attributes.inc.adoc[]
 
 == SE I
+//Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
+
 
 Das Hauptaugenmerk in SE I unseres Projektes war, eine gute und solide Grundlage für die Constructions Phase in SE II zu scaheffen. Deshalb bestand die erste Iteration hauptsächlich aus Teamorganistaorischen Tätigkeiten und der Einarbeitung in das Projekt und die Aufgabenstellung. Hier haben wir auch zum ersten Mal Kontakt zum Kunden hergestellt. 
 
 Die Ziele der zweiten Iteration waren es Einigkeit mit dem Kunden über die Vision herzustellen. Hierzu benutzen wir erstmals Wireframes, damit unsere Kunde sich unsere Ideen besser Vorstellen konnte. Auch wurden hier die systemweiten Anforderungen aufgestellt und der GitHub Workshop abgehalten.
 
+In Iteration 03 versuchten wir die Anforderungen genau zu spezifizieren, also die erstellten Wireframes geanu mit dem Kunden durchzusprechen, um zu verifiziern ob alle Forderungen richtig verstanden wurden. Hier wurden auch die Test Cases zu den Use Cases erstellt. Der *LCO-Meilenstein* und der *LCA-Meilenstein* konnten hier abgeschlossen werden.
+
+In der letzen Iteration von SE I viel uns auf, dass wir mit der Anwender Seite, leider nie Kontakt aufgenommen haben. Um diesen Fehler zu beheben versuchten wir, mit der Unterstüzung von Frau Dr. Krawietz dies nachzuholen. Bei diesem Unterfangen bemerkten wir jedoch rechtzeitig, dass wir es zeitlich nicht mehr schaffen würden alle Anwenderspezifischen Sichten richtig zu analysieren. Deswegen verschoben wir dieses Ziel in SE II. Auch wurden in dieser Iteration nochmals die Uce Cases und die Testcases überarbeitet und der Beleg angefertig. 
+
+== SE II
+
+=== Start in das Neue Semester (22.03.2021-21.04.2021)
+
+Der Start in das neue Semester verlief leider nicht optimal, da uns leider zwei Teammitglieder verließen. Somit hatten wir direkt am Anfang des Semester (23.03.2021), das erste und einzige Kriesen-Meeting. Hier versuchten {rb}, {we} und {gm} die Ausgangslage zu sondieren und abschätzen zu können ob im Worst-Case sie auch nur zu dritt, es schaffen würden das Projekt erfolgreich betreuen zu können. Sie kamen zu dem Schluss, dass die Expertise im Bereich Ruby on Rails von {rb} ihnen einen imensen Zeitvorsprung ermöglichte und somit es möglich war die fehlenden Teammitglieder ausgleichen zu können. Als dann dem Team auch ein neues Mitglied ({pg}) zugewiesen wurde, dass auch noch über Erfahrungen mit automatisierten Softwaretests verfügte konnte das Team mit neuer Zuversicht die nächsten Schritte planen (30.03.2021):
+
+* Anwender Sicht auf das System validiren 
+* Ruby on Rails Workshop durch führen um mit dem implementiern starten zu können
+* Beleg Korrektur durchführen 
+* Neues Teammitglied einarbeiten
+* Programmier Konvention erarbeiten
+* Login Lösung für das Buchungssystem finden
+* Ruby on Rails Update des vorhandenen Systems
+* Kunden Meeting
+
+Parallel dazu wurde auch die Rollenverteilung überarbeitet. Hier mussten nun aus Mitglieder Mangel einige Rollen doppelt besetzt werden. Wir versuchten hier so logisch wie möglich vorzugehen, heißt Mitglieder die eher Technische Rollen besetzen, besetzen auch wieder eher Technische Rollen und Mitglieder die ehere organisatorsche Rollen innehaben, werden weitere organisatorische Aufgaben dazu bekommen. Eine genaue Übersicht zu den Rollen befindent sich in der Rollenübersicht. LINK !!!
+
+
+==== Anwender Sicht auf das System validiren
+Um die Anwendersicht zu validiern wurde durch den Projektmanager der Kontakt mit Frau Dr. Krawietz gesucht. Dieser ließ sich schnell herstellen, da die Anfrage zu Ihrer Unterstüzung schon im vergangenen Semester geklärt werden konnte. Frau Dr. Krawietz wurde eine Ausführliche PDF mit allen Wireframes zur Verfügung gestellt in der einzelne Abläufe textlich erklärt wurden. Bei Unklarheiten stand Ihr der Projektmanager durch Emailverkehr zur Seite. So wurde eine Liste LINK !!! mit Änderungsvorschlägen gesammelt, die den Workflow aus Anwendersicht verbessern würden.
+
+==== Ruby on Rails Workshop
+
+Der Ruby on Rails Workshop wurde von {rb} vorbereitet und durchgeführt. Dazu fertigte er zwei von einander getrennte Dokumentationen an, die erste Behandelte Ruby im allgemeinen, die zweite hatte die Schwerpunkt bei Ruby on Rails direkt. Bei Dokumentaionen wurde großer Wert auf Übersichttlichkeit und Wiederverwendbarkeit gelegt. Deshalb wurden nur Kurze Einleitungen verwendet und einfach zu verstehende Code-Beispiele. Der Workshop an sich wurde auf zwei Teile nach Themngebiet aufgeteilt und waren für alle Gruppenmitglieder verpflichten. Der erste Teil wurde am 12.04.2021 durchgeführt und der zweite Teil am 19.04.2021. Beide Teile wurden aufgezeichnet und die Dokumente allen Gruppenmitglieder zugänglich gemacht. Auch werden beide Dokumente in der Betiebsdokumention beigelegt um zukünftige Entwickler zu unterstüzen.
+
+==== Beleg Korrektur und neues Mitglied einarbeiten 
+
+Nach der Konsultation (02.04.2021) mit Professor Dr. Anke, bezüglich des Belges von SE I, wussten wir was im Beleg korrigieren mussten. Da wir zu diesem Zeitpunkt noch nicht direkt mit dem Entwicklen anfangen konnten, da wir noch warten wollten bis die Anwenderwünsche mit dem Kunden besprochen wurden. Hintergrund war, dass wir erst die Elaboration Phase abschließen wollten, bevor wir mit der Construction Phase anfingen. Um die Zeit aber sinnvoll zu nutzen fing mit der Korrektur des Belegs an. Die Korrektur der bearbeiteten Dokumente überließen wir unsrem neuen Teammitglied, um ihn so sinnvoll direkt im Projekt einsetzen zu können und er sich auch gleich mit den Belegen auseinander setzen konnte. Mit dieser Arbeitsweise schafften wir es die Einarbeitungszeit für unser Projekt perfekt zu nutzen. 
+
+==== Programmier Konvention
+
+Um unsrem QM gerecht zu werden, entschieden wir uns eine Programmier Konvention zu erstellen, die für alle Developer verpflichten war. Den Vorteil hier sahen wir in der Übersichtlichkeit des Codes. Wir befürchteten, dass wenn mehrere Individuen mit unterschiedlichen Code-Shreibstylen zusammen arbeiten müssen, könnte dies schnell zu Chaos führen. Deshalb beauftragen wir {rb} mit der Aufgabe eine geeignete Konvention zu erstellen. Um den Kosten/Nutzen Faktor nicht zu sehr strapazieren, entschied er sich viel von dem Ruby Leitfaden zu übernehmen. 
+Eine genauer Übersicht dazu findet man im QM. LINK !!!
+
+==== Login Lösung finden
+
+Da unser Projekt in jedem Fall eine Multi-User-Anwendung sein musste, mussten wir auch eine geeignte Lösung für die Rechteeinhaltung der unterschiedlichen Rollen finden. Da das System unsere Vorgänger schon über einen Login verfügte, kamen wir zu dem Schluss es sei das beste auf diesen aufzubauen. Wir planten hier grob, dass beim anlegen eines neuen Nutzers das System ein Passwort vergeben sollte und bei der ersten Anmeldung des Nutzers er dies in sein persönliches ändern sollte oder wir alternativ den HTW login verknüpfen könnten. Diesen Vorschlag wollten wir so dem Kunden unterbreiten. Link!!!
+
+==== Ruby on Rails Update
+
+In der Vorbereitung auf die Construction Phase bermerkten wir, dass die Ruby on Rails Version des Systems nicht mehr die aktuelles war. Dies wollten wir durch ein Update der Version ändern. Diese Überlegung möchten wir mit möglichen Sicherheitslücken und Performanceneinbusen begründen. Da wir zu so einem Schritt die Einwilligung des Kunden benötigen, wollten wir Ihm dies im kommenden Meeting vorschlagen. 
+
+==== Kunden Meeting 
+
+Da wir in unsrer Vorarbeit nun einige Punkte (siehe vorgegangene Kapitel) ausgearbeitet hatten, die wir dem Kunden vorstellen wollten, nahmen wir am 13.04.2021 Kontakt zum Kunden auf und baten um ein Meeting. Dies wurde uns am 27.04.2021 gewährt. Die großen Abstände zwischen Erstkontakt und Meeting können durch die Erkankung des Kunden erklärt werden. 
+
+==== Retrospective
+
+* Die ersten vier Wochen des Semesters haben wir ohne Iterationen gearbeitet. Wir hatten unser Mindset noch nicht wirklich auf Software Engineering umgestellt und versuchten immer noch ein Schulprojekt zu betreuen. Deshalb waren wir uns unsicher ob unsre Korrektur- und Vorbereitungsarbeiten überhaubt schon als SE II Arbeiten gelten würden. 
+Aus heutiger Sicht am Ende des Semester war dies eine falsche Entscheidung. Wir haben zwar unterbewusst einige Iterationsabläufe bei unserer Arbeitsweise beibehalten, wie z.B. Protokolle anfertigen oder Ziele formulieren, andere aber wie z.B. Work-Item-List anfertigen oder Puls-Checks weggelassen. Dies betrachten wir als Fehler, denn wir uns auch nun selbst eingestehen können.
+
+* Die Einarbeitung des neuen Teammitglieds verlief unglaublich einfach und inuativ und wir alles sind sehr froh uns gefunden zu haben 
+
+* Die deutliche Mehrfachbelegung der Rollen, durch die starke Reduzierung unseres Teams führte zu einer gewissen Abgrenzung der Teammitglieder da, nun sehr Fachspezifisch gearbeitet wurde und der Gruppenaustausch sich fast ausschließlich auf die Weeklys begrenzte. 
+
+
+
+
+=== Iteration 05 (21.04.2021-05.05.2021)
+
+*Iterations Ziele:*
+
+
+* Validierung der Benutzerwünsche mit dem Kunden
+* Besuch des Ruby on Rails Workshops durch alle Gruppenmitglieder
+* Überarbeitung der UCs, TCs, Wireframes, Vision und des Glossars 
+* Installation der Entwicklungsumgebung aller Developer 
+* Evaluation von alten TCs, Entscheidung fällen über das zu verwendende Testframework
+* C4 Modell für UC01
+* Durchführung von Ruby on Rails Update
+
+==== Validierung mit dem Kunden, TSM4 (27.04.2021)
+
+Hintergrund des Treffens mit dem Kunden war die Abklärung der Kundenwünsche, die Absprache des Logins und der Vorschlag des Updates. Die Vorschläge der Kudenwünsche wurden dem Kunden unterbreitet und mit gemeinsam mit Ihm überlegt welche Änderungen sinnvoll sind und welche nicht. Daraus ergaben sich folgende Beschlüsse: 
+
+[%header, cols="1,3,1"]
+|===
+|Nr.
+|Anwenderwunsch
+|Kundenentscheidung
+|AW01
+|Es sollte möglich sein die Studiengänge der Voreinstellung durch den Admin bearbeiten zu können 
+|*Bewilligt*
+|AW02
+|Es sollte möglich sein auch Alternative Vorlesungen wie z.B. die Kinderuni die keinem Studiengang zuordbar sind, mit dem System abzudecken 
+|*Bewilligt*
+|AW03
+|Es sollte möglich sein nach jedem Experiment einen Kommentar zu hinterlegen 
+|*Verweigert*
+|AW04
+|Es sollte möglich sein auch Experimente, die nicht in der DB vorhanden sind im Wochenplan abzubilden 
+|*Bewilligt*
+|AW05
+|Es sollte möglich sein das Journal mit Hilfe eines Akkordeon-Menüs übersichtlicher zu gestalten 
+|*Bewilligt*
+|===
+
+Die Idee der Loginvergabe wurde vom Kunden nicht positiv aufgenommen. Er will Benutzername und Passwort der Nutzer selbst vergeben und den Nutzern dann über Email zukommen lassen. Der Projektmanager der das Meeting führt wies Ihn mehrmals daraufhin, dass dies im Bezug auf den Datenschutz sehr wahrscheinlich nicht der beste Weg ist. Die Meinung des Kunden ändert sich daraufhin aber nicht. 
+
+Der Vorschlag des Updates von Ruby on Rails wurde von dem Kunden sehr positiv aufgenommen und wir erhielten die Erlaubnis dies auf der VM durchzuführen. Falls alles funktionieren sollte, sollten wir dies dann auch auf dem Hauptsystem tun und in der Betriebssdokumention beschreiben wie auch in Zukunft ein solches Update umzusetzen sei. 
+
+Der Kunde wünschte auch eine Neupriorisierung der Aufgaben die Implementiert werden sollten. Eine genaue Übersicht hierzu ist in der Vision zu finden.  LINK !!!
+Auch sollte die Ansicht der Statisik angepasst werden, da das vorgeschlagene Design von SE I dem Kunden nun nicht mehr entsprach. Das selbe galt für die Dozentenwoche auch diese sollte vom Design nochmals angepasst werden.  
+
+==== Abschluss des Ruby on Rails Workshops 
+
+Der letze verpflichtende Termin des Workshops war noch außerhalb der I05, die Nachbesprechung erfolgte allerdings in ihr. Das Feedback war einstimmig sehr positiv und {rb} wurde von allen Teammitgliedern mit Dankbarkeit und Lob überschüttet. 
+
+==== Überarbeitung der UCs, TCs, Wireframes, Vision und des Glossars
+
+Das TSM4 ergab, dass einige Dokumente im Beleg von angepasst werden mussten. Der UC01 musste so verändert werden, dass er nun auch AW02 und AW04 abdeckte. Im UC02 musste die AW05 mit aufgenommen werden und für AW01 musste der neue UC10 geschaffen werden.
+Die TCs der UCs mussten dementsprechend auch abgeändert werden und der TC WELCHER ???? wurde für AW01 neu erstellt.
+Bei dem Wireframe WF_1 wurde der optionale Titel hinzugefügt (AW02), bei WF_2 wurde ein Button hinzugefügt um ein Experiment außerhalb der Datenbank hinzuzufügen(AW04) und bei WF_8 wurde zum Titel das Semester hinzugefügt. Es wurden die Experimentenummern hervorgehoben. Es wurde der Abstand zwischen den Experimenten verkleinert. Es wurde Abstand zum Abheften erzeugt (Änderungen des Kunden zur Wochenplanansicht). 
+Alle Änderungen der Wireframes wurden vom Kunden akzeptiert, außer WF_8. Die Kundenforderung war, dass wir das Design von Frau Dr. Krawietz übernehmen sollten, was wir auch taten. Es wurde davon abgesehen, nochmals einen Wireframe hierfür anzufertigen. 
+Die Neupriorisierung wurde in der Vision dokumentiert. 
+Das Glossar wurde um einige Wörter erweitert. 
+
+==== Installation der Entwicklungsumgebung aller Developer
+
+Um die Vorbereitungen für die Construction Phase abzuschließen, setzen wir uns das Ziel das alle Developer ihr Equiment Ruby on Rails bereit hatten. Die Kriterien waren hier, über eine Linux Version zu verfügen und mindestens über ein Textverarbeitungsprogramm zu verfügen um Ruby on Rails schreiben zu können. 
+
+==== Evaluation von alten TCs, Entscheidung fällen über das zu verwendende Testframework
+
+Da wir nun langsam in die Construction Phase kommen würden, mussten wir uns nun auch für ein Testframework entscheiden. Diese Entscheidung traff unser Tester, nach einiger Einarbeitungszeit. Er kam zu dem Schluss das Testframework "Rspec" unsere Vorgänger weiter zu verwenden. Seiner Meinung nach würde es ausreichen, um alle unsere TCs abbilden zu können.
+Die Evaluation TCs unsere Vorgänger ergab, dass wir diese Tests aufjedenfall beachten sollten. Hintergrund hier war, dass wir uns sicher sein sollten ob alle vorhergegangenen Tests funktionierten, um so wenn bei uns Fehler auftauchen sollten, auschließen zu können ob der Fehler vom alten System kommt. Denoch wurde darüber diskutiert ob wirklich alle Tests benötigt werden würden, oder ob es vielleicht besser wäre eine Auswahl zu treffen welche Tests für uns relevant wären und welche nicht. Dieser Entschluss wurde als sinnvoll erachtet und sollte in I06 umgesetzt werden. 
+
+==== C4 Modell für UC01
+
+Um mit dem Implemntieren an sich, so schnell als möglich in der Construction Phase anfangen zu können, wurde hier das C4 Modell mit UC01 erstellt. 
+
+==== Durchführung von Ruby on Rails Update
+
+Das Update wurde auf der VM von {rb} erfolgreich durchgeführt. 
+
+
+==== Abschluss der Iteration 05
+
+* Überprüfung selbst gesteckter Iterationsziele: Y/N (6/6)*
+** Die Teilnahme am Ruby on Rails Workshop war vollzählig. *Y*
+** Die Änderungen des Kunden wurde mit Wireframes validiert. *Y*
+** Die alten TCs wurden versucht auszuführen. Es wurde die Entscheidung getroffen das Framework "Rspec" zu verwenden. *Y*
+** Das Update von Ruby on Rails wurde auf der VM durchgeführt. *Y*
+** Integration des UC01 in das C4 Modell anhand eines Klassendiagramms. *Y*
+** Die Beleg Dokumente wurden den Änderungen des Kunden angepasst und liegen in GitHub vor. *Y*
+** Das EMS System kann von allen Devolpern aufgerufen werden. *Y*
+
+* ALPHA States
+
+image::05.05.21_END_I5.png[ALPHA states 05.05.2021]
+
+* Puls-Check I05 LINK !!!
+* Retrospective
+** Projektstatus: *grün*
+** Die Funktion des Redeführers wurde abgeschafft, da bei einer Gruppengröße von vier Personen diese nicht benötigt wird. 
+** Die andauernden Änderungen des Kunden und unser fehlerhafte Verständnis der agilen Softwareentwicklung hat bei uns zwar viele negative Gefühle ausgelöst und es wurde auch viel diskutiert, dennoch haben wir es durch unsere Professionalität und durch das teilweise Einschreiten von Teammitgliedern geschafft die Iteration abzuschließen. 
+** Der beabsichtigte Zeitaufwand konnte erfüllt werden.
+** Das Gruppen- und Arbeitsklima ist im gelben Bereich.
+* Lesson Learned
+** Agile Software Entwicklung wurde verstanden.  
+** Unsere Arbeitszeit ist begrenzt: Heißt wir Arbeiten nicht, bis das Projekt abgeschlossen ist, sondern bis die verfügbare Zeit aufgebraucht ist.
+** Unser Kunde darf jederzeit Änderungen wünschen, wir müssen aber selektieren welche "In-Scope" oder "Out-Scope" sind.
+
+
+=== Iteration 06 (05.05.2021-19.05.2021)
+
+
+
+=== Iteration 07 (19.05.2021-02.06.2021)
+
+
+
+
+=== Iteration 08 (02.06.2021-16.06.2021)
+
+
+=== Iteration 09 (16.06.2021-30.06.2021)
