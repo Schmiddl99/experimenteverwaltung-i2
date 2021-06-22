@@ -27,9 +27,9 @@ describe "Journal", js_errors: false do
   #after signing in as lecturer, the user visits his journal
   #it is expected that order_1 is sorted to the first position order_2 2nd and order_3 3rd
   it "Journal enthält chronologische geordnete Buchungen" do
-    Fabricate :order, user: lecturer, course_at_date:Date.current + 3.day
-    Fabricate :order, user: lecturer, course_at_date:Date.current + 1.day                         #fabricate orders unsorted
-    Fabricate :order, user: lecturer, course_at_date:Date.current + 2.day
+    Fabricate :order, user: lecturer, course_at_date: Date.current + 3.days
+    Fabricate :order, user: lecturer, course_at_date: Date.current + 1.day                         #fabricate orders unsorted
+    Fabricate :order, user: lecturer, course_at_date: Date.current + 2.days
     sign_in lecturer
     visit "journal"
     dates_arr=Array.new                                                                           #data structure to store the dates
