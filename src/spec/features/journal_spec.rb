@@ -7,7 +7,7 @@ describe "Journal", js_errors: false do
   let(:password) { Faker::Config.random }
   let(:lecturer) { Fabricate :user, password: password, role: :lecturer }
   let(:admin) { Fabricate :user }
-  let(:order) { Fabricate :order,user:lecturer }
+  let(:order) { Fabricate :order, user: lecturer }
   let(:past_date) { Date.current - 5.day }
       
   before(:each) do
