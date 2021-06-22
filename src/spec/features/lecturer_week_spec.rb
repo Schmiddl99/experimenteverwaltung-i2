@@ -8,8 +8,8 @@ describe "Lecturer Week", js_errors: false do
   let(:lecturer) { Fabricate :user, password: password, role: :lecturer }
   let(:lecturer_2) { Fabricate :user, password: password, role: :lecturer }
   let(:admin) { Fabricate :user }
-  let(:order) {Fabricate :order,user:lecturer}
-  let(:order_2) {Fabricate :order,user:lecturer_2}
+  let(:order) { Fabricate :order, user: lecturer }
+  let(:order_2) { Fabricate :order,user: lecturer_2 }
 
     
   #creating one order that can be displayed 
