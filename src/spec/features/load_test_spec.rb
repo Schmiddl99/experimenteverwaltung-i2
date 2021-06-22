@@ -11,7 +11,7 @@ describe "Lasttest", js_errors: false do
   let(:experiment_2) { Fabricate :experiment, name: 'test_experiment_2',label: 'test_label_2',sub_category:subcat }
   let(:experiment_3) { Fabricate :experiment, name: 'test_experiment_3',label: 'test_label_3',sub_category:subcat }
   let(:admin) { Fabricate :user }
-  let(:order) { Fabricate :order,user:lecturer }
+  let(:order) { Fabricate :order, user: lecturer }
   let(:past_date) { Date.current - 5.days }
       
   before(:each) do
