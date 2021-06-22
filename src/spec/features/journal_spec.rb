@@ -33,15 +33,10 @@ describe "Journal", js_errors: false do
     sign_in lecturer
     visit "journal"
     dates_arr=Array.new                                                                           #data structure to store the dates
-    (0..2).each {|i| 
-      txt=find(:xpath,"(//div[@id='ordersAccordion']/div/div/h2)[#{i+1}]")['textContent']         #get textcontent for each order
-      start_of_date=txt.index(" am")+4                                                            #date is found between " am " and " um "
-      end_of_date=txt.index(" um ")-1
-      date_string=txt[start_of_date..end_of_date]                                                 #slicing out datestring
-      dates_arr<<date_string.to_date                                                              
-    }
-    expect(dates_arr[2]).to be < dates_arr[1]                                                     #if chronologically sorted the oldest date is at last position
-    expect(dates_arr[1]).to be < dates_arr[0]
+  3.times do |n|
+    text = find(:xpath,"(//div[@id='ordersAccordion']/div/div/h2)[#{i}]")['textContent']
+    expect(text).to include(I18n.l(Date.current + (i + 1).days), format: :time_at)
+  end
   end
 
 
