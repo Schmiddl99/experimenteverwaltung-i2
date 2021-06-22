@@ -30,8 +30,7 @@ describe "Lasttest", js_errors: false do
     experiment_2
     experiment_3
     (2..102).each {|i| 
-      (0..10).each {|j|
-        hr=(8+j).to_s
+     (8..18).each do { |hr| 
         Fabricate :order, user: lecturer, course_at_date: Date.current + i.day, course_at_time: "#{hr}:00"
       }  
     }
