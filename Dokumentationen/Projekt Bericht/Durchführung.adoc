@@ -33,7 +33,7 @@ Parallel dazu wurde auch die Rollenverteilung überarbeitet. Hier mussten nun au
 
 
 ==== Anwender Sicht auf das System validiren
-Um die Anwendersicht zu validiern wurde durch den Projektmanager der Kontakt mit Frau Dr. Krawietz gesucht. Dieser ließ sich schnell herstellen, da die Anfrage zu Ihrer Unterstüzung schon im vergangenen Semester geklärt werden konnte. Frau Dr. Krawietz wurde eine Ausführliche PDF mit allen Wireframes zur Verfügung gestellt in der einzelne Abläufe textlich erklärt wurden. Bei Unklarheiten stand Ihr der Projektmanager durch Emailverkehr zur Seite. So wurde eine Liste LINK !!! mit Änderungsvorschlägen gesammelt, die den Workflow aus Anwendersicht verbessern würden.
+Um die Anwendersicht zu validiern wurde durch den Projektmanager der Kontakt mit Frau Dr. Krawietz gesucht. Dieser ließ sich schnell herstellen, da die Anfrage zu Ihrer Unterstüzung schon im vergangenen Semester geklärt werden konnte. Frau Dr. Krawietz wurde eine ausführliche PDF mit allen Wireframes zur Verfügung gestellt in der einzelne Abläufe textlich erklärt wurden. Bei Unklarheiten stand Ihr der Projektmanager durch Emailverkehr zur Seite. So wurde eine Liste LINK !!! mit Änderungsvorschlägen gesammelt, die den Workflow aus Anwendersicht verbessern würden.
 
 ==== Ruby on Rails Workshop
 
@@ -50,7 +50,7 @@ Eine genauer Übersicht dazu findet man im QM. LINK !!!
 
 ==== Login Lösung finden
 
-Da unser Projekt in jedem Fall eine Multi-User-Anwendung sein musste, mussten wir auch eine geeignte Lösung für die Rechteeinhaltung der unterschiedlichen Rollen finden. Da das System unsere Vorgänger schon über einen Login verfügte, kamen wir zu dem Schluss es sei das beste auf diesen aufzubauen. Wir planten hier grob, dass beim anlegen eines neuen Nutzers das System ein Passwort vergeben sollte und bei der ersten Anmeldung des Nutzers er dies in sein persönliches ändern sollte oder wir alternativ den HTW login verknüpfen könnten. Diesen Vorschlag wollten wir so dem Kunden unterbreiten. Link!!!
+Da unser Projekt in jedem Fall eine Multi-User-Anwendung sein musste, mussten wir auch eine geeignte Lösung für die Rechteeinhaltung der unterschiedlichen Rollen finden. Da das System unsere Vorgänger schon über einen Login verfügte, kamen wir zu dem Schluss es sei das beste auf diesen aufzubauen. Wir planten hier grob, dass beim anlegen eines neuen Nutzers das System ein Passwort vergeben sollte und bei der ersten Anmeldung des Nutzers er dies in sein persönliches ändern sollte. Diesen Vorschlag wollten wir so dem Kunden unterbreiten. Link!!!
 
 ==== Ruby on Rails Update
 
@@ -76,7 +76,7 @@ Aus heutiger Sicht am Ende des Semester war dies eine falsche Entscheidung. Wir 
 
 *Iterations Ziele:*
 
-
+* Login Lösung weiterverfolgen
 * Validierung der Benutzerwünsche mit dem Kunden
 * Besuch des Ruby on Rails Workshops durch alle Gruppenmitglieder
 * Überarbeitung der UCs, TCs, Wireframes, Vision und des Glossars 
@@ -84,6 +84,12 @@ Aus heutiger Sicht am Ende des Semester war dies eine falsche Entscheidung. Wir 
 * Evaluation von alten TCs, Entscheidung fällen über das zu verwendende Testframework
 * C4 Modell für UC01
 * Durchführung von Ruby on Rails Update
+
+==== Login Lösung weiterverfolgen
+
+Es wurde auch noch die Möglichkeit vorgeschlagen, den Login mit dem HTW Login zu verknüpfen. Dazu konsultierten wir Herr Schubert um uns bezüglich des Aufwands und der Abstimmung mit dem Rechenzentrum einen Überblick zu verschaffen. Herr Schubert riet uns von dieser Lösung ab, weil es seiner Meinung nach es möglich wäre durch unser System die Passwörter abgreifen zu können. Dies war nicht als Vorwurf gemeint sondern nur der Hinweis, das es vielleicht möglich wäre. Und das zweite Problem sah er in der Authentifizierung da wir hier administrative Informationen des Nutzerverwaltungs-Server des Rechenzentrums benötigen werden und diese sehr wahrscheinlich nicht bekommen werden. Er empfahl uns den Login mit Hilfe einer Datenbank umzusetzen, da es hier auch einfacher wäre, den Mechanismus zu ändern wenn es eforderlich sei. 
+
+Dank dieser Informationen kamen wir zu dem Schluss auf den HTW Login eher abzusehen, wollten den Kunden aber dennoch über diesen Vorschlag informieren.  
 
 ==== Validierung mit dem Kunden, TSM4 (27.04.2021)
 
@@ -111,12 +117,12 @@ Hintergrund des Treffens mit dem Kunden war die Abklärung der Kundenwünsche, d
 |*Bewilligt*
 |===
 
-Die Idee der Loginvergabe wurde vom Kunden nicht positiv aufgenommen. Er will Benutzername und Passwort der Nutzer selbst vergeben und den Nutzern dann über Email zukommen lassen. Der Projektmanager der das Meeting führt wies Ihn mehrmals daraufhin, dass dies im Bezug auf den Datenschutz sehr wahrscheinlich nicht der beste Weg ist. Die Meinung des Kunden ändert sich daraufhin aber nicht. 
+Die Idee der Loginvergabe wurde vom Kunden nicht positiv aufgenommen weder der HTW Login noch das zu veränderte Passwort. Er will Benutzername und Passwort der Nutzer selbst vergeben und den Nutzern dann über Email zukommen lassen. Der Projektmanager der das Meeting führt wies Ihn mehrmals daraufhin, dass dies im Bezug auf den Datenschutz sehr wahrscheinlich nicht der beste Weg ist. Die Meinung des Kunden ändert sich daraufhin aber nicht. 
 
 Der Vorschlag des Updates von Ruby on Rails wurde von dem Kunden sehr positiv aufgenommen und wir erhielten die Erlaubnis dies auf der VM durchzuführen. Falls alles funktionieren sollte, sollten wir dies dann auch auf dem Hauptsystem tun und in der Betriebssdokumention beschreiben wie auch in Zukunft ein solches Update umzusetzen sei. 
 
 Der Kunde wünschte auch eine Neupriorisierung der Aufgaben die Implementiert werden sollten. Eine genaue Übersicht hierzu ist in der Vision zu finden.  LINK !!!
-Auch sollte die Ansicht der Statisik angepasst werden, da das vorgeschlagene Design von SE I dem Kunden nun nicht mehr entsprach. Das selbe galt für die Dozentenwoche auch diese sollte vom Design nochmals angepasst werden.  
+Auch sollte die Ansicht der Statisik angepasst werden, da das vorgeschlagene Design von SE I dem Kunden nun nicht mehr entsprach. Das selbe galt für die Dozentenwoche auch diese sollte vom Design nochmals angepasst werden. 
 
 ==== Abschluss des Ruby on Rails Workshops 
 
@@ -124,11 +130,15 @@ Der letze verpflichtende Termin des Workshops war noch außerhalb der I05, die N
 
 ==== Überarbeitung der UCs, TCs, Wireframes, Vision und des Glossars
 
-Das TSM4 ergab, dass einige Dokumente im Beleg von angepasst werden mussten. Der UC01 musste so verändert werden, dass er nun auch AW02 und AW04 abdeckte. Im UC02 musste die AW05 mit aufgenommen werden und für AW01 musste der neue UC10 geschaffen werden.
+Das TSM4 ergab, dass einige Dokumente im Beleg von angepasst werden mussten. Der UC01 musste so verändert werden, dass er nun auch AW02 und AW04 abdeckte. Im UC02 musste die AW05 mit aufgenommen werden.
+
 Die TCs der UCs mussten dementsprechend auch abgeändert werden und der TC WELCHER ???? wurde für AW01 neu erstellt.
-Bei dem Wireframe WF_1 wurde der optionale Titel hinzugefügt (AW02), bei WF_2 wurde ein Button hinzugefügt um ein Experiment außerhalb der Datenbank hinzuzufügen(AW04) und bei WF_8 wurde zum Titel das Semester hinzugefügt. Es wurden die Experimentenummern hervorgehoben. Es wurde der Abstand zwischen den Experimenten verkleinert. Es wurde Abstand zum Abheften erzeugt (Änderungen des Kunden zur Wochenplanansicht). 
-Alle Änderungen der Wireframes wurden vom Kunden akzeptiert, außer WF_8. Die Kundenforderung war, dass wir das Design von Frau Dr. Krawietz übernehmen sollten, was wir auch taten. Es wurde davon abgesehen, nochmals einen Wireframe hierfür anzufertigen. 
+Bei dem Wireframe WF_1 wurde der optionale Titel hinzugefügt (AW02), bei WF_2 wurde ein Button hinzugefügt um ein Experiment außerhalb der Datenbank hinzuzufügen(AW04) und bei WF_8 wurde zum Titel das Semester hinzugefügt. Es wurden die Experimentenummern hervorgehoben. Es wurde der Abstand zwischen den Experimenten verkleinert. Es wurde Abstand zum Abheften erzeugt (Änderungen des Kunden zur Wochenplanansicht).
+
+Alle Änderungen der Wireframes wurden vom Kunden akzeptiert, außer WF_8. Die Kundenforderung war, dass wir das Design von Frau Dr. Krawietz übernehmen sollten, was wir auch taten. Es wurde davon abgesehen, nochmals einen Wireframe hierfür anzufertigen.
+
 Die Neupriorisierung wurde in der Vision dokumentiert. 
+
 Das Glossar wurde um einige Wörter erweitert. 
 
 ==== Installation der Entwicklungsumgebung aller Developer
@@ -138,7 +148,8 @@ Um die Vorbereitungen für die Construction Phase abzuschließen, setzen wir uns
 ==== Evaluation von alten TCs, Entscheidung fällen über das zu verwendende Testframework
 
 Da wir nun langsam in die Construction Phase kommen würden, mussten wir uns nun auch für ein Testframework entscheiden. Diese Entscheidung traff unser Tester, nach einiger Einarbeitungszeit. Er kam zu dem Schluss das Testframework "Rspec" unsere Vorgänger weiter zu verwenden. Seiner Meinung nach würde es ausreichen, um alle unsere TCs abbilden zu können.
-Die Evaluation TCs unsere Vorgänger ergab, dass wir diese Tests aufjedenfall beachten sollten. Hintergrund hier war, dass wir uns sicher sein sollten ob alle vorhergegangenen Tests funktionierten, um so wenn bei uns Fehler auftauchen sollten, auschließen zu können ob der Fehler vom alten System kommt. Denoch wurde darüber diskutiert ob wirklich alle Tests benötigt werden würden, oder ob es vielleicht besser wäre eine Auswahl zu treffen welche Tests für uns relevant wären und welche nicht. Dieser Entschluss wurde als sinnvoll erachtet und sollte in I06 umgesetzt werden. 
+
+Die Evaluation TCs unsere Vorgänger ergab, dass wir diese Tests aufjedenfall beachten sollten. Hintergrund hier war, dass wir uns sicher sein sollten ob alle vorhergegangenen Tests funktionierten, um so wenn bei uns Fehler auftauchen sollten, auschließen zu können ob der Fehler vom alten System kommt. Denoch wurde darüber diskutiert ob wirklich alle Tests benötigt werden würden, oder ob es vielleicht besser wäre eine Auswahl zu treffen welche Tests für uns relevant wären und welche nicht. Dieser Entschluss wurde als sinnvoll erachtet und sollte in I06 umgesetzt werden. Da wir diesen Schritt als Teil des *LCA-Meilenstein* sehen, betrachten wir diesen als wieder geöffnet. 
 
 ==== C4 Modell für UC01
 
@@ -151,7 +162,7 @@ Das Update wurde auf der VM von {rb} erfolgreich durchgeführt.
 
 ==== Abschluss der Iteration 05
 
-* Überprüfung selbst gesteckter Iterationsziele: Y/N (6/6)*
+* *Überprüfung selbst gesteckter Iterationsziele: Y/N (6/6)*
 ** Die Teilnahme am Ruby on Rails Workshop war vollzählig. *Y*
 ** Die Änderungen des Kunden wurde mit Wireframes validiert. *Y*
 ** Die alten TCs wurden versucht auszuführen. Es wurde die Entscheidung getroffen das Framework "Rspec" zu verwenden. *Y*
@@ -159,10 +170,6 @@ Das Update wurde auf der VM von {rb} erfolgreich durchgeführt.
 ** Integration des UC01 in das C4 Modell anhand eines Klassendiagramms. *Y*
 ** Die Beleg Dokumente wurden den Änderungen des Kunden angepasst und liegen in GitHub vor. *Y*
 ** Das EMS System kann von allen Devolpern aufgerufen werden. *Y*
-
-* ALPHA States
-
-image::05.05.21_END_I5.png[ALPHA states 05.05.2021]
 
 * Puls-Check I05 LINK !!!
 * Retrospective
@@ -179,14 +186,201 @@ image::05.05.21_END_I5.png[ALPHA states 05.05.2021]
 
 === Iteration 06 (05.05.2021-19.05.2021)
 
+*Iterations Ziele:*
+* Entscheidung über den Login treffen
+* Entscheidung treffen, welche alte Test Cases entfernt werden und welche repariert werden
+* Update des Systementwurfs im Architecture-Notebook
+* Das C4 Modell von Use Case 01 um die Änderung des "Dummy Experiments" erweitern 
+* Das C4 Modell um Use Case 03 erweitern
+* Die Implementierung von Use Case 01
+* Fortlaufende Korrektur des Belegs
+* Abschluss des *LCA-Meilensteins* und Beginn des *IOC-Meilensteins*
+
+==== Entscheidung über den Login treffen
+
+Nach dem Kundenmeeting war des Team stark verwundert über die Forderung des Kunden. Es wurden einige Möglichkeiten diskutiert wie damit umzugehen sei. Es wurde auch der Vorschlag gebracht sich mit dem Datenschutzbeauftragten der HTW in Verbinndung zu setzen. Davon haben wir aber abgesehn, weil wir zu dem Schluss gekommen sind, dass der Datenschutz in der Verantwortlichkeit des Kunden liegt und es auch nicht die Aufgabe des Entwicklungsteams sei bezüglich Forderungen oder Wünschen des Kuden, mit dem Kunden zu diskutieren oder gar zu schreiten. Wir haben den Kunden daraufhin gewiesen das wir es bezüglich des Datenschutz für keine gute Idee halten, wenn der Admin Benutzername und Passwort für die Anwender vergibt. Nochdazu ist diese Forderung für uns auch eine erhebliche Erleicherung da somit der Entwicklungsaufwand bezüglich des Logins sich drastisch reduziert. 
+
+==== Entscheidung über die Reperatur oder die Entfernung alter TCs
+
+Der Tester nahm die Arbeit an den alten TCs erfolgreich auf, stieß aber auf einige Hindernisse die wir nicht bedacht hatten. Die Rekunstruktion des Nutzens des alten TCs war deutlich schwieriger als gedacht. Auch die fehlende Dokumentation der alten TCs behindert die Arbeit immens. Zusätzlich hatte unsere Tester ein großes Zeitmanagementproblem, (siehe Probleme LINK !!!) das die Arbeit nochmals erschwerte. Das Ziel wurde nicht erreicht.  
+
+==== Update des Systementwurfs im Architecture-Notebook
+
+Durch die Änderungen des Kunden im TSM4 musste auch das Architecture-Notebook entsprechend angepasst werden. Die Änderungen wurden unter Aufsicht des Analysten vorgenommen, da er denn besten Überblick hatte. 
+
+
+==== C4 Modellerweiterungen 
+
+Das C4 Modell wurde um AW04 erweitert und der UC03 mitaufgenommen. Die Arbeit an UC03 ist nicht abgeschlossen worden. 
+
+==== Implementierung von UC01
+
+Der UC01 wurde erfolgreich implemntiert. Um bei der Implementierungen einen perfekten Fachaustausch zu gewährtleiten, verwenden wir hier und bei jeder weiteren Implementierung die Pairprogrammierung. An der Pairprogrammierung war der Developer und der Analyst beteiligt. 
+
+==== Fortlaufende Korrektur des Belegs
+
+Wir kamen zu dem Schluss, dass es eine Verbesserung des Organisationsaufwands wäre wenn wir die Verbesserungen des Belegs nun nicht mehr durchgehen planen würden, sondern dazu übergehen das wenn wir durch normale Arbeiten am Beleg die Dokumente bearbeiten würden, die Belgeverbesserungen gleich mit erledigen könnten. Dies wurde auch in der Work-Item-List mit einem durchgehend Issue realiziert und es wurde ein Dokument in Microsoft Teams erstellt mit den noch zu erledigten Verbesserungen, dass nichts vergessen wird. 
+
+==== Abschluss des *LCA-Meilensteins* und Beginn des *IOC-Meilensteins*
+
+Der *IOC-Meilenstein* konnte durch die Implemntierung von UC01 erfolgreich begonnen werden.
+Der *LCA-Meilenstein* konnte nicht erfolgreich Abgeschlossen werden, da das Ziel betreffend der alten TCs nicht erreicht wurde. 
+
+==== Abschluss der Iteration 06
+
+===== Probleme
+[%header, cols="2,1,3"]
+|===
+| Problem | Status | Notizen
+| Stark erhöhter Zeitaufwand bei der Reparatur der alten Test Cases| Gelöst 
+| Da unsere Vorgänger leider keine genau Aufführung Ihrer Test Cases erstellt haben müssen wir uns nun langsam die alten Test Cases erarbeiten. Dieser Umstand des erhöhten Zeitaufwandes wurde als Problem bei der Kosten-Nutzen-Abschätzung erkannt und in der Risklist festgehalten. Nach der Mitigation Strategy der Risk List wurde eine Notfalllösung gefunden: die Arbeit an den alten Test Cases wird nun erst einmal stillgelegt, bis eine Lösung dafür gefunden wurde (Coach und Projektvorgänger wurden um Hilfe gebeten). Es wird die Arbeit an unsren aktuellen Test Cases vorgezogen. 
+|Corona bedingte Zeitmanagementprobleme | Gelöst | Da das Corona Hygienekonzept zur erneuten Schließung von Kindergärten geführt hat, kann {PG}, der Vater von zwei Kinder ist, sich nicht in dem Umfang dem Projekt widmen wie er es möchte. Dies führt zu dem Problem, dass er bei seinem Workload unterstützt werden muss, was ein großes Zeitproblem mit sich bringt. (Coach wurde über dieses "außergewöhnliche" Problem informiert). Das Problem wurde in der Risklsit vermerkt und als Lösung wurde beschlossen, dass wenn Zeitprobleme jeder Art auftauchen sollten, diese so schnell als möglich der Gruppe mitzuteilen sind, dass so schneller gehandelt werden kann. 
+|===
+
+* *Überprüfung selbst gesteckter Iterationsziele: Y/N (4/6)*
+** Die alten Test Cases wurden komplett verstanden und eine komplette Auswertung liegt vor welche funktionieren, repariert werden müssen oder gelöscht werden können *N*
+** Es wurde im Architecture-Notebook eine begründete Entscheidung getroffen welches Testframework verwendet wird *Y*
+** Das C4 Modell von Use Case 01 wurde um das "Dummy Experiment" erweitert *Y*
+** Das C4 Modell wurde um Use Case 03 erweitert *N*
+** Use Caes 01 wurde erfolgreich implemntiert *Y*
+** Der Beleg wurde soweit verbessert, dass die restlichen Änderungen bei der aktuellen Bearbeitung des Projekts mit eingeflochten werden können *Y*
+* Retrospective
+** Projektstatus: *gelb*
+* Unsere Arbeitsschätzungen betrachten wir als GUT obwohl, nicht alle Iterationsziele erreicht werden konnten. Dies begründen wir mit dem oben beschriebenen Corona Umständen. Dennoch werden wir nun unserer Planung für die nächste Iteration überdenken und die Arbeitskräfte besser verteilen. 
+* Das Gruppen- und Arbeitsklima ist im grünen Bereich. Siehe <<Iteration 06, Iterations-Umfrage>> 
 
 
 === Iteration 07 (19.05.2021-02.06.2021)
 
+*Iterations Ziele:*
+
+* Zusammenführen des UC05, UC06, UC07 in den UC03
+* Reperatur oder Entfernung alter TCs
+* UC03 im C4 Modell abschließen 
+* TCs für UC01 werden umgesetzt und formuliert  
+* UC03 Implementierung  
+* Erstellung für UC10 bezüglich AW01
+
+==== Reperatur oder Entfernung alter TCs
+
+Dieses Ziel konnte dirket am Anfang der Iteration erreicht werden, da {rb} den Tester {pg} unterstütze. Durch die Expertise im Bereich Codeding und Ruby on Rails von {rb} konnten die alten TCs validert werden. Somit betrachten wir hier nun die Elobration Phase als abgeschlossen und haben den *LCA-Meilenstein* erreicht.
+
+Unsere Entscheidung, die alten TCs erst einmal Ruhen zu lassen, die wir in der letzten Iteration getroffen hatten, wurde vom Coach positiv beschätigt. 
+
+Ein weiterer Teil unsere Notfallmanagements war Vincent Thelang zu kontaktiern, ob er uns vielleicht weiterhelfen könne. Obwohl wir seine Hilfe bezüglich der alten TCs zu Meetingzeitpunkt (01.06.2021) glücklicherweise nicht mehr benötigten, hielten wir dennoch einen Fachaustausch ab. Hier ergaben sich zwar keine neuen Ergebnisse, aber Herr Thelang meinte wir wären auf einem guten Weg. An dem Fachaustausch beteiligten sich der Projekmanager und der Developer, da hier die Bezugsgößen von Projektorganisation und Projektumsetzung am größten waren. 
+Die alten UCs werden im Beleg von dokumentiert, damit zukünftige Entwickler einen besseren Überblick über alle TCs haben und wir beschreiben können was wir repariert haben oder warum wir TCs entfernt haben. 
+
+==== Zusammenführen der UCs
+
+Bei der Betrachung der Use-Cases UC05, UC06 und UC07 bemerkten wir, dass wir bei Ihrer Erstellung zu granular vorgegenagen waren. Da sich alle Use-Cases auf die Dozentenwoche bezogen, überführten wir diese in UC03. Somit war ein leichteres Verständnis und größere Übersichtlichkeit gegeben. Hier beteiligte sich der Analyst tatkräftig, dass keine Anforderungen verloren gingen. 
+
+
+==== UC03 im C4 Modell abschließen
+
+Der UC03 wurde im C4 Modell erfolgreich umgestzt.
+
+==== TCs für UC01 werden umgesetzt und formuliert  
+ 
+ Die TCs für UC01 wurden erfolgreich implementiert. Das Resultat war erfolgreich.
+
+==== UC03 Implementierung
+
+Der UC03 wurde Implementiert. Hier haben Developer und Analyst Pairprogrammierung betrieben. 
+
+==== Erstellung für UC10 bezüglich AW01
+
+Der UC10 wurde erstellt um die Studiengangsverwaltung zu ermöglichen.
+
+==== Abschluss der Iteration 07
+
+* *Überprüfung selbst gesteckter Iterationsziele: Y/N (5/5)*
+** Die Validierung der alten TCs konnte abgeschlossen werden *Y*
+** Das C4 wurde erfolgreich um UC03 erweitert *Y*
+** Die TCs für UC01 wurden erfogreich implementiert und durchgeführt *Y*
+** Der UC03 wurde erfolgreich implementiert *Y*
+** Der UC10 wurde erfolgreich erstellt *Y*
+
+* Puls-Check I07 LINK !!!
+* Retrospective
+** Projektstatus: *grün*
+** Das Feedback des Coaches und des Fachaustausch wurden sehr postiv vom Team aufgenommen. Wir fühlen uns nun in unsrem Tun mehr bestärgt und stehn sicherer hinter unsren Entscheidungen.
+** Durch das gute Voranschreiten im Entwicklungsprozess, sind wir der Meinung die Hauptaufgabe des Buchungssystems erfolgreich abschließen zu können. 
+** Der beabsichtigte Zeitaufwand konnte erfüllt werden.
+** Das Gruppen- und Arbeitsklima ist im grünen Bereich.
 
 
 
 === Iteration 08 (02.06.2021-16.06.2021)
 
+*Iterations Ziele:*
+
+* Implementierung von TC03
+* Implementierung von UC02, UC08, UC09
+* Erstellung von Anwender und Admin Test
+* Inkrement bei TSM5 abhalten 
+
+
+==== Implementierung von TC03
+
+Der TC03 wurde erfogreich implementiert und durchgeführt.
+
+
+==== Implemtentierung der Use Cases
+
+Bei der Implementierung wurde wieder Pairprogramming angewendet. 
+
+==== Erstellung von Anwender und Admin Test
+
+Um nochmals die Funktionalität und auch das intuitive Verständnis unseres System zu überprüfen zu können, erstellten wir geführte Anwender und Admin Testaufgaben. Der Anwender hatte die Aufgabe eine Vorlesung anzulegen und davon eine Wochenplan-PDF zu erstellen. Der Admin hatte die Aufgabe sich den Wochenplan des Anwenders anzusehen und auszudrucken. Die Aufgaben waren in mehere Unteraufgaebn unterteilt und enthielten mit fortschreitender Aufgabenstellung immer weniger detailierte Beschreibungen der auszuführenden Aufgaben. Hintergrund hier war, dass wir testen wollten, ob unsere Funktionen des Systems auch verstanden werden, wenn es wenig Hilfestellung dazu gibt. 
+
+
+==== Inkrement bei TSM5 abhalten (10.06.2021)
+
+Am Anfang wurde das System vom Projektmanager vorgestellt. Anwesend waren hier Frau Dr. Krawietz, Herr Heisig und Herr Zirkelbach (Coach). Die Vorstellung verlief sehr gut bis auf einen Fehler, dass bei nicht ausreichender Bildschirmbreite sich die Buttons der Menüleiste übereinandergeschoben haben und somit das Menü Inhalte verdeckt hat.
+
+Anschließend wurde vom Projektmanger der Vorschlag unterbreitet, dass wenn man auf die Umsetzung von UC10 verzichten würde das Team mehr Zeit für andere Anforderungen hätte. Die Lösung wäre hier, dass sie Studiengänge hart ins System gecodet werden würden und wenn es Änderungen bei den Studiengängen geben sollte, die nach Meinung des Teams selten seien, diese auch wieder im System zu ändern. Eine ensprechende Beschreibung und Anleitung würde in der Betriebsdokumentaion beigelegt.
+
+Ein weiterer Vorschlag war auch auf die Filterfunktion bei dem Journal zu verzichten, um auch hier mehr Zeit zu gewinnen. (Die Vorschläg waren im Vorfeld mit dem Team abgesprochen worden). Der Kunde stimmte bei beiden zu, bestand aber darauf, dass die Filterfunktion in die Zukunftsaussicht mitaufgenommen werden würde. Der Projekmanager bestätigte dies.  
+Der Kunde wünschte nach der Vorstellung noch einige Änderungen: 
+
+* Inscope Änderungen 
+** Einpflegen der Studiengangsnamen 
+** Bei der Veränderungen einer Vorlesung im Journal soll ein Button erscheinen mit "Experiment hinzufügen" damit es intuitiver wird  
+** Bei der Dozentenwoche soll ein Button erscheinen mit "Drucken" für die Druckfunktionalität
+* Outscope Änderungen 
+** Es soll eine Notification geben die den Admin darauf hinweißt, dass an einem bereits ausgedruckten Wochenplan noch eine Änderung durch einen Dozenten geschen ist
+** Es soll möglich sein die Voreinstellung auch noch im nachhinein zu verändern. 
+
+Die gewünschten Änderungen wurde alle akzeptiert, nur die Änderungen bezüglich der Notification löste beim Projektmanager Unverständnis aus, da genau dieser Vorschlag dem Kunden bei TSM2 gemacht wurde und abgelehnt wurde. Dies teilte er dem Kunden der Professionalität wegen nicht mit. 
+
+Zum Abschluss des Meetings teilte der Kunde nochmals seine Annerkennung und Dankbarkeit lautstark mit dem Projektmanager. Der Kunde schien über das bisherige System sehr glücklich zu sein. 
+
+Aus Zeitgründen wurden die Anwender- und Admintests nicht im Meeting durchgeführt sondern, Frau Dr. Krawietz und Herr Heisig wurden gebeten diese Zuhause zu erledigen. Beide akzeptierten den Vorschlag und fanden die Idee mit den Usertests gut. 
+
+Auf Wunsch des Kunden wurde nach dem TSM5, dem Kunden und Frau Dr. Krawietz Zugang zu dem Testsystem gewährt. Einmal natürlich um die Usertests durchführen zu können, aber auch um das System besser kennenlernen zu können. Wir hielten dies für eine gute Idee, da wir glaubten es sei besser selbst mit dem System arbeiten zu können, als nur auf eine Präsentation angewiesen zu sein. Der Zugang wurde gewährt. 
+
+Zusätzlich konnte der Kunde sich so auch mit der Userverwaltung besser vertraut machen. 
+
+
+
+
+==== Abschluss der Iteration 08
+
+* *Überprüfung selbst gesteckter Iterationsziele: Y/N (4/4)*
+** Erfolgreiche Implementierung von TC03 *Y*
+** Erfolgreiche Implementierung von UC02, UC08, UC09 *Y*
+** Erstellung von Anwender und Admin Test *Y*
+** Entscheidung mit dem Kunden treffen wie am besten weiterprirorisiert werden soll *Y*
+
+* Puls-Check I08 LINK !!!
+* Retrospective
+** Projektstatus: *grün*
+** Das sehr positive Feedback des erste Inkrement mit dem Kunden freut uns sehr. Da wir im laufe des Projekt ja immer wieder Verständigungsschwierigkeiten hatten, war bei uns im das Risko präsent, dass der Kunde nicht zufrieden wäre mit unser Arbeit. Das dieser Fall nun nicht eingetreten war erleichterte uns sehr. 
+* Lesson Learned
+** Inkremente sind unglaublich wichtig, für den Kunden sowie für die Entwickler. Kein Wireframe oder Protokoll kann mit der Informationsdichte oder dem Verständnisaustausches einer wirklichen Vorführung mithalten. 
+
+
 
 === Iteration 09 (16.06.2021-30.06.2021)
+
+*Iterations Ziele:*
