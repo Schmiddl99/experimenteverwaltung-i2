@@ -70,7 +70,7 @@ describe "Lecturer Week", js_errors: false do
     week = (Date.today + 1.day).cweek
     find(:xpath,"//select[@id='lecturer_week_week']/option[contains(.,'KW #{week}')]").select_option
     find(:xpath,"//input[@value='Anzeigen']").click
-    expect(find_button("Drucken")[:onclick]). to eq("window.print();")       #check if "Drucken" button exist and the system printing menu gets called onclick
+    expect(find_button("Drucken")[:onclick]).to eq("window.print();")       #check if "Drucken" button exist and the system printing menu gets called onclick
   end
 
   #after signing in as lecturer the user visits lecturers week to see his orders
