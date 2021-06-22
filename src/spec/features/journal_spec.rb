@@ -85,7 +85,7 @@ describe "Journal", js_errors: false do
   #as the only order is in the past, it is expected, that symbols and links for deleting and editing are not visible
   it "Buchungen in Vergangenheit könnne nicht bearbeitet werden" do
     Timecop.travel(past_date) do
-        Fabricate :order, user: lecturer
+       Fabricate :order, user: lecturer
     end
     sign_in lecturer
     visit "journal"
