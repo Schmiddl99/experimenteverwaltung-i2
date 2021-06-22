@@ -6,7 +6,7 @@ describe "Lasttest", js_errors: false do
   let(:random) { Faker::Config.random }
   let(:password) { Faker::Config.random }
   let(:lecturer) { Fabricate :user, password: password, role: :lecturer }
-  let(:subcat) {Fabricate :sub_category }
+  let(:subcat) { Fabricate :sub_category }
   let(:experiment_1) { Fabricate :experiment, name: 'test_experiment_1',label: 'test_label_1',sub_category:subcat }
   let(:experiment_2) { Fabricate :experiment, name: 'test_experiment_2',label: 'test_label_2',sub_category:subcat }
   let(:experiment_3) { Fabricate :experiment, name: 'test_experiment_3',label: 'test_label_3',sub_category:subcat }
