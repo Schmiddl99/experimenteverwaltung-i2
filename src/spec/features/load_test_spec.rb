@@ -17,7 +17,6 @@ describe "Lasttest", js_errors: false do
   before(:each) do
     Fabricate :course
     page.windows[0].maximize
-
   end 
   
   #2000 orders are created to simulate the database after 2+years of usage
