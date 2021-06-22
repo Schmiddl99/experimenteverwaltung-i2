@@ -30,6 +30,39 @@ image::Startseite mit Rolle_Dozent.png[Startseite_Dozent]
 
 === Admin
 ==== Dozentenwoche betrachten 
+
+Der Admin kann sich den Wochenplan für einen Dozenten anzeigen lassen, indem er im Auswahlmenü auf "Dozentenwoche" klickt. 
+
+.Dozentenwochenfunktion aufrufen
+image::Startseite_Admin_Dozentenwoche.png[Dozentwoche_starten]
+
+Auf dem folgenden Formular müssen nun der gewünschte Dozent, das spezifische Jahr und eine Kalenderwoche angegeben werden, wobei das akutelle Jahr und die momentane Kalenderwoche standardmäßig voreingestellt sind. Wenn der ausgewählte Dozent für den festgelegten Zeitraum keine Buchungen getätigt hat, wird der Admin darüber informiert. 
+
+.Dozenten wählen
+image::Dozentenwahl.png[Dozentenwahl]
+
+.ggf. Jahr anpassen
+image::Jahreswahl.png[Jahreswahl]
+
+.ggf. Zeitraum anpassen
+image::KWwahl.png[KWwahl]
+
+Nachdem das Formular vollständig ausgefüllt wurde, gelangt der Nutzer durch Druck auf "Anzeigen" in die Dozentenwochenübersicht, wenn vorhanden. 
+
+.Anzeige anfordern
+image::Dozentenwoche_ausgefüllt.png[DW_anzeigen]
+
+Wenn für den gewählten Zeitraum Buchungen vorhanden sind, werden diese strukturiert angezeigt. 
+Durch Druck auf "Drucken" öffnet sich die Druckansicht (alternativ <STRG>+<P> drücken). Beim Drucken ist das Querformat zu wählen.  
+
+NOTE: Die Druckkonvertierung der Dozentwoche ist für alle gängigen Browser, die auf der Chromium Enginge laufen optimiert. Es ist daher zu empfehlen bspw. Chrome für den Druckvorgang zu nutzen. Bei Verwendung von anderen Browsern kann es ungeklärt zu minimalen Fehlern kommen, die jedoch keine Auswirkung auf die sematische oder syntaktische Korrektheit des Dokuments haben. 
+
+.Dozentenwoche
+image::Wochenübersicht.png[Dozentenwoche]
+
+
+
+
 ==== Nutzer anlegen 
 
 === Dozent
@@ -90,8 +123,8 @@ image::Test-Dummy.png[Dummy]
 
 Wenn der Nutzer mit seiner Auswahl zufrieden ist, kann er durch Druck auf "Zum Buchungsabschluss" in die Warenkorbüberischt gelangen. 
 
-.Buchung abschließen 
-image::BuchungAbschließen.png[Buchungsende]
+.Buchung abschließen im Warenkorb
+image::BuchungAbschließen.png[Warenkorb]
 
 In dieser Übersicht ist es möglich, die Buchung final zu bearbeiten. Durch Druck auf "Zurück" gelant der Dozent wieder zur Experimenteübersicht um dort die Experimenteselektion anzupassen. Mithilfe der Mülleimer-Symbole können Experimente durch Klick aus der Buchung entfernt werden. Für Zusatzinformationen bietet das Kommentarfeld Platz. Die Reihenfolge der Experimente kann per Drag-and-Drop (gedrückt halten und ziehen) mithilfe der Dreistrich-Symbole geändert werden. Wenn alle Anpassungen stimmig sind, müssen die Änderungen durch Druck auf "Änderungen übernehmen" gespeichert werden, um sie bei möglichem Neuladen der Seite nicht zu verlieren. 
 
@@ -109,8 +142,26 @@ Wenn die Buchung erfolgreich gespeichert wurde und der Prozess beendet wurde, wi
 image::Abschlussseite.png[Abschlussseite]
 
 
-==== Buchung betrachten und ggf. bearbeiten
+==== Buchungen betrachten und ggf. bearbeiten
 
+Dem Dozent ist die Möglichkeit geboten, alle eigenen Buchungen, egal ob vergangen oder zukünftig, einzusehen. 
+Um dies zu erreichen, muss das Journal durch Druck auf "Journal" im Auswahlmenü klickt. 
+
+.Journal öffnen
+image::Journal_wählen.png[Journal_wählen]
+
+In der Journalüberischt werden die Buchungen (wenn vorhanden) aufgelistet. Manche Buchungsdetails werden dabei vorerst nicht aufgelistet. Durch Druck auf die gwünschte Buchung werden alle Informationen angezeigt. 
+
+image::Buchung_ausklappen.png[Buchungen_kurz]
+
+
+Nachdem die Buchung "aufgeklappt" wurde, sind nun auch die Experimente und der Kommentar sichtbar. Des Weiteren besteht auf der Journalbersicht die Möglichkeit, eine Buchung zu löschen (Druck auf das Eimer-Symbol) oder zu bearbeiten (Druck auf das Stift-Symbol.) Wenn eine Buchung gelöscht werden soll, wird der Nutzer gezwungen, dies zu bestätigen, um unbeabsichtigte Löschungen zu vermeiden. 
+
+image::Buchung_ausgeklappt.png[Buchungen_lang]
+
+Die Bearbeitung der Buchung verhält sich ähnlich, wie der Warenkorb beim Anlegen einer Buchung. Es ist möglich Experimente hinzuzufügen oder zu Entfernen, die Reihenfolge zu ändern, die Änderungen zu spreichern und die Buchung zu persistieren oder die Bearbeitung wieder abzubrechen und die Änderungen zu verwerfen.
+
+image::Bearbeitung.png[Bearbeitung]
 
 
 ==== Wochenplan betrachten 
