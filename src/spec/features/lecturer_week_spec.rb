@@ -45,7 +45,7 @@ describe "Lecturer Week", js_errors: false do
     order_2
     sign_in admin
     visit "lecturer_week/new"
-    week = (Date.today+1.to_i.days).cweek
+    week = (Date.today + 1.day).cweek
     find(:xpath,"//select[@id='lecturer_week_week']/option[contains(.,'KW #{week}')]").select_option
     find(:xpath,"//input[@value='Anzeigen']").click
     expect(page.has_text?("Dummy Experiment")).to be_truthy
