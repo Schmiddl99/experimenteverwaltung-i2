@@ -28,17 +28,15 @@ describe "Journal", js_errors: false do
   #it is expected that order_1 is sorted to the first position order_2 2nd and order_3 3rd
   it "Journal enthält chronologische geordnete Buchungen" do
     Fabricate :order, user: lecturer, course_at_date: Date.current + 3.days
-    Fabricate :order, user: lecturer, course_at_date: Date.current + 1.day                         #fabricate orders unsorted
+    Fabricate :order, user: lecturer, course_at_date: Date.current + 1.day                        #fabricate orders unsorted
     Fabricate :order, user: lecturer, course_at_date: Date.current + 2.days
     sign_in lecturer
     visit "journal"
-    dates_arr=Array.new                                                                           #data structure to store the dates
-  3.times do |n|
-    text = find(:xpath,"(//div[@id='ordersAccordion']/div/div/h2)[#{i}]")['textContent']
-    expect(text).to include(I18n.l(Date.current + (i + 1).days), format: :time_at)
+    3.times do |n|
+      text = find(:xpath,"(//div[@id='ordersAccordion']/div/div/h2)[#{n+1}]")['textContent']      #find the order and get its textcontent
+      expect(text).to include(I18n.l(Date.current + (3 - n ).days))                               #showing that order matches dates from youngest to oldest  
+    end
   end
-  end
-
 
   #a order in the future is created
   #after signing in as lecturer, the user visits his journal

@@ -9,7 +9,7 @@ describe "Lecturer Week", js_errors: false do
   let(:lecturer_2) { Fabricate :user, password: password, role: :lecturer }
   let(:admin) { Fabricate :user }
   let(:order) { Fabricate :order, user: lecturer }
-  let(:order_2) { Fabricate :order,user: lecturer_2 }
+  let(:order_2) { Fabricate :order,user: lecturer_2, comment: "Testkommentar_2"}
 
     
   #creating one order that can be displayed 
@@ -40,8 +40,8 @@ describe "Lecturer Week", js_errors: false do
   #and one comment ("Testkommentar")
   #he clicks on "Zurück" and chooses the other lecturer and displays his week
   #the user is supposed to see the actual order with the correct parameters(Experiment "Dummy Experiment")
-  #and one comment ("Testkommentar")
-  it "Dozentenwoche korrekt anzeigen als Admin mehrere Dozenten" do
+  #and one comment ("Testkommentar_2") that is different from comment of user 1
+    it "Dozentenwoche korrekt anzeigen als Admin mehrere Dozenten" do
     order_2
     sign_in admin
     visit "lecturer_week/new"
@@ -54,7 +54,7 @@ describe "Lecturer Week", js_errors: false do
     find(:xpath,"//select[@id='lecturer_week_lecturer_id']/option[2]").select_option      #select the other lecturer
     find(:xpath,"//input[@value='Anzeigen']").click
     expect(page.has_text?("Dummy Experiment")).to be_truthy
-    expect(page.has_text?("Testkommentar")).to be_truthy
+    expect(page.has_text?("Testkommentar_2")).to be_truthy                                               
   end
 
   #after signing in as admin the user visits lecturers week to see orders of lecturers
