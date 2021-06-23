@@ -10,3 +10,22 @@
 
 .link-danger:hover
   color: $danger
+
+@media only screen and (min-width: 992px)
+  ul.navbar-nav
+    max-height: 3.5rem
+    overflow-x: auto
+    overflow-y: hidden
+    .nav-item
+      white-space: nowrap
+  nav
+    max-height: 3.5rem
+    width: 100vw
+    .navbar-collapse
+      min-width: 90%
+    .form-inline
+      display: flex
+      flex-wrap: nowrap
+      flex-direction: row
+    .nav
+      flex-wrap: nowrap
