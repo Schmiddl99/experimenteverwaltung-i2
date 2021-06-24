@@ -187,7 +187,7 @@ Auch während des Betriebs der Anwendung können Fehler auftauchen. Rails loggt 
 
 ==== Wie kann Ruby oder Rails aktualisiert werden?
 
-Ruby sowie Rails folgen beide dem Semantic Versioning. Kommt eine neue Minor-Version heraus ist ein Update meist ohne Hilfe eines Entwicklers möglich. Trotzdem sollte ein Entwickler baldmöglichst informiert werden, um zu verhindern, dass bei einer neuen Installation die Version zurückgesetzt wird.
+Ruby sowie Rails folgen beide dem Semantic Versioning. Kommt eine neue Minor-Version heraus, ist ein Update meist ohne Hilfe eines Entwicklers möglich. Trotzdem sollte ein Entwickler baldmöglichst informiert werden, um zu verhindern, dass bei einer neuen Installation die Version zurückgesetzt wird.
 
 Größere Versionssprünge sollten nur durch Entwickler vorgenommen werden, da ggf. Änderungen an der Anwendung vorzunehmen sind.
 
