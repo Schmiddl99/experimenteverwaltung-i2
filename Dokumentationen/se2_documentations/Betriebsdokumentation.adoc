@@ -38,7 +38,7 @@ Systemvoraussetzungen für eine Rails Anwendung sind abhängig von der Anwendung
 * mindestens 2 vCPU-Kerne
 * mindestens 50 GB Speicherplatz*
 
-(*) __Speicherplatz sollte erhöht werden, umso länger das System online ist. Mediendateien (wie Bilder oder Videos) sowie die Datenbank liegen im Dateispeicher. Empfohlen wird deshalb mehr Speicherplatz zu wählen.__
+(*) __Speicherplatz sollte erhöht werden, desto länger das System online ist. Mediendateien (wie Bilder oder Videos) sowie die Datenbank liegen im Dateispeicher. Empfohlen wird deshalb mehr Speicherplatz zu wählen.__
 
 Hierbei handelt es sich jedoch um Mindestanforderungen. Sollten deutlich mehr Benutzer das System nutzen, kann es zu langsamen Antwortzeiten o.Ä. kommen. Man sollte dann die Hardware der virtuellen Maschine erweiteren. Mit Befehlen wie `top` (bzw. `htop`) und `df -h` kann geprüft werden, wo der Flaschenhals des Systems ist.
 
