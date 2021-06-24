@@ -32,7 +32,7 @@ Da das Testsystem ein Klon des ehemaligen Produktivsystems ist, ist der Zugang f
 
 === Mindestanforderungen an der Hardware
 
-Systemvoraussetzungen für eine Rails Anwendung sind abhängig von der Anwendung zu wählen. Im Falle des Experimente Management Systems, bei welchem es sich um eine relativ kleine Anwendung handelt sollten folgende Voraussetzungen ausreichend sein:
+Systemvoraussetzungen für eine Rails Anwendung sind abhängig von der Anwendung zu wählen. Im Falle des Experimente Management Systems, bei welchem es sich um eine relativ kleine Anwendung handelt, sollten folgende Voraussetzungen ausreichend sein:
 
 * mindestens 2 GB RAM
 * mindestens 2 vCPU-Kerne
