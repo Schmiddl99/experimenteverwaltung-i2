@@ -177,6 +177,30 @@
 
     <ul class="summary">
       
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#current_ordered_experiments-instance_method" title="#current_ordered_experiments (instance method)">#<strong>current_ordered_experiments</strong>  &#x21d2; Array&lt;OrderedExperiment&gt; </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get all ordered experiments that are not marked for destruction.</p>
+</div></span>
+  
+</li>
+
+      
         <li class="private ">
   <span class="summary_signature">
     
@@ -266,7 +290,82 @@
 
     
       <div class="method_details first">
-  <h3 class="signature first" id="set_course_at-instance_method">
+  <h3 class="signature first" id="current_ordered_experiments-instance_method">
+  
+    #<strong>current_ordered_experiments</strong>  &#x21d2; <tt>Array&lt;<span class='object_link'><a href="OrderedExperiment.html" title="OrderedExperiment (class)">OrderedExperiment</a></span>&gt;</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Get all ordered experiments that are not marked for destruction.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;<span class='object_link'><a href="OrderedExperiment.html" title="OrderedExperiment (class)">OrderedExperiment</a></span>&gt;</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the ordered experiments</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Author:</p>
+<ul class="author">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>Richard Böhme</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+35
+36
+37</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/models/order.rb', line 35</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_current_ordered_experiments'>current_ordered_experiments</span>
+  <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_ordered_experiments'>ordered_experiments</span><span class='period'>.</span><span class='id identifier rubyid_reject'>reject</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='symbol'>:marked_for_destruction?</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="set_course_at-instance_method">
   
     #<strong>set_course_at</strong>  &#x21d2; <tt>Object</tt>  <span class="extras">(private)</span>
   
@@ -307,14 +406,14 @@
       <pre class="lines">
 
 
-26
-27
-28
-29
-30</pre>
+45
+46
+47
+48
+49</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'app/models/order.rb', line 26</span>
+      <pre class="code"><span class="info file"># File 'app/models/order.rb', line 45</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_course_at'>set_course_at</span>
   <span class='kw'>if</span> <span class='id identifier rubyid_course_at_date'>course_at_date</span><span class='period'>.</span><span class='id identifier rubyid_present?'>present?</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_course_at_time'>course_at_time</span><span class='period'>.</span><span class='id identifier rubyid_present?'>present?</span>
@@ -331,7 +430,7 @@
 </div>
 
       <div id="footer">
-  Generated on Sun May 30 16:05:41 2021 by
+  Generated on Thu Jun 24 17:07:44 2021 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.26 (ruby-3.0.1).
 </div>
