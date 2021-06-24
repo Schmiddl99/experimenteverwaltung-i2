@@ -29,5 +29,6 @@ config/master.key
 
 #ignore result pdf of rspec
 test.pdf
+erd.png
 
 .yardoc

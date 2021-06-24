@@ -1,0 +1,61 @@
+= Entwicklerdokumentation: {project-name}
+Richard Böhme <richard.boehme@htw-dresden.de>
+{localdatetime}
+:toc:
+include::../_includes/default-attributes.inc.adoc[]
+:toclevels: 3
+
+== Einführung
+
+Das Experimente Management System wird verwendet um Physik Experimente zu verwalten und zu buchen. Es handelt sich bei der Awendung um einen klassischen Rails Monolithen. Die nachfolgende Dokumentation soll helfen die Anwendung weiter zu entwickeln.
+
+== Struktur des Repositories
+
+Das Repository besteht aus zwei wichtigen Ordnern.
+
+Der Ordner `Dokumentation` enthält jegliche Dokumentation zu dem Projekt. So z.B. das Architekturnotizbuch, die Anforderungsspezifikation oder Iterationspläne.
+
+Der Ordner `src` beinhaltet den tatsächlichen Rails Quellcode.
+
+== Entity Relationship Diagram
+
+Um einen schnellen Überblick über die bestehenden Relationen und deren Beziehungen zu geben, wurde ein Entity Relationship Diagram mit der Bibliothek https://github.com/voormedia/rails-erd[rails-erd] generiert.
+
+image::erd.png[Entity Relationship Diagram]
+
+Leider wird durch das Tool die polymorphe Beziehung zwischen der Klasse `OrderedExperiment` und den Klassen `Experiment` und `DummyExperiment` nicht korrekt abgebildet. Mehr Informationen zu polymorphen Beziehungen in Rails können https://guides.rubyonrails.org/association_basics.html#polymorphic-associations[hier] gefunden werden.
+
+== Grundlegende Architektur - Architecture Notebook
+
+:imagesdir: ../architecture/images
+include::../architecture/architecture_notebook.adoc[leveloffset=1,lines=6..-1]
+
+== Softwaredokumentation
+
+Der gesamte neu geschrieben Quellcode wurde nach den Konventionen von https://yardoc.org[YARD] dokumentiert. Die generierte Dokumentation liegt in `src/doc/index.html` vor. Alternativ kann auch der Dokumentationsserver von YARD gestartet werden:
+
+```
+gem install yard
+cd src
+yard server --reload
+```
+
+Dann kann die Dokumentation im Browser unter `http://localhost:8808` angesehen werden.
+
+== Codekonventionen
+
+Zu Beginn der Weiterentwicklung wurde sich auf gewissene Codekonventionen geeinigt. Diese sind unter <<Konventionen>> zu finden.
+
+== Deployment
+
+include::../architecture/deployment.adoc[leveloffset=1,lines=6..-1]
+
+== Anhang
+
+=== A1: Ruby Einführung
+
+include::../development/ruby_introduction.adoc[leveloffset=2,lines=6..-1]
+
+=== A2: Rails Einführung
+
+include::../development/rails_introduction.adoc[leveloffset=2,lines=6..-1]
