@@ -50,6 +50,7 @@ group :development do
   gem 'capistrano-scm-copy', require: false
   gem 'yard'
   gem 'webrick'
+  gem 'rails-erd'
 end
 
 group :test do

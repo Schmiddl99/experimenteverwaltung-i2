@@ -167,7 +167,6 @@ a|  * Kompatibilität
 
 
 
-<<<
 == Architekturmechanismen
 // https://www2.htw-dresden.de/~anke/openup/core.tech.common.extend_supp/guidances/concepts/arch_mechanism_2932DFB6.html[Doku "Concept: Architectural Mechanism"]
 
@@ -323,13 +322,13 @@ Zur Darstellung der Code-Ebene wurde ein UML-Klassendiagramm verwendet.
 * hellgrau gefärbte Klassen bilden Bibliotheksklassen ab
 
 .Klassendiagramm der Bestellkomponenten
-image::ordering_class_model.svg[Klassendiagramm der Bestellkomponenten]
+image::ordering_class_model.png[Klassendiagramm der Bestellkomponenten]
 
 .Klassendiagramm der Dozentenwochekomponenten
-image::lecturer_week_class_model.svg[Klassendiagramm der Dozentenwochekomponenten]
+image::lecturer_week_class_model.png[Klassendiagramm der Dozentenwochekomponenten]
 
 .Klassendiagramm des Journals
-image::journal_class_model.svg[Klassendiagramm des Journals]
+image::journal_class_model.png[Klassendiagramm des Journals]
 
 === Physische Sicht
 //Beschreibt die physischen Knoten (Rechner) des Systems, der Prozesse, Threads und Komponenten, die in diesen Knoten ausgeführt werden. Diese Sicht wird nicht benötigt, wenn das System in einem einzelnen Prozess oder Thread ausgeführt wird.
