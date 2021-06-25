@@ -11,7 +11,7 @@ include::../_includes/default-attributes.inc.adoc[]
 
 == Einführung
 
-Das Experimente Management System wird verwendet, um Physik Experimente zu verwalten und zu buchen. Es handelt sich bei der Awendung um einen klassischen Rails Monolithen. Die nachfolgende Dokumentation soll der Administration der Anwendung dienen.
+Das Experimente Management System wird verwendet, um Physik Experimente zu verwalten und zu buchen. Es handelt sich bei der Anwendung um einen klassischen Rails Monolithen. Die nachfolgende Dokumentation soll der Administration der Anwendung dienen.
 
 == Systeme
 
