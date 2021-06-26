@@ -175,7 +175,7 @@ Nun muss ein Name für das benutzerdefinierte Experiment vergeben werden. Durch 
 .Benutzerxperiment erstellen
 image::Test-Dummy.png[Dummy]
 
-Wenn der Nutzer mit seiner Auswahl zufrieden ist, kann er durch Druck auf "Zum Buchungsabschluss" in die Warenkorbüberischt gelangen. 
+Wenn der Nutzer mit seiner Auswahl zufrieden ist, kann er durch Druck auf "Zum Buchungsabschluss" in die Warenkorbübericht gelangen. 
 
 .Buchung abschließen im Warenkorb
 image::BuchungAbschließen.png[Warenkorb]
