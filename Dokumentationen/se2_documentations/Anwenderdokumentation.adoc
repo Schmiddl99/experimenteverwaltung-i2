@@ -180,7 +180,7 @@ Wenn der Nutzer mit seiner Auswahl zufrieden ist, kann er durch Druck auf "Zum B
 .Buchung abschließen im Warenkorb
 image::BuchungAbschließen.png[Warenkorb]
 
-In dieser Übersicht ist es möglich, die Buchung final zu bearbeiten. Durch Druck auf "Zurück" gelant der Dozent wieder zur Experimenteübersicht um dort die Experimenteselektion anzupassen. Mithilfe der Mülleimer-Symbole können Experimente durch Klick aus der Buchung entfernt werden. Für Zusatzinformationen bietet das Kommentarfeld Platz. Die Reihenfolge der Experimente kann per Drag-and-Drop (gedrückt halten und ziehen) mithilfe der Dreistrich-Symbole geändert werden. Wenn alle Anpassungen stimmig sind, müssen die Änderungen durch Druck auf "Änderungen übernehmen" gespeichert werden, um sie bei möglichem Neuladen der Seite nicht zu verlieren. 
+In dieser Übersicht ist es möglich, die Buchung final zu bearbeiten. Durch Druck auf "Zurück" gelangt der Dozent wieder zur Experimenteübersicht um dort die Experimenteselektion anzupassen. Mithilfe der Mülleimer-Symbole können Experimente durch Klick aus der Buchung entfernt werden. Für Zusatzinformationen bietet das Kommentarfeld Platz. Die Reihenfolge der Experimente kann per Drag-and-Drop (gedrückt halten und ziehen) mithilfe der Dreistrich-Symbole geändert werden. Wenn alle Anpassungen stimmig sind, müssen die Änderungen durch Druck auf "Änderungen übernehmen" gespeichert werden, um sie bei möglichem Neuladen der Seite nicht zu verlieren. 
 
 .Warenkorb final bearbeiten
 image::Buchungsabschluss.png[Buchungsabschluss]
