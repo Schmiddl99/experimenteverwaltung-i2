@@ -5,7 +5,7 @@ include::../_includes/default-attributes.inc.adoc[]
 
 == Einführung 
 
-Das Ziel dieses Dokuments ist es, eine Art Handbuch bezüglich der Nutzung des weiterentwickleten Experiemente-Management-Systems bereit zu stellen. Die Anleitungen beziehen sich detailiert und anschaulich auf die neuen Anwendungsfälle und werden dabei anhand der unterschiedlichen Nutzerrollen strukturiert. Der Zweck dieser Anwenderdokumentation ist es, dem Nutzer bei Fragen und Unklarheiten spezifische Hilfeleistungen bereitzustellen. Dabei wird großteils auf die Veranschaulichung durch Screenshots gesetzt. Der Anwender soll im Fall von Orientierungslosigkeit in der Lage sein, sich anhand dieses Dokuments selber zu helfen, um Kommunikations- und Zeitaufwand für den Nutzer selbst und das Entwicklerteam zu sparen. 
+Das Ziel dieses Dokuments ist es, eine Art Handbuch bezüglich der Nutzung des weiterentwickelten Experimente-Management-Systems bereit zu stellen. Die Anleitungen beziehen sich detailliert und anschaulich auf die neuen Anwendungsfälle und werden dabei anhand der unterschiedlichen Nutzerrollen strukturiert. Der Zweck dieser Anwenderdokumentation ist es, dem Nutzer bei Fragen und Unklarheiten spezifische Hilfeleistungen bereitzustellen. Dabei wird großteils auf die Veranschaulichung durch Screenshots gesetzt. Der Anwender soll im Fall von Orientierungslosigkeit in der Lage sein, sich anhand dieses Dokuments selber zu helfen, um Kommunikations- und Zeitaufwand für den Nutzer selbst und das Entwicklerteam zu sparen. 
 
 == Zweck des Systems
 
