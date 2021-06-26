@@ -100,7 +100,7 @@ Um ein Konto zu bearbeiten, muss in der Kontenübersicht auf das Stift-Symbol in
 .Benutzer bearbeiten
 image::NutzerBearbeiten.png[NutzerBearbeiten]
 
-Es öffnet sich das ausgefülltes Nutzerformular, (siehe <<Nutzer anlegen, Nutzer anlegen>>) wo die Angaben erneut bearbeitet werden können. Durch Druck auf "Speichern" werden die Änderungen übernommen. 
+Es öffnet sich das ausgefüllte Nutzerformular, (siehe <<Nutzer anlegen, Nutzer anlegen>>) wo die Angaben erneut bearbeitet werden können. Durch Druck auf "Speichern" werden die Änderungen übernommen. 
 
 .Nutzerbearbeitung
 image::NutzerBearbeitung.png[NutzerBearbeitung]
