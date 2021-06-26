@@ -140,7 +140,7 @@ image::Studiengang.png[Studiengang]
 .Alternativname vergeben
 image::AltStudiengang.png[Studiengang]
 
-Als nächstes muss ein Zukunftsdatum als Termin ausgewählt werden. 
+Als nächstes muss ein Datum in der Zukunft als Termin ausgewählt werden. 
 
 .Datum wählen
 image::Datum.png[Datum]
