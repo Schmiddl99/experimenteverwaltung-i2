@@ -199,7 +199,7 @@ image::Abschlussseite.png[Abschlussseite]
 ==== Buchungen betrachten und ggf. bearbeiten
 
 Dem Dozent ist die Möglichkeit geboten, alle eigenen Buchungen, egal ob vergangen oder zukünftig, einzusehen. 
-Um dies zu erreichen, muss das Journal durch Druck auf "Journal" im Auswahlmenü klickt. 
+Um dies zu erreichen, muss das Journal durch Druck auf "Journal" im Auswahlmenü aufgerufen werden. 
 
 .Journal öffnen
 image::Journal_wählen.png[Journal_wählen]
