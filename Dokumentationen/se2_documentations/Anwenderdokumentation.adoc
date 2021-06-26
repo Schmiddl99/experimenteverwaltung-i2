@@ -150,7 +150,7 @@ Nachdem auch die Uhrzeit ausgewählt wurde (ACHTUNG: keine Lehrzeichen nutzen - 
 .Uhrzeit festlegen und weiter zur Experimenteübersicht
 image::Zeit.png[Zeit]
 
-Nun befindet der Dozent sich auf der Experimenteüberischt. Hier kann er sich durch die Kategorien navigieren. Ab diesem Schritt ist es außerdem möglich ein benutzerdefiniertes Experimente buchungsintern anzulegen. Der Nutzer kann die Buchung außerdem jederzeit abbrechen. 
+Nun befindet der Dozent sich auf der Experimenteüberischt. Hier kann er sich durch die Kategorien navigieren. Ab diesem Schritt ist es außerdem möglich ein benutzerdefiniertes Experiment buchungsintern anzulegen. Der Nutzer kann die Buchung außerdem jederzeit abbrechen. 
 
 .Abbruch und Dummy-Erstellung ist möglich
 image::Experimenteübersicht.png[Experimenteübersicht]
