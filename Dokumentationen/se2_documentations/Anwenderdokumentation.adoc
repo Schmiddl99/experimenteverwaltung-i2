@@ -88,7 +88,7 @@ Im folgenden Formular müssen der Name der nutzenden Person, ein Benutzername (f
 .leeres Nutzerformular
 image::Nutzer_leer.png[Nutzer_leer]
 
-Nachdem alle Angaben ordnungsgemäß getätigt wurde, kann das Konto durch Druck auf "Speichern" angelegt werden. Es ist nun in der Übersicht zu finden. 
+Nachdem alle Angaben ordnungsgemäß getätigt wurden, kann das Konto durch Druck auf "Speichern" angelegt werden. Es ist nun in der Übersicht zu finden. 
 
 .ausgefülltes Nutzerformular
 image::Nutzer_valid.png[Nutzer_gefüllt]
