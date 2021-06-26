@@ -163,7 +163,7 @@ a| * Betreuer der VM a| * Gewährleistung eines Arbeitsumfeldes für uns
 
 ==== Kunde
 
-Das Hauptinteresse des Kunden ist es, die Dozenten durch das System zufrieden zustellen. Seine Angst, dass das System auf Ablehnung durch die Dozeten trifft ist sehr groß. Er spricht sich aber leider nur sehr wenig oder teils gar nicht mit den Dozenten ab. Er versucht die Wünsche und die Probleme der Dozenten selbst zu formulieren. Dadurch ist er oft verunsichert in seinen Forderungen oder versucht durch permanente Änderungen der Forderungen das System ständig für die Dozenten zu optimiern. Auch die Tatsache das es sich um fünf Dozenten handelt und er versucht es jedem einzelnen Recht zu machen stellt Ihn immer wieder vor Herausforderungen, was für uns aber bedeutet anfängliche beschlossene Umsetzungen wieder zu ändern. 
+Das Hauptinteresse des Kunden ist es, die Dozenten durch das System zufrieden zustellen. Seine Angst, dass das System auf Ablehnung durch die Dozeten trifft, ist sehr groß. Er spricht sich aber leider nur sehr wenig oder teils gar nicht mit den Dozenten ab. Er versucht die Wünsche und die Probleme der Dozenten selbst zu formulieren. Dadurch ist er oft verunsichert in seinen Forderungen oder versucht das System durch ständige Änderungen der Forderungen für die Dozenten zu optimiern. Auch die Tatsache, dass es sich um fünf Dozenten handelt und er versucht es jedem einzelnen recht zu machen, stellt ihn immer wieder vor Herausforderungen, was für uns bedeutet, dass anfängliche beschlossene Umsetzungen wieder geändert werden müssen. 
 
 ==== Dozenten 
 
