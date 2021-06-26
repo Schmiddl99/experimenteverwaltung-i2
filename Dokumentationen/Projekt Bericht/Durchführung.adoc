@@ -147,9 +147,7 @@ Um die Vorbereitungen für die Construction Phase abzuschließen, setzen wir uns
 
 ==== Evaluation von alten TCs, Entscheidung fällen über das zu verwendende Testframework
 
-Da wir nun langsam in die Construction Phase kommen würden, mussten wir uns nun auch für ein Testframework entscheiden. Diese Entscheidung traff unser Tester, nach einiger Einarbeitungszeit. Er kam zu dem Schluss das Testframework "Rspec" unsere Vorgänger weiter zu verwenden. Seiner Meinung nach würde es ausreichen, um alle unsere TCs abbilden zu können.
-
-Die Evaluation TCs unsere Vorgänger ergab, dass wir diese Tests aufjedenfall beachten sollten. Hintergrund hier war, dass wir uns sicher sein sollten ob alle vorhergegangenen Tests funktionierten, um so wenn bei uns Fehler auftauchen sollten, auschließen zu können ob der Fehler vom alten System kommt. Denoch wurde darüber diskutiert ob wirklich alle Tests benötigt werden würden, oder ob es vielleicht besser wäre eine Auswahl zu treffen welche Tests für uns relevant wären und welche nicht. Dieser Entschluss wurde als sinnvoll erachtet und sollte in I06 umgesetzt werden. Da wir diesen Schritt als Teil des *LCA-Meilenstein* sehen, betrachten wir diesen als wieder geöffnet. 
+Da wir nun langsam in die Construction Phase kommen würden, mussten wir uns nun auch für ein Testframework entscheiden. Der Entwickler hatte bisher nur Erfahrung mit dem Testframework Minitest und der Tester hatte bisher mit pythonbasierten Frameworks ähnlich Minitest gearbeitet. Allerdings gab es eine beträchtliche Menge Legacy Code für automatisierte Tests bzw. Regressiontests die das Framework Rspec benutzten. Somit war es eine Abwägung der Zeitaufwände, zwischen dem Einarbeiten in ein neues Framework und dem kompletten überarbeiten der alten Tests. Nach längerer Diskussion entschieden sich Tester und Entwickler dann Rspec beizubehalten und als unser Testframework zu verwenden. Das hatte zur Folge, das der Entwickler ebenfalls Einarbeitungszeit für Rspec benötigte, da die Unittests von ihm geschrieben werden. Allerdings wurde so die Gesamtarbeitszeit für das Team geringer gehalten, da die alten TCs übernommen werden konnten.  Denn eine anfängliche Evaluation der Tcs der Vorgänger ergab, dass wir deren Regressiontestsuite auf jeden Fall benutzen sollten. Durch deren Benutzung konnten wir nach Änderungen an alten Modulen bzw. einfügen von neuen Modulen sicher sein das keine Fehler am Bestandssystem  entstanden sind. Somit ergaben sich die Aufgaben Einarbeitung in Rspec sowie komplette Erfassung und Evaluation der alten TCs. Dies sollte in I06 umgesetzt werden. Da wir diesen Schritt als Teil des *LCA-Meilenstein* sehen, betrachten wir diesen als wieder geöffnet.
 
 ==== C4 Modell für UC01
 
@@ -162,14 +160,7 @@ Das Update wurde auf der VM von {rb} erfolgreich durchgeführt.
 
 ==== Abschluss der Iteration 05
 
-* *Überprüfung selbst gesteckter Iterationsziele: Y/N (6/6)*
-** Die Teilnahme am Ruby on Rails Workshop war vollzählig. *Y*
-** Die Änderungen des Kunden wurde mit Wireframes validiert. *Y*
-** Die alten TCs wurden versucht auszuführen. Es wurde die Entscheidung getroffen das Framework "Rspec" zu verwenden. *Y*
-** Das Update von Ruby on Rails wurde auf der VM durchgeführt. *Y*
-** Integration des UC01 in das C4 Modell anhand eines Klassendiagramms. *Y*
-** Die Beleg Dokumente wurden den Änderungen des Kunden angepasst und liegen in GitHub vor. *Y*
-** Das EMS System kann von allen Devolpern aufgerufen werden. *Y*
+
 
 * Puls-Check I05 LINK !!!
 * Retrospective
@@ -237,13 +228,7 @@ Der *LCA-Meilenstein* konnte nicht erfolgreich Abgeschlossen werden, da das Ziel
 |Corona bedingte Zeitmanagementprobleme | Gelöst | Da das Corona Hygienekonzept zur erneuten Schließung von Kindergärten geführt hat, kann {PG}, der Vater von zwei Kinder ist, sich nicht in dem Umfang dem Projekt widmen wie er es möchte. Dies führt zu dem Problem, dass er bei seinem Workload unterstützt werden muss, was ein großes Zeitproblem mit sich bringt. (Coach wurde über dieses "außergewöhnliche" Problem informiert). Das Problem wurde in der Risklsit vermerkt und als Lösung wurde beschlossen, dass wenn Zeitprobleme jeder Art auftauchen sollten, diese so schnell als möglich der Gruppe mitzuteilen sind, dass so schneller gehandelt werden kann. 
 |===
 
-* *Überprüfung selbst gesteckter Iterationsziele: Y/N (4/6)*
-** Die alten Test Cases wurden komplett verstanden und eine komplette Auswertung liegt vor welche funktionieren, repariert werden müssen oder gelöscht werden können *N*
-** Es wurde im Architecture-Notebook eine begründete Entscheidung getroffen welches Testframework verwendet wird *Y*
-** Das C4 Modell von Use Case 01 wurde um das "Dummy Experiment" erweitert *Y*
-** Das C4 Modell wurde um Use Case 03 erweitert *N*
-** Use Caes 01 wurde erfolgreich implemntiert *Y*
-** Der Beleg wurde soweit verbessert, dass die restlichen Änderungen bei der aktuellen Bearbeitung des Projekts mit eingeflochten werden können *Y*
+
 * Retrospective
 ** Projektstatus: *gelb*
 * Unsere Arbeitsschätzungen betrachten wir als GUT obwohl, nicht alle Iterationsziele erreicht werden konnten. Dies begründen wir mit dem oben beschriebenen Corona Umständen. Dennoch werden wir nun unserer Planung für die nächste Iteration überdenken und die Arbeitskräfte besser verteilen. 
@@ -293,12 +278,7 @@ Der UC10 wurde erstellt um die Studiengangsverwaltung zu ermöglichen.
 
 ==== Abschluss der Iteration 07
 
-* *Überprüfung selbst gesteckter Iterationsziele: Y/N (5/5)*
-** Die Validierung der alten TCs konnte abgeschlossen werden *Y*
-** Das C4 wurde erfolgreich um UC03 erweitert *Y*
-** Die TCs für UC01 wurden erfogreich implementiert und durchgeführt *Y*
-** Der UC03 wurde erfolgreich implementiert *Y*
-** Der UC10 wurde erfolgreich erstellt *Y*
+
 
 * Puls-Check I07 LINK !!!
 * Retrospective
@@ -351,7 +331,7 @@ Der Kunde wünschte nach der Vorstellung noch einige Änderungen:
 ** Es soll eine Notification geben die den Admin darauf hinweißt, dass an einem bereits ausgedruckten Wochenplan noch eine Änderung durch einen Dozenten geschen ist
 ** Es soll möglich sein die Voreinstellung auch noch im nachhinein zu verändern. 
 
-Die gewünschten Änderungen wurde alle akzeptiert, nur die Änderungen bezüglich der Notification löste beim Projektmanager Unverständnis aus, da genau dieser Vorschlag dem Kunden bei TSM2 gemacht wurde und abgelehnt wurde. Dies teilte er dem Kunden der Professionalität wegen nicht mit. 
+Die gewünschten Änderungen wurde alle akzeptiert, nur die Änderungen bezüglich der Notification löste beim Projektmanager Unverständnis aus, da genau dieser Vorschlag dem Kunden bei TSM2 gemacht wurde und abgelehnt wurde. 
 
 Zum Abschluss des Meetings teilte der Kunde nochmals seine Annerkennung und Dankbarkeit lautstark mit dem Projektmanager. Der Kunde schien über das bisherige System sehr glücklich zu sein. 
 
@@ -366,11 +346,7 @@ Zusätzlich konnte der Kunde sich so auch mit der Userverwaltung besser vertraut
 
 ==== Abschluss der Iteration 08
 
-* *Überprüfung selbst gesteckter Iterationsziele: Y/N (4/4)*
-** Erfolgreiche Implementierung von TC03 *Y*
-** Erfolgreiche Implementierung von UC02, UC08, UC09 *Y*
-** Erstellung von Anwender und Admin Test *Y*
-** Entscheidung mit dem Kunden treffen wie am besten weiterprirorisiert werden soll *Y*
+
 
 * Puls-Check I08 LINK !!!
 * Retrospective
@@ -384,3 +360,27 @@ Zusätzlich konnte der Kunde sich so auch mit der Userverwaltung besser vertraut
 === Iteration 09 (16.06.2021-30.06.2021)
 
 *Iterations Ziele:*
+
+* Einfügen der gewünschten Buttons
+* Experimentefeld Geräte optimieren 
+* Projekt mit Kunde abschließen
+* Auswertung der User Tests
+* Installation des Systems
+* Auslieferung des Systems
+
+==== Einfügen der gewünschten Buttons
+
+Der Drucken Button bei der Wochenplanansicht und der Experiment Hinzufügen Button bei dem Journal wurden erfolgreich implementiert. 
+
+
+==== Experimentefeld optimieren 
+
+Da wir die Forderung nach einem Buchungssystem als abgeschlossen betrachteten, kamen wir der Aufgabe nach das Experimentenfeld Geräte zu optimieren. Das Ziel war es die Ausgabe der Geräte in der übersichtsliste zu verbessern, da der Kunde viel Zeit damit verschwendet die Geräte zu finden. 
+
+Wir analysierten das Problem und kamen zu dem Schluss, dass hier eine Stringsuche am besten geeignet war. Hier war der Vorteil, dass die Geräte beliebig erweitert werden konnten ohne die Suche anpassen zu müssen. 
+
+==== TSM6 Projekt mit dem Kunden abschließen 
+
+Die Vorführung der Buttons und des optimierten Gerätefelds wurden von dem Kunden erfreut angenommen. Allerdings wurden von Ihm noch einige Änderungen gewünscht. Die meisten davon waren visuller Natur, wie die Umbennung von Buttons oder die Umfärbung von Buttons, aber eine war direkt so groß, dass der Projektmanager direkt im Meeting sie als Outscope deklarieren konnte. Der Kunde forderte noch die Einführung einer zusätzlichen Rolle, die des Assistenten. Eine genaue Auflistung der Forderungen findet man in der Vision !!!
+
+Auch wurde hier geich die Auslieferung und deren Ablauf mit dem Kunden besprochen. Der Kunde war mit den Abläufen einverstanden. Die Instalation wurde auf den 28-06 und den 29.06.2021 festgelegt. Der Ausliefertermin sollte am 01.07.2021 stattfinden. 
