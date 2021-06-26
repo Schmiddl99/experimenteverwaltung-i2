@@ -165,7 +165,7 @@ Ob ein Experiment im Warenkorb liegt, wird anhand des farblich veränderten Symb
 .Experimente ausgewählt
 image::Ausgewählt.png[Ausgewählt]
 
-Um ein Manuellexperiment zum Warenkorb hinzuzufügen, muss der Knopf "Manuell Experiment hinzufügen" gedrückt werden.
+Um ein benutzerdefiniertes Experiment zum Warenkorb hinzuzufügen, muss der Knopf "Manuell Experiment hinzufügen" gedrückt werden.
 
 .Manuell Experiment hinzufügen 
 image::DummyErstellen.png[DummyErstellung]
