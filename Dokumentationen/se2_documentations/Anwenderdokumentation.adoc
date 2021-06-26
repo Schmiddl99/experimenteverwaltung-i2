@@ -64,7 +64,7 @@ image::Wochenübersicht.png[Dozentenwoche]
 ==== Nutzer verwalten
 
 Dem Administrator ist es auch weiterhin möglich, die Nutzer des EMS anhand von Nutzerkonten zu verwalten. Da die Dozenten sich nun kein Konto mehr teilen, sondern abgegrenzt voneinander agieren, wurde die Nutzerverwaltung partiell erweitert. 
-Um auf die Kontenübersicht zu gelange, muss der Admin im Auswahlmenü auf "Kontenübersicht" klicken. 
+Um auf die Kontenübersicht zu gelangen, muss der Admin im Auswahlmenü auf "Kontenübersicht" klicken. 
 
 .Kontenübersicht öffnen
 image::NutzerStart.png[Nutzerverwaltung_Aufruf]
