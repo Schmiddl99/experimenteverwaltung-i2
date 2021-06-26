@@ -9,7 +9,7 @@ Das Ziel dieses Dokuments ist es, eine Art Handbuch bezüglich der Nutzung des w
 
 == Zweck des Systems
 
-Der Nutzen des weiterentwickelten EMS liegt nun nicht mehr nur in der Informationsbeschaffung, sondern auch in der Planung. Dozenten ist es nun möglich, die benötigten Experimente ohne Mailverkehr zu "buchen". Durch eben diese Buchungen wird es dem Kunden möglich, die Termine der Bereitstellung der Experimente übersichtlich und einheitlich einzusehen. Das System generiert automatisiert Wochenpläne, die gedruckt werden können, um die Buchungsübersicht zu Papier zu bringen.  Bei Änderungen müssen außerdem keine direkten Kontaktierungen mehr geschehen, da Anwender mit Dozentenrolle ihre Buchungen im Journal überarbeiten können. 
+Der Nutzen des weiterentwickelten EMS liegt nun nicht mehr nur in der Informationsbeschaffung, sondern auch in der Planung. Dozenten ist es nun möglich, die benötigten Experimente ohne Mailverkehr zu "buchen". Durch eben diese Buchungen wird es dem Kunden möglich, die Termine der Bereitstellung der Experimente übersichtlich und einheitlich einzusehen. Das System generiert automatisiert Wochenpläne, die gedruckt werden können, um die Buchungsübersicht zu Papier zu bringen.  Bei Änderungen muss kein direkter Kontakt mehr aufgenommen werden, da Anwender mit Dozentenrolle ihre Buchungen im Journal überarbeiten können. 
 
 == Aufbau der Oberfläche 
 
