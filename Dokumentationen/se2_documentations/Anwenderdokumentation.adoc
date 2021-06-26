@@ -213,7 +213,7 @@ Nachdem die Buchung "aufgeklappt" wurde, sind nun auch die Experimente und der K
 
 image::Buchung_ausgeklappt.png[Buchungen_lang]
 
-Die Bearbeitung der Buchung verhält sich ähnlich, wie der Warenkorb beim Anlegen einer Buchung. Es ist möglich Experimente hinzuzufügen oder zu Entfernen, die Reihenfolge zu ändern, die Änderungen zu spreichern und die Buchung zu persistieren oder die Bearbeitung wieder abzubrechen und die Änderungen zu verwerfen. Die Voreinstellungen können nicht geändert werden. Wenn dies trotzdem notwendig ist, muss die Buchung gelöscht und eine neue angelegt werden.
+Die Bearbeitung der Buchung verhält sich ähnlich, wie der Warenkorb beim Anlegen einer Buchung. Es ist möglich Experimente hinzuzufügen oder zu Entfernen, die Reihenfolge zu ändern, die Änderungen zu speichern und die Buchung zu persistieren oder die Bearbeitung wieder abzubrechen und die Änderungen zu verwerfen. Die Voreinstellungen können nicht geändert werden. Wenn dies trotzdem notwendig ist, muss die Buchung gelöscht und eine neue angelegt werden.
 
 image::Bearbeitung.png[Bearbeitung]
 
