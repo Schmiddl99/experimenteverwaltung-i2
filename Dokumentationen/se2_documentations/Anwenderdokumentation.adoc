@@ -155,7 +155,7 @@ Nun befindet der Dozent sich auf der Experimenteüberischt. Hier kann er sich du
 .Abbruch und Dummy-Erstellung ist möglich
 image::Experimenteübersicht.png[Experimenteübersicht]
 
-Wenn das gewünschte Experiment gefunden wurde, kann es mit einem Druck auzf was Warenkorb-Symbol selektiert werden. 
+Wenn das gewünschte Experiment gefunden wurde, kann es mit einem Druck auf was Warenkorb-Symbol selektiert werden. 
 
 .Experiment zum Warenkorb hinzufügen
 image::Auswahl.png[Auswahl]
