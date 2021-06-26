@@ -13,7 +13,7 @@ Der Nutzen des weiterentwickelten EMS liegt nun nicht mehr nur in der Informatio
 
 == Aufbau der Oberfläche 
 
-Der Grundbaufbau des Systems ist der selbe geblieben, wie bei der Altversion. Auf der Startseite ist es möglich, sich durch die Experimenmtekategorien und somit auch durch die Experimente zu klicken oder sie zu suchen. Durch Klicken auf Rollenbezeichnung eine Funktionsübersicht in Form eines Auswahlmenüs aufgerufen werden. 
+Der Grundaufbau des Systems ist der selbe geblieben, wie bei der Altversion. Auf der Startseite ist es möglich, sich durch die Experimentekategorien und somit auch durch die Experimente zu klicken oder sie zu suchen. Durch Klicken auf die Rollenbezeichnung öffnet sich eine Funktionsübersicht in Form eines Auswahlmenüs. 
 
 .Startseite 
 image::Startseite.png[Startseite]
