@@ -55,7 +55,7 @@ image::Dozentenwoche_ausgefüllt.png[DW_anzeigen]
 Wenn für den gewählten Zeitraum Buchungen vorhanden sind, werden diese strukturiert angezeigt. 
 Durch Druck auf "Drucken" öffnet sich die Druckansicht (alternativ <STRG>+<P> drücken). Beim Drucken ist das Querformat zu wählen.  
 
-NOTE: Die Druckkonvertierung der Dozentwoche ist für alle gängigen Browser, die auf der Chromium Enginge laufen optimiert. Es ist daher zu empfehlen bspw. Chrome für den Druckvorgang zu nutzen. Bei Verwendung von anderen Browsern kann es ungeklärt zu minimalen Fehlern kommen, die jedoch keine Auswirkung auf die sematische oder syntaktische Korrektheit des Dokuments haben. 
+NOTE: Die Druckkonvertierung der Dozentenwoche ist für alle gängigen Browser, die auf der Chromium Engine laufen optimiert. Es ist daher zu empfehlen bspw. Chrome für den Druckvorgang zu nutzen. Bei Verwendung von anderen Browsern kann es ungeklärt zu minimalen Fehlern kommen, die jedoch keine Auswirkung auf die semantische oder syntaktische Korrektheit des Dokuments haben. 
 
 .Dozentenwoche
 image::Wochenübersicht.png[Dozentenwoche]
