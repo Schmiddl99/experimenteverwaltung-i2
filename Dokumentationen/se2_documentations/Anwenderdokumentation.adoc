@@ -209,7 +209,7 @@ In der Journalübersicht werden die Buchungen (wenn vorhanden) aufgelistet. Manc
 image::Buchung_ausklappen.png[Buchungen_kurz]
 
 
-Nachdem die Buchung "aufgeklappt" wurde, sind nun auch die Experimente und der Kommentar sichtbar. Des Weiteren besteht auf der Journalübersicht die Möglichkeit, eine Buchung zu löschen (Druck auf das Eimer-Symbol) oder zu bearbeiten (Druck auf das Stift-Symbol.) Wenn eine Buchung gelöscht werden soll, wird der Nutzer gezwungen, dies zu bestätigen, um unbeabsichtigte Löschungen zu vermeiden.
+Nachdem die Buchung "aufgeklappt" wurde, sind nun auch die Experimente und der Kommentar sichtbar. Des Weiteren besteht auf der Journalübersicht die Möglichkeit, eine Buchung zu löschen (Druck auf das Eimer-Symbol) oder zu bearbeiten (Druck auf das Stift-Symbol). Wenn eine Buchung gelöscht werden soll, wird der Nutzer gezwungen, dies zu bestätigen, um unbeabsichtigte Löschungen zu vermeiden.
 
 NOTE: Buchungen, die bereits stattgefunden haben und somit in der Vergangenheit liegen, können NICHT mehr bearbeitet oder gelöscht werden. 
 
