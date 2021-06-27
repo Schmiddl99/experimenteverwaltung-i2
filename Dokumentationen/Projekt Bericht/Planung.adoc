@@ -6,13 +6,13 @@ include::../_includes/default-attributes.inc.adoc[]
 
 === Teamaufstellung 
 
-Am Anfang des Projekts bestand das Team aus acht Mitgliedern. Diese waren eine Hochshul-Externe Fachinformatikerin ({ab}), ein Informatikstudent ({rb}), zwei Wirtschaftsinformatikstudenten ({we}, {tki}), ein Verwaltungsinformatikstudent ({gm}) und drei Wirtschaftsingenieurstudenten ({tka}, {tw}, {js}). Geplant war das Ausscheiden der Wirtschaftsingenieure zu SE II, jedoch wurde das Team von {ab} und {tki} leider verlassen zusätzlich verlassen. Deshalb wurde uns der Informatikstudent {pg} als Verstärkung zugewiesen. Dadurch haben wir am Beginn von SE II zuerst eine neue Einteilung der Rollen des Teams durchgeführt. Mehr dazu findet man in der Rollenverteilung. LINK!!!!
+Am Anfang des Projekts bestand das Team aus acht Mitgliedern. Diese waren eine hochschulexterne Fachinformatikerin ({ab}), ein Informatikstudent ({rb}), zwei Wirtschaftsinformatikstudenten ({we}, {tki}), ein Verwaltungsinformatikstudent ({gm}) und drei Wirtschaftsingenieurstudenten ({tka}, {tw}, {js}). Geplant war das Ausscheiden der Wirtschaftsingenieure zu SE II, jedoch wurde das Team leider zusätzlich von {ab} und {tki} verlassen. Deshalb wurde uns der Informatikstudent {pg} als Verstärkung zugewiesen. Dadurch haben wir zu Beginn von SE II zuerst eine neue Einteilung der Rollen des Teams durchgeführt. Mehr dazu findet man in der Rollenverteilung. LINK!!!!
 
 === Aufgabenstellung und Auftraggeber 
 
-Die Aufgabenstellung änderte sich nicht zu SE I, es war unsere Aufgabe, auf dem existierenden System ein Buchungssystem zu integrieren und Bugs des vorhanden Systems zu beheben (siehe Vision LINK !!!). Auch unser Auftraggeber, Herr Matthias Heisig blieb identisch zu SE I. 
-Allerdings änderte er gleich beim ersten Themenersteller-Meeting die Aufgaben-Priorisierung.
-Es war von unsere Seite eigentlich geplant, dass erst die Use Cases nacheinander implementiert werden und anschließend ein Zeitfenster eingerichtet wird für Bugfixing und Änderungen des aktuellen Systems. Dies wurde verworfen. 
+Das Hauptziel unseres Projekts war es ein Buchungssystem zu entwicklen um den Workflow zwischen den Dozenten und dem Admin zu erleichetern. Dazu mussten wir erst die Arbeitsweise der beteiligiten Personen verstehen und konnten so die zu speichernden Daten herausarbeiten. Wir mussten eine geeignte Darstellungsform finden und eine einfach zu verstehende Umgangsweise mit dem Buchungssystem finden. Auch sollte es möglich sein Vorlesungen nach dem Anlegen noch zu bearbeiten, aber nicht nachdem die Vorlesung gehalten wurde. Zusätzlich mussten wir eine Möglichkeit finden um die einzelnen Anwender von einander Abgrenzen zu können. Hinzu kam noch der Wunsch nach einer Auslesemöglichkeit der Häufigkeit von verwendeten Physik-Experimenten und Bugfixing. (Für eine genaue Auflistung, siehe Vision LINK !!!). Unser Auftraggeber, Herr Matthias Heisig, blieb der selbe aus SE I.  
+Allerdings änderte er gleich beim ersten Themensteller-Meeting die Aufgabenpriorisierung.
+Es war von unsere Seite eigentlich geplant, dass erst die Use Cases nacheinander implementiert werden und anschließend ein Zeitfenster für Bugfixing und Änderungen des aktuellen Systems eingerichtet wird. Dies wurde verworfen. 
 Durch den Kunden war nun gewünscht, dass nach der Implementierung des Buchungssystems direkt ein besserer Weg gefunden wird, die Geräte im vorhanden System auszuwählen. Die andren Arbeiten sollten dann nach gewohnter Priorisierung aus SE I erfolgen. Eine genaue Auflistungen der Aufgaben ist in der Vision zu finden. LINK!!!
 
 == Projektorganisation 
@@ -54,28 +54,28 @@ Die Aufgaben wurden hauptsächlich nach Interessen- und Expertisengebieten verte
 Da während des Projekts die Corona Pandemie Deutschland beherrschte, wurde versucht, sämtliche Kommunikation online durchzuführen. Um dies umzusetzen, wurde der Messenger-Dienst WhatsApp für die direkte Kommunikation zwischen einzelnen Gruppenmitgliedern und zur schnellen Informationsübermittlung an alle Teammitglieder genutzt. Um Meetings zu realisieren, wurde zu erst ein Discord Server genutzt, im Laufe des Projekts dann aber auf Microsoft Teams gewechselt. Hintergrund hier war, dass Teams einige Zusatzfunktionen bat, wie z.B. "Polly", die für Umfragen genutzt wurden, die Discord leider nicht unterstütze. Des Weiteren konnte in Teams auch ein cloudbasiertes Datei-Mangement-Tool leicht verwendet werden, so mussten wir nicht mehr OneDrive nutzen, das privat von einem Gruppenmitglied gestellt wurde. Auch konnte in Teams eine bessere Rollenhierarchie genutzt werden, um Rollenspezifische Feed Anfragen zu nutzen, damit ein Brainstormeffekt entsteht. Die Dokumentation erfolgte geschlossen in ADOC Dateien, die über GitHub verwaltet worden sind. Auch wurde über GitHub unsere Work-Item-List mit hilfe der Issues verwirklicht. GitHub war der Schlüssel um Gruppen- und parallel laufende Arbeiten zu organisieren und umzusetzen. Zur Überprüfung und zur Dokumenation unseres Projekt Fortschritts benuzten wir regelmäßig den Essence Navigator.
 Um mit dem Kunden in Kontakt treten zu können, wurden ausschließlich E-Mails, Microsoft Teams und Präsenz-Treffen genutzt. Die Präsenztreffen fanden erst in SE II statt, mit kompletter Einhaltung der Corona-Hygiene-Maßnahmen. Diese Änderung wurde von unsrem Kunden sehr begrüßt, da er leider durch die eben genannten Techniken in seinem Workflow eher behindert als unterstützt wurde. 
 
-Die online Situation erleichterte die Planung von Meetings und Gruppenarbeiten erheblich, da nun Fragen wie wo wir uns treffen, ob dieser Ort auch zur gegebenen Zeit verfügbar ist oder wie lange die Anreise der einzelnen Mitglieder wohl wäre, nun alle obsolet waren. Es musste nun nur noch eine Uhrzeit gefunden werden, zu der alle verfügbar waren. 
+Die Online-Situation erleichterte die Planung von Meetings und Gruppenarbeiten erheblich, da nun Fragen wie bspw. an welchem Ort das Treffen stattfinden könnte, ob dieser Ort auch zur gegebenen Zeit verfügbar ist oder wie lange die Anreise der einzelnen Mitglieder wohl wäre, nun alle obsolet waren. Es musste nun nur noch eine Uhrzeit gefunden werden, zu der alle verfügbar waren. 
 
 
 == Way of Working
 
-Unsre Arbeitsweise war sehr stark vom Open Unified Process geprägt. Wir haben stets versucht, alle vier Kernziele zu durchlaufen. Alternativ dazu haben wir auch versucht andere Praktiken aus andren Bereichen zu verwenden, die wir aus eigener Erfahrung oder aus der Theorie kannten. Diese waren das QM oder die Puls-Checks. Wir haben mit Iterationen gearbeitet, die immer zwei Wochen andauerten.
+Unsere Arbeitsweise war sehr stark vom Open Unified Process geprägt. Wir haben stets versucht, alle vier Kernziele zu durchlaufen. Alternativ dazu haben wir auch versucht andere Praktiken aus anderen Bereichen zu verwenden, die wir aus eigener Erfahrung oder aus der Theorie kannten. Diese waren das QM oder die Puls-Checks. Wir haben mit Iterationen gearbeitet, die immer zwei Wochen andauerten.
 
 Grundsätzlich war aber folgender Ablauf regelmäßig zu erkennen:
 
 . Planung der Iteration 
 * Zielsetzung anhand der Aufgabenpriorisierung des Kunden
-* Die Ziele in Aufgabe unterteilen
+* Die Ziele in Aufgaben unterteilen
 * Bewertung der Aufgaben
 ** Bewertung des Aufwands
 ** Bewertung der Priorität
-* Aufgaben Verteilung an die Gruppenmitglieder
+* Aufgabenverteilung an die Gruppenmitglieder
 . Durchführung der Iteration
 * Die Aufgaben werden nach der Priorisierung unter Beachtung des Aufwands abgearbeitet
 * Ständiger Austausch unter den Gruppenmitgliedern über den Status der Aufgabe
 . Ende der Iteration
 * Vorstellung der erledigten Aufgaben
-* Bewertung der Aufgabe durch die Gruppe
+* Bewertung der Ergebnisse durch die Gruppe
 * Puls-Check
 * Iterationsnachbesprechung
 * Lesson-Learned (wenn erforderlich)

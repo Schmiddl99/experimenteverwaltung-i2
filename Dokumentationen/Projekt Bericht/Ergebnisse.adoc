@@ -1,0 +1,60 @@
+= Ergebnisse 
+{localdatetime}
+include::../_includes/default-attributes.inc.adoc[]
+
+== Ziel: Einheitliches Buchungssystem für EMS mit Buchungsverwaltungsfunktionalitäten
+
+
+=== Anlegen und Speichern einer Physikvorlesung
+
+
+Diese Ziel wurde erreicht, es ist nun mit unsrem System möglich eine Komplette Vorlesung, mit dem Studiengang, einem optionalen Titel, dem Datum, der Uhrzeit und den entsprechenden Experimenten, die in der Vorlesung vorgeführt werden sollen. Dies wurde erreicht mit Hilfe der *Voreinstellung* wo die Kerndaten der Vorlesung, wie Studiengang, optionaler Titel, Datum und Uhrzeit eingeben werden. Die Auswahl der Experimente erfolgt über ein Overlay in der Experimentenübersicht, in dem man durch klicken auf ein Einwagensymbol Experimente zu Vorlesung hinzufügen kann oder abwählen kann. Beim Buchungsabschluss wird dem Nutzer eine Übersicht der ausgewählten Experimente im *Warenkorb* angezeigt, wo er nun auch die Reihenfolge der Experimente verändern kann. Zusätzlich kann er bei Bedarf auch einen Kommentar pro Vorlesung hinterlassen. 
+
+
+=== Bearbeitung von Vorlesungen 
+
+Auch dieses Ziel wurde erreicht und wird von uns durch das *Journal* umgesetzt. Hier kann sich der Dozent alle bisher gebuchten Vorlesungen ansehen und diese, wenn die Vorlesung noch nicht gehalten wurde verändern. Hier können Experimente hinzugefügt werden oder aus der Buchung gelöscht werden. Auch lässt sich hier auch die Reihenfolge der Experimente und der Kommentar bearbeiten. Die gesammte Buchung kann hier auch gelöscht werden, wenn sie noch in der Zukunft liegt. 
+
+=== Darstellung der gebuchten Vorlesungen 
+
+Ein weiteres Ziel, dass wir durch die *Dozentenwoche* erreichen konnten. Durch klicken auf die Dozentenwoche, kann der Dozent nach Auswahl des Jahrs und der Kalenderwoche sich eine Wochenplanübersicht erstellen. Diese wird dann online agezeigt und kann über die Druckfunktion des Browsers gedruckt oder als PDF generiert werden. 
+
+Der Admin verfügt über die selbe Möglichkeit, kann aber zusätzlich noch den Dozenten auswählen, dessen Dozentenwoche er einsehen möchte. 
+
+=== Abgrenzung der Nutzer
+
+Ziel erreicht durch den *Login*. Durch unterschiedliche Userrollen ist es möglich, die Nutzer mit Ihren unterschiedlichen Funktionen und Rechten voneinander zu trennen. Auch wird es so ermöglicht, dass der Admin keine Vorlesungen der Dozenten bearbeiten kann, oder die Dozenten Vorlesungen anderer Dozenten verändern können. Weiterhin hat der Admin auf alle Funktionen Zugriff die der Experimentenbearbeitung ensprechen. 
+
+
+== Einfachere Auswahl eines Geräts bei der Erstellung eines Experiments
+
+Durch hinzufügen einer Sucheleiste in der Eingabe Maske, kann der Admin sich nun gezielt Geräte anzeigen lassen. Das Ziel wurde erreicht.
+
+== Buchungshäufigkeit auswerten
+
+Diese Ziel wollten wir mit Hilfe der *Statistik* umsetzen. Die ensprechenden Use Cases und Test Cases wurden erstellt. Sie wurde aber nicht implementiert. Das Ziel wurde nicht erreicht. 
+
+== Fehlerbehebung
+
+Es wurde gewünscht zwei Bugs auf dem Vorhanden System zu beheben. Der eine Bug bezog sich auf einen Anzeigefehler von Textfeldern, dieser wurde behoben. Der andere war ein Problem bei der Organisation von Bildern, der Experimente. Dieser wurde nicht behoben. Wir betrachten dieses Ziel nur als teilweise erreicht.  
+
+= Begründung für das nicht Erfüllen aller Ziele
+
+Wir hatten nicht genug Zeit alle Ziele zu erfüllen. Dadurch das zwei Teammitglieder uns am Anfang des Semesters verlassen haben und uns nur ein neues Teammitglied hinzugefügt wurde, fehlte uns die komplette Arbeitskraft eines Teammitglied, das Semester über. Auch die Einarbeitungszeit des neuen Mitglieds konnte nicht produktiv für das Projekt genutzt werden. Auch die vielen Änderungen des konnten, behinderten uns stark am Vorrücken der Aufgaben, da eigentlich beschlossene Aufgaben immer wieder neu analysiert und dokumentiert werden mussten. Auch die Korrektur des Belegs am Anfang des Semesters kostet viel Arbeitszeit die aber für das System keine Fortschritte gebracht hat. 
+
+
+= Reflexionen der Teammitglieder 
+
+== Gregor Müller 
+
+Bei dem Projekt in SE gab es für mich einige Höhen und einige Tiefen. Ich durfte durch das Projekt, einige tolle Bekanntschaften machen und auch die Lehrkörper aus einer anderen Perspektive kannenlernen. Zum Beispiel wurde mir erst hier Bewusst, dass auch an unsere Hochschule einige Menschen gibt die sich gegen Veränderung sträuben und es ein harter Kampf sein kann neue Systeme in den Arbeitsalltag zu integrieren. Diese Erfahrung machte ich so zum ersten mal und dachte bis jetzt immer diese typischen Aussagen wie „aber früher war alles besser“, würden sich auf mein Berufsleben begrenzen. 
+Und ich bin auch dankbar dafür immer wieder augmentiert haben zu müssen warum und wieso und weshalb und weswegen wir unsere Entscheidungen getroffen haben. Dies lenkte meinen Fokus auf die Wirklichen Hintergründe einer Forderung des Kunden. Es war zwar öfter mehr als frustrierend, dass gebe ich zu, aber im Nachhinein betrachtet glaube ich, dass ich so auch auf vielleicht noch schwierigere oder komplizierte Kunden vorbereitet wurde. 
+
+Die ewige Anfertigung von Dokumentationsbelegen empfand ich teilweise mehr als hinderlich als förderlich. Ich dachte oft, es ist doch klar warum wir dies oder das machten, oder das der Detailgrad einfach zu groß war, der in den Belegen gefordert wurde. Aber als dann der Punkt im Projekt kam, an dem wir die alten TCs bearbeiten wollten und wir uns kaum erklären konnten was hier eigentlich was macht und warum überhaupt, überdachte ich meine Einstellung. Man kann einfach nie sagen wie es nach einem Projektabschluss weiter geht und was ein zukünftiger Entwickler vielleicht noch alles für Zusatzinformationen benötigt. Heute sage ich, dass die Dokumentation mehr als wichtig ist und auch stets, auch im Privatbereich eingehalten werden sollte. 
+
+Zu guter Letzt möchte ich noch ein paar loben Worte an mein Team richten. Ich durfte lernen wie wichtig es ist, ein Team zu haben mit dem man wirklich gut und eifrig zusammenarbeiten kann. Wie wichtig es ist, dass man sich auf Absprachen verlassen kann oder wenn Fehler passieren, man nicht damit beschäftigt ist einen Schuldigen zu finden, sondern wie man das Problem lösen kann. Ein Team bei dem man ehrlich sein kann und auch mal gemaßregelt wird, wenn etwas über die Stränge schlägt. Bei Problemen der andren Teams, habe ich oft gehört „ja, die anderen“, deshalb bin ich so froh, dass bei meinem Team alles seit der ersten Minute auf der menschlichen Seite funktioniert hat. Das Einzige was ich bedauere ist nur, dass ich durch Corona noch nie einem der anderen, die mich nun seit fast einem Jahr begleiten wirklich ins Gesicht sehen konnte. 
+
+Ja ich bin stolz auf das, was wir erreicht haben. Ich bin stolz darauf, das wir fast alle Hürden und Problem erfolgreich meistern konnten und ich bin stolz drauf was ich lernen konnte und auch darauf, dass ich für das Projekt viel einbringen konnte und durfte. 
+
+Gregor Müller 
+

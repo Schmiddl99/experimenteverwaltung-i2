@@ -4,6 +4,6 @@
 
 === Richard Böhme, William Elsner, Piet Gutsche, Gregor Müller 
 
-Dies ist der Projekt Bericht des Themas I2: Erweiterung des Systems zur Verwaltung von Physikexperimenten. Das Projekt wurde im Sommersemster 2021 von Richard Böhme (a.I.), William Elsner(W.I.), Piet Gutsche (W.I.), Gregor Müller (V.I.) betreut. 
+Dies ist der Projekt Bericht des Themas I2: Erweiterung des Systems zur Verwaltung von Physikexperimenten. Das Projekt wurde im Sommersemster 2021 von Richard Böhme (a.I.), William Elsner (W.I.), Piet Gutsche (W.I.), Gregor Müller (V.I.) betreut. 
 
 
