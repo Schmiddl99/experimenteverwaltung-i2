@@ -68,12 +68,9 @@ Equipment.find_or_create_by!(name: "Strahler", location: "W1", inventory_nr: "5"
 Equipment.find_or_create_by!(name: "Wärmebildkamera", location: "N 227", inventory_nr: "6")
 Equipment.find_or_create_by!(name: "Trafo für Halle-Magnet", location: "V33", inventory_nr: "7")
 
-Course.find_or_create_by!(name: 'Maschinenbau')
-Course.find_or_create_by!(name: 'Elektrotechnik')
-Course.find_or_create_by!(name: 'Chemie')
-Course.find_or_create_by!(name: 'Wirtschaftsingenieure')
-Course.find_or_create_by!(name: 'Bauingenieure')
-Course.find_or_create_by!(name: 'Sonstiges')
+['ALLGEMEINER MASCHINENBAU', 'ELEKTROTECHNIK', 'CHEMIEINGENIEURWESEN', 'UMWELTMONITORING', 'AGRARWIRTSCHAFT und GARTENBAU', 'WIRTSCHAFTSINGENIEURWESEN', 'BAUINGENIEURWESEN', 'GEOMATIK', 'Sonstiges'].each do |name|
+  Course.find_or_create_by(name: name)
+end
 
 if ENV['USER'] == "witt"
   path = "/home/witt/DB_Gefahren/"

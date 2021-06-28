@@ -1,5 +1,5 @@
 class CreateDefaultCourses < ActiveRecord::Migration[6.1]
-  NAMES = ['Maschinenbau', 'Elektrotechnik', 'Chemie', 'Wirtschaftsingenieure', 'Bauingenieure', 'Sonstiges']
+  NAMES = ['ALLGEMEINER MASCHINENBAU', 'ELEKTROTECHNIK', 'CHEMIEINGENIEURWESEN', 'UMWELTMONITORING', 'AGRARWIRTSCHAFT und GARTENBAU', 'WIRTSCHAFTSINGENIEURWESEN', 'BAUINGENIEURWESEN', 'GEOMATIK', 'Sonstiges']
 
   def up
     NAMES.each do |name|
