@@ -8,27 +8,27 @@ include::../_includes/default-attributes.inc.adoc[]
 === Anlegen und Speichern einer Physikvorlesung
 
 
-Diese Ziel wurde erreicht, es ist nun mit unsrem System möglich eine Komplette Vorlesung, mit dem Studiengang, einem optionalen Titel, dem Datum, der Uhrzeit und den entsprechenden Experimenten, die in der Vorlesung vorgeführt werden sollen. Dies wurde erreicht mit Hilfe der *Voreinstellung* wo die Kerndaten der Vorlesung, wie Studiengang, optionaler Titel, Datum und Uhrzeit eingeben werden. Die Auswahl der Experimente erfolgt über ein Overlay in der Experimentenübersicht, in dem man durch klicken auf ein Einwagensymbol Experimente zu Vorlesung hinzufügen kann oder abwählen kann. Beim Buchungsabschluss wird dem Nutzer eine Übersicht der ausgewählten Experimente im *Warenkorb* angezeigt, wo er nun auch die Reihenfolge der Experimente verändern kann. Zusätzlich kann er bei Bedarf auch einen Kommentar pro Vorlesung hinterlassen. 
+Diese Ziel wurde erreicht, es ist nun mit unserem System möglich eine komplette Vorlesung, mit dem Studiengang, einem optionalen Titel, dem Datum, der Uhrzeit und den entsprechenden Experimenten, die in der Vorlesung vorgeführt werden sollen, zu planen und zu buchen. Dies wurde erreicht mit Hilfe der *Voreinstellung*, welche die Kerndaten der Vorlesung, wie Studiengang, optionaler Titel, Datum und Uhrzeit festlegen. Die Auswahl der Experimente erfolgt über ein Overlay in der Experimentenübersicht, in dem man durch Klicken auf ein Einkaufswagensymbol Experimente zu Vorlesung hinzufügen oder abwählen kann. Beim Buchungsabschluss wird dem Nutzer eine Übersicht der ausgewählten Experimente im *Warenkorb* angezeigt, wo er nun auch die Reihenfolge der Experimente verändern kann. Zusätzlich kann er bei Bedarf auch einen Kommentar pro Vorlesung hinterlassen.  
 
 
 === Bearbeitung von Vorlesungen 
 
-Auch dieses Ziel wurde erreicht und wird von uns durch das *Journal* umgesetzt. Hier kann sich der Dozent alle bisher gebuchten Vorlesungen ansehen und diese, wenn die Vorlesung noch nicht gehalten wurde verändern. Hier können Experimente hinzugefügt werden oder aus der Buchung gelöscht werden. Auch lässt sich hier auch die Reihenfolge der Experimente und der Kommentar bearbeiten. Die gesammte Buchung kann hier auch gelöscht werden, wenn sie noch in der Zukunft liegt. 
+Auch dieses Ziel wurde erreicht und wird von uns durch das *Journal* umgesetzt. Hier kann sich der Dozent alle bisher gebuchten Vorlesungen ansehen und diese, wenn die Vorlesung noch nicht gehalten wurde, verändern. Hier können Experimente hinzugefügt werden oder aus der Buchung gelöscht werden. Auch lässt sich hier auch die Reihenfolge der Experimente und der Kommentar bearbeiten. Die gesammte Buchung kann hier auch gelöscht werden, wenn sie noch in der Zukunft liegt. 
 
 === Darstellung der gebuchten Vorlesungen 
 
-Ein weiteres Ziel, dass wir durch die *Dozentenwoche* erreichen konnten. Durch klicken auf die Dozentenwoche, kann der Dozent nach Auswahl des Jahrs und der Kalenderwoche sich eine Wochenplanübersicht erstellen. Diese wird dann online agezeigt und kann über die Druckfunktion des Browsers gedruckt oder als PDF generiert werden. 
+Ein weiteres Ziel, dass wir durch die *Dozentenwoche* erreichen konnten, bestand in einer strukturierten Darstellung der Buchungen. Durch klicken auf die Dozentenwoche, kann der Dozent sich nach Auswahl des Jahrs und der Kalenderwoche eine Wochenplanübersicht erstellen lassen. Diese wird dann online angezeigt und kann über die Druckfunktion des Browsers gedruckt oder als PDF generiert werden. 
 
-Der Admin verfügt über die selbe Möglichkeit, kann aber zusätzlich noch den Dozenten auswählen, dessen Dozentenwoche er einsehen möchte. 
+Der Admin verfügt über die gleiche Möglichkeit, kann aber zusätzlich noch den Dozenten auswählen, dessen Dozentenwoche er einsehen möchte. 
 
 === Abgrenzung der Nutzer
 
-Ziel erreicht durch den *Login*. Durch unterschiedliche Userrollen ist es möglich, die Nutzer mit Ihren unterschiedlichen Funktionen und Rechten voneinander zu trennen. Auch wird es so ermöglicht, dass der Admin keine Vorlesungen der Dozenten bearbeiten kann, oder die Dozenten Vorlesungen anderer Dozenten verändern können. Weiterhin hat der Admin auf alle Funktionen Zugriff die der Experimentenbearbeitung ensprechen. 
+Ziel erreicht durch den *Login*. Durch unterschiedliche Userrollen ist es möglich, die Nutzer mit ihren unterschiedlichen Funktionen und Rechten voneinander zu trennen. Auch wird es so ermöglicht, dass der Admin keine Vorlesungen der Dozenten bearbeiten kann, oder die Dozenten Vorlesungen anderer Dozenten verändern können. Weiterhin hat der Admin auf alle Funktionen Zugriff, die der Experimentenbearbeitung oder allgemeinen Systemverwaltung (Nutzerverwaltung etc.) ensprechen. 
 
 
 == Einfachere Auswahl eines Geräts bei der Erstellung eines Experiments
 
-Durch hinzufügen einer Sucheleiste in der Eingabe Maske, kann der Admin sich nun gezielt Geräte anzeigen lassen. Das Ziel wurde erreicht.
+Durch Hinzufügen einer Suchleiste in der Eingabemaske, kann der Admin sich nun gezielt Geräte anzeigen lassen. Das Ziel wurde erreicht.
 
 == Buchungshäufigkeit auswerten
 
@@ -38,19 +38,19 @@ Diese Ziel wollten wir mit Hilfe der *Statistik* umsetzen. Die ensprechenden Use
 
 Es wurde gewünscht zwei Bugs auf dem Vorhanden System zu beheben. Der eine Bug bezog sich auf einen Anzeigefehler von Textfeldern, dieser wurde behoben. Der andere war ein Problem bei der Organisation von Bildern, der Experimente. Dieser wurde nicht behoben. Wir betrachten dieses Ziel nur als teilweise erreicht.  
 
-= Begründung für das nicht Erfüllen aller Ziele
+= Begründung für das Nichterfüllen von Zielen
 
-Wir hatten nicht genug Zeit alle Ziele zu erfüllen. Dadurch das zwei Teammitglieder uns am Anfang des Semesters verlassen haben und uns nur ein neues Teammitglied hinzugefügt wurde, fehlte uns die komplette Arbeitskraft eines Teammitglied, das Semester über. Auch die Einarbeitungszeit des neuen Mitglieds konnte nicht produktiv für das Projekt genutzt werden. Auch die vielen Änderungen des konnten, behinderten uns stark am Vorrücken der Aufgaben, da eigentlich beschlossene Aufgaben immer wieder neu analysiert und dokumentiert werden mussten. Auch die Korrektur des Belegs am Anfang des Semesters kostet viel Arbeitszeit die aber für das System keine Fortschritte gebracht hat. 
+Wir hatten nicht genug Zeit alle Ziele zu erfüllen. Dadurch, dass zwei Teammitglieder uns am Anfang des Semesters verlassen haben und uns nur ein neues Teammitglied hinzugefügt wurde, fehlte uns die komplette Arbeitskraft eines Teammitglied über das Semester. Auch die Einarbeitungszeit des neuen Mitglieds konnte nicht produktiv für das Projekt genutzt werden. Auch die vielen Änderungen des Kunden, behinderten uns stark am eigentlichen Arbeiten an der Aufgabe, da eigentlich beschlossene Aufgaben immer wieder neu analysiert und dokumentiert werden mussten. Auch die Korrektur des Belegs am Anfang des Semesters kostete viel Arbeitszeit, die aber für das System keine Fortschritte gebracht hat. 
 
 
 = Reflexionen der Teammitglieder 
 
 == Gregor Müller 
 
-Bei dem Projekt in SE gab es für mich einige Höhen und einige Tiefen. Ich durfte durch das Projekt, einige tolle Bekanntschaften machen und auch die Lehrkörper aus einer anderen Perspektive kannenlernen. Zum Beispiel wurde mir erst hier Bewusst, dass auch an unsere Hochschule einige Menschen gibt die sich gegen Veränderung sträuben und es ein harter Kampf sein kann neue Systeme in den Arbeitsalltag zu integrieren. Diese Erfahrung machte ich so zum ersten mal und dachte bis jetzt immer diese typischen Aussagen wie „aber früher war alles besser“, würden sich auf mein Berufsleben begrenzen. 
-Und ich bin auch dankbar dafür immer wieder augmentiert haben zu müssen warum und wieso und weshalb und weswegen wir unsere Entscheidungen getroffen haben. Dies lenkte meinen Fokus auf die Wirklichen Hintergründe einer Forderung des Kunden. Es war zwar öfter mehr als frustrierend, dass gebe ich zu, aber im Nachhinein betrachtet glaube ich, dass ich so auch auf vielleicht noch schwierigere oder komplizierte Kunden vorbereitet wurde. 
+Bei dem Projekt in SE gab es für mich einige Höhen und einige Tiefen. Ich durfte durch das Projekt, einige tolle Bekanntschaften machen und auch den Lehrkörper aus einer anderen Perspektive kennenlernen. Zum Beispiel wurde mir erst hier Bewusst, dass es auch an unsere Hochschule einige Menschen gibt, die sich gegen Veränderung sträuben und es ein harter Kampf sein kann, neue Systeme in den Arbeitsalltag zu integrieren. Diese Erfahrung machte ich so zum ersten Mal und dachte bis jetzt immer, diese typischen Aussagen wie „aber früher war alles besser“, würden sich auf mein Berufsleben begrenzen. 
+Und ich bin auch dankbar dafür, immer wieder argumentiert haben zu müssen, warum und wieso und weshalb und weswegen wir unsere Entscheidungen getroffen haben. Dies lenkte meinen Fokus auf die wirklichen Hintergründe einer Forderung des Kunden. Es war zwar öfter mehr als frustrierend, das gebe ich zu, aber im Nachhinein betrachtet glaube ich, dass ich so auch auf vielleicht noch schwierigere oder komplizierte Kunden vorbereitet wurde. 
 
-Die ewige Anfertigung von Dokumentationsbelegen empfand ich teilweise mehr als hinderlich als förderlich. Ich dachte oft, es ist doch klar warum wir dies oder das machten, oder das der Detailgrad einfach zu groß war, der in den Belegen gefordert wurde. Aber als dann der Punkt im Projekt kam, an dem wir die alten TCs bearbeiten wollten und wir uns kaum erklären konnten was hier eigentlich was macht und warum überhaupt, überdachte ich meine Einstellung. Man kann einfach nie sagen wie es nach einem Projektabschluss weiter geht und was ein zukünftiger Entwickler vielleicht noch alles für Zusatzinformationen benötigt. Heute sage ich, dass die Dokumentation mehr als wichtig ist und auch stets, auch im Privatbereich eingehalten werden sollte. 
+Die ewige Anfertigung von Dokumentationsbelegen empfand ich teilweise mehr als hinderlich, als förderlich. Ich dachte oft, es ist doch klar, warum wir dies oder das machten, oder das der Detailgrad einfach zu groß war, der in den Belegen gefordert wurde. Aber als dann der Punkt im Projekt kam, an dem wir die alten TCs bearbeiten wollten und wir uns kaum erklären konnten, was hier eigentlich was macht und warum überhaupt, überdachte ich meine Einstellung. Man kann einfach nie sagen, wie es nach einem Projektabschluss weiter geht und was ein zukünftiger Entwickler vielleicht noch alles für Zusatzinformationen benötigt. Heute sage ich, dass die Dokumentation mehr als wichtig ist und auch stets, auch im Privatbereich eingehalten werden sollte.
 
 Zu guter Letzt möchte ich noch ein paar loben Worte an mein Team richten. Ich durfte lernen wie wichtig es ist, ein Team zu haben mit dem man wirklich gut und eifrig zusammenarbeiten kann. Wie wichtig es ist, dass man sich auf Absprachen verlassen kann oder wenn Fehler passieren, man nicht damit beschäftigt ist einen Schuldigen zu finden, sondern wie man das Problem lösen kann. Ein Team bei dem man ehrlich sein kann und auch mal gemaßregelt wird, wenn etwas über die Stränge schlägt. Bei Problemen der andren Teams, habe ich oft gehört „ja, die anderen“, deshalb bin ich so froh, dass bei meinem Team alles seit der ersten Minute auf der menschlichen Seite funktioniert hat. Das Einzige was ich bedauere ist nur, dass ich durch Corona noch nie einem der anderen, die mich nun seit fast einem Jahr begleiten wirklich ins Gesicht sehen konnte. 
 
@@ -58,3 +58,20 @@ Ja ich bin stolz auf das, was wir erreicht haben. Ich bin stolz darauf, das wir 
 
 Gregor Müller 
 
+== William Elsner
+
+Diese Reflexion bezieht sich auf das Gruppenprojekt im Rahmen der Prüfungsleistung des Moduls Software Engineering II. Für die Belegarbeit im Rahmen von SE I wurde bereits eine Reflexion abgeben, welche sich fast ausschließlich auf die Anforderungsanalyse bezieht. Da diese in SE II nicht mehr primär im Vordergrund stand, möchte ich mich in diesem Dokument ausschließlich auf dieses Semester und die eigentliche Entwicklung beziehen. 
+
+Das Ziel war es weiterhin, ein bereits bestehendes, HTW-internes Informationssystem bezüglich der Experimente der Physikfakultät um ein nutzerfreundliches Buchungssystem zu erweitern. Dies diente dem Zweck, dem Themensteller und den anderen Anwendern manuelle Arbeit und überflüssigen Mailverkehr abzunehmen. Des Weiteren sollten kleinere Bugs gefixt werden. 
+
+Anfangs möchte ich betonen, dass das Projekt mir wirklich Spaß gemacht hat. Im Laufe der zwei Semester hat sich unser Team so gut eingearbeitet, dass sogar der Verlust der Wirtschaftsingenieure und zwei weiterer Teammitglieder keine unüberwindbare Hürde war. Auch die Einarbeitung eines neuen Teammitglieds hat dementsprechend gut funktioniert. Zusammenfassend möchte ich hierzu unterstreichen, dass, meiner Meinung nach, sogar gute persönliche Verhältnisse entstanden sind, die sich nicht nur sehr positiv auf unsere Zusammenarbeit und Kommunikation als Team ausgewirkt, sondern auch für modulexterne Kooperationen gesorgt haben.
+
+ Des Weiteren fällt mir auf, dass sich mein entwicklungsbezogener Kenntnisstand gefestigt und erweitert hat. Durch den konstanten Austausch mit Teammitgliedern mit erhöhter Expertise wurde mir viel über Architektur, Konventionen und sämtliche Methoden vermittelt, vom Testing bis hin zum Qualitätsmanagement. Auch habe ich eine neue Programmiersprache (Ruby) und das verwendete Framework (Ruby on Rails) kennengelernt, sodass meine Einarbeitungsaufwand für das eventuelle Nutzen dieser Sprache verringert wurde, parallel zur gestiegenen Neugier. 
+
+Das anfängliche Missverständnis der agilen Entwicklung hat sich auch aufgeklärt. Hierfür könnte man unseren Kunden als Grund nennen, welcher ohne Rücksicht auf Verluste, aber selbstlos im Hinblick auf „seine“ Dozenten, für ständige Anforderungsänderungen oder -zugänge sorgte. Um ehrlich zu sein, hat dies oft für Verwirrung und Frustration innerhalb des Teams und auf meiner Gemütsseite gesorgt. Ich denke jedoch, dass genau das dafür verantwortlich war, dass das Risiko- und agile Verständnis (vor allem im Kontext des OUP) gesteigert wurden und wir sozusagen den realistischen „Extremfall“ erlebt haben. 
+
+Der große Dokumentationsaufwand schien mir teilweise etwas überflüssig. Dennoch bin ich der festen Überzeugung, dass ich nur daraus gelernt habe – zu viel ist meistens besser als zu wenig. 
+
+Insgesamt war die Projektarbeit ein voller Erfolg. Sie war eine gute Mischung aus Spaß und Freundschaft, Disziplin und Einzelarbeit, Austausch und Auffassung, Lernen und Verstehen und Frustration und Erfolg. Die verbesserten Softskills, Kenntnisse und erlernten Methoden werden mir weiterhin nützlich bleiben, sodass sich der große Zeitaufwand definitiv gelohnt hat. Ich bin durchaus zufrieden. 
+
+William Elsner
