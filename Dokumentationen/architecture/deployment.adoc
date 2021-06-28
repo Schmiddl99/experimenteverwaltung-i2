@@ -49,7 +49,7 @@ gem install bundler
 ```
 curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 sudo apt-get install -y nodejs
-sudo npm install --global yarn 
+sudo npm install --global yarn
 ```
 . Passenger (Anwendungsserver) aktualisieren
 +
@@ -65,7 +65,7 @@ bundle exec cap <stage> deploy
 . Neue Ruby Version als Standard einstellen
 +
 ```
-rvm default 3.0.1
+rvm use --default 3.0.1
 ```
 
 == Installation rückgängig machen
