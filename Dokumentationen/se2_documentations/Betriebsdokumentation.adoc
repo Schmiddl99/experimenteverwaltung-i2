@@ -48,7 +48,7 @@ Es sollte ein debianbasierendes Betriebssystem wie Ubuntu 18.04 oder 20.04 verwe
 
 Um die Ruby Versions verwalten zu können sollte die aktuellste Version des Ruby Version Managers (RVM) installiert werden. Eine Installationsanleitung ist https://rvm.io/rvm/install[hier] zu finden. Danach sollte mittels `rvm install 3.0.1` Ruby 3.0.1 installiert werden.
 
-Als Web- und Anwendungsserver wird NGINX mit Passenger verwendet. Eine Installationsanleitung sowie eine Dokumentation der Konfiguration ist https://www.phusionpassenger.com/library/install/nginx/install/oss/#select_os[hier] zu finden. 
+Als Web- und Anwendungsserver wird NGINX mit Passenger verwendet. Eine Installationsanleitung sowie eine Dokumentation der Konfiguration ist https://www.phusionpassenger.com/library/install/nginx/install/oss/#select_os[hier] zu finden.
 
 Um eine verschlüsselte Verbindung via SSL zu ermöglichen wird Let's Encrypt verwendet. Die dazugehörige Software `certbot` wird benötigt um die Zertifikate zu verwalten und automatisch zu verlängern. Eine Anleitung dazu ist https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-20-04[hier] zu finden.
 
@@ -132,8 +132,7 @@ Um ein altes Backup einzuspielen, sollten folgende Schritte vorgenommen werden:
 
 * Anwendung stoppen:
 ```
-cd /var/app/current
-bundle exec passenger stop
+sudo service nginx stop
 ```
 * Backup entpacken:
 ```
@@ -154,8 +153,7 @@ cp -R uploads /var/www/app/shared/public
 ```
 * Anwendung starten:
 ```
-cd /var/www/app/current
-bundle exec passenger start
+sudo service nginx start
 ```
 * Änderungen verifizieren
 * Entpackte Dateien entfernen
@@ -173,7 +171,7 @@ rm -r uploads-bak
 
 === Fehlerdiagnose
 
-Im Folgenden sind Log-Dateien aufgeführt, welche in einem Fehlerfall hilfreich sind. Aufgrund der Komplexität der Anwendung kann nicht jeder auftretbarer Fehler dokumentiert werden. Häufig ist es hilfreich nach Fehlernachrichten oder Fehlercodes im Internet zu recherchieren. 
+Im Folgenden sind Log-Dateien aufgeführt, welche in einem Fehlerfall hilfreich sind. Aufgrund der Komplexität der Anwendung kann nicht jeder auftretbarer Fehler dokumentiert werden. Häufig ist es hilfreich nach Fehlernachrichten oder Fehlercodes im Internet zu recherchieren.
 
 ==== Passenger und NGINX Logs überprüfen
 
@@ -217,7 +215,7 @@ die Version angepasst werden. Nun muss im selben Verzeichnis der Befehl
 bundle install
 ```
 
-ausgeführt werden. 
+ausgeführt werden.
 Danach muss die <<Anwendung neu starten, Anwendung neu gestartet>> werden.
 
 ===== Rails
@@ -257,7 +255,7 @@ Um einen neuen Studiengang hinzuzufügen muss folgender Befehl in der Kommandoze
 INSERT INTO courses (name, created_at, updated_at) VALUES ('Name', datetime('now'), datetime('now'));
 ```
 
-Wobei `'Name'` mit dem jeweiligen Namen des Studiengangs ersetzt werden sollte. Danach kann mittels 
+Wobei `'Name'` mit dem jeweiligen Namen des Studiengangs ersetzt werden sollte. Danach kann mittels
 
 ```sql
 SELECT * FROM courses;
