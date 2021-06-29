@@ -406,4 +406,4 @@ Von Herr Heisig haben wie leider keine ausgefüllten Unterlagen erhalten, aber a
 
 ==== Installation des Systems
 
-Die Installation des Systems wurde am 28.06.2021 von unsrem Devolper {rb} durchgeführt und konnte erfolgreich, ohne Probleme abgeschlossen werden. 
+Die Installation des Systems wurde am 28.06.2021 von unserem Developer {rb} durchgeführt und konnte erfolgreich, ohne Probleme abgeschlossen werden. 
