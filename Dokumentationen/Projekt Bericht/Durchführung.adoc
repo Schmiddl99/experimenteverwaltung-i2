@@ -134,7 +134,7 @@ Der letze verpflichtende Termin des Workshops war noch außerhalb der I05, die N
 
 Das TSM4 ergab, dass einige Dokumente im Beleg von angepasst werden mussten. Der UC01 musste so verändert werden, dass er nun auch AW02 und AW04 abdeckte. Im UC02 musste AW05 mit aufgenommen werden.
 
-Die TCs mussten dementsprechend auch abgeändert werden und der TC WELCHER ???? wurde für AW01 neu erstellt.
+Die TCs mussten dementsprechend auch abgeändert werden, um die neu hinzugekommen Funktionen auch testen zu können. 
 Bei dem Wireframe WF_1 wurde der optionale Titel hinzugefügt (AW02), bei WF_2 wurde ein Button hinzugefügt, um ein benutzerdefiniertes Experiment außerhalb der Datenbank zur Buchung hinzuzufügen(AW04) und bei WF_8 wurde zum Titel das Semester hinzugefügt. Es wurden die Experimentenummern hervorgehoben. Es wurde der Abstand zwischen den Experimenten verkleinert. Es wurde Abstand zum Abheften erzeugt (Änderungen des Kunden zur Wochenplanansicht).
 
 Alle Änderungen der Wireframes wurden vom Kunden akzeptiert, außer WF_8. Die Kundenforderung war, dass wir das Design von Frau Dr. Krawietz übernehmen sollten, was wir auch taten. Es wurde davon abgesehen, nochmals einen Wireframe hierfür anzufertigen.
@@ -191,7 +191,7 @@ Das Update wurde auf der VM von {rb} erfolgreich durchgeführt.
 
 ==== Entscheidung über den Login treffen
 
-Nach dem Kundenmeeting war des Team stark verwundert über die Forderung des Kunden. Es wurden einige Möglichkeiten diskutiert, wie damit umzugehen sei. Es wurde auch der Vorschlag gebracht, sich mit dem Datenschutzbeauftragten der HTW in Verbinndung zu setzen. Davon haben wir aber abgesehn, weil wir zu dem Entschluss gekommen sind, dass der Datenschutz in der Verantwortlichkeit des Kunden liegt und es auch nicht die Aufgabe des Entwicklungsteams sei, bezüglich Forderungen oder Wünschen des Kuden, mit dem Kunden zu diskutieren oder gar einzuschreiten. Wir haben den Kunden darauf hingewiesen, dass wir es bezüglich des Datenschutzes für keine gute Idee halten, wenn der Admin Benutzername und Passwort für die Anwender vergibt. Nochdazu ist diese Forderung für uns auch eine erhebliche Erleicherung, da sich somit der Entwicklungsaufwand bezüglich des Logins drastisch reduziert. 
+Nach dem Kundenmeeting war des Team stark verwundert über die Forderung des Kunden. Es wurden einige Möglichkeiten diskutiert, wie damit umzugehen sei. Es wurde auch der Vorschlag gebracht, sich mit dem Datenschutzbeauftragten der HTW in Verbinndung zu setzen. Davon haben wir aber abgesehn, weil wir zu dem Entschluss gekommen sind, dass der Datenschutz in der Verantwortlichkeit des Kunden liegt und es auch nicht die Aufgabe des Entwicklungsteams sei, bezüglich Forderungen oder Wünschen des Kuden, mit dem Kunden zu diskutieren oder gar zu streiten. Wir haben den Kunden darauf hingewiesen, dass wir es bezüglich des Datenschutzes für keine gute Idee halten, wenn der Admin Benutzername und Passwort für die Anwender vergibt. Nochdazu ist diese Forderung für uns auch eine erhebliche Erleicherung, da sich somit der Entwicklungsaufwand bezüglich des Logins drastisch reduziert. Denn dadurch konnten wir den Login unsere Vorgänger verwenden und mussten keine eigene Nutzerverwaltung entwickeln. Hierdruch würde sich auch die Insallation auf das Hauptsystem vereinfacht werden, da dadurch auch keine Nutzermigration erfroderlich sein würde. 
 
 ==== Entscheidung über die Reperatur oder die Entfernung alter TCs
 

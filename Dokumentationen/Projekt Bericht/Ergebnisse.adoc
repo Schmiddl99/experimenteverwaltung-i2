@@ -23,7 +23,7 @@ Der Admin verfügt über die gleiche Möglichkeit, kann aber zusätzlich noch de
 
 === Abgrenzung der Nutzer
 
-Ziel erreicht durch den *Login*. Durch unterschiedliche Userrollen ist es möglich, die Nutzer mit ihren unterschiedlichen Funktionen und Rechten voneinander zu trennen. Auch wird es so ermöglicht, dass der Admin keine Vorlesungen der Dozenten bearbeiten kann, oder die Dozenten Vorlesungen anderer Dozenten verändern können. Weiterhin hat der Admin auf alle Funktionen Zugriff, die der Experimentenbearbeitung oder allgemeinen Systemverwaltung (Nutzerverwaltung etc.) ensprechen. 
+Ziel erreicht durch den *Login*. Durch unterschiedliche Userrollen ist es möglich, die Nutzer mit ihren unterschiedlichen Funktionen und Rechten voneinander zu trennen. Auch wird es so ermöglicht, dass der Admin keine Vorlesungen der Dozenten bearbeiten kann, oder die Dozenten Vorlesungen anderer Dozenten verändern können. Weiterhin hat der Admin auf alle Funktionen Zugriff, die der Experimentenbearbeitung oder allgemeinen Systemverwaltung (Nutzerverwaltung etc.) ensprechen. Der Login wurde von uns nicht selbst erstellt, sonder wir verwendeten die vorhandene Nutzerverwaltung des Systems. 
 
 
 == Einfachere Auswahl eines Geräts bei der Erstellung eines Experiments
