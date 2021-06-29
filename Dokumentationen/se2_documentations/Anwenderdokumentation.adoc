@@ -5,19 +5,237 @@ include::../_includes/default-attributes.inc.adoc[]
 
 == Einführung 
 
-== Zweck
+Das Ziel dieses Dokuments ist es, eine Art Handbuch bezüglich der Nutzung des weiterentwickelten Experimente-Management-Systems bereit zu stellen. Die Anleitungen beziehen sich detailliert und anschaulich auf die neuen Anwendungsfälle und werden dabei anhand der unterschiedlichen Nutzerrollen strukturiert. Der Zweck dieser Anwenderdokumentation ist es, dem Nutzer bei Fragen und Unklarheiten spezifische Hilfeleistungen bereitzustellen. Dabei wird großteils auf die Veranschaulichung durch Screenshots gesetzt. Der Anwender soll im Fall von Orientierungslosigkeit in der Lage sein, sich anhand dieses Dokuments selber zu helfen, um Kommunikations- und Zeitaufwand für den Nutzer selbst und das Entwicklerteam zu sparen. 
+
+== Zweck des Systems
+
+Der Nutzen des weiterentwickelten EMS liegt nun nicht mehr nur in der Informationsbeschaffung, sondern auch in der Planung. Dozenten ist es nun möglich, die benötigten Experimente ohne Mailverkehr zu "buchen". Durch eben diese Buchungen wird es dem Kunden möglich, die Termine der Bereitstellung der Experimente übersichtlich und einheitlich einzusehen. Das System generiert automatisiert Wochenpläne, die gedruckt werden können, um die Buchungsübersicht zu Papier zu bringen.  Bei Änderungen muss kein direkter Kontakt mehr aufgenommen werden, da Anwender mit Dozentenrolle ihre Buchungen im Journal überarbeiten können. 
 
 == Aufbau der Oberfläche 
+
+Der Grundaufbau des Systems ist der selbe geblieben, wie bei der Altversion. Auf der Startseite ist es möglich, sich durch die Experimentekategorien und somit auch durch die Experimente zu klicken oder sie zu suchen. Durch Klicken auf die Rollenbezeichnung öffnet sich eine Funktionsübersicht in Form eines Auswahlmenüs. 
+
+.Startseite 
+image::Startseite.png[Startseite]
+
+Die jeweiligen Funktionalitäten unterscheiden sich offensichtlicher Weise anhand der Rollen der Nutzer. 
+
+.Auswahlmöglichkeiten des Admin 
+image::Startseite mit Rolle_Admin.png[Startseite_Admin]
+
+.Auswahlmöglichkeiten des Dozenten
+image::Startseite mit Rolle_Dozent.png[Startseite_Dozent]
 
 == Anleitungen
 
 === Admin
 ==== Dozentenwoche betrachten 
-==== Nutzer anlegen 
+
+Der Admin kann sich den Wochenplan für einen Dozenten anzeigen lassen, indem er im Auswahlmenü auf "Dozentenwoche" klickt. 
+
+.Dozentenwochenfunktion aufrufen
+image::Startseite_Admin_Dozentenwoche.png[Dozentwoche_starten]
+
+Auf dem folgenden Formular müssen nun der gewünschte Dozent, das spezifische Jahr und eine Kalenderwoche angegeben werden, wobei das akutelle Jahr und die momentane Kalenderwoche standardmäßig voreingestellt sind. Wenn der ausgewählte Dozent für den festgelegten Zeitraum keine Buchungen getätigt hat, wird der Admin darüber informiert. 
+
+.Dozenten wählen
+image::Dozentenwahl.png[Dozentenwahl]
+
+.ggf. Jahr anpassen
+image::Jahreswahl.png[Jahreswahl]
+
+.ggf. Zeitraum anpassen
+image::KWwahl.png[KWwahl]
+
+Nachdem das Formular vollständig ausgefüllt wurde, gelangt der Nutzer durch Druck auf "Anzeigen" in die Dozentenwochenübersicht, wenn vorhanden. 
+
+.Anzeige anfordern
+image::Dozentenwoche_ausgefüllt.png[DW_anzeigen]
+
+Wenn für den gewählten Zeitraum Buchungen vorhanden sind, werden diese strukturiert angezeigt. 
+Durch Druck auf "Drucken" öffnet sich die Druckansicht (alternativ <STRG>+<P> drücken). Beim Drucken ist das Querformat zu wählen.  
+
+NOTE: Die Druckkonvertierung der Dozentenwoche ist für alle gängigen Browser, die auf der Chromium Engine laufen optimiert. Es ist daher zu empfehlen bspw. Chrome für den Druckvorgang zu nutzen. Bei Verwendung von anderen Browsern kann es ungeklärt zu minimalen Fehlern kommen, die jedoch keine Auswirkung auf die semantische oder syntaktische Korrektheit des Dokuments haben. 
+
+.Dozentenwoche
+image::Wochenübersicht.png[Dozentenwoche]
+
+
+==== Nutzer verwalten
+
+Dem Administrator ist es auch weiterhin möglich, die Nutzer des EMS anhand von Nutzerkonten zu verwalten. Da die Dozenten sich nun kein Konto mehr teilen, sondern abgegrenzt voneinander agieren, wurde die Nutzerverwaltung partiell erweitert. 
+Um auf die Kontenübersicht zu gelangen, muss der Admin im Auswahlmenü auf "Kontenübersicht" klicken. 
+
+.Kontenübersicht öffnen
+image::NutzerStart.png[Nutzerverwaltung_Aufruf]
+
+Alle vorhandenen Nutzer werden nun in einer Tabelle aufgelistet. 
+
+.Kontenübersicht
+image::NutzerÜbersicht.png[Nutzerverwaltung_Überischt]
+
+Durch Druck auf den Namen eines Nutzers ist es möglich, sich die Nutzerdetails anzeigen zu lassen.
+
+===== Nutzer anlegen
+
+Ein neuer Nutzer kann durch Druck auf "Benutzer anlegen" erstellt werden. 
+
+.Nutzer anlegen
+image::NutzerAnlegen.png[Nutzer_anlegen]
+
+Im folgenden Formular müssen der Name der nutzenden Person, ein Benutzername (für die Anmeldung im Systm) und die Rolle vergeben werden. Das Passwort ist kein Pflichtfeld, sollte jedoch trotzdem stets vergeben werden. Die Option "Aktiviert" ist standardmäßig ausgewählt, was auch so bleiben muss. Hierzu kann unter dem Punkt "<<Nutzer deaktivieren (oder löschen), Nutzer deaktivieren (oder löschen)>>" mehr gelesen werden. Durch Druck auf "Zurück" oder "< Benutzerüberischt" kann der Vorgang abgebrochen werden.
+
+.leeres Nutzerformular
+image::Nutzer_leer.png[Nutzer_leer]
+
+Nachdem alle Angaben ordnungsgemäß getätigt wurden, kann das Konto durch Druck auf "Speichern" angelegt werden. Es ist nun in der Übersicht zu finden. 
+
+.ausgefülltes Nutzerformular
+image::Nutzer_valid.png[Nutzer_gefüllt]
+
+===== Nutzer bearbeiten 
+
+Um ein Konto zu bearbeiten, muss in der Kontenübersicht auf das Stift-Symbol in der Zeile des anzupassenden Kontos geklickt werden. 
+
+.Benutzer bearbeiten
+image::NutzerBearbeiten.png[NutzerBearbeiten]
+
+Es öffnet sich das ausgefüllte Nutzerformular, (siehe <<Nutzer anlegen, Nutzer anlegen>>) wo die Angaben erneut bearbeitet werden können. Durch Druck auf "Speichern" werden die Änderungen übernommen. 
+
+.Nutzerbearbeitung
+image::NutzerBearbeitung.png[NutzerBearbeitung]
+
+
+===== Nutzer deaktivieren (oder löschen)
+
+Für den Admin besteht die Möglichkeit, einen Benutzer des Systems zu löschen. Dies wird durch Druck auf das Mülleimer-Symbol möglich und muss bestätigt werden. 
+
+.Benutzer löschen
+image::NutzerLöschen.png[NutzerLöschen]
+
+NOTE: Es wird empfohlen einen Nutzer NICHT zu löschen, da dies endgültig ist und auch die Buchungen des gelöschten Nutzers nicht mehr eingesehen werden können. Alternativ ist das "Aktiviert"-Attribut abzuwählen. Dies wird möglich, indem die <<Nutzer bearbeiten, Nutzerbearbeitung>> gestartet wird. Dort kann der Nutzer deaktiviert werden und die Änderung gespeichert werden. Der Nutzer ist nun nur noch in der Kontenübersicht auffindbar und muss wieder aktiviert werden um agieren zu können. 
+
+image::NutzerDeaktiviert.png[NutzerDeaktivieren]
+
+
 
 === Dozent
 ==== Buchung durchführen 
-==== Buchung betrachten und ggf. bearbeiten
+
+Ein Dozent kann eine Buchung starten, indem er auf der Startseite auf "Buchung starten" klickt. 
+
+.Knopf zum Starten einer Buchung 
+image::Buchung_starten.png[Startseite_Dozent]
+
+Auf der nächsten Seite ist es möglich die Voreinstellungen festzulegen. 
+
+.Voreinstellungsübersicht
+image::Voreinstellungen.png[Voreinstellungen]
+
+Hier kann der Studiengang ausgewählt werden, wobei auch ein Alternativname für bspw. Sonderveranstaltungen vergeben werden kann (optional).
+
+.Studiengang auswählen
+image::Studiengang.png[Studiengang]
+
+.Alternativname vergeben
+image::AltStudiengang.png[Studiengang]
+
+Als nächstes muss ein Datum in der Zukunft als Termin ausgewählt werden. 
+
+.Datum wählen
+image::Datum.png[Datum]
+
+Nachdem auch die Uhrzeit ausgewählt wurde (ACHTUNG: keine Lehrzeichen nutzen - MUSTER: 12:00), kann das Festlegen der Voreinstellungen durch Druck auf "Weiter zu Experimenten" beendet werden. 
+
+.Uhrzeit festlegen und weiter zur Experimenteübersicht
+image::Zeit.png[Zeit]
+
+Nun befindet der Dozent sich auf der Experimenteüberischt. Hier kann er sich durch die Kategorien navigieren. Ab diesem Schritt ist es außerdem möglich ein benutzerdefiniertes Experiment buchungsintern anzulegen. Der Nutzer kann die Buchung außerdem jederzeit abbrechen. 
+
+.Abbruch und Dummy-Erstellung ist möglich
+image::Experimenteübersicht.png[Experimenteübersicht]
+
+Wenn das gewünschte Experiment gefunden wurde, kann es mit einem Druck auf was Warenkorb-Symbol selektiert werden. 
+
+.Experiment zum Warenkorb hinzufügen
+image::Auswahl.png[Auswahl]
+
+Ob ein Experiment im Warenkorb liegt, wird anhand des farblich veränderten Symbols erkennbar. 
+
+.Experimente ausgewählt
+image::Ausgewählt.png[Ausgewählt]
+
+Um ein benutzerdefiniertes Experiment zum Warenkorb hinzuzufügen, muss der Knopf "Manuell Experiment hinzufügen" gedrückt werden.
+
+.Manuell Experiment hinzufügen 
+image::DummyErstellen.png[DummyErstellung]
+
+Nun muss ein Name für das benutzerdefinierte Experiment vergeben werden. Durch Druck auf "Experiment hinzufügen" terminiert der Vorgang und das Experiment wird in den Warenkorb eingebracht. 
+
+.Benutzerxperiment erstellen
+image::Test-Dummy.png[Dummy]
+
+Wenn der Nutzer mit seiner Auswahl zufrieden ist, kann er durch Druck auf "Zum Buchungsabschluss" in die Warenkorbübericht gelangen. 
+
+.Buchung abschließen im Warenkorb
+image::BuchungAbschließen.png[Warenkorb]
+
+In dieser Übersicht ist es möglich, die Buchung final zu bearbeiten. Durch Druck auf "Zurück" gelangt der Dozent wieder zur Experimenteübersicht um dort die Experimenteselektion anzupassen. Mithilfe der Mülleimer-Symbole können Experimente durch Klick aus der Buchung entfernt werden. Für Zusatzinformationen bietet das Kommentarfeld Platz. Die Reihenfolge der Experimente kann per Drag-and-Drop (gedrückt halten und ziehen) mithilfe der Dreistrich-Symbole geändert werden. Wenn alle Anpassungen stimmig sind, müssen die Änderungen durch Druck auf "Änderungen übernehmen" gespeichert werden, um sie bei möglichem Neuladen der Seite nicht zu verlieren. 
+
+.Warenkorb final bearbeiten
+image::Buchungsabschluss.png[Buchungsabschluss]
+
+Wenn alles passend und vollständig ist, kann der Nutzer die Buchung per Druck auf "Buchung abschließen" beenden und persistieren. 
+
+.Buchung speichern
+image::Sort und Kommentar.png[Buchungsspeicherung]
+
+Wenn die Buchung erfolgreich gespeichert wurde und der Prozess beendet wurde, wird der Dozent auf eine Bestätigungsseite geleitet, auf der er über den Erfolg informiert wird und zur Startseite zurückkehren kann. 
+
+.Buchung gespeichert
+image::Abschlussseite.png[Abschlussseite]
+
+
+==== Buchungen betrachten und ggf. bearbeiten
+
+Dem Dozent ist die Möglichkeit geboten, alle eigenen Buchungen, egal ob vergangen oder zukünftig, einzusehen. 
+Um dies zu erreichen, muss das Journal durch Druck auf "Journal" im Auswahlmenü aufgerufen werden. 
+
+.Journal öffnen
+image::Journal_wählen.png[Journal_wählen]
+
+In der Journalübersicht werden die Buchungen (wenn vorhanden) aufgelistet. Manche Buchungsdetails werden dabei vorerst nicht aufgelistet. Durch Druck auf die gewünschte Buchung werden alle Informationen angezeigt. 
+
+image::Buchung_ausklappen.png[Buchungen_kurz]
+
+
+Nachdem die Buchung "aufgeklappt" wurde, sind nun auch die Experimente und der Kommentar sichtbar. Des Weiteren besteht auf der Journalübersicht die Möglichkeit, eine Buchung zu löschen (Druck auf das Eimer-Symbol) oder zu bearbeiten (Druck auf das Stift-Symbol). Wenn eine Buchung gelöscht werden soll, wird der Nutzer gezwungen, dies zu bestätigen, um unbeabsichtigte Löschungen zu vermeiden.
+
+NOTE: Buchungen, die bereits stattgefunden haben und somit in der Vergangenheit liegen, können NICHT mehr bearbeitet oder gelöscht werden. 
+
+image::Buchung_ausgeklappt.png[Buchungen_lang]
+
+Die Bearbeitung der Buchung verhält sich ähnlich, wie der Warenkorb beim Anlegen einer Buchung. Es ist möglich Experimente hinzuzufügen oder zu Entfernen, die Reihenfolge zu ändern, die Änderungen zu speichern und die Buchung zu persistieren oder die Bearbeitung wieder abzubrechen und die Änderungen zu verwerfen. Die Voreinstellungen können nicht geändert werden. Wenn dies trotzdem notwendig ist, muss die Buchung gelöscht und eine neue angelegt werden.
+
+image::Bearbeitung.png[Bearbeitung]
+
+
 ==== Wochenplan betrachten 
 
+Dem Dozent ist es möglich, die eigenen Wochenpläne einzusehen. Um in das Auswahlformular zu gelangen, muss im Auswahlmenü auf "Dozentenwoche" gedrückt werden. 
 
+.Dozentenwoche wählen
+image::Dozentenwoche_aufrufen.png[Dozentenwoche_aufrufen_Dozent]
+
+Im folgenden Formular muss der Zeitraum festgelegt werden. Dafür muss das spezifische Jahr und die gewünschte Kalenderwoche selektiert werden. Standardmäßig sind hier die aktuellen Werte eingestellt. Durch Druck auf "Anzeigen" wird der Wochenplan angezeigt, wenn für den gewählten Zeitraum Buchungen vorhanden sind. Ist dies nicht der Fall, wird der Dozent informiert. 
+
+.Zeitraum festlegen
+image::Dozent_Zeitraum.png[Dozentenwoche_Zeitraum_Dozent]
+
+Wenn für den gewählten Zeitraum Buchungen vorhanden sind, werden diese strukturiert angezeigt. 
+Durch Druck auf "Drucken" öffnet sich die Druckansicht (alternativ <STRG>+<P> drücken). Beim Drucken ist das Querformat zu wählen.  
+
+NOTE: Die Druckkonvertierung der Dozentenwoche ist für alle gängigen Browser, die auf der Chromium Engine laufen optimiert. Es ist daher zu empfehlen bspw. Chrome für den Druckvorgang zu nutzen. Bei Verwendung von anderen Browsern kann es ungeklärt zu minimalen Fehlern kommen, die jedoch keine Auswirkung auf die semantische oder syntaktische Korrektheit des Dokuments haben. 
+
+.Wochenplan mit Druckfunktion
+image::Dozentwoche.png[Dozentenwoche_Dozent]
