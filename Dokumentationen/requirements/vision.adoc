@@ -287,3 +287,4 @@ NOTE: Die unten genannten Anforderungen resultieren aus dem Themenstellermeeting
 ** "Manuell Experiment hinzufügen"-Button soll zu "Freies Experiment hinzufügen" umbenannt werden
 * Button "Experiment hinzufügen" im Warenkorb hinzufügen - leitet zurück an die Stelle in der Experimenteübersicht, an der zum Warenkorb gegangen wurde
 * bei Zeitraumauswahl für die Dozentenwochenansicht soll standardmäßig die nächste Kalenderwoche angezeigt werden
+* während eines Buchungsprozesses soll der Button "Karteikarte öffnen" der Experimente ausgeblendet werden 
