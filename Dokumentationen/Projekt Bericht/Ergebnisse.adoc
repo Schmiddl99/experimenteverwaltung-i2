@@ -75,3 +75,19 @@ Der große Dokumentationsaufwand schien mir teilweise etwas überflüssig. Denno
 Insgesamt war die Projektarbeit ein voller Erfolg. Sie war eine gute Mischung aus Spaß und Freundschaft, Disziplin und Einzelarbeit, Austausch und Auffassung, Lernen und Verstehen und Frustration und Erfolg. Die verbesserten Softskills, Kenntnisse und erlernten Methoden werden mir weiterhin nützlich bleiben, sodass sich der große Zeitaufwand definitiv gelohnt hat. Ich bin durchaus zufrieden.
 
 William Elsner
+
+== Richard Böhme
+
+Während des zweisemestrigen Moduls zum Thema Software Engineering durfte ich mit einem wechselnden Team ein erstes eigenes Softwareprojekt umsetzen. Solch eine langwierige Gruppenarbeit war für mich aus Sicht der Universität etwas komplett Neues und bisher Einzigartiges.
+
+Trotz gewissen Vorkenntnissen aus meiner Tätigkeit als Werksstudent konnte ich eine Menge Neues lernen und auch zum Team beitragen. So konnte ich mich mit Themen der Anforderungsanalyse oder der Architektur eines Systems und dessen Dokumentation tiefgehend beschäftigen und lernen, wie man solch eine Arbeit iterativ und kollaborativ durchführt.
+
+Natürlich war es auch von Nutzen vorherige Erfahrungen gesammelt zu haben. Ich konnte mein Team maßgeblich bei der Entwicklung der Anwendung unterstützen und leiten. Außerdem kannte ich bereits Konzepte wie iterative Entwicklung und Tools wie Git oder Github. Zudem war mir sowohl die, doch recht selten benutzte, Programmiersprache und das entsprechende Webframework bekannt. So war es mir möglich mein bereits bestehendes Wissen in diesen Bereichen mit meinem Teammitgliedern in der Form von Workshops und Dokumentationen zu teilen. Es ermöglichte ein deutlich angenehmeres Arbeiten an dem System, weshalb ich dankbar bin, dieses Projekt zugeordnet bekommen zu haben.
+
+Allerdings brachten die Vorkenntnisse auch einen kleinen Nachteil mit sich. Zum einen war mir so bewusst, dass ich im Thema Programmiersprachen oder Frameworks keinen Wissensgewinn erlangen werde, da ich mich bereits gut mit dem verwendeten Techstack auskannte. Außerdem kosteten mich sowohl Dokumentationen oder Workshops als auch die komplette Umsetzung deutlich mehr Zeit als ich am Anfang für den Beleg in Software Engineering eingeplant hatte. Dadurch, dass kein anderes Teammitglied Erfahrung in der Entwicklung mit den verwendeten Technologien hatte, blieb viel der Arbeit daran an mir hängen. Im Endeffekt ist dies für mich allerdings kein Problem gewesen. Die Arbeit hat mir Spaß gemacht und ich kann natürlich auch nachvollziehen, dass es nicht sinnvoll ist einem Teammitglied eine Aufgabe zu geben, die ich in einem Viertel der Zeit erledigen könnte. Das Team hat dafür automatisch darauf geachtet meinen Aufwand bei anderen Aufgaben gering zu halten, was ich sehr zuvorkommend und nett finde. Ich habe stets versucht meine Begeisterung der Programmiersprache mit den anderen Entwicklern zu teilen. Ob das funktioniert hat, kann ich nicht mit aller Sicherheit sagen, allerdings hat es auch Spaß gemacht Ruby und Rails den anderen vorzustellen.
+
+Auch ich empfand den Dokumentationsaufwand für die Größe unseres Projektes etwas übertrieben. Dadurch, dass das Projekt klein war, hatte man häufig das Gefühl sich Inhalte „aus den Fingern ziehen“ zu müssen. Das ist natürlich damit begründet, dass wir das generelle Format lernen sollen und größere Projekte nicht in zwei Semestern umsetzbar sind.
+
+Letztendlich kann ich sagen, dass ich viel aus diesem Projekt gelernt habe. Sei es die erfolgreiche und sehr entspannte Zusammenarbeit mit einem Team bestehend aus Menschen, die ich weder vor dem Projekt noch nach dem Projekt nur einmal gesehen habe oder die große Verantwortung die ich als Hauptentwickler übernommen habe und wie ich damit zum Projekterfolg beitragen konnte. Ich habe mich von Anfang an auf das Projekt gefreut und auch wenn es natürlich viel Zeit gekostet hat, bin ich immer noch glücklich es durchgeführt haben zu können.
+
+Richard Böhme
