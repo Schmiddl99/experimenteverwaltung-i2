@@ -42,7 +42,7 @@ Wir haben versucht, die Planung der einzelnen Teilaspekte so zu gestalten, dass 
 |Wiederkehrende Aufgaben standardtisieren
 |Immer wiederkehrende kleine Aufgaben wie z.B. das Erstellen einer Agenda für das Weekly wurden direkt ohne Dokumentation in der Work-Item-List ausgeführt oder wurden als konstant bestehender Issue aufgeführt. Dies sollte ermöglichen, dass die Work-Item-List übersichtlicher angezeigt werden konnte, trotz partiell sehr granularen Aufgliederungen von großen Aufgaben.
 |Pair Programming
-|Die Implementierung des Systems wurde vorrängig in einer Zweiergruppe angegangen. Diese bestand aus dem Hauptentwickler mit Ruby-Expertise und dem Architekten. Ihm wurde es möglich, dass erste Programmiererfahrungen in Ruby gesammelt werden konnten, ohne, dass der Zeitaufwand zu groß wurde. Außerdem konnten spontane Probleme so durchaus schneller gelöst werden, was auch den Developer entlastete. 
+|Die Implementierung des Systems wurde vorrangig in einer Zweiergruppe angegangen. Diese bestand aus dem Hauptentwickler mit Ruby-Expertise und dem Architekten. Ihm wurde es möglich, dass erste Programmiererfahrungen in Ruby gesammelt werden konnten, ohne, dass der Zeitaufwand zu groß wurde. Außerdem konnten spontane Probleme so durchaus schneller gelöst werden, was auch den Developer entlastete. 
 |===
 
 
