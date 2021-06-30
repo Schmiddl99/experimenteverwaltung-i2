@@ -270,10 +270,20 @@ a|* Datumsanpassung jeder kopierten Vorlesung ist erforderlich
 
 ==== Finale Zukunftsanforderungen
 
-NOTE: Die unten genannten Anforderungen resultieren aus dem Themenstellermeeting am 10.06.2021 und sind somit endgültig. 
+NOTE: Die unten genannten Anforderungen resultieren aus dem Themenstellermeetings am 10.06.2021 und 23.06.2021 und sind somit endgültig. 
 
 * das System soll den User informieren, wenn sich an einer bereits gedruckten Dozentenwoche etwas geändert hat 
 * bei der Bearbeitung einer bereits getätigten Buchung soll es möglich werden, auch die Voreinstellungen anzupassen 
 * im Journal soll es möglich werden, explizite Buchungen anhand einer Filterfunktion zu finden 
 * die Auswertung der Buchungshäufigkeit der Experimente soll anhand der Statistik umgesetzt werden
 * eine Verwaltung der Studiegänge soll (ähnlich wie die der Experimente) ermöglich werden
+* eine weitere Rolle "Assistent" soll vergeben werden können, welche die Wochenpläne einsehen kann aber keine Verwaltungsrechte (wie der Admin) hat
+* visuelle Anpassungen:
+** "Buchung starten"-Button soll grün werden
+** "Buchung abschließen"-Button soll zu "Zum Warenkorb" umbenannt werden
+** "Änderung speichern"-Button soll zu "Kommentar speichern" umbenannt werden
+** einheitliche Größe der drei Side Bar Buttons während einer Buchung umsetzen
+** "Buchung abrrechen"-Button soll rot werden
+** "Manuell Experiment hinzufügen"-Button soll zu "Freies Experiment hinzufügen" umbenannt werden
+* Button "Experiment hinzufügen" im Warenkorb hinzufügen - leitet zurück an die Stelle in der Experimenteübersicht, an der zum Warenkorb gegangen wurde
+* bei Zeitraumauswahl für die Dozentenwochenansicht soll standardmäißg die nächste Kalenderwoche angezeigt werden
