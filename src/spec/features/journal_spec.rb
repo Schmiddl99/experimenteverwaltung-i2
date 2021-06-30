@@ -14,14 +14,9 @@ describe "Journal", js_errors: false do
     page.windows[0].maximize
   end 
   
-  #after signing in as lecturer, the user visits his journal (no orders had been created)
-  #it is expected that a message is shown that no orders had been created
-  it "das leere Journal wird angezeigt" do
-    sign_in lecturer
-    visit "journal"
-    expect(page.has_text?("Sie haben noch keine Buchung getätigt.")).to be_truthy
-  end
+  
 
+  #TC9
   #3 orders are created
   #order_1 is actual day + 1, order_2 actual day + 2 and order_3 is actual day + 3
   #after signing in as lecturer, the user visits his journal
@@ -38,6 +33,16 @@ describe "Journal", js_errors: false do
     end
   end
 
+  #TC10
+  #after signing in as lecturer, the user visits his journal (no orders had been created)
+  #it is expected that a message is shown that no orders had been created
+  it "das leere Journal wird angezeigt" do
+    sign_in lecturer
+    visit "journal"
+    expect(page.has_text?("Sie haben noch keine Buchung getätigt.")).to be_truthy
+  end
+
+  #TC11
   #a order in the future is created
   #after signing in as lecturer, the user visits his journal
   #he clicks on editing his order
@@ -62,6 +67,7 @@ describe "Journal", js_errors: false do
     expect(page.has_text?("experiment_2")).to be_truthy
   end
 
+  #TC12
   #a order in the future is created
   #after signing in as lecturer, the user visits his journal
   #he has one order on clicks on deleting (trash symbol)
@@ -78,6 +84,7 @@ describe "Journal", js_errors: false do
     expect(page.has_text?("Sie haben noch keine Buchung getätigt.")).to be_truthy
   end
 
+  #TC13
   #a order in the past is created
   #after signing in as lecturer, the user visits his journal
   #as the only order is in the past, it is expected, that symbols and links for deleting and editing are not visible

@@ -1,0 +1,22 @@
+= Testdokumentation: {project-name}
+Piet Gutsche <piet.gutsche@htw-dresden.de>
+{localdatetime}
+include::../_includes/default-attributes.inc.adoc[]
+
+== Einleitung
+Das vorliegende Dokument erläutert die eingesetzten Teststrategien, deren Organisation sowie dabei aufgetretene Probleme
+
+== Organisation
+Zur Aufteilung der Verantwortlichkeit für die Tests orientierten wir uns an der Testpyramide. Das Fundament dieser Teststrategie waren Unit-Tests, welche vom Entwickler geschrieben und durchgeführt wurden. Für diese nutzen wir das bereits von unseren Vorgängern benutzte Ruby Testframework RSpec.
+https://rspec.info/
+Wir legten dafür fest, das nur getesteter Code in den Main-Branch übernommen werden darf. Des weiteren wurde festgelegt, das vor jedem Merge ein Codereview durchgeführt wird. Dabei sollte der Entwickler die wesentlichen erstellten Funktionen erläutern. Als Kriterium zum Bestehen des Reviews wurde festgelegt, das der Code von Reviewer verstanden werden muss. Zusätzlich wurde vor jedem Merge eines Moduls sämtliche Tests der Regressiontestsuite ausgeführt.
+
+Für alle anderen Tests also UI-Tests, Funktionstest und Systemtests war der Tester verantwortlich. Wir entschieden uns dafür wann immer mit sinnvollen Aufwand möglich automatisierte Tests zu nutzen. Dafür nutzten wir das oben benannte Framework RSpec und Capybara zur Browserautomatisierung.
+https://teamcapybara.github.io/capybara/
+
+Somit wurde im Laufe unserer Arbeit die Regressiontestsuite, welche rudimentär schon von unseren Vorgängern aufgebaut wurde, stark erweitert. Diese erlaubt zukünftigen Entwicklern fehlerhafte Auswirkungen von Änderungen zügig zu erkennen.
+
+Neben diesen automatisierten Tests führten wir eine Reihe manueller Tests durch, welche die automatisierten Test in Bereichen ergänzen in denen eine Automatisierung nur mit sehr hohem Aufwand möglich wäre.
+
+Zusätzlich zu den von uns durchgeführten Tests erstellten wir ein Usertestprotokoll was von den zukünftigen Nutzern des Systems abgearbeitet wurde. 
+
