@@ -38,14 +38,14 @@ Diese Ziel wollten wir mit Hilfe der *Statistik* umsetzen. Die ensprechenden Use
 
 Es wurde gewünscht zwei Bugs auf dem Vorhanden System zu beheben. Der eine Bug bezog sich auf einen Anzeigefehler von Textfeldern, dieser wurde behoben. Der andere war ein Problem bei der Organisation von Bildern, der Experimente. Dieser wurde nicht behoben. Wir betrachten dieses Ziel nur als teilweise erreicht.
 
-= Begründung für das Nichterfüllen von Zielen
+== Begründung für das Nichterfüllen von Zielen
 
 Wir hatten nicht genug Zeit alle Ziele zu erfüllen. Dadurch, dass zwei Teammitglieder uns am Anfang des Semesters verlassen haben und uns nur ein neues Teammitglied hinzugefügt wurde, fehlte uns die komplette Arbeitskraft eines Teammitglied über das Semester. Auch die Einarbeitungszeit des neuen Mitglieds konnte nicht produktiv für das Projekt genutzt werden. Auch die vielen Änderungen des Kunden, behinderten uns stark am eigentlichen Arbeiten an der Aufgabe, da eigentlich beschlossene Aufgaben immer wieder neu analysiert und dokumentiert werden mussten. Auch die Korrektur des Belegs am Anfang des Semesters kostete viel Arbeitszeit, die aber für das System keine Fortschritte gebracht hat.
 
 
-= Reflexionen der Teammitglieder
+== Reflexionen der Teammitglieder
 
-== Gregor Müller
+=== Gregor Müller
 
 Bei dem Projekt in SE gab es für mich einige Höhen und einige Tiefen. Ich durfte durch das Projekt, einige tolle Bekanntschaften machen und auch den Lehrkörper aus einer anderen Perspektive kennenlernen. Zum Beispiel wurde mir erst hier Bewusst, dass es auch an unsere Hochschule einige Menschen gibt, die sich gegen Veränderung sträuben und es ein harter Kampf sein kann, neue Systeme in den Arbeitsalltag zu integrieren. Diese Erfahrung machte ich so zum ersten Mal und dachte bis jetzt immer, diese typischen Aussagen wie „aber früher war alles besser“, würden sich auf mein Berufsleben begrenzen.
 Und ich bin auch dankbar dafür, immer wieder argumentiert haben zu müssen, warum und wieso und weshalb und weswegen wir unsere Entscheidungen getroffen haben. Dies lenkte meinen Fokus auf die wirklichen Hintergründe einer Forderung des Kunden. Es war zwar öfter mehr als frustrierend, das gebe ich zu, aber im Nachhinein betrachtet glaube ich, dass ich so auch auf vielleicht noch schwierigere oder komplizierte Kunden vorbereitet wurde.
@@ -58,7 +58,7 @@ Ja ich bin stolz auf das, was wir erreicht haben. Ich bin stolz darauf, das wir 
 
 Gregor Müller
 
-== William Elsner
+=== William Elsner
 
 Diese Reflexion bezieht sich auf das Gruppenprojekt im Rahmen der Prüfungsleistung des Moduls Software Engineering II. Für die Belegarbeit im Rahmen von SE I wurde bereits eine Reflexion abgeben, welche sich fast ausschließlich auf die Anforderungsanalyse bezieht. Da diese in SE II nicht mehr primär im Vordergrund stand, möchte ich mich in diesem Dokument ausschließlich auf dieses Semester und die eigentliche Entwicklung beziehen.
 
@@ -77,7 +77,7 @@ Insgesamt war die Projektarbeit ein voller Erfolg. Sie war eine gute Mischung au
 
 William Elsner
 
-== Richard Böhme
+=== Richard Böhme
 
 Während des zweisemestrigen Moduls zum Thema Software Engineering durfte ich mit einem wechselnden Team ein erstes eigenes Softwareprojekt umsetzen. Solch eine langwierige Gruppenarbeit war für mich aus Sicht der Universität etwas komplett Neues und bisher Einzigartiges.
 

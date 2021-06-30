@@ -12,7 +12,7 @@ Die Ziele der zweiten Iteration waren es, Einigkeit mit dem Kunden über die Vis
 
 In Iteration 03 versuchten wir die Anforderungen genau zu spezifizieren, also die erstellten Wireframes genau mit dem Kunden durchzusprechen, um zu verifiziern ob alle Forderungen richtig verstanden wurden. Hier wurden auch die Test Cases zu den Use Cases erstellt. Der *LCO-Meilenstein* und der *LCA-Meilenstein* konnten hier abgeschlossen werden.
 
-In der letzen Iteration von SE I fiel uns auf, dass wir mit den Dozenten, die einen großen Teil der Anwenderbasis darstellen, leider nie Kontakt aufgenommen haben. Das war zum einem unsererm fehlenden Bewusstsein und zum anderen dem Wunsch des Kunden, Aufwand für die Dozenten zu vermeiden, zuzuschreiben. Um diesen Fehler zu beheben, versuchten wir die fehlenden Anforderungen mit der Unterstüzung von Frau Dr. Krawietz zu ermitteln. Bei diesem Unterfangen bemerkten wir jedoch rechtzeitig, dass wir es zeitlich nicht mehr schaffen würden alle anwenderspezifischen Sichten richtig zu analysieren. Deswegen verschoben wir dieses Ziel in SE II. Auch wurden in dieser Iteration nochmals die Use Cases und die Testcases überarbeitet und das Abgabedokument angefertig. 
+In der letzen Iteration von SE I fiel uns auf, dass wir mit den Dozenten, die einen großen Teil der Anwenderbasis darstellen, leider nie Kontakt aufgenommen haben. Das war zum einem unsererm fehlenden Bewusstsein und zum anderen dem Wunsch des Kunden, Aufwand für die Dozenten zu vermeiden, zuzuschreiben. Um diesen Fehler zu beheben, versuchten wir die fehlenden Anforderungen mit der Unterstüzung von Frau Prof. Krawietz zu ermitteln. Bei diesem Unterfangen bemerkten wir jedoch rechtzeitig, dass wir es zeitlich nicht mehr schaffen würden alle anwenderspezifischen Sichten richtig zu analysieren. Deswegen verschoben wir dieses Ziel in SE II. Auch wurden in dieser Iteration nochmals die Use Cases und die Testcases überarbeitet und das Abgabedokument angefertigt. 
 
 == SE II
 
@@ -21,7 +21,7 @@ In der letzen Iteration von SE I fiel uns auf, dass wir mit den Dozenten, die ei
 Der Start in das neue Semester verlief leider nicht optimal, da uns zwei Teammitglieder zusätzlich zu den Wirtschaftsingenieuren verließen. Somit hatten wir direkt am Anfang des Semesters (23.03.2021) das erste und einzige Kriesen-Meeting. Hier versuchten {rb}, {we} und {gm} die Ausgangslage zu sondieren und abschätzen zu können ob es im Worst-Case auch nur zu dritt möglich wäre, das Projekt erfolgreich betreuen zu können. Sie kamen zu dem Entschluss, dass die Expertise im Bereich Ruby on Rails von {rb} ihnen einen imensen Zeitvorsprung ermöglichte und es somit möglich war, die fehlenden Teammitglieder ausgleichen zu können. Als dann dem Team auch noch ein neues Mitglied ({pg}) zugewiesen wurde, welches auch noch über Erfahrungen mit automatisierten Softwaretests verfügte, konnte das Team mit neuer Zuversicht die nächsten Schritte planen (30.03.2021):
 
 * Anwendersicht auf das System validieren 
-* * Ruby on Rails Workshop durchführen, um mit dem Implementiern starten zu können
+* Ruby on Rails Workshop durchführen, um mit dem Implementiern starten zu können
 * Altbelegkorrektur durchführen 
 * Neues Teammitglied einarbeiten
 * Programmierkonventionen erarbeiten
@@ -34,7 +34,7 @@ Parallel dazu wurde auch die Rollenverteilung überarbeitet. Hier mussten nun au
 
 ==== Anwendersicht auf das System validieren
 
-Um die Anwendersicht zu validiern, wurde durch den Projektmanager der Kontakt mit Frau Dr. Krawietz gesucht. Dieser ließ sich schnell herstellen, da die Anfrage zu Ihrer Unterstüzung schon im vergangenen Semester geklärt werden konnte. Frau Dr. Krawietz wurde eine ausführliche PDF mit allen Wireframes zur Verfügung gestellt, in der einzelne Abläufe textlich erklärt wurden. Bei Unklarheiten stand ihr der Projektmanager auf dem Wege des  Emailverkehrs zur Seite. So wurde eine Liste mit Änderungsvorschlägen gesammelt, die den Workflow aus Anwendersicht verbessern würden.
+Um die Anwendersicht zu validiern, wurde durch den Projektmanager der Kontakt mit Frau Prof. Krawietz gesucht. Dieser ließ sich schnell herstellen, da die Anfrage zu Ihrer Unterstüzung schon im vergangenen Semester geklärt werden konnte. Frau Prof. Krawietz wurde eine ausführliche PDF mit allen Wireframes zur Verfügung gestellt, in der einzelne Abläufe textlich erklärt wurden. Bei Unklarheiten stand ihr der Projektmanager auf dem Wege des  Emailverkehrs zur Seite. So wurde eine Liste mit Änderungsvorschlägen gesammelt, die den Workflow aus Anwendersicht verbessern würden.
 
 ==== Ruby on Rails Workshop
 
@@ -63,12 +63,12 @@ Da wir in unserer Vorarbeit nun einige Punkte (siehe vorgegangene Kapitel) ausge
 
 ==== Retrospektive
 
-* Die ersten vier Wochen des Semesters haben wir ohne Iterationen gearbeitet. Wir hatten unser Mindset noch nicht wirklich auf Software Engineering umgestellt und versuchten immer noch ein Schulprojekt zu betreuen. Deshalb waren wir uns unsicher ob unsere Korrektur- und Vorbereitungsarbeiten überhaubt schon als SE II Arbeiten galten.
+Die ersten vier Wochen des Semesters haben wir ohne Iterationen gearbeitet. Wir hatten unser Mindset noch nicht wirklich auf Software Engineering umgestellt und versuchten immer noch ein Schulprojekt zu betreuen. Deshalb waren wir uns unsicher ob unsere Korrektur- und Vorbereitungsarbeiten überhaubt schon als SE II Arbeiten galten.
 Aus heutiger Sicht (am Ende des Semesters) war dies eine falsche Entscheidung. Wir haben zwar unterbewusst einige Iterationsabläufe bei unserer Arbeitsweise beibehalten, wie z.B. Protokolle anfertigen oder Ziele formulieren, andere jedoch wie z.B. Work-Item-List anfertigen oder Puls-Checks durchführen wurden vergessen. Dies betrachten wir als Fehler, welchen wir uns eingestehen müssen.
 
-* Die Einarbeitung des neuen Teammitglieds verlief unglaublich einfach und intuitiv und wir alles sind sehr froh uns gefunden zu haben.
+Die Einarbeitung des neuen Teammitglieds verlief unglaublich einfach und intuitiv und wir alles sind sehr froh uns gefunden zu haben.
 
-* Die deutliche Mehrfachbelegung der Rollen führte zu einer gewissen Abgrenzung der Teammitglieder, da nun sehr Fachspezifisch gearbeitet wurde und der Gruppenaustausch sich fast ausschließlich auf die Weeklys begrenzte. 
+Die deutliche Mehrfachbelegung der Rollen führte zu einer gewissen Abgrenzung der Teammitglieder, da nun sehr Fachspezifisch gearbeitet wurde und der Gruppenaustausch sich fast ausschließlich auf die Weeklys begrenzte. 
 
 
 
@@ -137,7 +137,7 @@ Das TSM4 ergab, dass einige Dokumente im Beleg von angepasst werden mussten. Der
 Die TCs mussten dementsprechend auch abgeändert werden, um die neu hinzugekommen Funktionen auch testen zu können. 
 Bei dem Wireframe WF_1 wurde der optionale Titel hinzugefügt (AW02), bei WF_2 wurde ein Button hinzugefügt, um ein benutzerdefiniertes Experiment außerhalb der Datenbank zur Buchung hinzuzufügen(AW04) und bei WF_8 wurde zum Titel das Semester hinzugefügt. Es wurden die Experimentenummern hervorgehoben. Es wurde der Abstand zwischen den Experimenten verkleinert. Es wurde Abstand zum Abheften erzeugt (Änderungen des Kunden zur Wochenplanansicht).
 
-Alle Änderungen der Wireframes wurden vom Kunden akzeptiert, außer WF_8. Die Kundenforderung war, dass wir das Design von Frau Dr. Krawietz übernehmen sollten, was wir auch taten. Es wurde davon abgesehen, nochmals einen Wireframe hierfür anzufertigen.
+Alle Änderungen der Wireframes wurden vom Kunden akzeptiert, außer WF_8. Die Kundenforderung war, dass wir das Design von Frau Prof. Krawietz übernehmen sollten, was wir auch taten. Es wurde davon abgesehen, nochmals einen Wireframe hierfür anzufertigen.
 
 Die Neupriorisierung wurde in der Vision dokumentiert. 
 
@@ -157,7 +157,7 @@ Um mit der Implementierung an sich so schnell wie möglich in der Construction P
 
 ==== Durchführung von Ruby on Rails Update
 
-Das Update wurde auf der VM von {rb} erfolgreich durchgeführt. 
+Der Code wurde von {rb} angepasst, so dass er mit den neuen Versionen kompatibel ist. 
 
 
 ==== Abschluss der Iteration 05
@@ -180,6 +180,7 @@ Das Update wurde auf der VM von {rb} erfolgreich durchgeführt.
 === Iteration 06 (05.05.2021-19.05.2021)
 
 *Iterations Ziele:*
+
 * Entscheidung über den Login treffen
 * Entscheidung treffen, welche alte Test Cases entfernt werden und welche repariert werden
 * Update des Systementwurfs im Architecture-Notebook
@@ -208,7 +209,7 @@ Das C4 Modell wurde um AW04 erweitert und der UC03 wurde mit aufgenommen. Die Ar
 
 ==== Implementierung von UC01
 
-Der UC01 wurde erfolgreich implemntiert. Um bei der Implementierungen einen perfekten Fachaustausch zu gewährtleiten, verwenden wir hier und bei jeder weiteren Implementierung die Pairprogrammierung. An der Pairprogrammierung waren der Developer und der Analyst beteiligt. 
+Der UC01 wurde erfolgreich implemntiert. Um bei der Implementierungen einen perfekten Fachaustausch zu gewährtleiten, verwenden wir hier und bei jeder weiteren Implementierung die Pairprogrammierung. An der Pairprogrammierung waren der Developer und der Architekt beteiligt. 
 
 ==== Fortlaufende Korrektur des Belegs
 
@@ -268,11 +269,11 @@ Der UC03 wurde im C4 Modell erfolgreich umgestzt.
 
 ==== TCs für UC01 werden umgesetzt und formuliert  
  
- Die TCs für UC01 wurden erfolgreich implementiert. Das Resultat war erfolgreich.
+Die TCs für UC01 wurden erfolgreich implementiert. Das Resultat war erfolgreich.
 
 ==== UC03 Implementierung
 
-Der UC03 wurde Implementiert. Hier haben Developer und Analyst Pairprogrammierung betrieben. 
+Der UC03 wurde Implementiert. Hier haben Developer und Architekt Pairprogrammierung betrieben. 
 
 ==== Erstellung für UC10 bezüglich AW01
 
@@ -296,15 +297,15 @@ Der UC10 wurde erstellt um die Studiengangsverwaltung zu ermöglichen.
 
 *Iterationsziele:*
 
-* Implementierung von TC03
+* Implementierung von TCs zu UC03
 * Implementierung von UC02, UC08, UC09
 * Erstellung von Anwender und Admin Tests
 * Inkrement bei TSM5 vorstellen
 
 
-==== Implementierung von TC03
+==== Implementierung von TCs zu UC03
 
-Der TC03 wurde erfogreich implementiert und durchgeführt.
+Die TCs wurden erfogreich implementiert und durchgeführt.
 
 
 ==== Implemtentierung der Use Cases
@@ -318,7 +319,7 @@ Um nochmals die Funktionalität und auch das intuitive Verständnis unseres Syst
 
 ==== Inkrement bei TSM5 abhalten (10.06.2021)
 
-Am Anfang wurde das System vom Projektmanager vorgestellt. Anwesend waren hier Frau Dr. Krawietz, Herr Heisig und Herr Zirkelbach (Coach). Die Vorstellung verlief sehr gut, bis auf einen Fehler, dass sich die Buttons der Menüleiste übereinandergeschoben haben und somit die Menüinhalte verdeckt wurden, bei nicht ausreichender Bildschirmbreite.
+Am Anfang wurde das System vom Projektmanager vorgestellt. Anwesend waren hier Frau Prof. Krawietz, Herr Heisig und Herr Zirkelbach (Coach). Die Vorstellung verlief sehr gut, bis auf einen Fehler, dass sich die Buttons der Menüleiste übereinandergeschoben haben und somit die Menüinhalte verdeckt wurden, bei nicht ausreichender Bildschirmbreite.
 
 Anschließend wurde vom Projektmanger der Vorschlag unterbreitet, dass durch den Verzicht auf die Umsetzung von UC10 mehr Zeit für andere Anforderungen entstehen würde. Die Lösung wäre hier, dass die Studiengänge hart ins System gecodet werden und wenn es Änderungen bei den Studiengängen geben sollte, die nach Meinung des Teams selten seien, diese auch wieder im System geändert werden. Eine ensprechende Beschreibung und Anleitung sollte in der Betriebsdokumentation beigelegt werden.
 
@@ -337,9 +338,9 @@ Die gewünschten Änderungen wurde alle akzeptiert, nur die Änderungen bezügli
 
 Zum Abschluss des Meetings teilte der Kunde nochmals seine Annerkennung und Dankbarkeit lautstark mit dem Projektmanager. Der Kunde schien über das bisherige System sehr glücklich zu sein. 
 
-Aus Zeitgründen wurden die Anwender- und Admintests nicht im Meeting durchgeführt. Frau Dr. Krawietz und Herr Heisig wurden gebeten, diese Zuhause zu erledigen. Beide akzeptierten den Vorschlag und fanden die Idee mit den Usertests gut. 
+Aus Zeitgründen wurden die Anwender- und Admintests nicht im Meeting durchgeführt. Frau Prof. Krawietz und Herr Heisig wurden gebeten, diese Zuhause zu erledigen. Beide akzeptierten den Vorschlag und fanden die Idee mit den Usertests gut. 
 
-Auf Wunsch des Kunden wurde nach dem TSM5, dem Kunden und Frau Dr. Krawietz Zugang zu dem Testsystem gewährt. Einmal natürlich um die Usertests durchführen zu können, aber auch um das System besser kennenlernen zu können. Wir hielten dies für eine gute Idee, da wir glaubten, es sei besser selbst mit dem System arbeiten zu können, als nur auf eine Präsentation angewiesen zu sein. Der Zugang wurde gewährt.  
+Auf Wunsch des Kunden wurde nach dem TSM5, dem Kunden und Frau Prof. Krawietz Zugang zu dem Testsystem gewährt. Einmal natürlich um die Usertests durchführen zu können, aber auch um das System besser kennenlernen zu können. Wir hielten dies für eine gute Idee, da wir glaubten, es sei besser selbst mit dem System arbeiten zu können, als nur auf eine Präsentation angewiesen zu sein. Der Zugang wurde gewährt.  
 
 Zusätzlich konnte der Kunde sich so auch mit der Userverwaltung besser vertraut machen. 
 
@@ -401,7 +402,7 @@ Alle vom Wunsch betroffenen Teile wurden dem Kunden vorher mehrmals gezeigt und 
 
 ==== Auswerten von User Tests 
 
-Die Auswerung hat ergeben, dass Frau Dr. Krawietz mit den von uns gestellten Aufgaben, sehr gut zurecht kam und Ihr auch keine Fehler aufgefallen sind. Wir sehen uns hier bestätigt, dass wir die geforderte inuative Arbeitsweise auf dem System erreichen konnten, da Frau Dr. Krawietz keine Hilfestellung hatte und auch keinen Zugriff auf eine Anwenderdokumentation. 
+Die Auswerung hat ergeben, dass Frau Prof. Krawietz mit den von uns gestellten Aufgaben, sehr gut zurecht kam und Ihr auch keine Fehler aufgefallen sind. Wir sehen uns hier bestätigt, dass wir die geforderte inuative Arbeitsweise auf dem System erreichen konnten, da Frau Prof. Krawietz keine Hilfestellung hatte und auch keinen Zugriff auf eine Anwenderdokumentation. 
 Von Herr Heisig haben wie leider keine ausgefüllten Unterlagen erhalten, aber auch er betonte im Meeting, dass er mit den Aufgaben keine Probleme hatte. 
 
 ==== Installation des Systems

@@ -12,8 +12,8 @@ Am Anfang des Projekts bestand das Team aus acht Mitgliedern. Diese waren eine h
 
 Das Hauptziel unseres Projekts war es ein Buchungssystem zu entwickeln um den Workflow zwischen den Dozenten und dem Admin zu erleichtern. Dazu mussten wir erst die Arbeitsweise der beteiligten Personen verstehen und konnten so die zu speichernden Daten herausarbeiten. Wir mussten eine geeignete Darstellungsform und eine einfach zu verstehende Umgangsweise mit dem Buchungssystem finden. Auch sollte es möglich sein Vorlesungen nach dem Anlegen noch zu bearbeiten, aber nicht nachdem die Vorlesung gehalten wurde. Zusätzlich mussten wir eine Möglichkeit finden um die einzelnen Anwender voneinander abgrenzen zu können. Hinzu kam noch der Wunsch nach einer Auslesemöglichkeit der Häufigkeit von verwendeten Physik-Experimenten und Bugfixing (Für eine genaue Auflistung, siehe Vision). Unser Auftraggeber, Herr Matthias Heisig, blieb der selbe aus SE I.  
 Allerdings änderte er gleich beim ersten Themensteller-Meeting die Aufgabenpriorisierung.
-Es war von unsere Seite eigentlich geplant, dass erst die Use Cases nacheinander implementiert werden und anschließend ein Zeitfenster für Bugfixing und Änderungen des aktuellen Systems eingerichtet wird. Dies wurde verworfen. 
-Durch den Kunden war nun gewünscht, dass nach der Implementierung des Buchungssystems direkt ein besserer Weg gefunden wird, die Geräte im vorhanden System auszuwählen. Die anderen Arbeiten sollten dann nach gewohnter Priorisierung aus SE I erfolgen. Eine genaue Auflistungen der Aufgaben ist in der Vision zu finden. 
+Es war von unserer Seite eigentlich geplant, dass erst die Use Cases nacheinander implementiert werden und anschließend ein Zeitfenster für Bugfixing und Änderungen des aktuellen Systems eingerichtet wird. Dies wurde verworfen. 
+Durch den Kunden war nun gewünscht, dass nach der Implementierung des Buchungssystems direkt ein besserer Weg gefunden wird, die Geräte im vorhandenen System beim Anlegen eines Experiments auszuwählen. Die anderen Arbeiten sollten dann nach gewohnter Priorisierung aus SE I erfolgen. Eine genaue Auflistungen der Aufgaben ist in der Vision zu finden. 
 
 == Projektorganisation 
 
@@ -22,6 +22,8 @@ Durch den Kunden war nun gewünscht, dass nach der Implementierung des Buchungss
 Da wir schon früh in SE I die Erfahrung gemacht haben, dass ein gutes Team der Schlüssel zu einem guten Projektabschluss ist, haben wir auch in SE II daran festgehalten. Wir meinen mit "gutem Team" nicht, dass die einzelnen Teammitglieder über große Expertisen im Bereich Software Engineering oder andere IT bezogene Qualifikationen verfügen müssen, sondern, dass eine gute Gruppendynamik und ein starker Zusammenhalt innerhalb der Gruppe vorhanden ist.  
 
 Wir haben versucht, die Planung der einzelnen Teilaspekte so zu gestalten, dass die eben genannten Eigenschaften stets in hohem Ausmaß vorhanden sind.
+
+Im Folgenden sind eingesetzte Praktiken aufgelistet, die dazu beigetragen haben die Zusammenarbeit in unserem Team zu verbessern.
 
 [%header, cols="1,2"]
 |===
