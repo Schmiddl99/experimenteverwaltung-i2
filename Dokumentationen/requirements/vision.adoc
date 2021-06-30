@@ -283,7 +283,7 @@ NOTE: Die unten genannten Anforderungen resultieren aus dem Themenstellermeeting
 ** "Buchung abschließen"-Button soll zu "Zum Warenkorb" umbenannt werden
 ** "Änderung speichern"-Button soll zu "Kommentar speichern" umbenannt werden
 ** einheitliche Größe der drei Side Bar Buttons während einer Buchung umsetzen
-** "Buchung abrrechen"-Button soll rot werden
+** "Buchung abbrechen"-Button soll rot werden
 ** "Manuell Experiment hinzufügen"-Button soll zu "Freies Experiment hinzufügen" umbenannt werden
 * Button "Experiment hinzufügen" im Warenkorb hinzufügen - leitet zurück an die Stelle in der Experimenteübersicht, an der zum Warenkorb gegangen wurde
 * bei Zeitraumauswahl für die Dozentenwochenansicht soll standardmäißg die nächste Kalenderwoche angezeigt werden
