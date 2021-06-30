@@ -19,7 +19,7 @@ Durch den Kunden war nun gewünscht, dass nach der Implementierung des Buchungss
 
 === Team 
 
-Da wir schon früh in SE I die Erfahrung gemacht haben, das ein gutes Team der Schlüssel zu einem guten Projektabschluss ist, haben wir auch in SE II dran festgehalten. Wir meinen mit "gutem Team" nicht, dass die einzelnen Teammitglieder über große Expertisen im Bereich Software Engineering oder andere IT bezogene Qualifikationen verfügen müssen, sondern, dass eine gute Gruppendynamik und ein starker Zusammenhalt innerhalb der Gruppe vorhanden ist.  
+Da wir schon früh in SE I die Erfahrung gemacht haben, dass ein gutes Team der Schlüssel zu einem guten Projektabschluss ist, haben wir auch in SE II daran festgehalten. Wir meinen mit "gutem Team" nicht, dass die einzelnen Teammitglieder über große Expertisen im Bereich Software Engineering oder andere IT bezogene Qualifikationen verfügen müssen, sondern, dass eine gute Gruppendynamik und ein starker Zusammenhalt innerhalb der Gruppe vorhanden ist.  
 
 Wir haben versucht, die Planung der einzelnen Teilaspekte so zu gestalten, dass die eben genannten Eigenschaften stets in hohem Ausmaß vorhanden sind.
 
