@@ -9,7 +9,7 @@ Das vorliegende Dokument erläutert die eingesetzten Teststrategien, deren Organ
 == Organisation
 Zur Aufteilung der Verantwortlichkeit für die Tests orientierten wir uns an der Testpyramide. Das Fundament dieser Teststrategie waren Unit-Tests, welche vom Entwickler geschrieben und durchgeführt wurden. Für diese nutzen wir das bereits von unseren Vorgängern benutzte Ruby Testframework RSpec.
 https://rspec.info/
-Wir legten dafür fest, das nur getesteter Code in den Main-Branch übernommen werden darf. Des weiteren wurde festgelegt, das vor jedem Merge ein Codereview durchgeführt wird. Dabei sollte der Entwickler die wesentlichen erstellten Funktionen erläutern. Als Kriterium zum Bestehen des Reviews wurde festgelegt, das der Code von Reviewer verstanden werden muss. Zusätzlich wurde vor jedem Merge eines Moduls sämtliche Tests der Regressiontestsuite ausgeführt.
+Wir legten dafür fest, das nur getesteter Code in den Main-Branch übernommen werden darf. Des weiteren wurde festgelegt, das vor jedem Merge ein Codereview durchgeführt wird. Dabei sollte der Entwickler die wesentlichen erstellten Funktionen erläutern. Als Kriterium zum Bestehen des Reviews wurde festgelegt, das der Code von Reviewer verstanden werden muss. Zusätzlich wurde vor jedem Merge eines Moduls sämtliche Tests der Regressiontestsuite ausgeführt. 
 
 Für alle anderen Tests also UI-Tests, Funktionstest und Systemtests war der Tester verantwortlich. Wir entschieden uns dafür wann immer mit sinnvollen Aufwand möglich automatisierte Tests zu nutzen. Dafür nutzten wir das oben benannte Framework RSpec und Capybara zur Browserautomatisierung.
 https://teamcapybara.github.io/capybara/
@@ -18,5 +18,35 @@ Somit wurde im Laufe unserer Arbeit die Regressiontestsuite, welche rudimentär 
 
 Neben diesen automatisierten Tests führten wir eine Reihe manueller Tests durch, welche die automatisierten Test in Bereichen ergänzen in denen eine Automatisierung nur mit sehr hohem Aufwand möglich wäre.
 
-Zusätzlich zu den von uns durchgeführten Tests erstellten wir ein Usertestprotokoll was von den zukünftigen Nutzern des Systems abgearbeitet wurde. 
+Zusätzlich zu den von uns durchgeführten Tests erstellten wir ein Usertestprotokoll was von den zukünftigen Nutzern des Systems abgearbeitet werden sollte.
+
+== Verhalten bei entdeckten Fehlern
+Wir legten fest, dass entdeckte Fehler dem Entwickler gemeldet werden. Gemeinsam mit diesem sollte eine Kategorisierung in optische Unschönheit(z.B. Button etwas zu lang oder nicht richtig angeordnet), leichter Fehler und schwerer Fehler vorgenommen werden. Schwere Fehler sollten dazu führen, dass die aktuellen Arbeiten pausiert und der Fehler sofort behoben werden. Leichte Fehler sollten nach Abschluss der aktuellen Arbeit an einer Funktion oder einem Feauture behoben werden. Bei optischen Unschönheiten sollte in Rahmen der weekly diskutiert werden, ob diese behoben werden oder ob sie vertretbar wären (z.B wenn Aufwand zum beseitigen unverhältnismäßig groß wäre).
+
+== Beschreibung der Tests
+Die Beschreibungen der erstellten Testcase finden sich unter
+https://github.com/Schmiddl99/experimenteverwaltung-i2/blob/main/Dokumentationen/test/test_cases.adoc
+Für alle automatisierten Tests finden sich in diesem Dokument die grobe Beschreibung des Tests und dessen Ziel. Die genauen Werte und die genaue Durchführung wurde in Form von Kommentaren den jeweiligen Specfiles angefügt. Die Zurordnung von Testcase zu automatisierten Test geschieht über die TC-Nummer (zb TC01) Dies verhindert zum einen die doppelte Beschreibung der Tests. Zum anderen erlaubt die genaue Beschreibung im Code zukünftigen Enwicklern eine zügiges Verständnis dieses Codes sowie eine einfache Erweiterbarkeit.
+Zu finden sind diese unter 
+https://github.com/Schmiddl99/experimenteverwaltung-i2/tree/main/src/spec/features
+In diesem Ordner befinden sich auch die vom alten Team erstellte Tests, welche leider kaum Beschreibungen oder Kommentare enthalten. 
+Von diesen alten Tests waren 10 ausgesetzt. Diese behielten wir bei, da sie Funktionen betreffen die noch nicht umgesetzt wurden, aber von Kunden für die Zukunft gewünscht sind. Damit wären sie mit etwas Überarbeitung für ein zukünftiges Team nutzbar. 
+
+== Ausführung
+Die automatisierten Tests lassen sich vom Projektordner starten mit:
+```
+cd src
+rspec
+```
+
+== Ergebnisse
+Von den 133 automatisierten Tests waren 10 ausgesetzt die restlichen 123 verliefen ohne Fehler.
+Die von Rspec errechnete Codecoverage wurde mit 2360 / 2434 LOC also 96.96% angegeben.
+Die manuellen Tests wurden alle bestanden und auch die Anwendertests förderten keine Fehler zu Tage.
+
+== Schwierigkeiten und Fazit
+Die Hauptschwierigkeit war die zu Beginn recht steile Lernkurve für den Tester. Da er vorher noch keinen Kontakt mit Ruby hatte, musste er sich erst in eine neue Programmiersprache einarbeiten, dann in das auf diese aufbauende Framework Ruby on Rails und zusätzlich noch in das zugehörige Testframework RSpec. Dabei verzögerte die fehlende Fähigkeit in Ruby flüssig programmieren zu können die Erstellung der Tests doch erheblich. Auch behinderte der fehlende Rubybackground ein zügiges einarbeiten und verstehen der alten Testcases.
+Nachdem diese Hürde überwunden war, konnte die Testsuite sinnvoll erweitert werden, so das alle von uns erstellten Feautures einer hohen Testabdeckung unterliegen.
+
+
 
