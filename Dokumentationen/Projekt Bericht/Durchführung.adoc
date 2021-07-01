@@ -388,7 +388,7 @@ Wir analysierten das Problem und kamen zu dem Schluss, dass hier eine Stringsuch
 
 ==== Bugfixing der Textfelder 
 
-Die Problematik das Textfelder bei dem Experimentefeld Gefahren übereinander geschoben werden wurde behoben. Hiermit endete die Weiterentwicklung am System und wir konnten den *IOC-Meilenstein* abschließen. 
+Die Problematik, dass Textfelder bei dem Experimentefeld "Gefahren" übereinander geschoben werden, wurde behoben. Hiermit endete die Weiterentwicklung am System und wir konnten den *IOC-Meilenstein* abschließen. 
 
 ==== TSM6 Projekt mit dem Kunden abschließen 
 
