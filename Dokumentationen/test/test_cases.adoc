@@ -275,7 +275,7 @@ a| * Die gewählte Dozentenwoche wird angezeigt
 
 |===
 
-==== TC15 - Dozentenwoche von mehreren Dozenten wird korrekt angezeigt -automatisiert
+==== TC15 - Dozentenwoche von mehreren Dozenten wird korrekt angezeigt - automatisiert
 
 |===
 
