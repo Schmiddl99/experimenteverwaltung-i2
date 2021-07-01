@@ -11,8 +11,7 @@ Zur Aufteilung der Verantwortlichkeit für die Tests orientierten wir uns an der
 
 Wir legten dafür fest, dass nur getesteter Code in den Main-Branch übernommen werden darf. Des weiteren wurde festgelegt, dass vor jedem Merge ein Codereview durchgeführt wird. Dabei sollte der Entwickler die wesentlichen erstellten Funktionen erläutern. Als Kriterium zum Bestehen des Reviews wurde festgelegt, dass der Code vom Reviewer verstanden werden muss. Zusätzlich wurden vor jedem Merge eines Moduls sämtliche Tests der Regressionstestsuite ausgeführt. 
 
-Für alle anderen Tests also UI-Tests, Funktionstest und Systemtests war der Tester verantwortlich. Wir entschieden uns dafür wann immer mit sinnvollen Aufwand möglich automatisierte Tests zu nutzen. Dafür nutzten wir das oben benannte Framework RSpec und Capybara zur Browserautomatisierung.
-https://teamcapybara.github.io/capybara/
+Für alle anderen Tests also UI-Tests, Funktionstest und Systemtests war der Tester verantwortlich. Wir entschieden uns dafür, wann immer mit sinnvollen Aufwand möglich, automatisierte Tests zu nutzen. Dafür nutzten wir das oben benannte Framework RSpec und https://teamcapybara.github.io/capybara/[Capybara] zur Browserautomatisierung.
 
 Somit wurde im Laufe unserer Arbeit die Regressionstestsuite, welche rudimentär schon von unseren Vorgängern aufgebaut wurde, stark erweitert. Diese erlaubt zukünftigen Entwicklern fehlerhafte Auswirkungen von Änderungen zügig zu erkennen.
 
