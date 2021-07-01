@@ -339,6 +339,7 @@ Als Webserver wird https://www.nginx.com[NGINX] verwendet.
 
 Als Applikationsserver wird https://www.phusionpassenger.com[Phusion Passenger] verwendet. Dieser skaliert die Anwendung automatisch mit mehreren Prozessen. Dabei werden maximal sechs Prozesse verwendet. Der genaue Skalierungsprozess ist in der https://www.phusionpassenger.com/docs/tutorials/process_management/ruby/#working-with-multiple-processes[Dokumentation] von Passenger dokumentiert.
 
+<<<
 === Use cases
 //Eine Liste oder ein Diagramm der Use Cases, die architektur-relevante Anforderungne enthalten.
 

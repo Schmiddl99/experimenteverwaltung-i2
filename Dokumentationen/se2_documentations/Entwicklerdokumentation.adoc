@@ -4,6 +4,17 @@ Richard Böhme <richard.boehme@htw-dresden.de>
 :toc:
 include::../_includes/default-attributes.inc.adoc[]
 :toclevels: 3
+:doctype: book
+:sectnums:
+:icons: font
+:source-highlighter: rouge
+:rouge-style: github
+:xrefstyle: full
+:experimental:
+:chapter-label:
+:figure-caption: Abbildung
+:table-caption: Tabelle
+:listing-caption: Listing
 
 == Einführung
 
@@ -21,9 +32,14 @@ Der Ordner `src` beinhaltet den tatsächlichen Rails Quellcode.
 
 Um einen schnellen Überblick über die bestehenden Relationen und deren Beziehungen zu geben, wurde ein Entity Relationship Diagram mit der Bibliothek https://github.com/voormedia/rails-erd[rails-erd] generiert.
 
-image::erd.png[Entity Relationship Diagram]
-
 Leider wird durch das Tool die polymorphe Beziehung zwischen der Klasse `OrderedExperiment` und den Klassen `Experiment` und `DummyExperiment` nicht korrekt abgebildet. Mehr Informationen zu polymorphen Beziehungen in Rails können https://guides.rubyonrails.org/association_basics.html#polymorphic-associations[hier] gefunden werden.
+
+[.landscape]
+<<<
+image::erd.png[Entity Relationship Diagram]
+[.portrait]
+<<<
+
 
 == Grundlegende Architektur - Architecture Notebook
 

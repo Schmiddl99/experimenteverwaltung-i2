@@ -2,6 +2,18 @@
 Gregor Müller <gregor.mueller@htw-dresden.de>; Richard Böhme <richard.boehme@htw-dresden.de>; Tim Würzburg <tim.wuerzburg@htw-dresden.de>; William Elsner <william.elsner@htw-dresden.de>; Piet Gutsche <piet.gutsche@htw-dresden.de>
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
+:toclevels: 3
+:doctype: book
+:sectnums:
+:icons: font
+:source-highlighter: rouge
+:rouge-style: github
+:xrefstyle: full
+:experimental:
+:chapter-label:
+:figure-caption: Abbildung
+:table-caption: Tabelle
+:listing-caption: Listing
 
 == Einführung 
 
@@ -118,7 +130,7 @@ NOTE: Es wird empfohlen einen Nutzer NICHT zu löschen, da dies endgültig ist u
 image::NutzerDeaktiviert.png[NutzerDeaktivieren]
 
 
-
+<<<
 === Dozent
 ==== Buchung durchführen 
 
