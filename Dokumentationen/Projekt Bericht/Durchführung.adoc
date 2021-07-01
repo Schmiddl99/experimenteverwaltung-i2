@@ -250,7 +250,7 @@ Der *LCA-Meilenstein* konnte nicht erfolgreich abgeschlossen werden, da das Ziel
 
 ==== Reperatur oder Entfernung alter TCs
 
-Dieses Ziel konnte dirket am Anfang der Iteration erreicht werden, da {rb} den Tester {pg} unterstütze. Durch die Expertise im Bereich Codeding und Ruby on Rails von {rb} konnten die alten TCs validert werden. Somit betrachten wir hier nun die Elobration Phase als abgeschlossen und haben den *LCA-Meilenstein* erreicht.
+Dieses Ziel konnte dirket am Anfang der Iteration erreicht werden, da {rb} den Tester {pg} unterstütze. Durch die Expertise im Bereich Coding und Ruby on Rails von {rb}, konnten die alten TCs validert werden. Somit betrachten wir hier nun die Elobration Phase als abgeschlossen und haben den *LCA-Meilenstein* erreicht.
 
 Unsere Entscheidung, die alten TCs erst einmal ruhen zu lassen, die wir in der letzten Iteration getroffen hatten, wurde vom Coach positiv bestätigt. 
 
