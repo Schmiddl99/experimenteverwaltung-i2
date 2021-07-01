@@ -14,7 +14,7 @@ Wir legten dafür fest, dass nur getesteter Code in den Main-Branch übernommen 
 Für alle anderen Tests also UI-Tests, Funktionstest und Systemtests war der Tester verantwortlich. Wir entschieden uns dafür wann immer mit sinnvollen Aufwand möglich automatisierte Tests zu nutzen. Dafür nutzten wir das oben benannte Framework RSpec und Capybara zur Browserautomatisierung.
 https://teamcapybara.github.io/capybara/
 
-Somit wurde im Laufe unserer Arbeit die Regressiontestsuite, welche rudimentär schon von unseren Vorgängern aufgebaut wurde, stark erweitert. Diese erlaubt zukünftigen Entwicklern fehlerhafte Auswirkungen von Änderungen zügig zu erkennen.
+Somit wurde im Laufe unserer Arbeit die Regressionstestsuite, welche rudimentär schon von unseren Vorgängern aufgebaut wurde, stark erweitert. Diese erlaubt zukünftigen Entwicklern fehlerhafte Auswirkungen von Änderungen zügig zu erkennen.
 
 Neben diesen automatisierten Tests führten wir eine Reihe manueller Tests durch, welche die automatisierten Test in Bereichen ergänzen in denen eine Automatisierung nur mit sehr hohem Aufwand möglich wäre.
 
@@ -47,4 +47,3 @@ Die manuellen Tests wurden alle bestanden und auch die Anwendertests förderten 
 == Schwierigkeiten und Fazit
 Die Hauptschwierigkeit war die zu Beginn recht steile Lernkurve für den Tester. Da er vorher noch keinen Kontakt mit Ruby hatte, musste er sich erst in eine neue Programmiersprache einarbeiten, dann in das auf diese aufbauende Framework Ruby on Rails und zusätzlich noch in das zugehörige Testframework RSpec. Dabei verzögerte die fehlende Fähigkeit in Ruby flüssig programmieren zu können die Erstellung der Tests doch erheblich. Auch behinderte der fehlende Rubybackground ein zügiges einarbeiten und verstehen der alten Testcases.
 Nachdem diese Hürde überwunden war, konnte die Testsuite sinnvoll erweitert werden, so das alle von uns erstellten Feautures einer hohen Testabdeckung unterliegen.
-
