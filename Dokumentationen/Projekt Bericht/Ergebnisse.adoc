@@ -1,0 +1,113 @@
+= Ergebnisse
+
+== Ziel: Einheitliches Buchungssystem für EMS mit Buchungsverwaltungsfunktionalitäten
+
+
+=== Anlegen und Speichern einer Physikvorlesung
+
+
+Diese Ziel wurde erreicht. Es ist nun mit unserem System möglich eine komplette Vorlesung, mit dem Studiengang, einem optionalen Titel, dem Datum, der Uhrzeit und den entsprechenden Experimenten, die in der Vorlesung vorgeführt werden sollen, zu planen und zu buchen. Dies wurde erreicht mit Hilfe der *Voreinstellung*, welche die Kerndaten der Vorlesung, wie Studiengang, optionaler Titel, Datum und Uhrzeit festlegen. Die Auswahl der Experimente erfolgt über ein Icon in der Experimenteübersicht, in dem man durch Klicken auf ein Einkaufswagensymbol Experimente zur Vorlesung hinzufügen oder abwählen kann. Beim Buchungsabschluss wird dem Nutzer eine Übersicht der ausgewählten Experimente im *Warenkorb* angezeigt, wo er nun auch die Reihenfolge der Experimente verändern kann. Zusätzlich kann er bei Bedarf auch einen Kommentar pro Vorlesung hinterlassen.  
+
+
+=== Bearbeitung von Vorlesungen
+
+Auch dieses Ziel wurde erreicht und wird von uns durch das *Journal* umgesetzt. Hier kann sich der Dozent alle bisher gebuchten Vorlesungen ansehen und diese, wenn die Vorlesung noch nicht gehalten wurde, verändern. Hier können Experimente hinzugefügt werden oder aus der Buchung gelöscht werden. Auch lässt sich hier auch die Reihenfolge der Experimente und der Kommentar bearbeiten. Die gesamte Buchung kann auch gelöscht werden. Löschen und Bearbeiten einer Buchung ist nur möglich wenn sie noch in der Zukunft liegt.
+
+=== Darstellung der gebuchten Vorlesungen
+
+Ein weiteres Ziel, dass wir durch die *Dozentenwoche* erreichen konnten, bestand in einer strukturierten Darstellung der Buchungen. Durch Klicken auf die Dozentenwoche, kann der Dozent sich nach Auswahl des Jahrs und der Kalenderwoche eine Wochenplanübersicht erstellen lassen. Diese wird dann online angezeigt und kann über die Druckfunktion des Browsers gedruckt oder als PDF generiert werden.
+
+Der Admin verfügt über die gleiche Möglichkeit, kann aber zusätzlich noch den Dozenten auswählen, dessen Dozentenwoche er einsehen möchte.
+
+=== Abgrenzung der Nutzer
+
+Ziel erreicht durch den *Login*. Durch unterschiedliche Userrollen ist es möglich, die Nutzer mit ihren unterschiedlichen Funktionen und Rechten voneinander zu trennen. Auch wird es so ermöglicht, dass der Admin keine Vorlesungen der Dozenten bearbeiten kann, oder die Dozenten Vorlesungen anderer Dozenten verändern können. Weiterhin hat der Admin auf alle Funktionen Zugriff, die der Experimentebearbeitung oder allgemeinen Systemverwaltung (Nutzerverwaltung etc.) entsprechen. Der Login wurde von uns nicht selbst erstellt, sondern wir verwendeten die vorhandene Nutzerverwaltung des Systems. 
+
+
+== Einfachere Auswahl eines Geräts bei der Erstellung eines Experiments
+
+Durch Hinzufügen einer Suchleiste in der Eingabemaske, kann der Admin sich nun gezielt Geräte anzeigen lassen. Das Ziel wurde erreicht.
+
+== Buchungshäufigkeit auswerten
+
+Diese Ziel wollten wir mit Hilfe der *Statistik* umsetzen. Die ensprechenden Use Cases und Test Cases wurden erstellt. Sie wurde aber nicht implementiert. Das Ziel wurde nicht erreicht.
+
+== Fehlerbehebung
+
+Es wurde gewünscht zwei Bugs auf dem Vorhanden System zu beheben. Der eine Bug bezog sich auf einen Anzeigefehler von Textfeldern, dieser wurde behoben. Der andere war ein Problem bei der Organisation von Bildern, der Experimente. Dieser wurde nicht behoben. Wir betrachten dieses Ziel nur als teilweise erreicht.
+
+== Begründung für das Nichterfüllen von Zielen
+
+Wir hatten nicht genug Zeit alle Ziele zu erfüllen. Dadurch, dass zwei Teammitglieder uns am Anfang des Semesters verlassen haben und uns nur ein neues Teammitglied hinzugefügt wurde, fehlte uns die komplette Arbeitskraft eines Teammitglieds über das Semester. Auch die Einarbeitungszeit des neuen Mitglieds konnte nicht produktiv für das Projekt genutzt werden. Auch die vielen Änderungen des Kunden, behinderten uns stark am eigentlichen Arbeiten an der Aufgabe, da eigentlich beschlossene Aufgaben immer wieder neu analysiert und dokumentiert werden mussten. Auch die Korrektur des Belegs am Anfang des Semesters kostete viel Arbeitszeit, die aber für das System keine Fortschritte gebracht hat. 
+
+
+== Reflexionen der Teammitglieder
+
+=== Gregor Müller
+
+Bei dem Projekt in SE gab es für mich einige Höhen und einige Tiefen. Ich durfte durch das Projekt, einige tolle Bekanntschaften machen und auch den Lehrkörper aus einer anderen Perspektive kennenlernen. Zum Beispiel wurde mir erst hier bewusst, dass es auch an unserer Hochschule einige Menschen gibt, die sich gegen Veränderung sträuben und es ein harter Kampf sein kann, neue Systeme in den Arbeitsalltag zu integrieren. Diese Erfahrung machte ich so zum ersten Mal und dachte bis jetzt immer, diese typischen Aussagen wie „aber früher war alles besser“, würden sich auf mein Berufsleben begrenzen. 
+Und ich bin auch dankbar dafür, immer wieder argumentiert haben zu müssen, warum und wieso und weshalb und weswegen wir unsere Entscheidungen getroffen haben. Dies lenkte meinen Fokus auf die wirklichen Hintergründe einer Forderung des Kunden. Es war zwar öfter mehr als frustrierend, das gebe ich zu, aber im Nachhinein betrachtet glaube ich, dass ich so auch auf vielleicht noch schwierigere oder komplizierte Kunden vorbereitet wurde.
+
+Die ewige Anfertigung von Dokumentationsbelegen empfand ich teilweise mehr als hinderlich, als förderlich. Ich dachte oft, es ist doch klar, warum wir dies oder das machten, oder das der Detailgrad einfach zu groß war, der in den Belegen gefordert wurde. Aber als dann der Punkt im Projekt kam, an dem wir die alten TCs bearbeiten wollten und wir uns kaum erklären konnten, was hier eigentlich was macht und warum überhaupt, überdachte ich meine Einstellung. Man kann einfach nie sagen, wie es nach einem Projektabschluss weiter geht und was ein zukünftiger Entwickler vielleicht noch alles für Zusatzinformationen benötigt. Heute sage ich, dass die Dokumentation mehr als wichtig ist und auch stets, auch im Privatbereich eingehalten werden sollte.
+
+Zu guter Letzt möchte ich noch ein paar lobende Worte an mein Team richten. Ich durfte lernen wie wichtig es ist, ein Team zu haben mit dem man wirklich gut und eifrig zusammenarbeiten kann. Wie wichtig es ist, dass man sich auf Absprachen verlassen kann oder wenn Fehler passieren, man nicht damit beschäftigt ist einen Schuldigen zu finden, sondern wie man das Problem lösen kann. Ein Team bei dem man ehrlich sein kann und auch mal gemaßregelt wird, wenn etwas über die Stränge schlägt. Bei Problemen der anderen Teams, habe ich oft gehört „ja, die anderen“, deshalb bin ich so froh, dass bei meinem Team alles seit der ersten Minute auf der menschlichen Seite funktioniert hat. Das Einzige was ich bedauere ist nur, dass ich durch Corona noch nie einem der anderen, die mich nun seit fast einem Jahr begleiten wirklich ins Gesicht sehen konnte. 
+
+Ja ich bin stolz auf das, was wir erreicht haben. Ich bin stolz darauf, dass wir fast alle Hürden und Probleme erfolgreich meistern konnten und ich bin stolz drauf was ich lernen konnte und auch darauf, dass ich für das Projekt viel einbringen konnte und durfte. 
+
+Gregor Müller
+
+=== William Elsner
+
+Diese Reflexion bezieht sich auf das Gruppenprojekt im Rahmen der Prüfungsleistung des Moduls Software Engineering II. Für die Belegarbeit im Rahmen von SE I wurde bereits eine Reflexion abgeben, welche sich fast ausschließlich auf die Anforderungsanalyse bezieht. Da diese in SE II nicht mehr primär im Vordergrund stand, möchte ich mich in diesem Dokument ausschließlich auf dieses Semester und die eigentliche Entwicklung beziehen.
+
+Das Ziel war es weiterhin, ein bereits bestehendes, HTW-internes Informationssystem bezüglich der Experimente der Physikfakultät um ein nutzerfreundliches Buchungssystem zu erweitern. Dies diente dem Zweck, dem Themensteller und den anderen Anwendern manuelle Arbeit und überflüssigen Mailverkehr abzunehmen. Des Weiteren sollten kleinere Bugs gefixt werden.
+
+Anfangs möchte ich betonen, dass das Projekt mir wirklich Spaß gemacht hat. Im Laufe der zwei Semester hat sich unser Team so gut eingearbeitet, dass sogar der Verlust der Wirtschaftsingenieure und zwei weiterer Teammitglieder keine unüberwindbare Hürde war. Auch die Einarbeitung eines neuen Teammitglieds hat dementsprechend gut funktioniert. Zusammenfassend möchte ich hierzu unterstreichen, dass, meiner Meinung nach, sogar gute persönliche Verhältnisse entstanden sind, die sich nicht nur sehr positiv auf unsere Zusammenarbeit und Kommunikation als Team ausgewirkt, sondern auch für modulexterne Kooperationen gesorgt haben.
+
+Des Weiteren fällt mir auf, dass sich mein entwicklungsbezogener Kenntnisstand gefestigt und erweitert hat. Durch den konstanten Austausch mit Teammitgliedern mit erhöhter Expertise wurde mir viel über Architektur, Konventionen und sämtliche Methoden vermittelt, vom Testing bis hin zum Qualitätsmanagement. Auch habe ich eine neue Programmiersprache (Ruby) und das verwendete Framework (Ruby on Rails) kennengelernt, sodass meine Einarbeitungsaufwand für das eventuelle Nutzen dieser Sprache verringert wurde, parallel zur gestiegenen Neugier.
+ 
+
+Das anfängliche Missverständnis der agilen Entwicklung hat sich auch aufgeklärt. Hierfür könnte man unseren Kunden als Grund nennen, welcher ohne Rücksicht auf Verluste, aber selbstlos im Hinblick auf „seine“ Dozenten, für ständige Anforderungsänderungen oder -zugänge sorgte. Um ehrlich zu sein, hat dies oft für Verwirrung und Frustration innerhalb des Teams und auf meiner Gemütsseite gesorgt. Ich denke jedoch, dass genau das dafür verantwortlich war, dass das Risiko- und agile Verständnis (vor allem im Kontext des OUP) gesteigert wurden und wir sozusagen den realistischen „Extremfall“ erlebt haben.
+
+Der große Dokumentationsaufwand schien mir teilweise etwas überflüssig. Dennoch bin ich der festen Überzeugung, dass ich nur daraus gelernt habe – zu viel ist meistens besser als zu wenig.
+
+Insgesamt war die Projektarbeit ein voller Erfolg. Sie war eine gute Mischung aus Spaß und Freundschaft, Disziplin und Einzelarbeit, Austausch und Auffassung, Lernen und Verstehen und Frustration und Erfolg. Die verbesserten Softskills, Kenntnisse und erlernten Methoden werden mir weiterhin nützlich bleiben, sodass sich der große Zeitaufwand definitiv gelohnt hat. Ich bin durchaus zufrieden.
+
+William Elsner
+
+=== Richard Böhme
+
+Während des zweisemestrigen Moduls zum Thema Software Engineering durfte ich mit einem wechselnden Team ein erstes eigenes Softwareprojekt umsetzen. Solch eine langwierige Gruppenarbeit war für mich aus Sicht der Universität etwas komplett Neues und bisher Einzigartiges.
+
+Trotz gewissen Vorkenntnissen aus meiner Tätigkeit als Werksstudent konnte ich eine Menge Neues lernen und auch zum Team beitragen. So konnte ich mich mit Themen der Anforderungsanalyse oder der Architektur eines Systems und dessen Dokumentation tiefgehend beschäftigen und lernen, wie man solch eine Arbeit iterativ und kollaborativ durchführt.
+
+Natürlich war es auch von Nutzen vorherige Erfahrungen gesammelt zu haben. Ich konnte mein Team maßgeblich bei der Entwicklung der Anwendung unterstützen und leiten. Außerdem kannte ich bereits Konzepte wie iterative Entwicklung und Tools wie Git oder Github. Zudem war mir sowohl die, doch recht selten benutzte, Programmiersprache und das entsprechende Webframework bekannt. So war es mir möglich mein bereits bestehendes Wissen in diesen Bereichen mit meinem Teammitgliedern in der Form von Workshops und Dokumentationen zu teilen. Es ermöglichte ein deutlich angenehmeres Arbeiten an dem System, weshalb ich dankbar bin, dieses Projekt zugeordnet bekommen zu haben.
+
+Allerdings brachten die Vorkenntnisse auch einen kleinen Nachteil mit sich. Zum einen war mir so bewusst, dass ich im Thema Programmiersprachen oder Frameworks keinen Wissensgewinn erlangen werde, da ich mich bereits gut mit dem verwendeten Techstack auskannte. Außerdem kosteten mich sowohl Dokumentationen oder Workshops als auch die komplette Umsetzung deutlich mehr Zeit als ich am Anfang für den Beleg in Software Engineering eingeplant hatte. Dadurch, dass kein anderes Teammitglied Erfahrung in der Entwicklung mit den verwendeten Technologien hatte, blieb viel der Arbeit daran an mir hängen. Im Endeffekt ist dies für mich allerdings kein Problem gewesen. Die Arbeit hat mir Spaß gemacht und ich kann natürlich auch nachvollziehen, dass es nicht sinnvoll ist einem Teammitglied eine Aufgabe zu geben, die ich in einem Viertel der Zeit erledigen könnte. Das Team hat dafür automatisch darauf geachtet meinen Aufwand bei anderen Aufgaben gering zu halten, was ich sehr zuvorkommend und nett finde. Ich habe stets versucht meine Begeisterung der Programmiersprache mit den anderen Entwicklern zu teilen. Ob das funktioniert hat, kann ich nicht mit aller Sicherheit sagen, allerdings hat es auch Spaß gemacht Ruby und Rails den anderen vorzustellen.
+
+Auch ich empfand den Dokumentationsaufwand für die Größe unseres Projektes etwas übertrieben. Dadurch, dass das Projekt klein war, hatte man häufig das Gefühl sich Inhalte „aus den Fingern ziehen“ zu müssen. Das ist natürlich damit begründet, dass wir das generelle Format lernen sollen und größere Projekte nicht in zwei Semestern umsetzbar sind.
+
+Letztendlich kann ich sagen, dass ich viel aus diesem Projekt gelernt habe. Sei es die erfolgreiche und sehr entspannte Zusammenarbeit mit einem Team bestehend aus Menschen, die ich weder vor dem Projekt noch nach dem Projekt nur einmal gesehen habe oder die große Verantwortung die ich als Hauptentwickler übernommen habe und wie ich damit zum Projekterfolg beitragen konnte. Ich habe mich von Anfang an auf das Projekt gefreut und auch wenn es natürlich viel Zeit gekostet hat, bin ich immer noch glücklich es durchgeführt haben zu können.
+
+Richard Böhme
+
+=== Piet Gutsche
+
+Die Arbeit am Projekt erweiterte mein Wissen in mehreren Bereichen. Um einen sinnvollen Beitrag zu leisten, war ich gezwungen mich in eine neue Programmiersprache(Ruby) einzuarbeiten. Auch konnte ich mein Verständnis der Model-View-Controller Patterns verbessern. Speziell vom Entwickler Richard Böhme konnte ich mir einige sehr nützliche Tricks und Kniffe sowohl beim Arbeiten mit der Rubykonsole als auch bei der Verwendung von Github abschauen.
+
+Die Arbeit im Team empfand ich als sehr angenehm. Ich bin sehr dankbar dafür, das meine Mitstreiter Verständnis für meine zwischenzeitlichen Zeitprobleme hatten. Auch wenn für uns eine Terminfindung nicht immer leicht war, da mit Stundenplänen aus 4 verschiedenen Studiengängen koordiniert werden musste haben wir es immer geschafft einen für alle gangbaren Kompromiss zu finden. Im Falle von Problemen oder falls jemand aus Gründen sein Arbeitspensum nicht allein schaffte, fand sich immer zügig jemand der unterstütze. Ich bin überzeugt das der in unserer Gruppe vorherschende Umgangston und unser Verhalten untereinander einen großen Teil zum erfolgreichen Abschluss des Projekts beitrugen. Ich denke die im Vergleich zu anderen Teams kleinere Anzahl an Personen machte es dabei etwas leichter einen schneller Konsens zu den wichtigsten Entscheidungen zu finden. Auch der Fakt das jeder in mehreren Bereichen/Rollen mitarbeitete half das alle jederzeit einen sehr guten Überblick über das Gesamtprojekt und die aktuell höchsten Prioritäten hatten. Das führte automatisch dazu das Aufgaben eher selbst gewählt wurden als das sie von anderen verteilt wurden, was aus meiner Sicht die Zufriedenheit mit der eigenen Arbeit und Aufgabe erhöhte.
+
+Während ich am Amfang einem wöchentlichen Teammeeting noch skeptisch gegenüber Stand, hat sich dieses doch als sehr nützlich erwiesen. Wichtige Probleme konnten so zeitnah diskutiert und ausgeräumt werden, so das ich denke das diese Zeit sehr gut investiert war und unser Projekt stärker vorangebracht hat als z.B. nur Meetings aller 2 Wochen abzuhalten.
+
+Als negativ und enttäuschend empfand ich das Verhalten des Kunden Dipl. Ing Heisig. Auf Fragen per Mail kam selten oder sehr spät eine Reaktion, unsere Ratschläge wurden meist völlig ignoriert. Wenige Tage vor Projektende kam als einzige Antwort auf Fragen per Mail eine Gegenfrage mit Änderungswunsch. Das zeigt, meiner bescheidenen Meinung nach, das von seiner Seite kein großes Bestreben unsere Arbeitsweise zu verstehen oder zu akzeptieren vorhanden war.
+
+Mein Empfinden war, dass er uns weniger als Partner auf Augenhöhe sonder eher als Dienstleister und Ausführungsknechte sieht. Die sollen alles so machen sollen wie er es für richtig hält auch wenn er im IT-Bereich kaum Domänenwissen besitzt und so Fehlentscheidungen trifft die später aufwendig korrigiert werden müssen.
+Würde ich selbstständig im kommerziellen Umfeld arbeiten, würde ich nach Abschluss des Projekts mein Arbeitsverhältnis mit ihm beenden.
+
+Da ich aber ein solches Verhalten und Auftreten im späteren Berufsumfeld auch antreffen könnte, konnte ich so wichtige Lektionen im Umgang mit nicht zufriedenstellenden Situationen lernen.
+
+Eine weitere sehr wichtige aus dem Projekt erlernte Lektion war, das eine gute Dokumentation im Code extrem wichtig ist. Sie hilft späteren Bearbeitern sehr sich zügig in ein Projekt einarbeiten zu können. Ich bin nach den gesammelten Erfahrungen überzeugt, dass die Fähigkeit gut strukturierten und kommentierten Code zu schreiben einer der wichtigsten Skills eines Entwicklers ist. 
+
+Insgesamt hat mich die Arbeit am Projekt zu einem besseren Entwickler und Teamworker gemacht, ich habe einiges gelernt und bin doch recht glücklich über die gemachten Erfahrungen.
+
+Piet Gutsche

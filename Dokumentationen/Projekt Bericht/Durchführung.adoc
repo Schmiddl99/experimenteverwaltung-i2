@@ -1,0 +1,437 @@
+= Durchführung des Projekts
+
+== SE I
+
+
+
+Das Hauptaugenmerk in SE I unseres Projektes war, eine gute und solide Grundlage für die Construction Phase in SE II zu schaffen. Deshalb bestand die erste Iteration hauptsächlich aus teamorganisatorischen Tätigkeiten und der Einarbeitung in das Projekt und die Aufgabenstellung. Hier haben wir auch zum ersten Mal Kontakt zum Kunden hergestellt. 
+
+Die Ziele der zweiten Iteration waren es, Einigkeit mit dem Kunden über die Vision herzustellen. Hierzu benutzten wir erstmals Wireframes, damit unserer Kunde sich unsere Ideen besser vorstellen konnte. Auch wurden hier die systemweiten Anforderungen aufgestellt und der GitHub Workshop abgehalten.
+
+In Iteration 03 versuchten wir die Anforderungen genau zu spezifizieren, also die erstellten Wireframes genau mit dem Kunden durchzusprechen, um zu verifiziern ob alle Forderungen richtig verstanden wurden. Hier wurden auch die Test Cases zu den Use Cases erstellt. Der *LCO-Meilenstein* und der *LCA-Meilenstein* konnten hier abgeschlossen werden.
+
+In der letzten Iteration von SE I fiel uns auf, dass wir mit den Dozenten, die einen großen Teil der Anwenderbasis darstellen, leider nie Kontakt aufgenommen haben. Das war zum einem unserem fehlenden Bewusstsein und zum anderen dem Wunsch des Kunden, Aufwand für die Dozenten zu vermeiden, zuzuschreiben. Um diesen Fehler zu beheben, versuchten wir die fehlenden Anforderungen mit der Unterstützung von Frau Dr. Krawietz zu ermitteln. Bei diesem Unterfangen bemerkten wir jedoch rechtzeitig, dass wir es zeitlich nicht mehr schaffen würden alle anwenderspezifischen Sichten richtig zu analysieren. Deswegen verschoben wir dieses Ziel in SE II. Auch wurden in dieser Iteration nochmals die Use Cases und die Testcases überarbeitet und das Abgabedokument angefertigt. 
+
+== SE II
+
+=== Start in das Neue Semester (22.03.2021-21.04.2021)
+
+Der Start in das neue Semester verlief leider nicht optimal, da uns zwei Teammitglieder zusätzlich zu den Wirtschaftsingenieuren verließen. Somit hatten wir direkt am Anfang des Semesters (23.03.2021) das erste und einzige Krisen-Meeting. Hier versuchten {rb}, {we} und {gm} die Ausgangslage zu sondieren um abschätzen zu können ob es im Worst-Case auch nur zu dritt möglich wäre, das Projekt erfolgreich betreuen zu können. Sie kamen zu dem Entschluss, dass die Expertise im Bereich Ruby on Rails von {rb} ihnen einen immensen Zeitvorsprung ermöglichte und es somit möglich war, die fehlenden Teammitglieder ausgleichen zu können. Als dann dem Team auch noch ein neues Mitglied ({pg}) zugewiesen wurde, welches auch noch über Erfahrungen mit automatisierten Softwaretests verfügte, konnte das Team mit neuer Zuversicht die nächsten Schritte planen (30.03.2021):
+
+* Anwendersicht auf das System validieren 
+* Ruby on Rails Workshop durchführen, um mit der Implementierung starten zu können
+* Altbelegkorrektur durchführen 
+* Neues Teammitglied einarbeiten
+* Programmierkonventionen erarbeiten
+* Login-Problematik für das Buchungssystem lösen
+* Ruby on Rails Update des vorhandenen Systems
+* Kundenmeeting
+
+Parallel dazu wurde auch die Rollenverteilung überarbeitet. Hier mussten nun aufgrund von fehlenden Mitgliedern einige Rollen doppelt besetzt werden. Wir versuchten hier so logisch wie möglich vorzugehen. Das heißt Mitglieder, die eher technische Rollen besetzten, besetzen auch wieder eher technische Rollen und Mitglieder, die eher organisatorische Rollen innehatten, werden weitere organisatorische Aufgaben dazubekommen. Eine genaue Übersicht zu den Rollen befindet sich in der Rollenübersicht. 
+
+
+==== Anwendersicht auf das System validieren
+
+Um die Anwendersicht zu validieren, wurde durch den Projektmanager der Kontakt mit Frau Dr. Krawietz gesucht. Dieser ließ sich schnell herstellen, da die Anfrage zu Ihrer Unterstützung schon im vergangenen Semester geklärt werden konnte. Frau Dr. Krawietz wurde eine ausführliche PDF mit allen Wireframes zur Verfügung gestellt, in der einzelne Abläufe textlich erklärt wurden. Bei Unklarheiten stand ihr der Projektmanager auf dem Wege des  Emailverkehrs zur Seite. So wurde eine Liste mit Änderungsvorschlägen gesammelt, die den Workflow aus Anwendersicht verbessern würden.
+
+==== Ruby on Rails Workshop
+
+Der Ruby on Rails Workshop wurde von {rb} vorbereitet und durchgeführt. Dazu fertigte er zwei von einander getrennte Dokumentationen an. Die Erste behandelte Ruby im Allgemeinen, die Zweite hatte den Schwerpunkt auf Ruby on Rails gelegt. Bei den Dokumentationen wurde großer Wert auf Übersichtlichkeit und Wiederverwendbarkeit gelegt. Deshalb wurden nur kurze Einleitungen verwendet und einfach zu verstehende Code-Beispiele. Der Workshop an sich wurde auf zwei Teile aufgeteilt und war für alle Gruppenmitglieder verpflichtend. Der erste Teil wurde am 12.04.2021 durchgeführt und der zweite Teil am 19.04.2021. Beide Teile wurden aufgezeichnet und die Dokumente allen Gruppenmitglieder zugänglich gemacht. Dazu werden beide Dokumente in der Entwicklerdokumentation beigelegt um zukünftige Entwickler zu unterstützen.
+
+
+==== Altbelegkorrektur und neues Mitglied einarbeiten
+
+Nach der Konsultation (02.04.2021) mit Professor Dr. Anke, bezüglich des Beleges von SE I, wussten wir, was im Abgabedokument aus SE I korrigiert werden musste. Diese Aufgabe wurde unmittelbar angegangen, da wir zu diesem Zeitpunkt noch nicht direkt mit dem Entwickeln anfangen konnten, da wir noch warten wollten bis die Anwenderwünsche mit dem Kunden besprochen wurden. Hintergrund war, dass wir erst die Elaboration Phase abschließen wollten, bevor wir mit der Construction Phase anfingen. Um die Zeit sinnvoll zu nutzen, wurde mit der Korrektur des Belegs begonnen. Die orthografische Korrektur der überarbeiteten Dokumente überließen wir unserem neuen Teammitglied, um ihn so direkt sinnvoll im Projekt einsetzen zu können. Außerdem wurde er so mit unseren Ergebnissen vertraut. Mit dieser Arbeitsweise schafften wir es, die Einarbeitungszeit für unser Projekt perfekt zu nutzen.
+
+==== Programmierkonventionen
+
+Um unserem QM gerecht zu werden, entschieden wir uns dazu Programmierkonventionen zu erstellen, die für alle Developer verpflichtend war. Den Vorteil hier sahen wir in der Übersichtlichkeit des Codes. Wir befürchteten, dass das Arbeiten durch mehrere Individuen mit unterschiedlichen Code-Schreibstilen zu Chaos und Uneinheitlichkeit führen könnte. Deshalb beauftragen wir {rb} mit der Aufgabe, geeignete Konventionen zu erstellen. Um den Kosten/Nutzen Faktor nicht zu sehr zu strapazieren, entschied er sich dazu, sich bei der Ausarbeitung auf die geltenden Konvetionen der Ruby-Community zu beziehen. 
+Eine genauer Übersicht dazu findet man im QM. 
+
+==== Login-Problematik für das Buchungssystem lösen
+
+Da unser Projekt in jedem Fall eine Multi-User-Anwendung sein musste, mussten wir auch eine geeignete Lösung für die Rechteeinhaltung der unterschiedlichen Rollen finden. Da das System unserer Vorgänger schon über einen Login verfügte, kamen wir zu dem Entschluss auf eben diesem aufzubauen. Wir planten hier grob, dass beim Anlegen eines neuen Nutzers das System ein Passwort vergeben sollte und bei der ersten Anmeldung des Nutzers, er dies in sein Persönliches ändern sollte. Diesen Vorschlag wollten wir dem Kunden bei dem Kundenmeeting unterbreiten. 
+
+==== Ruby on Rails Update
+
+In der Vorbereitung auf die Construction Phase bemerkten wir, dass die Ruby und Rails Version des Systems nicht mehr die Aktuellste war. Dies wollten wir durch ein Update der Version ändern. Diese Überlegung möchten wir mit möglichen Sicherheitslücken und Performanceeinbusen begründen. Da wir zu so einem Schritt die Einwilligung des Kunden benötigen, wollten wir ihm dies im kommenden Meeting vorschlagen.  
+
+==== Kundenmeeting  
+
+Da wir in unserer Vorarbeit nun einige Punkte (siehe vorgegangene Kapitel) ausgearbeitet hatten, die wir dem Kunden vorstellen wollten, nahmen wir am 13.04.2021 Kontakt zum Kunden auf und baten um ein Meeting. Dies wurde uns am 27.04.2021 gewährt. Die großen Abstände zwischen Erstkontakt und Meeting können durch einen krankheitsbedingten Ausfall des Kunden erklärt werden.  
+
+==== Retrospektive
+
+Die ersten vier Wochen des Semesters haben wir ohne Iterationen gearbeitet. Wir hatten unser Mindset noch nicht wirklich auf Software Engineering umgestellt und versuchten immer noch ein Schulprojekt zu betreuen. Deshalb waren wir uns unsicher ob unsere Korrektur- und Vorbereitungsarbeiten überhaubt schon als SE II Arbeiten galten.
+Aus heutiger Sicht (am Ende des Semesters) war dies eine falsche Entscheidung. Wir haben zwar unterbewusst einige Iterationsabläufe bei unserer Arbeitsweise beibehalten, wie z.B. Protokolle anfertigen oder Ziele formulieren, andere jedoch wie z.B. Work-Item-List anfertigen oder Puls-Checks durchführen wurden vergessen. Dies betrachten wir als Fehler, welchen wir uns eingestehen müssen.
+
+Die Einarbeitung des neuen Teammitglieds verlief unglaublich einfach und intuitiv und wir alle sind sehr froh uns gefunden zu haben.
+
+Die deutliche Mehrfachbelegung der Rollen führte zu einer gewissen Abgrenzung der Teammitglieder, da nun sehr fachspezifisch gearbeitet wurde und der Gruppenaustausch sich fast ausschließlich auf die Weeklys begrenzte. 
+
+
+
+
+=== Vorbereitung auf die Entwicklung 
+
+*Iterationsziele I05:*
+
+* Login-Lösung weiterverfolgen
+* Validierung der Benutzerwünsche mit dem Kunden
+* Besuch des Ruby on Rails Workshops durch alle Gruppenmitglieder
+* Überarbeitung der UCs, TCs, Wireframes, Vision und des Glossars 
+* Installation der Entwicklungsumgebung durch alle Developer 
+* Evaluation der alten TCs, Entscheidung fällen über das zu verwendende Testframework
+* C4 Modell um UC01 erweitern
+* Durchführung von Ruby on Rails Update
+
+==== Login-Lösung weiterverfolgen
+
+Es wurde die Möglichkeit vorgeschlagen, den Login mit dem HTW Login zu verknüpfen. Dazu konsultierten wir Herrn Schubert, um uns bezüglich des Aufwands und der Abstimmung mit dem Rechenzentrum einen Überblick zu verschaffen. Herr Schubert riet uns von dieser Lösung ab, weil es seiner Meinung nach möglich wäre durch unser System die Passwörter abgreifen zu können. Dies war nicht als Vorwurf gemeint, sondern nur als Hinweis. Des Weiteren sah er ein Problem in der Authentifizierung, da wir hier administrative Informationen des Nutzerverwaltungs-Servers des Rechenzentrums benötigen würden und diese sehr wahrscheinlich nicht bekommen werden. Er empfahl uns den Login mit Hilfe einer Datenbank umzusetzen, da es hier auch einfacher wäre, den Mechanismus zu ändern, wenn es erforderlich sei. 
+
+Dank dieser Informationen kamen wir zu dem Entschluss, vom HTW Login abzusehen, wollten den Kunden aber dennoch über diesen Vorschlag informieren.  
+
+==== Validierung mit dem Kunden, TSM4 (27.04.2021)
+
+Hintergrund des Treffens mit dem Kunden war die Abklärung der Kundenwünsche, die Absprache des Logins und der Vorschlag des Updates. Die Vorschläge der Kudenwünsche wurden dem Kunden unterbreitet und gemeinsam mit ihm überlegt, welche Änderungen sinnvoll sind und welche nicht. Daraus ergaben sich folgende Beschlüsse:  
+
+[%header, cols="1,3,1"]
+|===
+|Nr.
+|Anwenderwunsch
+|Kundenentscheidung
+|AW01
+|Es sollte möglich sein, die Studiengänge, welche bei der der Voreinstellung auswählbar sind, durch den Admin bearbeiten zu können  
+|*Bewilligt*
+|AW02
+|Es sollte möglich sein, auch alternative Vorlesungen wie z.B. die "Kinderuni", die keinem Studiengang zuordenbar sind, mit dem System abzudecken.
+
+|*Bewilligt*
+|AW03
+|Es sollte möglich sein, nach jedem Experiment einen Kommentar zu hinterlegen.
+|*Verweigert*
+|AW04
+|Es sollte möglich sein, auch Experimente, die nicht in der DB vorhanden sind im Wochenplan abzubilden.
+|*Bewilligt*
+|AW05
+|Es sollte möglich sein das Journal mit Hilfe eines Akkordeon-Menüs übersichtlicher zu gestalten.
+|*Bewilligt*
+|===
+
+Die Idee der Loginvergabe wurde vom Kunden nicht positiv aufgenommen, weder der HTW Login, noch das zu verändernde Passwort. Er will Benutzername und Passwort der Nutzer selbst vergeben und die Details den Nutzern dann per Email zukommen lassen. Der Projektmanager, der das Meeting führte, wies mehrmals darauf hin, dass dies datenschutztechnisch wahrscheinlich nicht der beste Weg ist. Die Meinung des Kunden ändert sich daraufhin aber nicht.  
+
+Der Vorschlag des Updates von Ruby on Rails wurde von dem Kunden sehr positiv aufgenommen und wir erhielten die Erlaubnis, dies auf der VM durchzuführen. Falls alles funktionieren sollte, sollten wir dies dann auch auf dem Hauptsystem umsetzen und in der Betriebsdokumentation beschreiben, wie auch in Zukunft ein solches Update umzusetzen sei.  
+
+Der Kunde wünschte auch eine Neupriorisierung der Aufgaben, die implementiert werden sollten. Eine genaue Übersicht zur Priorisierung ist in der Vision zu finden. 
+Auch sollte die Ansicht der Statistik angepasst werden, da das vorgeschlagene Design von SE I nun nicht mehr den Vorstellungen des Kunden entsprach. Das selbe galt für die Dozentenwoche, welche ebenfalls vom Design nochmals angepasst werden sollte.
+
+==== Abschluss des Ruby on Rails Workshops 
+
+Der letze verpflichtende Termin des Workshops war noch außerhalb der I05, die Nachbesprechung erfolgte allerdings in ihr. Das Feedback war einstimmig sehr positiv und {rb} wurde von allen Teammitgliedern mit Dankbarkeit und Lob überschüttet. 
+
+==== Überarbeitung der UCs, TCs, Wireframes, Vision und des Glossars
+
+Das TSM4 ergab, dass einige Dokumente im Beleg von angepasst werden mussten. Der UC01 musste so verändert werden, dass er nun auch AW02 und AW04 abdeckte. Im UC02 musste AW05 mit aufgenommen werden.
+
+Die TCs mussten dementsprechend auch abgeändert werden, um die neu hinzugekommen Funktionen auch testen zu können. 
+Bei dem Wireframe WF_1 wurde der optionale Titel hinzugefügt (AW02), bei WF_2 wurde ein Button hinzugefügt, um ein benutzerdefiniertes Experiment außerhalb der Datenbank zur Buchung hinzuzufügen (AW04) und bei WF_8 wurde der Titel des Semesters hinzugefügt. Es wurden die Experimentenummern hervorgehoben. Es wurde der Abstand zwischen den Experimenten verkleinert. Es wurde Abstand zum Abheften erzeugt (Änderungen des Kunden zur Wochenplanansicht).
+
+Alle Änderungen der Wireframes wurden vom Kunden akzeptiert, außer WF_8. Die Kundenforderung war, dass wir das Design von Frau Prof. Krawietz übernehmen sollten, was wir auch taten. Es wurde davon abgesehen, nochmals einen Wireframe hierfür anzufertigen.
+
+Die Neupriorisierung wurde in der Vision dokumentiert. 
+
+Das Glossar wurde um einige Wörter erweitert. 
+
+==== Installation der Entwicklungsumgebung aller Developer
+
+Um die Vorbereitungen für die Construction Phase abzuschließen, setzen wir uns das Ziel, dass alle Developer bereit waren mit Ruby on Rails zu arbeiten. Die Kriterien waren hier, über ein Linux-System und mindestens über ein Textverarbeitungsprogramm zu verfügen, um Ruby on Rails schreiben zu können. Außerdem sollte jeder Ruby, gemäß der Anleitung aus der Ruby Einführung, installiert haben. 
+
+==== Evaluation der alten TCs, Entscheidung fällen über das zu verwendende Testframework
+
+Da wir nun langsam in die Construction Phase kommen würden, mussten wir uns nun auch für ein Testframework entscheiden. Der Entwickler hatte bisher nur Erfahrung mit dem Testframework Minitest und der Tester hatte bisher mit pythonbasierten Frameworks (ähnlich zu Minitest) gearbeitet. Allerdings gab es eine beträchtliche Menge Legacy Code für automatisierte Tests bzw. Regressiontests, die das Framework Rspec benutzten. Somit war es eine Abwägung der Zeitaufwände, zwischen dem Einarbeiten in ein neues Framework und dem kompletten überarbeiten der alten Tests. Nach längerer Diskussion entschieden sich Tester und Entwickler dann Rspec beizubehalten und als Testframework zu verwenden. Das hatte zur Folge, dass der Entwickler ebenfalls Einarbeitungszeit für Rspec benötigte, da die Unittests von ihm geschrieben werden. Allerdings wurde so die Gesamtarbeitszeit für das Team geringer gehalten, da die alten TCs übernommen werden konnten. Eine anfängliche Evaluation der TCs der Vorgänger ergab, dass wir deren Regressiontestsuite auf jeden Fall benutzen sollten. Durch deren Benutzung konnten wir nach Änderungen an alten Modulen bzw. Ergänzung von neuen Modulen sicher sein, dass keine Fehler am Bestandssystem  entstanden sind. Somit ergaben sich die Aufgaben: Einarbeitung in Rspec, komplette Erfassung und Evaluation der alten TCs. Dies sollte in I06 umgesetzt werden. Da wir diesen Schritt als Teil des *LCA-Meilenstein* sehen, betrachten wir diesen als wieder geöffnet.
+
+==== C4 Modell um UC01 erweitern
+
+Um mit der Implementierung an sich so schnell wie möglich in der Construction Phase anfangen zu können, wurde hier das C4 Modell um UC01 erweitert. 
+
+==== Durchführung von Ruby on Rails Update
+
+Der Code wurde von {rb} angepasst, so dass er mit den neuen Versionen kompatibel ist. 
+
+
+==== Abschluss der Iteration 05
+
+
+
+* Puls-Check I05 (siehe Puls Check im QM)
+* Retrospektive
+** Projektstatus: *grün*
+** Die Funktion des Redeführers wurde abgeschafft, da diese bei einer Gruppengröße von vier Personen nicht benötigt wird. 
+** Die andauernden Änderungen des Kunden und unser fehlerhaftes Verständnis der agilen Softwareentwicklung hat bei uns zwar viele negative Gefühle ausgelöst und für viel Diskussionsbedarf gesorgt, dennoch haben wir es durch unsere Professionalität und durch das teilweise Einschreiten von Teammitgliedern geschafft, die Iteration abzuschließen. 
+** Der beabsichtigte Zeitaufwand konnte erfüllt werden.
+** Das Gruppen- und Arbeitsklima ist im gelben Bereich. 
+* Lesson Learned
+** Agile Software Entwicklung wurde verstanden.  
+** Unsere Arbeitszeit ist begrenzt: Heißt: wir Arbeiten nicht, bis das Projekt abgeschlossen ist, sondern bis die verfügbare Zeit aufgebraucht ist.
+** Unser Kunde darf jederzeit Änderungen wünschen, wir müssen aber selektieren, welche "In-Scope" oder "Out-Scope" sind.
+
+
+=== Beginn der Implementierung
+
+*Iterations Ziele I06:*
+
+* Entscheidung über den Login treffen
+* Entscheidung treffen, welche alten Test Cases entfernt werden und welche repariert werden
+* Update des Systementwurfs im Architecture-Notebook
+* Das C4 Modell von Use Case 01 um die Änderung des "Dummy Experiments" erweitern 
+* Das C4 Modell um Use Case 03 erweitern
+* Die Implementierung von Use Case 01
+* Fortlaufende Korrektur des Belegs
+* Abschluss des *LCA-Meilensteins* und Beginn des *IOC-Meilensteins*
+
+==== Entscheidung über den Login treffen
+
+Nach dem Kundenmeeting war des Team stark verwundert über die Forderung des Kunden. Es wurden einige Möglichkeiten diskutiert, wie damit umzugehen sei. Es wurde auch der Vorschlag gebracht, sich mit dem Datenschutzbeauftragten der HTW in Verbindung zu setzen. Davon haben wir aber abgesehen, weil wir zu dem Entschluss gekommen sind, dass der Datenschutz in der Verantwortlichkeit des Kunden liegt und es auch nicht die Aufgabe des Entwicklungsteams sei, bezüglich Forderungen oder Wünschen des Kunden, mit dem Kunden zu diskutieren oder gar zu streiten. Wir haben den Kunden darauf hingewiesen, dass wir es bezüglich des Datenschutzes für keine gute Idee halten, wenn der Admin Benutzername und Passwort für die Anwender vergibt. Außerdem ist diese Forderung für uns auch eine erhebliche Erleichterung, da sich somit der Entwicklungsaufwand bezüglich des Logins drastisch reduziert. Denn dadurch konnten wir den Login unsere Vorgänger verwenden und mussten keine eigene Nutzerverwaltung entwickeln. Hierdurch würde auch die Installation auf das Hauptsystem vereinfacht werden, da dadurch keine Nutzermigration erforderlich sein würde.  
+
+==== Entscheidung über die Reperatur oder die Entfernung alter TCs
+
+Nachdem sich der Tester in RSpec eingelesen hatte, begann er damit die alte Testsuite genauer zu evaluieren. Dabei stellte er fest, dass nicht alle Tests funktionierten. Ohne das wir Änderungen am Programm durchgeführt hatten, waren 30% der alten Tests fehlerhaft. Um aber einschätzen zu können, ob von uns durchgeführte Änderungen zu Fehlern im Bestandssystem führen, wurde diese Testsuite dringend benötigt. Deshalb musste der Tester, mit Unterstützung vom Entwickler, sämtliche fehlerhafte Tests durchgehen. Das Hauptproblem dabei war, dass der alte Testcode kaum dokumentiert war und dessen Zweck deshalb zum Teil durch händisches durchklicken erfasst werden musste. Es gelang uns dann alle relevanten Tests zu reparieren bzw. einige auszusetzen da diese für Programmteile geschrieben waren, die das alte Team nicht mehr implementiert hatte. Insgesamt ergab sich durch die fehlerhaften, schlecht dokumentierten und schlecht gepflegten alten Tests für uns ein Mehraufwand von ca. 10 Stunden. Da der Tester in dieser Phase auch Corona-bedingte Zeitmanagement-Probleme hatte (siehe Probleme im Abschluss der Iteration) wurde das Ziel nicht erreicht.
+
+==== Update des Systementwurfs im Architecture-Notebook
+
+Durch die Änderungen des Kunden im TSM4 musste auch das Architecture-Notebook entsprechend angepasst werden. Die Änderungen wurden unter Aufsicht des Analysten vorgenommen, da er den besten Überblick über die neuen Anforderungen hatte. 
+
+
+==== C4 Modellerweiterungen 
+
+Das C4 Modell wurde um AW04 erweitert und der UC03 wurde mit aufgenommen. Die Arbeit an UC03 ist nicht abgeschlossen worden.  
+
+==== Implementierung von UC01
+
+Der UC01 wurde erfolgreich implementiert. Um bei der Implementierungen einen perfekten Fachaustausch zu gewährleisten, verwenden wir hier und bei jeder weiteren Implementierung die Pairprogrammierung. An der Pairprogrammierung waren der Developer und der Analyst beteiligt. 
+
+==== Fortlaufende Korrektur des Belegs
+
+Wir kamen zu dem Entschluss, dass es eine Verbesserung des Organisationsaufwands wäre, wenn wir die Verbesserungen des Belegs nun nicht mehr durchgehend planen würden, sondern dazu übergehen, sie mit normalen Arbeiten am Beleg zu verbinden. Dies wurde auch in der Work-Item-List mit einem durchgehenden Issue realisiert und es wurde ein Dokument in Microsoft Teams erstellt mit den noch zu erledigten Verbesserungen, sodass nichts vergessen wird.  
+
+==== Abschluss des *LCA-Meilensteins* und Beginn des *IOC-Meilensteins*
+
+Der *IOC-Meilenstein* konnte durch die Implemntierung von UC01 erfolgreich begonnen werden.
+Der *LCA-Meilenstein* konnte nicht erfolgreich abgeschlossen werden, da das Ziel bezüglich der alten TCs nicht erreicht wurde. 
+
+==== Abschluss der Iteration 06
+
+===== Probleme
+[%header, cols="2,1,3"]
+|===
+| Problem | Status | Notizen
+| Stark erhöhter Zeitaufwand bei der Reparatur der alten Test Cases| Gelöst 
+| Da unsere Vorgänger leider keine genau Aufführung Ihrer Test Cases erstellt haben, müssen wir uns nun langsam die alten Test Cases erarbeiten. Dieser Umstand des erhöhten Zeitaufwandes wurde als Problem bei der Kosten-Nutzen-Abschätzung erkannt und in der Risklist festgehalten. Nach der Mitigations-Strategie der Risk List wurde eine Notfalllösung gefunden: die Arbeit an den alten Test Cases wird nun erst einmal stillgelegt, bis eine Lösung dafür gefunden wurde (Coach und Projektvorgänger wurden um Hilfe gebeten). Es wird die Arbeit an unseren aktuellen Test Cases vorgezogen. 
+|Corona bedingte Zeitmanagementprobleme | Gelöst | Da das Corona Hygienekonzept zur erneuten Schließung von Kindergärten geführt hat, kann {PG}, der Vater von zwei Kindern ist, sich nicht in dem Umfang dem Projekt widmen, wie er es möchte. Dies führt zu dem Problem, dass er bei seinem Workload unterstützt werden muss, was ein großes Zeitproblem mit sich bringt. (Coach wurde über dieses "außergewöhnliche" Problem informiert). Das Problem wurde in der Risklist vermerkt und als Lösung wurde beschlossen, dass wenn Zeitprobleme jeder Art auftauchen sollten, diese so schnell wie möglich der Gruppe mitzuteilen sind, sodass schneller gehandelt werden kann.  
+|===
+
+* Puls-Check I06 (siehe Puls Check im QM)
+* Retrospektive
+** Projektstatus: *gelb*
+* Unsere Arbeitsschätzungen betrachten wir als GUT, obwohl nicht alle Iterationsziele erreicht werden konnten. Dies begründen wir mit dem oben beschriebenen Corona-Umständen. Dennoch werden wir nun unserer Planung für die nächste Iteration überdenken und die Arbeitskräfte besser verteilen.  
+* Das Gruppen- und Arbeitsklima ist im grünen Bereich. 
+
+
+=== Entwicklung vorantreiben 
+
+*Iterations Ziele I07:*
+
+* Zusammenführen des UC05, UC06, UC07 in den UC03
+* Reparatur oder Entfernung alter TCs
+* UC03 im C4 Modell abschließen 
+* TCs für UC01 werden umgesetzt und formuliert  
+* UC03 Implementierung  
+* Erstellung von UC10 bezüglich AW01
+
+==== Reperatur oder Entfernung alter TCs
+
+Dieses Ziel konnte dirket am Anfang der Iteration erreicht werden, da {rb} den Tester {pg} unterstütze. Durch die Expertise im Bereich Coding und Ruby on Rails von {rb}, konnten die alten TCs validert werden. Somit betrachten wir hier nun die Elobration Phase als abgeschlossen und haben den *LCA-Meilenstein* erreicht.
+
+Unsere Entscheidung, die alten TCs erst einmal ruhen zu lassen, die wir in der letzten Iteration getroffen hatten, wurde vom Coach positiv bestätigt. 
+
+Ein weiterer Teil unsere Notfallmanagements war Vincent Thelang zu kontaktieren, ob er uns vielleicht weiterhelfen könne. Obwohl wir seine Hilfe bezüglich der alten TCs zum Meetingzeitpunkt (01.06.2021) glücklicherweise nicht mehr benötigten, hielten wir dennoch einen Fachaustausch ab. Hier ergaben sich zwar keine neuen Ergebnisse, aber Herr Thelang meinte, dass wir auf einem guten Weg wären. An dem Fachaustausch beteiligten sich der Projektmanager und der Developer, da hier die Bezugsgrößen von Projektorganisation und Projektumsetzung am größten waren. 
+Die alten TCs werden im Beleg dokumentiert, damit zukünftige Entwickler einen besseren Überblick über alle TCs haben und wir beschreiben können, was wir repariert haben oder warum wir TCs entfernt haben.  
+
+==== Zusammenführen der UCs
+
+Bei der Betrachtung der Use-Cases UC05, UC06 und UC07 bemerkten wir, dass wir bei Ihrer Erstellung zu granular vorgegangen waren. Da sich alle Use-Cases auf die Dozentenwoche bezogen, überführten wir diese in UC03. Somit war ein leichteres Verständnis und größere Übersichtlichkeit gegeben. Hier beteiligte sich der Analyst tatkräftig, sodass keine Anforderungen verloren gingen.  
+
+
+==== UC03 im C4 Modell abschließen
+
+Der UC03 wurde im C4 Modell erfolgreich umgesetzt.
+
+==== TCs für UC01 werden umgesetzt und formuliert  
+ 
+Die TCs für UC01 wurden erfolgreich implementiert. Das Resultat war erfolgreich.
+
+==== UC03 Implementierung
+
+Der UC03 wurde implementiert. Hier haben Developer und Architekt Pairprogrammierung betrieben. 
+
+==== Erstellung für UC10 bezüglich AW01
+
+Der UC10 wurde erstellt um die Studiengangsverwaltung zu ermöglichen.
+
+==== Abschluss der Iteration 07
+
+
+
+* Puls-Check I07 (siehe Puls Check im QM)
+* Retrospektive
+** Projektstatus: *grün*
+** Das Feedback des Coaches und des Fachaustausch wurden sehr positiv vom Team aufgenommen. Wir fühlen uns in unserem Tun mehr bestärkt und stehen sicherer hinter unseren Entscheidungen.
+** Durch das gute Voranschreiten im Entwicklungsprozess, sind wir der Meinung die Hauptaufgabe des Buchungssystems erfolgreich abschließen zu können. 
+** Der beabsichtigte Zeitaufwand konnte erfüllt werden.
+** Das Gruppen- und Arbeitsklima ist im grünen Bereich. 
+
+
+
+=== System abschließen um Kunden Inkrement durchführen zu können 
+
+*Iterationsziele I08:*
+
+* Implementierung von TCs zu UC03
+* Implementierung von UC02, UC08, UC09
+* Erstellung von Anwender und Admin Tests
+* Inkrement bei TSM5 vorstellen
+
+
+==== Implementierung von TCs zu UC03
+
+Die TCs wurden erfogreich implementiert und durchgeführt.
+
+
+==== Implemtentierung der Use Cases
+
+Bei der Implementierung wurde wieder Pairprogramming angewendet. 
+
+==== Erstellung von Anwender und Admin Tests
+
+Um nochmals die Funktionalität und auch das intuitive Verständnis unseres System überprüfen zu können, erstellten wir geführte Anwender- und Admintestaufgaben. Der Anwender hatte die Aufgabe eine Vorlesung anzulegen und davon eine Wochenplan-PDF zu erstellen. Der Admin hatte die Aufgabe sich den Wochenplan des Anwenders anzusehen und auszudrucken. Die Aufgaben waren in mehere Unteraufgaben unterteilt und enthielten mit fortschreitender Aufgabenstellung immer weniger detailierte Beschreibungen der auszuführenden Aufgaben. Hintergrund hier war, dass wir testen wollten, ob unsere Funktionen des Systems auch verstanden werden, wenn es wenig Hilfestellung dazu gibt. 
+
+
+
+==== Inkrement bei TSM5 abhalten (10.06.2021)
+
+Am Anfang wurde das System vom Projektmanager vorgestellt. Anwesend waren hier Frau Prof. Krawietz, Herr Heisig und Herr Zirkelbach (Coach). Die Vorstellung verlief sehr gut, bis auf einen Fehler, dass sich die Buttons der Menüleiste übereinandergeschoben haben und somit die Menüinhalte verdeckt wurden, bei nicht ausreichender Bildschirmbreite.
+
+Anschließend wurde vom Projektmanger der Vorschlag unterbreitet, dass durch den Verzicht auf die Umsetzung von UC10 mehr Zeit für andere Anforderungen entstehen würde. Die Lösung wäre hier, dass die Studiengänge hart ins System gecodet werden und wenn es Änderungen bei den Studiengängen geben sollte, die nach Meinung des Teams selten seien, diese auch wieder im System geändert werden. Eine ensprechende Beschreibung und Anleitung sollte in der Betriebsdokumentation beigelegt werden.
+
+Ein weiterer Vorschlag war auch, auf die Filterfunktion im Journal zu verzichten, um auch hier mehr Zeit zu gewinnen. (Die Vorschläge waren im Vorfeld mit dem Team abgesprochen worden). Der Kunde stimmte bei beiden zu, bestand aber darauf, dass die Filterfunktion in die Zukunftsaussicht mit aufgenommen werden würde. Der Projektmanager bestätigte dies.    
+Der Kunde wünschte nach der Vorstellung noch einige Änderungen: 
+
+* In-Scope Änderungen 
+** Einpflegen der Studiengangsnamen 
+** Beim Bearbeiten einer Vorlesung im Journal soll ein Button erscheinen mit "Experiment hinzufügen" damit es intuitiver wird   
+** Bei der Dozentenwoche soll ein Button erscheinen mit "Drucken" für die Druckfunktionalität
+* Out-of-Scope Änderungen 
+** Es soll eine Benachrichtigung geben, die den Admin darauf hinweist, dass an einem bereits ausgedruckten Wochenplan noch eine Änderung durch einen Dozenten geschehen ist.
+** Es soll möglich sein, die Voreinstellung auch noch im Nachhinein zu verändern.
+
+Die gewünschten Änderungen wurde alle akzeptiert, nur die Änderungen bezüglich der Benachrichtigung löste beim Projektmanager Unverständnis aus, da genau dieser Vorschlag dem Kunden bei TSM2 gemacht wurde und auf Ablehnung traf. 
+
+Zum Abschluss des Meetings teilte der Kunde nochmals seine Anerkennung  und Dankbarkeit lautstark mit dem Projektmanager. Der Kunde schien über das bisherige System sehr glücklich zu sein. 
+
+Aus Zeitgründen wurden die Anwender- und Admintests nicht im Meeting durchgeführt. Frau Prof. Krawietz und Herr Heisig wurden gebeten, diese Zuhause zu erledigen. Beide akzeptierten den Vorschlag und fanden die Idee mit den Usertests gut. 
+
+Auf Wunsch des Kunden wurde nach dem TSM5, dem Kunden und Frau Prof. Krawietz Zugang zu dem Testsystem gewährt. Einmal natürlich um die Usertests durchführen zu können, aber auch um das System besser kennenlernen zu können. Wir hielten dies für eine gute Idee, da wir glaubten, es sei besser selbst mit dem System arbeiten zu können, als nur auf eine Präsentation angewiesen zu sein. Der Zugang wurde gewährt.  
+
+Zusätzlich konnte der Kunde sich so auch mit der Userverwaltung besser vertraut machen. 
+
+Diese Vorführung sehen wir auch zugleich als Beta Test um mit dem *PR-Meilenstein* zu beginnen. 
+
+
+
+
+==== Abschluss der Iteration 08
+
+
+
+* Puls-Check I08 (siehe Puls Check im QM)
+* Retrospektive
+** Projektstatus: *grün*
+** Das sehr positive Feedback des erste Inkrement mit dem Kunden freut uns sehr. Da wir im Laufe des Projektes ja immer wieder Verständigungsschwierigkeiten hatten, war bei uns immer das Risko präsent, dass der Kunde nicht zufrieden wäre, mit unser Arbeit. Dass dieser Fall nun nicht eingetreten war, erleichterte uns sehr. 
+** Das Gruppen- und Arbeitsklima ist im grünen Bereich. 
+* Lesson Learned
+** Inkremente sind unglaublich wichtig, für den Kunden sowie für die Entwickler. Kein Wireframe oder Protokoll kann mit der Informationsdichte oder dem Verständnisaustausch einer wirklichen Vorführung mithalten.  
+
+
+
+=== Systemoptimierung und Übergabe an den Kunden 
+
+*Iterations Ziele:*
+
+* Einfügen der gewünschten Buttons
+* Experimentefeld "Geräte" optimieren 
+* Bugfixing der Textfelder
+* Projekt mit Kunde abschließen
+* Auswertung der User Tests
+* Installation des Systems
+* Auslieferung des Systems
+
+==== Einfügen der gewünschten Buttons
+
+Der "Drucken" Button bei der Wochenplanansicht und der "Experiment Hinzufügen" Button beim Bearbeiten einer Vorlesung wurden erfolgreich implementiert. 
+
+
+==== Experimentefeld optimieren 
+
+Da wir die Forderung nach einem Buchungssystem als abgeschlossen betrachteten, kamen wir der Aufgabe nach das Experimentenfeld Geräte zu optimieren. Das Ziel war es die Ausgabe der Geräte in der Übersichtsliste zu verbessern, da der Kunde viel Zeit damit verschwendet die Geräte zu finden. 
+
+Wir analysierten das Problem und kamen zu dem Schluss, dass hier eine Stringsuche am besten geeignet war. Hier war der Vorteil, dass die Geräte beliebig erweitert werden konnten, ohne die Suche anpassen zu müssen. 
+
+==== Bugfixing der Textfelder 
+
+Die Problematik, dass Textfelder bei dem Experimentefeld "Gefahren" übereinander geschoben werden, wurde behoben. Hiermit endete die Weiterentwicklung am System und wir konnten den *IOC-Meilenstein* abschließen. 
+
+==== TSM6 Projekt mit dem Kunden abschließen 
+
+Die Vorführung der Buttons und des optimierten Gerätefelds wurden von dem Kunden erfreut angenommen. Allerdings wurden von Ihm noch einige Änderungen gewünscht. Die meisten davon waren visueller Natur, wie die Umbenennung und Umfärbung von Buttons. Eine jedoch war direkt so groß, dass der Projektmanager sie direkt im Meeting als out-of-Scope deklarieren konnte. Der Kunde forderte noch die Einführung einer zusätzlichen Rolle, die des Assistenten. Eine genaue Auflistung der Forderungen findet man in der Vision. 
+
+Auch wurde hier gleich die Auslieferung und deren Ablauf mit dem Kunden besprochen. Der Kunde war mit den Abläufen einverstanden. Die Installation wurde auf den 28.06. und den 29.06.2021 festgelegt. Der Ausliefertermin sollte am 01.07.2021 stattfinden. 
+
+==== Entscheidung über Ablehnung des Änderungswunschs vom Kunden 
+
+Beim Treffen am 23.06.2021 teilte uns der Kunde mit, dass er zahlreiche Änderungen wünscht. So sollten mehrere Buttons umbenannt sowie farblich und in der Form verändert werden. Außerdem wünschte er sich eine zusätzliche Rolle und die Programmlogik sollte auch an einer Stelle geändert werden. Darüber hinaus zum Umfang dieser Änderungen waren Benennungswünsche widersprüchlich zur Funktionalität der Buttons. Nach längerer Beratung entschieden wir uns, diese Änderungswünsche abzulehnen und diese in der Zukunftsvision zu dokumentieren. Wir begründeten diese Entscheidung mit folgenden Argumenten:
+
+* Installation auf das Produktivsystem war für den 28.06.2021 geplant und sollte nicht verschoben werden 
+* somit noch 2 Werktage Zeit für Umsetzung der Wünsche
+* Umsetzung hätte aufgrund ihrer Widersprüchlichkeit und Tiefe aber eine komplette Iteration benötigt 
+* Dokumentation der Testcases und des Anwenderhandbuchs wären inkonsistent geworden da diese bereits erstellt wurden und aus zeitlichen Gründen nicht mehr geändert werden könnten
+
+Zusammenfassend lässt sich also sagen das wir die Änderung ablehnten da ihre Umsetzung das brechen mit unseren Entwicklungsprinzipien und Best Practices bedingt hätte. Ein Umsetzen wäre nur im sprichwörtlichen Schnelldurchlauf möglich gewesen, was die Wahrscheinlichkeit von unentdeckten Fehlern im Code und am Produktivsystem erhöht hätte. Diese wären aber ab dem 02.07.2021 für einen längeren Zeitraum nicht behebbar gewesen, da dann die Betreung durch unser Team endet. Deshalb war es für uns wichtiger sorgfältig getesteten Code mit einer stimmigen Dokumentation abzugeben als auf die Wünsche einzugehen. 
+Alle vom Wunsch betroffenen Teile wurden dem Kunden vorher mehrmals gezeigt und von ihm bestätigt. So waren z.B. alle Bezeichnungen bereits in den vorgelegten Wireframes enthalten. Auch bei den vom Kunden durchgeführten Usertests hätte er diese Wünsche äußern können. Das Aufkommen eines solchen Änderungswunsches 2 Werktage vor dem Aufspielen auf das Livesystem zeigt aber auch, dass es uns trotz intensiven Bemühungen nicht gelungen ist, dem Kunden unser Arbeitsweise so zu erläutern das er sie ausreichend verstanden hat. Über die gesamte Dauer des Projekts haben wir die Beobachtung gemacht, dass der Kunde Änderungen in Bereichen wünscht die er bereits abgenommen hatte, die Priorisierung von Abschnitten anpassen möchte und Vorschlägen, Beratungen und Erklärungen von uns kaum Beachtung schenkt.
+
+==== Auswerten von User Tests 
+
+Die Auswertung hat ergeben, dass Frau Dr. Krawietz mit den von uns gestellten Aufgaben, sehr gut zurecht kam und Ihr auch keine Fehler aufgefallen sind. Wir sehen uns hier bestätigt, dass wir die geforderte intuitive Arbeitsweise auf dem System erreichen konnten, da Frau Dr. Krawietz keine Hilfestellung hatte und auch keinen Zugriff auf eine Anwenderdokumentation. 
+Von Herr Heisig haben wie leider keine ausgefüllten Unterlagen erhalten, aber auch er betonte im Meeting, dass er mit den Aufgaben keine Probleme hatte. 
+
+==== Installation des Systems
+
+Die Installation des Systems wurde am 28.06.2021 von unserem Developer {rb} durchgeführt und konnte erfolgreich, ohne Probleme abgeschlossen werden.
+
+==== Auslieferung des Systems
+
+Die Auslieferung fand am 01.07.2021 in der HTW Z254 auf dem persönlichen Rechner des Kunden statt. Das Abgabeprotokoll wurde im Vorfeld dem Kunden per Mail geschickt und so von Ihm akzeptiert. Die vorbereiteten Szenarien wurden alle vom Kunden persönlich durchgeführt und liefen fehlerfrei durch. Es wurden keine Anmerkungen vom Kunden gemacht. Zusätzlich zu den Dokumentationen wurde dem Kunden ein Teil der Vision übergeben, dessen Inhalt sich um die Zukunftsanforderungen und die noch umzusetzenden Änderungen bezog. Hintergrund hier war, dass wenn der Kunden das Projekt in Zukunft nochmals optimieren möchte, er hier eine Zusammenfassung seiner Wünsche zur Verfügung hätte. 
+Der Projektmanager unterschrieb im Namen des ganzen Teams und der Kunde zeichnete das Abgabeprotokoll gegen. Somit war die Abgabe abgeschlossen und der *PR-Meilenstein* konnte erfolgreich beendet werden. Der Kunde erhielt eine Kopie des unterschriebenen Abgabeprotokolls per Mail. 
+
+
+
+==== Abschluss der Iteration 09
+
+
+
+* Puls-Check I09 (siehe Puls Check im QM)
+* Retrospektive
+** Projektstatus: *grün*
+** Als das Projekt endgültig beim Kunden abgegeben war, waren wir alle sehr erleichtert und glücklich. Ein großes Projekt mit sehr viel Nervenaufwand und Arbeitszeit ging nun zu Ende. Auch über das Angebot des Kunden, dass es vielleicht möglich sei nächstes Semester das Projekt als studentische Hilfskraft fortzuführen, sahen wir als große Bestätigung des Kunden unsere Arbeit gegenüber. 
+** Das Gruppen- und Arbeitsklima ist im grünen Bereich. 
+* Lesson Learned
+** Das erste Inkrement so spät durchzuführen hat sich als Fehler erwiesen. Wir waren uns zwar sicher, dass wir mit den Wireframes und der Vorführung die endgültige Zustimmung des Kunden erreicht hatten, dem war aber leider nicht so. Wir mussten leider feststellen, dass dem Kunden, als er sich mit der Software allein beschäftigte, nochmals Änderungswünsche eingefallen sind. In dieser Situation wäre es sicher besser gewesen, mit dem Kunden viele kleine Inkremente durchzuführen. 

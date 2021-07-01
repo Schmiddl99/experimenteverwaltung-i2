@@ -1,0 +1,87 @@
+= Planung
+
+== Ausgangssituation in SE II
+
+=== Teamaufstellung 
+
+Am Anfang des Projekts bestand das Team aus acht Mitgliedern. Diese waren eine hochschulexterne Fachinformatikerin ({ab}), ein Informatikstudent ({rb}), zwei Wirtschaftsinformatikstudenten ({we}, {tki}), ein Verwaltungsinformatikstudent ({gm}) und drei Wirtschaftsingenieurstudenten ({tka}, {tw}, {js}). Geplant war das Ausscheiden der Wirtschaftsingenieure zu SE II, jedoch wurde das Team leider zusätzlich von {ab} und {tki} verlassen. Deshalb wurde uns der Informatikstudent {pg} als Verstärkung zugewiesen. Dadurch haben wir zu Beginn von SE II zuerst eine neue Einteilung der Rollen des Teams durchgeführt. Mehr dazu findet man in der Rollenverteilung.
+
+=== Aufgabenstellung und Auftraggeber 
+
+Das Hauptziel unseres Projekts war es ein Buchungssystem zu entwickeln um den Workflow zwischen den Dozenten und dem Admin zu erleichtern. Dazu mussten wir erst die Arbeitsweise der beteiligten Personen verstehen und konnten so die zu speichernden Daten herausarbeiten. Wir mussten eine geeignete Darstellungsform und eine einfach zu verstehende Umgangsweise mit dem Buchungssystem finden. Auch sollte es möglich sein Vorlesungen nach dem Anlegen noch zu bearbeiten, aber nicht nachdem die Vorlesung gehalten wurde. Zusätzlich mussten wir eine Möglichkeit finden um die einzelnen Anwender voneinander abgrenzen zu können. Hinzu kam noch der Wunsch nach einer Auslesemöglichkeit der Häufigkeit von verwendeten Physik-Experimenten und Bugfixing (Für eine genaue Auflistung, siehe Vision). Unser Auftraggeber, Herr Matthias Heisig, blieb der selbe aus SE I.  
+Allerdings änderte er gleich beim ersten Themensteller-Meeting die Aufgabenpriorisierung.
+Es war von unserer Seite eigentlich geplant, dass erst die Use Cases nacheinander implementiert werden und anschließend ein Zeitfenster für Bugfixing und Änderungen des aktuellen Systems eingerichtet wird. Dies wurde verworfen. 
+Durch den Kunden war nun gewünscht, dass nach der Implementierung des Buchungssystems direkt ein besserer Weg gefunden wird, die Geräte im vorhandenen System beim Anlegen eines Experiments auszuwählen. Die anderen Arbeiten sollten dann nach gewohnter Priorisierung aus SE I erfolgen. Eine genaue Auflistungen der Aufgaben ist in der Vision zu finden. 
+
+== Projektorganisation 
+
+=== Team 
+
+Da wir schon früh in SE I die Erfahrung gemacht haben, dass ein gutes Team der Schlüssel zu einem guten Projektabschluss ist, haben wir auch in SE II daran festgehalten. Wir meinen mit "gutem Team" nicht, dass die einzelnen Teammitglieder über große Expertisen im Bereich Software Engineering oder andere IT bezogene Qualifikationen verfügen müssen, sondern, dass eine gute Gruppendynamik und ein starker Zusammenhalt innerhalb der Gruppe vorhanden ist.  
+
+Wir haben versucht, die Planung der einzelnen Teilaspekte so zu gestalten, dass die eben genannten Eigenschaften stets in hohem Ausmaß vorhanden sind.
+
+Im Folgenden sind eingesetzte Praktiken aufgelistet, die dazu beigetragen haben die Zusammenarbeit in unserem Team zu verbessern.
+
+[%header, cols="1,2"]
+|===
+|Eingesetzte Praktik
+|Gewünschter Erfolg
+|Risiko des Scheiterns miteinbeziehen 
+|Die Priorisierung der Reihenfolge der Arbeitsschritte wurde stets so gewählt, dass ein auftretendes Problem nie die Arbeit der anderen Gruppenmitglieder behinderte. So sollte der Erfolgsdruck gemindert werden.
+|Aufgabengebiete weit streuen
+|Es wurde versucht, die einzelnen Gruppenmitglieder Rollenunabhänig, in allen Teilgebieten mit kleinen Aufgaben einzusetzen. Hintergrund dieser Strategie war, dass jedes Gruppenmitglied auch die Aufgaben der anderen Rollen kennlernen kann und so auch außerhalb der eigenen Rolle Erfahrungen sammeln konnte.
+|Zeit für Austausch einplanen
+|Durch geregelte Gruppendiskussionen kann jedes Mitglied seine Meinung oder Erfahrung bei Entscheidung einbringen und sollte dadurch auch mehr am Projekt beteiligt werden
+|Demokratische Entscheidungsfindung
+|Jede Entscheidung, die von uns getroffen werden konnte, wurde demokratisch und nicht autoritär entschieden. Dies sollte gewährleisten, dass alle Gruppenmitglieder mit der Entscheidung einverstanden sind und auch keine schlechten Entscheidungen, wie z.B. durch mangelhafte Expertise getroffen werden.
+|Einsetzen eines QMs und Puls-Checks
+|Durch Verwendung eines Qualitätsmanagements und Puls-Check-Umfragen konnte in der Planung das allgemeine Gruppenempfinden einbezogen werden. Hier sollten mögliche Probleme durch gezielte Fragen oder Austausch gelöst werden. (Hinweis: Es wurden alle Probleme stets anonymisiert gesammelt und die Diskussionsgrundlage allgemein formuliert)
+|Stundennachweis
+|Die Gruppenmitglieder wurden dazu angehalten, ihre Arbeitszeiten in einer Stundenliste zu protokollieren. So sollte in der Planung sichergestellt werden, dass eine gleichmäßige Verteilung der Arbeitszeit über alle Gruppenmitglieder stattfinden kann. 
+|Wiederkehrende Aufgaben standardtisieren
+|Immer wiederkehrende kleine Aufgaben wie z.B. das Erstellen einer Agenda für das Weekly wurden direkt ohne Dokumentation in der Work-Item-List ausgeführt oder wurden als konstant bestehender Issue aufgeführt. Dies sollte ermöglichen, dass die Work-Item-List übersichtlicher angezeigt werden konnte, trotz partiell sehr granularen Aufgliederungen von großen Aufgaben.
+|Pair Programming
+|Die Implementierung des Systems wurde vorrangig in einer Zweiergruppe angegangen. Diese bestand aus dem Hauptentwickler mit Ruby-Expertise und dem Architekten. Ihm wurde es möglich, dass erste Programmiererfahrungen in Ruby gesammelt werden konnten, ohne, dass der Zeitaufwand zu groß wurde. Außerdem konnten spontane Probleme so durchaus schneller gelöst werden, was auch den Developer entlastete. 
+|===
+
+
+=== Rollenverteilung 
+
+Die Aufgaben wurden hauptsächlich nach Interessen- und Expertisengebieten verteilt. Das Team einigte sich darauf, dass der Rollenverantwortliche sich hauptsächlich um die Dokumentationspflichten und Arbeitspriorisierung kümmerte, er aber immer von anderen Teammitglieder bei der eigentlichen Aufgabe unterstützt wird. So konnten wir eine perfekte Mischung aus Rollenspezialisierung und Informationsaustausch erreichen. Durch die starke Dezimierung des Teams in SE II waren wir gezwungen, dass einige Gruppenmitglieder mehrere Rollen ausüben mussten. Somit wandelte sich die Teamarbeit in den Bereichen Dokumentation und Organisation zu spezialisierter Einzelarbeit. Der Informationsaustausch wurde durch präzise Reports in den Weeklys aufrecht erhalten. Eine genaue Übersicht zur Verteilung der einzelnen Gruppenmitglieder auf die einzelnen Rollen findet man in der Rollenübersicht.
+
+
+== Ablauf der Kommunikation unter Verwendung von Tools
+
+Da während des Projekts die Corona Pandemie Deutschland beherrschte, wurde versucht, sämtliche Kommunikation online durchzuführen. Um dies umzusetzen, wurde der Messenger-Dienst WhatsApp für die direkte Kommunikation zwischen einzelnen Gruppenmitgliedern und zur schnellen Informationsübermittlung an alle Teammitglieder genutzt. Um Meetings zu realisieren, wurde zu erst ein Discord Server genutzt, im Laufe des Projekts dann aber auf Microsoft Teams gewechselt. Hintergrund hier war, dass Teams einige Zusatzfunktionen bot, wie z.B. "Polly", die für Umfragen genutzt wurden, die Discord leider nicht unterstütze. Des Weiteren konnte in Teams auch ein cloudbasiertes Datei-Mangement-Tool leicht verwendet werden, so mussten wir nicht mehr OneDrive nutzen, das privat von einem Gruppenmitglied gestellt wurde. Auch konnte in Teams eine bessere Rollenhierarchie genutzt werden, um Rollenspezifische Feed Anfragen zu nutzen, damit ein Brainstormeffekt entsteht. Die Dokumentation erfolgte geschlossen in ADOC Dateien, die über GitHub verwaltet wurden. Auch wurde über GitHub unsere Work-Item-List mit Hilfe der Issues verwirklicht. GitHub war der Schlüssel um Gruppen- und Parallelarbeiten zu organisieren und umzusetzen. Zur Überprüfung und zur Dokumentation unseres Projektfortschritts benutzten wir regelmäßig den Essence Navigator.
+Um mit dem Kunden in Kontakt treten zu können, wurden ausschließlich E-Mails, Microsoft Teams und Präsenz-Treffen genutzt. Die Präsenztreffen fanden erst in SE II statt, mit kompletter Einhaltung der Corona-Hygiene-Maßnahmen. Diese Änderung wurde von unserem Kunden sehr begrüßt, da er leider durch die eben genannten Techniken in seinem Workflow eher behindert als unterstützt wurde. 
+
+Die Online-Situation erleichterte die Planung von Meetings und Gruppenarbeiten erheblich, da nun Fragen wie bspw. an welchem Ort das Treffen stattfinden könnte, ob dieser Ort auch zur gegebenen Zeit verfügbar ist oder wie lange die Anreise der einzelnen Mitglieder wohl wäre, nun alle obsolet waren. Es musste nun nur noch eine Uhrzeit gefunden werden, zu der alle verfügbar waren.  
+
+
+== Way of Working
+
+Unsere Arbeitsweise war sehr stark vom Open Unified Process geprägt. Wir haben stets versucht, alle vier Kernziele zu durchlaufen. Alternativ dazu haben wir auch versucht andere Praktiken aus anderen Bereichen zu verwenden, die wir aus eigener Erfahrung oder aus der Theorie kannten. Diese waren das QM oder die Puls-Checks. Wir haben mit Iterationen gearbeitet, die immer zwei Wochen andauerten.
+
+Grundsätzlich war aber folgender Ablauf regelmäßig zu erkennen:
+
+. Planung der Iteration 
+* Zielsetzung anhand der Aufgabenpriorisierung des Kunden
+* Die Ziele in Aufgaben unterteilen
+* Bewertung der Aufgaben
+** Bewertung des Aufwands
+** Bewertung der Priorität
+* Aufgabenverteilung an die Gruppenmitglieder
+. Durchführung der Iteration
+* Die Aufgaben werden nach der Priorisierung unter Beachtung des Aufwands abgearbeitet
+* Ständiger Austausch unter den Gruppenmitgliedern über den Status der Aufgabe
+. Ende der Iteration
+* Vorstellung der erledigten Aufgaben
+* Bewertung der Ergebnisse durch die Gruppe
+* Puls-Check
+* Iterationsnachbesprechung
+* Lesson-Learned (wenn erforderlich)
+* Dokumentation der Iteration 
+
+
+Wenn geplante Ziele oder Aufgaben nicht in der Iteration umgesetzt werden konnten, wurden diese in die nächste Iteration übernommen und versucht, die Aufwandsplanung anhand der neuen Erkenntnisse besser umzusetzen.
