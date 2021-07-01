@@ -28,7 +28,8 @@ https://github.com/Schmiddl99/experimenteverwaltung-i2/blob/main/Dokumentationen
 
 Für alle automatisierten Tests finden sich in diesem Dokument die grobe Beschreibung des Tests und dessen Ziel. Die genauen Werte und die genaue Durchführung wurde in Form von Kommentaren den jeweiligen Specfiles angefügt. Die Zuordnung von Testcase zu automatisiertem Test geschieht über die TC-Nummer (z.B. TC01) Dies verhindert zum einen die doppelte Beschreibung der Tests. Zum anderen erlaubt die genaue Beschreibung im Code zukünftigen Entwicklern ein zügiges Verständnis dieses Codes sowie eine einfache Erweiterbarkeit.
 Zu finden sind diese unter 
-https://github.com/Schmiddl99/experimenteverwaltung-i2/tree/main/src/spec/features
+https://github.com/Schmiddl99/experimenteverwaltung-i2/tree/main/src/spec/features.
+
 In diesem Ordner befinden sich auch die vom alten Team erstellte Tests, welche leider kaum Beschreibungen oder Kommentare enthalten. 
 Von diesen alten Tests waren 10 ausgesetzt. Diese behielten wir bei, da sie Funktionen betreffen die noch nicht umgesetzt wurden, aber von Kunden für die Zukunft gewünscht sind. Damit wären sie mit etwas Überarbeitung für ein zukünftiges Team nutzbar. 
 
