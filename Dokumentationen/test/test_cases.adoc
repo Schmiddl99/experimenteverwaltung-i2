@@ -640,7 +640,7 @@ a| * das System zeigt keine Fehler an und hatte keine Probleme während des Test
  
 |===
 
-==== TC34  Das System funktioniert auch nachdem eine sehr große Anzahl Buchungen getätigt wurden -automatisiert
+==== TC34  Das System funktioniert auch nachdem eine sehr große Anzahl Buchungen getätigt wurden - automatisiert
 
 |===
 
