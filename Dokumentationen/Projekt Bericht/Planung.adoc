@@ -1,6 +1,4 @@
 = Planung
-{localdatetime}
-include::../_includes/default-attributes.inc.adoc[]
 
 == Ausgangssituation in SE II
 

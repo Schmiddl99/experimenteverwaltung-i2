@@ -1,6 +1,4 @@
 = Ergebnisse
-{localdatetime}
-include::../_includes/default-attributes.inc.adoc[]
 
 == Ziel: Einheitliches Buchungssystem für EMS mit Buchungsverwaltungsfunktionalitäten
 

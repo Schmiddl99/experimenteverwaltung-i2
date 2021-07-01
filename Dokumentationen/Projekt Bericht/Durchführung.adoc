@@ -1,6 +1,4 @@
 = Durchführung des Projekts
-{localdatetime}
-include::../_includes/default-attributes.inc.adoc[]
 
 == SE I
 
