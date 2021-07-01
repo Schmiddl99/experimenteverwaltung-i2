@@ -38,7 +38,7 @@ Der Verlauf der Arbeit im Meeting wurde ebenfalls durch die Verwendung einer Tra
 
 image::qm_work.PNG[Bewertung]
 
-Durch das Ausscheiden einiger Teammitgliedern im nächsten Semester wissen wir, das hier einige Hürden auf uns zukommen werden, aber mit Blick auf das bisher absolvierte Projekt können wir uns sicher seien, das wir diese ebenfalls überwinden können.
+Durch das Ausscheiden einiger Teammitgliedern im nächsten Semester wissen wir, dass hier einige Hürden auf uns zukommen werden, aber mit Blick auf das bisher absolvierte Projekt können wir uns sicher sein, das wir diese ebenfalls überwinden können.
 
 == QM Review zum bisherigen Projekt SE II
 
@@ -82,4 +82,3 @@ Diese Praktik war unsere Meinung die wichtigste auf Hinblick der Gruppenstimmung
 ==== Fazit zu dem QM von SE II
 
 Das QM hat uns sehr gute Dienste geleistet, da wir durch das QM immer genau wussten wo es im Team Probleme gab und konnten hier direkt ansetzen sie zu lösen. Auch haben wir die Arbeitsleistung gut auf die einzelnen Teammitglieder aufteilen können. Natürlich stechen einige Mitglieder hervor, dies ist aber mit Ihren Rollen zu rechtfertigen. Insgesamt sind wir mit der Entscheidung ein QM in SE I eingeführt zu haben sehr glücklich und sehen den Mehraufwand, dem Nutzen gegenübergestellt mehr als sinnvoll. 
-
