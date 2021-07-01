@@ -419,7 +419,7 @@ Die Installation des Systems wurde am 28.06.2021 von unserem Developer {rb} durc
 
 ==== Auslieferung des Systems
 
-Die Auslieferung fand am 01.07.2021 in der HTW Z254 auf dem persönlichen Rechner des Kunden statt. Das Abgabeprotokoll wurde im Vorfeld dem Kunden per Mail geschickt und so von Ihm akzeptiert. Die vorbereiteten Szenarien wurde alle vom Kunden persönlich durchgeführt und lief fehlerfrei durch. Es wurden keine Anmerkungen vom Kunden gemacht. Zusätzlich zu den Dokumentationen wurde dem Kunden ein Teil der Vision übergeben, dessen Inhalt sich um die Zukunftsanforderungen und die noch umzusetzenden Änderungen bezog. Hintergund hier war, dass wenn der Kunden das Projekt in Zukunft nochmals optimieren möchte, er hier eine Zusammenfassung seiner Wünsche zur Verfügung hätte. 
+Die Auslieferung fand am 01.07.2021 in der HTW Z254 auf dem persönlichen Rechner des Kunden statt. Das Abgabeprotokoll wurde im Vorfeld dem Kunden per Mail geschickt und so von Ihm akzeptiert. Die vorbereiteten Szenarien wurden alle vom Kunden persönlich durchgeführt und liefen fehlerfrei durch. Es wurden keine Anmerkungen vom Kunden gemacht. Zusätzlich zu den Dokumentationen wurde dem Kunden ein Teil der Vision übergeben, dessen Inhalt sich um die Zukunftsanforderungen und die noch umzusetzenden Änderungen bezog. Hintergrund hier war, dass wenn der Kunden das Projekt in Zukunft nochmals optimieren möchte, er hier eine Zusammenfassung seiner Wünsche zur Verfügung hätte. 
 Der Projektmanager unterschrieb im Namen des ganzen Teams und der Kunde zeichnete das Abgabeprotokoll gegen. Somit war die Abgabe abgeschlossen und der *PR-Meilenstein* konnte erfolgreich beendet werden. Der Kunde erhielt eine Kopie des unterschriebenen Abgabeprotokolls per Mail. 
 
 
