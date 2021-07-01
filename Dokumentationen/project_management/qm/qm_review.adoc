@@ -67,7 +67,7 @@ image::qm_work_2.png[Bewertung]
 
 ==== Zeitverteilung
 
-Insgesamt wurden in das Projekt 321,2 Stunden investiert. Hierbei haben wir auch fast eine Gleichverteilung der Arbeitsstunden erreicht. 
+Insgesamt wurden ca. 322 Stunden Arbeitszeit in das Projekt investiert. Hierbei haben wir auch fast eine Gleichverteilung der Arbeitsstunden erreicht. 
 
 image::Gesamt_Leistung.png[Gesamt Leistung]
 
