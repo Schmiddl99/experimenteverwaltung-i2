@@ -61,7 +61,7 @@ image::Diagramm_QM_Bewegung.png[QM-Bewegung]
 
 ==== Allgemeine Auswertung 
 
-Allgemein betrachtet spiegelt die Auflistung des QMs unsere Einschätzung wieder, großteils waren alle Bereiche durchgehend sehr positv vertreten. Und auch bei Problemsituationen waren die Auswirkungen dennoch noch im grünen Bereich. 
+Allgemein betrachtet, spiegelt die Auflistung des QMs unsere Einschätzung wider, großteils waren alle Bereiche durchgehend sehr positv vertreten. Und auch bei Problemsituationen waren die Auswirkungen dennoch im grünen Bereich. 
 
 image::qm_work_2.png[Bewertung]
 
