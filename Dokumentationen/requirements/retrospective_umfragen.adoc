@@ -74,7 +74,7 @@ a| * Stimme zu x3
 
 |Glaubst du, wir alle sind auf einem guten Weg das Projekt abzuschließen, das die Besten Chancen auf zufriedene Stakeholder und eine gute Benotung gibt? 
 a| * image:2.png[2]x2 
-|2
+|2,0
 
 |===
 
@@ -131,7 +131,7 @@ Alle Bereiche im Grünen Bereich, das QM sieht keinen Handlungsbedarf.
 |*Frage* |*Auswertung der Merkmale* |*Arithmetisches Mittel* 
 
 |Wenn du an das Projekt denkst, wie glücklich bist du? a|* image:2.png[2]x4
-|2
+|2,0
 
 |Bist du zufrieden mit der Hilfestellung deiner Gruppenmitglieder, falls du sie benötigt hast? a| * image:1.png[1]x3
 * image:2.png[2]x1 |1,25
@@ -163,3 +163,44 @@ a| * image:1.png[1]x2
 |===
 
 Einige Bereiche schwanken hin zu besseren Ergebnissen, andere zu schlechteren. Zusammen betrachtet, gleichen sich alle Bereiche aber aus. Alle Bereiche sind im Grünen Bereich, das QM sieht keinen Handlungsbedarf.  
+
+== Iteration 09 
+
+|===
+
+|*Frage* |*Auswertung der Merkmale* |*Arithmetisches Mittel* 
+
+|Wenn du an das Projekt denkst, wie glücklich bist du? a|* image:1.png[1]x3
+* image:2.png[2]x1
+|1,25
+
+|Bist du zufrieden mit der Hilfestellung deiner Gruppenmitglieder, falls du sie benötigt hast? a| * image:1.png[1]x3
+* image:2.png[2]x1 |1,25
+
+|Bist du mit der Qualität der Arbeit deiner Gruppenmitglieder zufrieden? a| * image:1.png[1]x1
+* image:2.png[2]x3 |1,1,75
+
+
+|Denkst du deine Arbeit ist zu anspruchsvoll? 
+a| * Stimme zu x1
+* Stimme nicht zu x3
+|3,5
+
+|Denkst du dein Arbeitsaufwand ist gerechtfertigt?
+a| * Stimme zu x3
+* Neutral x1
+|2,25
+
+|Wie bewertest du die Kommunikation in den Meetings (werde oft unterbrochen, weiß nicht was ich sagen soll, werde nie angesprochen, meine Ideen und Gedanken werden nie mit aufgenommen)? a| * image:1.png[1]x3
+* image:2.png[2]x1
+|1,25
+
+
+|Glaubst du, wir alle sind auf einem guten Weg das Projekt abzuschließen, das die Besten Chancen auf zufriedene Stakeholder und eine gute Benotung gibt? 
+a| * image:1.png[1]x4 
+
+|1,0
+
+|===
+
+Das QM sieht keinen Handlungsbedarf. Alle Bereiche im grünen Bereich. 
