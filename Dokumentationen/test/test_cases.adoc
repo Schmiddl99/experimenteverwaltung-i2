@@ -121,7 +121,7 @@ a| * ein Dozent ist mit validen Zugangsdaten angemeldet
 
 
 |*Nachbedingung*
-a| * Datenbankeintrag für die Bestellung ist angelegt 
+a| * Datenbankeintrag für die Bestellung und das Dummyexperiment ist angelegt 
 * Dozent befindet sich auf der Buchungsbestätigungseite
 
 |===
