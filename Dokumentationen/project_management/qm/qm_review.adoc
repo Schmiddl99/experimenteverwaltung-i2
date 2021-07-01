@@ -53,7 +53,7 @@ Nun nach Projektabschluss, können wir auf einige Erfahrungen zurückblicken, di
 
 Diese Entscheidung war sehr gut aus mehreren Blickwinkeln. Zum einen wurden die Weeklys dadurch deutlich dynamischer, was die Diskusion der Gruppe anheizte und es kamen auch Gruppenmitglieder, die in SE I eher schweigsam waren, deutlich mehr aus sich heraus. Zwar konnte der Kritikpunkt, andere Teammitglieder immer ausreden zu lassen nicht so sehr erfüllt werden, wie in SE I, aber Angesicht der gewonnen Vorteile, empfinden wir diese Entscheidung als sinnvoll. 
 
-==== Weekly Qualität und Umgang mit Problemen 
+==== Weekly-Qualität und Umgang mit Problemen 
 
 Interne Probleme gab es in SE II nicht zu verzeichnen und der Umgang mit projektbezogenen Problemen, fand stehts auf hoher fachlichen und sachlichen Ebene statt. Dennoch wurden die Spannungen teilweise von Weekly zu Weekly getragen. Dies kann man auch sehr gut im folgen Bild erkennen, dass Probleme wellenförmig angestiegen sind und dann wieder abgeflaut sind. 
 
