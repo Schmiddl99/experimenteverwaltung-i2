@@ -279,7 +279,7 @@ a| * Die gewählte Dozentenwoche wird angezeigt
 
 |===
 
-|*Beschreibung* |Der Admin möchte sich für verschiedene Dozenten die  Dozentenwoche anzeigen lassen, inklusive aller gebuchten Experimente,.
+|*Beschreibung* |Der Admin möchte sich für verschiedene Dozenten die Dozentenwoche anzeigen lassen, inklusive aller gebuchten Experimente.
 
 |*Vorbedingungen und benötigte Daten*
 a| * Admin ist angemeldet  
