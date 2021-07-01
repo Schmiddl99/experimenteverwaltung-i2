@@ -55,7 +55,7 @@ Diese Entscheidung war sehr gut aus mehreren Blickwinkeln. Zum einen wurden die 
 
 ==== Weekly-Qualität und Umgang mit Problemen 
 
-Interne Probleme gab es in SE II nicht zu verzeichnen und der Umgang mit projektbezogenen Problemen, fand stehts auf hoher fachlichen und sachlichen Ebene statt. Dennoch wurden die Spannungen teilweise von Weekly zu Weekly getragen. Dies kann man auch sehr gut im folgen Bild erkennen, dass Probleme wellenförmig angestiegen sind und dann wieder abgeflaut sind. 
+Interne Probleme gab es in SE II nicht zu verzeichnen und der Umgang mit projektbezogenen Problemen fand stets auf fachlicher und sachlicher Ebene statt. Dennoch wurden die Spannungen teilweise von Weekly zu Weekly getragen. Dies kann man auch sehr gut im folgen Bild erkennen, welches zeigt, dass Probleme wellenförmig angestiegen und dann wieder abgeflaut sind. 
 
 image::Diagramm_QM_Bewegung.png[QM-Bewegung]
 
