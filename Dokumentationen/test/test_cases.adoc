@@ -37,7 +37,7 @@ a| * Datenbankeintrag für die Bestellung ist angelegt
 
 |===
 
-|*Beschreibung* |Der Dozent versucht bewusst falsche Eingaben in den Voreinstellungen zu treffen. Falsche Eingaben sind ein Datum in der Vergangenheit oder eine fehlerhafte Werte für die Zeit.
+|*Beschreibung* |Der Dozent versucht bewusst falsche Eingaben in den Voreinstellungen zu treffen. Falsche Eingaben sind ein Datum in der Vergangenheit oder fehlerhafte Werte für die Zeit.
 
 
 |*Vorbedingungen und benötigte Daten*
