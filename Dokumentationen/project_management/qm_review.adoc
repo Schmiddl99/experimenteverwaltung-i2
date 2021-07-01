@@ -1,5 +1,6 @@
-== QM Review zum bisherigen Projekt SE I
+include::../_includes/default-attributes.inc.adoc[]
 
+== QM Review zum bisherigen Projekt SE I
 
 === Rückblick auf das Projekt bisher
 

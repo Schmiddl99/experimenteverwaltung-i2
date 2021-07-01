@@ -15,7 +15,6 @@ Passwort-Verordnung (Zahl, Buchstabe, Groß- und Kleinschreibung); Passwortschut
 ->Architecture Notebook"
 7;27.01.2021;Übersehen von Anforderungen;Durch ein nicht rechtzeitiges Einbeziehen aller Stakeholder, kann es zum Übersehen von Anforderungen kommen. Dies kann zur Folge haben, dass ein erhöhter Mehraufwand rückwirkend notwendig ist und die geplante Abgabe verschoben werden muss.;Business;5;5%;0,25;"GM, TW, Tka";Ansprechen aller Stakeholder die identifiziert wurden. Bei Dozenten exemplarische Stellvertreter auswählen (Prof. Dr. Krawietz)
 
-->Architecture Notebook"
 8;25.04.2021;Schlechte Entscheidung;Durch mangelnde Expertise oder Nichtbeachtung von Details, können Entscheidungen getroffen werden, die dem Projekt schaden;Business;4;50%;2;"GM; TW; Tka";Alle Entscheidungen werden durch Gruppendiskussionen getroffen
 
 9;28.04.2021;Datschutz-Login-Problem;Durch den Kundenwunsch die Passwörter und Benutzernamen der Anwender selbst in das Programm einzupflegen, ensteht hier ein Datenschutzproblem.;Business;2;70%;1,4;GM;Datenschutzbeauftragten dazu befragen
