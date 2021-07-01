@@ -77,7 +77,7 @@ image::Arbeitsverteilung.png[Arbeitsverteilung]
 
 ==== Puls Check
 
-Diese Praktik war unsere Meinung die wichtigste auf Hinblick der Gruppenstimmung. So konnten wir immer abschätzen ob es Handlungsbedarf durch das QM gab oder nicht. Im gesamten SE II Zeitraum gab es für das QM keinen Grund einzugreifen. Dies betrachten wir als sehr positiv. 
+Diese Praktik war unserer Meinung nach die wichtigste im Hinblick auf die Gruppenstimmung. So konnten wir immer abschätzen, ob es Handlungsbedarf durch das QM gab oder nicht. Im gesamten SE II Zeitraum gab es für das QM keinen Grund einzugreifen. Dies betrachten wir als sehr positiv. 
 
 ==== Fazit zu dem QM von SE II
 
