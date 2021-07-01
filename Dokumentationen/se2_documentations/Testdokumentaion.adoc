@@ -20,7 +20,7 @@ Neben diesen automatisierten Tests führten wir eine Reihe manueller Tests durch
 Zusätzlich zu den von uns durchgeführten Tests erstellten wir ein Usertestprotokoll was von den zukünftigen Nutzern des Systems abgearbeitet werden sollte.
 
 == Verhalten bei entdeckten Fehlern
-Wir legten fest, dass entdeckte Fehler dem Entwickler gemeldet werden. Gemeinsam mit diesem sollte eine Kategorisierung in optische Unschönheit(z.B. Button etwas zu lang oder nicht richtig angeordnet), leichter Fehler und schwerer Fehler vorgenommen werden. Schwere Fehler sollten dazu führen, dass die aktuellen Arbeiten pausiert und der Fehler sofort behoben werden. Leichte Fehler sollten nach Abschluss der aktuellen Arbeit an einer Funktion oder einem Feauture behoben werden. Bei optischen Unschönheiten sollte in Rahmen der weekly diskutiert werden, ob diese behoben werden oder ob sie vertretbar wären (z.B wenn Aufwand zum beseitigen unverhältnismäßig groß wäre).
+Wir legten fest, dass entdeckte Fehler dem Entwickler gemeldet werden. Gemeinsam mit diesem sollte eine Kategorisierung in optische Unschönheit (z.B. Button etwas zu lang oder nicht richtig angeordnet), leichter Fehler und schwerer Fehler vorgenommen werden. Schwere Fehler sollten dazu führen, dass die aktuellen Arbeiten pausiert und der Fehler sofort behoben werden. Leichte Fehler sollten nach Abschluss der aktuellen Arbeit an einer Funktion oder einem Feature behoben werden. Bei optischen Unschönheiten sollte im Rahmen der Weeklys diskutiert werden, ob diese behoben werden oder ob sie vertretbar wären (z.B. wenn Aufwand zum Beseitigen unverhältnismäßig groß wäre).
 
 == Beschreibung der Tests
 Die Beschreibungen der erstellten Testcase finden sich unter
