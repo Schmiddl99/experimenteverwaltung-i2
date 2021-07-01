@@ -240,7 +240,7 @@ a| * Datenbankeintrag für die Buchung wurde entfernt
 
 |===
 
-==== TC13 - Buchungen in der Vergangenheit können nicht bearbeitet werden -automatisert
+==== TC13 - Buchungen in der Vergangenheit können nicht bearbeitet werden - automatisiert
 
 |===
 
