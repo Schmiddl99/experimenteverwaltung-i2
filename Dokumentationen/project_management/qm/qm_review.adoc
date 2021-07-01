@@ -81,4 +81,4 @@ Diese Praktik war unsere Meinung die wichtigste auf Hinblick der Gruppenstimmung
 
 ==== Fazit zu dem QM von SE II
 
-Das QM hat uns sehr gute Dienste geleistet, da wir durch das QM immer genau wussten wo es im Team Probleme gab und konnten hier direkt ansetzen sie zu lösen. Auch haben wir die Arbeitsleistung gut auf die einzelnen Teammitglieder aufteilen können. Natürlich stechen einige Mitglieder hervor, dies ist aber mit Ihren Rollen zu rechtfertigen. Insgesamt sind wir mit der Entscheidung ein QM in SE I eingeführt zu haben sehr glücklich und sehen den Mehraufwand, dem Nutzen gegenübergestellt mehr als sinnvoll. 
+Das QM hat uns sehr gute Dienste geleistet, da wir durch das QM immer genau wussten, wo es im Team Probleme gab und konnten somit direkt dort ansetzen, um sie zu lösen. Ebenfalls haben wir die Arbeitsleistung gut auf die einzelnen Teammitglieder aufteilen können. Natürlich stechen einige Mitglieder hervor, dies ist aber mit ihren Rollen zu rechtfertigen. Insgesamt sind wir mit der Entscheidung, ein QM in SE I eingeführt zu haben sehr glücklich und sehen den Mehraufwand, dem Nutzen gegenübergestellt, mehr als sinnvoll. 
