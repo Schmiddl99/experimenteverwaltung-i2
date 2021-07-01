@@ -340,7 +340,7 @@ a| * die entsprechend gefilterte, inkl. aller gebuchten Experimente, Dozentenwoc
 
 |===
 
-==== TC19 - Dozentenwoche wird korrekt gedruckt -automatisiert
+==== TC19 - Dozentenwoche wird korrekt gedruckt - automatisiert
 
 |===
 
