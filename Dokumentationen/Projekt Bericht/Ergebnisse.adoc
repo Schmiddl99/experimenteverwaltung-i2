@@ -90,3 +90,24 @@ Auch ich empfand den Dokumentationsaufwand für die Größe unseres Projektes et
 Letztendlich kann ich sagen, dass ich viel aus diesem Projekt gelernt habe. Sei es die erfolgreiche und sehr entspannte Zusammenarbeit mit einem Team bestehend aus Menschen, die ich weder vor dem Projekt noch nach dem Projekt nur einmal gesehen habe oder die große Verantwortung die ich als Hauptentwickler übernommen habe und wie ich damit zum Projekterfolg beitragen konnte. Ich habe mich von Anfang an auf das Projekt gefreut und auch wenn es natürlich viel Zeit gekostet hat, bin ich immer noch glücklich es durchgeführt haben zu können.
 
 Richard Böhme
+
+=== Piet Gutsche
+
+Die Arbeit am Projekt erweiterte mein Wissen in mehreren Bereichen. Um einen sinnvollen Beitrag zu leisten, war ich gezwungen mich in eine neue Programmiersprache(Ruby) einzuarbeiten. Auch konnte ich mein Verständnis der Model-View-Controller Patterns verbessern. Speziell vom Entwickler Richard Böhme konnte ich mir einige sehr nützliche Tricks und Kniffe sowohl beim Arbeiten mit der Rubykonsole als auch bei der Verwendung von Github abschauen.
+
+Die Arbeit im Team empfand ich als sehr angenehm. Ich bin sehr dankbar dafür, das meine Mitstreiter Verständnis für meine zwischenzeitlichen Zeitprobleme hatten. Auch wenn für uns eine Terminfindung nicht immer leicht war, da mit Stundenplänen aus 4 verschiedenen Studiengängen koordiniert werden musste haben wir es immer geschafft einen für alle gangbaren Kompromiss zu finden. Im Falle von Problemen oder falls jemand aus Gründen sein Arbeitspensum nicht allein schaffte, fand sich immer zügig jemand der unterstütze. Ich bin überzeugt das der in unserer Gruppe vorherschende Umgangston und unser Verhalten untereinander einen großen Teil zum erfolgreichen Abschluss des Projekts beitrugen. Ich denke die im Vergleich zu anderen Teams kleinere Anzahl an Personen machte es dabei etwas leichter einen schneller Konsens zu den wichtigsten Entscheidungen zu finden. Auch der Fakt das jeder in mehreren Bereichen/Rollen mitarbeitete half das alle jederzeit einen sehr guten Überblick über das Gesamtprojekt und die aktuell höchsten Prioritäten hatten. Das führte automatisch dazu das Aufgaben eher selbst gewählt wurden als das sie von anderen verteilt wurden, was aus meiner Sicht die Zufriedenheit mit der eigenen Arbeit und Aufgabe erhöhte.
+
+Während ich am Amfang einem wöchentlichen Teammeeting noch skeptisch gegenüber Stand, hat sich dieses doch als sehr nützlich erwiesen. Wichtige Probleme konnten so zeitnah diskutiert und ausgeräumt werden, so das ich denke das diese Zeit sehr gut investiert war und unser Projekt stärker vorangebracht hat als z.B. nur Meetings aller 2 Wochen abzuhalten.
+
+Als negativ und enttäuschend empfand ich das Verhalten des Kunden Dipl. Ing Heisig. Auf Fragen per Mail kam selten oder sehr spät eine Reaktion, unsere Ratschläge wurden meist völlig ignoriert. Wenige Tage vor Projektende kam als einzige Antwort auf Fragen per Mail eine Gegenfrage mit Änderungswunsch. Das zeigt, meiner bescheidenen Meinung nach, das von seiner Seite kein großes Bestreben unsere Arbeitsweise zu verstehen oder zu akzeptieren vorhanden war.
+
+Mein Empfinden war, dass er uns weniger als Partner auf Augenhöhe sonder eher als Dienstleister und Ausführungsknechte sieht. Die sollen alles so machen sollen wie er es für richtig hält auch wenn er im IT-Bereich kaum Domänenwissen besitzt und so Fehlentscheidungen trifft die später aufwendig korrigiert werden müssen.
+Würde ich selbstständig im kommerziellen Umfeld arbeiten, würde ich nach Abschluss des Projekts mein Arbeitsverhältnis mit ihm beenden.
+
+Da ich aber ein solches Verhalten und Auftreten im späteren Berufsumfeld auch antreffen könnte, konnte ich so wichtige Lektionen im Umgang mit nicht zufriedenstellenden Situationen lernen.
+
+Eine weitere sehr wichtige aus dem Projekt erlernte Lektion war, das eine gute Dokumentation im Code extrem wichtig ist. Sie hilft späteren Bearbeitern sehr sich zügig in ein Projekt einarbeiten zu können. Ich bin nach den gesammelten Erfahrungen überzeugt, dass die Fähigkeit gut strukturierten und kommentierten Code zu schreiben einer der wichtigsten Skills eines Entwicklers ist. 
+
+Insgesamt hat mich die Arbeit am Projekt zu einem besseren Entwickler und Teamworker gemacht, ich habe einiges gelernt und bin doch recht glücklich über die gemachten Erfahrungen.
+
+Piet Gutsche
