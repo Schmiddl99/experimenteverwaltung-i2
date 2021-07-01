@@ -129,7 +129,7 @@ a| * Datenbankeintrag für die Bestellung und das Dummyexperiment ist angelegt
 ==== TC07 - Buchung eines regulären und eines Dummyexperiments muss möglich sein - automatisiert
 |===
 
-|*Beschreibung* |Der Dozent beginnt einen Buchungsprozess. Er legt ein Experiment in den Warenkorb und wählt den Menüpunkt manuell Experiment hinzufügen aus, vergibt einen Namen und schließt die Buchung ab. Es ist sowohl möglich erst das manuelle Experiment zu buchen als auch zuerst das reguläre Experiment zu buchen.
+|*Beschreibung* |Der Dozent beginnt einen Buchungsprozess. Er legt ein Experiment in den Warenkorb und wählt den Menüpunkt manuell Experiment hinzufügen aus, vergibt einen Namen und schließt die Buchung ab. Es ist sowohl möglich erst das manuelle Experiment als auch das reguläre Experiment zuerst zur Bestellung hinzuzufügen.
 
 
 |*Vorbedingungen und benötigte Daten*
