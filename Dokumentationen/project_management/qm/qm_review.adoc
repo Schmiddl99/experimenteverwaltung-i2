@@ -71,7 +71,7 @@ Insgesamt wurden ca. 322 Stunden Arbeitszeit in das Projekt investiert. Hierbei 
 
 image::Gesamt_Leistung.png[Gesamt Leistung]
 
-Auch haben wir die Stundenliste so optimiert, das nun auch ein zeitlicher Ablauf des Arbeitsaufwands erkennbar wird. 
+Ebenfalls haben wir die Stundenliste so optimiert, dass nun auch ein zeitlicher Ablauf des Arbeitsaufwands erkennbar wird. 
 
 image::Arbeitsverteilung.png[Arbeitsverteilung]
 
