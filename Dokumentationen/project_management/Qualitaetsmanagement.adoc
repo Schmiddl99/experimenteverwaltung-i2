@@ -1,7 +1,7 @@
 = Qualitätsmanagement
 Alena Bischoff <alena.bischoff@htw-dresden.de>; Gregor Müller <gregor.mueller@htw-dresden.de>; Julius Schmidt <juliusheiko.schmidt@htw-dresden.de>; Richard Böhme <richard.boehme@htw-dresden.de>; Taejun Kim <taejun.kim@htw-dresden.de>; Tim Würzburg <tim.wuerzburg@htw-dresden.de>; Tobias Karsch <tobias.karsch@htw-dresden.de>; William Elsner <william.elsner@htw-dresden.de>;
 {localdatetime}
-include::../../_includes/default-attributes.inc.adoc[]
+include::../_includes/default-attributes.inc.adoc[]
 
 
 == Hintergrund 

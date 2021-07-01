@@ -1,5 +1,6 @@
-== QM Review zum bisherigen Projekt
+include::../_includes/default-attributes.inc.adoc[]
 
+== QM Review zum bisherigen Projekt SE I
 
 === Rückblick auf das Projekt bisher
 
@@ -38,5 +39,47 @@ Der Verlauf der Arbeit im Meeting wurde ebenfalls durch die Verwendung einer Tra
 
 image::qm_work.PNG[Bewertung]
 
-Durch das Ausscheiden einiger Teammitgliedern im nächsten Semester wissen wir, das hier einige Hürden auf uns zukommen werden, aber mit Blick auf das bisher absolvierte Projekt können wir uns sicher seien, das wir diese ebenfalls überwinden können.
+Durch das Ausscheiden einiger Teammitgliedern im nächsten Semester wissen wir, dass hier einige Hürden auf uns zukommen werden, aber mit Blick auf das bisher absolvierte Projekt können wir uns sicher sein, das wir diese ebenfalls überwinden können.
 
+== QM Review zum bisherigen Projekt SE II
+
+
+=== Rückblick auf das Projekt bisher
+
+==== Einleitung
+
+Nun nach Projektabschluss, können wir auf einige Erfahrungen zurückblicken, die uns in unserer Arbeitsweise sehr positiv unterstützt haben. Die Ergebnisse hierzu möchten wir noch einmal kurz vorstellen und ein Fazit ziehen.
+
+==== Verzicht auf den Redeführer bei den Weeklies
+
+Diese Entscheidung war sehr gut aus mehreren Blickwinkeln. Zum einen wurden die Weeklys dadurch deutlich dynamischer, was die Diskusion der Gruppe anheizte und es kamen auch Gruppenmitglieder, die in SE I eher schweigsam waren, deutlich mehr aus sich heraus. Zwar konnte der Kritikpunkt, andere Teammitglieder immer ausreden zu lassen nicht so sehr erfüllt werden, wie in SE I, aber Angesicht der gewonnen Vorteile, empfinden wir diese Entscheidung als sinnvoll. 
+
+==== Weekly-Qualität und Umgang mit Problemen 
+
+Interne Probleme gab es in SE II nicht zu verzeichnen und der Umgang mit projektbezogenen Problemen fand stets auf fachlicher und sachlicher Ebene statt. Dennoch wurden die Spannungen teilweise von Weekly zu Weekly getragen. Dies kann man auch sehr gut im folgen Bild erkennen, welches zeigt, dass Probleme wellenförmig angestiegen und dann wieder abgeflaut sind. 
+
+image::Diagramm_QM_Bewegung.png[QM-Bewegung]
+
+==== Allgemeine Auswertung 
+
+Allgemein betrachtet, spiegelt die Auflistung des QMs unsere Einschätzung wider, großteils waren alle Bereiche durchgehend sehr positv vertreten. Und auch bei Problemsituationen waren die Auswirkungen dennoch im grünen Bereich. 
+
+image::qm_work_2.png[Bewertung]
+
+==== Zeitverteilung
+
+Insgesamt wurden ca. 322 Stunden Arbeitszeit in das Projekt investiert. Hierbei haben wir auch fast eine Gleichverteilung der Arbeitsstunden erreicht. 
+
+image::Gesamt_Leistung.png[Gesamt Leistung]
+
+Ebenfalls haben wir die Stundenliste so optimiert, dass nun auch ein zeitlicher Ablauf des Arbeitsaufwands erkennbar wird. 
+
+image::Arbeitsverteilung.png[Arbeitsverteilung]
+
+==== Puls Check
+
+Diese Praktik war unserer Meinung nach die wichtigste im Hinblick auf die Gruppenstimmung. So konnten wir immer abschätzen, ob es Handlungsbedarf durch das QM gab oder nicht. Im gesamten SE II Zeitraum gab es für das QM keinen Grund einzugreifen. Dies betrachten wir als sehr positiv. 
+
+==== Fazit zu dem QM von SE II
+
+Das QM hat uns sehr gute Dienste geleistet, da wir durch das QM immer genau wussten, wo es im Team Probleme gab und konnten somit direkt dort ansetzen, um sie zu lösen. Ebenfalls haben wir die Arbeitsleistung gut auf die einzelnen Teammitglieder aufteilen können. Natürlich stechen einige Mitglieder hervor, dies ist aber mit ihren Rollen zu rechtfertigen. Insgesamt sind wir mit der Entscheidung, ein QM in SE I eingeführt zu haben sehr glücklich und sehen den Mehraufwand, dem Nutzen gegenübergestellt, mehr als sinnvoll. 
