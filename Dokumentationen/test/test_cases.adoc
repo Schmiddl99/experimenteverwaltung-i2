@@ -1,5 +1,5 @@
 = Test Cases: {project-name}
-Gregor Müller <gregor.mueller@htw-dresden.de>; Julius Schmidt <juliusheiko.schmidt@htw-dresden.de>; Richard Böhme <richard.boehme@htw-dresden.de>; William Elsner <william.elsner@htw-dresden.de>; 
+Gregor Müller <gregor.mueller@htw-dresden.de>; Julius Schmidt <juliusheiko.schmidt@htw-dresden.de>; Richard Böhme <richard.boehme@htw-dresden.de>; William Elsner <william.elsner@htw-dresden.de>; Piet Gutsche <piet.gutsche@htw-dresden.de>;
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
@@ -14,7 +14,7 @@ include::../_includes/default-attributes.inc.adoc[]
 == Test Cases für Use Cases
 
 === Test Cases für Use Case "Experiment buchen"
-==== TC01 - Erfolgreich buchen
+==== TC01 - Erfolgreich buchen - automatisiert
 
 |===
 
@@ -24,7 +24,7 @@ include::../_includes/default-attributes.inc.adoc[]
 a| * ein Dozent ist mit validen Zugangsdaten angemeldet  
 * es existieren mindestens drei Experimente
 * valides Datum, valide Uhrzeit und valider Studiengang
-* es muss ein Dozentenkonto geben
+
 
 |*Nachbedingung*
 a| * Datenbankeintrag für die Bestellung ist angelegt 
@@ -37,23 +37,23 @@ a| * Datenbankeintrag für die Bestellung ist angelegt
 
 |===
 
-|*Beschreibung* |Der Dozent versucht bewusst falsche Eingaben in den Voreinstellungen zu treffen. Damit sind keine menschlichen Fehler gemeint, wie z.B. ein falsches Datum ausgewählt zu haben, sondern ein Datum in der Vergangenheit zu wählen. 
+|*Beschreibung* |Der Dozent versucht bewusst falsche Eingaben in den Voreinstellungen zu treffen. Falsche Eingaben sind ein Datum in der Vergangenheit oder fehlerhafte Werte für die Zeit.
 
 
 |*Vorbedingungen und benötigte Daten*
 a| * ein Dozent ist mit validen Zugangsdaten angemeldet
 * es wurde eine Buchung begonnen
-* invalides Datum, invalide Uhrzeit und invalider Studiengang
+* invalides Datum, invalide Uhrzeit 
 
 |*Nachbedingung*
 a| * es können nur verfügbare Studiengänge über ein Dropdown Menü ausgewählt werden 
-* es kann nur ein zeitlich korrektes Datum aus dem Pick Menü ausgewählt werden
+* es kann nur ein aktuelles oder zukünftiges Datum eingegeben werden
 * es kann nur eine korrekte Uhrzeit in Verbindung der Unterrichtszeiten eingeben werden 
 
 |===
 
 
-==== TC03 - Leerer Warenkorb darf nicht zur Buchung führen
+==== TC03 - Leerer Warenkorb darf nicht zur Buchung führen - automatisiert
 
 |===
 
@@ -61,9 +61,9 @@ a| * es können nur verfügbare Studiengänge über ein Dropdown Menü ausgewäh
 
 |*Vorbedingungen und benötigte Daten*
 a| * ein Dozent ist mit validen Zugangsdaten angemeldet  
-* es wurde eine Buchung begonnen
-* es wurden valide Daten in die Voreinstellungen eingegeben  
+* Buchung wurde mit validen Daten gestartet
 * valides Datum, valide Uhrzeit und valider Studiengang
+
 
 |*Nachbedingung*
 a| * der Button "Buchung abschließen" ist bis zur Auswahl mindestens eines Experiments ausgegraut und kann nicht geklickt werden
@@ -72,7 +72,7 @@ a| * der Button "Buchung abschließen" ist bis zur Auswahl mindestens eines Expe
 |===
 
 
-==== TC04 - Keine Mehrfachauswahl eines Experiments pro Buchung möglich
+==== TC04 - Keine Mehrfachauswahl eines Experiments pro Buchung möglich - automatisiert
 
 |===
 
@@ -80,10 +80,8 @@ a| * der Button "Buchung abschließen" ist bis zur Auswahl mindestens eines Expe
 
 |*Vorbedingungen und benötigte Daten*
 a| * ein Dozent ist mit validen Zugangsdaten angemeldet
-* es wurde eine Buchung begonnen
-* es wurden valide Daten in die Voreinstellungen eingegeben 
+* Buchung wurde mit validen Daten gestartet
 * es wurde mindestens ein Experiment ausgewählt
-* valides Datum, valide Uhrzeit und valider Studiengang
 * es muss mindestens ein Experiment geben
 
 |*Nachbedingung*
@@ -92,7 +90,7 @@ a| * es ist nicht möglich das selbe Experiment mehrmals auszuwählen
 |===
 
 
-==== TC05 - Abbruch muss möglich sein
+==== TC05 - Abbruch muss möglich sein - automatisiert
 |===
 
 |*Beschreibung* |Der Dozent beginnt einen Buchungsprozess, entscheidet sich aber zu einem beliebigen Zeitpunkt vor Buchungsabschluss dazu, diesen abzubrechen. Erwartet wird, dass ein Buchungsabbruch jederzeit fehlerfrei möglich ist.  
@@ -100,7 +98,7 @@ a| * es ist nicht möglich das selbe Experiment mehrmals auszuwählen
 
 |*Vorbedingungen und benötigte Daten*
 a| * ein Dozent ist mit validen Zugangsdaten angemeldet  
-* Buchung wurde gestartet 
+* Buchung wurde mit validen Daten gestartet
 * es existiert mind. ein Experiment 
 
 |*Nachbedingung*
@@ -109,10 +107,65 @@ a| * Buchung wurde abgebrochen und es kam zu keinem Datenbankeintrag
 
 |===
 
+==== TC06 - Buchung eines Dummyexperiments muss möglich sein - automatisiert
+|===
+
+|*Beschreibung* |Der Dozent beginnt einen Buchungsprozess. Er wählt den Menüpunkt manuell Experiment hinzufügen aus, vergibt einen Namen und schließt die Buchung ab.
+
+
+|*Vorbedingungen und benötigte Daten*
+a| * ein Dozent ist mit validen Zugangsdaten angemeldet  
+* Buchung wurde mit validen Daten gestartet
+
+
+
+|*Nachbedingung*
+a| * Datenbankeintrag für die Bestellung und das Dummyexperiment ist angelegt 
+* Dozent befindet sich auf der Buchungsbestätigungseite
+
+|===
+
+==== TC07 - Buchung eines regulären und eines Dummyexperiments muss möglich sein - automatisiert
+|===
+
+|*Beschreibung* |Der Dozent beginnt einen Buchungsprozess. Er legt ein Experiment in den Warenkorb und wählt den Menüpunkt manuell Experiment hinzufügen aus, vergibt einen Namen und schließt die Buchung ab. Es ist sowohl möglich erst das manuelle Experiment als auch das reguläre Experiment zuerst zur Bestellung hinzuzufügen.
+
+
+|*Vorbedingungen und benötigte Daten*
+a| * ein Dozent ist mit validen Zugangsdaten angemeldet  
+* Buchung wurde mit validen Daten gestartet
+* es existiert mindestens ein Experiment
+
+
+|*Nachbedingung*
+a| * Datenbankeintrag für die Bestellung und das Dummyexperiment ist angelegt 
+* Dozent befindet sich auf der Buchungsbestätigungseite
+
+|===
+
+==== TC08 - Die Reihenfolge der Experimente kann getauscht werden - automatisiert
+|===
+
+|*Beschreibung* |Der Dozent legt 2 Experimente in den Warenkorb und geht zum Buchungsabschluss. Erwartet wird das eine Vertauschung der Experimentenreihenfolge möglich ist.
+
+
+|*Vorbedingungen und benötigte Daten*
+a| * ein Dozent ist mit validen Zugangsdaten angemeldet  
+* Buchung wurde mit validen Daten gestartet
+* es existieren mindestens zwei Experimente
+
+
+|*Nachbedingung*
+a| * das zuerst gebuchte Experiment befindet sich nach der Vertauschung an zweiter Stelle.
+
+|===
+
+
+
 
 === Test Cases für Use Case "Buchungsjournal verwalten"
 
-==== TC06 - Journal enthält chronologisch geordnete Buchungen
+==== TC09 - Journal enthält chronologisch geordnete Buchungen -automatisiert
 
 |===
 
@@ -121,7 +174,7 @@ a| * Buchung wurde abgebrochen und es kam zu keinem Datenbankeintrag
 |*Vorbedingungen und benötigte Daten*
 a| * ein Dozent ist mit validen Zugangsdaten angemeldet  
 * Buchungen wurden erfolgreich getätigt
-* Buchungseinträge (mind. 4) in der Datenbank 
+* Buchungseinträge (mind. 3) in der Datenbank 
 
 |*Nachbedingung*
 a| * Dozent befindet sich auf der Journalseite 
@@ -130,7 +183,7 @@ a| * Dozent befindet sich auf der Journalseite
 |===
 
 
-==== TC07 - Leeres Journal anzeigen
+==== TC10 - Leeres Journal anzeigen -automatisiert
 
 |===
 
@@ -146,7 +199,7 @@ a| * Dozent befindet sich auf der (leeren) Journalseite
 |===
 
 
-==== TC08 - Buchung im Journal bearbeiten
+==== TC11 - Buchung im Journal bearbeiten -automatisiert
 
 |===
 
@@ -166,7 +219,7 @@ a| * Datenbankeintrag für die Buchung wurde aktualisiert
 |===
 
 
-==== TC09 - Buchung kann im Journal gelöscht werden
+==== TC12 - Buchung kann im Journal gelöscht werden - automatisiert
 
 |===
 
@@ -184,10 +237,144 @@ a| * Datenbankeintrag für die Buchung wurde entfernt
 
 |===
 
+==== TC13 - Buchungen in der Vergangenheit können nicht bearbeitet werden - automatisiert
+
+|===
+
+|*Beschreibung* |Ein Dozent wählt eine Buchung in der Vergangenheit aus und versucht über die entsprechenden Icons seine Buchung zu bearbeiten oder zu löschen. Es wird erwartet das die Icons nicht angezeigt werden, falls die Buchung in der Vergangenheit liegt.
+
+|*Vorbedingungen und benötigte Daten*
+a| * ein Dozent ist mit validen Zugangsdaten angemeldet
+* Dozent befindet sich im Journal
+* mindestens ein Experiment
+* Buchung von dem Dozenten mit einem Datum in der Vergangenheit
+
+|*Nachbedingung*
+a| * Dozent befindet sich weiterhin im Journal
+
+|===
+
+=== Test Cases für Use Case "Dozentenwoche"
+
+==== TC14 - Dozentenwoche von einem Dozenten wird korrekt angezeigt - automatisiert
+
+|===
+
+|*Beschreibung* |Der Admin möchte sich für einen bestimmten Dozenten die Dozentenwoche anzeigen lassen, inklusive aller gebuchten Experimente.
+
+|*Vorbedingungen und benötigte Daten*
+a| * Admin ist angemeldet  
+* Admin befindet sich auf der Website für die Dozentenwoche
+* mind. ein Dozent hat eine Buchung getätigt
+
+|*Nachbedingung*
+a| * Die gewählte Dozentenwoche wird angezeigt
+
+|===
+
+==== TC15 - Dozentenwoche von mehreren Dozenten wird korrekt angezeigt - automatisiert
+
+|===
+
+|*Beschreibung* |Der Admin möchte sich für verschiedene Dozenten die Dozentenwoche anzeigen lassen, inklusive aller gebuchten Experimente.
+
+|*Vorbedingungen und benötigte Daten*
+a| * Admin ist angemeldet  
+* Admin befindet sich auf der Website für die Dozentenwoche
+* mind. 2 Dozenten haben eine Buchung getätigt
+
+|*Nachbedingung*
+a| * Die gewählten Dozentenwochen werden angezeigt.
+
+|===
+
+==== TC16 - Dozentenwoche wird korrekt gedruckt - automatisiert
+
+|===
+
+|*Beschreibung* |Der Admin möchte sich seine entsprechend gefilterte, inkl. aller gebuchten Experimente, Dozentenwoche drucken lassen. Um eine automatisierte Überprüfung möglich zu machen, wird überprüft ob der korrekte Befehl an das System übermittelt wurde.
+
+|*Vorbedingungen und benötigte Daten*
+a| * Admin ist angemeldet  
+* Admin befindet sich auf der Website für die Dozentenwoche
+* mind. ein Dozent hat eine Buchung getätigt
+
+|*Nachbedingung*
+a| * Das Druckermenü für die gewünschte Darstellung wurde aufgerufen 
+
+|===
+
+==== TC17 - Dozentenwoche wird korrekt gedruckt - manuell
+
+|===
+
+|*Beschreibung* |Der Admin möchte sich seine entsprechend gefilterte, inkl. aller gebuchten Experimente, Dozentenwoche drucken lassen. 
+
+|*Vorbedingungen und benötigte Daten*
+a| * Admin ist angemeldet  
+* Admin befindet sich auf der Website für die Dozentenwoche
+* mind. ein Dozent hat eine Buchung getätigt
+
+|*Nachbedingung*
+a| * Die Dozentenwoche wird in der gewünschen Darstellung gedruckt. 
+
+|===
+
+==== TC18 - Dozentenwoche für einen Dozenten wird korrekt angezeigt - automatisiert
+
+|===
+
+|*Beschreibung* |Der Dozent möchte sich seine Dozentenwoche für eine bestimmte KW ausgeben lassen.
+
+|*Vorbedingungen und benötigte Daten*
+a| * ein Dozent ist mit validen Zugangsdaten angemeldet  
+* Dozent befindet sich auf der Website für die Dozentenwoche
+* valide KW, valider Dozentenname
+* mind. eine Buchung vom Dozenten existiert
+
+|*Nachbedingung*
+a| * die entsprechend gefilterte, inkl. aller gebuchten Experimente, Dozentenwoche wird angezeigt
+
+|===
+
+==== TC19 - Dozentenwoche wird korrekt gedruckt - automatisiert
+
+|===
+
+|*Beschreibung* |Der Dozent möchte sich seine Dozentenwoche drucken lassen. Um eine automatisierte Überprüfung möglich zu machen, wird überprüft ob der korrekte Befehl an das System übermittelt wurde.
+
+|*Vorbedingungen und benötigte Daten*
+a| * Dozent ist angemeldet mit validen Zugangsdaten  
+* Dozent befindet sich auf der Website für die Dozentenwoche
+* der Dozent hat mind. eine Buchung getätigt
+
+
+|*Nachbedingung*
+a| * Das Druckermenü für die gewünschte Darstellung wurde aufgerufen 
+
+|===
+
+==== TC20 - Dozentenwoche wird korrekt gedruckt - manuell
+
+|===
+
+|*Beschreibung* |Der Dozent möchte sich seine entsprechend gefilterte, inkl. aller gebuchten Experimente, Dozentenwoche drucken lassen. 
+
+|*Vorbedingungen und benötigte Daten*
+a| * Dozent ist angemeldet  
+* Dozent befindet sich auf der Website für die Dozentenwoche
+* der Dozent hat mind. eine Buchung getätigt
+
+|*Nachbedingung*
+a| * Die Dozentenwoche wird in der gewünschten Darstellung gedruckt. 
+
+|===
+
+
 
 === Test Cases für Use Case "Statisik anzeigen"
 
-==== TC10 - Statistik wird richtig angezeigt 
+==== TC X1 - Statistik wird richtig angezeigt - nicht umgesetzt da Usecase nicht umgesetzt wurde
 
 |===
 
@@ -196,7 +383,6 @@ a| * Datenbankeintrag für die Buchung wurde entfernt
 |*Vorbedingungen und benötigte Daten*
 a| * ein Admin ist mit validen Zugangsdaten angemeldet
 * Admin befindet sich auf der Statistik-Seite
-* es muss ein Dozentenkonto geben
 * mindestens drei Experimente, um die Sortierung zu testen
 * mehrere Buchungen der vorhandenen Experimente innerhalb sowie außerhalb der beiden Semester
 
@@ -207,92 +393,12 @@ a| * Anzahl der Buchungen der letzten beiden Semester sowie die Gesamtzahl ist r
 |===
 
 
-=== Test Cases für Use Case "Dozentenwoche anzeigen"
-
-==== TC11 - Dozentenwoche für einen Dozenten wird korrekt angezeigt
-
-|===
-
-|*Beschreibung* |Der Admin möchte sich die Dozentenwoche für eine bestimmte KW und einen bestimmten Dozenten ausgeben lassen.
-
-|*Vorbedingungen und benötigte Daten*
-a| * Admin ist angemeldet  
-* Admin befindet sich auf der Website für die Dozentenwoche
-* valide KW, valider Dozentenname
-* die von dem Dozenten gebuchten Experimente mit dem jeweiligen Datum, Uhrzeit und Studiengang
-
-|*Nachbedingung*
-a| * die entsprechend gefilterte Dozentenwoche, inkl. aller gebuchten Experimente, wird angezeigt
-
-|===
-
-
-=== Test Cases für Use Case "Dozentenwoche drucken"
-
-==== TC12 - Dozentenwoche wird korrekt gedruckt
-
-|===
-
-|*Beschreibung* |Der Admin möchte sich seine entsprechend gefilterte, inkl. aller gebuchten Experimente, Dozentenwoche drucken lassen.
-
-|*Vorbedingungen und benötigte Daten*
-a| * Admin ist angemeldet  
-* Admin befindet sich auf der Website für die Dozentenwoche
-* gefilterte Dozentenwoche, inkl. aller gebuchten Experimente, wird angezeigt
-* gefilterte, inkl. aller gebuchten Experimente, Dozentenwoche
-
-|*Nachbedingung*
-a| * die entsprechend gefilterte, inkl. aller gebuchten Experimente, Dozentenwoche wird in der gewünschen Darstellung gedruckt
-
-|===
-
-
-=== Test Cases für Use Case "eigene Dozentenwoche anzeigen"
-
-==== TC13 - Dozentenwoche für einen Dozenten wird korrekt angezeigt
-
-|===
-
-|*Beschreibung* |Der Dozent möchte sich seine Dozentenwoche für eine bestimmte KW ausgeben lassen.
-
-|*Vorbedingungen und benötigte Daten*
-a| * ein Dozent ist mit validen Zugangsdaten angemeldet  
-* Dozent befindet sich auf der Website für die Dozentenwoche
-* valide KW, valider Dozentenname
-* die von dem Dozenten gebuchten Experimente mit dem jeweiligen Datum, Uhrzeit und Studiengang
-
-|*Nachbedingung*
-a| * die entsprechend gefilterte, inkl. aller gebuchten Experimente, Dozentenwoche wird angezeigt
-
-|===
-
-
-=== Test Cases für Use Case "eigene Dozentenwoche drucken"
-
-==== TC14 - eigene Dozentenwoche wird korrekt gedruckt
-
-|===
-
-|*Beschreibung* |Der Dozent möchte sich seine entsprechend gefilterte, inkl. aller gebuchten Experimente, Dozentenwoche drucken lassen.
-
-|*Vorbedingungen und benötigte Daten*
-a| * ein Dozent ist mit validen Zugangsdaten angemeldet  
-* Dozent befindet sich auf der Website für die Dozentenwoche
-* gefilterte, inkl. aller gebuchten Experimente, Dozentenwoche wird angezeigt
-* gefilterte, inkl. aller gebuchten Experimente, Dozentenwoche
-
-|*Nachbedingung*
-a| * die entsprechend gefilterte, inkl. aller gebuchten Experimente, Dozentenwoche wird in der gewünschen Darstellung gedruckt
-
-|===
-
-
 
 == Test Cases für systemweite Anforderungen:
 
 === Test Cases für systemweite funktionale Anforderungen
 
-==== TC15 - SWFA-1 - Auf fremde Daten/Funktionalitäten kann nicht zugegriffen werden
+==== TC21 - SWFA-1 - Auf fremde Daten/Funktionalitäten kann nicht zugegriffen werden - manuell
 
 |===
 
@@ -311,7 +417,7 @@ a| * Admin hatte keinen Zugriff auf beliebiges Journal
 |===
 
 
-==== TC16 - SWFA-2 - Buchungs- und Anwenderdaten werden persistent gespeichert (manueller Test)
+==== TC22 - SWFA-2 - Buchungs- und Anwenderdaten werden persistent gespeichert - manuell
 
 |===
 
@@ -329,7 +435,7 @@ a| * Daten müssen abrufbar sein
 |===
 
 
-==== TC17 - SWFA-3 - Zugangsdaten können nicht ausgelesen werden (manueller Test)
+==== TC23 - SWFA-3 - Zugangsdaten können nicht ausgelesen werden - manuell
 
 |===
 
@@ -348,7 +454,7 @@ a| * Die Daten konnten nicht ausgelesen werden
 === Test Cases für nicht funktionale Anforderungen
 
 
-==== TC18 - NFAU-1.1 - Es gibt keine redundanten Schaltflächen
+==== TC24 - NFAU-1.1 - Es gibt keine redundanten Schaltflächen - manuell
 
 |===
 
@@ -366,7 +472,7 @@ a| * In allen möglichen Abläufen des Funktionsumfanges existieren keine Schalt
 |===
 
 
-==== TC19 - NFAU-1.2 - Alle Eingaben mit festem Wertebereich sind nicht durch Freitextfelder realisiert  (manueller Test)
+==== TC25 - NFAU-1.2 - Alle Eingaben mit festem Wertebereich sind nicht durch Freitextfelder realisiert  - manuell
 
 |===
 
@@ -385,7 +491,7 @@ a| * Dozent befindet sich auf Voreinstellungsseite mit ausgewählten Einstellung
 |===
 
 
-==== TC20 - NFAU-1.2 - Alle vorgegebenen Eingabemöglichkeiten sind valide (manueller Test)
+==== TC26 - NFAU-1.2 - Alle vorgegebenen Eingabemöglichkeiten sind valide - manuell
 
 |===
 
@@ -404,7 +510,7 @@ a| * Dozent befindet sich auf Voreinstellungsseite mit ausgewählten Einstellung
 |===
 
 
-==== TC21 - NFAU-1.3 - Themenfremde Person kann die Anwendung ohne fremde Hilfe benutzen (manueller Test)
+==== TC27 - NFAU-1.3 - Themenfremde Person kann die Anwendung ohne fremde Hilfe benutzen - manuell
 
 |===
 
@@ -422,7 +528,7 @@ a| * die Testperson befindet sich auf der Bestätigungsseite und hat diese ohne 
 |===
 
 
-==== TC22 - NFAU-1.4 - Buchung eines Experiments kann innerhalb von 15 Klicks abgeschlossen werden (manueller Test)
+==== TC28 - NFAU-1.4 - Buchung eines Experiments kann innerhalb von 15 Klicks abgeschlossen werden - manuell
 
 |===
 
@@ -440,7 +546,7 @@ a| * Dozent befindet sich auf der Bestätigungsseite
 |===
 
 
-==== TC23 - NFAU-1.4 - Nicht erreichbare Funktionalitäten können nicht aufgerufen werden
+==== TC29 - NFAU-1.4 - Nicht erreichbare Funktionalitäten können nicht aufgerufen werden - manuell
 
 |===
 
@@ -457,7 +563,7 @@ a| * Warenkorb-Ansicht ist nicht aufrufbar
 |===
 
 
-==== TC24 - NFAU-1.5 - Texte und Schaltflächen sind gut lesbar (manueller Test)
+==== TC30 - NFAU-1.5 - Texte und Schaltflächen sind gut lesbar - manuell
 
 |===
 
@@ -476,7 +582,7 @@ a| * während eines Buchungsvorgangs sind die Erwartungen erfüllt
 |===
 
 
-==== TC25 - NFAU-2 - Eingaben geschehen nicht in Pop-Ups (manueller Test)
+==== TC31 - NFAU-2 - Eingaben geschehen nicht in Pop-Ups - manuell
 
 |===
 
@@ -496,7 +602,7 @@ a| * während eines Buchungsvorgangs sind die Erwartungen erfüllt
 |===
 
 
-==== TC26 - NFAR-1 - Buchung kann nach Verbindungsabbruch des Nutzers fortgesetzt werden (manueller Test)
+==== TC32 - NFAR-1 - Buchung kann nach Verbindungsabbruch des Nutzers fortgesetzt werden - manuell
 
 |===
 
@@ -514,7 +620,7 @@ a| * nach dem simulierten Internetausfall sind die Voreinstelllungen noch ausgew
 |===
 
 
-==== TC27 - NFAP-1 - Das System funktioniert bei Auslastung durch 10 Nutzer (manueller Test)
+==== TC33 - NFAP-1 - Das System funktioniert bei Auslastung durch 10 Nutzer - manuell
 
 |===
 
@@ -530,8 +636,25 @@ a| * das System zeigt keine Fehler an und hatte keine Probleme während des Test
  
 |===
 
+==== TC34  Das System funktioniert auch nachdem eine sehr große Anzahl Buchungen getätigt wurden - automatisiert
 
-==== TC28 - NFAS-2 - Die Anwendung muss in allen geforderten Browsern funktionieren 
+|===
+
+|*Beschreibung* | Es wird überprüft ob das System auch nach 2000 getätigten Buchungen fehlerlos und ohne Verzögerungen funktioniert. Nachdem diese Buchungen automatisiert erstellt wurden, tätigt der Nutzer eine Buchung und besucht im Anschluss sein Journal und überprüft dort die Buchung.
+
+|*Vorbedingungen und benötigte Daten*
+a| * 2000 getätigte Buchungen
+* ein Dozent ist angemeldet
+* 
+
+|*Nachbedingung*
+a| * das System zeigt keine Fehler an und hatte keine Probleme während des Testlaufes
+*Dozent befindet sich im Journal und sieht dort seine getätigte Buchung
+ 
+|===
+
+
+==== TC35 - NFAS-2 - Die Anwendung muss in allen geforderten Browsern funktionieren - manuell
 
 |===
 
@@ -547,6 +670,79 @@ a| * die Funktionen des Systems haben in den unterschiedlichen Browsern wie erwa
  
 |===
 
-TODO
-dokumentation der alten Testcases als tabelle der Form test|zweck|(ü,r,sk) ->übernommen,skipped,repariert
-dazu soll noch für den projektbericht eine seite über die reparatur der alten tcs, wo probleme lagen etc
+== Benutzertests
+=== TC36 - Test als Dozent
+|===
+
+|*Aufgabe* | *Aktionen*
+
+|Login in das System
+a| * Website aufrufen
+* Benutzername und Passwort eingeben 
+* einloggen
+
+|Buchung starten und Voreinstellungen wählen
+a| * auf Buchung starten klicken
+* Voreinstellungen ausfüllen
+    • Chemie
+    • Mechanikvorlesung
+    • 21.06.2021
+    • 15:10
+* Voreinstellungen speichern
+
+|Buchungsprozess
+a|* Mechanik auswählen
+* Kinematik auswählen
+* Experimente mit Einkaufswagen auswählen (Anzahl nicht vorgegeben, min. zwei)
+* Manuell Experiment Hinzufügen anklicken 
+* „Mein Eigenes Experiment“ eingeben 
+* Experiment hinzufügen
+* Buchung abschließen
+
+|Buchungsübersicht verwalten
+a|* Mechanik auswählen
+* Reihenfolge per Drag and Drop ändern
+* „Das ist ein Text“ beim Kommentar eingeben
+* Änderungen speichern
+
+|Journal verwenden 
+a|* Zu Journal navigieren
+* Auf angelegte Vorlesung klicken
+* Auf Stift klicken
+* Ein Experiment löschen 
+* Änderung speichern
+* Bearbeitung abschließen
+
+|Dozentenwoche verwenden
+a|* Dozentenwoche auswählen
+* Voreinstellungen ausfüllen
+    • 2021
+    • KW 25
+* Auf Anzeigen klicken
+* Taste „STRG“ + „P“ drücken
+* Bei Ziel „als PDF speichern“ auswählen
+* Speichern anklicken und Speicherpfad wählen
+|===
+
+=== TC37 - Test als Admin
+
+|===
+|*Aufgabe* | *Aktionen*
+
+|Login in das System
+a| * Website aufrufen
+* Benutzername und Passwort eingeben 
+* einloggen
+
+|Dozentenwoche verwenden
+a| * Dozentenwoche auswählen
+* Voreinstellungen ausfüllen
+    • Frau Prof. Krawietz
+    • 2021
+    • KW 25
+* Auf Anzeigen klicken
+* Taste „STRG“ + „P“ drücken
+* Bei Ziel gewünschter Drucker auswählen
+* Drucken anklicken
+
+|===

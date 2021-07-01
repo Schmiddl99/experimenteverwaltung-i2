@@ -14,6 +14,26 @@ describe "Journal", js_errors: false do
     page.windows[0].maximize
   end 
   
+  
+
+  #TC9
+  #3 orders are created
+  #order_1 is actual day + 1, order_2 actual day + 2 and order_3 is actual day + 3
+  #after signing in as lecturer, the user visits his journal
+  #it is expected that order_1 is sorted to the first position order_2 2nd and order_3 3rd
+  it "Journal enthält chronologische geordnete Buchungen" do
+    Fabricate :order, user: lecturer, course_at_date: Date.current + 3.days
+    Fabricate :order, user: lecturer, course_at_date: Date.current + 1.day                        #fabricate orders unsorted
+    Fabricate :order, user: lecturer, course_at_date: Date.current + 2.days
+    sign_in lecturer
+    visit "journal"
+    3.times do |n|
+      text = find(:xpath,"(//div[@id='ordersAccordion']/div/div/h2)[#{n+1}]")['textContent']      #find the order and get its textcontent
+      expect(text).to include(I18n.l(Date.current + (3 - n ).days))                               #showing that order matches dates from youngest to oldest  
+    end
+  end
+
+  #TC10
   #after signing in as lecturer, the user visits his journal (no orders had been created)
   #it is expected that a message is shown that no orders had been created
   it "das leere Journal wird angezeigt" do
@@ -22,24 +42,7 @@ describe "Journal", js_errors: false do
     expect(page.has_text?("Sie haben noch keine Buchung getätigt.")).to be_truthy
   end
 
-  #3 orders are created
-  #order_1 is actual day + 1, order_2 actual day + 2 and order_3 is actual day + 3
-  #after signing in as lecturer, the user visits his journal
-  #it is expected that order_1 is sorted to the first position order_2 2nd and order_3 3rd
-  it "Journal enthält chronologische geordnete Buchungen" do
-    Fabricate :order, user: lecturer, course_at_date: Date.current + 3.days
-    Fabricate :order, user: lecturer, course_at_date: Date.current + 1.day                         #fabricate orders unsorted
-    Fabricate :order, user: lecturer, course_at_date: Date.current + 2.days
-    sign_in lecturer
-    visit "journal"
-    dates_arr=Array.new                                                                           #data structure to store the dates
-  3.times do |n|
-    text = find(:xpath,"(//div[@id='ordersAccordion']/div/div/h2)[#{i}]")['textContent']
-    expect(text).to include(I18n.l(Date.current + (i + 1).days), format: :time_at)
-  end
-  end
-
-
+  #TC11
   #a order in the future is created
   #after signing in as lecturer, the user visits his journal
   #he clicks on editing his order
@@ -64,6 +67,7 @@ describe "Journal", js_errors: false do
     expect(page.has_text?("experiment_2")).to be_truthy
   end
 
+  #TC12
   #a order in the future is created
   #after signing in as lecturer, the user visits his journal
   #he has one order on clicks on deleting (trash symbol)
@@ -80,6 +84,7 @@ describe "Journal", js_errors: false do
     expect(page.has_text?("Sie haben noch keine Buchung getätigt.")).to be_truthy
   end
 
+  #TC13
   #a order in the past is created
   #after signing in as lecturer, the user visits his journal
   #as the only order is in the past, it is expected, that symbols and links for deleting and editing are not visible

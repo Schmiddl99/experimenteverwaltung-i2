@@ -28,11 +28,13 @@ describe "Lasttest", js_errors: false do
     experiment_1
     experiment_2
     experiment_3
-    (2..102).each {|i| 
-     (8..18).each do { |hr| 
+    (2..102).each do |i| 
+     (8..18).each do  |hr| 
         Fabricate :order, user: lecturer, course_at_date: Date.current + i.day, course_at_time: "#{hr}:00"
-      }  
-    }
+      end
+     
+    end
+    
     sign_in lecturer
     visit "/checkout/new"
     find('#order_course_id').find(:xpath, 'option[2]').select_option
