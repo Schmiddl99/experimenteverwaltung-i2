@@ -291,7 +291,7 @@ a| * Die gewählten Dozentenwochen werden angezeigt,
 
 |===
 
-==== TC16 - Dozentenwoche wird korrekt gedruckt -automatisiert
+==== TC16 - Dozentenwoche wird korrekt gedruckt - automatisiert
 
 |===
 
@@ -750,4 +750,3 @@ a| * Dozentenwoche auswählen
 * Drucken anklicken
 
 |===
-
