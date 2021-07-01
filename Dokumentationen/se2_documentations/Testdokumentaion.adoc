@@ -24,7 +24,8 @@ Wir legten fest, dass entdeckte Fehler dem Entwickler gemeldet werden. Gemeinsam
 
 == Beschreibung der Tests
 Die Beschreibungen der erstellten Testcase finden sich unter
-https://github.com/Schmiddl99/experimenteverwaltung-i2/blob/main/Dokumentationen/test/test_cases.adoc
+https://github.com/Schmiddl99/experimenteverwaltung-i2/blob/main/Dokumentationen/test/test_cases.adoc.
+
 Für alle automatisierten Tests finden sich in diesem Dokument die grobe Beschreibung des Tests und dessen Ziel. Die genauen Werte und die genaue Durchführung wurde in Form von Kommentaren den jeweiligen Specfiles angefügt. Die Zurordnung von Testcase zu automatisierten Test geschieht über die TC-Nummer (zb TC01) Dies verhindert zum einen die doppelte Beschreibung der Tests. Zum anderen erlaubt die genaue Beschreibung im Code zukünftigen Enwicklern eine zügiges Verständnis dieses Codes sowie eine einfache Erweiterbarkeit.
 Zu finden sind diese unter 
 https://github.com/Schmiddl99/experimenteverwaltung-i2/tree/main/src/spec/features
