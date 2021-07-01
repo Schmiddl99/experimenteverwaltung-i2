@@ -7,8 +7,8 @@ include::../_includes/default-attributes.inc.adoc[]
 Das vorliegende Dokument erläutert die eingesetzten Teststrategien, deren Organisation sowie dabei aufgetretene Probleme
 
 == Organisation
-Zur Aufteilung der Verantwortlichkeit für die Tests orientierten wir uns an der Testpyramide. Das Fundament dieser Teststrategie waren Unit-Tests, welche vom Entwickler geschrieben und durchgeführt wurden. Für diese nutzen wir das bereits von unseren Vorgängern benutzte Ruby Testframework RSpec.
-https://rspec.info/
+Zur Aufteilung der Verantwortlichkeit für die Tests orientierten wir uns an der Testpyramide. Das Fundament dieser Teststrategie waren Unit-Tests, welche vom Entwickler geschrieben und durchgeführt wurden. Für diese nutzen wir das bereits von unseren Vorgängern benutzte Ruby Testframework https://rspec.info/[RSpec].
+
 Wir legten dafür fest, das nur getesteter Code in den Main-Branch übernommen werden darf. Des weiteren wurde festgelegt, das vor jedem Merge ein Codereview durchgeführt wird. Dabei sollte der Entwickler die wesentlichen erstellten Funktionen erläutern. Als Kriterium zum Bestehen des Reviews wurde festgelegt, das der Code von Reviewer verstanden werden muss. Zusätzlich wurde vor jedem Merge eines Moduls sämtliche Tests der Regressiontestsuite ausgeführt. 
 
 Für alle anderen Tests also UI-Tests, Funktionstest und Systemtests war der Tester verantwortlich. Wir entschieden uns dafür wann immer mit sinnvollen Aufwand möglich automatisierte Tests zu nutzen. Dafür nutzten wir das oben benannte Framework RSpec und Capybara zur Browserautomatisierung.
@@ -47,6 +47,5 @@ Die manuellen Tests wurden alle bestanden und auch die Anwendertests förderten 
 == Schwierigkeiten und Fazit
 Die Hauptschwierigkeit war die zu Beginn recht steile Lernkurve für den Tester. Da er vorher noch keinen Kontakt mit Ruby hatte, musste er sich erst in eine neue Programmiersprache einarbeiten, dann in das auf diese aufbauende Framework Ruby on Rails und zusätzlich noch in das zugehörige Testframework RSpec. Dabei verzögerte die fehlende Fähigkeit in Ruby flüssig programmieren zu können die Erstellung der Tests doch erheblich. Auch behinderte der fehlende Rubybackground ein zügiges einarbeiten und verstehen der alten Testcases.
 Nachdem diese Hürde überwunden war, konnte die Testsuite sinnvoll erweitert werden, so das alle von uns erstellten Feautures einer hohen Testabdeckung unterliegen.
-
 
 
