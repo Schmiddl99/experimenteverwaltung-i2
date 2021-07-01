@@ -24,7 +24,7 @@ include::../_includes/default-attributes.inc.adoc[]
 a| * ein Dozent ist mit validen Zugangsdaten angemeldet  
 * es existieren mindestens drei Experimente
 * valides Datum, valide Uhrzeit und valider Studiengang
-* es muss ein Dozentenkonto geben
+
 
 |*Nachbedingung*
 a| * Datenbankeintrag für die Bestellung ist angelegt 
@@ -43,7 +43,6 @@ a| * Datenbankeintrag für die Bestellung ist angelegt
 |*Vorbedingungen und benötigte Daten*
 a| * ein Dozent ist mit validen Zugangsdaten angemeldet
 * es wurde eine Buchung begonnen
-* es muss ein Dozentenkonto geben
 * invalides Datum, invalide Uhrzeit 
 
 |*Nachbedingung*
@@ -64,7 +63,7 @@ a| * es können nur verfügbare Studiengänge über ein Dropdown Menü ausgewäh
 a| * ein Dozent ist mit validen Zugangsdaten angemeldet  
 * Buchung wurde mit validen Daten gestartet
 * valides Datum, valide Uhrzeit und valider Studiengang
-* es muss ein Dozentenkonto geben
+
 
 |*Nachbedingung*
 a| * der Button "Buchung abschließen" ist bis zur Auswahl mindestens eines Experiments ausgegraut und kann nicht geklickt werden
@@ -117,7 +116,7 @@ a| * Buchung wurde abgebrochen und es kam zu keinem Datenbankeintrag
 |*Vorbedingungen und benötigte Daten*
 a| * ein Dozent ist mit validen Zugangsdaten angemeldet  
 * Buchung wurde mit validen Daten gestartet
-* es muss ein Dozentenkonto geben
+
 
 
 |*Nachbedingung*
@@ -135,7 +134,6 @@ a| * Datenbankeintrag für die Bestellung und das Dummyexperiment ist angelegt
 |*Vorbedingungen und benötigte Daten*
 a| * ein Dozent ist mit validen Zugangsdaten angemeldet  
 * Buchung wurde mit validen Daten gestartet
-* es muss ein Dozentenkonto geben
 * es existiert mindestens ein Experiment
 
 
@@ -154,7 +152,6 @@ a| * Datenbankeintrag für die Bestellung und das Dummyexperiment ist angelegt
 |*Vorbedingungen und benötigte Daten*
 a| * ein Dozent ist mit validen Zugangsdaten angemeldet  
 * Buchung wurde mit validen Daten gestartet
-* es muss ein Dozentenkonto geben
 * es existieren mindestens zwei Experimente
 
 
@@ -386,7 +383,6 @@ a| * Die Dozentenwoche wird in der gewünschten Darstellung gedruckt.
 |*Vorbedingungen und benötigte Daten*
 a| * ein Admin ist mit validen Zugangsdaten angemeldet
 * Admin befindet sich auf der Statistik-Seite
-* es muss ein Dozentenkonto geben
 * mindestens drei Experimente, um die Sortierung zu testen
 * mehrere Buchungen der vorhandenen Experimente innerhalb sowie außerhalb der beiden Semester
 
