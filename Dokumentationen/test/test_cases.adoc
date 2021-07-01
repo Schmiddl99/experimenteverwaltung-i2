@@ -222,7 +222,7 @@ a| * Datenbankeintrag für die Buchung wurde aktualisiert
 |===
 
 
-==== TC12 - Buchung kann im Journal gelöscht werden
+==== TC12 - Buchung kann im Journal gelöscht werden - automatisiert
 
 |===
 
