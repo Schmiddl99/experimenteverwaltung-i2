@@ -402,7 +402,7 @@ a| * Anzahl der Buchungen der letzten beiden Semester sowie die Gesamtzahl ist r
 
 === Test Cases für systemweite funktionale Anforderungen
 
-==== TC21 - SWFA-1 - Auf fremde Daten/Funktionalitäten kann nicht zugegriffen werden -manuell
+==== TC21 - SWFA-1 - Auf fremde Daten/Funktionalitäten kann nicht zugegriffen werden - manuell
 
 |===
 
