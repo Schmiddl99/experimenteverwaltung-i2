@@ -268,7 +268,7 @@ a|* Datumsanpassung jeder kopierten Vorlesung ist erforderlich
 
 |===
 
-==== Finale Zukunftsanforderungen
+=== Finale Zukunftsanforderungen
 
 NOTE: Die unten genannten Anforderungen resultieren aus dem Themenstellermeeting am 10.06.2021 und sind somit endgültig. 
 

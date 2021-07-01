@@ -10,9 +10,6 @@ include::../_includes/default-attributes.inc.adoc[]
 // ...
 Um eine einfache Übersicht über die Use Cases zu erlangen, wurde ein UML Diagramm erstellt um die einzelnen Beziehungen der User auf die Use Cases aufzuzeigen. 
 
-
-
-
 image::UML_Diagramm_V2.0.PNG[UML Diagramm für die Beziehungen der User]
 
 
@@ -24,8 +21,6 @@ Der Begriff "User" in den Use Cases greift die vorher genannten Akteure auf und 
 
 Jeder User hat einen eigenen persönlichen Account. Nur der Gast-User kann mehrfach verwendet werden.
 
-*Weiteres: tbd* (Fortsetzung in SEII)
-
 == Anordnung der Use Cases
 
 Die Anordnung der Use Cases entspricht der Priorisierung in der Entwicklung.
@@ -36,25 +31,25 @@ Die Anordnung der Use Cases entspricht der Priorisierung in der Entwicklung.
 |Use Case Name
 
 |01
-|<< Use-Case: Experiment buchen, Experiment buchen >>
+|<<Use-Case: Experiment buchen, Experiment buchen>>
 
 |03
-|<< Use-Case: Dozentenwoche ansehen, Dozentenwoche ansehen >>
+|<<Use-Case: Dozentenwoche ansehen, Dozentenwoche ansehen>>
 
 |02
-|<< Use-Case: Eigene Experimente im Buchungsjournal ansehen, Eigene Experimente im Buchungsjournal ansehen >>
+|<<Use-Case: Eigene Experimente im Buchungsjournal ansehen, Eigene Experimente im Buchungsjournal ansehen>>
 
 |08
-|<< Use-Case: Experimente im Buchungsjournal bearbeiten, Experimente im Buchungsjournal bearbeiten >>
+|<<Use-Case: Experimente im Buchungsjournal bearbeiten, Experimente im Buchungsjournal bearbeiten>>
 
 |09
-|<< Eigene Buchungen im Buchungsjournal löschen, Eigene Buchungen im Buchungsjournal löschen >>
+|<<Eigene Buchungen im Buchungsjournal löschen, Eigene Buchungen im Buchungsjournal löschen>>
 
 |10
-|<< Use-Case: Verwalten der Studiengänge, Verwalten der Studiengänge >>
+|<<Use-Case: Verwalten der Studiengänge, Verwalten der Studiengänge>>
 
 |04
-|<< Use-Case: Statistik anzeigen, Statistik anzeigen >>
+|<<Use-Case: Statistik anzeigen, Statistik anzeigen>>
 
 
 
