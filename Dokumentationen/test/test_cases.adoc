@@ -323,7 +323,7 @@ a| * Die Dozentenwoche wird in der gewünschen Darstellung gedruckt.
 
 |===
 
-==== TC18 - Dozentenwoche für einen Dozenten wird korrekt angezeigt
+==== TC18 - Dozentenwoche für einen Dozenten wird korrekt angezeigt - automatisiert
 
 |===
 
@@ -750,5 +750,4 @@ a| * Dozentenwoche auswählen
 * Drucken anklicken
 
 |===
-
 
