@@ -250,7 +250,7 @@ a| * Datenbankeintrag für die Buchung wurde entfernt
 a| * ein Dozent ist mit validen Zugangsdaten angemeldet
 * Dozent befindet sich im Journal
 * mindestens ein Experiment
-* Buchung von dem Dozenten
+* Buchung von dem Dozenten mit einem Datum in der Vergangenheit
 
 |*Nachbedingung*
 a| * Dozent befindet sich weiterhin im Journal
