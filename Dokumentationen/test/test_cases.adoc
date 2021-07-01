@@ -155,7 +155,7 @@ a| * Datenbankeintrag für die Bestellung und das Dummyexperiment ist angelegt
 a| * ein Dozent ist mit validen Zugangsdaten angemeldet  
 * Buchung wurde mit validen Daten gestartet
 * es muss ein Dozentenkonto geben
-* es existiert mindestens ein Experiment
+* es existieren mindestens zwei Experimente
 
 
 |*Nachbedingung*
