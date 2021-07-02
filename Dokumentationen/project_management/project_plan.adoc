@@ -132,11 +132,28 @@ a| * Erarbeitung des Domänenmodells
 a| * Implementierung und Durchführung von <<Test Cases für Use Case "Experiment buchen": {project-name}, Test Cases für Use Case "Experiment buchen">>
 * Implementierung von Use-Case: <<Dozentenwoche ansehen: {project-name}, Dozentenwoche ansehen>>
 * Belegverbesserungen und Belegupdates
-* Erstellung von UC10 Link!!!!
-* Analyse und Reperatur von alten TCs abgeschlossen Link !!!
+* Erstellung von <<Use-Case: Verwalten der Studiengänge , UC10>>
+* Analyse und Reparatur von alten TCs abgeschlossen 
 * C4 Modell auf UC03 erweitert
-//* Ausscheiden der Teilnehmer {JS}, {TW}, {TKa} aufgrund Beendigung des Moduls I925 Requirements Engineering
 | 19.05.2021-02.06.2021
+
+| I08
+a| * Implementierung von TCs zu UC03
+* Implementierung von UC02, UC08, UC09
+* Erstellung von Anwender- und Admin-Tests
+* Inkrement bei TSM5 vorstellen
+
+| 02.06.2021-16.06.2021
+
+| I09
+a| * Änderungswünsche des Kunden umsetzen 
+* Experimentefeld "Geräte" optimieren 
+* Bugfixing der Textfelder
+* Projekt mit Kunde abschließen
+* Auswertung der User-Tests
+* Installation des Systems
+* Auslieferung des Systems
+| 16.06.2021-30.06.2021
 
 
 |===
