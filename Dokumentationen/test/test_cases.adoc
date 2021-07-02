@@ -394,7 +394,7 @@ a| * Anzahl der Buchungen der letzten beiden Semester sowie die Gesamtzahl ist r
 
 
 
-== Test Cases für systemweite Anforderungen:
+== Test Cases für systemweite Anforderungen
 
 === Test Cases für systemweite funktionale Anforderungen
 

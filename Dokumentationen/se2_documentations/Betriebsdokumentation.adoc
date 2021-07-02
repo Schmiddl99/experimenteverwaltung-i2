@@ -4,6 +4,17 @@ Richard Böhme <richard.boehme@htw-dresden.de>
 :toc:
 include::../_includes/default-attributes.inc.adoc[]
 :toclevels: 3
+:doctype: book
+:sectnums:
+:icons: font
+:source-highlighter: rouge
+:rouge-style: github
+:xrefstyle: full
+:experimental:
+:chapter-label:
+:figure-caption: Abbildung
+:table-caption: Tabelle
+:listing-caption: Listing
 :test-system-ip: test.system.ip
 :produktiv-system-ip: prod.system.ip
 :user: user
