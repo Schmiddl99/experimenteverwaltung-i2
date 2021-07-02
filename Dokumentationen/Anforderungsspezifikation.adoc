@@ -1,0 +1,28 @@
+= Aktualisierte Anforderungsspezifikation: {project-name}
+Alena Bischoff <alena.bischoff@htw-dresden.de>; Gregor Müller <gregor.mueller@htw-dresden.de>; Julius Schmidt <juliusheiko.schmidt@htw-dresden.de>; Richard Böhme <richard.boehme@htw-dresden.de>; Taejun Kim <taejun.kim@htw-dresden.de>; Tim Würzburg <tim.wuerzburg@htw-dresden.de>; Tobias Karsch <tobias.karsch@htw-dresden.de>; William Elsner <william.elsner@htw-dresden.de>; Piet Gutsche <piet.gutsche@htw-dresden.de>;
+{localdatetime}
+include::_includes/default-attributes.inc.adoc[]
+:doctype: book
+:sectnums:
+:icons: font
+:source-highlighter: rouge
+:rouge-style: github
+:xrefstyle: full
+:experimental:
+:chapter-label:
+:figure-caption: Abbildung
+:table-caption: Tabelle
+:listing-caption: Listing
+
+:imagesdir: requirements/images
+
+
+include::requirements/vision.adoc[lines=1..1;4..-1,leveloffset=1]
+
+include::requirements/domain_model.adoc[lines=1..1;4..-1,leveloffset=1]
+
+include::requirements/use-case_model.adoc[lines=1..1;4..-1,leveloffset=1]
+
+include::requirements/system-wide_requirements.adoc[lines=1..1;4..-1,leveloffset=1]
+
+include::requirements/Glossar.adoc[lines=1..1;4..-1,leveloffset=1]
