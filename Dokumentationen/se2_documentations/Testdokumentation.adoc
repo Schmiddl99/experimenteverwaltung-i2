@@ -1,6 +1,6 @@
 = Testdokumentation: {project-name}
 Piet Gutsche <piet.gutsche@htw-dresden.de>
-{localdatetime}
+02. Juli 2021
 include::../_includes/default-attributes.inc.adoc[]
 :toclevels: 3
 :doctype: book
@@ -15,7 +15,7 @@ include::../_includes/default-attributes.inc.adoc[]
 :table-caption: Tabelle
 
 == Einleitung
-Das vorliegende Dokument erläutert die eingesetzten Teststrategien, deren Organisation sowie dabei aufgetretene Probleme
+Das vorliegende Dokument erläutert die eingesetzten Teststrategien, deren Organisation sowie dabei aufgetretene Probleme.
 
 == Organisation
 Zur Aufteilung der Verantwortlichkeit für die Tests orientierten wir uns an der Testpyramide. Das Fundament dieser Teststrategie waren Unit-Tests, welche vom Entwickler geschrieben und durchgeführt wurden. Für diese nutzen wir das bereits von unseren Vorgängern benutzte Ruby Testframework https://rspec.info/[RSpec].

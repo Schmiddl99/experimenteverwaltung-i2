@@ -1,6 +1,6 @@
 = Entwicklerdokumentation: {project-name}
 Richard Böhme <richard.boehme@htw-dresden.de>
-{localdatetime}
+02. Juli 2021
 :toc:
 include::../_includes/default-attributes.inc.adoc[]
 :toclevels: 3

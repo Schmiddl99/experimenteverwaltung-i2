@@ -1,6 +1,6 @@
 = Anwenderdokumentation: {project-name}
-Gregor Müller <gregor.mueller@htw-dresden.de>; Richard Böhme <richard.boehme@htw-dresden.de>; Tim Würzburg <tim.wuerzburg@htw-dresden.de>; William Elsner <william.elsner@htw-dresden.de>; Piet Gutsche <piet.gutsche@htw-dresden.de>
-{localdatetime}
+William Elsner <william.elsner@htw-dresden.de>;
+02. Juli 2021
 include::../_includes/default-attributes.inc.adoc[]
 :toclevels: 3
 :doctype: book

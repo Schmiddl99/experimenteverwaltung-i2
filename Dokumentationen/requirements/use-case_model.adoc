@@ -10,7 +10,7 @@ include::../_includes/default-attributes.inc.adoc[]
 // ...
 Um eine einfache Übersicht über die Use Cases zu erlangen, wurde ein UML Diagramm erstellt um die einzelnen Beziehungen der User auf die Use Cases aufzuzeigen. 
 
-image::UML_Diagramm_V2.0.PNG[UML Diagramm für die Beziehungen der User]
+image::UML_Diagramm_V2.0.PNG[UML Diagramm für die Beziehungen der User,600,800]
 
 
 Für die einfache Darstellung von Sachverhalten und der Nutzung unserer Erweiterung der Webanwendung haben wir uns für die Verwendung von Wireframes entschieden. Besonders bei der Darstellung des Buchungsvorganges und unserer Vorstellung zu den Benutzeroberflächen war uns die Nutzung besonders wichtig, da unser Kunde mit visuellen Darstellungen unsere Ideen besser nachvollziehen konnte.
@@ -75,17 +75,9 @@ include::use_case_08.inc.adoc[]
 include::use_case_09.inc.adoc[]
 
 <<<
+include::use_case_10.inc.adoc[]
+
+<<<
 include::use_case_04.inc.adoc[]
-
-//<<<
-//include::use_case_10.inc.adoc[]
-
-
-== Beziehungen der User
-
-Um eine einfache Übersicht über die Use Cases zu erlangen, wurde ein UML Diagramm erstellt um die einzelnen Beziehungen der User auf die Use Cases aufzuzeigen. 
-
-
-
 
 

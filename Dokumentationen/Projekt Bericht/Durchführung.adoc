@@ -236,7 +236,7 @@ Der *LCA-Meilenstein* konnte nicht erfolgreich abgeschlossen werden, da das Ziel
 * Unsere Arbeitsschätzungen betrachten wir als GUT, obwohl nicht alle Iterationsziele erreicht werden konnten. Dies begründen wir mit dem oben beschriebenen Corona-Umständen. Dennoch werden wir nun unserer Planung für die nächste Iteration überdenken und die Arbeitskräfte besser verteilen.  
 * Das Gruppen- und Arbeitsklima ist im grünen Bereich. 
 
-
+<<<
 === Entwicklung vorantreiben 
 
 *Iterations Ziele I07:*

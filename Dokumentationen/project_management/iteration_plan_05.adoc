@@ -124,7 +124,7 @@ a|* Vor dem TSM 4 wurden von dem Team durch Kontakt der Benutzer des Systems Ben
 ** *Design, implement, validate, and establish the baseline for the architecture:* Zu weiten Teilen abgeschlosssen.
 *** *Erfolgskriterien:* Die Wireframes wurden den Änderungen nach angepasst und vom Kunden validiert. Auf die Validierung eines Skelettsystems wurde verzichtet, da unsere Ziele auf einem vorhandenen, funktionierenden und verwendeten Projekt aufbauen. Da aber einige TCs des Vorgängerteams noch nicht funktionieren und wir hier erst selektieren müssen, welche repariert oder entfernt werden müssen, sehen wir diesen Punkt noch nicht als abgeschlossen an.
 ** *Mitigate essential risks, and produce accurate schedule and cost estimates:* Konnte mit Erfolg umgesetzt werden.
-*** *Erfolgskriterien:* Um diese Punkte zu erfüllen, arbeitet das Team mit Verwendung einer Work Item List und einer Risk List. (siehe <<project_plan: {project-name}, Projektplan>>)
+*** *Erfolgskriterien:* Um diese Punkte zu erfüllen, arbeitet das Team mit Verwendung einer Work Item List und einer Risk List. (siehe <<Projektplan: {project-name}, Projektplan>>)
 * Ziel: Vorbereitungen für IOC Meilenstein wurde erreicht.
 
 * *Understand:* 
@@ -158,7 +158,7 @@ Wie gut waren unsere Schätzungen? Welche Hindernisse gab es? Wie können wir be
 * Die Funktion des Redeführers wurde abgeschafft, da bei einer Gruppengröße von vier Personen diese nicht benötigt wird. 
 * Das fehlerhafte Verständnis der agilen Softwareentwicklung hat bei uns zwar viele negative Gefühle ausgelöst und es wurde auch viel diskutiert, dennoch haben wir es durch unsere Professionalität und durch das teilweise Einschreiten von Teammitgliedern geschafft die Iteration abzuschließen. 
 * Der beabsichtigte Zeitaufwand konnte erfüllt werden.
-* Das Gruppen- und Arbeitsklima ist im gelben Bereich. Siehe <<retrospective_umfragen: {project-name}, Iterations-Umfrage>> 
+* Das Gruppen- und Arbeitsklima ist im gelben Bereich. Siehe <<Puls Check zum Ende jeder Iteration: {project-name}, Iterations-Umfrage>> 
 |===
 
 === ALPHA States

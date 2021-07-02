@@ -129,10 +129,10 @@ a| * Erarbeitung des Domänenmodells
 | 05.05.2021-19.05.2021
 
 | I07
-a| * Implementierung und Durchführung von <<Test Cases für Use Case "Experiment buchen": {project-name}, Test Cases für Use Case "Experiment buchen">>
-* Implementierung von Use-Case: <<Dozentenwoche ansehen: {project-name}, Dozentenwoche ansehen>>
+a| * Implementierung und Durchführung von <<Test Cases für Use Case "Experiment buchen", Test Cases für Use Case "Experiment buchen">>
+* Implementierung von Use-Case: <<Use-Case: Dozentenwoche ansehen, Dozentenwoche ansehen>>
 * Belegverbesserungen und Belegupdates
-* Erstellung von <<Use-Case: Verwalten der Studiengänge , UC10>>
+* Erstellung von <<Use-Case: Verwalten der Studiengänge, UC10>>
 * Analyse und Reparatur von alten TCs abgeschlossen 
 * C4 Modell auf UC03 erweitert
 | 19.05.2021-02.06.2021

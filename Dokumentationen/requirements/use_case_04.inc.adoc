@@ -23,7 +23,7 @@ Admin möchte sich eine Statistik über gebuchte Experimente anzeigen lassen
 === Wireframe Statistik
 
 image::WF_5_Statistik.PNG[Statistik Anzeige]
-
+<<<
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
 ==== Filtern

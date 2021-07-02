@@ -303,7 +303,7 @@ a| * Admin ist angemeldet
 a| * Das Druckermenü für die gewünschte Darstellung wurde aufgerufen 
 
 |===
-
+<<<
 ==== TC17 - Dozentenwoche wird korrekt gedruckt - manuell
 
 |===
