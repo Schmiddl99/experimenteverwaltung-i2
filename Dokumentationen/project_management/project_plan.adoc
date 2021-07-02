@@ -140,7 +140,7 @@ a| * Implementierung und Durchführung von <<Test Cases für Use Case "Experimen
 | I08
 a| * Implementierung von TCs zu UC03
 * Implementierung von UC02, UC08, UC09
-* Erstellung von Anwender und Admin Tests
+* Erstellung von Anwender- und Admin-Tests
 * Inkrement bei TSM5 vorstellen
 
 | 02.06.2021-16.06.2021
