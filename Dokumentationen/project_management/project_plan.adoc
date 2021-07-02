@@ -150,7 +150,7 @@ a| * Änderungswünsche des Kunden umsetzen
 * Experimentefeld "Geräte" optimieren 
 * Bugfixing der Textfelder
 * Projekt mit Kunde abschließen
-* Auswertung der User Tests
+* Auswertung der User-Tests
 * Installation des Systems
 * Auslieferung des Systems
 | 16.06.2021-30.06.2021
