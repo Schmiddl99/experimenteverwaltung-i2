@@ -1,4 +1,4 @@
 = Experimenteverwaltung - Erweiterung Buchungssystem (I2)
 
-Dies ist der Projekt Bericht des Themas I2: Erweiterung des Systems zur Verwaltung von Physikexperimenten. Das Projekt wurde im Sommersemster 2021 von Richard Böhme (a.I.), William Elsner (W.I.), Piet Gutsche (a.I.), Gregor Müller (V.I.) betreut. 
+Dies ist der Projekt Bericht des Themas I2: Erweiterung des Systems zur Verwaltung von Physikexperimenten. Das Projekt wurde im Sommersemster 2021 von Richard Böhme (a.I.), William Elsner (W.I.), Piet Gutsche (a.I.), Gregor Müller (V.I.) betreut. Der Projektbericht entstand als Gruppenarbeit aller Teammitglieder. Hierfür wurde ein Pull Request im GitHub geöffnet an dem parallel gearbeitet werden konnte. 
 
