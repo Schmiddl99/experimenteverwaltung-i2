@@ -29,7 +29,7 @@ function experimentsManager(name, fields, path) {
       $("#" + name + "-modal").modal('show');
     })
   };
-
+  addCallbacks();
   function insertCallbacks(root) {
     root.find("select." + name + "-select").on('change', function () {
       var el = $(this)
