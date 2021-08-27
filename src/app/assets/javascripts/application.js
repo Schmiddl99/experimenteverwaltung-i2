@@ -27,4 +27,21 @@ $(document).on('turbolinks:load', function(){
   var pickers = $(".selectpicker")
   pickers.selectpicker("destroy");
   pickers.selectpicker();
+
+  $('.add_association').click(function(){
+    $("#nested-new-"+$(this).data("type")).click()
+  })
+  $('.nested-form').on('cocoon:after-insert', function(e, insertedItem) {
+    e = $(insertedItem)
+    e.attr("id", "nested-item-"+Date.now())
+    e.find(".sort-input").val(e.parent().prevAll().length)
+    nestedTrigger();
+    sortable();
+    e.find(".selectpicker").selectpicker();
+  }).on('cocoon:before-remove', function(event, insertedItem) {
+    var confirmation = confirm("Möchten Sie dies wirklich löschen?");
+    if( confirmation === false ){
+      event.preventDefault();
+    }
+  })
 })
