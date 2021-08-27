@@ -3,7 +3,8 @@ describe "Medium", js_errors: false do
   let(:user) { Fabricate :user }
   let(:random) { Faker::Config.random }
   let(:sub_category) { Fabricate :sub_category }
-  let(:image) { Rails.root.join('spec', 'fixtures', 'file2.jpg') }
+  let(:image) { Rails.root.join('spec', 'fixtures', 'file1.jpg') }
+  let(:image_2) { Rails.root.join('spec', 'fixtures', 'file2.jpg') }
   let(:trashmedium) { Fabricate :medium, experiment: nil }
   # @vincent.thelang
 
@@ -15,8 +16,14 @@ describe "Medium", js_errors: false do
     find("#experiment_label").set("TestLabel.1")
     find("#experiment_description").set("TestBeschreibung")
     attach_file("experiment_media_attributes_0_file", image, visible: false)
+    expect(page.has_text?("file1.jpg")).to be_truthy
+    file_inputs = all(".custom-file-input", visible: false)
+    file_inputs[1].attach_file(image_2)
+    expect(page.has_text?("file1.jpg")).to be_truthy
+    expect(page.has_text?("file2.jpg")).to be_truthy
     find('#experiment-save').click
     expect(page.html.include?("/uploads/media/medium/1.png")).to be_truthy
+    expect(page.html.include?("/uploads/media/medium/2.png")).to be_truthy
     expect(page.has_text?("Experiment wurde erstellt")).to be_truthy
   end
 
