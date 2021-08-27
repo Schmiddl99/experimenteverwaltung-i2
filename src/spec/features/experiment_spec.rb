@@ -3,13 +3,9 @@ describe "Experiment", js_errors: false do
   let(:user) { Fabricate :user }
   let(:sub_category) { Fabricate :sub_category }
   let(:experiment) { Fabricate :experiment, label: 'TestLabel.01', name: 'Test2' }
+  let(:equipment) { Fabricate :equipment }
   let(:random) { Faker::Config.random }
 
-  before(:each) do
-    page.windows[0].maximize
-  end 
-
-  
   #4 Equipments are created "Pendel,Peitsche,Achse,Bus"
   #user signs in as admin and visits "Experimente anlegen"
   #for adding equipment he uses the filter
@@ -159,6 +155,19 @@ describe "Experiment", js_errors: false do
     # wie test?
   end
 
+  it "geräte inline bearbeiten" do
+    sign_in user
+    experiment.equipment << equipment
+    visit "/experiments/#{experiment.id}/edit"
+    find(".equipment-modal").click
+    within ".modal" do
+      fill_in "equipment_name", with: "Anderer Name"
+      click_on "Speichern"
+    end
+    expect(page.has_text?("Anderer Name")).to be_truthy
+    expect(equipment.reload.name).to eq("Anderer Name")
+  end
+
   it "vor und zurück" do
     sign_in user
     Fabricate :experiment
@@ -171,7 +180,6 @@ describe "Experiment", js_errors: false do
     expect(page.has_text?("TestExperiment")).to be_truthy
   end
 
-    #changed '.stretched-link' to flex-grow-1
   it "über Sub_Category auswählen" do
     sign_in user
     Fabricate :experiment

@@ -746,3 +746,22 @@ a| * Dozentenwoche auswählen
 * Drucken anklicken
 
 |===
+
+== Sonstige Test Cases
+
+=== TC38 - Gerät beim Bearbeiten eines Experiments bearbeiten
+
+|===
+
+|*Beschreibung* |Beim Bearbeiten eines Experiments kann der Admin Geräte bearbeiten die dem Experiment zugeordnet wurden.
+
+|*Vorbedingungen und benötigte Daten*
+a| * ein Admin ist mit validen Zugangsdaten angemeldet
+* es existieren ein Experiment mit einem zugeordneten Gerät
+* valider neuer Name für ein Gerät
+
+
+|*Nachbedingung*
+a| * Gerät wird in der Datenbank angepasst
+
+|===
